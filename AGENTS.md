@@ -1,5 +1,12 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# Repository Guidelines
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+- **Framework:** Next.js 16 (App Router) + Tailwind CSS v4 + React 19.
+- **Components:** Managed via `shadcn/ui`. Use `npx shadcn@latest add <component>` to add new UI components. Components reside in `components/ui`.
+- **Imports:** Always use `@/` alias (e.g., `import { Button } from "@/components/ui/button"`).
+- **Verification Commands:**
+    - Lint: `npm run lint`
+    - Typecheck: `npm run typecheck`
+    - Format: `npm run format`
+- **Build/Dev:**
+    - Dev server: `npm run dev`
+    - Build: `npm run build`
