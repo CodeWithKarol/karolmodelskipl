@@ -1,4 +1,4 @@
-import { BadgeAlert, Target } from "lucide-react"
+import { BadgeAlert, Target, ShieldCheck, Zap } from "lucide-react"
 import { content } from "@/lib/content"
 
 export function StorySection() {
@@ -77,6 +77,47 @@ export function StorySection() {
           </div>
 
         </div>
+
+        {/* Nowy Paradygmat: Twój Partner Strategiczny */}
+        <div className="mt-16 md:mt-24 pt-16 md:pt-24 border-t border-slate-800/50">
+          <div className="grid md:grid-cols-12 gap-8 md:gap-16 items-start">
+            <div className="md:col-span-5 md:sticky md:top-24">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+                <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+                <span>{story.paradigm_tag}</span>
+              </div>
+              <h2 className="text-[1.5rem] sm:text-3xl md:text-4xl font-bold text-white leading-tight text-balance">
+                {story.paradigm_title}
+              </h2>
+            </div>
+            
+            <div className="md:col-span-7 space-y-6 sm:space-y-8 relative">
+              <div className="absolute -left-4 sm:-left-8 top-0 bottom-0 w-px bg-gradient-to-b from-blue-500/50 to-transparent hidden md:block"></div>
+              
+              <div className="relative">
+                <div className="absolute -left-5 sm:-left-[37px] top-1 hidden md:flex w-5 h-5 rounded-full bg-blue-500/20 border-2 border-blue-500 items-center justify-center">
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                </div>
+                <p className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed">
+                  {story.paradigm_text_1}
+                </p>
+              </div>
+
+              <div className="relative">
+                <div className="absolute -left-5 sm:-left-[37px] top-1 hidden md:flex w-5 h-5 rounded-full bg-emerald-500/20 border-2 border-emerald-500 items-center justify-center">
+                  <Zap className="w-2.5 h-2.5 text-emerald-400" />
+                </div>
+                <div className="bg-slate-900/40 border border-slate-800 rounded-2xl p-5 sm:p-8">
+                  <p className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed">
+                    {story.paradigm_text_2}
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   )

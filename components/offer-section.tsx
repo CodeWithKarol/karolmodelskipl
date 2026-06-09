@@ -1,11 +1,11 @@
-import { Blocks, CheckCircle2, LockKeyhole, ArrowRight, Zap, TrendingUp } from "lucide-react"
+import { Blocks, Wallet, Settings2, Zap, ArrowRight } from "lucide-react"
 import { content } from "@/lib/content"
 
 export function OfferSection() {
   const { offer } = content;
   
   // Zaktualizowane ikony idealnie pasujące do nowych korzyści biznesowych
-  const icons = [Blocks, Zap, LockKeyhole, TrendingUp, CheckCircle2];
+  const icons = [Blocks, Settings2, Wallet, Zap];
 
   return (
     <section id="oferta" className="relative py-16 md:py-32 bg-slate-950 text-slate-300 border-t border-slate-900/50 overflow-hidden">
@@ -33,10 +33,12 @@ export function OfferSection() {
 
           {offer.stack.map((item, i) => {
             const Icon = icons[i];
+            const anchorId = i === 0 ? "mvp" : i === 1 ? "modernizacja" : undefined;
             return (
               <div 
                 key={i} 
-                className="group relative bg-slate-900/40 backdrop-blur-sm border border-slate-800/80 rounded-2xl p-5 sm:p-6 md:p-8 hover:bg-slate-900/80 transition-all duration-300 hover:border-blue-500/30 flex flex-col md:flex-row gap-4 sm:gap-6 items-start md:items-center overflow-hidden"
+                id={anchorId}
+                className="group relative bg-slate-900/40 backdrop-blur-sm border border-slate-800/80 rounded-2xl p-5 sm:p-6 md:p-8 hover:bg-slate-900/80 transition-all duration-300 hover:border-blue-500/30 flex flex-col md:flex-row gap-4 sm:gap-6 items-start md:items-center overflow-hidden scroll-mt-24"
               >
                 {/* Efekt podświetlenia karty */}
                 <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-500/0 via-blue-500/0 to-transparent group-hover:from-blue-500/5 transition-colors duration-500 pointer-events-none"></div>
