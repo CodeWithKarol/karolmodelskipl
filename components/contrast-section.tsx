@@ -10,9 +10,9 @@ export function ContrastSection() {
 
       <div className="container relative z-10 mx-auto px-4 max-w-6xl">
         
-        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-20">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight tracking-tight text-balance mb-4 md:mb-6">
-            {contrast.title_part1} <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-rose-400">{contrast.title_highlight}</span>
+        <div className="text-center max-w-4xl mx-auto mb-12 md:mb-20">
+          <h2 className="text-[1.75rem] sm:text-4xl md:text-5xl font-extrabold text-white leading-[1.15] tracking-tight text-balance mb-4 md:mb-6">
+            {contrast.title_part1} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">{contrast.title_highlight}</span>
           </h2>
         </div>
 

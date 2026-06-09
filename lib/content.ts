@@ -34,112 +34,125 @@ export const content = {
     customer_perspective_tag: "Twoja perspektywa",
     intro_text: "Jako właściciel firmy nie potrzebujesz po prostu „kolejnego programu” ani tysięcy linii skomplikowanego kodu, którego nikt w Twoim zespole nie rozumie. Potrzebujesz narzędzia, które automatyzuje procesy, zabezpiecza Twoje dane i przede wszystkim – generuje zysk.",
     problem_title: "Tradycyjny model IT to ukryte koszty",
-    problem_text: "Współpraca z dużymi agencjami software house często oznacza opłacanie rozbudowanej struktury: handlowców, managerów i asystentów, co drastycznie podnosi koszty, nie wnosząc realnej wartości do samego produktu.\n\nCo gorsza, w tradycyjnym modelu IT rzadko kto pyta o Twoje cele sprzedażowe. Zwykły wykonawca skupia się wyłącznie na technologii – ja skupiam się na ścieżce Twojego klienta i zwrocie z inwestycji (ROI)."
+    problem_text: "Współpraca z dużymi agencjami software house często oznacza opłacanie rozbudowanej struktury: handlowców, managerów i asystentów, co drastycznie podnosi koszty, nie wnosząc realnej wartości do samego produktu.\n\nCo gorsza, w tradycyjnym modelu IT rzadko kto pyta o Twoje cele sprzedażowe. Zwykły wykonawca skupia się wyłącznie na technologii – ja skupiam się na ścieżce Twojego klienta i zwrocie z inwestycji (ROI).",
+    paradigm_tag: "Twój Partner Strategiczny",
+    paradigm_title: "Bezpieczeństwo klasy korporacyjnej wdrożone bezpośrednio do Twojego biznesu",
+    paradigm_text_1: "Przez ponad 7 lat współtworzyłem systemy dla globalnych liderów sektora bankowego (w tym instytucji takich jak Citibank czy BNP Paribas) oraz wdrażałem zaawansowane rozwiązania oparte na sztucznej inteligencji. Te lata doświadczeń nauczyły mnie, jak projektować oprogramowanie, które nigdy nie zawodzi i bezbłędnie znosi obciążenia biznesowe.",
+    paradigm_text_2: "Dziś tę samą wiedzę, standardy bezpieczeństwa i bezkompromisową jakość dostarczam bezpośrednio małym i średnim firmom. Nie rozmawiam z Tobą językiem programistycznego bełkotu – rozmawiam językiem optymalizacji Twoich kosztów i uwalniania Twojego czasu. Zyskujesz partnera, który patrzy na oprogramowanie jak na silnik wzrostu Twojej firmy."
   },
   offer: {
-    title_part1: "Nie kupuj roboczogodzin. Zainwestuj w",
-    title_highlight: "kompletny ekosystem,",
-    title_part2: "który skaluje Twoją sprzedaż",
-    subheading: "Podczas gdy tradycyjne agencje oferują generyczne programowanie aplikacji internetowych (często „przepalając” Twój budżet na naukę juniorów), ja dostarczam kompletny pakiet technologiczny, który gwarantuje rynkową przewagę Twojego produktu:",
+    title_part1: "Jak wspólnie zbudujemy",
+    title_highlight: "przewagę konkurencyjną",
+    title_part2: "Twojej firmy?",
+    subheading: "Zamiast skupiać się na technicznych definicjach, zobaczmy, jak moje rozwiązania bezpośrednio przekładają się na ochronę i pomnażanie Twoich pieniędzy:",
     stack: [
       {
-        title: "Fundament gotowy na wzrost",
-        desc: "Buduję aplikacje w sposób, który pozwala na ich błyskawiczny rozwój. Gdy Twój biznes wystrzeli, nie musisz wyrzucać systemu do kosza – dokładamy kolejne moduły tak łatwo, jak klocki LEGO. Oszczędzasz fortunę na przebudowach."
+        title: "Szybkie testowanie pomysłów bez ryzyka finansowego",
+        desc: "Zamiast inwestować setki tysięcy złotych w niesprawdzone pomysły, budujemy precyzyjne wersje testowe produktów (MVP). Pozwala to błyskawicznie sprawdzić reakcję rynku i zacząć zarabiać na aplikacji, zanim zainwestujesz w jej dalszą rozbudowę."
       },
       {
-        title: "Aplikacja, która nie zwalnia",
-        desc: "Wykorzystuję najnowocześniejsze techniki optymalizacji, dzięki czemu Twój system ładuje się w ułamku sekundy. Szybka aplikacja to wyższa konwersja – użytkownicy po prostu nie wychodzą zniecierpliwieni przed dokonaniem zakupu."
+        title: "Modernizacja oprogramowania bez zatrzymywania sprzedaży",
+        desc: "Twoja obecna platforma działa wolno lub generuje błędy? Przeprowadzam modernizacje systemów etapowo, „na żywym organizmie”. Eliminujemy stare błędy i unowocześniamy aplikację w tle, bez ani jednej minuty przestoju w Twojej bieżącej sprzedaży."
       },
       {
-        title: "Bezpieczeństwo klasy bankowej",
-        desc: "Stosuję rygorystyczne standardy ochrony danych, które wymagane są w sektorze finansowym. Twoje dane i dane Twoich klientów są odizolowane od zagrożeń. Śpisz spokojnie, nie martwiąc się o wycieki."
+        title: "Nawet do 40% oszczędności na rozwoju systemów",
+        desc: "Dzięki zaawansowanemu projektowaniu architektury, rozwiązania na komputery oraz urządzenia mobilne tworzę w oparciu o jedno, zintegrowane jądro systemu. Dla Ciebie oznacza to pełną spójność danych i drastyczne obniżenie kosztów późniejszego utrzymania aplikacji."
       },
       {
-        title: "MVP, które realnie zarabia",
-        desc: "Buduję fundamenty, które pozwalają wyjść na rynek z produktem w kilka tygodni, a nie miesięcy. Szybciej weryfikujesz rynek i zaczynasz czerpać zyski, zamiast miesiącami dopracowywać „idealny” projekt, który może nie wypalić."
-      },
-      {
-        title: "Kod, który „po prostu działa”",
-        desc: "Każdy element systemu przechodzi rygorystyczne testy jakości. Zapominasz o ciągłym dzwonieniu do serwisu i kosztownym naprawianiu błędów. Twój biznes działa bez przerw."
+        title: "Płynność i szybkość, które zatrzymają każdego klienta",
+        desc: "Twoi użytkownicy nie będą tracić czasu na czekanie, aż strona się załaduje. Projektuję interfejsy o najwyższej na rynku wydajności, co bezpośrednio przekłada się na wyższy poziom satysfakcji klientów i mniejszą liczbę porzuconych koszyków czy formularzy."
       }
     ]
   },
   contrast: {
-    title_part1: "Dlaczego agencje zawodzą,",
-    title_highlight: "a partnerstwo wygrywa?",
+    title_part1: "Twoja firma zasługuje na eksperta IT,",
+    title_highlight: "nie na zwykłego wykonawcę zadań",
     title_part2: "",
-    red_ocean_title: "Tradycyjny Software House",
-    blue_ocean_title: "Mój Model: Elite Frontend Development",
+    red_ocean_title: "Zwykły Wykonawca / Agencja IT",
+    blue_ocean_title: "Model Partnerski (Współpraca ze mną)",
     comparisons: [
       {
         red: {
-          title: "Chaos i brak widoczności",
-          desc: "Przypadkowa struktura aplikacji internetowych, przez którą użytkownicy gubią się w systemie, a Google i Chatboty AI nie potrafią poprawnie odczytać Twojej oferty."
+          title: "Zamknięcie listy zadań",
+          desc: "Skupienie wyłącznie na dowiezieniu projektu i wystawieniu faktury za godziny, bez wnikania w zyskowność."
         },
         blue: {
-          title: "Intuicyjność i wysokie pozycje",
-          desc: "Przemyślane projektowanie aplikacji internetowych, które prowadzi klienta prosto do zakupu, a algorytmom wyszukiwarek ułatwia polecanie Twojej firmy."
+          title: "Maksymalizacja Twojego ROI",
+          desc: "Dostarczenie realnego wyniku biznesowego. Moim celem jest to, aby system zaczął na siebie zarabiać."
         }
       },
       {
         red: {
-          title: "Głuchy telefon i brak kontroli",
-          desc: "Rozmawiasz z handlowcem, on z menedżerem, a ostateczne tworzenie aplikacji internetowych agencja deleguje początkującym juniorom, którzy uczą się na Twoim budżecie."
+          title: "„Głuchy telefon” i asystenci",
+          desc: "Informacje gubią się podczas komunikacji przez licznych project managerów, handlowców i pośredników."
         },
         blue: {
-          title: "Bezpośrednie partnerstwo",
-          desc: "Współpracujesz wyłącznie z doświadczonym ekspertem. Całe programowanie aplikacji internetowych realizuję osobiście, bez pośredników i niedomówień."
+          title: "Bezpośredni kontakt",
+          desc: "Stały i otwarty kontakt bezpośrednio ze mną jako osobą decyzyjną i głównym budowniczym systemu."
         }
       },
       {
         red: {
-          title: "Ciągłe awarie i drogie poprawki",
-          desc: "Systemy pisane bez głębszego planu, gdzie bezpieczeństwo aplikacji internetowych kuleje, a każda próba rozbudowy kończy się paraliżem firmy."
+          title: "Finansowanie struktury agencji",
+          desc: "Duża część Twoich środków pokrywa koszty utrzymania pięknych biur, działów HR oraz marketingu agencji."
         },
         blue: {
-          title: "Święty spokój i stabilność",
-          desc: "Nowoczesne i bezpieczne systemy internetowe klasy bankowej. System działa niezawodnie, jest odporny na oszustwa i gotowy na nagły wzrost liczby klientów."
+          title: "100% inwestycji w Twój produkt",
+          desc: "Cały Twój budżet jest inwestowany bezpośrednio w jakość i wydajność Twojego własnego oprogramowania."
+        }
+      },
+      {
+        red: {
+          title: "Droga rewolucja",
+          desc: "Przy każdym problemie agencja proponuje kosztowne wyrzucenie wszystkiego i napisanie kodu od nowa."
+        },
+        blue: {
+          title: "Bezpieczna ewolucja",
+          desc: "Ewolucyjne, modułowe wprowadzanie zmian, które odbywa się bez przerw w działaniu firmy i sprzedaży."
         }
       }
     ]
   },
   cta: {
-    title_part1: "Wdróż standard premium w swoim biznesie.",
-    title_highlight: "Zacznijmy bez ryzyka.",
-    subtitle: "Wybór odpowiedniego partnera to poważna decyzja finansowa. Zanim zainwestujesz swoje pieniądze w tworzenie aplikacji internetowych, powinieneś mieć absolutną pewność, że ten projekt się zwróci, a nie stanie się studnią bez dna.",
-    meeting_intro: "Nie podejmuj decyzji w ciemno. Zarezerwuj 30-minutową sesję techniczną, aby omówić wyzwania Twojego projektu i otrzymać profesjonalną diagnozę techniczną Twojej aplikacji.",
-    meeting_bullets_title: "Podczas tego konkretnego spotkania online:",
+    title_part1: "Przeanalizujmy potencjał technologiczny",
+    title_highlight: "Twojej firmy",
+    subtitle: "Wybór odpowiedniego partnera to poważna decyzja finansowa. Zanim zainwestujesz swoje pieniądze, powinieneś mieć absolutną pewność, że ten projekt się zwróci.",
+    meeting_intro: "Planujesz bezpieczne i zyskowne tworzenie aplikacji internetowych od podstaw, a może szukasz sposobu na przyspieszenie i zabezpieczenie obecnego systemu? Porozmawiajmy o konkretnych korzyściach dla Twojego biznesu.",
+    meeting_bullets_title: "Czego możesz oczekiwać od naszego spotkania?",
     bullets: [
-      { title: "Zlokalizujemy wąskie gardła Twojej aplikacji", desc: "Zidentyfikujemy miejsca, w których przestarzały kod, dług technologiczny lub błędy w strukturze systemu hamują Twoje procesy sprzedażowe i frustrują użytkowników – i zaproponujemy konkretną ścieżkę modernizacji." },
-      { title: "Zabezpieczymy Twój budżet", desc: "Pokażę Ci, jak mądrze zaplanować programowanie aplikacji internetowych, aby uniknąć kosztownych poprawek, opóźnień i przepalania gotówki typowego dla agencji." },
-      { title: "Stworzymy mapę drogową", desc: "Zobaczysz, jak czytelna i logiczna struktura aplikacji internetowych pozwoli zautomatyzować Twoją firmę, oszczędzić czas zespołu i zostawić konkurencję w tyle." }
+      { title: "Zlokalizujemy wąskie gardła", desc: "Zidentyfikujemy miejsca w Twoich obecnych procesach, które hamują sprzedaż i zjadają budżet." },
+      { title: "Dobierzemy strategię", desc: "Zaproponuję Ci optymalną, najszybszą ścieżkę modernizacji lub budowy MVP od podstaw." },
+      { title: "Zero ciśnienia sprzedażowego", desc: "Podchodzę do tego jak do sesji konsultingowej. Jeśli po rozmowie uznasz, że wolisz wdrożyć mój plan z kimś innym – masz do tego pełne prawo." }
     ],
-    guarantee: "Otrzymujesz ode mnie konkretny plan działania. Jeśli uznasz, że chcesz go zrealizować ze mną – świetnie. Jeśli nie – plan zatrzymujesz dla siebie i możesz go wdrożyć z kimkolwiek zechcesz. Żadnych haczyków.",
-    button: "Zarezerwuj bezpłatną konsultację"
+    button: "Umów 30-minutową sesję strategiczną"
   },
   footer: {
     col1: {
       name: "Karol Modelski",
       title: "Senior Frontend Developer",
-      description: "Przenoszę standardy wydajności i bezpieczeństwa klasy bankowej z rynków międzynarodowych do Twojego biznesu.",
-      contact: "kontakt@karolmodelski.pl"
+      description: "Strategiczne tworzenie aplikacji internetowych dla sektora MŚP. Dostarczam jakość i stabilność klasy Enterprise z pominięciem wielopoziomowych struktur zarządzania. Skalowalne oprogramowanie, które pracuje na Twój zysk."
     },
     col2: {
-      title: "Nawigacja",
-      links: [
-        { label: "Moja Historia", href: "#historia" },
-        { label: "Dlaczego Standard Premium", href: "#oferta" },
-        { label: "Porównanie", href: "#porownanie" },
-        { label: "Bezpłatna Sesja Planowania", href: "#kontakt" }
-      ]
+      title: "Kontakt",
+      address_street: "ul. Mieczysława Karłowicza 1 lok. 40",
+      address_city: "58-506 Jelenia Góra",
+      phone: "+48 664 598 563",
+      email: "kontakt@karolmodelski.pl"
     },
     col3: {
-      title: "Zakres",
-      description: "Profesjonalne tworzenie aplikacji internetowych, zaawansowane projektowanie aplikacji internetowych B2B/B2C oraz optymalizacja i rygorystyczne bezpieczeństwo aplikacji internetowych dla systemów finansowych i e-commerce."
+      title: "Nawigacja",
+      links: [
+        { label: "Tworzenie aplikacji i MVP", href: "#mvp" },
+        { label: "Modernizacja systemów w locie", href: "#modernizacja" },
+        { label: "Dlaczego Model Elite? (Różnice)", href: "#porownanie" },
+        { label: "Moja Historia", href: "#historia" },
+        { label: "Umów 30-minutową sesję techniczną", href: "https://calendly.com/kontakt-karolmodelski/30min", isCta: true }
+      ]
     },
     bottom: {
-      copyright: "© 2026 Karol Modelski | karolmodelski.pl",
-      nda: "Gwarancja Poufności NDA"
+      copyright: "© 2026 Karol Modelski. Wszelkie prawa zastrzeżone.",
+      nip: "6112800950",
+      regon: "383132957"
     }
   }
 };
