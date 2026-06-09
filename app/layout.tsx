@@ -16,17 +16,30 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Organization",
+      "@type": "ProfessionalService",
       "@id": "https://www.karolmodelski.pl/#organization",
-      "name": "Karol Modelski",
-      "url": "https://www.karolmodelski.pl"
+      "name": "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
+      "url": "https://www.karolmodelski.pl",
+      "telephone": "+48664598563",
+      "priceRange": "$$$", 
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Warszawa",
+        "addressCountry": "PL"
+      },
+      "sameAs": [
+        "https://g.page/r/CZSVfAGtTiIzEBM"
+      ],
+      "founder": {
+        "@id": "https://www.karolmodelski.pl/#person"
+      }
     },
     {
       "@type": "Person",
       "@id": "https://www.karolmodelski.pl/#person",
       "name": "Karol Modelski",
       "jobTitle": "Senior Frontend Developer",
-      "description": "Ekspert technologii frontendowych i budowy produktów cyfrowych (MVP Builder) z doświadczeniem projektowym w Citibanku, BNP Paribas, Amway oraz Silent Eight.",
+      "description": "Ekspert technologii frontendowych i budowy produktów cyfrowych (MVP Builder) z doświadczeniem projektowym m.in. w Citibanku, BNP Paribas oraz Silent Eight.",
       "worksFor": {
         "@id": "https://www.karolmodelski.pl/#organization"
       },
@@ -37,7 +50,8 @@ const jsonLd = {
         "Frontend Architecture",
         "MVP Development",
         "Web Security",
-        "Performance Optimization"
+        "Performance Optimization",
+        "Tworzenie Aplikacji Internetowych"
       ]
     },
     {
@@ -70,22 +84,22 @@ export const metadata: Metadata = {
     default: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
     template: "%s | Karol Modelski"
   },
-  description: "Chcesz szybko walidować pomysł? Oferuję tworzenie aplikacji internetowych i MVP w 30 dni bez kosztów agencji. Sprawdź, jak szybko wejdziesz na rynek!",
+  description: "Chcesz szybko walidować pomysł? Oferuję tworzenie aplikacji internetowych i MVP w 30 dni. Zyskaj stabilny system dzięki bezpośredniej współpracy z ekspertem.",
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
-    description: "Chcesz szybko walidować pomysł? Oferuję tworzenie aplikacji internetowych i MVP w 30 dni bez kosztów agencji.",
+    description: "Chcesz szybko walidować pomysł? Oferuję tworzenie aplikacji internetowych i MVP w 30 dni. Zyskaj stabilny system dzięki bezpośredniej współpracy z ekspertem.",
     url: 'https://www.karolmodelski.pl',
-    siteName: 'Karol Modelski - Tworzenie Aplikacji Internetowych',
+    siteName: 'Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa',
     locale: 'pl_PL',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
-    description: "Zbuduj niezawodny system bez długu technologicznego i korporacyjnej biurokracji.",
+    description: "Chcesz szybko walidować pomysł? Oferuję tworzenie aplikacji internetowych i MVP w 30 dni. Zyskaj stabilny system dzięki bezpośredniej współpracy z ekspertem.",
   },
 }
 

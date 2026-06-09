@@ -1,35 +1,40 @@
 export const content = {
   hero: {
     eyebrow: "Masz dość agencji, które palą Twój budżet na powolne systemy?",
-    h1_part1: "Elitarne tworzenie",
-    h1_part2: "aplikacji internetowych.",
-    h1_highlight: "Standard bankowy dla Twojego biznesu.",
-    subheading: "Zbuduj niezawodny, błyskawiczny system, który pracuje na Twoje zyski. Profesjonalne projektowanie aplikacji internetowych bez długu technologicznego, bez korporacyjnej biurokracji i w ułamku czasu tradycyjnych software house’ów.",
-    cta: "Zaplanuj darmową konsultację",
-    click_trigger: "100% darmowa konsultacja. Zero zobowiązań.",
+    h1_part1: "Strategiczne tworzenie",
+    h1_part2: "aplikacji internetowych,",
+    h1_highlight: "które skalują Twój biznes.",
+    subheading: "Zyskaj stabilność systemów bankowych i bezpośrednie partnerstwo z niezależnym ekspertem IT – bez przepalania budżetu na prowizje i pośredników z software house'ów.",
+    cta: "Porozmawiajmy o celach Twojej firmy",
+    click_trigger_part1: "100% darmowa konsultacja.",
+    click_trigger_part2: "Zero zobowiązań.",
     indicators: [
       { text: "Błyskawiczne ładowanie" },
       { text: "Bezpieczeństwo klasy bankowej" },
-      { text: "Zero korpo-biurokracji" }
+      { text: "Bezpośrednie partnerstwo" }
+    ],
+    ab_variants: [
+      {
+        name: "Bezpieczeństwo i ROI",
+        text: "Tworzenie aplikacji internetowych, które zarabiają – jakość klasy Enterprise dla MŚP."
+      },
+      {
+        name: "Szybkość (MVP)",
+        text: "Szybkie tworzenie aplikacji internetowych i MVP bez długu technologicznego."
+      },
+      {
+        name: "Partnerstwo",
+        text: "Profesjonalne tworzenie aplikacji internetowych. Twój niezależny partner technologiczny."
+      }
     ]
   },
   story: {
-    title_part1: "Jak przestałem budować korporacyjne potwory i zacząłem tworzyć",
-    title_highlight: "skalowalną przewagę biznesową",
-    intro_name: "Karol Modelski",
-    intro_text: "Przez ponad 7 lat w branży frontendowej tworzyłem systemy dla największych międzynarodowych banków i globalnych korporacji. W świecie, gdzie każdy błąd kosztuje miliony, nauczyłem się, że bezpieczeństwo aplikacji internetowych i wydajność to fundamenty, na których nie można oszczędzać.",
-    problem_title: "Pułapka \"ciężkich\" agencji",
-    problem_text: "Z czasem zauważyłem, że wiele dynamicznych firm zmaga się z problemem \"ciężkich\" agencji IT. Zamawiając tworzenie aplikacji internetowych, trafiasz do machiny, gdzie Twój projekt przechodzi przez dziesiątki rąk, a finalny produkt okazuje się wolny i pełen błędów. Właściciele biznesów płacą fortunę za procesy, które tylko opóźniają premierę produktu.",
-    epiphany: "Wtedy zrozumiałem, że mogę zrobić to lepiej.",
-    solution_text: "Postanowiłem przenieść standardy wydajności rodem z bankowości prosto do Twojego biznesu, ale w znacznie bardziej zwinnej formie. Jako specjalista od architektury aplikacji internetowych, nie oferuję tylko pisania kodu – dostarczam kompletne rozwiązanie biznesowe.",
-    benefits_title: "Co to oznacza dla Ciebie w praktyce?",
-    benefits: [
-      { title: "Płacisz za wynik, nie biurokrację", desc: "Współpracujesz bezpośrednio ze mną – specjalistą." },
-      { title: "Twoja aplikacja zarabia szybciej", desc: "Buduję systemy gotowe na rynek (Time-to-Market)." },
-      { title: "Inwestujesz w spokój", desc: "Solidny kod = brak kosztownych poprawek." },
-      { title: "Skalujesz bez hamulców", desc: "Architektura gotowa na 10x większy ruch." }
-    ],
-    commitment: "Moim celem nie jest napisanie 'ładnego kodu'. Moim celem jest zbudowanie cyfrowego narzędzia, które stanie się najsilniejszym filarem Twojej firmy."
+    title_part1: "Dlaczego większość projektów IT przepala budżet,",
+    title_highlight: "zanim w ogóle zacznie na siebie zarabiać?",
+    customer_perspective_tag: "Twoja perspektywa",
+    intro_text: "Jako właściciel firmy nie potrzebujesz po prostu „kolejnego programu” ani tysięcy linii skomplikowanego kodu, którego nikt w Twoim zespole nie rozumie. Potrzebujesz narzędzia, które automatyzuje procesy, zabezpiecza Twoje dane i przede wszystkim – generuje zysk.",
+    problem_title: "Tradycyjny model IT to ukryte koszty",
+    problem_text: "Współpraca z dużymi agencjami software house często oznacza opłacanie rozbudowanej struktury: handlowców, managerów i asystentów, co drastycznie podnosi koszty, nie wnosząc realnej wartości do samego produktu.\n\nCo gorsza, w tradycyjnym modelu IT rzadko kto pyta o Twoje cele sprzedażowe. Zwykły wykonawca skupia się wyłącznie na technologii – ja skupiam się na ścieżce Twojego klienta i zwrocie z inwestycji (ROI)."
   },
   offer: {
     title_part1: "Nie kupuj roboczogodzin. Zainwestuj w",
@@ -93,7 +98,7 @@ export const content = {
         },
         blue: {
           title: "Święty spokój i stabilność",
-          desc: "Nowoczesne i bezpieczne architektury aplikacji internetowych klasy bankowej. System działa niezawodnie, jest odporny na oszustwa i gotowy na nagły wzrost liczby klientów."
+          desc: "Nowoczesne i bezpieczne systemy internetowe klasy bankowej. System działa niezawodnie, jest odporny na oszustwa i gotowy na nagły wzrost liczby klientów."
         }
       }
     ]
@@ -102,10 +107,10 @@ export const content = {
     title_part1: "Wdróż standard premium w swoim biznesie.",
     title_highlight: "Zacznijmy bez ryzyka.",
     subtitle: "Wybór odpowiedniego partnera to poważna decyzja finansowa. Zanim zainwestujesz swoje pieniądze w tworzenie aplikacji internetowych, powinieneś mieć absolutną pewność, że ten projekt się zwróci, a nie stanie się studnią bez dna.",
-    meeting_intro: "Nie podejmuj decyzji w ciemno. Zarezerwuj 30-minutową sesję techniczną, aby omówić wyzwania Twojego projektu i otrzymać profesjonalną diagnozę architektury Twojej aplikacji.",
+    meeting_intro: "Nie podejmuj decyzji w ciemno. Zarezerwuj 30-minutową sesję techniczną, aby omówić wyzwania Twojego projektu i otrzymać profesjonalną diagnozę techniczną Twojej aplikacji.",
     meeting_bullets_title: "Podczas tego konkretnego spotkania online:",
     bullets: [
-      { title: "Zlokalizujemy wąskie gardła Twojej aplikacji", desc: "Zidentyfikujemy miejsca, w których przestarzały kod, dług technologiczny lub błędy w architekturze hamują Twoje procesy sprzedażowe i frustrują użytkowników – i zaproponujemy konkretną ścieżkę modernizacji." },
+      { title: "Zlokalizujemy wąskie gardła Twojej aplikacji", desc: "Zidentyfikujemy miejsca, w których przestarzały kod, dług technologiczny lub błędy w strukturze systemu hamują Twoje procesy sprzedażowe i frustrują użytkowników – i zaproponujemy konkretną ścieżkę modernizacji." },
       { title: "Zabezpieczymy Twój budżet", desc: "Pokażę Ci, jak mądrze zaplanować programowanie aplikacji internetowych, aby uniknąć kosztownych poprawek, opóźnień i przepalania gotówki typowego dla agencji." },
       { title: "Stworzymy mapę drogową", desc: "Zobaczysz, jak czytelna i logiczna struktura aplikacji internetowych pozwoli zautomatyzować Twoją firmę, oszczędzić czas zespołu i zostawić konkurencję w tyle." }
     ],
