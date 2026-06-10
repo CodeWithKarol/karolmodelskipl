@@ -1,15 +1,14 @@
 export const content = {
   hero: {
-    eyebrow: "Masz dość agencji, które palą Twój budżet na powolne systemy?",
-    h1_part1: "Strategiczne tworzenie",
-    h1_part2: "aplikacji internetowych,",
-    h1_highlight: "które skalują Twój biznes.",
-    subheading: "Zyskaj stabilność systemów bankowych i bezpośrednie partnerstwo z niezależnym ekspertem IT – bez przepalania budżetu na prowizje i pośredników z software house'ów.",
-    cta: "Porozmawiajmy o celach Twojej firmy",
-    click_trigger_part1: "100% darmowa konsultacja.",
-    click_trigger_part2: "Zero zobowiązań.",
+    h1_part1: "Strategiczne",
+    h1_part2: "tworzenie aplikacji internetowych,",
+    h1_highlight: "które skalują zyski i automatyzują procesy w Twojej firmie.",
+    subheading: "Dla właścicieli firm z sektora MŚP, którzy mają dość opłacania rozbudowanej struktury menedżerskiej w software house'ach. Zyskaj bezpośrednie wsparcie niezależnego Partnera Technologicznego i standardy bezpieczeństwa z globalnych banków – bez agencyjnych prowizji i ukrytych kosztów.",
+    cta: "Odbierz Bezpłatną Mapę Drogową Modernizacji IT",
+    click_trigger_part1: "Pakiet o wartości 600 zł.",
+    click_trigger_part2: "Dziś za 0 zł.",
     indicators: [
-      { text: "Błyskawiczne ładowanie" },
+      { text: "Brak ukrytych kosztów agencji" },
       { text: "Bezpieczeństwo klasy bankowej" },
       { text: "Bezpośrednie partnerstwo" }
     ],
@@ -29,16 +28,16 @@ export const content = {
     ]
   },
   story: {
-    title_part1: "Dlaczego większość projektów IT przepala budżet,",
-    title_highlight: "zanim w ogóle zacznie na siebie zarabiać?",
-    customer_perspective_tag: "Twoja perspektywa",
-    intro_text: "Jako właściciel firmy nie potrzebujesz po prostu „kolejnego programu” ani tysięcy linii skomplikowanego kodu, którego nikt w Twoim zespole nie rozumie. Potrzebujesz narzędzia, które automatyzuje procesy, zabezpiecza Twoje dane i przede wszystkim – generuje zysk.",
-    problem_title: "Tradycyjny model IT to ukryte koszty",
-    problem_text: "Współpraca z dużymi agencjami software house często oznacza opłacanie rozbudowanej struktury: handlowców, managerów i asystentów, co drastycznie podnosi koszty, nie wnosząc realnej wartości do samego produktu.\n\nCo gorsza, w tradycyjnym modelu IT rzadko kto pyta o Twoje cele sprzedażowe. Zwykły wykonawca skupia się wyłącznie na technologii – ja skupiam się na ścieżce Twojego klienta i zwrocie z inwestycji (ROI).",
-    paradigm_tag: "Twój Partner Strategiczny",
-    paradigm_title: "Bezpieczeństwo klasy korporacyjnej wdrożone bezpośrednio do Twojego biznesu",
-    paradigm_text_1: "Przez ponad 7 lat współtworzyłem systemy dla globalnych liderów sektora bankowego (w tym instytucji takich jak Citibank czy BNP Paribas) oraz wdrażałem zaawansowane rozwiązania oparte na sztucznej inteligencji. Te lata doświadczeń nauczyły mnie, jak projektować oprogramowanie, które nigdy nie zawodzi i bezbłędnie znosi obciążenia biznesowe.",
-    paradigm_text_2: "Dziś tę samą wiedzę, standardy bezpieczeństwa i bezkompromisową jakość dostarczam bezpośrednio małym i średnim firmom. Nie rozmawiam z Tobą językiem programistycznego bełkotu – rozmawiam językiem optymalizacji Twoich kosztów i uwalniania Twojego czasu. Zyskujesz partnera, który patrzy na oprogramowanie jak na silnik wzrostu Twojej firmy."
+    title_part1: "Dlaczego odszedłem z bankowości korporacyjnej,",
+    title_highlight: "aby pomagać mniejszym firmom?",
+    customer_perspective_tag: "Moja Historia",
+    intro_text: "Przez lata tworzyłem oprogramowanie, które zabezpiecza miliardy dolarów. Pracowałem dla gigantów – instytucji takich jak Citibank, BNP Paribas czy Silent Eight. Widziałem na własne oczy, jak rygorystyczne standardy bezpieczeństwa i wydajności chronią ogromne biznesy przed katastrofą.",
+    problem_title: "Dlaczego tradycyjny model IT to pułapka dla sektora MŚP?",
+    problem_text: "Większość dużych agencji IT kusi pięknymi prezentacjami, ale ostatecznie Twój projekt często trafia w ręce początkujących programistów, podczas gdy Ty płacisz za całą drabinkę pośredników – project managerów, accountów i zarząd.\n\nEfekt? Przepalony budżet, opóźnienia i skomplikowany kod, którego nikt nie rozumie.",
+    paradigm_tag: "Moja Misja",
+    paradigm_title: "System Enterprise dla każdego biznesu",
+    paradigm_text_1: "Jako Twój Niezależny Partner Technologiczny, proponuję inną drogę. Widziałem od środka, jak buduje się systemy odporne na błędy, które zabezpieczają miliardy. Widziałem też, jak mniejsze firmy tracą kapitał przez amatorskie wdrożenia. Postanowiłem przenieść ten rygor klasy enterprise wprost do Twojego biznesu. Bez głuchych telefonów i opłacania armii pośredników – pracujesz bezpośrednio ze mną.",
+    paradigm_text_2: "Co więcej, włączając do mojego procesu nowoczesne narzędzia sztucznej inteligencji, drastycznie przyspieszam każdą fazę pracy. Dzięki temu wdrażamy w pełni funkcjonalne MVP w zaledwie 30 dni – w czasie, gdy duże agencje dopiero kończą przygotowywać wyceny. Ty skupiasz się na sprzedaży i rozwoju, ja zabezpieczam technologię i pilnuję zwrotu z inwestycji (ROI)."
   },
   offer: {
     title_part1: "Jak wspólnie zbudujemy",
@@ -114,23 +113,23 @@ export const content = {
     ]
   },
   cta: {
-    title_part1: "Przeanalizujmy potencjał technologiczny",
-    title_highlight: "Twojej firmy",
-    subtitle: "Wybór odpowiedniego partnera to poważna decyzja finansowa. Zanim zainwestujesz swoje pieniądze, powinieneś mieć absolutną pewność, że ten projekt się zwróci.",
-    meeting_intro: "Planujesz bezpieczne i zyskowne tworzenie aplikacji internetowych od podstaw, a może szukasz sposobu na przyspieszenie i zabezpieczenie obecnego systemu? Porozmawiajmy o konkretnych korzyściach dla Twojego biznesu.",
-    meeting_bullets_title: "Czego możesz oczekiwać od naszego spotkania?",
+    title_part1: "Zanim zainwestujesz złotówkę w kod,",
+    title_highlight: "miej pewność, że to się opłaci.",
+    subtitle: "Zamiast standardowej rozmowy handlowej, przygotowałem dla Ciebie konkretny proces analityczny. Zarezerwuj termin i odbierz:",
+    meeting_intro: "Wypełnij krótki formularz, wybierz termin i zgarnij darmowy pakiet doradczy. Co dokładnie otrzymasz po naszym spotkaniu?",
+    meeting_bullets_title: "Bezpłatna Mapa Drogowa Modernizacji IT (Wartość: 600 zł)",
     bullets: [
-      { title: "Zlokalizujemy wąskie gardła", desc: "Zidentyfikujemy miejsca w Twoich obecnych procesach, które hamują sprzedaż i zjadają budżet." },
-      { title: "Dobierzemy strategię", desc: "Zaproponuję Ci optymalną, najszybszą ścieżkę modernizacji lub budowy MVP od podstaw." },
-      { title: "Zero ciśnienia sprzedażowego", desc: "Podchodzę do tego jak do sesji konsultingowej. Jeśli po rozmowie uznasz, że wolisz wdrożyć mój plan z kimś innym – masz do tego pełne prawo." }
+      { title: "30-minutowa diagnoza online", desc: "Zlokalizujemy wąskie gardła, które blokują Twoją sprzedaż i pożerają budżet (Wartość: 300 zł)" },
+      { title: "Indywidualny Plan Działania", desc: "Otrzymasz najszybszą ścieżkę budowy aplikacji lub walidacji MVP w 30 dni (Wartość: 200 zł)" },
+      { title: "Enterprise Security Checklist dla MŚP", desc: "Weryfikacja Twoich pomysłów pod kątem rygorystycznych standardów bankowych (Wartość: 100 zł)" }
     ],
-    button: "Umów 30-minutową sesję strategiczną"
+    button: "Odbierz Pakiet o Wartości 600 zł za Darmo"
   },
   footer: {
     col1: {
       name: "Karol Modelski",
-      title: "Senior Frontend Developer",
-      description: "Strategiczne tworzenie aplikacji internetowych dla sektora MŚP. Dostarczam jakość i stabilność klasy Enterprise z pominięciem wielopoziomowych struktur zarządzania. Skalowalne oprogramowanie, które pracuje na Twój zysk."
+      title: "Niezależny Partner Technologiczny",
+      description: "Strategiczne tworzenie aplikacji internetowych dla sektora MŚP. Biorę pełną odpowiedzialność za stabilność i bezpieczeństwo Twoich systemów. Ty skupiasz się na sprzedaży, ja zabezpieczam technologię."
     },
     col2: {
       title: "Kontakt",
@@ -140,13 +139,9 @@ export const content = {
       email: "kontakt@karolmodelski.pl"
     },
     col3: {
-      title: "Nawigacja",
+      title: "Następny Krok",
       links: [
-        { label: "Tworzenie aplikacji i MVP", href: "#mvp" },
-        { label: "Modernizacja systemów w locie", href: "#modernizacja" },
-        { label: "Dlaczego Model Elite? (Różnice)", href: "#porownanie" },
-        { label: "Moja Historia", href: "#historia" },
-        { label: "Umów 30-minutową sesję techniczną", href: "https://calendly.com/kontakt-karolmodelski/30min", isCta: true }
+        { label: "Odbierz Mapę Drogową IT", href: "#kontakt", isCta: true }
       ]
     },
     bottom: {

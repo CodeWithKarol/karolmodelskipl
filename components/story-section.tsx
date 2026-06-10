@@ -1,4 +1,4 @@
-import { BadgeAlert, Target, ShieldCheck, Zap } from "lucide-react"
+import { Building2, Flame, Lightbulb, ShieldCheck, ArrowRight } from "lucide-react"
 import { content } from "@/lib/content"
 
 export function StorySection() {
@@ -13,62 +13,56 @@ export function StorySection() {
   const problemParagraphs = story.problem_text.split('\n\n');
 
   return (
-    <section id="historia" className="relative py-16 md:py-32 bg-slate-950 text-slate-300 border-t border-slate-900/50 overflow-hidden">
+    <section id="historia" className="relative py-20 md:py-32 bg-slate-950 text-slate-300 border-t border-slate-900/50 overflow-hidden">
+      {/* Delikatne Tło */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-slate-900/40 via-slate-950 to-slate-950"></div>
 
       <div className="container relative z-10 mx-auto px-4 max-w-6xl">
         
-        <div className="text-center max-w-4xl mx-auto mb-10 md:mb-24">
+        {/* Główny Nagłówek Sekcji */}
+        <div className="text-center max-w-4xl mx-auto mb-16 md:mb-24">
           <h2 className="text-[1.75rem] sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.15] sm:leading-[1.1] tracking-tight text-balance">
             {story.title_part1}{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
               {story.title_highlight}
             </span>
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+        {/* CZĘŚĆ 1: KONTRAST (Świat Korporacji vs Problem Rynku) */}
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-10 max-w-5xl mx-auto items-stretch">
           
-          {/* Lewa kolumna: Perspektywa klienta */}
-          <div className="space-y-5 sm:space-y-6 md:pr-8">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs sm:text-sm font-medium mb-1 sm:mb-2">
-              <Target className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-              <span>{story.customer_perspective_tag}</span>
+          {/* Karta 1: Moja Historia (Backstory) */}
+          <div className="bg-slate-900/60 border border-slate-800 rounded-[2rem] p-8 sm:p-10 relative overflow-hidden group hover:border-blue-500/30 transition-colors">
+            <div className="absolute top-0 right-0 w-48 h-48 bg-blue-500/10 blur-[80px] rounded-full pointer-events-none transition-opacity group-hover:opacity-100 opacity-60"></div>
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs sm:text-sm font-medium mb-6 sm:mb-8">
+                <Building2 className="w-4 h-4" />
+                <span>{story.customer_perspective_tag}</span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-white leading-snug mb-5">
+                {firstIntroSentence}
+              </h3>
+              <p className="text-base sm:text-lg text-slate-400 leading-relaxed font-light">
+                {restIntroText}
+              </p>
             </div>
-            
-            <h3 className="text-xl sm:text-3xl font-semibold text-slate-100 leading-snug">
-              {firstIntroSentence}
-            </h3>
-            
-            <p className="text-base sm:text-lg md:text-xl text-slate-400 leading-relaxed font-light">
-              {restIntroText}
-            </p>
           </div>
 
-          {/* Prawa kolumna: Karta problemu tradycyjnego IT */}
-          <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-red-500/20 to-orange-500/20 rounded-3xl blur-lg transition-all duration-500 group-hover:from-red-500/30 group-hover:to-orange-500/30"></div>
-            <div className="bg-slate-900 border border-slate-800 rounded-[1.5rem] p-6 sm:p-10 relative overflow-hidden shadow-2xl">
-              
-              <div className="absolute top-0 right-0 p-6 sm:p-8 opacity-5">
-                <BadgeAlert className="w-24 h-24 sm:w-32 sm:h-32" />
+          {/* Karta 2: Mroczny Sekret (Problem) */}
+          <div className="bg-gradient-to-b from-red-950/20 to-slate-900/60 border border-red-900/30 rounded-[2rem] p-8 sm:p-10 relative overflow-hidden group hover:border-red-500/30 transition-colors">
+            <div className="absolute top-0 right-0 w-48 h-48 bg-red-500/10 blur-[80px] rounded-full pointer-events-none transition-opacity group-hover:opacity-100 opacity-60"></div>
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-xs sm:text-sm font-medium mb-6 sm:mb-8">
+                <Flame className="w-4 h-4" />
+                <span>Mroczny Sekret Branży</span>
               </div>
-
-              <div className="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-8 relative">
-                <div className="p-2.5 sm:p-3 bg-red-500/10 border border-red-500/20 rounded-xl sm:rounded-2xl shrink-0">
-                  <BadgeAlert className="w-5 h-5 sm:w-7 sm:h-7 text-red-400" />
-                </div>
-                <h3 className="text-[1.1rem] sm:text-2xl font-bold text-white leading-snug">
-                  {story.problem_title}
-                </h3>
-              </div>
-              
-              <div className="space-y-4 sm:space-y-6 relative text-slate-300">
+              <h3 className="text-xl sm:text-2xl font-bold text-white leading-snug mb-5">
+                {story.problem_title}
+              </h3>
+              <div className="space-y-4 text-base sm:text-lg text-slate-400 leading-relaxed font-light">
                 {problemParagraphs.map((paragraph, idx) => (
-                  <p 
-                    key={idx} 
-                    className={`leading-relaxed text-[15px] sm:text-lg ${idx === problemParagraphs.length - 1 ? "text-slate-200 font-medium border-l-2 border-red-500/50 pl-4" : ""}`}
-                  >
+                  <p key={idx} className={idx === problemParagraphs.length - 1 ? "text-slate-300 font-medium" : ""}>
                     {paragraph}
                   </p>
                 ))}
@@ -78,42 +72,51 @@ export function StorySection() {
 
         </div>
 
-        {/* Nowy Paradygmat: Twój Partner Strategiczny */}
-        <div className="mt-16 md:mt-24 pt-16 md:pt-24 border-t border-slate-800/50">
-          <div className="grid md:grid-cols-12 gap-8 md:gap-16 items-start">
-            <div className="md:col-span-5 md:sticky md:top-24">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs sm:text-sm font-medium mb-4 sm:mb-6">
-                <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                <span>{story.paradigm_tag}</span>
-              </div>
-              <h2 className="text-[1.5rem] sm:text-3xl md:text-4xl font-bold text-white leading-tight text-balance">
-                {story.paradigm_title}
-              </h2>
-            </div>
+        {/* CZĘŚĆ 2: OLŚNIENIE I MISJA (Rozwiązanie / The Shift) */}
+        <div className="mt-16 md:mt-24 max-w-5xl mx-auto">
+          <div className="relative group">
+            {/* Tło i poświata pod kartą */}
+            <div className="absolute -inset-1 bg-gradient-to-r from-blue-600/20 via-emerald-500/20 to-blue-600/20 rounded-[2.5rem] blur-xl opacity-50 group-hover:opacity-70 transition duration-500"></div>
             
-            <div className="md:col-span-7 space-y-6 sm:space-y-8 relative">
-              <div className="absolute -left-4 sm:-left-8 top-0 bottom-0 w-px bg-gradient-to-b from-blue-500/50 to-transparent hidden md:block"></div>
-              
-              <div className="relative">
-                <div className="absolute -left-5 sm:-left-[37px] top-1 hidden md:flex w-5 h-5 rounded-full bg-blue-500/20 border-2 border-blue-500 items-center justify-center">
-                  <div className="w-1.5 h-1.5 rounded-full bg-blue-400"></div>
-                </div>
-                <p className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed">
-                  {story.paradigm_text_1}
-                </p>
-              </div>
+            <div className="bg-slate-900 border border-slate-700/50 rounded-[1.5rem] sm:rounded-[2rem] p-6 sm:p-10 md:p-14 relative overflow-hidden shadow-2xl backdrop-blur-sm">
+              {/* Grid pattern */}
+              <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f1a_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f1a_1px,transparent_1px)] bg-[size:24px_24px] opacity-20"></div>
 
-              <div className="relative">
-                <div className="absolute -left-5 sm:-left-[37px] top-1 hidden md:flex w-5 h-5 rounded-full bg-emerald-500/20 border-2 border-emerald-500 items-center justify-center">
-                  <Zap className="w-2.5 h-2.5 text-emerald-400" />
+              <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 items-start relative z-10">
+                
+                {/* Lewa strona dużej karty */}
+                <div className="lg:col-span-5 text-center lg:text-left lg:sticky lg:top-10">
+                  <div className="inline-flex items-center justify-center lg:justify-start gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs sm:text-sm font-medium mb-4 sm:mb-6 mx-auto lg:mx-0 flex-shrink-0">
+                    <Lightbulb className="w-4 h-4" />
+                    <span>{story.paradigm_tag}</span>
+                  </div>
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-[1.2] lg:leading-[1.15] text-balance max-w-2xl mx-auto lg:mx-0">
+                    {story.paradigm_title}
+                  </h2>
                 </div>
-                <div className="bg-slate-900/40 border border-slate-800 rounded-2xl p-5 sm:p-8">
-                  <p className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed">
-                    {story.paradigm_text_2}
-                  </p>
-                </div>
-              </div>
 
+                {/* Prawa strona dużej karty */}
+                <div className="lg:col-span-7 space-y-6 sm:space-y-8 lg:space-y-10 mt-2 lg:mt-0">
+                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 lg:gap-6 items-center sm:items-start">
+                    <div className="p-3 bg-blue-500/10 border border-blue-500/20 rounded-xl shrink-0 sm:mt-1 hidden sm:block">
+                      <ShieldCheck className="w-6 h-6 lg:w-7 lg:h-7 text-blue-400" />
+                    </div>
+                    <p className="text-[15px] sm:text-lg lg:text-xl text-slate-300 leading-[1.6] lg:leading-[1.7] text-center sm:text-left">
+                      {story.paradigm_text_1}
+                    </p>
+                  </div>
+
+                  <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 lg:gap-6 items-center sm:items-start bg-slate-950/60 border border-slate-800/80 p-5 sm:p-6 lg:p-8 rounded-2xl sm:rounded-[1.5rem] shadow-inner">
+                    <div className="p-2.5 bg-emerald-500/10 border border-emerald-500/20 rounded-xl shrink-0 sm:mt-1 hidden sm:block">
+                      <ArrowRight className="w-5 h-5 lg:w-6 lg:h-6 text-emerald-400" />
+                    </div>
+                    <p className="text-[15px] sm:text-lg lg:text-xl text-slate-200 font-medium leading-[1.6] lg:leading-[1.7] text-center sm:text-left">
+                      {story.paradigm_text_2}
+                    </p>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
