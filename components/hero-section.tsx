@@ -14,26 +14,26 @@ export function HeroSection() {
       {/* Delikatny grid technologiczny */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_60%,transparent_100%)] opacity-30"></div>
 
-      <div className="container relative z-10 mx-auto px-4 pt-24 pb-16 md:py-32 max-w-7xl">
-        <div className="flex flex-col items-center text-center max-w-5xl mx-auto space-y-6 sm:space-y-8 md:space-y-10">
+      <div className="container relative z-10 mx-auto px-4 pt-12 md:pt-16 lg:pt-20 pb-12 max-w-7xl">
+        <div className="flex flex-col items-center text-center max-w-5xl mx-auto space-y-5 sm:space-y-6 md:space-y-8">
           
           {/* Główny Nagłówek - Skupiony na strategicznej budowie i skalowaniu */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold tracking-tight text-white leading-[1.1] sm:leading-[1.05] text-balance">
+          <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-[4.5rem] font-extrabold tracking-tight text-white leading-[1.1] sm:leading-[1.05] text-balance">
             <span className="opacity-90">{hero.h1_part1}</span>
             <br className="hidden sm:block" />
             <span className="opacity-90"> {hero.h1_part2} </span>
-            <span className="block mt-2 sm:mt-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-400 animate-gradient-x pb-2">
+            <span className="block mt-1 sm:mt-2 lg:mt-3 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-400 animate-gradient-x pb-1">
               {hero.h1_highlight}
             </span>
           </h1>
           
           {/* Podnagłówek - Wyjaśniający natychmiast wartość */}
-          <p className="text-[15px] sm:text-base md:text-xl lg:text-2xl leading-relaxed text-slate-300 text-balance max-w-3xl font-light">
+          <p className="text-[15px] sm:text-base md:text-lg lg:text-xl xl:text-[1.3rem] leading-relaxed xl:leading-[1.5] text-slate-300 text-balance max-w-3xl xl:max-w-4xl font-light">
             {hero.subheading}
           </p>
           
           {/* Przyciski i Call To Action */}
-          <div className="w-full sm:max-w-lg md:max-w-xl mx-auto pt-4 md:pt-8 flex flex-col items-center space-y-4">
+          <div className="w-full sm:max-w-lg md:max-w-xl xl:max-w-2xl mx-auto pt-1 md:pt-2 xl:pt-4 flex flex-col items-center space-y-3">
             <a 
               href="#kontakt" 
               className="w-full group"
@@ -42,15 +42,15 @@ export function HeroSection() {
                 <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500 group-hover:duration-200"></div>
                 <Button 
                   size="lg" 
-                  className="relative w-full h-auto min-h-[3.5rem] sm:min-h-[4rem] py-4 text-[15px] sm:text-[17px] md:text-lg font-bold bg-blue-600 hover:bg-blue-500 text-white rounded-2xl shadow-xl transition-all flex flex-row items-center justify-center gap-2.5 sm:gap-3 border border-blue-400/20 whitespace-normal sm:whitespace-nowrap text-center leading-snug px-5 sm:px-8"
+                  className="relative w-full h-auto min-h-[3.5rem] sm:min-h-[4rem] xl:min-h-[4rem] py-3.5 text-[15px] sm:text-[17px] md:text-lg xl:text-[19px] font-bold bg-blue-600 hover:bg-blue-500 text-white rounded-2xl shadow-xl transition-all flex flex-row items-center justify-center gap-2.5 sm:gap-3 xl:gap-4 border border-blue-400/20 whitespace-normal sm:whitespace-nowrap text-center leading-snug px-5 sm:px-8"
                 >
                   <span className="flex-1 sm:flex-none text-center">{hero.cta}</span>
-                  <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 shrink-0 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 xl:h-6 xl:w-6 shrink-0 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
             </a>
             
-            <p className="text-xs sm:text-sm text-slate-500 font-medium tracking-wide flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 mt-3 sm:mt-2 text-center">
+            <p className="text-[11px] sm:text-xs xl:text-sm text-slate-500 font-medium tracking-wide flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 mt-1 text-center">
               <span className="flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-emerald-400/80 shrink-0" />
                 {hero.click_trigger_part1}
@@ -61,14 +61,14 @@ export function HeroSection() {
           </div>
           
           {/* Wskaźniki Wartości / Trust signals z nową ikoną Handshake */}
-          <div className="mt-10 md:mt-24 pt-6 sm:pt-8 border-t border-slate-800/80 w-full max-w-4xl mx-auto">
-            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-8">
+          <div className="mt-6 md:mt-10 xl:mt-14 pt-5 sm:pt-6 border-t border-slate-800/80 w-full max-w-4xl xl:max-w-5xl mx-auto">
+            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-3 sm:gap-6 xl:gap-10">
               {hero.indicators.map((ind, i) => {
                 const Icon = i === 0 ? Zap : i === 1 ? ShieldCheck : Handshake;
                 return (
-                  <div key={i} className="flex items-center justify-center sm:justify-start gap-2 sm:gap-3 text-slate-300 bg-slate-900/50 sm:bg-transparent border border-slate-800/60 sm:border-none rounded-2xl sm:rounded-full w-full sm:w-auto px-4 py-3 sm:p-0">
-                    <Icon className="h-4 w-4 sm:h-5 sm:w-6 text-blue-400 shrink-0" />
-                    <span className="text-[14px] sm:text-base font-medium">{ind.text}</span>
+                  <div key={i} className="flex items-center justify-center sm:justify-start gap-2 sm:gap-3 text-slate-300 bg-slate-900/50 sm:bg-transparent border border-slate-800/60 sm:border-none rounded-2xl sm:rounded-full w-full sm:w-auto px-4 py-2.5 sm:p-0">
+                    <Icon className="h-4 w-4 sm:h-5 sm:w-5 xl:w-6 xl:h-6 text-blue-400 shrink-0" />
+                    <span className="text-[13px] sm:text-[15px] xl:text-base font-medium">{ind.text}</span>
                   </div>
                 );
               })}
