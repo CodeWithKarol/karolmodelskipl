@@ -21,7 +21,7 @@ const jsonLd = {
       "name": "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
       "url": "https://www.karolmodelski.pl",
       "telephone": "+48664598563",
-      "priceRange": "$$$", 
+      "areaServed": "PL",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Warszawa",
@@ -38,7 +38,7 @@ const jsonLd = {
       "@type": "Person",
       "@id": "https://www.karolmodelski.pl/#person",
       "name": "Karol Modelski",
-      "jobTitle": "Senior Frontend Developer",
+      "jobTitle": "Niezależny Partner Technologiczny",
       "description": "Ekspert technologii frontendowych i budowy produktów cyfrowych (MVP Builder) z doświadczeniem projektowym m.in. w Citibanku, BNP Paribas oraz Silent Eight.",
       "worksFor": {
         "@id": "https://www.karolmodelski.pl/#organization"
@@ -47,10 +47,10 @@ const jsonLd = {
         "https://www.linkedin.com/in/karol-modelski/"
       ],
       "knowsAbout": [
-        "Frontend Architecture",
-        "MVP Development",
-        "Web Security",
-        "Performance Optimization",
+        "Architektura Frontendowa",
+        "Tworzenie MVP",
+        "Optymalizacja Wydajności",
+        "Bezpieczeństwo Aplikacji",
         "Tworzenie Aplikacji Internetowych"
       ]
     },
@@ -58,7 +58,7 @@ const jsonLd = {
       "@type": "WebSite",
       "@id": "https://www.karolmodelski.pl/#website",
       "url": "https://www.karolmodelski.pl",
-      "name": "Karol Modelski - Frontend Developer",
+      "name": "Karol Modelski - Niezależny Partner Technologiczny",
       "publisher": {
         "@id": "https://www.karolmodelski.pl/#organization"
       }
@@ -84,13 +84,13 @@ export const metadata: Metadata = {
     default: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
     template: "%s | Karol Modelski"
   },
-  description: "Chcesz szybko walidować pomysł? Oferuję tworzenie aplikacji internetowych i MVP w 30 dni. Zyskaj stabilny system dzięki bezpośredniej współpracy z ekspertem.",
+  description: "Twój pomysł na biznes nie może czekać na powolne agencje. Waliduję i wdrażam rynkowe MVP w 30 dni, biorąc pełną odpowiedzialność za architekturę i stabilność systemu.",
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
-    description: "Chcesz szybko walidować pomysł? Oferuję tworzenie aplikacji internetowych i MVP w 30 dni. Zyskaj stabilny system dzięki bezpośredniej współpracy z ekspertem.",
+    description: "Twój pomysł na biznes nie może czekać na powolne agencje. Waliduję i wdrażam rynkowe MVP w 30 dni, biorąc pełną odpowiedzialność za architekturę i stabilność systemu.",
     url: 'https://www.karolmodelski.pl',
     siteName: 'Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa',
     locale: 'pl_PL',
@@ -99,7 +99,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
-    description: "Chcesz szybko walidować pomysł? Oferuję tworzenie aplikacji internetowych i MVP w 30 dni. Zyskaj stabilny system dzięki bezpośredniej współpracy z ekspertem.",
+    description: "Twój pomysł na biznes nie może czekać na powolne agencje. Waliduję i wdrażam rynkowe MVP w 30 dni, biorąc pełną odpowiedzialność za architekturę i stabilność systemu.",
   },
 }
 
@@ -109,11 +109,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html
+      <html
       lang="pl"
       suppressHydrationWarning
       className={cn(
-        "antialiased",
+        "antialiased scroll-smooth",
         fontMono.variable,
         "font-sans",
         inter.variable

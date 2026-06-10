@@ -85,8 +85,6 @@ export function Footer() {
                   <div key={idx} className="pt-2">
                     <a 
                       href={link.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="inline-flex items-center text-sm font-bold text-blue-400 bg-blue-500/10 border border-blue-500/30 hover:border-blue-400 hover:bg-blue-500/20 py-3 px-5 rounded-xl transition-all w-fit shadow-sm"
                     >
                       {link.label}
