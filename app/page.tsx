@@ -4,7 +4,6 @@ import { StorySection } from "@/components/story-section"
 import { OfferSection } from "@/components/offer-section"
 import { ContrastSection } from "@/components/contrast-section"
 import { CtaSection } from "@/components/cta-section"
-import { Footer } from "@/components/footer"
 
 export default function Page() {
   return (
@@ -15,7 +14,6 @@ export default function Page() {
       <OfferSection />
       <ContrastSection />
       <CtaSection />
-      <Footer />
     </main>
   )
 }
