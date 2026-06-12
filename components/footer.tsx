@@ -14,7 +14,7 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-16">
           
           {/* Kolumna 1: Krótkie podsumowanie marki (UVP) */}
-          <div className="lg:col-span-5 space-y-5">
+          <div className="lg:col-span-4 xl:col-span-5 space-y-5">
             <h3 className="text-white text-xl font-bold tracking-tight flex items-center gap-3">
               <span className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-base font-black shadow-[0_0_20px_-5px_rgba(59,130,246,0.5)] border border-blue-400/20">
                 KM
@@ -24,13 +24,13 @@ export function Footer() {
             <p className="font-bold text-blue-400 text-[13px] tracking-[0.1em] uppercase">
               {footer.col1.title}
             </p>
-            <p className="text-sm sm:text-[15px] leading-relaxed text-slate-400 max-w-md font-light">
+            <p className="text-sm sm:text-[15px] leading-relaxed text-slate-300 max-w-md font-light">
               {footer.col1.description}
             </p>
           </div>
 
           {/* Kolumna 2: Dane kontaktowe i NAP (Local SEO) */}
-          <div className="lg:col-span-3 space-y-6">
+          <div className="lg:col-span-4 xl:col-span-3 space-y-6">
             <h3 className="text-white text-base sm:text-lg font-bold tracking-tight">{footer.col2.title}</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
@@ -77,7 +77,7 @@ export function Footer() {
           </div>
 
           {/* Kolumna 3: Szybka nawigacja i mikro-CTA */}
-          <div className="lg:col-span-4 space-y-6">
+          <div className="lg:col-span-4 xl:col-span-4 space-y-6">
             <h3 className="text-white text-base sm:text-lg font-bold tracking-tight">{footer.col3.title}</h3>
             <nav className="flex flex-col space-y-3.5">
               {footer.col3.links.map((link, idx) => (
@@ -107,7 +107,7 @@ export function Footer() {
         </div>
 
         {/* Dolny pasek: Wiarygodność B2B i kwestie prawne */}
-        <div className="mt-16 sm:mt-20 pt-8 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between gap-6 text-[13px] text-slate-500">
+        <div className="mt-16 sm:mt-20 pt-8 border-t border-slate-800 flex flex-col lg:flex-row items-center justify-between gap-6 text-[13px] text-slate-400">
           <div className="text-center lg:text-left">
             <p>{footer.bottom.copyright}</p>
           </div>

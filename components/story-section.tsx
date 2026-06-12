@@ -33,34 +33,34 @@ export function StorySection() {
         <div className="grid lg:grid-cols-2 gap-8 md:gap-10 max-w-5xl mx-auto items-stretch">
           
           {/* Karta 1: Moja Historia (Backstory) */}
-          <div className="bg-slate-900/60 border border-slate-800 rounded-[2rem] p-8 sm:p-10 relative overflow-hidden group hover:border-blue-500/30 transition-colors">
+          <div className="bg-slate-900/60 border border-slate-800 rounded-3xl p-7 sm:p-10 relative overflow-hidden group hover:border-blue-500/30 transition-colors">
             <div className="absolute top-0 right-0 w-48 h-48 bg-blue-500/10 blur-[80px] rounded-full pointer-events-none transition-opacity group-hover:opacity-100 opacity-60"></div>
             <div className="relative z-10">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs sm:text-sm font-medium mb-6 sm:mb-8">
                 <Building2 className="w-4 h-4" />
                 <span>{story.customer_perspective_tag}</span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white leading-snug mb-5">
+              <h3 className="text-xl sm:text-2xl lg:text-[1.35rem] font-bold text-white leading-snug mb-5 text-balance">
                 {firstIntroSentence}
               </h3>
-              <p className="text-base sm:text-lg text-slate-400 leading-relaxed font-light">
+              <p className="text-[15px] sm:text-lg text-slate-400 leading-relaxed font-light">
                 {restIntroText}
               </p>
             </div>
           </div>
 
           {/* Karta 2: Mroczny Sekret (Problem) */}
-          <div className="bg-gradient-to-b from-red-950/20 to-slate-900/60 border border-red-900/30 rounded-[2rem] p-8 sm:p-10 relative overflow-hidden group hover:border-red-500/30 transition-colors">
+          <div className="bg-gradient-to-b from-red-950/20 to-slate-900/60 border border-red-900/30 rounded-3xl p-7 sm:p-10 relative overflow-hidden group hover:border-red-500/30 transition-colors">
             <div className="absolute top-0 right-0 w-48 h-48 bg-red-500/10 blur-[80px] rounded-full pointer-events-none transition-opacity group-hover:opacity-100 opacity-60"></div>
             <div className="relative z-10">
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-xs sm:text-sm font-medium mb-6 sm:mb-8">
                 <Flame className="w-4 h-4" />
                 <span>Mroczny Sekret Branży</span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-white leading-snug mb-5">
+              <h3 className="text-xl sm:text-2xl lg:text-[1.35rem] font-bold text-white leading-snug mb-5 text-balance">
                 {story.problem_title}
               </h3>
-              <div className="space-y-4 text-base sm:text-lg text-slate-400 leading-relaxed font-light">
+              <div className="space-y-4 text-[15px] sm:text-lg text-slate-400 leading-relaxed font-light">
                 {problemParagraphs.map((paragraph, idx) => (
                   <p key={idx} className={idx === problemParagraphs.length - 1 ? "text-slate-300 font-medium" : ""}>
                     {paragraph}
