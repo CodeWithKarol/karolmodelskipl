@@ -20,11 +20,11 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     return {};
   }
 
-  return {
+    return {
     title: post.title,
     description: post.excerpt,
     alternates: {
-      canonical: `https://karolmodelski.pl/blog/${post.slug}`,
+      canonical: `https://www.karolmodelski.pl/blog/${post.slug}`,
     },
   };
 }
@@ -42,26 +42,26 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
     "@graph": [
       {
         "@type": "TechArticle",
-        "@id": `https://karolmodelski.pl/blog/${post.slug}/#article`,
+        "@id": `https://www.karolmodelski.pl/blog/${post.slug}/#article`,
         "isPartOf": {
           "@type": "WebPage",
-          "@id": `https://karolmodelski.pl/blog/${post.slug}/#webpage`,
-          "url": `https://karolmodelski.pl/blog/${post.slug}`,
+          "@id": `https://www.karolmodelski.pl/blog/${post.slug}/#webpage`,
+          "url": `https://www.karolmodelski.pl/blog/${post.slug}`,
           "name": `${post.title} | Blog Karol Modelski`
         },
         "headline": post.title,
         "description": post.excerpt,
         "inLanguage": "pl-PL",
-        "mainEntityOfPage": `https://karolmodelski.pl/blog/${post.slug}`,
+        "mainEntityOfPage": `https://www.karolmodelski.pl/blog/${post.slug}`,
         "author": {
           "@type": "Person",
-          "@id": "https://karolmodelski.pl/#person",
+          "@id": "https://www.karolmodelski.pl/#person",
           "name": "Karol Modelski",
-          "url": "https://karolmodelski.pl"
+          "url": "https://www.karolmodelski.pl"
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://karolmodelski.pl/#business"
+          "@id": "https://www.karolmodelski.pl/#business"
         },
         "datePublished": post.date
       }
