@@ -15,7 +15,7 @@ export const footer = {
     title: "Następny Krok",
     links: [
       { label: "Baza wiedzy (Blog)", href: "/blog", isCta: false },
-      { label: "Odbierz Mapę Drogową IT", href: "https://karolmodelski.pl/#kontakt", isCta: true }
+      { label: "Odbierz Mapę Drogową IT", href: "https://www.karolmodelski.pl/#kontakt", isCta: true }
     ]
   },
   bottom: {

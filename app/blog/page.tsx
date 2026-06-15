@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Blog | Tworzenie aplikacji internetowych dla MŚP",
   description: "Jak tworzyć aplikacje internetowe dla firm bez długu IT i kosztów agencji? Poznaj standardy enterprise i odbierz Bezpłatną Mapę Drogową Modernizacji IT.",
   alternates: {
-    canonical: "https://karolmodelski.pl/blog",
+    canonical: "https://www.karolmodelski.pl/blog",
   },
 };
 
@@ -18,13 +18,13 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "CollectionPage",
-      "@id": "https://karolmodelski.pl/blog/#collectionpage",
-      "url": "https://karolmodelski.pl/blog",
+      "@id": "https://www.karolmodelski.pl/blog/#collectionpage",
+      "url": "https://www.karolmodelski.pl/blog",
       "name": "Tworzenie aplikacji internetowych dla MŚP | Blog Karol Modelski",
       "description": "Baza wiedzy i poradniki technologiczne dla sektora MŚP. Dowiedz się, jak projektować stabilne systemy webowe i unikać długu technologicznego.",
       "isPartOf": {
         "@type": "WebSite",
-        "@id": "https://karolmodelski.pl/#website"
+        "@id": "https://www.karolmodelski.pl/#website"
       }
     }
   ]
@@ -153,7 +153,7 @@ export default function BlogHubPage() {
               <p className="mb-4 text-base sm:text-lg font-bold text-white">
                 <span className="text-emerald-400">0 zł</span> <span className="text-xs font-normal text-slate-500 line-through ml-2">(Zamiast {blog.offer.value_total})</span>
               </p>
-              <Link href="https://karolmodelski.pl/#kontakt" className="inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-500 text-white font-bold h-11 rounded-lg border border-blue-400/20 shadow-lg transition-colors text-sm">
+              <Link href="https://www.karolmodelski.pl/#kontakt" className="inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-500 text-white font-bold h-11 rounded-lg border border-blue-400/20 shadow-lg transition-colors text-sm">
                 {blog.offer.cta}
               </Link>
             </div>
