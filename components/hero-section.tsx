@@ -5,7 +5,7 @@ import { content } from "@/lib/content"
 export function HeroSection() {
   const { hero } = content;
   return (
-    <section className="relative overflow-hidden bg-slate-950 text-slate-50 min-h-[100dvh] flex items-center pt-16 pb-8 sm:pt-24 sm:pb-16 selection:bg-blue-500/30">
+    <section className="relative overflow-hidden bg-slate-950 text-slate-50 min-h-[calc(100vh-64px)] flex items-center py-8 selection:bg-blue-500/30">
       {/* Dynamiczne Tło i Gradienty */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
       <div className="absolute top-1/4 right-0 w-[500px] h-[500px] lg:w-[800px] lg:h-[800px] bg-blue-600/10 blur-[120px] rounded-full mix-blend-screen opacity-60"></div>
@@ -21,7 +21,7 @@ export function HeroSection() {
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left lg:col-span-6 xl:col-span-6 space-y-4 sm:space-y-6 lg:space-y-8">
             
             {/* Główny Nagłówek */}
-            <h1 className="text-[2rem] leading-[1.1] sm:text-5xl lg:text-[3.25rem] xl:text-[4rem] font-extrabold tracking-tight text-white sm:leading-[1.05] text-balance">
+            <h1 className="text-[2rem] leading-[1.1] sm:text-5xl lg:text-[3rem] xl:text-[4rem] font-extrabold tracking-tight text-white sm:leading-[1.05] text-balance">
               <span className="text-slate-100">{hero.h1_part1}</span>
               <br className="hidden sm:block" />
               <span className="text-slate-100"> {hero.h1_part2} </span>
@@ -31,7 +31,7 @@ export function HeroSection() {
             </h1>
             
             {/* Podnagłówek */}
-            <p className="text-[14px] sm:text-lg lg:text-[1.1rem] xl:text-xl leading-snug sm:leading-relaxed text-slate-300 text-balance max-w-2xl mx-auto lg:mx-0 font-light px-1 sm:px-0">
+            <p className="text-[14px] sm:text-lg lg:text-[1rem] xl:text-xl leading-snug sm:leading-relaxed text-slate-300 text-balance max-w-2xl mx-auto lg:mx-0 font-light px-1 sm:px-0">
               {hero.subheading}
             </p>
             
@@ -45,7 +45,7 @@ export function HeroSection() {
                   <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500 group-hover:duration-200"></div>
                   <Button 
                     size="lg" 
-                    className="relative w-full sm:w-auto h-auto min-h-[3.25rem] sm:min-h-[4rem] py-2.5 sm:py-3 text-[13px] sm:text-[17px] font-bold bg-blue-600 hover:bg-blue-500 text-white rounded-xl sm:rounded-2xl shadow-xl transition-all flex flex-row items-center justify-center gap-2 sm:gap-3 border border-blue-400/20 px-4 sm:px-8"
+                    className="relative w-full sm:w-auto h-auto min-h-[3.25rem] sm:min-h-[3.5rem] lg:h-12 py-2.5 sm:py-3 lg:py-2 text-[13px] sm:text-[17px] lg:text-[15px] font-bold bg-blue-600 hover:bg-blue-500 text-white rounded-xl sm:rounded-2xl lg:rounded-xl shadow-xl transition-all flex flex-row items-center justify-center gap-2 sm:gap-3 border border-blue-400/20 px-4 sm:px-8 lg:px-6"
                   >
                     <span className="text-balance">{hero.cta}</span>
                     <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 shrink-0 group-hover:translate-x-1 transition-transform" />
@@ -84,7 +84,7 @@ export function HeroSection() {
           </div>
 
           {/* Kolumna Prawa - Wizualizacja (Bento Box / SaaS UI) */}
-          <div className="hidden lg:block lg:col-span-6 xl:col-span-6 relative h-[450px] lg:h-[500px] xl:h-[600px] w-full max-w-[480px] xl:max-w-[550px] mx-auto xl:mx-auto">
+          <div className="hidden lg:block lg:col-span-6 xl:col-span-6 relative h-[450px] xl:h-[600px] w-full max-w-[480px] xl:max-w-[550px] mx-auto xl:mx-auto">
             {/* Dekoracyjne okręgi i blury z tyłu */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] xl:w-[400px] xl:h-[400px] rounded-full border border-blue-500/10 bg-blue-900/10 backdrop-blur-3xl animate-[spin_60s_linear_infinite]"></div>
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[250px] h-[250px] xl:w-[300px] xl:h-[300px] rounded-full border border-cyan-500/10 bg-cyan-900/10 animate-[spin_40s_linear_infinite_reverse]"></div>
