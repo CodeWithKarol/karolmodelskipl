@@ -103,6 +103,10 @@ export const metadata: Metadata = {
   },
 }
 
+import { Footer } from "@/components/footer"
+
+// ... (reszta importów)
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -112,8 +116,9 @@ export default function RootLayout({
       <html
       lang="pl"
       suppressHydrationWarning
+      data-scroll-behavior="smooth"
       className={cn(
-        "antialiased scroll-smooth",
+        "antialiased",
         fontMono.variable,
         "font-sans",
         inter.variable
@@ -126,7 +131,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )
