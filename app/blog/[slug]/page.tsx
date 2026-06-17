@@ -1,40 +1,44 @@
-import { notFound } from "next/navigation";
-import { getPostBySlug, getPostSlugs } from "@/lib/blog";
-import Link from "next/link";
-import { Metadata } from "next";
-import { MDXRemote } from "next-mdx-remote/rsc";
-import { ArrowLeft } from "lucide-react";
+import { notFound } from "next/navigation"
+import { getPostBySlug, getPostSlugs } from "@/lib/blog"
+import Link from "next/link"
+import { Metadata } from "next"
+import { MDXRemote } from "next-mdx-remote/rsc"
+import { ArrowLeft } from "lucide-react"
 
 export async function generateStaticParams() {
-  const slugs = getPostSlugs();
+  const slugs = getPostSlugs()
   return slugs.map((slug) => ({
     slug: slug.replace(/\.md$/, ""),
-  }));
+  }))
 }
 
-export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const params = await props.params;
-  const post = getPostBySlug(params.slug);
-  
+export async function generateMetadata(props: {
+  params: Promise<{ slug: string }>
+}): Promise<Metadata> {
+  const params = await props.params
+  const post = getPostBySlug(params.slug)
+
   if (!post) {
-    return {};
+    return {}
   }
 
-    return {
+  return {
     title: post.title,
     description: post.excerpt,
     alternates: {
       canonical: `https://www.karolmodelski.pl/blog/${post.slug}`,
     },
-  };
+  }
 }
 
-export default async function BlogPostPage(props: { params: Promise<{ slug: string }> }) {
-  const params = await props.params;
-  const post = getPostBySlug(params.slug);
+export default async function BlogPostPage(props: {
+  params: Promise<{ slug: string }>
+}) {
+  const params = await props.params
+  const post = getPostBySlug(params.slug)
 
   if (!post) {
-    return notFound();
+    return notFound()
   }
 
   const jsonLd = {
@@ -43,78 +47,75 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
       {
         "@type": "TechArticle",
         "@id": `https://www.karolmodelski.pl/blog/${post.slug}/#article`,
-        "isPartOf": {
+        isPartOf: {
           "@type": "WebPage",
           "@id": `https://www.karolmodelski.pl/blog/${post.slug}/#webpage`,
-          "url": `https://www.karolmodelski.pl/blog/${post.slug}`,
-          "name": `${post.title} | Blog Karol Modelski`
+          url: `https://www.karolmodelski.pl/blog/${post.slug}`,
+          name: `${post.title} | Blog Karol Modelski`,
         },
-        "headline": post.title,
-        "description": post.excerpt,
-        "inLanguage": "pl-PL",
-        "mainEntityOfPage": `https://www.karolmodelski.pl/blog/${post.slug}`,
-        "author": {
+        headline: post.title,
+        description: post.excerpt,
+        inLanguage: "pl-PL",
+        mainEntityOfPage: `https://www.karolmodelski.pl/blog/${post.slug}`,
+        author: {
           "@type": "Person",
           "@id": "https://www.karolmodelski.pl/#person",
-          "name": "Karol Modelski",
-          "url": "https://www.karolmodelski.pl"
+          name: "Karol Modelski",
+          url: "https://www.karolmodelski.pl",
         },
-        "publisher": {
+        publisher: {
           "@type": "Organization",
-          "@id": "https://www.karolmodelski.pl/#business"
+          "@id": "https://www.karolmodelski.pl/#business",
         },
-        "datePublished": post.date
-      }
-    ]
-  };
+        datePublished: post.date,
+      },
+    ],
+  }
 
   return (
-    <div className="bg-slate-950 min-h-[100dvh] text-slate-50 selection:bg-blue-500/30 flex flex-col">
+    <div className="flex min-h-[100dvh] flex-col bg-slate-950 text-slate-50 selection:bg-blue-500/30">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      
+
       {/* Tło i Gradienty */}
-      <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950 pointer-events-none -z-10"></div>
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/10 blur-[120px] rounded-full mix-blend-screen opacity-50 pointer-events-none -z-10"></div>
-      
-      <div className="mx-auto max-w-4xl px-4 pt-12 sm:pt-20 pb-24 flex-1 w-full">
-        <Link href="/blog" className="inline-flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors mb-10 group">
-          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
+      <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 opacity-50 mix-blend-screen blur-[120px]"></div>
+
+      <div className="mx-auto w-full max-w-4xl flex-1 px-4 pt-12 pb-24 sm:pt-20">
+        <Link
+          href="/blog"
+          className="group mb-10 inline-flex items-center gap-2 text-sm font-medium text-slate-400 transition-colors hover:text-white"
+        >
+          <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
           Powrót do Bazy Wiedzy
         </Link>
-        <article className="rounded-xl sm:rounded-2xl border border-slate-800/80 bg-slate-900/50 backdrop-blur-xl p-5 sm:p-8 lg:p-12 shadow-2xl relative overflow-hidden">
-          <header className="mb-8 sm:mb-12 border-b border-slate-800 pb-8 sm:pb-10">
-            <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-6">
-               <span className="px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs sm:text-sm font-medium">
-                 {post.category}
-               </span>
-               <span className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-400">
-                 <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-slate-700"></span> {post.readingTime} czytania
-               </span>
-               <span className="flex items-center gap-1.5 text-xs sm:text-sm text-slate-400">
-                 <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-slate-700"></span> {post.date}
-               </span>
+        <article className="relative overflow-hidden rounded-xl border border-slate-800/80 bg-slate-900/50 p-5 shadow-2xl backdrop-blur-xl sm:rounded-2xl sm:p-8 lg:p-12">
+          <header className="mb-8 border-b border-slate-800 pb-8 sm:mb-12 sm:pb-10">
+            <div className="mb-6 flex flex-wrap items-center gap-2 sm:gap-3">
+              <span className="rounded-md border border-blue-500/20 bg-blue-500/10 px-2.5 py-0.5 text-xs font-medium text-blue-400 sm:px-3 sm:py-1 sm:text-sm">
+                {post.category}
+              </span>
+              <span className="flex items-center gap-1.5 text-xs text-slate-400 sm:text-sm">
+                <span className="h-1 w-1 rounded-full bg-slate-700 sm:h-1.5 sm:w-1.5"></span>{" "}
+                {post.readingTime} czytania
+              </span>
+              <span className="flex items-center gap-1.5 text-xs text-slate-400 sm:text-sm">
+                <span className="h-1 w-1 rounded-full bg-slate-700 sm:h-1.5 sm:w-1.5"></span>{" "}
+                {post.date}
+              </span>
             </div>
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-[1.2] text-balance">
+            <h1 className="text-2xl leading-[1.2] font-extrabold tracking-tight text-balance text-white sm:text-4xl lg:text-5xl">
               {post.title}
             </h1>
           </header>
 
-          <div className="prose prose-sm sm:prose-lg prose-invert max-w-none 
-                          prose-headings:font-bold prose-headings:text-slate-100 
-                          prose-p:text-slate-300 prose-p:leading-relaxed 
-                          prose-a:text-blue-400 hover:prose-a:text-blue-300 
-                          prose-strong:text-white prose-strong:font-bold
-                          prose-li:text-slate-300
-                          prose-blockquote:border-l-blue-500 prose-blockquote:bg-slate-900/50 prose-blockquote:px-4 sm:prose-blockquote:px-6 prose-blockquote:py-2 prose-blockquote:rounded-r-lg prose-blockquote:text-slate-300 prose-blockquote:font-normal
-                          prose-hr:border-slate-800">
+          <div className="prose prose-sm max-w-none prose-invert sm:prose-lg prose-headings:font-bold prose-headings:text-slate-100 prose-p:leading-relaxed prose-p:text-slate-300 prose-a:text-blue-400 hover:prose-a:text-blue-300 prose-blockquote:rounded-r-lg prose-blockquote:border-l-blue-500 prose-blockquote:bg-slate-900/50 prose-blockquote:px-4 prose-blockquote:py-2 prose-blockquote:font-normal prose-blockquote:text-slate-300 sm:prose-blockquote:px-6 prose-strong:font-bold prose-strong:text-white prose-li:text-slate-300 prose-hr:border-slate-800">
             <MDXRemote source={post.content} />
           </div>
         </article>
       </div>
-
     </div>
-  );
+  )
 }
