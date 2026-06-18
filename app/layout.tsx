@@ -75,21 +75,21 @@ const jsonLd = {
   ],
 }
 
+const META_DESCRIPTION = "Twój biznes nie może czekać na powolne agencje. Wdrażam stabilne MVP w 30 dni, biorąc pełną odpowiedzialność za kod i architekturę aplikacji.";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.karolmodelski.pl"),
   title: {
     default: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
     template: "%s | Karol Modelski",
   },
-  description:
-    "Twój pomysł na biznes nie może czekać na powolne agencje. Waliduję i wdrażam rynkowe MVP w 30 dni, biorąc pełną odpowiedzialność za architekturę i stabilność systemu.",
+  description: META_DESCRIPTION,
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
-    description:
-      "Twój pomysł na biznes nie może czekać na powolne agencje. Waliduję i wdrażam rynkowe MVP w 30 dni, biorąc pełną odpowiedzialność za architekturę i stabilność systemu.",
+    description: META_DESCRIPTION,
     url: "https://www.karolmodelski.pl",
     siteName: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
     locale: "pl_PL",
@@ -98,8 +98,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
-    description:
-      "Twój pomysł na biznes nie może czekać na powolne agencje. Waliduję i wdrażam rynkowe MVP w 30 dni, biorąc pełną odpowiedzialność za architekturę i stabilność systemu.",
+    description: META_DESCRIPTION,
   },
 }
 
