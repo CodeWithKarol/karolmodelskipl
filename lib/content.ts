@@ -6,6 +6,7 @@ import { contrast } from "./content/contrast"
 import { cta } from "./content/cta"
 import { footer } from "./content/footer"
 import { blogContent } from "./content/blog"
+import { faq } from "./content/faq"
 
 export const content = {
   hero,
@@ -16,4 +17,5 @@ export const content = {
   cta,
   footer,
   blog: blogContent,
+  faq,
 }
