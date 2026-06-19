@@ -1,9 +1,9 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
-import { BookOpen, FileText } from "lucide-react"
-import { Footer } from "@/components/footer"
+import { FileText } from "lucide-react"
 import { content } from "@/lib/content"
+import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata: Metadata = {
   title: "Aplikacje internetowe dla firm – Strategia, MVP i Baza Wiedzy IT",
@@ -53,9 +53,8 @@ export default function BlogHubPage() {
 
       <header className="relative px-4 pt-16 pb-12 text-center sm:pt-24 sm:pb-16">
         <div className="relative z-10 mx-auto max-w-4xl">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3 py-1.5 text-xs font-medium text-blue-400 sm:text-sm">
-            <BookOpen className="h-4 w-4" /> Centrum Strategii Aplikacji
-            Biznesowych
+          <div className="mb-6 flex justify-center">
+            <Breadcrumbs />
           </div>
           <h1 className="mb-6 text-[2rem] leading-[1.1] font-extrabold tracking-tight text-balance text-white sm:text-5xl sm:leading-[1.05] lg:text-[3.25rem] xl:text-[4rem]">
             Większość firm przepala budżety na oprogramowanie, które nie
