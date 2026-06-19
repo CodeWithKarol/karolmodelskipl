@@ -1,7 +1,7 @@
 ---
 title: "Czy można samemu stworzyć aplikację? Prawda o „zrób to sam” w świecie cyfrowego biznesu"
 excerpt: "Właściciele firm marzą o niezależności, budując aplikacje samodzielnie. Prawda jest taka, że w biznesie czas to najdroższa waluta. Dowiedz się, dlaczego 'zrób to sam' w IT to droga do kłopotów."
-category: "Biznes i IT"
+silo: "Fundamenty & Strategia"
 readingTime: "10 min"
 date: "2026-06-18"
 ---

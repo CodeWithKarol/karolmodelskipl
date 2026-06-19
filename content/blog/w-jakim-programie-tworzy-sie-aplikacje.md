@@ -1,7 +1,7 @@
 ---
 title: "W jakim programie tworzy się aplikację? Technologia to warsztat, ale to architekt nadaje jej sens"
 excerpt: "Właściciele firm często pytają 'w jakim programie tworzy się aplikację?'. To jak pytanie architekta 'w jakim programie rysuje pan plany?'. Technologia to tylko warsztat."
-category: "Biznes i IT"
+silo: "Technologia w Praktyce"
 readingTime: "10 min"
 date: "2026-06-18"
 ---

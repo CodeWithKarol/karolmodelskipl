@@ -1,7 +1,7 @@
 ---
 title: "Ile pieniędzy można zarobić na stworzeniu aplikacji? Prawda o realnym zwrocie z inwestycji"
 excerpt: "Właściciele firm często pytają o zwrot z inwestycji w aplikację. Aplikacja webowa to nie koszt, to mechanizm dźwigni biznesowej."
-category: "Biznes i IT"
+silo: "Fundamenty & Strategia"
 readingTime: "10 min"
 date: "2026-06-17"
 ---

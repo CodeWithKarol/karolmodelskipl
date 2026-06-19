@@ -1,7 +1,7 @@
 ---
 title: "Czy taniej jest stworzyć aplikację samemu? Prawda o „zrób to sam” w świecie cyfrowego biznesu"
 excerpt: "Właściciele MŚP często wierzą, że samodzielne budowanie aplikacji to oszczędność. Analizuję, dlaczego to najkosztowniejszy błąd, który możesz popełnić."
-category: "Biznes i IT"
+silo: "Fundamenty & Strategia"
 readingTime: "7 min"
 date: "2026-06-18"
 ---

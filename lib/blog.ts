@@ -1,6 +1,7 @@
 import fs from "fs"
 import path from "path"
 import matter from "gray-matter"
+import { calculateReadingTime } from "@/lib/utils/reading-time"
 
 const postsDirectory = path.join(process.cwd(), "content", "blog")
 
@@ -9,7 +10,7 @@ export interface BlogPost {
   title: string
   excerpt: string
   date: string
-  category: string
+  silo: "Fundamenty & Strategia" | "Technologia w Praktyce" | "Case Studies"
   readingTime: string
   content: string // Markdown content
 }
@@ -31,8 +32,8 @@ export function getPostBySlug(slug: string): BlogPost | null {
       title: data.title || "",
       excerpt: data.excerpt || "",
       date: data.date || "",
-      category: data.category || "",
-      readingTime: data.readingTime || "",
+      silo: data.silo || "Fundamenty & Strategia",
+      readingTime: calculateReadingTime(content),
       content,
     }
   } catch {

@@ -1,7 +1,7 @@
 ---
 title: "Jakie są dobre aplikacje do organizacji? Jak nie utonąć w chaosie i zacząć dowozić wyniki"
 excerpt: "Właściciele MŚP często gubią się w dziesiątkach aplikacji do zarządzania zadaniami. Pokażę Ci, jak wybrać zestaw, który realnie wspiera Twój biznes."
-category: "Biznes i IT"
+silo: "Technologia w Praktyce"
 readingTime: "10 min"
 date: "2026-06-18"
 ---

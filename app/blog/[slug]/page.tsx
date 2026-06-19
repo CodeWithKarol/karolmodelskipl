@@ -95,7 +95,7 @@ export default async function BlogPostPage(props: {
           <header className="mb-8 border-b border-slate-800 pb-8 sm:mb-12 sm:pb-10">
             <div className="mb-6 flex flex-wrap items-center gap-2 sm:gap-3">
               <span className="rounded-md border border-blue-500/20 bg-blue-500/10 px-2.5 py-0.5 text-xs font-medium text-blue-400 sm:px-3 sm:py-1 sm:text-sm">
-                {post.category}
+                {post.silo}
               </span>
               <span className="flex items-center gap-1.5 text-xs text-slate-400 sm:text-sm">
                 <span className="h-1 w-1 rounded-full bg-slate-700 sm:h-1.5 sm:w-1.5"></span>{" "}
