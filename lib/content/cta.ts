@@ -17,8 +17,8 @@ export const cta = {
       desc: "Otrzymasz najszybszą ścieżkę wdrożenia aplikacji dla firm w 30 dni (Wartość: 200 zł)",
     },
     {
-      title: "Enterprise Security Checklist",
-      desc: "Weryfikacja pomysłów pod kątem rygorystycznych standardów bankowych (Wartość: 100 zł)",
+      title: "Bankowy Test Bezpieczeństwa IT",
+      desc: "Weryfikacja pomysłów pod kątem rygorystycznych standardów sektora finansowego. Ochrona danych klientów i stabilność bez awarii (Wartość: 100 zł)",
     },
   ],
   button: "Odbierz Pakiet o Wartości 600 zł za Darmo",

@@ -1,7 +1,7 @@
 ---
 title: "Ile kosztuje stworzenie aplikacji mobilnej? Prawda o „taniej” budowie i realnym ROI"
 excerpt: "Wielu właścicieli firm szuka taniej aplikacji. Analizuję, dlaczego to najkosztowniejszy błąd i jak podejść do budowy systemu, który faktycznie zarabia."
-category: "Biznes i IT"
+silo: "Fundamenty & Strategia"
 readingTime: "10 min"
 date: "2026-06-18"
 ---

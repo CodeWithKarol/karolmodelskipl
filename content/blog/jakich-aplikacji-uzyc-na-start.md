@@ -1,7 +1,7 @@
 ---
 title: "Jakich aplikacji powinienem użyć, aby rozpocząć działalność gospodarczą? Technologia jako Twój pierwszy pracownik"
 excerpt: "Budujesz biznes od zera? Nie potrzebujesz drogich systemów klasy korporacyjnej. Pokażę Ci, jak dobrać cyfrowy zestaw narzędzi, który skaluje się wraz z Twoimi zyskami."
-category: "Biznes i IT"
+silo: "Technologia w Praktyce"
 readingTime: "10 min"
 date: "2026-06-18"
 ---

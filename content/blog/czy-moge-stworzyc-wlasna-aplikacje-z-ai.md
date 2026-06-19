@@ -1,7 +1,7 @@
 ---
 title: "Czy mogę stworzyć własną aplikację wykorzystującą sztuczną inteligencję? Prawda o realnym wpływie AI na Twój biznes"
 excerpt: "Wiele firm marzy o wdrożeniu AI, ale gubi się w gąszczu obietnic. Analizuję, czy warto budować własne rozwiązania AI i jak podejść do tego strategicznie."
-category: "Biznes i IT"
+silo: "Technologia w Praktyce"
 readingTime: "10 min"
 date: "2026-06-18"
 ---

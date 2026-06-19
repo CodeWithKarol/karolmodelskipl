@@ -1,7 +1,7 @@
 ---
 title: "Ile kosztuje stworzenie aplikacji webowej? Prawda, o której agencje nie chcą mówić"
 excerpt: "Właściciele firm często pytają o cenę aplikacji. Odpowiedź agencji to zazwyczaj 50-300 tys. PLN. Prawdziwe pytanie brzmi jednak: Ile kosztuje brak aplikacji?"
-category: "Biznes i IT"
+silo: "Fundamenty & Strategia"
 readingTime: "8 min"
 date: "2026-06-17"
 ---

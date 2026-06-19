@@ -1,7 +1,7 @@
 ---
 title: "Jak napisać aplikację za darmo? Prawda o „darmowym” kodowaniu i realnej cenie Twojego sukcesu"
 excerpt: "Właściciele firm często marzą o stworzeniu aplikacji „za darmo”. Prawda jest brutalna: w biznesie nie istnieje coś takiego jak darmowa aplikacja. Dowiedz się, ile kosztuje błąd na starcie."
-category: "Biznes i IT"
+silo: "Fundamenty & Strategia"
 readingTime: "10 min"
 date: "2026-06-18"
 ---
