@@ -34,7 +34,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "ClaudeBot",
         allow: "/",
-      }
+      },
     ],
     sitemap: "https://www.karolmodelski.pl/sitemap.xml",
   }

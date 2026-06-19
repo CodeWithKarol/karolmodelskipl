@@ -29,9 +29,8 @@ export function HeroSection() {
           {/* Kolumna Lewa - Treść i CTA */}
           <div className="flex flex-col items-center space-y-4 text-center sm:space-y-6 lg:col-span-6 lg:items-start lg:space-y-8 lg:text-left xl:col-span-6">
             {/* Główny Nagłówek */}
-            <h1 className="text-[2rem] leading-[1.1] font-extrabold tracking-tight text-balance text-white sm:text-5xl sm:leading-[1.05] lg:text-[3rem] xl:text-[4rem]">
+            <h1 className="text-4xl leading-[1.15] font-extrabold tracking-tight text-balance text-white sm:text-5xl sm:leading-[1.1] md:text-6xl lg:text-[3.5rem] xl:text-[4rem] xl:leading-[1.05]">
               <span className="text-slate-100">{hero.h1_part1}</span>
-              <br className="hidden sm:block" />
               <span className="text-slate-100"> {hero.h1_part2} </span>
               <span className="mt-2 block bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text pb-2 text-transparent">
                 {hero.h1_highlight}

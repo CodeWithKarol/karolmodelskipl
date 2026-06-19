@@ -18,7 +18,7 @@ const jsonLd = {
     {
       "@type": "ProfessionalService",
       "@id": "https://www.karolmodelski.pl/#organization",
-      name: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
+      name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
       url: "https://www.karolmodelski.pl",
       telephone: "+48664598563",
       areaServed: "PL",
@@ -48,7 +48,7 @@ const jsonLd = {
         "Tworzenie MVP",
         "Optymalizacja Wydajności",
         "Bezpieczeństwo Aplikacji",
-        "Tworzenie Aplikacji Internetowych",
+        "Aplikacje Internetowe dla Firm",
       ],
     },
     {
@@ -64,7 +64,7 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://www.karolmodelski.pl/#webpage",
       url: "https://www.karolmodelski.pl",
-      name: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
+      name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
       isPartOf: {
         "@id": "https://www.karolmodelski.pl/#website",
       },
@@ -75,12 +75,13 @@ const jsonLd = {
   ],
 }
 
-const META_DESCRIPTION = "Twój biznes nie może czekać na powolne agencje. Wdrażam stabilne MVP w 30 dni, biorąc pełną odpowiedzialność za kod i architekturę aplikacji.";
+const META_DESCRIPTION =
+  "Masz dość software house'ów? Tworzę dedykowane aplikacje internetowe dla firm, które realnie automatyzują procesy i skalują zyski. Odbierz darmowy plan!"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.karolmodelski.pl"),
   title: {
-    default: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
+    default: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
     template: "%s | Karol Modelski",
   },
   description: META_DESCRIPTION,
@@ -88,16 +89,16 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
+    title: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
     description: META_DESCRIPTION,
     url: "https://www.karolmodelski.pl",
-    siteName: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
+    siteName: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
     locale: "pl_PL",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Karol Modelski - Tworzenie Aplikacji Internetowych | Warszawa",
+    title: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
     description: META_DESCRIPTION,
   },
 }

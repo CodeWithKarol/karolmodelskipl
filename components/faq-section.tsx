@@ -17,7 +17,7 @@ export function FaqSection() {
     >
       {/* Świetlne akcenty w tle dopasowane do reszty strony */}
       <div className="pointer-events-none absolute top-1/2 left-0 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/5 blur-[100px]"></div>
-      <div className="pointer-events-none absolute bottom-0 right-0 h-[500px] w-[500px] translate-x-1/3 translate-y-1/3 rounded-full bg-cyan-600/5 blur-[120px]"></div>
+      <div className="pointer-events-none absolute right-0 bottom-0 h-[500px] w-[500px] translate-x-1/3 translate-y-1/3 rounded-full bg-cyan-600/5 blur-[120px]"></div>
 
       <div className="relative z-10 container mx-auto max-w-4xl px-4">
         {/* Nagłówek Sekcji */}
@@ -35,13 +35,13 @@ export function FaqSection() {
             {faq.subtitle}
           </p>
         </div>
-        
+
         {/* Akordeon */}
         <Accordion type="single" collapsible className="w-full space-y-4">
           {faq.items.map((item, index) => (
-            <AccordionItem 
-              key={index} 
-              value={`item-${index}`} 
+            <AccordionItem
+              key={index}
+              value={`item-${index}`}
               className="rounded-2xl border border-slate-800/60 bg-slate-900/40 px-6 backdrop-blur-sm transition-colors hover:border-slate-700 data-[state=open]:border-blue-500/30 data-[state=open]:bg-slate-900/60 data-[state=open]:shadow-[0_0_30px_-10px_rgba(59,130,246,0.1)]"
             >
               <AccordionTrigger className="py-5 text-left text-[15px] font-semibold text-slate-200 transition-colors hover:text-white hover:no-underline sm:py-6 sm:text-lg">
