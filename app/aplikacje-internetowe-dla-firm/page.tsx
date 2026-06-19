@@ -85,10 +85,10 @@ export default function AplikacjeInternetoweDlaFirmPage() {
       />
 
       {/* 1. HERO SECTION */}
-      <section className="relative w-full bg-slate-950 py-12 text-slate-50 sm:py-20 lg:py-32">
+      <section className="relative flex w-full min-h-[calc(100dvh-64px)] flex-col items-center justify-center bg-slate-950 py-12 text-slate-50 sm:py-20 lg:py-32">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_60%,transparent_100%)] bg-[size:24px_24px]" />
         <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center px-4 text-center sm:px-6 lg:px-8">
-          <div className="mb-8 w-full flex justify-center">
+          <div className="mb-4 w-full flex justify-center sm:mb-8">
             <Breadcrumbs />
           </div>
           <h1 className="mb-4 w-full text-3xl font-extrabold tracking-tight text-balance break-words sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl">
@@ -103,15 +103,17 @@ export default function AplikacjeInternetoweDlaFirmPage() {
           <div className="flex w-full flex-col items-center justify-center gap-4 sm:w-auto sm:flex-row">
             <Button
               size="lg"
-              className="group h-12 w-full bg-emerald-500 px-6 text-sm font-bold text-slate-950 transition-colors hover:bg-emerald-400 sm:h-14 sm:w-auto sm:px-8 sm:text-base"
+              className="group !h-auto w-full bg-emerald-500 px-4 py-4 text-sm font-bold text-slate-950 transition-colors hover:bg-emerald-400 sm:!h-16 sm:w-auto sm:px-8 sm:text-base"
               asChild
             >
               <Link
                 href="#oferta"
-                className="flex w-full items-center justify-center"
+                className="flex w-full items-center justify-center gap-2"
               >
-                <span>{hero.cta}</span>
-                <ArrowRight className="ml-2 h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5" />
+                <span className="whitespace-normal text-center text-balance leading-tight">
+                  {hero.cta}
+                </span>
+                <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5" />
               </Link>
             </Button>
           </div>
@@ -413,12 +415,12 @@ export default function AplikacjeInternetoweDlaFirmPage() {
           <div className="flex w-full justify-center px-0 sm:px-4">
             <Button
               size="lg"
-              className="group flex h-auto w-full items-center justify-center rounded-full bg-slate-950 px-6 py-4 text-center text-sm font-bold whitespace-normal text-white shadow-xl transition-all hover:bg-slate-800 hover:shadow-2xl sm:h-16 sm:w-auto sm:px-10 sm:text-lg"
+              className="group !h-auto w-full rounded-full bg-slate-950 px-4 py-4 text-sm font-bold text-white shadow-xl transition-all hover:bg-slate-800 hover:shadow-2xl sm:!h-16 sm:w-auto sm:px-10 sm:text-lg"
               asChild
             >
-              <Link href={siteConfig.calendlyLink} className="w-full">
-                <span>{offer.cta}</span>
-                <ArrowRight className="ml-2 h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" />
+              <Link href={siteConfig.calendlyLink} className="flex w-full items-center justify-center gap-2">
+                <span className="whitespace-normal text-center text-balance leading-tight">{offer.cta}</span>
+                <ArrowRight className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
           </div>
