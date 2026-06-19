@@ -6,6 +6,7 @@ import {
   ShieldCheck,
 } from "lucide-react"
 import { content } from "@/lib/content"
+import { siteConfig } from "@/lib/site-config"
 import { Button } from "./ui/button"
 
 export function CtaSection() {
@@ -95,7 +96,7 @@ export function CtaSection() {
                 <div className="mt-auto border-t border-slate-800/60 pt-4">
                   <div className="flex flex-col items-center">
                     <a
-                      href="https://calendly.com/kontakt-karolmodelski/30min"
+                      href={siteConfig.calendlyLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group/btn relative w-full"

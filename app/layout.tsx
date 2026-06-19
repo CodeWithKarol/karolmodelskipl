@@ -4,13 +4,10 @@ import { Metadata } from "next"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
+import { Footer } from "@/components/footer"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
-
-const fontMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-})
+const fontMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -18,7 +15,7 @@ const jsonLd = {
     {
       "@type": "ProfessionalService",
       "@id": "https://www.karolmodelski.pl/#organization",
-      name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+      name: "Karol Modelski - Niezależny Partner Technologiczny",
       url: "https://www.karolmodelski.pl",
       telephone: "+48664598563",
       areaServed: "PL",
@@ -28,101 +25,47 @@ const jsonLd = {
         addressCountry: "PL",
       },
       sameAs: ["https://g.page/r/CZSVfAGtTiIzEBM"],
-      founder: {
-        "@id": "https://www.karolmodelski.pl/#person",
-      },
+      founder: { "@id": "https://www.karolmodelski.pl/#person" },
     },
     {
       "@type": "Person",
       "@id": "https://www.karolmodelski.pl/#person",
       name: "Karol Modelski",
       jobTitle: "Niezależny Partner Technologiczny",
-      description:
-        "Ekspert technologii frontendowych i budowy produktów cyfrowych (MVP Builder) z doświadczeniem projektowym m.in. w Citibanku, BNP Paribas oraz Silent Eight.",
-      worksFor: {
-        "@id": "https://www.karolmodelski.pl/#organization",
-      },
+      worksFor: { "@id": "https://www.karolmodelski.pl/#organization" },
       sameAs: ["https://www.linkedin.com/in/karol-modelski/"],
-      knowsAbout: [
-        "Architektura Frontendowa",
-        "Tworzenie MVP",
-        "Optymalizacja Wydajności",
-        "Bezpieczeństwo Aplikacji",
-        "Aplikacje Internetowe dla Firm",
-      ],
     },
     {
       "@type": "WebSite",
       "@id": "https://www.karolmodelski.pl/#website",
       url: "https://www.karolmodelski.pl",
       name: "Karol Modelski - Niezależny Partner Technologiczny",
-      publisher: {
-        "@id": "https://www.karolmodelski.pl/#organization",
-      },
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://www.karolmodelski.pl/#webpage",
-      url: "https://www.karolmodelski.pl",
-      name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
-      isPartOf: {
-        "@id": "https://www.karolmodelski.pl/#website",
-      },
-      about: {
-        "@id": "https://www.karolmodelski.pl/#person",
-      },
+      publisher: { "@id": "https://www.karolmodelski.pl/#organization" },
     },
   ],
 }
 
-const META_DESCRIPTION =
-  "Masz dość software house'ów? Tworzę dedykowane aplikacje internetowe dla firm, które realnie automatyzują procesy i skalują zyski. Odbierz darmowy plan!"
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.karolmodelski.pl"),
   title: {
-    default: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+    default: "Karol Modelski - Niezależny Partner Technologiczny",
     template: "%s | Karol Modelski",
   },
-  description: META_DESCRIPTION,
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
-    description: META_DESCRIPTION,
-    url: "https://www.karolmodelski.pl",
-    siteName: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
-    locale: "pl_PL",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
-    description: META_DESCRIPTION,
-  },
+  description:
+    "Masz dość software house'ów? Tworzę dedykowane aplikacje internetowe dla firm.",
 }
-
-import { Footer } from "@/components/footer"
-
-// ... (reszta importów)
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html
       lang="pl"
       suppressHydrationWarning
       data-scroll-behavior="smooth"
-      className={cn(
-        "antialiased",
-        fontMono.variable,
-        "font-sans",
-        inter.variable
-      )}
+      className={cn("antialiased scroll-smooth", fontMono.variable, inter.variable)}
     >
       <head>
         <script
