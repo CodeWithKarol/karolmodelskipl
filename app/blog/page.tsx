@@ -127,8 +127,6 @@ export default function BlogHubPage() {
               ))}
             </div>
           </div>
-
-
         </section>
 
         <aside
