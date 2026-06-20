@@ -51,16 +51,16 @@ export default function BlogHubPage() {
       <div className="pointer-events-none fixed top-1/4 right-0 -z-10 h-[500px] w-[500px] rounded-full bg-blue-600/10 opacity-60 mix-blend-screen blur-[120px] lg:h-[800px] lg:w-[800px]"></div>
       <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_50%,#000_70%,transparent_100%)] bg-[size:3rem_3rem] opacity-25"></div>
 
-      <header className="relative px-4 pt-16 pb-12 text-center sm:pt-24 sm:pb-16">
-        <div className="relative z-10 mx-auto max-w-4xl">
-          <div className="mb-6 flex justify-center">
+      <header className="relative flex min-h-[100dvh] flex-col items-center justify-center px-4 pt-20 pb-12 text-center sm:min-h-dvh sm:pt-32 sm:pb-20">
+        <div className="relative z-10 mx-auto max-w-4xl flex flex-col items-center">
+          <div className="mb-4 sm:mb-8 flex justify-center">
             <Breadcrumbs />
           </div>
-          <h1 className="mb-6 text-[2rem] leading-[1.1] font-extrabold tracking-tight text-balance text-white sm:text-5xl sm:leading-[1.05] lg:text-[3.25rem] xl:text-[4rem]">
+          <h1 className="mb-4 sm:mb-6 text-[32px] leading-[1.15] font-extrabold tracking-tight text-balance text-white sm:text-5xl sm:leading-[1.05] lg:text-[3.5rem]">
             Większość firm przepala budżety na oprogramowanie, które nie
             zarabia.
           </h1>
-          <p className="mx-auto max-w-3xl px-4 text-sm leading-relaxed font-light text-balance text-slate-300 sm:px-0 sm:text-lg">
+          <p className="mx-auto max-w-3xl px-2 text-[15px] leading-snug font-light text-balance text-slate-300 sm:px-0 sm:text-lg">
             Tutaj znajdziesz konkretne strategie, jak budować aplikacje, które
             eliminują wąskie gardła i skalują Twój zysk – bez agencyjnych
             narzutów.
