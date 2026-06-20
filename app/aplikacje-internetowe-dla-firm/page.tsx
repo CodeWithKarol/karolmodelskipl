@@ -85,25 +85,25 @@ export default function AplikacjeInternetoweDlaFirmPage() {
       />
 
       {/* 1. HERO SECTION */}
-      <section className="relative flex w-full min-h-[calc(100dvh-64px)] flex-col items-center justify-center bg-slate-950 py-12 text-slate-50 sm:py-20 lg:py-32">
+      <section className="relative flex w-full min-h-[100dvh] flex-col items-center justify-center bg-slate-950 pt-24 pb-12 text-slate-50 sm:pt-32 sm:pb-20 lg:py-32">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_60%,transparent_100%)] bg-[size:24px_24px]" />
         <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center px-4 text-center sm:px-6 lg:px-8">
           <div className="mb-4 w-full flex justify-center sm:mb-8">
             <Breadcrumbs />
           </div>
-          <h1 className="mb-4 w-full text-3xl font-extrabold tracking-tight text-balance break-words sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="mb-3 w-full text-[28px] leading-tight font-extrabold tracking-tight text-balance break-words sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl">
             {hero.title}{" "}
             <span className="text-emerald-400">{hero.titleHighlight}</span>
           </h1>
 
-          <p className="mx-auto mb-8 w-full max-w-3xl text-sm leading-relaxed text-balance text-slate-300 sm:mb-10 sm:text-base md:text-lg">
+          <p className="mx-auto mb-6 w-full max-w-3xl text-[14px] leading-snug text-balance text-slate-300 sm:mb-10 sm:text-base md:text-lg">
             {hero.description}
           </p>
 
-          <div className="flex w-full flex-col items-center justify-center gap-4 sm:w-auto sm:flex-row">
+          <div className="flex w-full flex-col items-center justify-center gap-3 sm:w-auto sm:flex-row">
             <Button
               size="lg"
-              className="group !h-auto w-full bg-emerald-500 px-4 py-4 text-sm font-bold text-slate-950 transition-colors hover:bg-emerald-400 sm:!h-16 sm:w-auto sm:px-8 sm:text-base"
+              className="group !h-auto w-full bg-emerald-500 px-4 py-3.5 text-[14px] font-bold text-slate-950 transition-colors hover:bg-emerald-400 sm:!h-16 sm:w-auto sm:px-8 sm:text-base"
               asChild
             >
               <Link
@@ -118,7 +118,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             </Button>
           </div>
 
-          <p className="mt-4 w-full px-2 text-center text-xs break-words text-slate-400 sm:text-sm">
+          <p className="mt-4 w-full px-1 text-center text-[11px] leading-tight break-words text-slate-400 sm:mt-5 sm:text-sm">
             {hero.footnote}
           </p>
         </div>

@@ -3,7 +3,6 @@ import {
   ArrowRight,
   ShieldCheck,
   Zap,
-  Handshake,
   Code2,
   LineChart,
   Lock,
@@ -15,7 +14,7 @@ import { content } from "@/lib/content"
 export function HeroSection() {
   const { hero } = content
   return (
-    <section className="relative flex min-h-[calc(100dvh-64px)] items-center overflow-hidden bg-slate-950 py-4 sm:py-8 text-slate-50 selection:bg-blue-500/30">
+    <section className="relative flex min-h-dvh items-center overflow-hidden bg-slate-950 pt-24 pb-8 sm:py-8 sm:pt-32 text-slate-50 selection:bg-blue-500/30">
       {/* Dynamiczne Tło i Gradienty */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
       <div className="absolute top-1/4 right-0 h-[500px] w-[500px] rounded-full bg-blue-600/10 opacity-60 mix-blend-screen blur-[120px] lg:h-[800px] lg:w-[800px]"></div>
