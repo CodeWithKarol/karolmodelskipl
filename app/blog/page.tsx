@@ -52,19 +52,31 @@ export default function BlogHubPage() {
       <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_50%,#000_70%,transparent_100%)] bg-[size:3rem_3rem] opacity-25"></div>
 
       <header className="relative flex min-h-[100dvh] flex-col items-center justify-center px-4 pt-20 pb-12 text-center sm:min-h-dvh sm:pt-32 sm:pb-20">
-        <div className="relative z-10 mx-auto max-w-4xl flex flex-col items-center">
-          <div className="mb-4 sm:mb-8 flex justify-center">
+        <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center">
+          <div className="mb-4 flex justify-center sm:mb-8">
             <Breadcrumbs />
           </div>
-          <h1 className="mb-4 sm:mb-6 text-[32px] leading-[1.15] font-extrabold tracking-tight text-balance text-white sm:text-5xl sm:leading-[1.05] lg:text-[3.5rem]">
-            Większość firm przepala budżety na oprogramowanie, które nie
-            zarabia.
-          </h1>
+          <h1
+            className="mb-4 text-[32px] leading-[1.15] font-extrabold tracking-tight text-balance text-white sm:mb-6 sm:text-5xl sm:leading-[1.05] lg:text-[3.5rem]"
+            dangerouslySetInnerHTML={{ __html: blog.header.title }}
+          />
           <p className="mx-auto max-w-3xl px-2 text-[15px] leading-snug font-light text-balance text-slate-300 sm:px-0 sm:text-lg">
-            Tutaj znajdziesz konkretne strategie, jak budować aplikacje, które
-            eliminują wąskie gardła i skalują Twój zysk – bez agencyjnych
-            narzutów.
+            {blog.header.description}
           </p>
+          <div className="mt-8 flex w-full flex-col items-center justify-center sm:w-auto">
+            <div className="relative w-full sm:w-auto">
+              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 opacity-30 blur transition duration-500 hover:opacity-60"></div>
+              <Link
+                href="https://www.karolmodelski.pl/#kontakt"
+                className="group relative flex h-auto min-h-[3.25rem] w-full flex-row items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3.5 text-[14px] font-bold text-white shadow-xl transition-all hover:bg-blue-500 sm:min-h-[3.5rem] sm:w-auto sm:rounded-2xl sm:px-8 sm:py-4 sm:text-base"
+              >
+                <span className="text-center leading-tight text-balance whitespace-normal">
+                  Odbierz bezpłatną Mapę Drogową Modernizacji IT i sprawdź,
+                  gdzie tracisz pieniądze.
+                </span>
+              </Link>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -128,7 +140,7 @@ export default function BlogHubPage() {
             </p>
             <Link
               href="https://www.karolmodelski.pl/#kontakt"
-              className="mt-4 flex h-12 w-full items-center justify-center rounded-lg bg-blue-600 text-sm font-bold text-white transition-colors hover:bg-blue-500"
+              className="mt-4 flex min-h-[3rem] h-auto w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-center text-sm font-bold leading-tight text-balance text-white transition-colors hover:bg-blue-500"
             >
               {blog.offer.cta}
             </Link>

@@ -47,11 +47,13 @@ export function BusinessImpactSection() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-8">
           {impacts.map((item, index) => (
             <div
               key={index}
-              className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-slate-800/80 bg-slate-900/50 p-8 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-blue-500/30 hover:bg-slate-900/80 sm:p-10"
+              className={`group relative flex flex-col overflow-hidden rounded-[2rem] border border-slate-800/80 bg-slate-900/50 p-8 backdrop-blur-sm transition-all duration-500 hover:-translate-y-1 hover:border-blue-500/30 hover:bg-slate-900/80 sm:p-10 ${
+                index === 2 ? "md:col-span-2 lg:col-span-1" : ""
+              }`}
             >
               {/* Efekt podświetlenia karty od góry */}
               <div className="absolute top-0 left-0 h-1.5 w-full bg-gradient-to-r from-transparent via-blue-500/0 to-transparent transition-all duration-500 group-hover:via-blue-500/50"></div>

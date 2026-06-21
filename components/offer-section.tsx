@@ -1,10 +1,17 @@
-import { Rocket, RefreshCw, Layers, Gauge, CheckCircle2, ArrowRight } from "lucide-react"
+import {
+  Rocket,
+  RefreshCw,
+  Layers,
+  Gauge,
+  CheckCircle2,
+  ArrowRight,
+} from "lucide-react"
 import { content } from "@/lib/content"
 import Link from "next/link"
 
 export function OfferSection() {
   const { offer } = content
-  
+
   // Nowoczesne ikony premium
   const icons = [Rocket, RefreshCw, Layers, Gauge]
 
@@ -63,13 +70,7 @@ export function OfferSection() {
                     {item.desc}
                   </p>
 
-                  {/* Mikro wskaźnik potwierdzenia (Trust marker) */}
-                  <div className="mt-8 flex translate-y-2 items-center gap-2 border-t border-slate-800/50 pt-6 opacity-0 transition-opacity duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                    <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                    <span className="text-xs font-semibold tracking-wider text-slate-500 uppercase transition-colors group-hover:text-emerald-500/70">
-                      Rozwiązanie Enterprise
-                    </span>
-                  </div>
+                  {/* Mikro wskaźnik potwierdzenia (Trust marker) - usunięty zgodnie z prośbą */}
                 </div>
               </div>
             )
@@ -82,7 +83,8 @@ export function OfferSection() {
             href="/aplikacje-internetowe-dla-firm"
             className="inline-flex items-center gap-2 text-center text-[14px] leading-snug font-semibold text-blue-400 transition-all hover:gap-3 hover:text-white sm:text-[15px] md:text-lg"
           >
-            Zobacz, jak krok po kroku projektuję dedykowane aplikacje internetowe dla firm
+            Zobacz, jak krok po kroku projektuję dedykowane aplikacje
+            internetowe dla firm
             <ArrowRight className="h-4 w-4 shrink-0 sm:h-5 sm:w-5" />
           </Link>
         </div>

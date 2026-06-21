@@ -6,20 +6,20 @@ export const offer = {
     "Zamiast skupiać się na technicznych definicjach, zobaczmy, jak moje rozwiązania bezpośrednio przekładają się na ochronę i pomnażanie Twoich pieniędzy:",
   stack: [
     {
-      title: "Szybkie testowanie pomysłów bez ryzyka finansowego",
-      desc: "Zamiast inwestować setki tysięcy złotych w niesprawdzone pomysły, budujemy precyzyjne wersje testowe produktów (MVP). Pozwala to błyskawicznie sprawdzić reakcję rynku i zacząć zarabiać na aplikacji, zanim zainwestujesz w jej dalszą rozbudowę.",
+      title: "Przestań zgadywać – zacznij zarabiać",
+      desc: "Większość firm traci setki tysięcy na budowaniu funkcji, których nikt nie chce. Ja dostarczam Ci \"bezpiecznik finansowy\" w postaci precyzyjnego MVP. Walidujemy Twój pomysł z rynkiem w rekordowym czasie, byś inwestował tylko w to, co realnie napędza sprzedaż. Zanim Twój konkurent skończy etap planowania, Ty będziesz już w fazie skalowania.",
     },
     {
-      title: "Modernizacja oprogramowania bez zatrzymywania sprzedaży",
-      desc: "Twoja obecna platforma działa wolno lub generuje błędy? Przeprowadzam modernizacje systemów etapowo, „na żywym organizmie”. Eliminujemy stare błędy i unowocześniamy aplikację w tle, bez ani jednej minuty przestoju w Twojej bieżącej sprzedaży.",
+      title: "Modernizacja bez utraty ani jednej minuty sprzedaży",
+      desc: "W biznesie każda minuta przestoju to realna strata w kasie. Moja metoda to chirurgia systemowa – unowocześniam Twój kod w tle, „na żywym organizmie”. Eliminujemy wąskie gardła i dług technologiczny, podczas gdy Twoi klienci płynnie finalizują zakupy. Twoja platforma staje się nowoczesna i bezpieczna, a wykresy sprzedaży nie notują nawet chwilowego wahania.",
     },
     {
-      title: "Nawet do 40% oszczędności na rozwoju systemów",
-      desc: "Dzięki zaawansowanemu projektowaniu architektury, rozwiązania na komputery oraz urządzenia mobilne tworzę w oparciu o jedno, zintegrowane jądro systemu. Dla Ciebie oznacza to pełną spójność danych i drastyczne obniżenie kosztów późniejszego utrzymania aplikacji.",
+      title: "Partnerstwo strategiczne, które zamienia technologię w zysk",
+      desc: "Nie jestem tylko deweloperem, który czeka na instrukcje. Jako Twój Partner Technologiczny, projektuję systemy tak, aby każda funkcjonalność wspierała psychologię sprzedaży i ścieżkę konwersji Twojego klienta. Doradzam, jak uprościć rozwiązania, by skrócić Time-to-Market i wyeliminować przepalanie budżetu na zbędne wodotryski. Zyskujesz senioralną wiedzę biznesową klasy Enterprise – od pierwszego dnia budujemy maszynę sprzedażową, a nie tylko 'ładną stronę'.",
     },
     {
-      title: "Płynność i szybkość, które zatrzymają każdego klienta",
-      desc: "Twoi użytkownicy nie będą tracić czasu na czekanie, aż strona się załaduje. Projektuję interfejsy o najwyższej na rynku wydajności, co bezpośrednio przekłada się na wyższy poziom satysfakcji klientów i mniejszą liczbę porzuconych koszyków czy formularzy.",
+      title: "Prędkość, która zamienia odwiedzających w kupujących",
+      desc: "Każda sekunda opóźnienia to klienci uciekający do konkurencji. Moja inżynieria to „Elite Performance” – systemy tak błyskawiczne, że użytkownik nie ma czasu się zawahać. Skracam czas ładowania do minimum, eliminując „tarcie” na ścieżce zakupowej. Mniej porzuconych koszyków, więcej transakcji, większy zwrot z każdej złotówki wydanej na reklamę.",
     },
   ],
 }

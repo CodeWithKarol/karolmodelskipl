@@ -85,15 +85,15 @@ export default function AplikacjeInternetoweDlaFirmPage() {
       />
 
       {/* 1. HERO SECTION */}
-      <section className="relative flex w-full min-h-[100dvh] flex-col items-center justify-center bg-slate-950 pt-24 pb-12 text-slate-50 sm:pt-32 sm:pb-20 lg:py-32">
+      <section className="relative flex min-h-[100dvh] w-full flex-col items-center justify-center bg-slate-950 pt-24 pb-12 text-slate-50 sm:pt-32 sm:pb-20 lg:py-32">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_60%,transparent_100%)] bg-[size:24px_24px]" />
         <div className="relative z-10 mx-auto flex w-full max-w-5xl flex-col items-center px-4 text-center sm:px-6 lg:px-8">
-          <div className="mb-4 w-full flex justify-center sm:mb-8">
+          <div className="mb-4 flex w-full justify-center sm:mb-8">
             <Breadcrumbs />
           </div>
           <h1 className="mb-3 w-full text-[28px] leading-tight font-extrabold tracking-tight text-balance break-words sm:mb-6 sm:text-4xl md:text-5xl lg:text-6xl">
             {hero.title}{" "}
-            <span className="text-emerald-400">{hero.titleHighlight}</span>
+            <span className="text-blue-400">{hero.titleHighlight}</span>
           </h1>
 
           <p className="mx-auto mb-6 w-full max-w-3xl text-[14px] leading-snug text-balance text-slate-300 sm:mb-10 sm:text-base md:text-lg">
@@ -101,21 +101,24 @@ export default function AplikacjeInternetoweDlaFirmPage() {
           </p>
 
           <div className="flex w-full flex-col items-center justify-center gap-3 sm:w-auto sm:flex-row">
-            <Button
-              size="lg"
-              className="group !h-auto w-full bg-emerald-500 px-4 py-3.5 text-[14px] font-bold text-slate-950 transition-colors hover:bg-emerald-400 sm:!h-16 sm:w-auto sm:px-8 sm:text-base"
-              asChild
-            >
-              <Link
-                href="#oferta"
-                className="flex w-full items-center justify-center gap-2"
+            <div className="relative w-full sm:w-auto">
+              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 opacity-30 blur transition duration-500 hover:opacity-60"></div>
+              <Button
+                size="lg"
+                className="group relative !h-auto w-full rounded-xl bg-blue-600 px-4 py-3.5 text-[14px] font-bold text-white shadow-xl transition-all hover:bg-blue-500 sm:!h-16 sm:w-auto sm:rounded-2xl sm:px-8 sm:text-base"
+                asChild
               >
-                <span className="whitespace-normal text-center text-balance leading-tight">
-                  {hero.cta}
-                </span>
-                <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5" />
-              </Link>
-            </Button>
+                <Link
+                  href="#oferta"
+                  className="flex w-full items-center justify-center gap-2"
+                >
+                  <span className="text-center leading-tight text-balance whitespace-normal">
+                    {hero.cta}
+                  </span>
+                  <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5" />
+                </Link>
+              </Button>
+            </div>
           </div>
 
           <p className="mt-4 w-full px-1 text-center text-[11px] leading-tight break-words text-slate-400 sm:mt-5 sm:text-sm">
@@ -141,7 +144,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
               {story.text.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
-              <div className="my-6 border-l-4 border-emerald-500 pl-4 sm:my-8 sm:pl-6">
+              <div className="my-6 border-l-4 border-blue-500 pl-4 sm:my-8 sm:pl-6">
                 <p className="m-0 text-base leading-relaxed font-semibold text-slate-900 sm:text-lg md:text-xl">
                   {story.quote}
                 </p>
@@ -167,7 +170,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             {mechanism.cards.map((card, i) => (
               <Card key={i} className="flex flex-col border-none shadow-md">
                 <CardHeader className="p-6">
-                  <div className="mb-4 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-emerald-100 text-emerald-600">
+                  <div className="mb-4 inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-blue-100 text-blue-600">
                     {i === 0 ? (
                       <Zap className="h-6 w-6" />
                     ) : i === 1 ? (
@@ -200,7 +203,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             <div className="w-full">
               <h2 className="mb-4 text-2xl font-bold tracking-tight text-balance break-words text-slate-900 sm:mb-6 sm:text-3xl md:text-4xl">
                 {funnel.title}{" "}
-                <span className="mt-1 block text-emerald-500 sm:mt-0 sm:inline">
+                <span className="mt-1 block text-blue-500 sm:mt-0 sm:inline">
                   {funnel.titleHighlight}
                 </span>
               </h2>
@@ -211,7 +214,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
                 <ul className="mt-6 list-none space-y-4 pl-0 font-medium text-slate-800">
                   {funnel.features.map((f, i) => (
                     <li key={i} className="flex items-start">
-                      <CheckCircle2 className="mt-1 mr-3 h-5 w-5 shrink-0 text-emerald-500" />
+                      <CheckCircle2 className="mt-1 mr-3 h-5 w-5 shrink-0 text-blue-500" />
                       <span className="flex-1">{f}</span>
                     </li>
                   ))}
@@ -220,10 +223,10 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             </div>
 
             <div className="relative mx-auto w-full max-w-sm sm:max-w-md lg:mx-0 lg:max-w-full">
-              <div className="absolute -inset-2 rounded-3xl bg-emerald-500/10 blur-lg sm:-inset-4 sm:blur-xl" />
+              <div className="absolute -inset-2 rounded-3xl bg-blue-600/10 blur-lg sm:-inset-4 sm:blur-xl" />
               <div className="relative w-full rounded-2xl bg-slate-950 p-6 shadow-2xl sm:p-8">
                 <div className="mb-6 flex flex-row items-center gap-4 border-b border-slate-800 pb-6">
-                  <Target className="h-8 w-8 shrink-0 text-emerald-400 sm:h-10 sm:w-10" />
+                  <Target className="h-8 w-8 shrink-0 text-blue-400 sm:h-10 sm:w-10" />
                   <div className="min-w-0 flex-1">
                     <div className="truncate text-xs text-slate-400 sm:text-sm">
                       {funnel.boxLeft}
@@ -234,7 +237,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
                   </div>
                 </div>
                 <div className="flex flex-row items-center gap-4">
-                  <TrendingUp className="h-8 w-8 shrink-0 text-emerald-400 sm:h-10 sm:w-10" />
+                  <TrendingUp className="h-8 w-8 shrink-0 text-blue-400 sm:h-10 sm:w-10" />
                   <div className="min-w-0 flex-1">
                     <div className="truncate text-xs text-slate-400 sm:text-sm">
                       {funnel.boxRight}
@@ -266,7 +269,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
                   {contrast.tableHeaders.map((h, i) => (
                     <TableHead
                       key={i}
-                      className={`py-6 text-sm font-medium ${i === 2 ? "font-bold text-emerald-400" : "text-slate-400"}`}
+                      className={`py-6 text-sm font-medium ${i === 2 ? "font-bold text-blue-400" : "text-slate-400"}`}
                     >
                       {h}
                     </TableHead>
@@ -279,18 +282,20 @@ export default function AplikacjeInternetoweDlaFirmPage() {
                     key={i}
                     className="border-slate-800 transition-colors hover:bg-slate-800/50"
                   >
-                    <TableCell className="py-6 text-sm font-medium text-slate-300 whitespace-normal">
+                    <TableCell className="py-6 text-sm font-medium whitespace-normal text-slate-300">
                       {row.feature}
                     </TableCell>
-                    <TableCell className="py-6 text-sm text-slate-400 whitespace-normal">
+                    <TableCell className="py-6 text-sm whitespace-normal text-slate-400">
                       <div className="flex items-start gap-3">
                         <XCircle className="mt-0.5 h-5 w-5 shrink-0 text-red-400" />
-                        <span className="leading-relaxed">{row.traditional}</span>
+                        <span className="leading-relaxed">
+                          {row.traditional}
+                        </span>
                       </div>
                     </TableCell>
-                    <TableCell className="bg-emerald-500/5 py-6 text-sm font-medium text-white whitespace-normal">
+                    <TableCell className="bg-blue-600/5 py-6 text-sm font-medium whitespace-normal text-white">
                       <div className="flex items-start gap-3">
-                        <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-400" />
+                        <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue-400" />
                         <span className="leading-relaxed">{row.elite}</span>
                       </div>
                     </TableCell>
@@ -306,7 +311,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
                 key={i}
                 className="space-y-4 rounded-xl border border-slate-800 bg-slate-900 p-5"
               >
-                <h4 className="border-b border-slate-800 pb-3 text-lg font-bold text-emerald-400">
+                <h4 className="border-b border-slate-800 pb-3 text-lg font-bold text-blue-400">
                   {row.feature}
                 </h4>
                 <div className="space-y-3">
@@ -319,10 +324,10 @@ export default function AplikacjeInternetoweDlaFirmPage() {
                       {row.traditional}
                     </div>
                   </div>
-                  <div className="flex gap-3 rounded-lg border border-emerald-500/10 bg-emerald-500/5 p-3">
-                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-400" />
+                  <div className="flex gap-3 rounded-lg border border-blue-500/10 bg-blue-600/5 p-3">
+                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-blue-400" />
                     <div className="text-sm text-white">
-                      <span className="mb-1 block text-xs font-semibold text-emerald-500 uppercase">
+                      <span className="mb-1 block text-xs font-semibold text-blue-500 uppercase">
                         Model Elite:
                       </span>{" "}
                       {row.elite}
@@ -351,7 +356,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
                 value={`item-${i}`}
                 className="border-slate-200"
               >
-                <AccordionTrigger className="px-1 py-4 text-left text-sm font-semibold break-words text-slate-900 hover:text-emerald-600 sm:text-base md:text-lg">
+                <AccordionTrigger className="px-1 py-4 text-left text-sm font-semibold break-words text-slate-900 hover:text-blue-600 sm:text-base md:text-lg">
                   {item.q}
                 </AccordionTrigger>
                 <AccordionContent className="px-1 pb-4 text-sm leading-relaxed break-words text-slate-600 sm:text-base">
@@ -366,17 +371,17 @@ export default function AplikacjeInternetoweDlaFirmPage() {
       {/* 7. THE IRRESISTIBLE OFFER CLOSING */}
       <section
         id="oferta"
-        className="w-full bg-emerald-500 py-12 text-slate-950 sm:py-20 lg:py-24"
+        className="w-full bg-blue-600 py-12 text-white sm:py-20 lg:py-24"
       >
         <div className="mx-auto w-full max-w-4xl px-4 text-center sm:px-6 lg:px-8">
           <h2 className="mb-4 text-2xl font-extrabold tracking-tight text-balance break-words sm:mb-6 sm:text-3xl md:text-4xl lg:text-5xl">
             {offer.title}
           </h2>
-          <p className="mx-auto mb-8 max-w-2xl px-2 text-sm font-medium text-balance text-emerald-950 sm:mb-12 sm:text-base md:text-lg">
+          <p className="mx-auto mb-8 max-w-2xl px-2 text-sm font-medium text-balance text-blue-50 sm:mb-12 sm:text-base md:text-lg">
             {offer.subtitle}
           </p>
 
-          <div className="mx-auto mb-8 w-full max-w-2xl rounded-xl border border-emerald-100 bg-white p-5 text-left shadow-xl sm:mb-12 sm:rounded-2xl sm:p-8">
+          <div className="mx-auto mb-8 w-full max-w-2xl rounded-xl border border-blue-100 bg-white p-5 text-left shadow-xl sm:mb-12 sm:rounded-2xl sm:p-8">
             <h3 className="mb-5 flex flex-col items-center justify-center border-b border-slate-100 pb-4 text-center text-base font-bold text-balance break-words text-slate-900 sm:mb-6 sm:flex-row sm:text-lg md:text-xl">
               {offer.packetTitle}{" "}
               <span className="mt-1 text-sm font-normal text-slate-500 sm:mt-0 sm:ml-2 sm:text-base">
@@ -390,7 +395,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
                   key={i}
                   className="flex w-full flex-row items-start gap-3 sm:gap-4"
                 >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-emerald-600 sm:h-12 sm:w-12">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-100 text-blue-600 sm:h-12 sm:w-12">
                     {i === 0 ? (
                       <Target className="h-5 w-5 sm:h-6 sm:w-6" />
                     ) : i === 1 ? (
@@ -418,8 +423,13 @@ export default function AplikacjeInternetoweDlaFirmPage() {
               className="group !h-auto w-full rounded-full bg-slate-950 px-4 py-4 text-sm font-bold text-white shadow-xl transition-all hover:bg-slate-800 hover:shadow-2xl sm:!h-16 sm:w-auto sm:px-10 sm:text-lg"
               asChild
             >
-              <Link href={siteConfig.calendlyLink} className="flex w-full items-center justify-center gap-2">
-                <span className="whitespace-normal text-center text-balance leading-tight">{offer.cta}</span>
+              <Link
+                href={siteConfig.calendlyLink}
+                className="flex w-full items-center justify-center gap-2"
+              >
+                <span className="text-center leading-tight text-balance whitespace-normal">
+                  {offer.cta}
+                </span>
                 <ArrowRight className="h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1" />
               </Link>
             </Button>
