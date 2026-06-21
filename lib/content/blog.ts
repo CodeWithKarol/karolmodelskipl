@@ -1,9 +1,9 @@
 export const blogContent = {
   header: {
     title:
-      'Tworzenie Aplikacji Internetowych Klasy Enterprise <br class="hidden lg:block" />\n<span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">Bez Ukrytych Kosztów Agencji</span>',
+      'Nie potrzebujesz kolejnej agencji od "dostarczania kodu". <br class="hidden lg:block" />\n<span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">Potrzebujesz architektury, która napędza biznes.</span>',
     description:
-      "Odrzuć rozbudowaną strukturę menedżerską software house'ów. Zyskaj bezpośredni dostęp do wiedzy deweloperskiej, standardów bezpieczeństwa z systemów bankowych i buduj stabilne platformy webowe skalujące Twój biznes.",
+      "Twoja aplikacja to nie koszt – to fundament Twojej sprzedaży. Odkryj podejście Enterprise-at-Startup-Speed. Buduję rozwiązania klasy bankowej, które eliminują wąskie gardła i realnie zwiększają ROI. Zobacz, jak wyeliminować dług technologiczny i przejąć pełną kontrolę nad skalowalnością swojego systemu.",
   },
   offer: {
     title: "Odbierz Bezpłatną Mapę Drogową IT",
@@ -30,6 +30,6 @@ export const blogContent = {
         value: "100 zł",
       },
     ],
-    cta: "Zarezerwuj darmową diagnozę",
+    cta: "Odbierz Bezpłatną Mapę Drogową IT",
   },
 }

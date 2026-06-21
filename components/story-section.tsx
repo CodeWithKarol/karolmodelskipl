@@ -86,47 +86,36 @@ export function StorySection() {
         </div>
 
         {/* CZĘŚĆ 2: OLŚNIENIE I MISJA (Rozwiązanie / The Shift) */}
-        <div className="mx-auto mt-16 max-w-5xl md:mt-24">
-          <div className="group relative">
-            {/* Tło i poświata pod kartą */}
-            <div className="absolute -inset-1 rounded-[2.5rem] bg-gradient-to-r from-blue-600/20 via-emerald-500/20 to-blue-600/20 opacity-50 blur-xl transition duration-500 group-hover:opacity-70"></div>
-
-            <div className="relative overflow-hidden rounded-[1.5rem] border border-slate-700/50 bg-slate-900 p-6 shadow-2xl backdrop-blur-sm sm:rounded-[2rem] sm:p-10 md:p-14">
-              {/* Grid pattern */}
-              <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f1a_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f1a_1px,transparent_1px)] bg-[size:24px_24px] opacity-20"></div>
-
-              <div className="relative z-10 grid items-start gap-10 lg:grid-cols-12 lg:gap-14">
-                {/* Lewa strona dużej karty */}
-                <div className="text-center lg:sticky lg:top-10 lg:col-span-5 lg:text-left">
-                  <div className="mx-auto mb-4 inline-flex flex-shrink-0 items-center justify-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1.5 text-xs font-medium text-emerald-400 sm:mb-6 sm:text-sm lg:mx-0 lg:justify-start">
-                    <Lightbulb className="h-4 w-4" />
-                    <span>{story.paradigm_tag}</span>
-                  </div>
-                  <h2 className="mx-auto max-w-2xl text-2xl leading-[1.2] font-extrabold text-balance text-white sm:text-3xl md:text-4xl lg:mx-0 lg:text-5xl lg:leading-[1.15]">
-                    {story.paradigm_title}
-                  </h2>
+        <div className="mx-auto mt-20 max-w-5xl border-t border-slate-800/60 pt-16 md:mt-32 md:pt-20">
+          <div className="grid gap-10 lg:grid-cols-12 lg:gap-16 items-start">
+            
+            {/* Lewa strona - Nagłówek */}
+            <div className="lg:col-span-5 lg:sticky lg:top-10">
+              <div className="mb-6 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-400">
+                  <Lightbulb className="h-5 w-5" />
                 </div>
+                <span className="text-sm font-bold tracking-wider text-emerald-400 uppercase">
+                  {story.paradigm_tag}
+                </span>
+              </div>
+              <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl leading-[1.15]">
+                {story.paradigm_title}
+              </h2>
+            </div>
 
-                {/* Prawa strona dużej karty */}
-                <div className="mt-2 space-y-6 sm:space-y-8 lg:col-span-7 lg:mt-0 lg:space-y-10">
-                  <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start sm:gap-5 lg:gap-6">
-                    <div className="hidden shrink-0 rounded-xl border border-blue-500/20 bg-blue-500/10 p-3 sm:mt-1 sm:block">
-                      <ShieldCheck className="h-6 w-6 text-blue-400 lg:h-7 lg:w-7" />
-                    </div>
-                    <p className="text-center text-[15px] leading-[1.6] text-slate-300 sm:text-left sm:text-lg lg:text-xl lg:leading-[1.7]">
-                      {story.paradigm_text_1}
-                    </p>
-                  </div>
+            {/* Prawa strona - Treść bez ramek */}
+            <div className="flex flex-col gap-8 lg:col-span-7">
+              <p className="text-lg leading-[1.7] text-slate-300">
+                {story.paradigm_text_1}
+              </p>
 
-                  <div className="flex flex-col items-center gap-4 rounded-2xl border border-slate-800/80 bg-slate-950/60 p-5 shadow-inner sm:flex-row sm:items-start sm:gap-5 sm:rounded-[1.5rem] sm:p-6 lg:gap-6 lg:p-8">
-                    <div className="hidden shrink-0 rounded-xl border border-emerald-500/20 bg-emerald-500/10 p-2.5 sm:mt-1 sm:block">
-                      <ArrowRight className="h-5 w-5 text-emerald-400 lg:h-6 lg:w-6" />
-                    </div>
-                    <p className="text-center text-[15px] leading-[1.6] font-medium text-slate-200 sm:text-left sm:text-lg lg:text-xl lg:leading-[1.7]">
-                      {story.paradigm_text_2}
-                    </p>
-                  </div>
-                </div>
+              <div className="relative pl-6 sm:pl-8">
+                {/* Ozdobna linia akcentująca */}
+                <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full bg-gradient-to-b from-emerald-500 to-blue-500"></div>
+                <p className="text-xl font-medium leading-[1.6] text-white">
+                  {story.paradigm_text_2}
+                </p>
               </div>
             </div>
           </div>

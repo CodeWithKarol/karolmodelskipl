@@ -19,7 +19,9 @@ export function Breadcrumbs() {
     <Breadcrumb>
       <BreadcrumbList className="text-slate-400">
         <BreadcrumbItem>
-          <BreadcrumbLink href="/" className="hover:text-blue-400">Home</BreadcrumbLink>
+          <BreadcrumbLink href="/" className="hover:text-blue-400">
+            Home
+          </BreadcrumbLink>
         </BreadcrumbItem>
         {paths.map((path, index) => {
           const href = "/" + paths.slice(0, index + 1).join("/")
@@ -33,9 +35,13 @@ export function Breadcrumbs() {
               <BreadcrumbSeparator />
               <BreadcrumbItem>
                 {isLast ? (
-                  <BreadcrumbPage className="text-blue-400">{label}</BreadcrumbPage>
+                  <BreadcrumbPage className="text-blue-400">
+                    {label}
+                  </BreadcrumbPage>
                 ) : (
-                  <BreadcrumbLink href={href} className="hover:text-blue-400">{label}</BreadcrumbLink>
+                  <BreadcrumbLink href={href} className="hover:text-blue-400">
+                    {label}
+                  </BreadcrumbLink>
                 )}
               </BreadcrumbItem>
             </React.Fragment>

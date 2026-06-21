@@ -14,7 +14,7 @@ import { content } from "@/lib/content"
 export function HeroSection() {
   const { hero } = content
   return (
-    <section className="relative flex min-h-dvh items-center overflow-hidden bg-slate-950 pt-24 pb-8 sm:py-8 sm:pt-32 text-slate-50 selection:bg-blue-500/30">
+    <section className="relative flex min-h-dvh items-center overflow-hidden bg-slate-950 pt-24 pb-8 text-slate-50 selection:bg-blue-500/30 sm:py-8 sm:pt-32">
       {/* Dynamiczne Tło i Gradienty */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
       <div className="absolute top-1/4 right-0 h-[500px] w-[500px] rounded-full bg-blue-600/10 opacity-60 mix-blend-screen blur-[120px] lg:h-[800px] lg:w-[800px]"></div>
@@ -50,7 +50,9 @@ export function HeroSection() {
                     size="lg"
                     className="relative flex h-auto min-h-[3.25rem] w-full flex-row items-center justify-center gap-2 rounded-xl border border-blue-400/20 bg-blue-600 px-4 py-2.5 text-[13px] font-bold text-white shadow-xl transition-all hover:bg-blue-500 sm:min-h-[3.5rem] sm:w-auto sm:gap-3 sm:rounded-2xl sm:px-8 sm:py-3 sm:text-[17px] lg:h-12 lg:rounded-xl lg:px-6 lg:py-2 lg:text-[15px]"
                   >
-                    <span className="whitespace-normal text-center text-balance leading-tight">{hero.cta}</span>
+                    <span className="text-center leading-tight text-balance whitespace-normal">
+                      {hero.cta}
+                    </span>
                     <ArrowRight className="h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1 sm:h-5 sm:w-5" />
                   </Button>
                 </div>
