@@ -16,7 +16,7 @@ import {
   SheetDescription,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Code2, ChevronRight, BookOpen, Menu } from "lucide-react"
+import { Code2, ChevronRight, BookOpen, Menu, Zap } from "lucide-react"
 
 export function SiteHeader() {
   return (
@@ -40,21 +40,40 @@ export function SiteHeader() {
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="flex w-[340px] flex-col gap-1 p-2 md:w-[360px]">
+                          <NavigationMenuLink asChild>
+                        <Link
+                          href="/projektowanie-mvp"
+                          className="group flex flex-col gap-2 rounded-xl p-4 transition-all outline-none hover:bg-slate-800/40 focus:bg-slate-800/40"
+                        >
+                          <div className="flex items-center text-[14px] font-semibold text-slate-200 transition-colors group-hover:text-blue-400">
+                            <div className="flex items-center gap-3 w-full">
+                              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 transition-colors group-hover:bg-blue-500/20">
+                                <Zap className="h-4 w-4" />
+                              </div>
+                              <span className="flex-1 min-w-[130px]">MVP w 30 dni</span>
+                              <ChevronRight className="h-4 w-4 text-blue-400 opacity-0 transition-all group-hover:opacity-100" />
+                            </div>
+                          </div>
+                          <p className="ml-11 text-[13px] leading-relaxed text-slate-400">
+                            Szybka walidacja pomysłu biznesowego bez przepalania budżetu.
+                          </p>
+                        </Link>
+                      </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <Link
                           href="/aplikacje-internetowe-dla-firm"
                           className="group flex flex-col gap-2 rounded-xl p-4 transition-all outline-none hover:bg-slate-800/40 focus:bg-slate-800/40"
                         >
-                          <div className="flex items-center justify-between text-[14px] font-semibold text-slate-200 transition-colors group-hover:text-blue-400">
-                            <div className="flex items-center gap-3">
-                              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 transition-colors group-hover:bg-blue-500/20">
+                          <div className="flex items-center text-[14px] font-semibold text-slate-200 transition-colors group-hover:text-blue-400">
+                            <div className="flex items-center gap-3 w-full">
+                              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 transition-colors group-hover:bg-blue-500/20">
                                 <Code2 className="h-4 w-4" />
                               </div>
-                              <span>Aplikacje dla firm</span>
+                              <span className="flex-1 min-w-[130px]">Aplikacje dla firm</span>
+                              <ChevronRight className="h-4 w-4 text-blue-400 opacity-0 transition-all group-hover:opacity-100" />
                             </div>
-                            <ChevronRight className="h-4 w-4 -translate-x-2 text-blue-400 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
                           </div>
-                          <p className="pl-11 text-[13px] leading-relaxed text-slate-400">
+                          <p className="ml-11 text-[13px] leading-relaxed text-slate-400">
                             Dedykowane systemy webowe zwiększające zyski i
                             automatyzujące procesy w Twojej firmie.
                           </p>
@@ -110,6 +129,22 @@ export function SiteHeader() {
                   </SheetDescription>
                 </SheetHeader>
                 <div className="flex flex-col gap-4">
+                  <Link
+                    href="/projektowanie-mvp"
+                    className="flex items-center gap-3 rounded-xl border border-slate-800 bg-slate-900/50 p-4 transition-colors hover:bg-slate-800"
+                  >
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400">
+                      <Zap className="h-5 w-5" />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-sm font-semibold text-slate-200">
+                        MVP w 30 dni
+                      </span>
+                      <span className="text-[12px] text-slate-400">
+                        Szybka walidacja pomysłu
+                      </span>
+                    </div>
+                  </Link>
                   <Link
                     href="/aplikacje-internetowe-dla-firm"
                     className="flex items-center gap-3 rounded-xl border border-slate-800 bg-slate-900/50 p-4 transition-colors hover:bg-slate-800"

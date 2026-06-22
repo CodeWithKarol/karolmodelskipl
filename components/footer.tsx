@@ -97,6 +97,13 @@ export function Footer() {
             </h3>
             <nav className="flex flex-col space-y-3.5">
               <Link
+                href="/projektowanie-mvp"
+                className="group flex w-fit items-center gap-2 text-[15px] text-slate-400 transition-colors hover:text-white"
+              >
+                <span className="h-1 w-1 rounded-full bg-slate-700 transition-colors group-hover:bg-blue-500"></span>
+                MVP w 30 dni
+              </Link>
+              <Link
                 href="/aplikacje-internetowe-dla-firm"
                 className="group flex w-fit items-center gap-2 text-[15px] text-slate-400 transition-colors hover:text-white"
               >
