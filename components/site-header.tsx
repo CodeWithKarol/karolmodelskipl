@@ -39,22 +39,17 @@ export function SiteHeader() {
                     Oferta
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="flex w-[340px] flex-col gap-1 p-2 md:w-[360px]">
-                          <NavigationMenuLink asChild>
+                    <div className="flex w-[260px] flex-col gap-1 p-2 md:w-[280px]">
+                      <NavigationMenuLink asChild>
                         <Link
                           href="/projektowanie-mvp"
-                          className="group flex flex-col gap-2 rounded-xl p-4 transition-all outline-none hover:bg-slate-800/40 focus:bg-slate-800/40"
+                          className="group flex flex-col gap-1.5 rounded-lg p-3 transition-colors outline-none hover:bg-slate-800/20 focus:bg-slate-800/20"
                         >
-                          <div className="flex items-center text-[14px] font-semibold text-slate-200 transition-colors group-hover:text-blue-400">
-                            <div className="flex items-center gap-3 w-full">
-                              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 transition-colors group-hover:bg-blue-500/20">
-                                <Zap className="h-4 w-4" />
-                              </div>
-                              <span className="flex-1 min-w-[130px]">MVP w 30 dni</span>
-                              <ChevronRight className="h-4 w-4 text-blue-400 opacity-0 transition-all group-hover:opacity-100" />
-                            </div>
+                          <div className="flex items-center text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
+                            <span className="flex-1">MVP w 30 dni</span>
+                            <ChevronRight className="h-4 w-4 text-slate-500 opacity-0 transition-all -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-white" />
                           </div>
-                          <p className="ml-11 text-[13px] leading-relaxed text-slate-400">
+                          <p className="text-[13px] leading-relaxed text-slate-500 transition-colors group-hover:text-slate-400">
                             Szybka walidacja pomysłu biznesowego bez przepalania budżetu.
                           </p>
                         </Link>
@@ -62,20 +57,14 @@ export function SiteHeader() {
                       <NavigationMenuLink asChild>
                         <Link
                           href="/aplikacje-internetowe-dla-firm"
-                          className="group flex flex-col gap-2 rounded-xl p-4 transition-all outline-none hover:bg-slate-800/40 focus:bg-slate-800/40"
+                          className="group flex flex-col gap-1.5 rounded-lg p-3 transition-colors outline-none hover:bg-slate-800/20 focus:bg-slate-800/20"
                         >
-                          <div className="flex items-center text-[14px] font-semibold text-slate-200 transition-colors group-hover:text-blue-400">
-                            <div className="flex items-center gap-3 w-full">
-                              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400 transition-colors group-hover:bg-blue-500/20">
-                                <Code2 className="h-4 w-4" />
-                              </div>
-                              <span className="flex-1 min-w-[130px]">Aplikacje dla firm</span>
-                              <ChevronRight className="h-4 w-4 text-blue-400 opacity-0 transition-all group-hover:opacity-100" />
-                            </div>
+                          <div className="flex items-center text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
+                            <span className="flex-1">Aplikacje dla firm</span>
+                            <ChevronRight className="h-4 w-4 text-slate-500 opacity-0 transition-all -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-white" />
                           </div>
-                          <p className="ml-11 text-[13px] leading-relaxed text-slate-400">
-                            Dedykowane systemy webowe zwiększające zyski i
-                            automatyzujące procesy w Twojej firmie.
+                          <p className="text-[13px] leading-relaxed text-slate-500 transition-colors group-hover:text-slate-400">
+                            Dedykowane systemy webowe automatyzujące procesy w Twojej firmie.
                           </p>
                         </Link>
                       </NavigationMenuLink>
@@ -128,55 +117,45 @@ export function SiteHeader() {
                     Wybierz sekcję, do której chcesz przejść.
                   </SheetDescription>
                 </SheetHeader>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-2">
                   <Link
                     href="/projektowanie-mvp"
-                    className="flex items-center gap-3 rounded-xl border border-slate-800 bg-slate-900/50 p-4 transition-colors hover:bg-slate-800"
+                    className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
                   >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400">
-                      <Zap className="h-5 w-5" />
+                    <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
+                      <span>MVP w 30 dni</span>
+                      <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
                     </div>
-                    <div className="flex flex-col">
-                      <span className="text-sm font-semibold text-slate-200">
-                        MVP w 30 dni
-                      </span>
-                      <span className="text-[12px] text-slate-400">
-                        Szybka walidacja pomysłu
-                      </span>
-                    </div>
+                    <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
+                      Szybka walidacja pomysłu
+                    </span>
                   </Link>
                   <Link
                     href="/aplikacje-internetowe-dla-firm"
-                    className="flex items-center gap-3 rounded-xl border border-slate-800 bg-slate-900/50 p-4 transition-colors hover:bg-slate-800"
+                    className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
                   >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-500/10 text-blue-400">
-                      <Code2 className="h-5 w-5" />
+                    <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
+                      <span>Aplikacje dla firm</span>
+                      <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
                     </div>
-                    <div className="flex flex-col">
-                      <span className="text-sm font-semibold text-slate-200">
-                        Aplikacje dla firm
-                      </span>
-                      <span className="text-[12px] text-slate-400">
-                        Oferta budowy systemów
-                      </span>
-                    </div>
+                    <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
+                      Oferta budowy systemów
+                    </span>
                   </Link>
+
+                  <div className="my-2 h-[1px] w-full bg-slate-800/50" />
 
                   <Link
                     href="/blog"
-                    className="flex items-center gap-3 rounded-xl border border-slate-800 bg-slate-900/50 p-4 transition-colors hover:bg-slate-800"
+                    className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
                   >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-emerald-500/10 text-emerald-400">
-                      <BookOpen className="h-5 w-5" />
+                    <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
+                      <span>Baza wiedzy</span>
+                      <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
                     </div>
-                    <div className="flex flex-col">
-                      <span className="text-sm font-semibold text-slate-200">
-                        Baza wiedzy
-                      </span>
-                      <span className="text-[12px] text-slate-400">
-                        Blog i poradniki IT
-                      </span>
-                    </div>
+                    <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
+                      Blog i poradniki IT
+                    </span>
                   </Link>
                 </div>
               </SheetContent>
