@@ -43,43 +43,18 @@ export default function ProjektowanieMvpPage() {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "@id": "https://www.karolmodelski.pl/projektowanie-mvp",
-        url: "https://www.karolmodelski.pl/projektowanie-mvp",
-        name: mvp.metadata.title,
-        description: mvp.metadata.description,
-        isPartOf: {
-          "@type": "WebSite",
-          "@id": "https://www.karolmodelski.pl/#website",
-          url: "https://www.karolmodelski.pl",
-          name: "Karol Modelski - Niezależny Partner Technologiczny",
-        },
-      },
+    "@type": "WebPage",
+    "@id": "https://www.karolmodelski.pl/projektowanie-mvp#webpage",
+    url: "https://www.karolmodelski.pl/projektowanie-mvp",
+    name: mvp.metadata.title,
+    isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
+    mainEntity: [
       {
         "@type": "Service",
         "@id": "https://www.karolmodelski.pl/projektowanie-mvp#service",
         name: mvp.service.title,
         description: mvp.service.description,
-        serviceType: mvp.service.type,
-        provider: {
-          "@type": "ProfessionalService",
-          "@id": "https://www.karolmodelski.pl/#identity",
-          name: "Karol Modelski - Niezależny Partner Technologiczny",
-          url: "https://www.karolmodelski.pl",
-        },
-        areaServed: {
-          "@type": "Country",
-          name: "Poland",
-        },
-        offers: {
-          "@type": "Offer",
-          name: mvp.service.offerName,
-          price: mvp.service.offerPrice,
-          priceCurrency: mvp.service.offerCurrency,
-          description: mvp.service.offerDescription,
-        },
+        provider: { "@id": "https://www.karolmodelski.pl/#organization" },
       },
       {
         "@type": "FAQPage",
@@ -87,10 +62,7 @@ export default function ProjektowanieMvpPage() {
         mainEntity: mvp.faq.items.map((item) => ({
           "@type": "Question",
           name: item.question,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: item.answer,
-          },
+          acceptedAnswer: { "@type": "Answer", text: item.answer },
         })),
       },
     ],

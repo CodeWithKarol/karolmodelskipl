@@ -41,30 +41,24 @@ import {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "WebPage",
+  "@id": "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#webpage",
+  url: "https://www.karolmodelski.pl/modernizacja-oprogramowania-it",
+  name: "Modernizacja Oprogramowania IT dla Firm | Niezależny Partner",
+  isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
+  mainEntity: [
     {
       "@type": "Service",
+      "@id":
+        "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#service",
       name: "Modernizacja Oprogramowania IT dla Firm",
       description:
-        "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży. Odbierz darmową diagnozę!",
-      provider: {
-        "@type": "Person",
-        name: "Karol Modelski",
-        url: "https://karolmodelski.pl",
-      },
-      serviceType: "Software Modernization",
-      areaServed: "PL",
-      offers: {
-        "@type": "Offer",
-        name: "Bezpłatny Pakiet Doradczy",
-        description:
-          "30-minutowa diagnoza kodu, Indywidualny Plan Ewolucji, Bankowy Test Bezpieczeństwa (Wartość: 600 zł za 0 zł).",
-        price: "0.00",
-        priceCurrency: "PLN",
-      },
+        "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży.",
+      provider: { "@id": "https://www.karolmodelski.pl/#organization" },
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#faq",
       mainEntity: faq.items.map((item) => ({
         "@type": "Question",
         name: item.q,
