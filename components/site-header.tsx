@@ -16,7 +16,8 @@ import {
   SheetDescription,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { Code2, ChevronRight, BookOpen, Menu, Zap } from "lucide-react"
+import { ChevronRight, Menu } from "lucide-react"
+import { header } from "@/lib/content/header"
 
 export function SiteHeader() {
   return (
@@ -36,38 +37,26 @@ export function SiteHeader() {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="h-8 rounded-full !bg-transparent px-3 text-[13px] font-medium text-slate-400 transition-colors hover:!bg-slate-800/50 hover:!text-slate-100 data-[state=open]:!bg-slate-800/50 data-[state=open]:!text-slate-100 [&>svg]:hidden">
-                    Oferta
+                    {header.menu.oferta.title}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="flex w-[260px] flex-col gap-1 p-2 md:w-[280px]">
-                      <NavigationMenuLink asChild>
-                        <Link
-                          href="/projektowanie-mvp"
-                          className="group flex flex-col gap-1.5 rounded-lg p-3 transition-colors outline-none hover:bg-slate-800/20 focus:bg-slate-800/20"
-                        >
-                          <div className="flex items-center text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
-                            <span className="flex-1">MVP w 30 dni</span>
-                            <ChevronRight className="h-4 w-4 text-slate-500 opacity-0 transition-all -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-white" />
-                          </div>
-                          <p className="text-[13px] leading-relaxed text-slate-500 transition-colors group-hover:text-slate-400">
-                            Szybka walidacja pomysłu biznesowego bez przepalania budżetu.
-                          </p>
-                        </Link>
-                      </NavigationMenuLink>
-                      <NavigationMenuLink asChild>
-                        <Link
-                          href="/aplikacje-internetowe-dla-firm"
-                          className="group flex flex-col gap-1.5 rounded-lg p-3 transition-colors outline-none hover:bg-slate-800/20 focus:bg-slate-800/20"
-                        >
-                          <div className="flex items-center text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
-                            <span className="flex-1">Aplikacje dla firm</span>
-                            <ChevronRight className="h-4 w-4 text-slate-500 opacity-0 transition-all -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-white" />
-                          </div>
-                          <p className="text-[13px] leading-relaxed text-slate-500 transition-colors group-hover:text-slate-400">
-                            Dedykowane systemy webowe automatyzujące procesy w Twojej firmie.
-                          </p>
-                        </Link>
-                      </NavigationMenuLink>
+                      {header.menu.oferta.items.map((item) => (
+                        <NavigationMenuLink key={item.href} asChild>
+                          <Link
+                            href={item.href}
+                            className="group flex flex-col gap-1.5 rounded-lg p-3 transition-colors outline-none hover:bg-slate-800/20 focus:bg-slate-800/20"
+                          >
+                            <div className="flex items-center text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
+                              <span className="flex-1">{item.title}</span>
+                              <ChevronRight className="h-4 w-4 text-slate-500 opacity-0 transition-all -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-white" />
+                            </div>
+                            <p className="text-[13px] leading-relaxed text-slate-500 transition-colors group-hover:text-slate-400">
+                              {item.description}
+                            </p>
+                          </Link>
+                        </NavigationMenuLink>
+                      ))}
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -75,10 +64,10 @@ export function SiteHeader() {
             </NavigationMenu>
 
             <Link
-              href="/blog"
+              href={header.menu.blog.href}
               className="flex h-8 items-center rounded-full px-3 text-[13px] font-medium text-slate-400 transition-colors hover:bg-slate-800/50 hover:text-slate-100"
             >
-              Baza wiedzy
+              {header.menu.blog.title}
             </Link>
           </div>
         </div>
@@ -118,43 +107,34 @@ export function SiteHeader() {
                   </SheetDescription>
                 </SheetHeader>
                 <div className="flex flex-col gap-2">
-                  <Link
-                    href="/projektowanie-mvp"
-                    className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
-                  >
-                    <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
-                      <span>MVP w 30 dni</span>
-                      <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
-                    </div>
-                    <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
-                      Szybka walidacja pomysłu
-                    </span>
-                  </Link>
-                  <Link
-                    href="/aplikacje-internetowe-dla-firm"
-                    className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
-                  >
-                    <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
-                      <span>Aplikacje dla firm</span>
-                      <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
-                    </div>
-                    <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
-                      Oferta budowy systemów
-                    </span>
-                  </Link>
+                  {header.menu.oferta.items.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
+                    >
+                      <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
+                        <span>{item.title}</span>
+                        <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
+                      </div>
+                      <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
+                        {item.description}
+                      </span>
+                    </Link>
+                  ))}
 
                   <div className="my-2 h-[1px] w-full bg-slate-800/50" />
 
                   <Link
-                    href="/blog"
+                    href={header.menu.blog.href}
                     className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
                   >
                     <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
-                      <span>Baza wiedzy</span>
+                      <span>{header.menu.blog.title}</span>
                       <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
                     </div>
                     <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
-                      Blog i poradniki IT
+                      {header.menu.blog.description}
                     </span>
                   </Link>
                 </div>

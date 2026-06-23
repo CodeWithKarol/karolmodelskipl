@@ -27,54 +27,60 @@ import {
   Target,
   TrendingUp,
   Banknote,
-  CalendarDays
+  CalendarDays,
+  Cog
 } from "lucide-react"
 import {
   hero,
   story,
   mechanism,
-  funnel,
   contrast,
   faq,
   offer,
-} from "@/lib/content/aplikacje-internetowe/page"
+} from "@/lib/content/modernizacja-oprogramowania-it/page"
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm#webpage",
-  "url": "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm",
-  "name": "Skalowanie i Wydajne Aplikacje Internetowe dla Firm | Niezależny Partner Technologiczny",
-  "isPartOf": { "@id": "https://www.karolmodelski.pl/#website" },
-  "mainEntity": [
+  "@graph": [
     {
       "@type": "Service",
-      "@id": "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm#service",
-      "name": "Tworzenie dedykowanych aplikacji internetowych dla firm",
-      "description": "Projektowanie i wdrażanie bezpiecznych, wydajnych aplikacji internetowych dla małych i średnich firm.",
-      "provider": { "@id": "https://www.karolmodelski.pl/#organization" },
+      "name": "Modernizacja Oprogramowania IT dla Firm",
+      "description": "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży. Odbierz darmową diagnozę!",
+      "provider": {
+        "@type": "Person",
+        "name": "Karol Modelski",
+        "url": "https://karolmodelski.pl"
+      },
+      "serviceType": "Software Modernization",
+      "areaServed": "PL",
+      "offers": {
+        "@type": "Offer",
+        "name": "Bezpłatny Pakiet Doradczy",
+        "description": "30-minutowa diagnoza kodu, Indywidualny Plan Ewolucji, Bankowy Test Bezpieczeństwa (Wartość: 600 zł za 0 zł).",
+        "price": "0.00",
+        "priceCurrency": "PLN"
+      }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm#faq",
       "mainEntity": faq.items.map((item) => ({
         "@type": "Question",
         "name": item.q,
         "acceptedAnswer": { "@type": "Answer", "text": item.a },
-      })),
-    },
-  ],
-}
+      }))
+    }
+  ]
+};
 
 export const metadata: Metadata = {
-  title: "Skalowanie i Wydajne Aplikacje Internetowe dla Firm | Niezależny Partner Technologiczny",
-  description: "Dedykowane aplikacje internetowe dla firm o niezawodności systemów bankowych. Zyskaj solidne rozwiązania bez marż agencji. Odbierz darmowy plan!",
+  title: "Modernizacja Oprogramowania IT dla Firm | Niezależny Partner",
+  description: "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży. Odbierz darmową diagnozę!",
   alternates: {
-    canonical: "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm",
+    canonical: "https://www.karolmodelski.pl/modernizacja-oprogramowania-it",
   },
 }
 
-export default function AplikacjeInternetoweDlaFirmPage() {
+export default function ModernizacjaOprogramowaniaPage() {
   return (
     <main className="flex-1 bg-slate-950 text-slate-50 overflow-hidden">
       <script
@@ -157,14 +163,16 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             <h2 className="text-3xl leading-[1.15] font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">
               {mechanism.title}
             </h2>
-            <p className="mt-4 text-[15px] sm:text-lg text-slate-400 font-light">
-              {mechanism.subtitle}
-            </p>
+            {mechanism.subtitle && (
+              <p className="mt-4 text-[15px] sm:text-lg text-slate-400 font-light">
+                {mechanism.subtitle}
+              </p>
+            )}
           </div>
           
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {mechanism.cards.map((card, i) => {
-              const Icon = i === 0 ? Zap : i === 1 ? Activity : Layers
+              const Icon = i === 0 ? Zap : i === 1 ? Cog : ShieldCheck
               const colorClasses = 
                 i === 0 ? "border-blue-500/30 bg-blue-500/20 text-blue-400" : 
                 i === 1 ? "border-cyan-500/30 bg-cyan-500/20 text-cyan-400" : 
@@ -189,66 +197,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
         </div>
       </section>
 
-      {/* Sekcja 4: KEY CONTENT (Funnel-Driven Development) */}
-      <section className="container relative mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-24">
-        <div className="grid grid-cols-1 items-center gap-8 lg:gap-12 lg:grid-cols-2">
-          <div>
-            <h2 className="mb-6 text-3xl leading-[1.15] font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">
-              {funnel.title}{" "}
-              <span className="text-blue-400">{funnel.titleHighlight}</span>
-            </h2>
-            <div className="space-y-6 text-[15px] sm:text-lg leading-relaxed text-slate-300 font-light">
-              {funnel.text.map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
-            </div>
-            <div className="mt-8 space-y-4">
-              {funnel.features.map((f, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <div className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-blue-500/20 bg-blue-500/10">
-                    <CheckCircle2 className="h-4 w-4 text-blue-400" />
-                  </div>
-                  <p className="text-[15px] sm:text-base text-slate-300">{f}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="relative mx-auto w-full max-w-md lg:max-w-full">
-            <div className="absolute -inset-2 rounded-3xl bg-blue-600/10 blur-xl opacity-50"></div>
-            <div className="relative rounded-[1.5rem] border border-slate-800/80 bg-slate-900/60 p-6 sm:p-8 shadow-2xl backdrop-blur-xl">
-              <div className="mb-8 flex flex-row items-center gap-5 border-b border-slate-800/60 pb-8">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-slate-800/50 text-slate-400">
-                  <Target className="h-7 w-7" />
-                </div>
-                <div>
-                  <div className="text-sm font-semibold tracking-wider text-slate-500 uppercase mb-1">
-                    {funnel.boxLeft}
-                  </div>
-                  <div className="text-lg font-bold text-slate-300 leading-snug">
-                    {funnel.boxLeftSub}
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-row items-center gap-5">
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-blue-500/30 bg-blue-500/20 text-blue-400 shadow-[0_0_15px_-3px_rgba(59,130,246,0.3)]">
-                  <TrendingUp className="h-7 w-7" />
-                </div>
-                <div>
-                  <div className="text-sm font-semibold tracking-wider text-blue-400 uppercase mb-1">
-                    {funnel.boxRight}
-                  </div>
-                  <div className="text-lg font-bold text-white leading-snug">
-                    {funnel.boxRightSub}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Sekcja 5: VISUAL CONTRAST MATRIX */}
+      {/* Sekcja 4: VISUAL CONTRAST MATRIX */}
       <section className="bg-slate-900/20 border-y border-slate-800/80 py-16 sm:py-24 relative">
         <div className="container mx-auto max-w-5xl px-4 sm:px-6">
           <div className="mb-16 text-center">
@@ -320,7 +269,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
         </div>
       </section>
 
-      {/* Sekcja 6: FAQ */}
+      {/* Sekcja 5: FAQ */}
       <section className="container mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24">
         <div className="mb-16 text-center">
           <h2 className="text-3xl leading-[1.15] font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">
@@ -342,7 +291,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
         </Accordion>
       </section>
 
-      {/* Sekcja 7: FINAL CTA (OFFER) */}
+      {/* Sekcja 6: FINAL CTA (OFFER) */}
       <section id="oferta" className="relative overflow-hidden bg-slate-950 py-20 sm:py-32 border-t border-slate-900/80">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-950 to-slate-950"></div>
         <div className="absolute bottom-0 left-1/2 h-[300px] w-full max-w-[500px] -translate-x-1/2 rounded-full bg-blue-600/10 opacity-60 mix-blend-screen blur-[100px]"></div>
