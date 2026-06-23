@@ -36,12 +36,15 @@ export const mechanism = {
       subtitle: "",
       content:
         "Skomplikowane procesy w firmie (jak jednoczesne wystawianie faktur, automatyczna aktualizacja magazynu i obsługa klienta) wymagają idealnej kontroli. Projektuję bezpieczne strumienie wymiany danych, dzięki którym informacje w Twojej firmie przepływają w czasie rzeczywistym, eliminując ryzyko utraty zamówień czy przestojów.",
+      linkText:
+        "Przeczytaj więcej o tym, jak przenoszę bezpieczeństwo i architekturę klasy bankowej bezpośrednio do Twojego biznesu.",
+      linkUrl: "/bezpieczenstwo-klasy-bankowej",
     },
     {
       title: "Elastyczny fundament pod przyszły rozwój",
       subtitle: "",
       content:
-        "Buduję systemy w sposób modułowy z jednego, silnego rdzenia. Gdy za pół roku zdecydujesz się dodać do systemu aplikację na telefony lub inteligentną automatyzację, nie musisz pisać wszystkiego od nowa. Rozbudujemy system szybko, oszczędzając nawet do 40% budżetu w stosunku do agencji.",
+        'Buduję systemy w sposób modułowy z jednego, silnego rdzenia. Dzięki modułowej konstrukcji, dodawanie nowych funkcji lub <a href="/modernizacja-oprogramowania-it">modernizacja oprogramowania IT</a> w przyszłości jest tania i bezpieczna. Rozbudujemy system szybko, oszczędzając nawet do 40% budżetu w stosunku do agencji.',
     },
   ],
 }

@@ -15,6 +15,7 @@ import {
   SheetTitle,
   SheetDescription,
   SheetTrigger,
+  SheetClose,
 } from "@/components/ui/sheet"
 import { ChevronRight, Menu } from "lucide-react"
 import { header } from "@/lib/content/header"
@@ -22,11 +23,11 @@ import { header } from "@/lib/content/header"
 export function SiteHeader() {
   return (
     <div className="pointer-events-none fixed top-0 z-50 flex w-full justify-center sm:top-4 sm:px-4">
-      <header className="pointer-events-auto flex h-16 w-full min-w-[300px] items-center justify-between gap-4 border-b border-slate-800/60 bg-slate-950/80 px-4 shadow-2xl backdrop-blur-xl supports-[backdrop-filter]:bg-slate-950/60 sm:h-14 sm:w-auto sm:max-w-4xl sm:gap-16 sm:rounded-full sm:border sm:px-6">
+      <header className="pointer-events-auto flex h-16 w-full min-w-[280px] items-center justify-between gap-2 border-b border-slate-800/60 bg-slate-950/80 px-3 shadow-2xl backdrop-blur-xl supports-[backdrop-filter]:bg-slate-950/60 sm:h-14 sm:w-auto sm:max-w-4xl sm:min-w-[300px] sm:gap-16 sm:rounded-full sm:border sm:px-6">
         {/* Lewa strona: Imię i Nazwisko */}
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4 sm:gap-6">
           <Link href="/" className="group flex shrink-0 items-center space-x-2">
-            <span className="text-[15px] font-bold tracking-tight text-slate-200 transition-colors group-hover:text-white">
+            <span className="text-[14px] font-bold tracking-tight text-slate-200 transition-colors group-hover:text-white sm:text-[15px]">
               Karol Modelski
             </span>
           </Link>
@@ -49,7 +50,7 @@ export function SiteHeader() {
                           >
                             <div className="flex items-center text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
                               <span className="flex-1">{item.title}</span>
-                              <ChevronRight className="h-4 w-4 text-slate-500 opacity-0 transition-all -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-white" />
+                              <ChevronRight className="h-4 w-4 -translate-x-2 text-slate-500 opacity-0 transition-all group-hover:translate-x-0 group-hover:text-white group-hover:opacity-100" />
                             </div>
                             <p className="text-[13px] leading-relaxed text-slate-500 transition-colors group-hover:text-slate-400">
                               {item.description}
@@ -73,12 +74,12 @@ export function SiteHeader() {
         </div>
 
         {/* Prawa strona: Mobilne Menu & Przycisk */}
-        <div className="flex items-center gap-3 sm:gap-4">
+        <div className="flex items-center gap-2 sm:gap-4">
           <Button
             asChild
-            className="h-8 shrink-0 rounded-full border border-blue-500/30 bg-blue-600 px-4 text-[12px] font-semibold text-white shadow-[0_0_20px_-5px_rgba(37,99,235,0.4)] transition-all hover:bg-blue-500 hover:shadow-[0_0_25px_-5px_rgba(37,99,235,0.6)] sm:h-9 sm:px-5 sm:text-[13px]"
+            className="hidden h-8 shrink-0 rounded-full border border-blue-500/30 bg-blue-600 px-4 text-[12px] font-semibold text-white shadow-[0_0_20px_-5px_rgba(37,99,235,0.4)] transition-all hover:bg-blue-500 hover:shadow-[0_0_25px_-5px_rgba(37,99,235,0.6)] min-[400px]:inline-flex sm:h-9 sm:px-5 sm:text-[13px]"
           >
-            <Link href="/#kontakt">Rezerwacja</Link>
+            <Link href="/#kontakt">Bezpłatna diagnoza</Link>
           </Button>
 
           {/* Menu Hamburger na Mobile */}
@@ -108,35 +109,55 @@ export function SiteHeader() {
                 </SheetHeader>
                 <div className="flex flex-col gap-2">
                   {header.menu.oferta.items.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
-                    >
-                      <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
-                        <span>{item.title}</span>
-                        <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
-                      </div>
-                      <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
-                        {item.description}
-                      </span>
-                    </Link>
+                    <SheetClose asChild key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
+                      >
+                        <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
+                          <span>{item.title}</span>
+                          <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
+                        </div>
+                        <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
+                          {item.description}
+                        </span>
+                      </Link>
+                    </SheetClose>
                   ))}
 
                   <div className="my-2 h-[1px] w-full bg-slate-800/50" />
 
-                  <Link
-                    href={header.menu.blog.href}
-                    className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
-                  >
-                    <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
-                      <span>{header.menu.blog.title}</span>
-                      <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
-                    </div>
-                    <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
-                      {header.menu.blog.description}
-                    </span>
-                  </Link>
+                  <SheetClose asChild>
+                    <Link
+                      href="https://www.karolmodelski.pl/#kontakt"
+                      className="group flex flex-col gap-1 rounded-lg bg-blue-600/10 p-3 transition-colors hover:bg-blue-600/20"
+                    >
+                      <div className="flex items-center justify-between text-[14px] font-bold text-blue-400 transition-colors group-hover:text-blue-300">
+                        <span>Bezpłatna diagnoza</span>
+                        <ChevronRight className="h-4 w-4 text-blue-400 transition-colors group-hover:text-blue-300" />
+                      </div>
+                      <span className="text-[13px] text-slate-400 transition-colors group-hover:text-slate-300">
+                        Zarezerwuj termin na darmowy audyt.
+                      </span>
+                    </Link>
+                  </SheetClose>
+
+                  <div className="my-2 h-[1px] w-full bg-slate-800/50" />
+
+                  <SheetClose asChild>
+                    <Link
+                      href={header.menu.blog.href}
+                      className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
+                    >
+                      <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
+                        <span>{header.menu.blog.title}</span>
+                        <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
+                      </div>
+                      <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
+                        {header.menu.blog.description}
+                      </span>
+                    </Link>
+                  </SheetClose>
                 </div>
               </SheetContent>
             </Sheet>

@@ -13,7 +13,7 @@ Nie przepłacaj za programistów.
 
 Jeśli jednak Twoi pracownicy tracą godziny na ręczne przepisywanie danych, a Ty potrzebujesz automatycznego systemu zamówień, bezpiecznego obiegu dokumentów lub programu, który bez błędu połączy się z Twoją księgowością – gotowa strona to za mało.
 
-Potrzebujesz dedykowanej aplikacji internetowej dla firm, która będzie generować zyski, a nie tylko koszty utrzymania.
+Potrzebujesz dedykowanej [aplikacji internetowej dla firm](/aplikacje-internetowe-dla-firm), która zautomatyzuje procesy operacyjne i będzie generować zyski, a nie tylko koszty utrzymania.
 
 ## Strona to "broszura", aplikacja to "narzędzie"
 
@@ -41,7 +41,7 @@ Całość Twojej inwestycji idzie bezpośrednio w inżynierię, która rozwiązu
 
 ## Dlaczego aplikacja "klasy bankowej" to nie luksus, lecz konieczność?
 
-Moje podejście wywodzi się z projektów dla takich instytucji jak Citibank czy BNP Paribas. Tam błąd w kodzie kosztuje miliony, a systemy muszą być nieprzerwanie dostępne.
+Moje podejście wywodzi się z projektów dla takich instytucji jak Citibank czy BNP Paribas. Tam błąd w kodzie kosztuje miliony, a systemy muszą być nieprzerwanie dostępne. Dowiedz się więcej o tym, jak działam na stronie: [Bezpieczeństwo klasy bankowej](/bezpieczenstwo-klasy-bankowej).
 
 Przenoszę te standardy do świata MŚP:
 

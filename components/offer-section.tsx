@@ -66,9 +66,10 @@ export function OfferSection() {
                     {item.title}
                   </h3>
 
-                  <p className="mt-auto text-[15px] leading-relaxed font-light text-slate-400 sm:text-[17px]">
-                    {item.desc}
-                  </p>
+                  <div
+                    className="mt-auto text-[15px] leading-relaxed font-light text-slate-400 sm:text-[17px] [&_a]:font-medium [&_a]:text-blue-400 [&_a]:transition-colors [&_a:hover]:text-blue-300 [&_a:hover]:underline"
+                    dangerouslySetInnerHTML={{ __html: item.desc }}
+                  />
 
                   {/* Mikro wskaźnik potwierdzenia (Trust marker) - usunięty zgodnie z prośbą */}
                 </div>

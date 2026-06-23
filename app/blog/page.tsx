@@ -140,7 +140,7 @@ export default function BlogHubPage() {
             </p>
             <Link
               href="https://www.karolmodelski.pl/#kontakt"
-              className="mt-4 flex min-h-[3rem] h-auto w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-center text-sm font-bold leading-tight text-balance text-white transition-colors hover:bg-blue-500"
+              className="mt-4 flex h-auto min-h-[3rem] w-full items-center justify-center rounded-lg bg-blue-600 px-4 py-3 text-center text-sm leading-tight font-bold text-balance text-white transition-colors hover:bg-blue-500"
             >
               {blog.offer.cta}
             </Link>

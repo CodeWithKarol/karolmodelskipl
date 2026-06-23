@@ -3,10 +3,10 @@ export const story = {
   title_highlight: "aby pomagać małym i średnim firmom?",
   customer_perspective_tag: "Moja Historia",
   intro_text:
-    "Przez lata tworzyłem oprogramowanie, które zabezpiecza miliardy dolarów. Pracowałem dla gigantów – instytucji takich jak Citibank, BNP Paribas czy Silent Eight. Widziałem na własne oczy, jak rygorystyczne standardy bezpieczeństwa i wydajności chronią ogromne biznesy przed katastrofą.",
+    'Przez lata tworzyłem oprogramowanie, które zabezpiecza miliardy dolarów. Pracowałem dla gigantów – instytucji takich jak Citibank, BNP Paribas czy Silent Eight. Widziałem na własne oczy, jak rygorystyczne standardy bezpieczeństwa i wydajności chronią ogromne biznesy przed katastrofą. Przeczytaj, dlaczego <a href="/bezpieczenstwo-klasy-bankowej">bezpieczeństwo klasy bankowej</a> chroni Twoje zyski.',
   problem_title: "Dlaczego tradycyjny model IT to pułapka dla mniejszych firm?",
   problem_text:
-    "Większość dużych agencji IT kusi pięknymi prezentacjami, ale ostatecznie Twój projekt często trafia w ręce początkujących programistów, podczas gdy Ty płacisz za całą drabinkę pośredników – project managerów, accountów i zarząd.\n\nEfekt? Przepalony budżet, opóźnienia i skomplikowany kod, którego nikt nie rozumie.",
+    'Większość dużych agencji IT kusi pięknymi prezentacjami, ale ostatecznie Twój projekt często trafia w ręce początkujących programistów, podczas gdy Ty płacisz za całą drabinkę pośredników – project managerów, accountów i zarząd.\n\nEfekt? Przepalony budżet, opóźnienia i skomplikowany kod, którego nikt nie rozumie. Dowiedz się, dlaczego warto wybrać <a href="/architekt-it-vs-software-house">niezależnego partnera technologicznego zamiast agencji programistycznej</a>.',
   paradigm_tag: "Moja Misja",
   paradigm_title: "System Enterprise dla każdego biznesu",
   paradigm_text_1:

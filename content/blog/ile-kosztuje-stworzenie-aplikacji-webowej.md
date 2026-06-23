@@ -26,7 +26,7 @@ Finansujesz cały ekosystem, który ma utrzymać tę firmę na powierzchni.
 
 Płacisz za wynajem biura w centrum, dział HR, dział sprzedaży, marketing i marże narzucone przez zarząd.
 
-W efekcie, nawet 50% Twojego budżetu „rozpływa się” w kosztach operacyjnych agencji, zanim powstanie choćby jedna linia kodu.
+W efekcie, nawet 50% Twojego budżetu „rozpływa się” w kosztach operacyjnych agencji, zanim powstanie choćby jedna linia kodu. Zobacz moje pełne porównanie na ten temat: [Dlaczego niezależny partner technologiczny, a nie agencja programistyczna?](/architekt-it-vs-software-house)
 
 Czy to inwestycja w Twój produkt?
 
@@ -46,7 +46,7 @@ Kupują, stawiają i zapominają.
 
 To błąd, który kosztuje tysiące złotych miesięcznie.
 
-Oprogramowanie to organizm, który musi się rozwijać razem z Twoją sprzedażą.
+Oprogramowanie to organizm, który musi się rozwijać razem z Twoją sprzedażą. Jeśli chcesz sprawdzić swój pomysł przy minimalnym budżecie, najlepszą ścieżką jest [pierwsza wersja systemu](/projektowanie-mvp) stworzona w 30 dni, która pozwala od razu uruchomić sprzedaż.
 
 Jeśli fundament jest słaby, każdy kolejny moduł będzie droższy w budowie i utrzymaniu.
 

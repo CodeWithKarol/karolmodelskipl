@@ -9,59 +9,30 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
-import {
   ArrowRight,
-  CheckCircle2,
-  XCircle,
   ShieldCheck,
-  Zap,
-  Activity,
-  Layers,
   Target,
-  TrendingUp,
   Banknote,
   CalendarDays,
-  Cog,
+  UserCheck,
 } from "lucide-react"
 import {
   hero,
   story,
-  mechanism,
-  contrast,
+  guarantee,
   faq,
   offer,
-} from "@/lib/content/modernizacja-oprogramowania-it/page"
+} from "@/lib/content/architekt-it-vs-software-house/page"
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Service",
-      name: "Modernizacja Oprogramowania IT dla Firm",
+      "@type": "WebPage",
+      name: "Agencja programistyczna czy partner IT? | Porównanie kosztów",
       description:
-        "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży. Odbierz darmową diagnozę!",
-      provider: {
-        "@type": "Person",
-        name: "Karol Modelski",
-        url: "https://karolmodelski.pl",
-      },
-      serviceType: "Software Modernization",
-      areaServed: "PL",
-      offers: {
-        "@type": "Offer",
-        name: "Bezpłatny Pakiet Doradczy",
-        description:
-          "30-minutowa diagnoza kodu, Indywidualny Plan Ewolucji, Bankowy Test Bezpieczeństwa (Wartość: 600 zł za 0 zł).",
-        price: "0.00",
-        priceCurrency: "PLN",
-      },
+        "Sprawdź, dlaczego duże agencje programistyczne generują ukryte koszty. Zyskaj bezpośredni dostęp do eksperta bez marż pośredników.",
+      url: "https://karolmodelski.pl/architekt-it-vs-software-house",
     },
     {
       "@type": "FAQPage",
@@ -75,15 +46,15 @@ const jsonLd = {
 }
 
 export const metadata: Metadata = {
-  title: "Modernizacja Oprogramowania IT dla Firm | Niezależny Partner",
+  title: "Agencja programistyczna czy partner IT? | Porównanie kosztów",
   description:
-    "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży. Odbierz darmową diagnozę!",
+    "Sprawdź, dlaczego duże agencje programistyczne generują ukryte koszty. Zyskaj bezpośredni dostęp do eksperta bez marż pośredników.",
   alternates: {
-    canonical: "https://www.karolmodelski.pl/modernizacja-oprogramowania-it",
+    canonical: "https://www.karolmodelski.pl/architekt-it-vs-software-house",
   },
 }
 
-export default function ModernizacjaOprogramowaniaPage() {
+export default function ArchitektVsSoftwareHousePage() {
   return (
     <main className="flex-1 overflow-hidden bg-slate-950 text-slate-50">
       <script
@@ -162,157 +133,30 @@ export default function ModernizacjaOprogramowaniaPage() {
         </div>
       </section>
 
-      {/* Sekcja 3: REWOLUCYJNY MECHANIZM */}
+      {/* Sekcja 3: GWARANCJA DOŚWIADCZENIA */}
       <section className="relative overflow-hidden border-y border-slate-800/80 bg-slate-900/20 py-16 sm:py-24">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_50%,#000_70%,transparent_100%)] bg-[size:3rem_3rem] opacity-25"></div>
-        <div className="relative z-10 container mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="mb-16 text-center">
-            <h2 className="text-3xl leading-[1.15] font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">
-              {mechanism.title}
-            </h2>
-            {mechanism.subtitle && (
-              <p className="mt-4 text-[15px] font-light text-slate-400 sm:text-lg">
-                {mechanism.subtitle}
-              </p>
-            )}
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {mechanism.cards.map((card, i) => {
-              const Icon = i === 0 ? Zap : i === 1 ? Cog : ShieldCheck
-              const colorClasses =
-                i === 0
-                  ? "border-blue-500/30 bg-blue-500/20 text-blue-400"
-                  : i === 1
-                    ? "border-cyan-500/30 bg-cyan-500/20 text-cyan-400"
-                    : "border-indigo-500/30 bg-indigo-500/20 text-indigo-400"
-
-              return (
-                <div
-                  key={i}
-                  className={`rounded-[1.5rem] border border-slate-800/60 bg-slate-900/80 p-6 shadow-2xl backdrop-blur-xl transition-transform duration-500 hover:-translate-y-2 sm:p-8 ${i === 2 ? "md:col-span-2 lg:col-span-1" : ""}`}
-                >
-                  <div
-                    className={`mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl border ${colorClasses}`}
-                  >
-                    <Icon
-                      className="h-6 w-6 [stroke-width:1.5px]"
-                      fill="transparent"
-                    />
-                  </div>
-                  <h3 className="mb-2 text-xl leading-snug font-bold text-white">
-                    {card.title}
-                  </h3>
-                  {card.subtitle && (
-                    <span className="mb-4 block text-sm font-medium text-slate-500">
-                      {card.subtitle}
-                    </span>
-                  )}
-                  <div
-                    className="text-[14px] leading-relaxed font-light text-slate-400 sm:text-[15px] [&_a]:font-medium [&_a]:text-blue-400 [&_a]:transition-colors [&_a:hover]:text-blue-300 [&_a:hover]:underline"
-                    dangerouslySetInnerHTML={{ __html: card.content }}
-                  />
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Sekcja 4: VISUAL CONTRAST MATRIX */}
-      <section className="relative border-y border-slate-800/80 bg-slate-900/20 py-16 sm:py-24">
-        <div className="container mx-auto max-w-5xl px-4 sm:px-6">
-          <div className="mb-16 text-center">
-            <h2 className="text-3xl leading-[1.15] font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">
-              {contrast.title}
-            </h2>
-          </div>
-
-          {/* Widok Mobile i Tablet */}
-          <div className="space-y-6 sm:space-y-8 lg:hidden">
-            {contrast.rows.map((row, i) => (
-              <div
-                key={i}
-                className="rounded-[1.25rem] border border-slate-800/60 bg-slate-900/40 p-6 sm:p-8"
-              >
-                <h3 className="mb-6 text-sm font-bold tracking-wider text-slate-500 uppercase">
-                  {row.feature}
-                </h3>
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                  <div className="flex flex-col gap-2 opacity-80">
-                    <span className="text-xs font-medium text-slate-400">
-                      {contrast.tableHeaders[1]}
-                    </span>
-                    <div className="flex items-start gap-2">
-                      <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-red-400" />
-                      <span className="text-[15px] leading-relaxed text-slate-300">
-                        {row.traditional}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex flex-col gap-2 border-l-2 border-blue-500 pl-4">
-                    <span className="text-xs font-medium text-blue-400">
-                      {contrast.tableHeaders[2]}
-                    </span>
-                    <div className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-blue-400" />
-                      <span className="text-[15px] leading-relaxed font-bold text-white">
-                        {row.elite}
-                      </span>
-                    </div>
-                  </div>
-                </div>
+        <div className="relative z-10 container mx-auto max-w-4xl px-4 sm:px-6">
+          <div className="relative rounded-[1.5rem] border border-cyan-500/20 bg-slate-900/80 p-6 shadow-2xl backdrop-blur-xl sm:p-12">
+            <div className="mb-8 flex flex-col gap-5 sm:flex-row sm:items-center">
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-cyan-500/20 bg-cyan-500/10 text-cyan-400 shadow-[0_0_15px_-3px_rgba(34,211,238,0.3)]">
+                <UserCheck className="h-8 w-8" />
               </div>
-            ))}
-          </div>
+              <h2 className="text-2xl leading-[1.2] font-bold tracking-tight text-white sm:text-3xl">
+                {guarantee.title}
+              </h2>
+            </div>
 
-          {/* Widok Desktop (Tabela) */}
-          <div className="hidden overflow-hidden rounded-[1.5rem] border border-slate-800/80 bg-slate-900/60 shadow-xl backdrop-blur-sm lg:block">
-            <div className="overflow-x-auto">
-              <Table>
-                <TableHeader className="border-b border-slate-800/80 bg-slate-950/50">
-                  <TableRow className="border-none hover:bg-transparent">
-                    {contrast.tableHeaders.map((h, i) => (
-                      <TableHead
-                        key={i}
-                        className={`px-6 py-5 text-base ${i === 2 ? "bg-blue-500/5 font-bold text-blue-400" : "font-semibold text-slate-300"}`}
-                      >
-                        {h}
-                      </TableHead>
-                    ))}
-                  </TableRow>
-                </TableHeader>
-                <TableBody>
-                  {contrast.rows.map((row, i) => (
-                    <TableRow
-                      key={i}
-                      className="border-b border-slate-800/60 hover:bg-slate-800/30"
-                    >
-                      <TableCell className="px-6 py-5 text-[15px] font-medium whitespace-normal text-white">
-                        {row.feature}
-                      </TableCell>
-                      <TableCell className="px-6 py-5 text-[15px] whitespace-normal text-slate-400">
-                        <div className="flex items-start gap-3">
-                          <XCircle className="mt-1 h-4 w-4 shrink-0 text-red-400" />
-                          <span>{row.traditional}</span>
-                        </div>
-                      </TableCell>
-                      <TableCell className="bg-blue-500/5 px-6 py-5 text-[15px] font-bold whitespace-normal text-white">
-                        <div className="flex items-start gap-3">
-                          <CheckCircle2 className="mt-1 h-4 w-4 shrink-0 text-blue-400" />
-                          <span>{row.elite}</span>
-                        </div>
-                      </TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
+            <div className="space-y-6 text-[15px] leading-relaxed font-light text-slate-300 sm:text-lg">
+              {guarantee.text.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Sekcja 5: FAQ */}
+      {/* Sekcja 4: FAQ */}
       <section className="container mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-24">
         <div className="mb-16 text-center">
           <h2 className="text-3xl leading-[1.15] font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">
@@ -330,15 +174,16 @@ export default function ModernizacjaOprogramowaniaPage() {
               <AccordionTrigger className="text-left text-[15px] font-bold text-white transition-colors hover:text-blue-400 hover:no-underline sm:text-lg">
                 {item.q}
               </AccordionTrigger>
-              <AccordionContent className="pt-2 pb-6 text-[14px] leading-relaxed font-light text-slate-400 sm:text-base">
-                {item.a}
-              </AccordionContent>
+              <AccordionContent
+                className="pt-2 pb-6 text-[14px] leading-relaxed font-light text-slate-400 sm:text-base [&_a]:font-medium [&_a]:text-blue-400 [&_a]:transition-colors [&_a:hover]:text-blue-300 [&_a:hover]:underline"
+                dangerouslySetInnerHTML={{ __html: item.a }}
+              />
             </AccordionItem>
           ))}
         </Accordion>
       </section>
 
-      {/* Sekcja 6: FINAL CTA (OFFER) */}
+      {/* Sekcja 5: FINAL CTA (OFFER) */}
       <section
         id="oferta"
         className="relative overflow-hidden border-t border-slate-900/80 bg-slate-950 py-20 sm:py-32"
@@ -357,7 +202,6 @@ export default function ModernizacjaOprogramowaniaPage() {
             <p>{offer.subtitle}</p>
           </div>
 
-          {/* Ozdobny pakiet wartościowy */}
           <div className="mx-auto mb-12 w-full max-w-2xl rounded-[1.5rem] border border-blue-500/20 bg-slate-900/80 p-6 text-left shadow-2xl backdrop-blur-xl sm:p-10">
             <h3 className="mb-6 flex flex-col items-center justify-center border-b border-slate-800/80 pb-6 text-center text-lg font-bold text-white sm:mb-8 sm:flex-row sm:text-xl">
               {offer.packetTitle}{" "}
