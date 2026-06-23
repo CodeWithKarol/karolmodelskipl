@@ -15,10 +15,29 @@ export const footer = {
   col3: {
     title: "Rozwiązania dla firm",
     navigation: [
-      { label: "Baza wiedzy", href: "/blog" },
       { label: "Pierwsza wersja systemu", href: "/projektowanie-mvp" },
-      { label: "Modernizacja oprogramowania IT", href: "/modernizacja-oprogramowania-it" },
-      { label: "Aplikacje internetowe dla firm", href: "/aplikacje-internetowe-dla-firm" },
+      {
+        label: "Modernizacja oprogramowania IT",
+        href: "/modernizacja-oprogramowania-it",
+      },
+      {
+        label: "Aplikacje internetowe dla firm",
+        href: "/aplikacje-internetowe-dla-firm",
+      },
+    ],
+  },
+  col4: {
+    title: "Dlaczego Model Elite?",
+    navigation: [
+      {
+        label: "Partner IT czy agencja programistyczna",
+        href: "/architekt-it-vs-software-house",
+      },
+      {
+        label: "Bezpieczeństwo klasy bankowej",
+        href: "/bezpieczenstwo-klasy-bankowej",
+      },
+      { label: "Baza wiedzy", href: "/blog" },
     ],
     links: [
       {

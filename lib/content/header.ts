@@ -6,17 +6,20 @@ export const header = {
         {
           title: "Pierwsza wersja systemu",
           href: "/projektowanie-mvp",
-          description: "Uruchomienie Twojego pomysłu w 30 dni i szybki start sprzedaży.",
+          description:
+            "Uruchomienie Twojego pomysłu w 30 dni i szybki start sprzedaży.",
         },
         {
           title: "Aplikacje internetowe dla firm",
           href: "/aplikacje-internetowe-dla-firm",
-          description: "Dedykowane rozwiązania automatyzujące pracę i zwiększające zyski.",
+          description:
+            "Dedykowane rozwiązania automatyzujące pracę i zwiększające zyski.",
         },
         {
           title: "Modernizacja oprogramowania",
           href: "/modernizacja-oprogramowania-it",
-          description: "Usuwanie błędów i przyspieszanie systemów bez przestojów w sprzedaży.",
+          description:
+            "Usuwanie błędów i przyspieszanie systemów bez przestojów w sprzedaży.",
         },
       ],
     },

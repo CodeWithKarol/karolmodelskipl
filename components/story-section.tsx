@@ -50,9 +50,10 @@ export function StorySection() {
               <h3 className="mb-5 text-xl leading-snug font-bold text-balance text-white sm:text-2xl lg:text-[1.35rem]">
                 {firstIntroSentence}
               </h3>
-              <p className="text-[15px] leading-relaxed font-light text-slate-400 sm:text-lg">
-                {restIntroText}
-              </p>
+              <p
+                className="text-[15px] leading-relaxed font-light text-slate-400 sm:text-lg [&_a]:font-medium [&_a]:text-blue-400 [&_a]:transition-colors [&_a:hover]:text-blue-300 [&_a:hover]:underline"
+                dangerouslySetInnerHTML={{ __html: restIntroText }}
+              />
             </div>
           </div>
 
@@ -67,7 +68,7 @@ export function StorySection() {
               <h3 className="mb-5 text-xl leading-snug font-bold text-balance text-white sm:text-2xl lg:text-[1.35rem]">
                 {story.problem_title}
               </h3>
-              <div className="space-y-4 text-[15px] leading-relaxed font-light text-slate-400 sm:text-lg">
+              <div className="space-y-4 text-[15px] leading-relaxed font-light text-slate-400 sm:text-lg [&_a]:font-medium [&_a]:text-blue-400 [&_a]:transition-colors [&_a:hover]:text-blue-300 [&_a:hover]:underline">
                 {problemParagraphs.map((paragraph, idx) => (
                   <p
                     key={idx}
@@ -76,9 +77,8 @@ export function StorySection() {
                         ? "font-medium text-slate-300"
                         : ""
                     }
-                  >
-                    {paragraph}
-                  </p>
+                    dangerouslySetInnerHTML={{ __html: paragraph }}
+                  />
                 ))}
               </div>
             </div>
@@ -87,10 +87,9 @@ export function StorySection() {
 
         {/* CZĘŚĆ 2: OLŚNIENIE I MISJA (Rozwiązanie / The Shift) */}
         <div className="mx-auto mt-20 max-w-5xl border-t border-slate-800/60 pt-16 md:mt-32 md:pt-20">
-          <div className="grid gap-10 lg:grid-cols-12 lg:gap-16 items-start">
-            
+          <div className="grid items-start gap-10 lg:grid-cols-12 lg:gap-16">
             {/* Lewa strona - Nagłówek */}
-            <div className="lg:col-span-5 lg:sticky lg:top-10">
+            <div className="lg:sticky lg:top-10 lg:col-span-5">
               <div className="mb-6 flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-400">
                   <Lightbulb className="h-5 w-5" />
@@ -99,7 +98,7 @@ export function StorySection() {
                   {story.paradigm_tag}
                 </span>
               </div>
-              <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl leading-[1.15]">
+              <h2 className="text-3xl leading-[1.15] font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">
                 {story.paradigm_title}
               </h2>
             </div>
@@ -112,8 +111,8 @@ export function StorySection() {
 
               <div className="relative pl-6 sm:pl-8">
                 {/* Ozdobna linia akcentująca */}
-                <div className="absolute left-0 top-0 bottom-0 w-1 rounded-full bg-gradient-to-b from-emerald-500 to-blue-500"></div>
-                <p className="text-xl font-medium leading-[1.6] text-white">
+                <div className="absolute top-0 bottom-0 left-0 w-1 rounded-full bg-gradient-to-b from-emerald-500 to-blue-500"></div>
+                <p className="text-xl leading-[1.6] font-medium text-white">
                   {story.paradigm_text_2}
                 </p>
               </div>

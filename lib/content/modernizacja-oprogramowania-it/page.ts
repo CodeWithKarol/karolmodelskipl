@@ -22,7 +22,8 @@ export const story = {
 }
 
 export const mechanism = {
-  title: "Jak ewolucyjna modernizacja oprogramowania IT uwalnia ukryte zyski Twojej firmy?",
+  title:
+    "Jak ewolucyjna modernizacja oprogramowania IT uwalnia ukryte zyski Twojej firmy?",
   subtitle: "",
   cards: [
     {
@@ -41,7 +42,7 @@ export const mechanism = {
       title: "Wstrzyknięcie standardów ochrony klasy bankowej",
       subtitle: "",
       content:
-        "Przeprowadzając modernizację, automatycznie podnoszę poziom bezpieczeństwa całego serwisu. Wprowadzam rygorystyczne procedury ochrony informacji wprost do Twojej istniejącej aplikacji dla firm. System zyskuje pełną odporność na nagłe skoki ruchu (np. podczas akcji promocyjnych) i staje się w pełni zabezpieczony przed wyciekiem danych handlowych.",
+        'Przeprowadzając modernizację, automatycznie podnoszę poziom bezpieczeństwa całego serwisu. Wprowadzam rygorystyczne procedury ochrony informacji wprost do Twojej istniejącej aplikacji dla firm. Wszystkie procedury modyfikacji w locie opieram na standardach wprost z systemów Citibanku – zobacz, jak wdrażam <a href="/bezpieczenstwo-klasy-bankowej">bezpieczeństwo klasy bankowej</a> w firmach.',
     },
   ],
 }
@@ -49,7 +50,11 @@ export const mechanism = {
 export const contrast = {
   title:
     "Rewolucja w agencji czy ewolucja z partnerem – jaki scenariusz wybierasz dla swojego biznesu?",
-  tableHeaders: ["Parametr transformacji", "Rewolucja z agencją", "Ewolucja ze mną"],
+  tableHeaders: [
+    "Parametr transformacji",
+    "Rewolucja z agencją",
+    "Ewolucja ze mną",
+  ],
   rows: [
     {
       feature: "Płynność sprzedaży",
@@ -60,14 +65,17 @@ export const contrast = {
     },
     {
       feature: "Zarządzanie budżetem",
-      traditional: "Podwójny koszt: Opłacasz utrzymanie starej aplikacji i jednocześnie finansujesz nowy projekt.",
+      traditional:
+        "Podwójny koszt: Opłacasz utrzymanie starej aplikacji i jednocześnie finansujesz nowy projekt.",
       elite:
         "Maksymalna efektywność: Płacisz wyłącznie za realne usprawnienia, które od razu na siebie zarabiają.",
     },
     {
       feature: "Odpowiedzialność",
-      traditional: "Rozproszona wśród rotujących zespołów, kierowników projektów i analityków.",
-      elite: "Pełna i bezpośrednia: Masz jednego, odpowiedzialnego partnera technologicznego.",
+      traditional:
+        "Rozproszona wśród rotujących zespołów, kierowników projektów i analityków.",
+      elite:
+        "Pełna i bezpośrednia: Masz jednego, odpowiedzialnego partnera technologicznego.",
     },
     {
       feature: "Gwarancja sukcesu",

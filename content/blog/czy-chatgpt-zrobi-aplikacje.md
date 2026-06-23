@@ -18,7 +18,7 @@ Ale muszę wylać kubeł zimnej wody na ten hurraoptymizm.
 
 Wykorzystanie ChatGPT do stworzenia aplikacji biznesowej to nie jest „darmowe programowanie”.
 
-To proces, który bez nadzoru eksperta kończy się zbudowaniem cyfrowego domku z kart, który zawali się przy pierwszym mocniejszym wietrze.
+To proces, który bez nadzoru eksperta kończy się zbudowaniem cyfrowego domku z kart, który zawali się przy pierwszym mocniejszym wietrze. Sztuczna inteligencja pomaga w pracy, ale bez nadzoru inżynieryjnego generuje ogromny dług. Bezpieczna i zyskowna [modernizacja oprogramowania IT](/modernizacja-oprogramowania-it) wymaga rygorystycznych testów, a nie generowania przypadkowego kodu.
 
 ## AI jako „junior na sterydach”
 
