@@ -7,10 +7,12 @@ import { cta } from "./content/cta"
 import { footer } from "./content/footer"
 import { blogContent } from "./content/blog"
 import { faq } from "./content/faq"
+import { metadata } from "./content/home"
 
 import { mvp } from "./content/mvp"
 
 export const content = {
+  metadata,
   hero,
   trustedBy,
   story,

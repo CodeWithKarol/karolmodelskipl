@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Modernizacja oprogramowania IT | Niezależny Partner IT",
+  description:
+    "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży. Odbierz darmową diagnozę!",
+}
+
 export const hero = {
   badge: "",
   title: "Modernizacja oprogramowania IT dla firm „na żywym organizmie”",

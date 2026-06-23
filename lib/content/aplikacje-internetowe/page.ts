@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Aplikacje internetowe dla firm | Niezależny Partner IT",
+  description:
+    "Dedykowane aplikacje internetowe dla firm o niezawodności systemów bankowych. Zyskaj solidne rozwiązania bez marż agencji. Odbierz darmowy plan!",
+}
+
 export const hero = {
   badge: "",
   title: "Dedykowane aplikacje internetowe dla firm.",
@@ -101,15 +107,29 @@ export const contrast = {
 }
 
 export const faq = {
-  title: "Wszystko, co musisz wiedzieć o dedykowanych systemach dla firm.",
+  title: "Najczęściej Zadawane Pytania",
+  subtitle:
+    "Rozwiewam wątpliwości dotyczące budowy skalowalnych systemów biznesowych.",
   items: [
     {
-      q: "Czy nowoczesna aplikacja internetowa dla firmy może działać bez dostępu do sieci?",
-      a: "Tak. Implementuję specjalne mechanizmy, które pozwalają Twoim pracownikom lub klientom korzystać z kluczowych funkcji systemu nawet przy całkowitym braku zasięgu. Dane zapiszą się bezpiecznie na urządzeniu i zsynchronizują automatycznie z główną bazą, gdy połączenie wróci.",
+      q: "Jakie dedykowane aplikacje internetowe dla firm najczęściej budujesz?",
+      a: "Projektuję i wdrażam zaawansowane aplikacje internetowe dla firm, które automatyzują codzienne procesy operacyjne. Najczęściej są to systemy zarządzania relacjami z klientami, dedykowane platformy zamówień hurtowych z automatycznym wyliczaniem marż oraz systemy elektronicznego obiegu dokumentów. Każde rozwiązanie jest w 100% dostosowane do unikalnego sposobu działania Twojego przedsiębiorstwa, co eliminuje konieczność ręcznego przepisywania danych przez pracowników.",
     },
     {
-      q: "Jakie rozwiązania najczęściej budujesz dla przedsiębiorstw?",
-      a: "Tworzę zaawansowane systemy zarządzania relacjami z klientami, platformy zamówień hurtowych z automatycznym wyliczaniem marż oraz systemy elektronicznego obiegu dokumentów dostosowane w 100% do unikalnego sposobu działania Twojej firmy.",
+      q: "Czy nowoczesna aplikacja internetowa dla firmy może działać bez dostępu do sieci?",
+      a: "Tak. Wdrażam specjalne mechanizmy, dzięki którym dedykowane aplikacje internetowe dla firm mogą bez przeszkód realizować swoje funkcje nawet przy całkowitym braku zasięgu lub awarii sieci. Wszelkie operacje i dane zapisują się bezpiecznie bezpośrednio na urządzeniu użytkownika (np. na tablecie kuriera czy handlowca w terenie), a gdy połączenie zostanie przywrócone, system automatycznie i bezinwazyjnie synchronizuje dane z główną bazą.",
+    },
+    {
+      q: "Czym różnią się customowe aplikacje internetowe od gotowych systemów abonamentowych?",
+      a: "Gotowe oprogramowanie pudełkowe lub abonamentowe zmusza Twoją firmę do dostosowania procesów do sztywnych ram programu. Z kolei dedykowane aplikacje internetowe dla firm są projektowane dokładnie odwrotnie – to system dopasowuje się do Twoich wypracowanych przewag rynkowych. Customowe rozwiązanie eliminuje comiesięczne opłaty licencyjne za każdego użytkownika i staje się trwałym, bezpiecznym majątkiem Twojego przedsiębiorstwa, gotowym na tanią rozbudowę w przyszłości.",
+    },
+    {
+      q: "Jak dbasz o bezpieczeństwo danych w aplikacjach internetowych dla przedsiębiorstw?",
+      a: "Jako inżynier z wieloletnim doświadczeniem w sektorze bankowym (m.in. Citibank, BNP Paribas), przenoszę rygorystyczne procedury ochrony danych bezpośrednio do sektora małych i średnich firm. Tworzone przeze mnie aplikacje internetowe dla firm posiadają zaawansowane systemy szyfrowania, wielopoziomowe uprawnienia dostępu dla pracowników oraz architekturę gwarantującą bezwzględną stabilność oprogramowania pod skokowym, bardzo dużym obciążeniem sprzedażowym.",
+    },
+    {
+      q: "Jak rozpocząć projektowanie aplikacji internetowej dla mojej firmy?",
+      a: "Cały proces eliminuje ryzyko tzw. głuchego telefonu. Współpracując ze mną, rozmawiasz bezpośrednio z autorem kodu, a nie z pośrednikami czy menedżerami. Pierwszym krokiem jest zawsze bezpłatna konsultacja strategiczna, podczas której analizujemy wąskie gardła w Twoim biznesie. Na tej podstawie otrzymujesz ode mnie spersonalizowany Plan Rozwoju IT oraz dokładną wycenę inwestycji, bez ukrytych opłat i marż agencji.",
     },
   ],
 }

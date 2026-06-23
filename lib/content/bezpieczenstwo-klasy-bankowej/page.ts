@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Bezpieczeństwo klasy bankowej dla firm | Partner IT",
+  description:
+    "Ochrona danych i bezwzględna stabilność oprogramowania pod dużym obciążeniem. Przenieś standardy bankowe do swojego biznesu.",
+}
+
 export const hero = {
   title: "Bezpieczeństwo i rozwiązania klasy bankowej dla Twojej firmy.",
   titleHighlight:
@@ -39,11 +45,15 @@ export const faq = {
   items: [
     {
       q: "Czy rozwiązania klasy bankowej nie skomplikują codziennej obsługi aplikacji dla moich pracowników?",
-      a: "Absolutnie nie. Zaawansowana architektura i zabezpieczenia działają całkowicie niezauważalnie pod maską systemu. Dla Twojego zespołu aplikacja dla firm pozostaje niezwykle prosta, intuicyjna i błyskawiczna w działaniu, a rygorystyczne procedury chronią ich przed popełnieniem przypadkowych błędów podczas wprowadzania dokumentów czy obsługi zamówień klientów.",
+      a: "Absolutnie nie. Zaawansowana ochrona danych i procedury stabilności działają całkowicie niezauważalnie pod maską systemu. Dla Twojego zespołu aplikacja dla firm pozostaje niezwykle prosta, intuicyjna i błyskawiczna w działaniu, a automatyczne mechanizmy zabezpieczające chronią ich przed popełnieniem przypadkowych błędów podczas obsługi zamówień klientów czy wprowadzania dokumentów handlowych.",
     },
     {
-      q: "Czy tak zaawansowane procedury wpłyną na czas realizacji projektu?",
-      a: "Dzięki wieloletniemu doświadczeniu w budowie takich systemów, stosuję gotowe i sprawdzone w boju mechanizmy (szablony i procedury). Proces zabezpieczania jest wbudowany bezpośrednio w powstawanie kodu, co oznacza, że projekt posuwa się do przodu szybko, a architektura jest automatycznie 'uszczelniana' w tle.",
+      q: "Czy tak zaawansowane procedury bezpieczeństwa wpłyną na czas realizacji projektu?",
+      a: "Nie, czas realizacji nie ulegnie wydłużeniu. Dzięki wieloletniemu doświadczeniu w strukturach takich instytucji jak Citibank czy BNP Paribas, stosuję gotowe, sprawdzone w boju mechanizmy ochrony informacji. Proces zabezpieczania oprogramowania jest zintegrowany bezpośrednio z powstawaniem kodu, co pozwala na sprawne dostarczenie systemu, który jest automatycznie chroniony przed awariami i wyciekami danych w tle.",
+    },
+    {
+      q: "Jak system klasy bankowej chroni firmę przed stratami podczas nagłego skoku ruchu użytkowników?",
+      a: "Projektuję architekturę oprogramowania w taki sposób, aby płynnie radziła sobie z masowym napływem zapytań (np. podczas akcji promocyjnych czy godzin szczytu w e-commerce). Dzięki odpowiedniemu uporządkowaniu i optymalizacji strumieni danych, system całkowicie eliminuje ryzyko zawieszenia się bazy danych, zapewniając ciągłość sprzedaży i stały dostęp do panelu klienta bez ani jednej sekundy przestoju biznesowego.",
     },
   ],
 }

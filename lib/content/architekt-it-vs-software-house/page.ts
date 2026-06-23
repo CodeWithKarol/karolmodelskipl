@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Agencja programistyczna czy partner IT? | Porównanie kosztów",
+  description:
+    "Sprawdź, dlaczego duże agencje programistyczne generują ukryte koszty. Zyskaj bezpośredni dostęp do eksperta bez marż pośredników.",
+}
+
 export const hero = {
   title: "Dlaczego tradycyjne agencje programistyczne przepalają budżety firm?",
   titleHighlight:
@@ -36,7 +42,11 @@ export const faq = {
     },
     {
       q: "Kto realnie odpowiada za błędy i luki bezpieczeństwa w moim projekcie?",
-      a: "W tradycyjnej agencji odpowiedzialność jest rozproszona, a w razie awarii trudno wskazać winnego. W modelu współpracy z niezależnym partnerem technologicznym, to ja ponoszę 100% odpowiedzialności za dostarczony kod, systematycznie weryfikując go pod kątem luk bezpieczeństwa z zachowaniem standardów klasy bankowej.",
+      a: "W tradycyjnej agencji odpowiedzialność jest rozproszona wśród rotujących zespołów, a w razie awarii trudno wskazać winnego. W modelu współpracy ze mną, to ja ponoszę 100% osobistej odpowiedzialności za dostarczony kod. Całość architektury projektuję samodzielnie, systematycznie weryfikując system pod kątem luk i wdrażając procedury ochrony danych bezpośrednio ze standardów systemów bankowych.",
+    },
+    {
+      q: "Co się stanie w przypadku Twojej nagłej niedostępności lub choroby?",
+      a: "W przeciwieństwie do agencji, które często tworzą kod w sposób chaotyczny i zrozumiały tylko dla jednego programisty, ja pracuję w oparciu o rygorystyczne standardy międzynarodowe. Każda linijka kodu jest czysta, precyzyjnie udokumentowana i w pełni przejrzysta. Oznacza to, że Twój system nie staje się zakładnikiem jednego człowieka. Nawet w przypadku mojej planowanej niedostępności, każdy inny doświadczony inżynier na rynku jest w stanie przejąć kod w 5 minut i kontynuować prace bez najmniejszego przestoju dla Twojego biznesu.",
     },
   ],
 }

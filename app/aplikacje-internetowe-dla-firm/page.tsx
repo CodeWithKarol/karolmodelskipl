@@ -37,54 +37,93 @@ import {
   contrast,
   faq,
   offer,
+  metadata,
 } from "@/lib/content/aplikacje-internetowe/page"
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm#webpage",
-  url: "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm",
-  name: "Skalowanie i Wydajne Aplikacje Internetowe dla Firm | Niezależny Partner Technologiczny",
-  isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
-  mainEntity: [
-    {
-      "@type": "Service",
-      "@id":
-        "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm#service",
-      name: "Tworzenie dedykowanych aplikacji internetowych dla firm",
-      description:
-        "Projektowanie i wdrażanie bezpiecznych, wydajnych aplikacji internetowych dla małych i średnich firm.",
-      provider: { "@id": "https://www.karolmodelski.pl/#organization" },
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    alternates: {
+      canonical: "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm",
     },
-    {
-      "@type": "FAQPage",
-      "@id": "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm#faq",
-      mainEntity: faq.items.map((item) => ({
-        "@type": "Question",
-        name: item.q,
-        acceptedAnswer: { "@type": "Answer", text: item.a },
-      })),
-    },
-  ],
-}
-
-export const metadata: Metadata = {
-  title:
-    "Skalowanie i Wydajne Aplikacje Internetowe dla Firm | Niezależny Partner Technologiczny",
-  description:
-    "Dedykowane aplikacje internetowe dla firm o niezawodności systemów bankowych. Zyskaj solidne rozwiązania bez marż agencji. Odbierz darmowy plan!",
-  alternates: {
-    canonical: "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm",
-  },
+  }
 }
 
 export default function AplikacjeInternetoweDlaFirmPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id":
+          "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm#webpage",
+        url: "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm",
+        name: metadata.title,
+        description: metadata.description,
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://www.karolmodelski.pl/#website",
+          url: "https://www.karolmodelski.pl/",
+          name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        },
+        mainEntity: {
+          "@id":
+            "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm#service",
+        },
+        hasPart: {
+          "@id": "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm#faq",
+        },
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.karolmodelski.pl/#organization",
+        name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        url: "https://www.karolmodelski.pl/",
+        telephone: "+48664598563",
+        priceRange: "$$",
+        areaServed: "PL",
+        sameAs: "https://g.page/r/CZSVfAGtTiIzEBM",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Warszawa",
+          addressCountry: "PL",
+        },
+        founder: {
+          "@type": "Person",
+          "@id": "https://www.karolmodelski.pl/#person",
+          name: "Karol Modelski",
+          jobTitle: "Niezależny Partner Technologiczny",
+          sameAs: "https://www.linkedin.com/in/karol-modelski/",
+        },
+      },
+      {
+        "@type": "Service",
+        "@id":
+          "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm#service",
+        name: metadata.title,
+        description: metadata.description,
+        provider: { "@id": "https://www.karolmodelski.pl/#organization" },
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm#faq",
+        mainEntity: faq.items.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: { "@type": "Answer", text: item.a },
+        })),
+      },
+    ],
+  }
+
   return (
     <main className="flex-1 overflow-hidden bg-slate-950 text-slate-50">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+
 
       {/* Sekcja 1: HERO SECTION */}
       <section className="relative flex min-h-[100dvh] flex-col items-center justify-center overflow-hidden border-b border-slate-900/80 bg-slate-950 pt-16 sm:pt-20">

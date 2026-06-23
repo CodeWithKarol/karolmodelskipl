@@ -5,32 +5,15 @@ import { FileText } from "lucide-react"
 import { content } from "@/lib/content"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
-export const metadata: Metadata = {
-  title: "Aplikacje internetowe dla firm – Strategia, MVP i Baza Wiedzy IT",
-  description:
-    "Buduj aplikacje internetowe dla firm bez agencyjnych marż i długu technicznego. Poznaj standardy klasy bankowej. Odbierz darmową Mapę Drogową IT!",
-  alternates: {
-    canonical: "https://www.karolmodelski.pl/blog",
-  },
-}
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://www.karolmodelski.pl/blog#webpage",
-  url: "https://www.karolmodelski.pl/blog",
-  name: "Tworzenie aplikacji internetowych dla MŚP | Blog Karol Modelski",
-  isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
-  mainEntity: [
-    {
-      "@type": "CollectionPage",
-      "@id": "https://www.karolmodelski.pl/blog#collectionpage",
-      name: "Tworzenie aplikacji internetowych dla MŚP | Blog Karol Modelski",
-      description:
-        "Baza wiedzy i poradniki technologiczne dla sektora MŚP. Dowiedz się, jak projektować stabilne systemy webowe i unikać długu technologicznego.",
-      provider: { "@id": "https://www.karolmodelski.pl/#organization" },
+export async function generateMetadata(): Promise<Metadata> {
+  const { blog } = content
+  return {
+    title: blog.metadata.title,
+    description: blog.metadata.description,
+    alternates: {
+      canonical: "https://www.karolmodelski.pl/blog",
     },
-  ],
+  }
 }
 
 export default function BlogHubPage() {
@@ -41,12 +24,57 @@ export default function BlogHubPage() {
   const silo2 = posts.filter((p) => p.silo === "Technologia w Praktyce")
   const silo3 = posts.filter((p) => p.silo === "Case Studies")
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.karolmodelski.pl/blog#webpage",
+        url: "https://www.karolmodelski.pl/blog",
+        name: blog.metadata.title,
+        description: blog.metadata.description,
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://www.karolmodelski.pl/#website",
+          url: "https://www.karolmodelski.pl/",
+          name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        },
+        publisher: {
+          "@id": "https://www.karolmodelski.pl/#organization",
+        },
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.karolmodelski.pl/#organization",
+        name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        url: "https://www.karolmodelski.pl/",
+        telephone: "+48664598563",
+        priceRange: "$$",
+        areaServed: "PL",
+        sameAs: "https://g.page/r/CZSVfAGtTiIzEBM",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Warszawa",
+          addressCountry: "PL",
+        },
+        founder: {
+          "@type": "Person",
+          "@id": "https://www.karolmodelski.pl/#person",
+          name: "Karol Modelski",
+          jobTitle: "Niezależny Partner Technologiczny",
+          sameAs: "https://www.linkedin.com/in/karol-modelski/",
+        },
+      },
+    ],
+  }
+
   return (
     <div className="flex min-h-[100dvh] flex-col bg-slate-950 text-slate-50 selection:bg-blue-500/30">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+
 
       <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
       <div className="pointer-events-none fixed top-1/4 right-0 -z-10 h-[500px] w-[500px] rounded-full bg-blue-600/10 opacity-60 mix-blend-screen blur-[120px] lg:h-[800px] lg:w-[800px]"></div>
