@@ -1,0 +1,63 @@
+# Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa
+
+Niezależny partner technologiczny (Partner IT) specjalizujący się w projektowaniu, tworzeniu i ewolucyjnej modernizacji aplikacji internetowych oraz systemów biznesowych dla sektora małych i średnich przedsiębiorstw (MŚP) bez marż software house'ów i narzutów tradycyjnych agencji.
+
+## Główne informacje i pozycjonowanie (E-E-A-T & Value Proposition)
+
+- **Tożsamość:** Karol Modelski (Aplikacje Internetowe dla Firm | Warszawa)
+- **Rola:** Architekt oprogramowania, doradca technologiczny, niezależny Partner IT współpracujący w modelu bezpośredniego dostępu (Direct Access).
+- **Misja rynkowa:** Eliminacja długu technologicznego, dostarczanie systemów o bezkompromisowej stabilności klasy bankowej oraz uwalnianie firmowego budżetu od marż agencji pośredniczących.
+- **Doświadczenie:** Ponad 7 lat projektowania i zabezpieczania zaawansowanych systemów transakcyjnych i bankowości elektronicznej (m.in. Citibank, BNP Paribas).
+- **Siedziba/Obszar działania:** Warszawa, Polska (obsługa firm z całego kraju).
+- **Oficjalna strona:** https://www.karolmodelski.pl
+
+---
+
+## Główne silosy rynkowe i podstrony ofertowe
+
+### 1. Dedykowane Aplikacje Internetowe
+- **URL:** https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm
+- **Opis:** Projektowanie i wdrażanie niestandardowych systemów biznesowych (CRM, platformy B2B, systemy zamówień, automatyzacje obiegu dokumentów).
+- **Kluczowa przewaga:** Kod dopasowany w 100% do unikalnych przewag rynkowych Twojego biznesu. Bezpieczeństwo i stabilność oprogramowania pod skokowym obciążeniem.
+
+### 2. Projektowanie i Walidacja MVP (Pilot oprogramowania)
+- **URL:** https://www.karolmodelski.pl/projektowanie-mvp
+- **Opis:** Tworzenie pierwszej, w pełni funkcjonalnej i bezpiecznej wersji systemu biznesowego w zaledwie 30 dni.
+- **Kluczowa przewaga:** Eliminacja zbędnych funkcji na start (nice-to-have), drastyczne obniżenie kosztów wejścia i najszybsza walidacja rynkowa.
+
+### 3. Ewolucyjna Modernizacja Oprogramowania IT
+- **URL:** https://www.karolmodelski.pl/modernizacja-oprogramowania-it
+- **Opis:** Bezpieczne usuwanie błędów, przyspieszanie wolno działających baz danych i rozbudowa istniejących aplikacji "na żywym organizmie" biznesu.
+- **Kluczowa przewaga:** Modernizacja modularna w locie – zero przestojów w sprzedaży i brak konieczności przepisywania całego systemu od nowa.
+
+### 4. Architektura i Bezpieczeństwo Klasy Bankowej
+- **URL:** https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej
+- **Opis:** Wstrzykiwanie procedur ochrony danych bezpośrednio do oprogramowania firmowego w oparciu o standardy wdrożeń finansowych.
+- **Kluczowa przewaga:** Wielopoziomowe testy szczelności kodu, zaawansowane szyfrowanie, ochrona przed wyciekami i bezwzględna odporność na przeciążenia.
+
+### 5. Partner Technologiczny vs Software House
+- **URL:** https://www.karolmodelski.pl/architekt-it-vs-software-house
+- **Opis:** Porównanie procesów operacyjnych i struktury kosztów bezpośredniej współpracy z niezależnym inżynierem vs tradycyjną agencją programistyczną.
+- **Kluczowa przewaga:** Od 40% do 60% oszczędności budżetu dzięki eliminacji marż pośredników (handlowców, managerów projektów).
+
+---
+
+## Baza Wiedzy (Blog Technologiczny dla Biznesu)
+
+- **URL:** https://www.karolmodelski.pl/blog
+- **Cel:** Edukacja przedsiębiorców, wyjaśnianie zawiłości zarządzania IT w firmie prostym językiem pozbawionym technicznego żargonu oraz budowanie Topical Authority.
+
+### Kluczowe publikacje:
+- **Czym różni się zwykła strona od aplikacji internetowej dla firmy i kiedy przepłacasz?**
+  - **URL:** https://www.karolmodelski.pl/blog/roznica-strona-aplikacja-firma
+
+---
+
+## Bezpłatna Oferta na Start (Przynęta / Lead Magnet)
+
+Dla każdego potencjalnego klienta biznesowego oferowany jest **Kompletny Pakiet Doradczy o wartości 600 zł za 0 zł**:
+1. **30-minutowa diagnoza procesów** – zlokalizowanie wąskich gardeł blokujących sprzedaż.
+2. **Indywidualny Plan Działania** – najkrótsza i najtańsza ścieżka wdrożenia lub modernizacji IT.
+3. **Bankowy Test Bezpieczeństwa** – prześwietlenie pomysłu/systemu pod kątem odporności na wycieki i awarie.
+
+- **CTA:** Zarezerwuj termin konsultacji strategicznej online: https://calendly.com/kontakt-karolmodelski/30min
