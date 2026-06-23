@@ -1,4 +1,9 @@
 export const blogContent = {
+  metadata: {
+    title: "Baza Wiedzy IT dla Biznesu | Praktyczny Blog Technologiczny",
+    description:
+      "Artykuły, przewodniki i analizy technologiczne dla właścicieli firm. Dowiedz się, jak rozwijać oprogramowanie i bezpiecznie zarządzać systemami w biznesie.",
+  },
   header: {
     title:
       'Nie potrzebujesz kolejnej agencji od "dostarczania kodu". <br class="hidden lg:block" />\n<span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">Potrzebujesz architektury, która napędza biznes.</span>',

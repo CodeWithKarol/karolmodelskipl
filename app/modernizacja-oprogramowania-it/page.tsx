@@ -37,47 +37,86 @@ import {
   contrast,
   faq,
   offer,
+  metadata,
 } from "@/lib/content/modernizacja-oprogramowania-it/page"
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#webpage",
-  url: "https://www.karolmodelski.pl/modernizacja-oprogramowania-it",
-  name: "Modernizacja Oprogramowania IT dla Firm | Niezależny Partner",
-  isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
-  mainEntity: [
-    {
-      "@type": "Service",
-      "@id":
-        "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#service",
-      name: "Modernizacja Oprogramowania IT dla Firm",
-      description:
-        "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży.",
-      provider: { "@id": "https://www.karolmodelski.pl/#organization" },
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    alternates: {
+      canonical: "https://www.karolmodelski.pl/modernizacja-oprogramowania-it",
     },
-    {
-      "@type": "FAQPage",
-      "@id": "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#faq",
-      mainEntity: faq.items.map((item) => ({
-        "@type": "Question",
-        name: item.q,
-        acceptedAnswer: { "@type": "Answer", text: item.a },
-      })),
-    },
-  ],
-}
-
-export const metadata: Metadata = {
-  title: "Modernizacja Oprogramowania IT dla Firm | Niezależny Partner",
-  description:
-    "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży. Odbierz darmową diagnozę!",
-  alternates: {
-    canonical: "https://www.karolmodelski.pl/modernizacja-oprogramowania-it",
-  },
+  }
 }
 
 export default function ModernizacjaOprogramowaniaPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id":
+          "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#webpage",
+        url: "https://www.karolmodelski.pl/modernizacja-oprogramowania-it",
+        name: metadata.title,
+        description: metadata.description,
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://www.karolmodelski.pl/#website",
+          url: "https://www.karolmodelski.pl/",
+          name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        },
+        mainEntity: {
+          "@id":
+            "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#service",
+        },
+        hasPart: {
+          "@id": "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#faq",
+        },
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.karolmodelski.pl/#organization",
+        name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        url: "https://www.karolmodelski.pl/",
+        telephone: "+48664598563",
+        priceRange: "$$",
+        areaServed: "PL",
+        sameAs: "https://g.page/r/CZSVfAGtTiIzEBM",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Warszawa",
+          addressCountry: "PL",
+        },
+        founder: {
+          "@type": "Person",
+          "@id": "https://www.karolmodelski.pl/#person",
+          name: "Karol Modelski",
+          jobTitle: "Niezależny Partner Technologiczny",
+          sameAs: "https://www.linkedin.com/in/karol-modelski/",
+        },
+      },
+      {
+        "@type": "Service",
+        "@id":
+          "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#service",
+        name: metadata.title,
+        description: metadata.description,
+        provider: { "@id": "https://www.karolmodelski.pl/#organization" },
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#faq",
+        mainEntity: faq.items.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: { "@type": "Answer", text: item.a },
+        })),
+      },
+    ],
+  }
+
   return (
     <main className="flex-1 overflow-hidden bg-slate-950 text-slate-50">
       <script

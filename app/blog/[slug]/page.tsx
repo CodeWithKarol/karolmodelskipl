@@ -43,20 +43,62 @@ export default async function BlogPostPage(props: {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "TechArticle",
-    "@id": `https://www.karolmodelski.pl/blog/${post.slug}#article`,
-    headline: post.title,
-    description: post.excerpt,
-    datePublished: post.date,
-    author: { "@id": "https://www.karolmodelski.pl/#person" },
-    publisher: { "@id": "https://www.karolmodelski.pl/#organization" },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://www.karolmodelski.pl/blog/${post.slug}#webpage`,
-      url: `https://www.karolmodelski.pl/blog/${post.slug}`,
-      name: `${post.title} | Blog Karol Modelski`,
-      isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
-    },
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "@id": `https://www.karolmodelski.pl/blog/${post.slug}#article`,
+        headline: post.title,
+        description: post.excerpt,
+        datePublished: post.date,
+        author: { "@id": "https://www.karolmodelski.pl/#person" },
+        publisher: { "@id": "https://www.karolmodelski.pl/#organization" },
+        mainEntityOfPage: {
+          "@type": "WebPage",
+          "@id": `https://www.karolmodelski.pl/blog/${post.slug}#webpage`,
+        },
+      },
+      {
+        "@type": "WebPage",
+        "@id": `https://www.karolmodelski.pl/blog/${post.slug}#webpage`,
+        url: `https://www.karolmodelski.pl/blog/${post.slug}`,
+        name: `${post.title} | Blog Karol Modelski`,
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://www.karolmodelski.pl/#website",
+          url: "https://www.karolmodelski.pl/",
+          name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        },
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.karolmodelski.pl/#organization",
+        name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        url: "https://www.karolmodelski.pl/",
+        telephone: "+48664598563",
+        priceRange: "$$",
+        areaServed: "PL",
+        sameAs: "https://g.page/r/CZSVfAGtTiIzEBM",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Warszawa",
+          addressCountry: "PL",
+        },
+        founder: {
+          "@type": "Person",
+          "@id": "https://www.karolmodelski.pl/#person",
+          name: "Karol Modelski",
+          jobTitle: "Niezależny Partner Technologiczny",
+          sameAs: "https://www.linkedin.com/in/karol-modelski/",
+        },
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.karolmodelski.pl/#person",
+        name: "Karol Modelski",
+        jobTitle: "Niezależny Partner Technologiczny",
+        sameAs: "https://www.linkedin.com/in/karol-modelski/",
+      },
+    ],
   }
 
   return (

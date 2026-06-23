@@ -22,47 +22,92 @@ import {
   guarantee,
   faq,
   offer,
+  metadata,
 } from "@/lib/content/architekt-it-vs-software-house/page"
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://www.karolmodelski.pl/architekt-it-vs-software-house#webpage",
-  url: "https://www.karolmodelski.pl/architekt-it-vs-software-house",
-  name: "Agencja programistyczna czy partner IT? | Porównanie kosztów",
-  isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
-  mainEntity: [
-    {
-      "@type": "Service",
-      "@id":
-        "https://www.karolmodelski.pl/architekt-it-vs-software-house#service",
-      name: "Agencja programistyczna czy partner IT? | Porównanie kosztów",
-      description:
-        "Sprawdź, dlaczego duże agencje programistyczne generują ukryte koszty. Zyskaj bezpośredni dostęp do eksperta bez marż pośredników.",
-      provider: { "@id": "https://www.karolmodelski.pl/#organization" },
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    alternates: {
+      canonical: "https://www.karolmodelski.pl/architekt-it-vs-software-house",
     },
-    {
-      "@type": "FAQPage",
-      "@id": "https://www.karolmodelski.pl/architekt-it-vs-software-house#faq",
-      mainEntity: faq.items.map((item) => ({
-        "@type": "Question",
-        name: item.q,
-        acceptedAnswer: { "@type": "Answer", text: item.a },
-      })),
-    },
-  ],
-}
-
-export const metadata: Metadata = {
-  title: "Agencja programistyczna czy partner IT? | Porównanie kosztów",
-  description:
-    "Sprawdź, dlaczego duże agencje programistyczne generują ukryte koszty. Zyskaj bezpośredni dostęp do eksperta bez marż pośredników.",
-  alternates: {
-    canonical: "https://www.karolmodelski.pl/architekt-it-vs-software-house",
-  },
+  }
 }
 
 export default function ArchitektVsSoftwareHousePage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id":
+          "https://www.karolmodelski.pl/architekt-it-vs-software-house#webpage",
+        url: "https://www.karolmodelski.pl/architekt-it-vs-software-house",
+        name: metadata.title,
+        description: metadata.description,
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://www.karolmodelski.pl/#website",
+          url: "https://www.karolmodelski.pl/",
+          name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        },
+        mainEntity: {
+          "@id":
+            "https://www.karolmodelski.pl/architekt-it-vs-software-house#service",
+        },
+        hasPart: {
+          "@id": "https://www.karolmodelski.pl/architekt-it-vs-software-house#faq",
+        },
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.karolmodelski.pl/#organization",
+        name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        url: "https://www.karolmodelski.pl/",
+        telephone: "+48664598563",
+        priceRange: "$$",
+        areaServed: "PL",
+        sameAs: "https://g.page/r/CZSVfAGtTiIzEBM",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Warszawa",
+          addressCountry: "PL",
+        },
+        founder: {
+          "@type": "Person",
+          "@id": "https://www.karolmodelski.pl/#person",
+          name: "Karol Modelski",
+          jobTitle: "Niezależny Partner Technologiczny",
+          sameAs: "https://www.linkedin.com/in/karol-modelski/",
+        },
+      },
+      {
+        "@type": "Service",
+        "@id":
+          "https://www.karolmodelski.pl/architekt-it-vs-software-house#service",
+        name: metadata.title,
+        description: metadata.description,
+        serviceType: "Konsulting technologiczny i doradztwo IT dla firm",
+        provider: {
+          "@id": "https://www.karolmodelski.pl/#organization",
+        },
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.karolmodelski.pl/architekt-it-vs-software-house#faq",
+        mainEntity: faq.items.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.a,
+          },
+        })),
+      },
+    ],
+  }
+
   return (
     <main className="flex-1 overflow-hidden bg-slate-950 text-slate-50">
       <script
@@ -210,6 +255,7 @@ export default function ArchitektVsSoftwareHousePage() {
             <p>{offer.subtitle}</p>
           </div>
 
+          {/* Ozdobny pakiet wartościowy */}
           <div className="mx-auto mb-12 w-full max-w-2xl rounded-[1.5rem] border border-blue-500/20 bg-slate-900/80 p-6 text-left shadow-2xl backdrop-blur-xl sm:p-10">
             <h3 className="mb-6 flex flex-col items-center justify-center border-b border-slate-800/80 pb-6 text-center text-lg font-bold text-white sm:mb-8 sm:flex-row sm:text-xl">
               {offer.packetTitle}{" "}

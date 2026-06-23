@@ -23,47 +23,93 @@ import {
   mechanism,
   faq,
   offer,
+  metadata,
 } from "@/lib/content/bezpieczenstwo-klasy-bankowej/page"
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej#webpage",
-  url: "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej",
-  name: "Bezpieczeństwo systemów i architektura klasy bankowej dla firm",
-  isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
-  mainEntity: [
-    {
-      "@type": "Service",
-      "@id":
-        "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej#service",
-      name: "Bezpieczeństwo systemów i architektura klasy bankowej dla firm",
-      description:
-        "Ochrona danych i bezwzględna stabilność oprogramowania pod dużym obciążeniem. Przenieś standardy bankowe do swojego biznesu.",
-      provider: { "@id": "https://www.karolmodelski.pl/#organization" },
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    alternates: {
+      canonical: "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej",
     },
-    {
-      "@type": "FAQPage",
-      "@id": "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej#faq",
-      mainEntity: faq.items.map((item) => ({
-        "@type": "Question",
-        name: item.q,
-        acceptedAnswer: { "@type": "Answer", text: item.a },
-      })),
-    },
-  ],
-}
-
-export const metadata: Metadata = {
-  title: "Bezpieczeństwo systemów i architektura klasy bankowej dla firm",
-  description:
-    "Ochrona danych i bezwzględna stabilność oprogramowania pod dużym obciążeniem. Przenieś standardy Citibanku i BNP Paribas do swojego biznesu.",
-  alternates: {
-    canonical: "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej",
-  },
+  }
 }
 
 export default function BezpieczenstwoKlasyBankowejPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id":
+          "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej#webpage",
+        url: "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej",
+        name: metadata.title,
+        description: metadata.description,
+        isPartOf: {
+          "@type": "WebSite",
+          "@id": "https://www.karolmodelski.pl/#website",
+          url: "https://www.karolmodelski.pl/",
+          name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        },
+        mainEntity: {
+          "@id":
+            "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej#service",
+        },
+        hasPart: {
+          "@id": "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej#faq",
+        },
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.karolmodelski.pl/#organization",
+        name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        url: "https://www.karolmodelski.pl/",
+        telephone: "+48664598563",
+        priceRange: "$$",
+        areaServed: "PL",
+        sameAs: "https://g.page/r/CZSVfAGtTiIzEBM",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Warszawa",
+          addressCountry: "PL",
+        },
+        founder: {
+          "@type": "Person",
+          "@id": "https://www.karolmodelski.pl/#person",
+          name: "Karol Modelski",
+          jobTitle: "Niezależny Partner Technologiczny",
+          sameAs: "https://www.linkedin.com/in/karol-modelski/",
+        },
+      },
+      {
+        "@type": "Service",
+        "@id":
+          "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej#service",
+        name: metadata.title,
+        description: metadata.description,
+        serviceType:
+          "Audyt bezpieczeństwa i wdrażanie standardów ochrony danych klasy bankowej",
+        provider: {
+          "@id": "https://www.karolmodelski.pl/#organization",
+        },
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej#faq",
+        mainEntity: faq.items.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.a,
+          },
+        })),
+      },
+    ],
+  }
+
   return (
     <main className="flex-1 overflow-hidden bg-slate-950 text-slate-50">
       <script

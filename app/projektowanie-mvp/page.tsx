@@ -43,26 +43,67 @@ export default function ProjektowanieMvpPage() {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "@id": "https://www.karolmodelski.pl/projektowanie-mvp#webpage",
-    url: "https://www.karolmodelski.pl/projektowanie-mvp",
-    name: mvp.metadata.title,
-    isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
-    mainEntity: [
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.karolmodelski.pl/projektowanie-mvp#webpage",
+        "url": "https://www.karolmodelski.pl/projektowanie-mvp",
+        "name": mvp.metadata.title,
+        "description": mvp.metadata.description,
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://www.karolmodelski.pl/#website",
+          "url": "https://www.karolmodelski.pl/",
+          "name": "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        },
+        "mainEntity": {
+          "@id": "https://www.karolmodelski.pl/projektowanie-mvp#service",
+        },
+        "hasPart": {
+          "@id": "https://www.karolmodelski.pl/projektowanie-mvp#faq",
+        },
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.karolmodelski.pl/#organization",
+        "name": "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
+        "url": "https://www.karolmodelski.pl/",
+        "telephone": "+48664598563",
+        "priceRange": "$$",
+        "areaServed": "PL",
+        "sameAs": "https://g.page/r/CZSVfAGtTiIzEBM",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Warszawa",
+          "addressCountry": "PL",
+        },
+        "founder": {
+          "@type": "Person",
+          "@id": "https://www.karolmodelski.pl/#person",
+          "name": "Karol Modelski",
+          "jobTitle": "Niezależny Partner Technologiczny",
+          "sameAs": "https://www.linkedin.com/in/karol-modelski/",
+        },
+      },
       {
         "@type": "Service",
         "@id": "https://www.karolmodelski.pl/projektowanie-mvp#service",
-        name: mvp.service.title,
-        description: mvp.service.description,
-        provider: { "@id": "https://www.karolmodelski.pl/#organization" },
+        "name": mvp.service.title,
+        "description": mvp.service.description,
+        "provider": {
+          "@id": "https://www.karolmodelski.pl/#organization",
+        },
       },
       {
         "@type": "FAQPage",
         "@id": "https://www.karolmodelski.pl/projektowanie-mvp#faq",
-        mainEntity: mvp.faq.items.map((item) => ({
+        "mainEntity": mvp.faq.items.map((item) => ({
           "@type": "Question",
-          name: item.question,
-          acceptedAnswer: { "@type": "Answer", text: item.answer },
+          "name": item.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer,
+          },
         })),
       },
     ],
