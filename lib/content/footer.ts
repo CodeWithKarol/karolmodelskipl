@@ -13,9 +13,14 @@ export const footer = {
     email: "kontakt@karolmodelski.pl",
   },
   col3: {
-    title: "Następny Krok",
+    title: "Rozwiązania dla firm",
+    navigation: [
+      { label: "Baza wiedzy", href: "/blog" },
+      { label: "Pierwsza wersja systemu", href: "/projektowanie-mvp" },
+      { label: "Modernizacja oprogramowania IT", href: "/modernizacja-oprogramowania-it" },
+      { label: "Aplikacje internetowe dla firm", href: "/aplikacje-internetowe-dla-firm" },
+    ],
     links: [
-      { label: "Baza wiedzy (Blog)", href: "/blog", isCta: false },
       {
         label: "Odbierz Mapę Drogową IT",
         href: "https://www.karolmodelski.pl/#kontakt",
