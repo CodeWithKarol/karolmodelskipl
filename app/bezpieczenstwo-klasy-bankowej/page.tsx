@@ -27,16 +27,24 @@ import {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "WebPage",
+  "@id": "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej#webpage",
+  url: "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej",
+  name: "Bezpieczeństwo systemów i architektura klasy bankowej dla firm",
+  isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
+  mainEntity: [
     {
-      "@type": "WebPage",
+      "@type": "Service",
+      "@id":
+        "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej#service",
       name: "Bezpieczeństwo systemów i architektura klasy bankowej dla firm",
       description:
-        "Ochrona danych i bezwzględna stabilność oprogramowania pod dużym obciążeniem. Przenieś standardy Citibanku i BNP Paribas do swojego biznesu.",
-      url: "https://karolmodelski.pl/bezpieczenstwo-klasy-bankowej",
+        "Ochrona danych i bezwzględna stabilność oprogramowania pod dużym obciążeniem. Przenieś standardy bankowe do swojego biznesu.",
+      provider: { "@id": "https://www.karolmodelski.pl/#organization" },
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej#faq",
       mainEntity: faq.items.map((item) => ({
         "@type": "Question",
         name: item.q,

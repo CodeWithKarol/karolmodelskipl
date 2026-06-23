@@ -16,18 +16,19 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "WebPage",
+  "@id": "https://www.karolmodelski.pl/blog#webpage",
+  url: "https://www.karolmodelski.pl/blog",
+  name: "Tworzenie aplikacji internetowych dla MŚP | Blog Karol Modelski",
+  isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
+  mainEntity: [
     {
       "@type": "CollectionPage",
-      "@id": "https://www.karolmodelski.pl/blog/#collectionpage",
-      url: "https://www.karolmodelski.pl/blog",
+      "@id": "https://www.karolmodelski.pl/blog#collectionpage",
       name: "Tworzenie aplikacji internetowych dla MŚP | Blog Karol Modelski",
       description:
         "Baza wiedzy i poradniki technologiczne dla sektora MŚP. Dowiedz się, jak projektować stabilne systemy webowe i unikać długu technologicznego.",
-      isPartOf: {
-        "@type": "WebSite",
-        "@id": "https://www.karolmodelski.pl/#website",
-      },
+      provider: { "@id": "https://www.karolmodelski.pl/#organization" },
     },
   ],
 }

@@ -26,16 +26,24 @@ import {
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@graph": [
+  "@type": "WebPage",
+  "@id": "https://www.karolmodelski.pl/architekt-it-vs-software-house#webpage",
+  url: "https://www.karolmodelski.pl/architekt-it-vs-software-house",
+  name: "Agencja programistyczna czy partner IT? | Porównanie kosztów",
+  isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
+  mainEntity: [
     {
-      "@type": "WebPage",
+      "@type": "Service",
+      "@id":
+        "https://www.karolmodelski.pl/architekt-it-vs-software-house#service",
       name: "Agencja programistyczna czy partner IT? | Porównanie kosztów",
       description:
         "Sprawdź, dlaczego duże agencje programistyczne generują ukryte koszty. Zyskaj bezpośredni dostęp do eksperta bez marż pośredników.",
-      url: "https://karolmodelski.pl/architekt-it-vs-software-house",
+      provider: { "@id": "https://www.karolmodelski.pl/#organization" },
     },
     {
       "@type": "FAQPage",
+      "@id": "https://www.karolmodelski.pl/architekt-it-vs-software-house#faq",
       mainEntity: faq.items.map((item) => ({
         "@type": "Question",
         name: item.q,

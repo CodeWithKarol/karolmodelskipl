@@ -43,33 +43,20 @@ export default async function BlogPostPage(props: {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "TechArticle",
-        "@id": `https://www.karolmodelski.pl/blog/${post.slug}/#article`,
-        isPartOf: {
-          "@type": "WebPage",
-          "@id": `https://www.karolmodelski.pl/blog/${post.slug}/#webpage`,
-          url: `https://www.karolmodelski.pl/blog/${post.slug}`,
-          name: `${post.title} | Blog Karol Modelski`,
-        },
-        headline: post.title,
-        description: post.excerpt,
-        inLanguage: "pl-PL",
-        mainEntityOfPage: `https://www.karolmodelski.pl/blog/${post.slug}`,
-        author: {
-          "@type": "Person",
-          "@id": "https://www.karolmodelski.pl/#person",
-          name: "Karol Modelski",
-          url: "https://www.karolmodelski.pl",
-        },
-        publisher: {
-          "@type": "Organization",
-          "@id": "https://www.karolmodelski.pl/#business",
-        },
-        datePublished: post.date,
-      },
-    ],
+    "@type": "TechArticle",
+    "@id": `https://www.karolmodelski.pl/blog/${post.slug}#article`,
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    author: { "@id": "https://www.karolmodelski.pl/#person" },
+    publisher: { "@id": "https://www.karolmodelski.pl/#organization" },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.karolmodelski.pl/blog/${post.slug}#webpage`,
+      url: `https://www.karolmodelski.pl/blog/${post.slug}`,
+      name: `${post.title} | Blog Karol Modelski`,
+      isPartOf: { "@id": "https://www.karolmodelski.pl/#website" },
+    },
   }
 
   return (
