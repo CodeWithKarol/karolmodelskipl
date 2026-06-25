@@ -43,6 +43,9 @@ export function Footer() {
                   <span className="block font-medium">
                     {footer.col2.address_city}
                   </span>
+                  <span className="mt-1 block text-blue-400 font-medium text-xs uppercase">
+                    {footer.col2.coverage}
+                  </span>
                 </div>
               </li>
               <li className="flex items-center gap-3">

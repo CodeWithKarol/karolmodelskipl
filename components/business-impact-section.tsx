@@ -1,26 +1,12 @@
 import { Zap, Headphones, BarChart3 } from "lucide-react"
+import { impact } from "@/lib/content/impact"
 
 export function BusinessImpactSection() {
-  const impacts = [
-    {
-      title: "Automatyzacja procesów",
-      description:
-        "Eliminacja powtarzalnych zadań dzięki dedykowanym narzędziom, co pozwala zespołowi skupić się na strategii.",
-      icon: Zap,
-    },
-    {
-      title: "Obsługa klientów",
-      description:
-        "Platformy wspierające komunikację i obsługę, przekładające się na wyższą retencję i zadowolenie klientów.",
-      icon: Headphones,
-    },
-    {
-      title: "Analityka sprzedaży",
-      description:
-        "Wgląd w kluczowe dane w czasie rzeczywistym, pozwalający podejmować decyzje oparte na faktach, a nie intuicji.",
-      icon: BarChart3,
-    },
-  ]
+  const icons = [Zap, Headphones, BarChart3]
+  const impacts = impact.items.map((item, index) => ({
+    ...item,
+    icon: icons[index],
+  }))
 
   return (
     <section className="relative overflow-hidden bg-slate-950 py-16 text-slate-300 sm:py-24">
@@ -35,15 +21,13 @@ export function BusinessImpactSection() {
         {/* Nagłówek Sekcji dopasowany do reszty strony */}
         <div className="mx-auto mb-16 max-w-3xl text-center md:mb-20">
           <h2 className="mb-6 text-[2rem] leading-[1.15] font-extrabold tracking-tight text-balance text-white sm:text-4xl md:text-5xl lg:text-[3.5rem]">
-            Jak aplikacje internetowe <br className="hidden sm:block" />
+            {impact.title.split("?")[0]}? <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-              wspierają Twoją firmę?
+              {impact.title.split("?")[1] ? impact.title.split("?")[1].trim() : ""}
             </span>
           </h2>
           <p className="mx-auto max-w-2xl px-2 text-[15px] leading-relaxed font-light text-balance text-slate-400 sm:px-0 sm:text-lg md:text-xl">
-            Nowoczesne oprogramowanie to nie tylko technologia. To inwestycja,
-            która odciąża zespół, redukuje koszty operacyjne i bezpośrednio
-            przekłada się na wzrost przychodów.
+            {impact.description}
           </p>
         </div>
 

@@ -11,8 +11,8 @@ export const contrast = {
         desc: "Skupienie wyłącznie na dowiezieniu projektu i wystawieniu faktury za godziny, bez wnikania w zyskowność.",
       },
       blue: {
-        title: "Maksymalizacja Twojego ROI",
-        desc: "Dostarczenie realnego wyniku biznesowego. Moim celem jest to, aby system zaczął na siebie zarabiać.",
+        title: "Zwrot z inwestycji w oprogramowanie",
+        desc: "Dostarczenie realnego wyniku biznesowego. Moim celem jest to, aby system zaczął jak najszybciej na siebie zarabiać.",
       },
     },
     {

@@ -9,6 +9,7 @@ export const footer = {
     title: "Kontakt",
     address_street: "ul. Mieczysława Karłowicza 1 lok. 40",
     address_city: "58-506 Jelenia Góra",
+    coverage: "Obszar obsługi: Warszawa i cała Polska",
     phone: "+48 664 598 563",
     email: "kontakt@karolmodelski.pl",
   },
@@ -41,7 +42,7 @@ export const footer = {
     ],
     links: [
       {
-        label: "Odbierz Mapę Drogową IT",
+        label: "Odbierz Mapę Drogową Rozwoju IT",
         href: "https://www.karolmodelski.pl/#kontakt",
         isCta: true,
       },

@@ -28,7 +28,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-4 sm:gap-6">
           <Link href="/" className="group flex shrink-0 items-center space-x-2">
             <span className="text-[14px] font-bold tracking-tight text-slate-200 transition-colors group-hover:text-white sm:text-[15px]">
-              Karol Modelski
+              {header.brand.name}
             </span>
           </Link>
 
@@ -79,7 +79,7 @@ export function SiteHeader() {
             asChild
             className="hidden h-8 shrink-0 rounded-full border border-blue-500/30 bg-blue-600 px-4 text-[12px] font-semibold text-white shadow-[0_0_20px_-5px_rgba(37,99,235,0.4)] transition-all hover:bg-blue-500 hover:shadow-[0_0_25px_-5px_rgba(37,99,235,0.6)] min-[400px]:inline-flex sm:h-9 sm:px-5 sm:text-[13px]"
           >
-            <Link href="/#kontakt">Bezpłatna diagnoza</Link>
+            <Link href={header.cta.href}>{header.cta.title}</Link>
           </Button>
 
           {/* Menu Hamburger na Mobile */}
@@ -101,10 +101,10 @@ export function SiteHeader() {
               >
                 <SheetHeader className="mb-6 text-left">
                   <SheetTitle className="text-lg font-bold text-slate-200">
-                    Nawigacja
+                    {header.menu.mobile.title}
                   </SheetTitle>
                   <SheetDescription className="text-xs text-slate-500">
-                    Wybierz sekcję, do której chcesz przejść.
+                    {header.menu.mobile.description}
                   </SheetDescription>
                 </SheetHeader>
                 <div className="flex flex-col gap-2">
@@ -129,15 +129,15 @@ export function SiteHeader() {
 
                   <SheetClose asChild>
                     <Link
-                      href="https://www.karolmodelski.pl/#kontakt"
+                      href={header.cta.href}
                       className="group flex flex-col gap-1 rounded-lg bg-blue-600/10 p-3 transition-colors hover:bg-blue-600/20"
                     >
                       <div className="flex items-center justify-between text-[14px] font-bold text-blue-400 transition-colors group-hover:text-blue-300">
-                        <span>Bezpłatna diagnoza</span>
+                        <span>{header.cta.title}</span>
                         <ChevronRight className="h-4 w-4 text-blue-400 transition-colors group-hover:text-blue-300" />
                       </div>
                       <span className="text-[13px] text-slate-400 transition-colors group-hover:text-slate-300">
-                        Zarezerwuj termin na darmowy audyt.
+                        {header.cta.description}
                       </span>
                     </Link>
                   </SheetClose>
