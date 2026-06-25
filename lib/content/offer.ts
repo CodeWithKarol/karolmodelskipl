@@ -4,10 +4,14 @@ export const offer = {
   title_part2: "Twojej firmy?",
   subheading:
     "Zamiast skupiać się na technicznych definicjach, zobaczmy, jak moje rozwiązania bezpośrednio przekładają się na ochronę i pomnażanie Twoich pieniędzy:",
+  cta: {
+    title: "Zobacz, jak krok po kroku projektuję dedykowane aplikacje internetowe dla firm",
+    href: "/aplikacje-internetowe-dla-firm",
+  },
   stack: [
     {
       title: "Przestań zgadywać – zacznij zarabiać",
-      desc: 'Większość firm traci setki tysięcy na budowaniu funkcji, których nikt nie chce. Ja dostarczam Ci "bezpiecznik finansowy" w postaci precyzyjnego MVP. Walidujemy Twój pomysł z rynkiem w rekordowym czasie, byś inwestował tylko w to, co realnie napędza sprzedaż. Zobacz, jak wdrażam <a href="/projektowanie-mvp">pierwszą wersję systemu</a> w 30 dni.',
+      desc: 'Większość firm traci setki tysięcy na budowaniu funkcji, których nikt nie chce. Ja dostarczam Ci "bezpiecznik finansowy" w postaci pierwszej, uproszczonej wersji oprogramowania. Sprawdzamy Twój pomysł z rynkiem w rekordowym czasie, byś inwestował tylko w to, co realnie napędza sprzedaż. Zobacz, jak wdrażam <a href="/projektowanie-mvp">pierwszą wersję systemu</a> w 30 dni.',
     },
     {
       title: "Modernizacja bez utraty ani jednej minuty sprzedaży",
@@ -19,7 +23,8 @@ export const offer = {
     },
     {
       title: "Prędkość, która zamienia odwiedzających w kupujących",
-      desc: "Każda sekunda opóźnienia to klienci uciekający do konkurencji. Moja inżynieria to „Elite Performance” – systemy tak błyskawiczne, że użytkownik nie ma czasu się zawahać. Skracam czas ładowania do minimum, eliminując „tarcie” na ścieżce zakupowej. Mniej porzuconych koszyków, więcej transakcji, większy zwrot z każdej złotówki wydanej na reklamę.",
+      desc: "Każda sekunda opóźnienia to klienci uciekający do konkurencji. Moja inżynieria to wysoka wydajność kodu – systemy tak błyskawiczne, że użytkownik nie ma czasu się zawahać. Skracam czas ładowania do minimum, eliminując opór na ścieżce zakupowej. Mniej porzuconych koszyków, więcej transakcji, większy zwrot z każdej złotówki wydanej na marketing.",
     },
   ],
 }
+

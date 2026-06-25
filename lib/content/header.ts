@@ -1,5 +1,17 @@
 export const header = {
+  brand: {
+    name: "Karol Modelski",
+  },
+  cta: {
+    title: "Bezpłatna diagnoza",
+    href: "/#kontakt",
+    description: "Zarezerwuj termin na darmowy audyt.",
+  },
   menu: {
+    mobile: {
+      title: "Nawigacja",
+      description: "Wybierz sekcję, do której chcesz przejść.",
+    },
     oferta: {
       title: "Oferta",
       items: [

@@ -6,7 +6,7 @@ export const cta = {
   meeting_intro:
     "Wypełnij krótki formularz, wybierz termin i zgarnij darmowy pakiet doradczy. Co otrzymasz po spotkaniu?",
   meeting_bullets_title:
-    "Bezpłatna Mapa Drogowa Modernizacji IT (Wartość: 600 zł)",
+    "Bezpłatna Mapa Drogowa Rozwoju IT (Wartość: 600 zł)",
   bullets: [
     {
       title: "30-minutowa diagnoza online",

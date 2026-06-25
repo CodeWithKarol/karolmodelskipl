@@ -3,7 +3,6 @@ import {
   RefreshCw,
   Layers,
   Gauge,
-  CheckCircle2,
   ArrowRight,
 } from "lucide-react"
 import { content } from "@/lib/content"
@@ -81,11 +80,10 @@ export function OfferSection() {
         {/* Call to action - dodane zgodnie z instrukcją */}
         <div className="mt-16 text-center md:mt-24">
           <Link
-            href="/aplikacje-internetowe-dla-firm"
+            href={offer.cta.href}
             className="inline-flex items-center gap-2 text-center text-[14px] leading-snug font-semibold text-blue-400 transition-all hover:gap-3 hover:text-white sm:text-[15px] md:text-lg"
           >
-            Zobacz, jak krok po kroku projektuję dedykowane aplikacje
-            internetowe dla firm
+            {offer.cta.title}
             <ArrowRight className="h-4 w-4 shrink-0 sm:h-5 sm:w-5" />
           </Link>
         </div>
