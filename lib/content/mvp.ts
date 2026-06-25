@@ -5,9 +5,9 @@ export const mvp = {
       "Zbuduj pierwszą wersję aplikacji w 30 dni z niezależnym partnerem technologicznym. Bez zbędnego komplikowania i marż agencji. Sprawdź, czy zarabiasz!",
   },
   service: {
-    title: "Projektowanie i walidacja wersji pilotażowych w 30 dni",
+    title: "Pierwsza wersja aplikacji dla firm w 30 dni",
     description:
-      "Szybkie tworzenie biznesowych wersji pilotażowych oprogramowania dla firm. Eliminacja zbędnych funkcji i natychmiastowe uruchomienie sprzedaży bez ryzyka.",
+      "Szybkie tworzenie pierwszych, działających wersji oprogramowania dla biznesu. Eliminacja zbędnych funkcji i natychmiastowe uruchomienie sprzedaży bez ryzyka.",
     type: "Tworzenie wersji pilotażowych oprogramowania",
     offerName: "Bezpłatna Konsultacja Strategiczna i Plan Działania",
     offerPrice: "0",
@@ -34,9 +34,9 @@ export const mvp = {
     text2:
       "Moje podejście jest odwrotne. Wyrzucam do kosza wszystko, co nie prowadzi Twojego klienta za rękę bezpośrednio do zakupu i płatności. To jest prawdziwy pragmatyzm inżynieryjny, który chroni Twój kapitał.",
     negative_points: [
-      "Miesiące analiz i warsztatów z PM-ami",
-      'Stos technologiczny "na zapas"',
-      'Zabawa w "nice-to-have" features',
+      "Miesiące analiz i warsztatów z kierownikami projektów",
+      "Dobieranie technologii na zapas",
+      "Dodawanie zbędnych, drogich funkcji",
     ],
     positive_point:
       "Tylko czysta ścieżka konwersji i gotowość do zarabiania na rynku w 30 dni.",
@@ -48,15 +48,15 @@ export const mvp = {
     cards: [
       {
         title: "Zero waty procesowej",
-        desc: "Płacisz za czystą inżynierię, a nie za spotkania z Project Managerem, który przekazuje Twoje słowa programiście. Rozmawiasz bezpośrednio z autorem Twojego systemu.",
+        desc: "Płacisz za czystą inżynierię, a nie za spotkania z kierownikami projektów, którzy przekazują Twoje słowa programiście. Rozmawiasz bezpośrednio z autorem Twojego systemu.",
       },
       {
-        title: "Architektura pod ROI",
+        title: "Architektura pod zwrot z inwestycji",
         desc: "Nie buduję „na zapas”. Projektuję system tak, aby był tani w utrzymaniu, ale gotowy na skalowanie, gdy tylko zaczniesz generować zysk z pierwszych klientów.",
       },
       {
         title: "Tempo startowe",
-        desc: "Wykorzystuję nowoczesne, zwinne podejście (m.in. Angular, Next.js, Nx), które pozwala dowieźć wersję gotową do testów rynkowych w zaledwie 4 tygodnie.",
+        desc: "Wykorzystuję nowoczesne, zwinne podejście, które pozwala dowieźć wersję gotową do testów rynkowych w zaledwie 4 tygodnie.",
       },
     ],
   },
@@ -94,7 +94,7 @@ export const mvp = {
         question:
           "Ile czasu zajmuje stworzenie pierwszej wersji aplikacji dla firm?",
         answer:
-          'Tradycyjne tworzenie aplikacji internetowych w agencjach programistycznych trwa od 3 do 6 miesięcy ze względu na rozbudowane procedury i dziesiątki spotkań z pośrednikami. Moje autorskie podejście pozwala skrócić ten czas do 30 dni. Skupiam się wyłącznie na jednym, najważniejszym procesie, który pozwala Ci od razu uruchomić sprzedaż i sprawdzić, czy rynek chce Twojego produktu. Gdy produkt pilotażowy zostanie zwalidowany, rozbudowujemy go w pełne, dedykowane <a href="/aplikacje-internetowe-dla-firm">aplikacje internetowe dla firm</a>.',
+          'Tradycyjne tworzenie aplikacji internetowych w agencjach programistycznych trwa od 3 do 6 miesięcy ze względu na rozbudowane procedury i dziesiątki spotkań z pośrednikami. Moje autorskie podejście pozwala skrócić ten czas do 30 dni. Skupiam się wyłącznie na jednym, najważniejszym procesie, który pozwala Ci od razu uruchomić sprzedaż i sprawdzić, czy rynek chce Twojego produktu. Gdy produkt pilotażowy zostanie sprawdzony, rozbudowujemy go w pełne, dedykowane <a href="/aplikacje-internetowe-dla-firm">aplikacje internetowe dla firm</a>.',
       },
       {
         question:

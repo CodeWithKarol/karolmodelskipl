@@ -11,7 +11,7 @@ export const hero = {
     "Bezpieczeństwo i wydajność systemów bankowych dostarczane błyskawicznie – bez ukrytych kosztów agencji.",
   description:
     "Masz dość opłacania rozbudowanej struktury i armii pośredników w dużych agencjach programistycznych? Ponad połowa Twojego budżetu w agencji idzie tam na utrzymanie kierowników, biur i handlowców. Jako niezależny partner technologiczny, zamieniam Twój budżet wyłącznie w solidne rozwiązania, które bez problemu wytrzymają każdy skok sprzedaży. Zyskujesz bezpośredni kontakt ze specjalistą i system, który realnie zwiększa zyski Twojej firmy.",
-  cta: "Odbierz Bezpłatny Plan Modernizacji Twojej Firmy",
+  cta: "Odbierz Bezpłatną Mapę Drogową Rozwoju IT",
   footnote: "(Wartość 600 zł – Dziś za 0 zł)",
 }
 
@@ -113,7 +113,7 @@ export const faq = {
   items: [
     {
       q: "Jakie dedykowane aplikacje internetowe dla firm najczęściej budujesz?",
-      a: "Projektuję i wdrażam zaawansowane aplikacje internetowe dla firm, które automatyzują codzienne procesy operacyjne. Najczęściej są to systemy zarządzania relacjami z klientami, dedykowane platformy zamówień hurtowych z automatycznym wyliczaniem marż oraz systemy elektronicznego obiegu dokumentów. Każde rozwiązanie jest w 100% dostosowane do unikalnego sposobu działania Twojego przedsiębiorstwa, co eliminuje konieczność ręcznego przepisywania danych przez pracowników.",
+      a: "Projektuję i wdrażam zaawansowane aplikacje internetowe dla firm, które automatyzują codzienne procesy operacyjne. Najczęściej są to systemy zarządzania relacjami z klientami, dedykowane platformy zamówień hurtowych z automatycznym wyliczaniem marż oraz systemy elektronicznego obiegu dokumentów. Gdy produkt pilotażowy zostanie sprawdzony, rozbudowujemy go w oparciu o rzeczywiste dane biznesowe. Każde rozwiązanie jest w 100% dostosowane do unikalnego sposobu działania Twojego przedsiębiorstwa, co eliminuje konieczność ręcznego przepisywania danych przez pracowników.",
     },
     {
       q: "Czy nowoczesna aplikacja internetowa dla firmy może działać bez dostępu do sieci?",

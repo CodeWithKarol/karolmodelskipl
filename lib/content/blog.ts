@@ -11,7 +11,7 @@ export const blogContent = {
       "Twoja aplikacja to nie koszt – to fundament Twojej sprzedaży. Odkryj podejście Enterprise-at-Startup-Speed. Buduję rozwiązania klasy bankowej, które eliminują wąskie gardła i realnie zwiększają ROI. Zobacz, jak wyeliminować dług technologiczny i przejąć pełną kontrolę nad skalowalnością swojego systemu.",
   },
   offer: {
-    title: "Odbierz Bezpłatną Mapę Drogową IT",
+    title: "Odbierz Bezpłatną Mapę Drogową Rozwoju IT",
     description:
       "Zanim zainwestujesz złotówkę w kod, zyskaj pewność, że projekt przyniesie zysk. Zamów darmową analizę i zlokalizuj wąskie gardła w swoim biznesie.",
     value_total: "600 zł",
@@ -25,16 +25,16 @@ export const blogContent = {
       {
         title: "Indywidualny Plan Działania",
         description:
-          "Otrzymasz najszybszą ścieżkę budowy aplikacji lub walidacji MVP w 30 dni",
+          "Otrzymasz najszybszą ścieżkę wdrożenia pierwszej wersji oprogramowania w 30 dni",
         value: "200 zł",
       },
       {
-        title: "Enterprise Security Checklist dla MŚP",
+        title: "Bankowy Test Bezpieczeństwa IT",
         description:
           "Weryfikacja Twoich pomysłów pod kątem rygorystycznych standardów bankowych",
         value: "100 zł",
       },
     ],
-    cta: "Odbierz Bezpłatną Mapę Drogową IT",
+    cta: "Odbierz Bezpłatną Mapę Drogową Rozwoju IT",
   },
 }
