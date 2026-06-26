@@ -10,8 +10,8 @@ export const hero = {
   titleHighlight:
     "– eliminacja błędów i wolnego działania systemu bez sekundy przestoju w sprzedaży.",
   description:
-    "Masz dość sypiącego się, powolnego systemu, którego ciągłe naprawy pożerają zyski Twojego przedsiębiorstwa? Tradycyjne agencje programistyczne niemal zawsze stawiają tę samą diagnozę: „trzeba przepisać wszystko od nowa”, bo to dla nich najprostsza droga do związania Cię kosztownym kontraktem na kolejne kilkanaście miesięcy. Jako niezależny partner technologiczny udowadniam, że istnieje bezpieczna alternatywa. Wchodzę bezpośrednio w Twój obecny kod i ewolucyjnie, krok po kroku wymieniam przestarzałe elementy, podczas gdy Twoja firma nie przerywa obsługi klientów ani na moment.",
-  cta: "Odbierz Bezpłatny Plan Modernizacji",
+    "Masz dość sypiącego się, powolnego systemu, którego ciągłe naprawy pożerają zyski Twojego przedsiębiorstwa? Tradycyjne agencje programistyczne niemal zawsze stawiają tę samą diagnozę: „trzeba przepisać wszystko od nowa”, bo to dla nich najprostsza droga do związania Cię kosztownym kontraktem na kolejne kilkanaście miesięcy. Jako niezależny partner technologiczny udowadniam, że istnieje bezpieczna alternatywa. Wchodzę bezpośrednio w Twój obecny kod i ewolujcyjnie, krok po kroku wymieniam przestarzałe elementy, podczas gdy Twoja firma nie przerywa obsługi klientów ani na moment.",
+  cta: "Odbierz Bezpłatną Mapę Drogową Rozwoju IT",
   footnote: "(Wartość 600 zł – Dziś za 0 zł)",
 }
 
@@ -106,7 +106,7 @@ export const faq = {
     },
     {
       q: "Jak wypadają koszty ewolucyjnej modernizacji w stosunku do pisania oprogramowania od nowa?",
-      a: "Modernizacja w locie jest średnio o 40% do 60% tańsza niż budowanie systemu od zera w agencji. Wynika to z faktu, że nie płacisz za ponowne projektowanie elementów, które w Twojej firmie działają dobrze (np. logistyki czy mechanizmu magazynowego). Finansujesz wyłącznie wymianę tych 'silników', które są wolne i wadliwe. Dodatkowo, dzięki pracy w Modelu Elite, cały Twój budżet trafia w czysty kod, bez opłacania agencyjnych pośredników i narzutów administracyjnych.",
+      a: "Modernizacja w locie jest średnio o 40% do 60% tańsza niż budowanie systemu od zera w agencji. Wynika to z faktu, że nie płacisz za ponowne projektowanie elementów, które w Twojej firmie działają dobrze (np. logistyki czy mechanizmu magazynowego). Finansujesz wyłącznie wymianę tych 'silników', które są wolne i wadliwe. Dodatkowo, dzięki modelowi bezpośredniej współpracy, cały Twój budżet trafia w czysty kod, bez opłacania agencyjnych pośredników i narzutów administracyjnych.",
     },
   ],
 }
