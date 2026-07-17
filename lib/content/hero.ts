@@ -1,29 +1,16 @@
 export const hero = {
-  h1_part1: "Tworzę wydajne",
+  h1_part1: "Buduję wydajne",
   h1_part2: "aplikacje internetowe dla firm,",
   h1_highlight: "które automatyzują procesy i skalują zyski.",
   subheading:
-    "Dla właścicieli firm, którzy zamiast faktur za 'głuchy telefon' potrzebują systemów generujących zyski. Zyskaj dedykowane aplikacje internetowe dla firm o architekturze klasy bankowej – bez agencyjnych prowizji software house'ów i ukrytych kosztów.",
-  cta: "Odbierz Bezpłatną Mapę Drogową Modernizacji IT",
-  click_trigger_part1: "Pakiet o wartości 600 zł.",
-  click_trigger_part2: "Dziś za 0 zł.",
+    "Masz dość „głuchego telefonu” z menedżerami projektów, którzy nie rozumieją Twojego biznesu? Jako niezależny partner technologiczny z doświadczeniem w największych instytucjach bankowych (Citibank, BNP Paribas), wdrażam rozwiązania klasy korporacyjnej w tempie, którego nie oferuje żaden software house. Otrzymujesz bezpośredni dostęp do głównego architekta, pełną odpowiedzialność za system i gwarancję, że budujemy to, co realnie przynosi pieniądze.",
+  cta: "Odbierz Pakiet o wartości 600 zł za darmo",
+  click_trigger_part1: "Dzisiaj bez ukrytych kosztów",
+  click_trigger_part2: "Tylko 2 wolne miejsca na audyt w tym tygodniu",
   indicators: [
-    { text: "Brak ukrytych kosztów agencji" },
+    { text: "Cały budżet w jakość" },
     { text: "Bezpieczeństwo klasy bankowej" },
-    { text: "Bezpośrednie partnerstwo" },
+    { text: "Bezpośredni dialog" },
   ],
-  ab_variants: [
-    {
-      name: "Bezpieczeństwo i ROI",
-      text: "Aplikacje internetowe dla firm, które zarabiają – jakość klasy Enterprise dla MŚP.",
-    },
-    {
-      name: "Szybkość (MVP)",
-      text: "Szybkie tworzenie aplikacji internetowych dla firm bez długu technologicznego.",
-    },
-    {
-      name: "Partnerstwo",
-      text: "Profesjonalne aplikacje internetowe dla firm. Twój niezależny partner technologiczny.",
-    },
-  ],
+  ab_variants: [],
 }
