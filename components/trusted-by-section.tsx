@@ -17,12 +17,6 @@ export function TrustedBySection() {
 
       <div className="relative z-10 container mx-auto max-w-7xl px-4">
         <div className="mb-16 flex flex-col items-center md:mb-20">
-          <div className="mb-6 flex items-center gap-2 rounded-full border border-slate-800 bg-slate-900 px-3 py-1.5 shadow-sm">
-            <ShieldCheck className="h-4 w-4 text-emerald-400" />
-            <span className="text-[11px] font-semibold tracking-wider text-slate-300 uppercase sm:text-xs">
-              {trustedBy.badge}
-            </span>
-          </div>
           <h2 className="mb-6 text-center text-3xl font-extrabold tracking-tight text-balance text-white sm:text-4xl md:text-5xl">
             {trustedBy.title}
           </h2>
