@@ -1,16 +1,23 @@
 export const story = {
-  title_part1: "Dlaczego odszedłem z bankowości korporacyjnej,",
-  title_highlight: "aby pomagać małym i średnim firmom?",
-  customer_perspective_tag: "Moja Historia",
-  intro_text:
-    'Przez lata tworzyłem oprogramowanie, które zabezpiecza miliardy dolarów. Pracowałem dla gigantów – instytucji takich jak Citibank, BNP Paribas czy Silent Eight. Widziałem na własne oczy, jak rygorystyczne standardy bezpieczeństwa i wydajności chronią ogromne biznesy przed katastrofą. Przeczytaj, dlaczego <a href="/bezpieczenstwo-klasy-bankowej">bezpieczeństwo klasy bankowej</a> chroni Twoje zyski.',
-  problem_title: "Dlaczego tradycyjny model IT to pułapka dla mniejszych firm?",
-  problem_text:
-    'Większość dużych agencji IT kusi pięknymi prezentacjami, ale ostatecznie Twój projekt często trafia w ręce początkujących programistów, podczas gdy Ty płacisz za całą drabinkę pośredników – project managerów, accountów i zarząd.\n\nEfekt? Przepalony budżet, opóźnienia i skomplikowany kod, którego nikt nie rozumie. Dowiedz się, dlaczego warto wybrać <a href="/architekt-it-vs-software-house">niezależnego partnera technologicznego zamiast agencji programistycznej</a>.',
-  paradigm_tag: "Moja Misja",
-  paradigm_title: "System Enterprise dla każdego biznesu",
-  paradigm_text_1:
-    "Jako Twój Niezależny Partner Technologiczny, proponuję inną drogę. Widziałem od środka, jak buduje się systemy odporne na błędy, które zabezpieczają miliardy. Widziałem też, jak małe i średnie firmy tracą kapitał przez amatorskie wdrożenia. Postanowiłem przenieść ten rygor klasy enterprise wprost do Twojego biznesu. Bez głuchych telefonów i opłacania armii pośredników – pracujesz bezpośrednio ze mną.",
-  paradigm_text_2:
-    "Co więcej, włączając do mojego procesu nowoczesne narzędzia sztucznej inteligencji, drastycznie przyspieszam każdą fazę pracy. Dzięki temu wdrażamy w pełni funkcjonalne MVP w zaledwie 30 dni – w czasie, gdy duże agencje dopiero kończą przygotowywać wyceny. Ty skupiasz się na sprzedaży i rozwoju, ja zabezpieczam technologię i pilnuję zwrotu z inwestycji (ROI).",
+  title: "Czy wdrożenie oprogramowania w dużej agencji przypomina u Ciebie walkę z wiatrakami?",
+  intro: "Większość właścicieli firm po kontakcie z tradycyjnym oprogramowaniem stworzonym przez dużą agencję ma to samo poczucie: <em>„To jest droższe, wolniejsze i bardziej skomplikowane, niż miało być”</em>.",
+  context: "Tradycyjny model agencji nastawiony jest na <span class=\"italic\">samotnego procesu</span>, a nie Twojego sukcesu biznesowego:",
+  points: [
+    {
+      title: "<strong>„Głuchy telefon” i rozmycie wizji:</strong>",
+      desc: "Twój pomysł przechodzi przez długi łańcuch ludzi: <em>Ty → Handlowiec → Kierownik Projektu → Analityk → Programista</em>. Po drodze Twoje cele biznesowe ulegają zniekształceniu. Dostajesz produkt, który „działa technicznie”, ale nie przynosi planowanych zysków."
+    },
+    {
+      title: "<strong>Płacisz za naukę początkujących:</strong>",
+      desc: "Agencje muszą wygenerować marżę, więc do Twojego projektu przypisują mniej doświadczonych programistów. W efekcie płacisz wygórowane stawki za ludzi, którzy uczą się fachu na Twoim budżecie i na Twoim czasie."
+    },
+    {
+      title: "<strong>Przerost formy nad treścią:</strong>",
+      desc: "Agencjom opłaca się budować skomplikowane systemy, bo im więcej godzin przepracują, tym wyższą fakturę wystawią. Zamiast prostego i szybkiego narzędzia generującego zysk, dostajesz przeładowany system, którego utrzymanie kosztuje fortunę."
+    },
+    {
+      title: "<strong>Uwięzienie w biurokracji:</strong>",
+      desc: "Potrzebujesz szybkiej zmiany w aplikacji? W agencji musisz zgłosić wniosek, poczekać na wycenę, akceptację kierownika i wolny termin w harmonogramie za miesiąc. Ta ociężałość zabija Twoją elastyczność na rynku."
+    }
+  ]
 }
