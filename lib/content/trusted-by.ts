@@ -1,29 +1,29 @@
 export const trustedBy = {
-  badge: "Gwarancja Jakości",
-  title: "Standardy Korporacyjne, Które Przejmujesz",
+  badge: "Doświadczenie Korporacyjne",
+  title: "Standardy korporacyjne, które przejmiesz w swoim biznesie",
   subtitle:
-    "Przenoszę rygorystyczne standardy z globalnych instytucji finansowych i technologicznych wprost do Twojej firmy. Otrzymujesz niezawodny, błyskawiczny system, który chroni dane i bez zadyszki obsługuje każdy wzrost sprzedaży.",
+    "Przenoszę doświadczenie z projektowania zaawansowanych systemów finansowych i technologicznych bezpośrednio do rozwijających się firm.",
   logos: [
     {
       name: "Citibank",
       img: "/logos/citi.svg",
       category: "Bankowość Inwestycyjna",
       context:
-        "Architektura systemów bankowości elektronicznej, gdzie nie ma miejsca na błąd, opóźnienia w transakcjach czy utratę danych.",
+        "Architektura systemów bankowości elektronicznej, w której nie ma miejsca na błąd, opóźnienia transakcji czy utratę danych.",
     },
     {
       name: "BNP Paribas",
       img: "/logos/bnp.svg",
-      category: "Finanse Międzynarodowe",
+      category: "Finanse i Bankowość",
       context:
-        "Rygorystyczne standardy bezpieczeństwa (Enterprise Security) i infrastruktura gotowa na gigantyczne obciążenia ruchu.",
+        "Bezpieczeństwo informacji i niezawodność pod wymogiem najwyższych regulacji rynkowych.",
     },
     {
       name: "Silent Eight",
       img: "/logos/silent-eight.svg",
-      category: "Sztuczna Inteligencja",
+      category: "AI & Ochrona Danych",
       context:
-        "Wdrażanie nowoczesnych platform opartych o sztuczną inteligencję, które automatyzują procesy i redukują koszty operacyjne.",
+        "Zaawansowana logika przetwarzania danych i tworzenie rozwiązań gotowych na duże obciążenia.",
     },
     {
       name: "Amway",
