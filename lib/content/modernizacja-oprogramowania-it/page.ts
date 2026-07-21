@@ -4,133 +4,177 @@ export const metadata = {
     "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży. Odbierz darmową diagnozę!",
 }
 
+export const guarantee = {
+  badge: "Gwarancje Bezpieczeństwa",
+  title: "Bezpieczeństwo Twojego biznesu jest na 1. miejscu",
+  subtitle: "Doskonale wiem, że powierzenie kluczowych systemów nowemu wykonawcy budzi obawy o płynność finansową i ciągłość obsługi klientów. Dlatego cały proces modernizacji opieram na twardych gwarancjach, które w 100% chronią Twoje finanse, dane oraz codzienne operacje:",
+  items: [
+    {
+      title: "Pisemna Gwarancja Płynności",
+      desc: "Zobowiązuję się, że moje prace nie przerwą codziennego funkcjonowania Twojego sklepu lub oprogramowania."
+    },
+    {
+      title: "Gwarancja Płatności za Efekt",
+      desc: "Nie płacisz za obietnice. Po wpłacie niewielkiego depozytu, rozliczamy się etapami – fakturę opłacasz po akceptacji wykonanego kroku."
+    },
+    {
+      title: "Standardy Finansowe",
+      desc: "Stosuję zasady bezpieczeństwa danych przetestowane w bankowości inwestycyjnej (Citibank, BNP Paribas). Twój system jest w pełni chroniony przed wyciekiem i utratą informacji."
+    }
+  ]
+}
+
 export const hero = {
-  badge: "",
-  title: "Modernizacja oprogramowania IT dla firm „na żywym organizmie”",
-  titleHighlight:
-    "– eliminacja błędów i wolnego działania systemu bez sekundy przestoju w sprzedaży.",
+  badge: "Modernizacja aplikacji",
+  title: "Naprawiam i przyspieszam istniejące aplikacje internetowe",
+  titleHighlight: "– bez wstrzymywania sprzedaży i kosztownego pisania od nowa.",
   description:
-    "Masz dość sypiącego się, powolnego systemu, którego ciągłe naprawy pożerają zyski Twojego przedsiębiorstwa? Tradycyjne agencje programistyczne niemal zawsze stawiają tę samą diagnozę: „trzeba przepisać wszystko od nowa”, bo to dla nich najprostsza droga do związania Cię kosztownym kontraktem na kolejne kilkanaście miesięcy. Jako niezależny partner technologiczny udowadniam, że istnieje bezpieczna alternatywa. Wchodzę bezpośrednio w Twój obecny kod i ewolujcyjnie, krok po kroku wymieniam przestarzałe elementy, podczas gdy Twoja firma nie przerywa obsługi klientów ani na moment.",
-  cta: "Odbierz Bezpłatną Mapę Drogową Rozwoju IT",
-  footnote: "(Wartość 600 zł – Dziś za 0 zł)",
+    "Twój obecny system działa wolno, zacina się lub każda drobna zmiana trwa miesiącami? Nie musisz wyrzucać dotychczasowych inwestycji do kosza. Wprowadzam usprawnienia ewolucyjnie, na żywym organizmie Twojej firmy, dbając o to, by Twoi klienci kupowali bez przeszkód.",
+  cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ SYSTEMU",
+  footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz bezpłatny plan poprawek",
+  indicators: [
+    { title: "Zero przestojów w biznesie", desc: "Wszystkie prace modernizacyjne przebiegają w tle. Twój sklep lub system działa bez przerw 24/7." },
+    { title: "Ochrona dotychczasowego budżetu", desc: "Nie namawiam na ryzykowne budowanie wszystkiego od zera. Wykorzystujemy to, co działa, i naprawiamy tylko to, co blokuje zyski." },
+    { title: "Błyskawiczna poprawa szybkości", desc: "Zwiększam wydajność aplikacji, co bezpośrednio przekłada się na wyższą konwersję i lepsze doświadczenie Twoich klientów." }
+  ],
+  audit_promo: {
+    title: "👉 Masz wątpliwości, czy Twój system da się uratować?",
+    desc: "Zarezerwuj bezpłatną, 30-minutową diagnozę techniczną. Sprawdzę Twój obecny kod i wskażę miejsca, w których uciekają zyski."
+  }
 }
 
 export const story = {
-  title:
-    "Dlaczego propozycja „przepisania systemu od zera” to gigantyczne i zbędne ryzyko dla Twojego biznesu?",
-  text: [
-    "Gdy firmowa aplikacja internetowa zaczyna działać wolno, blokować wprowadzanie nowych funkcji i utrudniać pracę zespołowi, większość menedżerów szuka ratunku w dużych agencjach. Tam słyszą wyrok: stary system nadaje się do kosza, musimy zbudować nowy.",
-    "Zrozumiałem tę pułapkę podczas pracy nad zaawansowanymi systemami bankowości elektronicznej (między innymi w międzynarodowych instytucjach finansowych, takich jak Citibank czy BNP Paribas). W świecie wielkich finansów paraliż operacyjny choćby na minutę oznacza wielomilionowe straty. Tam nikt nie pozwala sobie na rewolucje i pisanie wszystkiego od nowa. Systemy modernizuje się modularnie, w locie, dbając o bezwzględną ciągłość operacji.",
-    "Tradycyjne agencje forsują budowanie od zera, ponieważ nie posiadają na pokładzie wybitnej, rzadkiej ekspertyzy inżynieryjnej, która pozwala na bezpieczną modyfikację skomplikowanego, zastanego kodu. Przepisanie systemu to miesiące pracy w ciemno, podwójne koszty (musisz opłacać stary serwer i finansować budowę nowego) oraz potężne ryzyko, że nowa wersja po uruchomieniu nie udźwignie Twoich realnych, codziennych procesów.",
-  ],
-  quote:
-    "Model ewolucyjnej modernizacji to jedyna droga do zachowania płynności finansowej.",
+  title: "Jak dług technologiczny powoli wyciąga pieniądze z Twojej firmy?",
+  intro: "Gdy zaczynałeś, Twój system internetowy był wystarczający. Jednak w miarę rozwoju firmy, dodawania nowych funkcji i obsługi większej liczby klientów, w kodzie pojawia się tzw. dług technologiczny.",
+  context: "Jeśli obserwujesz u siebie poniższe objawy, Twój system potrzebuje pilnej interwencji architekta:",
+  points: [
+    {
+      title: "Aplikacja działa coraz wolniej",
+      desc: "Klienci nie chcą czekać kilku sekund na załadowanie strony. Każda sekunda opóźnienia to realny spadek liczby sfinalizowanych zamówień."
+    },
+    {
+      title: "Każda zmiana wywołuje nowe błędy",
+      desc: "Naprawienie jednej rzeczy w aplikacji powoduje, że przestają działać dwie inne. Programiści boją się dotykać starych fragmentów kodu."
+    },
+    {
+      title: "Miesięczne koszty serwerów rosną bez powodu",
+      desc: "Niewydajnie napisany system zużywa wielokrotnie więcej zasobów, niż powinien, co generuje wysokie, niepotrzebne rachunki za infrastrukturę."
+    },
+    {
+      title: "Agencja rozkłada ręce i mówi: „Trzeba napisać od nowa”",
+      desc: "To najczęstsza odpowiedź software house'ów. Przepisanie systemu oznacza dla nich wielomiesięczny, drogi kontrakt, a dla Ciebie – gigantyczne ryzyko sparaliżowania firmy na pół roku."
+    }
+  ]
 }
 
 export const mechanism = {
-  title:
-    "Jak ewolucyjna modernizacja oprogramowania IT uwalnia ukryte zyski Twojej firmy?",
-  subtitle: "",
+  title: "Jak krok po kroku przywracamy wydajność Twojej aplikacji?",
+  subtitle: "Proces modernizacji zaprojektowałem tak, aby zapewnić Ci pełną przewidywalność i zerowe ryzyko operacyjne. Zamiast chaotycznych zmian i niekończących się poprawek, przechodzimy przez przejrzystą i bezpieczną ścieżkę:",
   cards: [
     {
-      title: "Koniec z blokowaniem firmowych przychodów",
+      title: "1. Bezpłatny Audyt i Diagnoza",
       subtitle: "",
-      content:
-        "Przestarzały i wolny kod to cichy zabójca rentowności. Każda sekunda opóźnienia w ładowaniu panelu klienta to porzucone zamówienia. Każdy powtarzający się błąd to czas Twoich pracowników marnowany na ręczne poprawianie dokumentów. Modernizacja usuwa te wąskie gardła, natychmiast podnosząc wydajność operacyjną bez generowania przestojów.",
+      content: "Analizuję Twój system i wskazuję 2–3 najbardziej krytyczne punkty, które spowalniają działanie aplikacji i generują błędy."
     },
     {
-      title: "Modularna wymiana podzespołów w locie",
+      title: "2. Plan Ulepszeń (Bez niespodzianek)",
       subtitle: "",
-      content:
-        "Moje podejście opiera się na precyzyjnej inżynierii. Dzielę Twój obecny system na niezależne strefy. Następnie, zachowując nienaruszoną bazę danych i ciągłość sprzedaży, systematycznie wymieniam przestarzałe, wadliwe części na nowoczesne, błyskawicznie działające rozwiązania. Klient końcowy nawet nie zauważy, kiedy jego ulubione narzędzie zyskało drugie życie.",
+      content: "Ustalamy priorytety. Dzielimy prace na małe, 2-tygodniowe etapy, koncentrując się na rzeczach, które przyniosą najszybszy zwrot z inwestycji."
     },
     {
-      title: "Wstrzyknięcie standardów ochrony klasy bankowej",
+      title: "3. Wdrożenie w Tle",
       subtitle: "",
-      content:
-        'Przeprowadzając modernizację, automatycznie podnoszę poziom bezpieczeństwa całego serwisu. Wprowadzam rygorystyczne procedury ochrony informacji wprost do Twojej istniejącej aplikacji dla firm. Wszystkie procedury modyfikacji w locie opieram na standardach wprost z systemów Citibanku – zobacz, jak wdrażam <a href="/bezpieczenstwo-klasy-bankowej">bezpieczeństwo klasy bankowej</a> w firmach.',
+      content: "Wprowadzam poprawki w kodzie na osobnym środowisku testowym. Prace nie wpływają na to, co widzą Twoi klienci."
     },
-  ],
+    {
+      title: "4. Pokaz i Akceptacja",
+      subtitle: "",
+      content: "Prezentuję Ci działający, przyspieszony moduł na ekranie. Płacisz za dany etap dopiero w momencie, gdy widzisz i akceptujesz efekt."
+    },
+    {
+      title: "5. Cicha Podmiana",
+      subtitle: "",
+      content: "Podmieniamy ulepszony element w systemie produkcyjnym. Klienci zauważają jedynie, że strona działa szybciej i płynniej."
+    }
+  ]
 }
 
 export const contrast = {
-  title:
-    "Rewolucja w agencji czy ewolucja z partnerem – jaki scenariusz wybierasz dla swojego biznesu?",
-  tableHeaders: [
-    "Parametr transformacji",
-    "Rewolucja z agencją",
-    "Ewolucja ze mną",
-  ],
-  rows: [
+  title: "Metoda „Modernizacji w Locie” – Bezpieczny sposób na szybki system",
+  subtitle: "Zamiast burzyć dom, w którym mieszkasz, wymieniamy i wzmacniamy fundamenty pokój po pokoju.",
+  red_ocean_title: "Tradycyjne „Przepisywanie od Zera”",
+  blue_ocean_title: "Moja „Bezinwazyjna Modernizacja”",
+  comparisons: [
     {
-      feature: "Płynność sprzedaży",
-      traditional:
-        "Wysokie ryzyko: Przestój podczas wdrażania nowego systemu może sparaliżować firmę.",
-      elite:
-        "Zero przestojów: Cały proces odbywa się przy nieprzerwanej pracy Twojego biznesu.",
+      red: { title: "Ryzyko biznesowe", desc: "Ogromne (Możliwość paraliżu firmy na miesiące)" },
+      blue: { title: "Ryzyko biznesowe", desc: "Minimalne (System działa bez przerw)" },
     },
     {
-      feature: "Zarządzanie budżetem",
-      traditional:
-        "Podwójny koszt: Opłacasz utrzymanie starej aplikacji i jednocześnie finansujesz nowy projekt.",
-      elite:
-        "Maksymalna efektywność: Płacisz wyłącznie za realne usprawnienia, które od razu na siebie zarabiają.",
+      red: { title: "Czas do pierwszych efektów", desc: "6–12 miesięcy (Czekasz na gotową całość)" },
+      blue: { title: "Czas do pierwszych efektów", desc: "2–4 tygodnie (Szybkie poprawki kluczowych modułów)" },
     },
     {
-      feature: "Odpowiedzialność",
-      traditional:
-        "Rozproszona wśród rotujących zespołów, kierowników projektów i analityków.",
-      elite:
-        "Pełna i bezpośrednia: Masz jednego, odpowiedzialnego partnera technologicznego.",
+      red: { title: "Koszt początkowy", desc: "Bardzo wysoki (Finansujesz cały nowy projekt)" },
+      blue: { title: "Koszt początkowy", desc: "Niski (Płacisz tylko za naprawiane elementy)" },
     },
     {
-      feature: "Gwarancja sukcesu",
-      traditional:
-        "Częste opóźnienia – według statystyk większość dużych projektów przekracza czas i budżet.",
-      elite:
-        "Przewidywalność: Prace dzielone są na małe, 2-tygodniowe etapy z natychmiastowym efektem live.",
+      red: { title: "Ciągłość sprzedaży", desc: "Częste przerwy i błędy przy przełączeniu" },
+      blue: { title: "Ciągłość sprzedaży", desc: "100% płynności transakcji" },
     },
   ],
 }
 
 export const faq = {
-  title: "Modernizacja oprogramowania IT bez tajemnic – Odpowiada ekspert.",
+  title: "Najczęściej Zadawane Pytania dotyczące modernizacji systemów",
+  subtitle:
+    "Rozumiem, że decyzja o wprowadzeniu poprawek w działającym oprogramowaniu firmy wymaga pełnego poczucia bezpieczeństwa. Oto odpowiedzi na pytania, które najczęściej zadają właściciele firm przed rozpoczęciem prac:",
   items: [
     {
-      q: "Jakie są główne oznaki, że modernizacja oprogramowania IT w mojej firmie jest już konieczna?",
-      a: "Najważniejszym sygnałem ostrzegawczym jest drastyczny wzrost kosztów wprowadzania nawet najprostszych zmian. Jeśli dodanie nowego przycisku lub integracja z nową kurierską bazą danych zajmuje agencji tygodnie i kosztuje tysiące złotych, oznacza to, że w systemie nagromadził się ogromny dług technologiczny. Inne objawy to odczuwalne spowolnienie działania systemu, częste zawieszanie się bazy danych oraz narzekania pracowników na błędy utrudniające codzienną pracę.",
+      q: "Czy mój system naprawdę da się zmodernizować, czy trzeba go napisać od nowa?",
+      a: "Większość agencji proponuje budowę systemu od zera, ponieważ tak jest dla nich łatwiej i zyskowniej. W zdecydowanej większości przypadków nie ma jednak takiej potrzeby. Podczas bezpłatnej diagnozy dokładnie sprawdzam obecną strukturę i wskazuję, które elementy wymagają jedynie naprawy lub przyspieszenia, a które działają dobrze. Oczyszczamy i wzmacniamy istniejący system bez konieczności niszczenia tego, w co już zainwestowałeś."
     },
     {
-      q: "Czy ewolucyjna wymiana starego kodu nie uszkodzi bazy danych mojej aplikacji dla firm?",
-      a: "Nie. Bezpieczeństwo danych to fundament mojej pracy, wyniesiony z systemów bankowych. Przed modyfikacją jakiejkolwiek linii kodu tworzona jest rygorystyczna, wielopoziomowa kopia zapasowa, a nowo powstałe moduły są izolowane. Stara baza danych i nowa architektura współpracują ze sobą za pomocą specjalnych mostów wymiany informacji, co daje 100% gwarancji, że żadne zamówienie, faktura czy dane klienta nie zostaną naruszone.",
+      q: "Czy w trakcie prac moja strona lub sklep przestaną działać dla klientów?",
+      a: "Nie. Wszystkie ulepszenia wprowadzam w bezpiecznym, odseparowanym środowisku testowym. Twoja firma działa normalnie, Twoi klienci kupują bez przeszkód, a ulepszone fragmenty systemu podmieniamy dopiero wtedy, gdy zostaną przetestowane i przez Ciebie zaakceptowane. Sprzedaż i obsługa klientów trwają bez ani jednej minuty przerwy."
     },
     {
-      q: "Jak wypadają koszty ewolucyjnej modernizacji w stosunku do pisania oprogramowania od nowa?",
-      a: "Modernizacja w locie jest średnio o 40% do 60% tańsza niż budowanie systemu od zera w agencji. Wynika to z faktu, że nie płacisz za ponowne projektowanie elementów, które w Twojej firmie działają dobrze (np. logistyki czy mechanizmu magazynowego). Finansujesz wyłącznie wymianę tych 'silników', które są wolne i wadliwe. Dodatkowo, dzięki modelowi bezpośredniej współpracy, cały Twój budżet trafia w czysty kod, bez opłacania agencyjnych pośredników i narzutów administracyjnych.",
+      q: "Kiedy zobaczę pierwsze realne efekty modernizacji?",
+      a: "Pierwsze widoczne rezultaty pojawiają się zazwyczaj już po 2–3 tygodniach. Pracujemy w krótkich etapach, skupiając się w pierwszej kolejności na obszarach, które najbardziej spowalniają działanie oprogramowania lub wywołują błędy. Nie czekasz pół roku na gotową całość – system staje się szybszy i bardziej stabilny krok po kroku."
     },
-  ],
+    {
+      q: "Jak wygląda rozliczenie i co jeśli efekt nie spełni moich oczekiwań?",
+      a: "Stosuję bezpieczny model płatności po pokazaniu efektów. Projekt dzielimy na małe etapy. Przed każdym etapem wpłacasz jedynie niewielki depozyt rezerwacyjny (20%), a właściwą płatność regulujesz dopiero wtedy, gdy zobaczysz działający i przyspieszony moduł na swoim ekranie. Jeśli efekt wymaga poprawek, nanoszę je w ramach danego etapu, zanim przejdziemy dalej."
+    },
+    {
+      q: "Czy po zakończeniu modernizacji będę uzależniony od jednej osoby?",
+      a: "Nie. Wszystkie prace wykonuję w oparciu o uniwersalne, światowe standardy tworzenia oprogramowania, przetestowane w bankowości. Cała struktura jest przejrzysta, uporządkowana i posiada pełną instrukcję. Oznacza to, że w dowolnym momencie każdy inny doświadczony specjalista na rynku bez problemu przejmie opiekę nad Twoim systemem."
+    },
+    {
+      q: "Czym różni się współpraca z niezależnym architektem od pracy z dużą agencją?",
+      a: "W agencji płacisz za całą strukturę administracyjną (biuro, kierowników, handlowców) i rozmawiasz z pośrednikami, podczas gdy Twój projekt często wykonują początkujące osoby. U mnie rozmawiasz bezpośrednio z ekspertem, który osobiscie projektuje i naprawia Twój system. 100% Twojego budżetu trafia w jakość oprogramowania, a decyzje zapadają natychmiast, bez zbędnej biurokracji."
+    }
+  ]
 }
 
 export const offer = {
-  title:
-    "Uratuj swój system przed technologiczną zapaścią. Zacznij od bezpiecznego audytu.",
-  subtitle:
-    "Nie pozwól, aby sypiący się kod codziennie podbierał pieniądze z firmowego konta i frustrował Twój zespół. Zanim podejmiesz decyzję o rewolucji i wydasz fortunę w agencji, miejmy twarde dane. Zarezerwuj termin na bezpłatną konsultację strategiczną, po której otrzymasz ode mnie:",
-  packetTitle: "Kompletny Pakiet Doradczy",
+  title: "Przestań tracić klientów przez wolny system. Zdiagnozujmy go za darmo.",
+  subtitle: "Nie czekaj, aż kolejna awaria zatrzyma Twoją sprzedaż. Porozmawiajmy o tym, jak w prosty i bezpieczny sposób przywrócić Twojej aplikacji najwyższą wydajność.",
+  packetTitle: "Odbierz Bezpłatny Audyt Modernizacyjny",
   packetVal: "(Wartość 600 zł – Dziś za 0 zł)",
   benefits: [
     {
-      title: "30-minutowa diagnoza kodu (Wartość: 300 zł)",
-      desc: "Sprawdzimy, które elementy Twojego oprogramowania faktycznie blokują system i pożerają budżet operacyjny.",
+      title: "30-minutowa diagnoza podczas rozmowy wideo",
+      desc: "Analiza Twojego systemu na żywo.",
     },
     {
-      title: "Indywidualny Plan Ewolucji (Wartość: 200 zł)",
-      desc: "Otrzymasz jasną, modularną mapę drogową wymiany wadliwych części systemu bez zatrzymywania sprzedaży.",
+      title: "Raport najcięższych błędów",
+      desc: "Wskazanie elementów spowalniających aplikację.",
     },
     {
-      title: "Bankowy Test Bezpieczeństwa (Wartość: 100 zł)",
-      desc: "Prześwietlę Twoją obecną infrastrukturę pod kątem rygorystycznych standardów ochrony danych, chroniąc Cię przed wyciekami i karami prawnymi.",
+      title: "Plan bezpiecznego wdrożenia poprawek w 30 dni",
+      desc: "Konkretna strategia modernizacji.",
     },
   ],
-  cta: "Zarezerwuj darmowy audyt systemu i odbierz pakiet",
+  cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ SYSTEMU",
+  footer: "W tym miesiącu mogę przyjąć do modernizacji maksymalnie 2 firmy",
 }

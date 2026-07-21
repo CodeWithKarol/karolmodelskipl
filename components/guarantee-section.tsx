@@ -1,8 +1,25 @@
 import { ShieldCheck } from "lucide-react"
 import { content } from "@/lib/content"
 
-export function GuaranteeSection() {
-  const { guarantee } = content
+interface GuaranteeItem {
+  title: string
+  desc: string
+}
+
+interface GuaranteeData {
+  badge: string
+  title: string
+  subtitle: string
+  items: GuaranteeItem[]
+}
+
+interface GuaranteeSectionProps {
+  guarantee?: GuaranteeData
+}
+
+export function GuaranteeSection({ guarantee: customGuarantee }: GuaranteeSectionProps = {}) {
+  const { guarantee: defaultGuarantee } = content
+  const guarantee = customGuarantee || defaultGuarantee
 
   return (
     <section
@@ -27,11 +44,13 @@ export function GuaranteeSection() {
         </div>
 
         {/* Grid - Mobile: 1 col, Tablet+: 2 col */}
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
           {guarantee.items.map((item, i) => (
             <div 
               key={i} 
-              className="group relative bg-slate-900/40 border border-slate-800 p-6 sm:p-8 rounded-2xl hover:border-slate-700 transition-all duration-300 flex flex-col"
+              className={`group relative bg-slate-900/40 border border-slate-800 p-6 sm:p-8 rounded-2xl hover:border-slate-700 transition-all duration-300 flex flex-col ${
+                i === 2 && guarantee.items.length === 3 ? "md:col-span-2 max-w-xl mx-auto w-full" : ""
+              }`}
             >
               <div className="mb-6 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-slate-700 bg-slate-950 text-emerald-400 group-hover:text-emerald-300 transition-colors">
                 <ShieldCheck className="h-6 w-6" />
