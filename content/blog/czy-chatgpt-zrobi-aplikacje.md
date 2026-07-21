@@ -172,15 +172,8 @@ Razem zbudujemy system, który będzie pracował na Twój sukces 24 godziny na d
 Czy jesteś gotowy, aby wykorzystać potencjał AI w swoim biznesie w sposób kontrolowany i zyskowny?
 
 ---
+### 💡 Chcesz uniknąć błędów AI i zmodernizować system bez przestojów?
+Zdiagnozuję Twoje wąskie gardła i przygotuję plan modernizacji bez wstrzymywania sprzedaży.
 
-### Chcesz sprawdzić, czy Twój pomysł na AI w aplikacji ma szansę na sukces?
-
-Nie sprzedaję „godzin kodowania”. Pomagam firmom przejąć kontrolę nad ich technologią i zamienić ją w zysk.
-
-Jeśli chcesz, abyśmy przeanalizowali Twój pomysł, sprawdzili jego realność i omówili, jak bezpiecznie wdrożyć AI w Twoim biznesie – zapraszam do kontaktu.
-
-👉 **[Umów się na bezpłatną konsultację](https://www.karolmodelski.pl/#kontakt)**
-
-👉 **[Sprawdź moje doświadczenie i podejście](https://www.linkedin.com/in/karol-modelski/)**
-
-*Nie pozwól, aby przestarzałe podejście do IT blokowało rozwój Twojego biznesu.* 
+👉 **[ZDIAGNOZUJ POWOLNY SYSTEM ZA 0 ZŁ (BEZ PRZERW W SPRZEDAŻY)](/modernizacja-oprogramowania-it)**
+*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*

@@ -247,15 +247,8 @@ Twój biznes zasługuje na architekturę klasy Enterprise.
 Czy jesteś gotowy, aby o nią zawalczyć?
 
 ---
+### 💡 Buduj dedykowane systemy bez ukrytych kosztów.
+Pobierz plan wdrożenia aplikacji, który pozwala uniknąć marż agencji i postawić na jakość od Architekta IT.
 
-### Chcesz sprawdzić, czy Twoja aplikacja wspiera skalowanie zysków?
-
-Nie sprzedaję „godzin kodowania”. Pomagam firmom przejąć kontrolę nad ich technologią i zamienić ją w zysk.
-
-Jeśli chcesz, abyśmy przeanalizowali Twój system lub omówili, jak szybko zbudować Twoje MVP – zapraszam do kontaktu.
-
-👉 **[Umów się na bezpłatną konsultację](https://www.karolmodelski.pl/#kontakt)**
-
-👉 **[Sprawdź moje doświadczenie i podejście](https://www.linkedin.com/in/karol-modelski/)**
-
-*Nie pozwól, aby przestarzałe podejście do IT blokowało rozwój Twojego biznesu.* 
+👉 **[SPRAWDŹ, JAK ZBUDOWAĆ DEDYKOWANY SYSTEM BEZ UKRYTYCH KOSZTÓW](/aplikacje-internetowe-dla-firm)**
+*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*

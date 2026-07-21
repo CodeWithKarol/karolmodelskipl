@@ -285,15 +285,8 @@ To jest możliwe, jeśli podejdziesz do tego z właściwym partnerem.
 Czy jesteś gotowy na stworzenie aplikacji, która napędza Twój zysk?
 
 ---
+### 💡 Zbuduj aplikację bezpiecznie i profesjonalnie.
+Pobierz plan, który pozwoli Ci bezpiecznie wejść na rynek bez ukrytych pułapek darmowych narzędzi.
 
-### Chcesz sprawdzić, czy Twój obecny stos technologiczny Cię ogranicza?
-
-Nie sprzedaję „godzin kodowania”. Pomagam firmom przejąć kontrolę nad ich technologią i zamienić ją w zysk.
-
-Jeśli chcesz, abyśmy przeanalizowali Twój system lub omówili, jak zbudować rozwiązanie, które faktycznie wspiera wzrost Twojej firmy – zapraszam do kontaktu.
-
-👉 **[Umów się na bezpłatną konsultację](https://www.karolmodelski.pl/#kontakt)**
-
-👉 **[Sprawdź moje doświadczenie i podejście](https://www.linkedin.com/in/karol-modelski/)**
-
-*Nie pozwól, aby przestarzałe podejście do IT blokowało rozwój Twojego biznesu.*
+👉 **[ODBIERZ BEZPŁATNY PLAN BEZPIECZNEGO STARTU TWOJEJ APLIKACJI](/projektowanie-mvp)**
+*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*

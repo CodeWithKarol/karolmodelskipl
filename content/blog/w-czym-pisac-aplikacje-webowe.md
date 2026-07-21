@@ -97,13 +97,8 @@ Moim celem jako Twojego Partnera Technologicznego jest sprawienie, aby technolog
 Pamiętaj: Każdy dzień, w którym korzystasz z przestarzałego lub źle zaprojektowanego oprogramowania, to utracona szansa na większą sprzedaż. Nie pozwól, by technologia stała się Twoim ograniczeniem. Zróbmy pierwszy krok w stronę nowoczesności, która przekłada się na wyniki.
 
 ---
+### 💡 Wybierz architekturę, która zarabia, a nie kosztuje.
+Zanim zainwestujesz, skonsultuj wybór technologii z ekspertem. Odbierz Pakiet Doradczy o wartości 600 zł.
 
-### Chcesz sprawdzić, czy Twój obecny stos technologiczny Cię ogranicza?
-
-Nie sprzedaję „godzin kodowania”. Pomagam firmom przejąć kontrolę nad ich technologią i zamienić ją w zysk. Jeśli chcesz, abyśmy przeanalizowali Twój system lub omówili, jak zbudować rozwiązanie, które faktycznie wspiera wzrost Twojej firmy – zapraszam do kontaktu.
-
-👉 **[Umów się na bezpłatną konsultację](https://www.karolmodelski.pl/#kontakt)**
-
-👉 **[Sprawdź moje doświadczenie i podejście](https://www.linkedin.com/in/karol-modelski/)**
-
-*Nie pozwól, aby przestarzałe podejście do IT blokowało rozwój Twojego biznesu.* 
+👉 **[ODBIERZ PAKIET DORADCZY (MAPA IT + TEST BEZPIECZEŃSTWA)](/architekt-it-vs-software-house)**
+*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*

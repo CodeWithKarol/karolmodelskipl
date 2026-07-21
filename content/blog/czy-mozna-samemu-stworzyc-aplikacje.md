@@ -247,15 +247,8 @@ Pamiętaj: Każdy dzień, w którym korzystasz z przestarzałego lub źle zaproj
 Twoja firma zasługuje na to, by działać w oparciu o najlepsze możliwe standardy.
 
 ---
+### 💡 Oszczędź miesiące prób i błędów.
+Zamiast ryzykować samodzielne budowanie, odbierz sprawdzony plan wdrożenia aplikacji w 30 dni.
 
-### Chcesz sprawdzić, czy Twój obecny stos technologiczny Cię ogranicza?
-
-Nie sprzedaję „godzin kodowania”. Pomagam firmom przejąć kontrolę nad ich technologią i zamienić ją w zysk.
-
-Jeśli chcesz, abyśmy przeanalizowali Twój system lub omówili, jak zbudować rozwiązanie, które faktycznie wspiera wzrost Twojej firmy – zapraszam do kontaktu.
-
-👉 **[Umów się na bezpłatną konsultację](https://www.karolmodelski.pl/#kontakt)**
-
-👉 **[Sprawdź moje doświadczenie i podejście](https://www.linkedin.com/in/karol-modelski/)**
-
-*Nie pozwól, aby przestarzałe podejście do IT blokowało rozwój Twojego biznesu.* 
+👉 **[ODBIERZ DARMOWĄ MAPĘ DROGOWĄ WDROŻENIA APLIKACJI](/projektowanie-mvp)**
+*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*

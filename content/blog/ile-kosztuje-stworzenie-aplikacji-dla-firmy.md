@@ -171,15 +171,8 @@ Twój biznes zasługuje na architekturę klasy Enterprise.
 Czy jesteś gotowy, aby o nią zawalczyć?
 
 ---
+### 💡 Ile naprawdę warta jest Twoja aplikacja?
+Zamiast zgadywać budżet, odbierz darmową diagnozę i plan wdrożenia przygotowany przez eksperta IT.
 
-### Chcesz sprawdzić, czy Twój obecny stos technologiczny Cię ogranicza?
-
-Nie sprzedaję „godzin kodowania”. Pomagam firmom przejąć kontrolę nad ich technologią i zamienić ją w zysk.
-
-Jeśli chcesz, abyśmy przeanalizowali Twój system lub omówili, jak zbudować rozwiązanie, które faktycznie wspiera wzrost Twojej firmy – zapraszam do kontaktu.
-
-👉 **[Umów się na bezpłatną konsultację](https://www.karolmodelski.pl/#kontakt)**
-
-👉 **[Sprawdź moje doświadczenie i podejście](https://www.linkedin.com/in/karol-modelski/)**
-
-*Nie pozwól, aby przestarzałe podejście do IT blokowało rozwój Twojego biznesu.* 
+👉 **[OBLICZ BUDŻET I ODBIERZ MAPĘ IT ZA 0 ZŁ](/aplikacje-internetowe-dla-firm)**
+*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*

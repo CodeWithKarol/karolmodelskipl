@@ -88,13 +88,8 @@ Pamiętaj, że technologia powinna służyć Tobie, a nie odwrotnie. Razem zbudu
 Nie czekaj, aż system sam zacznie Cię ograniczać. Zmieńmy go w Twoją przewagę konkurencyjną już dzisiaj. Twój biznes zasługuje na architekturę klasy Enterprise. Czy jesteś gotowy, aby o nią zawalczyć?
 
 ---
+### 💡 Zmień surowy pomysł w maszynę konwersyjną.
+Nie trać czasu na zgadywanie. Pobierz plan, który przeprowadzi Cię przez proces wdrożenia w 30 dni.
 
-### Gotowy na stworzenie aplikacji, która napędza zysk?
-
-Nie sprzedaję „godzin kodowania”. Pomagam firmom przejąć kontrolę nad ich technologią i zamienić ją w zysk. Jeśli chcesz, abyśmy przeanalizowali Twój system lub omówili, jak szybko zbudować Twoje MVP – zapraszam do kontaktu.
-
-👉 **[Umów się na bezpłatną konsultację](https://www.karolmodelski.pl/#kontakt)**
-
-👉 **[Sprawdź moje doświadczenie i podejście](https://www.linkedin.com/in/karol-modelski/)**
-
-*Nie pozwól, aby przestarzałe podejście do IT blokowało rozwój Twojego biznesu.*
+👉 **[PRZEKSZTAŁĆ SWÓJ POMYSŁ W DZIAŁAJĄCY SYSTEM W 30 DNI (POBIERZ PLAN)](/projektowanie-mvp)**
+*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*

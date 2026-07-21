@@ -108,11 +108,8 @@ Twoja firma zasługuje na architekta, a nie na dostawcę ticketów.
 Jeśli jesteś gotowy przestać przepalać budżet i zacząć budować oprogramowanie, które realnie skaluje Twój zysk, zróbmy to razem.
 
 ---
+### 💡 Przestań przepłacać za nieefektywne rozwiązania.
+Sprawdź, jak unowocześnić swój system bez kosztownego pisania od nowa i bez przestojów w biznesie.
 
-### Chcesz wiedzieć, czy potrzebujesz strony, czy aplikacji?
-
-Zamiast zgadywać, sprawdźmy Twoje realne potrzeby. Odbierz **Bezpłatną Mapę Drogową Modernizacji IT**, podczas której zdiagnozujemy wąskie gardła w Twojej firmie i ustalimy, jak najtaniej wdrożyć rozwiązania, które realnie zwiększą Twój zysk.
-
-[Odbierz Bezpłatną Mapę Drogową (Wartość: 600 zł)](https://www.karolmodelski.pl/#kontakt)
-
-[Poznaj mnie lepiej na LinkedIn](https://www.linkedin.com/in/karol-modelski/)
+👉 **[SPRAWDŹ, JAK ULEPSZYĆ SYSTEM BEZ KOSZTOWNEJ PRZEBUDOWY](/modernizacja-oprogramowania-it)**
+*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*

@@ -217,15 +217,8 @@ Pamiętaj: Każdy dzień, w którym korzystasz z przestarzałego lub źle zaproj
 Twoja firma zasługuje na to, by działać w oparciu o najlepsze możliwe standardy.
 
 ---
+### 💡 Masz dość ręcznej pracy i niepotrzebnych kosztów?
+Zamień chaotyczną organizację na automatyczny, dedykowany system. Odbierz darmową diagnozę procesu.
 
-### Chcesz sprawdzić, czy Twój obecny stos technologiczny Cię ogranicza?
-
-Nie sprzedaję „godzin kodowania”. Pomagam firmom przejąć kontrolę nad ich technologią i zamienić ją w zysk.
-
-Jeśli chcesz, abyśmy przeanalizowali Twój system lub omówili, jak zbudować rozwiązanie, które faktycznie wspiera wzrost Twojej firmy – zapraszam do kontaktu.
-
-👉 **[Umów się na bezpłatną konsultację](https://www.karolmodelski.pl/#kontakt)**
-
-👉 **[Sprawdź moje doświadczenie i podejście](https://www.linkedin.com/in/karol-modelski/)**
-
-*Nie pozwól, aby przestarzałe podejście do IT blokowało rozwój Twojego biznesu.* 
+👉 **[ZAMIEŃ RĘCZNĄ PRACĘ NA AUTOMATYCZNY SYSTEM (ODBIERZ DIAGNOZĘ)](/aplikacje-internetowe-dla-firm)**
+*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*
