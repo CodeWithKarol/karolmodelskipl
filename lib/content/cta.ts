@@ -1,26 +1,27 @@
 export const cta = {
-  title_part1: "Zanim zainwestujesz w aplikację,",
-  title_highlight: "miej pewność, że to się opłaci.",
+  title_part1: "Przestań przepalać budżet na biurokrację.",
+  title_highlight: "Zbudujmy technologię, która realnie zwiększa zyski.",
   subtitle:
-    "Zamiast standardowej rozmowy handlowej, przygotowałem konkretny proces analityczny dla firm. Zarezerwuj termin i odbierz:",
+    "Ze względu na to, że nie prowadzę masowej fabryki oprogramowania i biorę pełną, osobistą odpowiedzialność za jakość, współpracuję jednocześnie z maksymalnie 2 firmami. Dbam o gęstość wartości, a nie o ilość zleceń.",
   meeting_intro:
-    "Wypełnij krótki formularz, wybierz termin i zgarnij darmowy pakiet doradczy. Co otrzymasz po spotkaniu?",
+    "Porozmawiajmy bez zobowiązań. Sprawdźmy, czy w Twoim biznesie są obszary, które możemy szybko usprawnić.",
   meeting_bullets_title:
-    "Bezpłatna Mapa Drogowa Rozwoju IT (Wartość: 600 zł)",
+    "Zarezerwuj bezpłatny audyt i odbierz Pakiet Mapy Drogowej (Wartość 600 zł za 0 zł):",
   bullets: [
     {
-      title: "30-minutowa diagnoza online",
-      desc: "Zlokalizujemy wąskie gardła w procesach Twojej firmy, które blokują zyski (Wartość: 300 zł)",
+      title: "30-minutowa diagnoza podczas rozmowy wideo",
+      desc: "Zlokalizujemy wąskie gardła w procesach Twojej firmy, które blokują zyski.",
     },
     {
       title: "Indywidualny Plan Działania",
-      desc: "Otrzymasz najszybszą ścieżkę wdrożenia aplikacji dla firm w 30 dni (Wartość: 200 zł)",
+      desc: "Otrzymasz najszybszą ścieżkę wdrożenia aplikacji dla firm w 30 dni.",
     },
     {
       title: "Bankowy Test Bezpieczeństwa IT",
-      desc: "Weryfikacja pomysłów pod kątem rygorystycznych standardów sektora finansowego. Ochrona danych klientów i stabilność bez awarii (Wartość: 100 zł)",
+      desc: "Weryfikacja pomysłów pod kątem rygorystycznych standardów sektora finansowego.",
     },
   ],
-  button: "Odbierz Pakiet o Wartości 600 zł za Darmo",
+  button: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ",
+  footer: "W ramach Programu Pilotażowego zostały tylko 2 wolne miejsca na ten kwartał",
 }
 
