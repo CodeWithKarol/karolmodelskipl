@@ -1,49 +1,29 @@
 export const contrast = {
-  title_part1: "Twoja firma zasługuje na eksperta IT,",
-  title_highlight: "nie na zwykłego wykonawcę zadań",
-  title_part2: "",
-  red_ocean_title: "Zwykły Wykonawca / Agencja IT",
-  blue_ocean_title: "Model Partnerski (Współpraca ze mną)",
+  title_part1: "Zobacz, dlaczego bezpośrednie partnerstwo",
+  title_highlight: "bije na głowę tradycyjną agencję:",
+  subtitle: "Zamiast dopasowywać swój biznes do ociężałych procedur agencji programistycznej, zyskujesz pełną elastyczność i bezpośredni kontakt z ekspertem. Zobacz zestawienie, które pokazuje różnicę w efektach, bezpieczeństwie i realnym wykorzystaniu Twojego budżetu.",
+  red_ocean_title: "Tradycyjna Agencja Programistyczna",
+  blue_ocean_title: "Bezpośrednia współpraca",
   comparisons: [
     {
-      red: {
-        title: "Zamknięcie listy zadań",
-        desc: "Skupienie wyłącznie na dowiezieniu projektu i wystawieniu faktury za godziny, bez wnikania w zyskowność.",
-      },
-      blue: {
-        title: "Zwrot z inwestycji w oprogramowanie",
-        desc: "Dostarczenie realnego wyniku biznesowego. Moim celem jest to, aby system zaczął jak najszybciej na siebie zarabiać.",
-      },
+      red: { title: "Komunikacja", desc: "„Głuchy telefon” (5 poziomów pośredników)" },
+      blue: { title: "Komunikacja", desc: "Bezpośredni kontakt (Rozmawiasz z autorem systemu)" },
     },
     {
-      red: {
-        title: "„Głuchy telefon” i asystenci",
-        desc: "Informacje gubią się podczas komunikacji przez licznych project managerów, handlowców i pośredników.",
-      },
-      blue: {
-        title: "Bezpośredni kontakt",
-        desc: "Stały i otwarty kontakt bezpośrednio ze mną jako osobą decyzyjną i głównym budowniczym systemu.",
-      },
+      red: { title: "Podejście do projektu", desc: "„Przepiszmy cały system od zera” (Ogromne ryzyko)" },
+      blue: { title: "Podejście do projektu", desc: "Ewolucyjna modernizacja (Praca na żywym organizmie bez przerw w sprzedaży)" },
     },
     {
-      red: {
-        title: "Finansowanie struktury agencji",
-        desc: "Duża część Twoich środków pokrywa koszty utrzymania pięknych biur, działów HR oraz marketingu agencji.",
-      },
-      blue: {
-        title: "100% inwestycji w Twój produkt",
-        desc: "Cały Twój budżet jest inwestowany bezpośrednio w jakość i wydajność Twojego własnego oprogramowania.",
-      },
+      red: { title: "Wykorzystanie budżetu", desc: "Do 50% budżetu idzie na biuro, rekrutację i zarząd agencji" },
+      blue: { title: "Wykorzystanie budżetu", desc: "100% budżetu inwestowane bezpośrednio w jakość systemu" },
     },
     {
-      red: {
-        title: "Droga rewolucja",
-        desc: "Przy każdym problemie agencja proponuje kosztowne wyrzucenie wszystkiego i napisanie kodu od nowa.",
-      },
-      blue: {
-        title: "Bezpieczna ewolucja",
-        desc: "Ewolucyjne, modułowe wprowadzanie zmian, które odbywa się bez przerw w działaniu firmy i sprzedaży.",
-      },
+      red: { title: "Płatności i ryzyko", desc: "Duże zaliczki i fakturowanie „za nieokreślone godziny”" },
+      blue: { title: "Płatności i ryzyko", desc: "Płatność etapowa (Płacisz po pokazaniu działającego efektu)" },
+    },
+    {
+      red: { title: "Doświadczenie wykonawcy", desc: "Zmienni, często początkujący programiści" },
+      blue: { title: "Doświadczenie wykonawcy", desc: "Jeden doświadczony Główny Architekt" },
     },
   ],
 }

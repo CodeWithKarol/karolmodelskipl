@@ -1,30 +1,27 @@
 export const offer = {
-  title_part1: "Jak wspólnie zbudujemy",
-  title_highlight: "przewagę konkurencyjną",
-  title_part2: "Twojej firmy?",
-  subheading:
-    "Zamiast skupiać się na technicznych definicjach, zobaczmy, jak moje rozwiązania bezpośrednio przekładają się na ochronę i pomnażanie Twoich pieniędzy:",
-  cta: {
-    title: "Zobacz, jak krok po kroku projektuję dedykowane aplikacje internetowe dla firm",
-    href: "/aplikacje-internetowe-dla-firm",
-  },
-  stack: [
+  title: "Wybierz rozwiązanie, którego najbardziej potrzebuje dzisiaj Twój biznes:",
+  subheading: "Niezależnie od tego, czy tworzysz nowy system od podstaw, usprawniasz obecne oprogramowanie, czy potrzebujesz strategicznego wsparcia – zyskujesz bezpośrednią współpracę z ekspertem i gwarancję jakości bez agencyjnej biurokracji.",
+  paths: [
     {
-      title: "Przestań zgadywać – zacznij zarabiać",
-      desc: 'Większość firm traci setki tysięcy na budowaniu funkcji, których nikt nie chce. Ja dostarczam Ci "bezpiecznik finansowy" w postaci pierwszej, uproszczonej wersji oprogramowania. Sprawdzamy Twój pomysł z rynkiem w rekordowym czasie, byś inwestował tylko w to, co realnie napędza sprzedaż. Zobacz, jak wdrażam <a href="/projektowanie-mvp">pierwszą wersję systemu</a> w 30 dni.',
+      title: "1. Dedykowane Aplikacje Internetowe dla Firm",
+      desc: "Potrzebujesz systemu szytego na miarę, który idealnie odwzoruje unikalne procesy w Twojej firmie? Projektuję i buduję od zera bezpieczne, stabilne oprogramowanie biznesowe, które rośnie razem z Twoim biznesem.",
+      href: "/aplikacje-internetowe-dla-firm"
     },
     {
-      title: "Modernizacja bez utraty ani jednej minuty sprzedaży",
-      desc: 'W biznesie każda minuta przestoju to realna strata w kasie. Moja metoda to chirurgia systemowa – unowocześniam Twój kod w tle, „na żywym organizmie”. Eliminujemy wąskie gardła i dług technologiczny, podczas gdy Twoi klienci płynnie finalizują zakupy. Dowiedz się więcej o ewolucyjnej <a href="/modernizacja-oprogramowania-it">modernizacji oprogramowania IT</a> w locie.',
+      title: "2. Bezinwazyjna Modernizacja Systemów",
+      desc: "Masz istniejącą aplikację, która działa wolno, zacina się lub wymaga ciągłych napraw? Wprowadzam poprawki ewolucyjnie, podnosząc wydajność i bezpieczeństwo bez zakłócania codziennej pracy.",
+      href: "/modernizacja-oprogramowania-it"
     },
     {
-      title: "Partnerstwo strategiczne, które zamienia technologię w zysk",
-      desc: 'Nie jestem tylko deweloperem, który czeka na instrukcje. Jako Twój Partner Technologiczny, projektuję systemy tak, aby każda funkcjonalność wspierała psychologię sprzedaży i ścieżkę konwersji Twojego klienta. Sprawdź dedykowane <a href="/aplikacje-internetowe-dla-firm">aplikacje internetowe dla firm</a> o wydajności bankowej.',
+      title: "3. Szybka Wersja Startowa (MVP w 30 dni)",
+      desc: "Masz pomysł na nowy produkt cyfrowy? Zamiast tracić pół roku na analizy agencyjne, budujemy kluczową funkcjonalność w 30 dni. Sprawdzasz pomysł na rynku bez przepalania budżetu.",
+      href: "/projektowanie-mvp"
     },
     {
-      title: "Prędkość, która zamienia odwiedzających w kupujących",
-      desc: "Każda sekunda opóźnienia to klienci uciekający do konkurencji. Moja inżynieria to wysoka wydajność kodu – systemy tak błyskawiczne, że użytkownik nie ma czasu się zawahać. Skracam czas ładowania do minimum, eliminując opór na ścieżce zakupowej. Mniej porzuconych koszyków, więcej transakcji, większy zwrot z każdej złotówki wydanej na marketing.",
-    },
-  ],
+      title: "4. Doradztwo Strategiczne i Architektura Cyfrowa",
+      desc: "Potrzebujesz doświadczonego partnera technologicznego na wyciągnięcie ręki? Przekładam skomplikowane wymogi biznesowe na proste, bezpieczne i trwałe decyzje techniczne.",
+      href: "/architekt-it-vs-software-house"
+    }
+  ]
 }
 
