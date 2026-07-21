@@ -1,7 +1,7 @@
 export const faq = {
   title: "Najczęściej Zadawane Pytania",
   subtitle:
-    "Rozwiewam wątpliwości dotyczące budowy skalowalnych aplikacji internetowych.",
+    "Masz wątpliwości lub obawy przed podjęciem współpracy z niezależnym ekspertem? To zupełnie naturalne. Oto, jak rozwiewam najczęstsze pytania właścicieli firm:",
   items: [
     {
       question:

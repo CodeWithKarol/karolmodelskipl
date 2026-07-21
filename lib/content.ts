@@ -8,6 +8,8 @@ import { footer } from "./content/footer"
 import { blogContent } from "./content/blog"
 import { faq } from "./content/faq"
 import { metadata } from "./content/home"
+import { guarantee } from "./content/guarantee"
+import { about } from "./content/about"
 
 import { mvp } from "./content/mvp"
 
@@ -19,6 +21,8 @@ export const content = {
   offer,
   contrast,
   cta,
+  guarantee,
+  about,
   footer,
   blog: blogContent,
   faq,

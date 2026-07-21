@@ -2,7 +2,8 @@ import { Metadata } from "next"
 import { HeroSection } from "@/components/hero-section"
 import { TrustedBySection } from "@/components/trusted-by-section"
 import { StorySection } from "@/components/story-section"
-import { BusinessImpactSection } from "@/components/business-impact-section"
+import { AboutSection } from "@/components/about-section"
+import { GuaranteeSection } from "@/components/guarantee-section"
 import { OfferSection } from "@/components/offer-section"
 import { ContrastSection } from "@/components/contrast-section"
 import { FaqSection } from "@/components/faq-section"
@@ -99,9 +100,10 @@ export default function Page() {
       <HeroSection />
       <TrustedBySection />
       <StorySection />
-      <BusinessImpactSection />
-      <OfferSection />
       <ContrastSection />
+      <OfferSection />
+      <GuaranteeSection />
+      <AboutSection />
       <FaqSection />
       <CtaSection />
     </main>

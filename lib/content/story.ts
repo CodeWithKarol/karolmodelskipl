@@ -1,7 +1,7 @@
 export const story = {
   title: "Czy wdrożenie oprogramowania w dużej agencji przypomina u Ciebie walkę z wiatrakami?",
   intro: "Większość właścicieli firm po kontakcie z tradycyjnym oprogramowaniem stworzonym przez dużą agencję ma to samo poczucie: <em>„To jest droższe, wolniejsze i bardziej skomplikowane, niż miało być”</em>.",
-  context: "Tradycyjny model agencji nastawiony jest na <span class=\"italic\">samotnego procesu</span>, a nie Twojego sukcesu biznesowego:",
+  context: "Tradycyjny model agencji nastawiony jest na sprzedaż <em>samotnego procesu</em>, a nie Twojego sukcesu biznesowego:",
   points: [
     {
       title: "<strong>„Głuchy telefon” i rozmycie wizji:</strong>",

@@ -23,3 +23,4 @@ export const cta = {
   ],
   button: "Odbierz Pakiet o Wartości 600 zł za Darmo",
 }
+

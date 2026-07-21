@@ -13,7 +13,7 @@ export function StorySection() {
 
       <div className="relative z-10 container mx-auto px-4 max-w-5xl">
         {/* Header - Mobile First */}
-        <div className="mb-12 text-center">
+        <div className="mb-16 text-center">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-red-500/20 bg-red-500/10 px-4 py-1.5 text-xs font-bold text-red-400 uppercase tracking-wider">
             <Flame className="h-4 w-4" />
             <span>Diagnoza problemu</span>
@@ -26,29 +26,33 @@ export function StorySection() {
             dangerouslySetInnerHTML={{ __html: story.intro }} 
           />
           <p 
-            className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg [&_.italic]:italic [&_.italic]:text-slate-200"
-            dangerouslySetInnerHTML={{ __html: story.context }}
+            className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg [&_em]:italic [&_em]:text-slate-200"
+            dangerouslySetInnerHTML={{ __html: story.context }} 
           />
         </div>
 
         {/* Points Grid - Mobile: 1 col, Tablet+: 2 col */}
-        <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2">
           {story.points.map((point, idx) => (
             <div 
               key={idx} 
-              className="group relative bg-slate-900/40 border border-slate-800 p-6 sm:p-8 rounded-2xl hover:border-slate-700 transition-all duration-300"
+              className="group bg-slate-900/40 border border-slate-800 p-6 sm:p-8 rounded-2xl hover:border-slate-700 transition-all duration-300"
             >
-              <div className="text-red-500 mb-4 font-black text-xl sm:text-2xl opacity-50 group-hover:opacity-100 transition-opacity">
-                0{idx + 1}
+              <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row items-start gap-3 sm:gap-6">
+                <div className="text-red-500 font-black text-2xl opacity-50 shrink-0">
+                  0{idx + 1}
+                </div>
+                <div>
+                  <h4 
+                    className="text-base sm:text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors [&_strong]:text-white"
+                    dangerouslySetInnerHTML={{ __html: point.title }}
+                  />
+                  <p 
+                    className="text-slate-400 leading-relaxed text-xs sm:text-sm [&_em]:text-slate-300 [&_em]:not-italic [&_em]:font-medium"
+                    dangerouslySetInnerHTML={{ __html: point.desc }}
+                  />
+                </div>
               </div>
-              <h4 
-                className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors [&_strong]:text-white"
-                dangerouslySetInnerHTML={{ __html: point.title }}
-              />
-              <p 
-                className="text-slate-400 leading-relaxed text-xs sm:text-sm [&_em]:text-slate-300 [&_em]:not-italic [&_em]:font-medium"
-                dangerouslySetInnerHTML={{ __html: point.desc }}
-              />
             </div>
           ))}
         </div>

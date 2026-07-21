@@ -27,18 +27,18 @@ export function ContrastSection() {
         </div>
 
         {/* Comparison Cards */}
-        <div className="space-y-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {contrast.comparisons.map((item, i) => (
             <div
               key={i}
-              className="grid md:grid-cols-2 gap-4"
+              className="contents"
             >
               {/* TRADYCYJNA AGENCJA (Problem) */}
-              <div className="bg-slate-900/40 border border-slate-800 p-6 sm:p-8 rounded-2xl flex flex-col">
+              <div className="bg-slate-900/40 border border-slate-800 p-6 sm:p-8 rounded-2xl flex flex-col hover:border-slate-700 transition-all">
                 <div className="text-red-500 mb-3 font-bold text-[10px] uppercase tracking-widest">
                   {contrast.red_ocean_title}
                 </div>
-                <h4 className="text-base sm:text-lg font-bold text-slate-300 mb-2 leading-snug">
+                <h4 className="text-base sm:text-lg font-bold text-slate-300 mb-3 leading-snug">
                   {item.red.title}
                 </h4>
                 <p className="text-slate-500 leading-relaxed text-xs sm:text-sm">
@@ -47,11 +47,11 @@ export function ContrastSection() {
               </div>
 
               {/* BEZPOŚREDNIA WSPÓŁPRACA (Rozwiązanie) */}
-              <div className="bg-blue-600/10 border border-blue-500/30 p-6 sm:p-8 rounded-2xl flex flex-col">
+              <div className="bg-blue-600/10 border border-blue-500/30 p-6 sm:p-8 rounded-2xl flex flex-col hover:border-blue-500/50 transition-all">
                 <div className="text-blue-400 mb-3 font-bold text-[10px] uppercase tracking-widest">
                   {contrast.blue_ocean_title}
                 </div>
-                <h4 className="text-base sm:text-lg font-bold text-white mb-2 leading-snug">
+                <h4 className="text-base sm:text-lg font-bold text-white mb-3 leading-snug">
                   {item.blue.title}
                 </h4>
                 <p className="text-slate-300 leading-relaxed text-xs sm:text-sm">
