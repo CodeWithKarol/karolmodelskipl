@@ -67,9 +67,9 @@ function AccordionContent({
   ...props
 }: React.ComponentProps<typeof AccordionPrimitive.Content>) {
   // Extract dangerouslySetInnerHTML from props if it exists
-  const dangerouslySetInnerHTML = (props as any).dangerouslySetInnerHTML
+  const dangerouslySetInnerHTML = props.dangerouslySetInnerHTML
   const restProps = { ...props }
-  delete (restProps as any).dangerouslySetInnerHTML
+  delete restProps.dangerouslySetInnerHTML
 
   return (
     <AccordionPrimitive.Content

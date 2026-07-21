@@ -1,4 +1,4 @@
-import { Rocket, RefreshCw, Layers, Gauge, ArrowRight, Briefcase } from "lucide-react"
+import { Rocket, RefreshCw, Layers, Gauge, ArrowRight } from "lucide-react"
 import { content } from "@/lib/content"
 import Link from "next/link"
 

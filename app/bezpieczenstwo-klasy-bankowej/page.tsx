@@ -8,16 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import {
-  ArrowRight,
-  ShieldCheck,
-  Target,
-  Banknote,
-  CalendarDays,
-  Activity,
-  Zap,
-  Layers,
-} from "lucide-react"
+import { ShieldCheck, Banknote, Target, CalendarDays, ArrowRight } from "lucide-react"
 import {
   hero,
   mechanism,
@@ -174,7 +165,7 @@ export default function BezpieczenstwoKlasyBankowejPage() {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {mechanism.cards.map((card, i) => {
-              const Icon = i === 0 ? Activity : i === 1 ? Zap : ShieldCheck
+              const Icon = i === 0 ? Target : i === 1 ? Banknote : ShieldCheck
               const colorClasses =
                 i === 0
                   ? "border-blue-500/30 bg-blue-500/20 text-blue-400"

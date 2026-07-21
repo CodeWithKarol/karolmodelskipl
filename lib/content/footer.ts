@@ -1,56 +1,41 @@
 export const footer = {
-  col1: {
+  brand: {
     name: "Karol Modelski",
     title: "Niezależny Partner Technologiczny",
-    description:
-      "Strategiczne tworzenie aplikacji internetowych dla małych i średnich firm. Biorę pełną odpowiedzialność za stabilność i bezpieczeństwo Twoich systemów. Ty skupiasz się na sprzedaży, ja zabezpieczam technologię.",
+    description: "Projektuję i buduję stabilne oprogramowanie biznesowe dla małych i średnich firm. Zastępuję agencje programistyczne bezpośrednią współpracą, dając Ci bezpieczeństwo wypracowane w bankowości oraz 100% inwestycji w jakość Twojego systemu.",
   },
-  col2: {
-    title: "Kontakt",
-    address_street: "ul. Mieczysława Karłowicza 1 lok. 40",
-    address_city: "58-506 Jelenia Góra",
-    coverage: "Obszar obsługi: Warszawa i cała Polska",
+  solutions: {
+    title: "Rozwiązania dla Firmy",
+    items: [
+      { label: "Dedykowane Aplikacje Internetowe dla Firm", href: "/aplikacje-internetowe-dla-firm" },
+      { label: "Bezinwazyjna Modernizacja Systemów", href: "/modernizacja-oprogramowania-it" },
+      { label: "Szybka Wersja Startowa (Aplikacja w 30 dni)", href: "/projektowanie-mvp" },
+      { label: "Doradztwo Strategiczne i Architektura Cyfrowa", href: "/architekt-it-vs-software-house" },
+      { label: "Bezpłatna Diagnoza i Mapa Drogowa", href: "#kontakt" },
+    ],
+  },
+  guarantees: {
+    title: "Gwarancje Bezpieczeństwa",
+    items: [
+      { title: "Płatność po pokazaniu efektów", desc: "Płacisz za dany etap dopiero wtedy, gdy widzisz działający system na swoim ekranie." },
+      { title: "Jakość bankowa", desc: "Standardy bezpieczeństwa i ochrony danych sprawdzone w instytucjach finansowych (Citibank, BNP Paribas)." },
+      { title: "Przejrzystość struktury", desc: "Uniwersalny, udokumentowany kod – Twój system nie jest uzależniony od jednej osoby." },
+    ],
+  },
+  contact: {
+    title: "Dane Kontaktowe i Rejestrowe",
+    owner: "Karol Modelski",
+    company: "Karol Modelski – Niezależny Partner Technologiczny",
+    address: "ul. Mieczysława Karłowicza 1 lok. 40, 58-506 Jelenia Góra",
+    coverage: "Obszar działania: Warszawa oraz cała Polska (współpraca zdalna i bezpośrednia)",
     phone: "+48 664 598 563",
     email: "kontakt@karolmodelski.pl",
-  },
-  col3: {
-    title: "Rozwiązania dla firm",
-    navigation: [
-      { label: "Pierwsza wersja systemu", href: "/projektowanie-mvp" },
-      {
-        label: "Modernizacja oprogramowania IT",
-        href: "/modernizacja-oprogramowania-it",
-      },
-      {
-        label: "Aplikacje internetowe dla firm",
-        href: "/aplikacje-internetowe-dla-firm",
-      },
-    ],
-  },
-  col4: {
-    title: "Dlaczego Model Elite?",
-    navigation: [
-      {
-        label: "Partner IT czy agencja programistyczna",
-        href: "/architekt-it-vs-software-house",
-      },
-      {
-        label: "Bezpieczeństwo klasy bankowej",
-        href: "/bezpieczenstwo-klasy-bankowej",
-      },
-      { label: "Baza wiedzy", href: "/blog" },
-    ],
-    links: [
-      {
-        label: "Odbierz Mapę Drogową Rozwoju IT",
-        href: "https://www.karolmodelski.pl/#kontakt",
-        isCta: true,
-      },
-    ],
-  },
-  bottom: {
-    copyright: "© 2026 Karol Modelski. Wszelkie prawa zastrzeżone.",
     nip: "6112800950",
     regon: "383132957",
   },
+  legal: {
+    title: "Dokumenty i Kwestie Prawne",
+    items: [] as { label: string; href: string }[],
+  },
+  copyright: "© 2026 Karol Modelski. Wszelkie prawa zastrzeżone. Oprogramowanie tworzone z myślą o stabilności i zysku Twojej firmy.",
 }
