@@ -10,7 +10,7 @@ export const offer = {
     {
       title: "2. Bezinwazyjna Modernizacja Systemów",
       desc: "Masz istniejącą aplikację, która działa wolno, zacina się lub wymaga ciągłych napraw? Wprowadzam poprawki ewolucyjnie, podnosząc wydajność i bezpieczeństwo bez zakłócania codziennej pracy.",
-      href: "/modernizacja-oprogramowania-it"
+      href: "/naprawa-i-modernizacja-aplikacji"
     },
     {
       title: "3. Szybka Wersja Startowa (MVP w 30 dni)",

@@ -8,7 +8,7 @@ export const footer = {
     title: "Rozwiązania dla Firmy",
     items: [
       { label: "Dedykowane Aplikacje Internetowe dla Firm", href: "/aplikacje-internetowe-dla-firm" },
-      { label: "Bezinwazyjna Modernizacja Systemów", href: "/modernizacja-oprogramowania-it" },
+      { label: "Bezinwazyjna Modernizacja Systemów", href: "/naprawa-i-modernizacja-aplikacji" },
       { label: "Szybka Wersja Startowa (Aplikacja w 30 dni)", href: "/projektowanie-mvp" },
       { label: "Doradztwo Strategiczne i Architektura Cyfrowa", href: "/doradztwo-techniczne-dla-firm" },
       { label: "Bezpłatna Diagnoza i Mapa Drogowa", href: "#kontakt" },

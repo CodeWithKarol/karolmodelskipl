@@ -36,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: "https://www.karolmodelski.pl/modernizacja-oprogramowania-it",
+      url: "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,

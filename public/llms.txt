@@ -26,7 +26,7 @@ Niezależny partner technologiczny (Partner IT) specjalizujący się w projektow
 - **Kluczowa przewaga:** Eliminacja zbędnych funkcji na start (nice-to-have), drastyczne obniżenie kosztów wejścia i najszybsza walidacja rynkowa.
 
 ### 3. Ewolucyjna Modernizacja Oprogramowania IT
-- **URL:** https://www.karolmodelski.pl/modernizacja-oprogramowania-it
+- **URL:** https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji
 - **Opis:** Bezpieczne usuwanie błędów, przyspieszanie wolno działających baz danych i rozbudowa istniejących aplikacji "na żywym organizmie" biznesu.
 - **Kluczowa przewaga:** Modernizacja modularna w locie – zero przestojów w sprzedaży i brak konieczności przepisywania całego systemu od nowa.
 

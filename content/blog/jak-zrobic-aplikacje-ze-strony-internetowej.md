@@ -189,5 +189,5 @@ Czy jesteś gotowy, aby o nią zawalczyć?
 ### 💡 Twój system wymaga modernizacji, a nie pełnej przebudowy?
 Odbierz plan, dzięki któremu unowocześnimy Twoją aplikację ewolucyjnie, dbając o płynność sprzedaży.
 
-👉 **[ODBIERZ PLAN BEZINWAZYJNEGO PRZYSPIESZENIA SYSTEMU](/modernizacja-oprogramowania-it)**
+👉 **[ODBIERZ PLAN BEZINWAZYJNEGO PRZYSPIESZENIA SYSTEMU](/naprawa-i-modernizacja-aplikacji)**
 *(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*

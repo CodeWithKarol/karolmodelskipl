@@ -50,7 +50,7 @@ export const mechanism = {
       title: "Elastyczny fundament pod przyszły rozwój",
       subtitle: "",
       content:
-        'Buduję systemy w sposób modułowy z jednego, silnego rdzenia. Dzięki modułowej konstrukcji, dodawanie nowych funkcji lub <a href="/modernizacja-oprogramowania-it">modernizacja oprogramowania IT</a> w przyszłości jest tania i bezpieczna. Rozbudujemy system szybko, oszczędzając nawet do 40% budżetu w stosunku do agencji.',
+        'Buduję systemy w sposób modułowy z jednego, silnego rdzenia. Dzięki modułowej konstrukcji, dodawanie nowych funkcji lub <a href="/naprawa-i-modernizacja-aplikacji">modernizacja oprogramowania IT</a> w przyszłości jest tania i bezpieczna. Rozbudujemy system szybko, oszczędzając nawet do 40% budżetu w stosunku do agencji.',
     },
   ],
 }

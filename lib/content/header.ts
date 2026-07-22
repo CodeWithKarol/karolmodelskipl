@@ -28,8 +28,8 @@ export const header = {
             "Uruchomienie kluczowej funkcji w 30 dni i bezpieczny start sprzedaży bez przepalania budżetu.",
         },
         {
-          title: "Bezinwazyjna modernizacja systemów",
-          href: "/modernizacja-oprogramowania-it",
+          title: "Bezinwazyjna modernizacja aplikacji",
+          href: "/naprawa-i-modernizacja-aplikacji",
           description:
             "Usuwanie błędów i przyspieszanie aplikacji bez przestojów w codziennej pracy firmy.",
         },

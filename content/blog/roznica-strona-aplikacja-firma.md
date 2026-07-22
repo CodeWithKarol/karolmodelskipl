@@ -111,5 +111,5 @@ Jeśli jesteś gotowy przestać przepalać budżet i zacząć budować oprogramo
 ### 💡 Przestań przepłacać za nieefektywne rozwiązania.
 Sprawdź, jak unowocześnić swój system bez kosztownego pisania od nowa i bez przestojów w biznesie.
 
-👉 **[SPRAWDŹ, JAK ULEPSZYĆ SYSTEM BEZ KOSZTOWNEJ PRZEBUDOWY](/modernizacja-oprogramowania-it)**
+👉 **[SPRAWDŹ, JAK ULEPSZYĆ SYSTEM BEZ KOSZTOWNEJ PRZEBUDOWY](/naprawa-i-modernizacja-aplikacji)**
 *(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*

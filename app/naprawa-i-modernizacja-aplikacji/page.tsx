@@ -27,7 +27,7 @@ import {
   offer,
   metadata,
   guarantee,
-} from "@/lib/content/modernizacja-oprogramowania-it/page"
+} from "@/lib/content/naprawa-i-modernizacja-aplikacji/page"
 import { GuaranteeSection } from "@/components/guarantee-section"
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -35,7 +35,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title: metadata.title,
     description: metadata.description,
     alternates: {
-      canonical: "https://www.karolmodelski.pl/modernizacja-oprogramowania-it",
+      canonical: "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji",
     },
   }
 }
@@ -47,8 +47,8 @@ export default function ModernizacjaOprogramowaniaPage() {
       {
         "@type": "WebPage",
         "@id":
-          "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#webpage",
-        url: "https://www.karolmodelski.pl/modernizacja-oprogramowania-it",
+          "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji#webpage",
+        url: "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji",
         name: metadata.title,
         description: metadata.description,
         isPartOf: {
@@ -59,10 +59,10 @@ export default function ModernizacjaOprogramowaniaPage() {
         },
         mainEntity: {
           "@id":
-            "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#service",
+            "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji#service",
         },
         hasPart: {
-          "@id": "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#faq",
+          "@id": "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji#faq",
         },
       },
       {
@@ -90,14 +90,14 @@ export default function ModernizacjaOprogramowaniaPage() {
       {
         "@type": "Service",
         "@id":
-          "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#service",
+          "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji#service",
         name: metadata.title,
         description: metadata.description,
         provider: { "@id": "https://www.karolmodelski.pl/#organization" },
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.karolmodelski.pl/modernizacja-oprogramowania-it#faq",
+        "@id": "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji#faq",
         mainEntity: faq.items.map((item) => ({
           "@type": "Question",
           name: item.q,
