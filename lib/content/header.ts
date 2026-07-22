@@ -16,29 +16,35 @@ export const header = {
       title: "Oferta",
       items: [
         {
-          title: "Pierwsza wersja systemu",
-          href: "/projektowanie-mvp",
-          description:
-            "Uruchomienie Twojego pomysłu w 30 dni i szybki start sprzedaży.",
-        },
-        {
-          title: "Aplikacje internetowe dla firm",
+          title: "Dedykowane aplikacje internetowe dla firm",
           href: "/aplikacje-internetowe-dla-firm",
           description:
-            "Dedykowane rozwiązania automatyzujące pracę i zwiększające zyski.",
+            "Oprogramowanie szyte na miarę, które automatyzuje procesy i skaluje zyski.",
         },
         {
-          title: "Modernizacja oprogramowania",
+          title: "Szybka wersja startowa aplikacji",
+          href: "/projektowanie-mvp",
+          description:
+            "Uruchomienie kluczowej funkcji w 30 dni i bezpieczny start sprzedaży bez przepalania budżetu.",
+        },
+        {
+          title: "Bezinwazyjna modernizacja systemów",
           href: "/modernizacja-oprogramowania-it",
           description:
-            "Usuwanie błędów i przyspieszanie systemów bez przestojów w sprzedaży.",
+            "Usuwanie błędów i przyspieszanie aplikacji bez przestojów w codziennej pracy firmy.",
+        },
+        {
+          title: "Doradztwo techniczne i partnerstwo",
+          href: "/doradztwo-techniczne-dla-firm",
+          description:
+            "Stałe wsparcie Niezależnego Partnera Technologicznego i ochrona budżetu.",
         },
       ],
     },
     blog: {
       title: "Baza wiedzy",
       href: "/blog",
-      description: "Blog i poradniki IT",
+      description: "Poradniki biznesowe i technologiczne",
     },
   },
 }

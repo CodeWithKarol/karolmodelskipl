@@ -41,21 +41,20 @@ export function SiteHeader() {
                     {header.menu.oferta.title}
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className="flex w-[260px] flex-col gap-1 p-2 md:w-[280px]">
+                    <div className="flex w-[320px] flex-col gap-1 p-2 md:w-[480px]">
                       {header.menu.oferta.items.map((item) => (
-                        <NavigationMenuLink key={item.href} asChild>
-                          <Link
-                            href={item.href}
-                            className="group flex flex-col gap-1.5 rounded-lg p-3 transition-colors outline-none hover:bg-slate-800/20 focus:bg-slate-800/20"
-                          >
-                            <div className="flex items-center text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
-                              <span className="flex-1">{item.title}</span>
-                              <ChevronRight className="h-4 w-4 -translate-x-2 text-slate-500 opacity-0 transition-all group-hover:translate-x-0 group-hover:text-white group-hover:opacity-100" />
-                            </div>
-                            <p className="text-[13px] leading-relaxed text-slate-500 transition-colors group-hover:text-slate-400">
-                              {item.description}
-                            </p>
-                          </Link>
+                        <NavigationMenuLink
+                          key={item.href}
+                          render={<Link href={item.href} />}
+                          className="group flex w-full flex-col gap-1.5 rounded-lg p-3 text-left transition-colors outline-none hover:bg-slate-800/20 focus:bg-slate-800/20"
+                        >
+                          <div className="flex w-full items-center text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
+                            <span className="flex-1 text-left">{item.title}</span>
+                            <ChevronRight className="h-4 w-4 -translate-x-2 text-slate-500 opacity-0 transition-all group-hover:translate-x-0 group-hover:text-white group-hover:opacity-100" />
+                          </div>
+                          <p className="w-full text-[13px] leading-relaxed text-slate-500 transition-colors group-hover:text-slate-400 text-left">
+                            {item.description}
+                          </p>
                         </NavigationMenuLink>
                       ))}
                     </div>
