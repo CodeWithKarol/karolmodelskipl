@@ -4,7 +4,7 @@ export const header = {
   },
   cta: {
     title: "Bezpłatna diagnoza",
-    href: "/#kontakt",
+    href: "https://calendly.com/kontakt-karolmodelski/30min",
     description: "Zarezerwuj termin na darmowy audyt.",
   },
   menu: {
