@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: "https://www.karolmodelski.pl/architekt-it-vs-software-house",
+      url: "https://www.karolmodelski.pl/doradztwo-techniczne-dla-firm",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.85,

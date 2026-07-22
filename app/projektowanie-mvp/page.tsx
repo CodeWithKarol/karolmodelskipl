@@ -262,7 +262,7 @@ export default function ProjektowanieMvpPage() {
               operacyjnych:
             </p>
             <a
-              href="/architekt-it-vs-software-house"
+              href="/doradztwo-techniczne-dla-firm"
               className="mt-2 inline-flex items-center gap-2 text-[15px] font-medium text-blue-400 transition-colors hover:text-blue-300 hover:underline sm:text-[17px]"
             >
               Dlaczego niezależny partner technologiczny, a nie agencja

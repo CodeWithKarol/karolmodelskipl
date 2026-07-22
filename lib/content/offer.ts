@@ -20,7 +20,7 @@ export const offer = {
     {
       title: "4. Doradztwo Strategiczne i Architektura Cyfrowa",
       desc: "Potrzebujesz doświadczonego partnera technologicznego na wyciągnięcie ręki? Przekładam skomplikowane wymogi biznesowe na proste, bezpieczne i trwałe decyzje techniczne.",
-      href: "/architekt-it-vs-software-house"
+      href: "/doradztwo-techniczne-dla-firm"
     }
   ]
 }

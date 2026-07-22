@@ -26,7 +26,7 @@ Finansujesz cały ekosystem, który ma utrzymać tę firmę na powierzchni.
 
 Płacisz za wynajem biura w centrum, dział HR, dział sprzedaży, marketing i marże narzucone przez zarząd.
 
-W efekcie, nawet 50% Twojego budżetu „rozpływa się” w kosztach operacyjnych agencji, zanim powstanie choćby jedna linia kodu. Zobacz moje pełne porównanie na ten temat: [Dlaczego niezależny partner technologiczny, a nie agencja programistyczna?](/architekt-it-vs-software-house)
+W efekcie, nawet 50% Twojego budżetu „rozpływa się” w kosztach operacyjnych agencji, zanim powstanie choćby jedna linia kodu. Zobacz moje pełne porównanie na ten temat: [Dlaczego niezależny partner technologiczny, a nie agencja programistyczna?](/doradztwo-techniczne-dla-firm)
 
 Czy to inwestycja w Twój produkt?
 

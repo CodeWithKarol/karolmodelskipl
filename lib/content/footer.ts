@@ -10,7 +10,7 @@ export const footer = {
       { label: "Dedykowane Aplikacje Internetowe dla Firm", href: "/aplikacje-internetowe-dla-firm" },
       { label: "Bezinwazyjna Modernizacja Systemów", href: "/modernizacja-oprogramowania-it" },
       { label: "Szybka Wersja Startowa (Aplikacja w 30 dni)", href: "/projektowanie-mvp" },
-      { label: "Doradztwo Strategiczne i Architektura Cyfrowa", href: "/architekt-it-vs-software-house" },
+      { label: "Doradztwo Strategiczne i Architektura Cyfrowa", href: "/doradztwo-techniczne-dla-firm" },
       { label: "Bezpłatna Diagnoza i Mapa Drogowa", href: "#kontakt" },
     ],
   },

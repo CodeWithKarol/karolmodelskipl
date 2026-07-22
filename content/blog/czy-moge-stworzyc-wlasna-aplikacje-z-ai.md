@@ -182,5 +182,5 @@ Twoja firma zasługuje na to, by działać w oparciu o najlepsze możliwe standa
 ### 💡 Wdróż AI bezpiecznie, unikając błędów architektury.
 Skonsultuj swój pomysł na AI z niezależnym architektem, który chroni Twój kapitał i dane.
 
-👉 **[ZAREZERWUJ BEZPŁATNY AUDYT TECHNOLOGICZNY](/architekt-it-vs-software-house)**
+👉 **[ZAREZERWUJ BEZPŁATNY AUDYT TECHNOLOGICZNY](/doradztwo-techniczne-dla-firm)**
 *(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*

@@ -100,5 +100,5 @@ Pamiętaj: Każdy dzień, w którym korzystasz z przestarzałego lub źle zaproj
 ### 💡 Wybierz architekturę, która zarabia, a nie kosztuje.
 Zanim zainwestujesz, skonsultuj wybór technologii z ekspertem. Odbierz Pakiet Doradczy o wartości 600 zł.
 
-👉 **[ODBIERZ PAKIET DORADCZY (MAPA IT + TEST BEZPIECZEŃSTWA)](/architekt-it-vs-software-house)**
+👉 **[ODBIERZ PAKIET DORADCZY (MAPA IT + TEST BEZPIECZEŃSTWA)](/doradztwo-techniczne-dla-firm)**
 *(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*
