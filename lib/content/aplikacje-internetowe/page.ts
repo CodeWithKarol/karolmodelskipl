@@ -5,54 +5,73 @@ export const metadata = {
 }
 
 export const hero = {
-  badge: "",
-  title: "Dedykowane aplikacje internetowe dla firm.",
-  titleHighlight:
-    "Bezpieczeństwo i wydajność systemów bankowych dostarczane błyskawicznie – bez ukrytych kosztów agencji.",
+  badge: "Aplikacje dla firm",
+  title: "Tworzę dedykowane aplikacje internetowe dla firm, które automatyzują procesy i skalują zyski",
+  titleHighlight: "– bez agencji i ukrytych kosztów.",
   description:
-    "Masz dość opłacania rozbudowanej struktury i armii pośredników w dużych agencjach programistycznych? Ponad połowa Twojego budżetu w agencji idzie tam na utrzymanie kierowników, biur i handlowców. Jako niezależny partner technologiczny, zamieniam Twój budżet wyłącznie w solidne rozwiązania, które bez problemu wytrzymają każdy skok sprzedaży. Zyskujesz bezpośredni kontakt ze specjalistą i system, który realnie zwiększa zyski Twojej firmy.",
-  cta: "Odbierz Bezpłatną Mapę Drogową Rozwoju IT",
-  footnote: "(Wartość 600 zł – Dziś za 0 zł)",
+    "Zyskaj nowoczesne oprogramowanie o architekturze klasy bankowej, dopasowane w 100% do specyfiki Twojego biznesu. Zapomnij o „głuchym telefonie” z pośrednikami i przepłacaniu za administrację agencji – pracujesz bezpośrednio ze mną.",
+  cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ SYSTEMU",
+  footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT",
+  indicators: [
+    { title: "Oprogramowanie szyte na miarę", desc: "Tworzę systemy dokładnie pod procesy w Twojej firmie, eliminując ręczną pracę i błędy ludzkie." },
+    { title: "Bezpieczeństwo klasy bankowej", desc: "Przenoszę rygorystyczne standardy ochrony danych i stabilności z sektora finansowego wprost do Twojego biznesu." },
+    { title: "Bezpośredni kontakt", desc: "Rozmawiasz wyłącznie z autorem systemu. Natychmiastowe decyzje i pełna odpowiedzialność za wynik." }
+  ],
+  audit_promo: {
+    title: "👉 Masz pomysł na system lub chcesz usprawnić działanie firmy?",
+    desc: "Zarezerwuj bezpłatną, 30-minutową rozmowę strategiczną. Przeanalizujemy Twoje potrzeby i wskażę najszybszą ścieżkę wdrożenia."
+  }
 }
 
 export const story = {
-  title:
-    "Od bankowych systemów transakcyjnych do rozwiązań zwiększających zyski małych i średnich firm.",
-  text: [
-    "Przez ponad 7 lat projektowałem i usprawniałem zaawansowane systemy dla liderów rynku, w tym bankowości elektronicznej w międzynarodowych instytucjach finansowych. Tam błędy, przerwy w działaniu czy utrata danych po prostu nie miały prawa się wydarzyć.",
-    "W trakcie tej pracy zrozumiałem ważną rzecz. Zauważyłem, że mniejsze firmy, które szukają solidnych systemów, są często naciągane przez tradycyjne agencje. Agencje celowo komplikują rozwiązania i narzucają nadmiarowe technologie, aby sztucznie windować wyceny, a do samej pracy zatrudniają początkujących programistów. Efekt? Płacisz fortunę za powolny system, a w zamian dostajesz błędy i wieczny 'głuchy telefon' w rozmowach z pośrednikami.",
-  ],
-  quote:
-    "Postanowiłem stworzyć model bezpośredniej współpracy właściciela firmy z niezależnym partnerem technologicznym. Bez pośredników, bez przepłacania za puste godziny. Tylko czysta technologia dostosowana w 100% do celów Twojego biznesu.",
+  title: "Dlaczego mniejsze firmy tracą setki tysięcy na współpracy z dużymi agencjami?",
+  intro: "Większość właścicieli firm po kontakcie z tradycyjnymi wykonawcami ma to samo bolesne doświadczenie: koszty rosną, terminy się przesuwają, a dostarczony system jest zbyt skomplikowany i nie przynosi zysków.",
+  context: "Główne pułapki tradycyjnego modelu agencji programistycznych to:",
+  points: [
+    {
+      title: "„Głuchy telefon” w komunikacji",
+      desc: "Twój pomysł krąży między handlowcem, kierownikiem projektu a analitykiem. Po drodze cele biznesowe ulegają całkowitemu zniekształceniu."
+    },
+    {
+      title: "Płacisz za naukę początkujących",
+      desc: "Agencje przypisują do projektów mniej doświadczonych programistów, podczas gdy Ty płacisz stawkę za całą strukturę i biuro."
+    },
+    {
+      title: "Przerost formy nad treścią",
+      desc: "Tworzenie przeładowanych, ociężałych systemów tylko po to, by wystawić fakturę za większą liczbę przepracowanych godzin."
+    },
+    {
+      title: "Brak odpowiedzialności za zysk",
+      desc: "Agencja dowozi kod, a nie Twój sukces biznesowy. Kiedy system nie zarabia, problem zostaje po Twojej stronie."
+    }
+  ]
 }
 
 export const mechanism = {
-  title: "Przewaga technologiczna: Dlaczego Twój nowy system nigdy nie zwolni?",
-  subtitle:
-    "Nie używam szablonów. Projektuję solidne rozwiązania dostosowane do Twoich potrzeb.",
+  title: "Jak krok po kroku budujemy dedykowany system dla Twojej firmy?",
+  subtitle: "Proces współpracy jest przejrzysty, podzielony na bezpieczne etapy i uwolniony od agencjonalnej biurokracji:",
   cards: [
     {
-      title: "Błyskawiczne działanie bez spowolnień",
+      title: "1. Bezpłatna Diagnoza i Analiza Celów",
       subtitle: "",
-      content:
-        "Podczas gdy standardowe systemy agencji zaczynają się zawieszać przy większej liczbie klientów, moje rozwiązania wykorzystują inteligentne odświeżanie danych. System aktualizuje tylko ten mikroskopijny ułamek informacji, który tego wymaga, zamiast przeładowywać całą stronę. Efekt? Natychmiastowe ładowanie i stabilność podczas największego ruchu.",
+      content: "Rozmawiamy o Twoich procesach, wyzwaniach i celach biznesowych. Sprawdzamy, jakie rozwiązanie przyniesie najszybszy zwrot z inwestycji."
     },
     {
-      title: "Bezpieczny i płynny przepływ informacji",
+      title: "2. Szybka Wersja Startowa (Pierwszy etap w 30 dni)",
       subtitle: "",
-      content:
-        "Skomplikowane procesy w firmie (jak jednoczesne wystawianie faktur, automatyczna aktualizacja magazynu i obsługa klienta) wymagają idealnej kontroli. Projektuję bezpieczne strumienie wymiany danych, dzięki którym informacje w Twojej firmie przepływają w czasie rzeczywistym, eliminując ryzyko utraty zamówień czy przestojów.",
-      linkText:
-        "Przeczytaj więcej o tym, jak przenoszę bezpieczeństwo i architekturę klasy bankowej bezpośrednio do Twojego biznesu.",
-      linkUrl: "/bezpieczenstwo-klasy-bankowej",
+      content: "Zamiast czekać pół roku na cały system, budujemy kluczową funkcjonalność w miesiąc, byś mógł zacząć testować ją z klientami."
     },
     {
-      title: "Elastyczny fundament pod przyszły rozwój",
+      title: "3. Płatność etapowa za efekty",
       subtitle: "",
-      content:
-        'Buduję systemy w sposób modułowy z jednego, silnego rdzenia. Dzięki modułowej konstrukcji, dodawanie nowych funkcji lub <a href="/naprawa-i-modernizacja-aplikacji">modernizacja oprogramowania IT</a> w przyszłości jest tania i bezpieczna. Rozbudujemy system szybko, oszczędzając nawet do 40% budżetu w stosunku do agencji.',
+      content: "Projekt dzielimy na krótkie etapy. Płacisz za dany moduł dopiero wtedy, gdy zobaczysz go na ekranie i upewnisz się, że działa bez zarzutu."
     },
-  ],
+    {
+      title: "4. Wdrożenie i Asysta",
+      subtitle: "",
+      content: "Uruchamiamy system bez przerw w działaniu firmy i otaczamy go 3-miesięczną bezpłatną opieką powdrożeniową."
+    }
+  ]
 }
 
 export const funnel = {
@@ -74,34 +93,26 @@ export const funnel = {
 }
 
 export const contrast = {
-  title:
-    "Bezpośrednia współpraca z niezależnym partnerem technologicznym vs tradycyjna agencja – gdzie inwestujesz swój budżet?",
-  tableHeaders: ["Cecha projektu", "Tradycyjna agencja", "Współpraca ze mną"],
-  rows: [
+  title: "Nowa jakość tworzenia oprogramowania dla biznesu",
+  subtitle: "Zamiast finansować cudzą administrację i biura, inwestujesz 100% budżetu bezpośrednio w jakość i wydajność swojego systemu.",
+  red_ocean_title: "Tradycyjna Agencja / Software House",
+  blue_ocean_title: "Model Bezpośredniego Partnerstwa (Ze mną)",
+  comparisons: [
     {
-      feature: "Struktura kosztów",
-      traditional:
-        "Połowa budżetu idzie na administrację, biura i marże pośredników.",
-      elite:
-        "100% Twojego budżetu inwestowane jest bezpośrednio w stabilny system.",
+      red: { title: "Długi łańcuch pośredników", desc: "Handlowiec, Kierownik, Analityk" },
+      blue: { title: "Bezpośredni kontakt", desc: "Z głównym twórcą systemu" },
     },
     {
-      feature: "Komunikacja",
-      traditional: "Chaos informacyjny i armia pośredników.",
-      elite:
-        "Bezpośredni dialog: Rozmawiasz z osobą, która projektuje i wdraża system.",
+      red: { title: "Płacenie za armię ludzi", desc: "I utrzymanie biurowca" },
+      blue: { title: "100% budżetu", desc: "Inwestowane w kod i funkcjonalność" },
     },
     {
-      feature: "Kto tworzy system?",
-      traditional: "Początkujący pracownicy, by agencja cięła koszty.",
-      elite: "Główny inżynier: 100% prac tworzy doświadczony ekspert.",
+      red: { title: "Zmienni, często początkujący", desc: "Programiści z rotującego zespołu" },
+      blue: { title: "Wieloletnie doświadczenie", desc: "Korporacyjne i bankowe zaplecze inżynieryjne" },
     },
     {
-      feature: "Rozwój po czasie",
-      traditional:
-        "Szybkie wdrożenie, które często wymaga kosztownego przepisywania od nowa.",
-      elite:
-        "Solidna, modułowa konstrukcja pozwalająca na łatwą i tanią rozbudowę.",
+      red: { title: "Ryzyko opóźnień", desc: "I skomplikowana biurokracja korporacyjna" },
+      blue: { title: "Szybkie decyzje", desc: "I ewolucyjne wdrożenia bez przestojów" },
     },
   ],
 }
@@ -109,51 +120,63 @@ export const contrast = {
 export const faq = {
   title: "Najczęściej Zadawane Pytania",
   subtitle:
-    "Rozwiewam wątpliwości dotyczące budowy skalowalnych systemów biznesowych.",
+    "Decyzja o wdrożeniu nowego oprogramowania szytego na miarę i wybór partnera technologicznego rodzą wiele ważnych pytań. Oto jasne odpowiedzi na kwestie, które najczęściej poruszają właściciele firm przed rozpoczęciem współpracy:",
   items: [
     {
-      q: "Jakie dedykowane aplikacje internetowe dla firm najczęściej budujesz?",
-      a: "Projektuję i wdrażam zaawansowane aplikacje internetowe dla firm, które automatyzują codzienne procesy operacyjne. Najczęściej są to systemy zarządzania relacjami z klientami, dedykowane platformy zamówień hurtowych z automatycznym wyliczaniem marż oraz systemy elektronicznego obiegu dokumentów. Gdy produkt pilotażowy zostanie sprawdzony, rozbudowujemy go w oparciu o rzeczywiste dane biznesowe. Każde rozwiązanie jest w 100% dostosowane do unikalnego sposobu działania Twojego przedsiębiorstwa, co eliminuje konieczność ręcznego przepisywania danych przez pracowników.",
+      q: "Ile trwa stworzenie dedykowanej aplikacji dla firmy?",
+      a: "Kluczową wersję systemu (pozwalającą na start sprzedaży i testy na rynku) wdrażamy w zaledwie 30 dni. Dalszy rozwój i kolejne moduły dodajemy ewolucyjnie w krótkich, 2-tygodniowych etapach."
     },
     {
-      q: "Czy nowoczesna aplikacja internetowa dla firmy może działać bez dostępu do sieci?",
-      a: "Tak. Wdrażam specjalne mechanizmy, dzięki którym dedykowane aplikacje internetowe dla firm mogą bez przeszkód realizować swoje funkcje nawet przy całkowitym braku zasięgu lub awarii sieci. Wszelkie operacje i dane zapisują się bezpiecznie bezpośrednio na urządzeniu użytkownika (np. na tablecie kuriera czy handlowca w terenie), a gdy połączenie zostanie przywrócone, system automatycznie i bezinwazyjnie synchronizuje dane z główną bazą.",
+      q: "Czy muszę dokładnie wiedzieć, jak ma wyglądać system od strony technicznej?",
+      a: "Nie. Ty znasz swój biznes i procesy, które chcesz usprawnić – ja tłumaczę je na bezpieczną technologię i projektuję architekturę systemu od A do Z."
     },
     {
-      q: "Czym różnią się customowe aplikacje internetowe od gotowych systemów abonamentowych?",
-      a: "Gotowe oprogramowanie pudełkowe lub abonamentowe zmusza Twoją firmę do dostosowania procesów do sztywnych ram programu. Z kolei dedykowane aplikacje internetowe dla firm są projektowane dokładnie odwrotnie – to system dopasowuje się do Twoich wypracowanych przewag rynkowych. Customowe rozwiązanie eliminuje comiesięczne opłaty licencyjne za każdego użytkownika i staje się trwałym, bezpiecznym majątkiem Twojego przedsiębiorstwa, gotowym na tanią rozbudowę w przyszłości.",
-    },
-    {
-      q: "Jak dbasz o bezpieczeństwo danych w aplikacjach internetowych dla przedsiębiorstw?",
-      a: "Jako inżynier z wieloletnim doświadczeniem w sektorze bankowym (m.in. Citibank, BNP Paribas), przenoszę rygorystyczne procedury ochrony danych bezpośrednio do sektora małych i średnich firm. Tworzone przeze mnie aplikacje internetowe dla firm posiadają zaawansowane systemy szyfrowania, wielopoziomowe uprawnienia dostępu dla pracowników oraz architekturę gwarantującą bezwzględną stabilność oprogramowania pod skokowym, bardzo dużym obciążeniem sprzedażowym.",
-    },
-    {
-      q: "Jak rozpocząć projektowanie aplikacji internetowej dla mojej firmy?",
-      a: "Cały proces eliminuje ryzyko tzw. głuchego telefonu. Współpracując ze mną, rozmawiasz bezpośrednio z autorem kodu, a nie z pośrednikami czy menedżerami. Pierwszym krokiem jest zawsze bezpłatna konsultacja strategiczna, podczas której analizujemy wąskie gardła w Twoim biznesie. Na tej podstawie otrzymujesz ode mnie spersonalizowany Plan Rozwoju IT oraz dokładną wycenę inwestycji, bez ukrytych opłat i marż agencji.",
-    },
-  ],
+      q: "Czym różni się Twoje podejście od pracy z dużą agencją?",
+      a: "U mnie nie płacisz za utrzymanie biura handlowego, menedżerów i pośredników. Rozmawiasz bezpośrednio z twórcą oprogramowania, dzięki czemu eliminujemy błędy komunikacyjne, a 100% Twojego budżetu idzie w czystą jakość kodu."
+    }
+  ]
 }
 
 export const offer = {
-  title:
-    "Zbuduj przewagę technologiczną swojej firmy. Zacznij od bezpiecznego planu.",
+  title: "Przestań tracić czas na niesprawdzone rozwiązania. Zbudujmy system, który realnie zarabia.",
   subtitle:
-    "Nie kupuj kota w worku i nie ryzykuj budżetu na bazie niejasnych wycen agencji. Zarezerwuj termin na bezpłatną konsultację strategiczną.",
-  packetTitle: "Kompletny Pakiet Doradczy",
+    "Ze względu na bezpośredni model współpracy i dbałość o najwyższą jakość, <strong class='text-white font-semibold'>współpracuję jednocześnie z maksymalnie 2 firmami</strong>. Zarezerwuj bezpłatną rozmowę, zanim wolne miejsca w tym kwartale zostaną zajęte.",
+  packetTitle: "Odbierz Bezpłatną Mapę Drogową Rozwoju IT",
   packetVal: "(Wartość 600 zł – Dziś za 0 zł)",
   benefits: [
     {
-      title: "30-minutowa diagnoza procesów (Wartość: 300 zł)",
-      desc: "Znajdziemy wąskie gardła operacyjne, które hamują rozwój i pożerają Twój budżet.",
+      title: "30-minutowa diagnoza podczas rozmowy wideo",
+      desc: "",
     },
     {
-      title: "Indywidualny Plan Działania (Wartość: 200 zł)",
-      desc: "Otrzymasz jasną, najszybszą i najtańszą ścieżkę wdrożenia systemu lub stworzenia wersji pilotażowej.",
+      title: "Indywidualny Plan Wdrożenia systemu w 30 dni",
+      desc: "",
     },
     {
-      title: "Bankowy Test Bezpieczeństwa (Wartość: 100 zł)",
-      desc: "Prześwietlę Twój pomysł pod kątem rygorystycznych standardów ochrony danych, jakich wymagałem jako niezależny partner technologiczny w międzynarodowych instytucjach finansowych.",
+      title: "Bankowy Test Bezpieczeństwa Informacji",
+      desc: "",
     },
   ],
-  cta: "Zarezerwuj darmową diagnozę i odbierz pakiet",
+  cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ",
+  footer: "(W ramach programu zostały tylko <strong class='text-white font-semibold'>2 wolne miejsca</strong>)",
+}
+
+export const guarantee = {
+  badge: "Gwarancje i Bezpieczeństwo",
+  title: "Zdejmuję z Twoich barków 100% ryzyka wykonawczego",
+  subtitle: "Wiem, że powierzenie stworzenia oprogramowania nowemu partnerowi wymaga zaufania. Dlatego zasady współpracy są uczciwe i bezpieczne:",
+  items: [
+    {
+      title: "Płatność po pokazaniu efektów",
+      desc: "Płacisz za etap dopiero po jego ukończeniu i akceptacji. Zero wielkich zaliczek w ciemno."
+    },
+    {
+      title: "Standardy bankowe",
+      desc: "Bezpieczeństwo danych przetestowane w projektach dla instytucji takich jak Citibank czy BNP Paribas."
+    },
+    {
+      title: "Przejrzystość kodu",
+      desc: "Tworzę system w oparciu o uniwersalne, światowe standardy. Kod jest w pełni udokumentowany – nie uzależniam Cię od swojej osoby."
+    }
+  ]
 }

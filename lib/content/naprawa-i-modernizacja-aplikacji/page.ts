@@ -158,7 +158,8 @@ export const faq = {
 
 export const offer = {
   title: "Przestań tracić klientów przez wolny system. Zdiagnozujmy go za darmo.",
-  subtitle: "Nie czekaj, aż kolejna awaria zatrzyma Twoją sprzedaż. Porozmawiajmy o tym, jak w prosty i bezpieczny sposób przywrócić Twojej aplikacji najwyższą wydajność.",
+  subtitle:
+    "Ze względu na bezpośredni model współpracy i dbałość o najwyższą jakość, <strong class='text-white font-semibold'>współpracuję jednocześnie z maksymalnie 2 firmami</strong>. Zarezerwuj bezpłatną rozmowę, zanim wolne miejsca w tym kwartale zostaną zajęte.",
   packetTitle: "Odbierz Bezpłatny Audyt Modernizacyjny",
   packetVal: "(Wartość 600 zł – Dziś za 0 zł)",
   benefits: [
@@ -176,5 +177,5 @@ export const offer = {
     },
   ],
   cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ SYSTEMU",
-  footer: "W tym miesiącu mogę przyjąć do modernizacji maksymalnie 2 firmy",
+  footer: "W tym miesiącu mogę przyjąć do modernizacji <strong class='text-white font-semibold'>maksymalnie 2 firmy</strong>",
 }

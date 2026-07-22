@@ -340,9 +340,7 @@ export default function DoradztwoTechnicznePage() {
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight max-w-3xl mx-auto">
               {offer.title}
             </h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg">
-              {offer.subtitle}
-            </p>
+            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg" dangerouslySetInnerHTML={{ __html: offer.subtitle }} />
           </div>
 
           {/* Ozdobny pakiet wartościowy - Mobile First */}
@@ -390,9 +388,7 @@ export default function DoradztwoTechnicznePage() {
                 <ArrowRight className="h-4 w-4 shrink-0" />
               </Button>
             </a>
-            <p className="mt-4 text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold text-center">
-              {offer.footer}
-            </p>
+            <p className="mt-4 text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold text-center" dangerouslySetInnerHTML={{ __html: offer.footer }} />
           </div>
         </div>
       </section>
