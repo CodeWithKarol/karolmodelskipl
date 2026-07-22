@@ -5,6 +5,14 @@ import Link from "next/link"
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react"
 import { header } from "@/lib/content/header"
 import { Button } from "@/components/ui/button"
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu"
 
 export function SiteHeader() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -35,36 +43,51 @@ export function SiteHeader() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden items-center gap-1 md:flex">
-              <div className="relative group">
-                <button className="flex h-8 items-center gap-1 rounded-full px-3 text-[13px] font-medium text-slate-400 transition-colors hover:bg-slate-800/50 hover:text-slate-100">
-                  {header.menu.oferta.title}
-                  <ChevronDown className="h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
-                </button>
-                <div className="absolute top-full left-0 mt-2 hidden w-[320px] flex-col gap-1 rounded-2xl border border-slate-800 bg-slate-950 p-2 shadow-2xl backdrop-blur-xl group-hover:flex">
-                  {header.menu.oferta.items.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="flex flex-col gap-1 rounded-xl p-3 text-left transition-colors hover:bg-slate-800/50"
-                    >
-                      <span className="text-[14px] font-semibold text-slate-200 hover:text-white">
-                        {item.title}
-                      </span>
-                      <span className="text-[12px] leading-relaxed text-slate-400 font-light">
-                        {item.description}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
+            <div className="hidden items-center md:flex">
+              <NavigationMenu>
+                <NavigationMenuList className="gap-1">
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="h-8 rounded-full px-3 text-[13px] font-medium text-slate-400 hover:bg-slate-800/50 hover:text-slate-100 data-open:bg-slate-800/50 data-open:text-slate-100 data-popup-open:bg-slate-800/50 data-popup-open:text-slate-100 bg-transparent">
+                      {header.menu.oferta.title}
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent className="p-1">
+                      <div className="flex w-[320px] flex-col gap-1 p-1">
+                        {header.menu.oferta.items.map((item) => (
+                          <NavigationMenuLink
+                            key={item.href}
+                            render={
+                              <Link
+                                href={item.href}
+                                className="group/item flex flex-col items-start gap-1 rounded-xl p-3 text-left transition-colors hover:bg-slate-800/50 focus:bg-slate-800/50"
+                              >
+                                <span className="text-[14px] font-semibold text-slate-200 group-hover/item:text-white transition-colors">
+                                  {item.title}
+                                </span>
+                                <span className="text-[12px] leading-relaxed text-slate-400 font-light">
+                                  {item.description}
+                                </span>
+                              </Link>
+                            }
+                          />
+                        ))}
+                      </div>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
 
-              <Link
-                href={header.menu.blog.href}
-                className="flex h-8 items-center rounded-full px-3 text-[13px] font-medium text-slate-400 transition-colors hover:bg-slate-800/50 hover:text-slate-100"
-              >
-                {header.menu.blog.title}
-              </Link>
+                  <NavigationMenuItem>
+                    <NavigationMenuLink
+                      render={
+                        <Link
+                          href={header.menu.blog.href}
+                          className="flex h-8 items-center rounded-full px-3 text-[13px] font-medium text-slate-400 transition-colors hover:bg-slate-800/50 hover:text-slate-100"
+                        >
+                          {header.menu.blog.title}
+                        </Link>
+                      }
+                    />
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
             </div>
           </div>
 
@@ -107,7 +130,7 @@ export function SiteHeader() {
 
               {isOfferOpen && (
                 <div className="flex flex-col gap-3 pl-4 pt-2 border-l border-blue-500/30 animate-in slide-in-from-top-2 duration-200">
-                  {header.menu.oferta.items.map((item, idx) => (
+                  {header.menu.oferta.items.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
