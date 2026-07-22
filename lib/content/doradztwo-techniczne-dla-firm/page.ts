@@ -145,7 +145,8 @@ export const faq = {
 
 export const offer = {
   title: "Zadbaj o bezpieczną przyszłość technologiczną swojej firmy.",
-  subtitle: "Przestań ryzykować budżetem i opierać rozwój firmy na przypadkowych decyzjach technologicznych. Porozmawiajmy o tym, jak uporządkować infrastrukturę IT w Twoim biznesie.",
+  subtitle:
+    "Ze względu na bezpośredni model współpracy i dbałość o najwyższą jakość, <strong class='text-white font-semibold'>współpracuję jednocześnie z maksymalnie 2 firmami</strong>. Zarezerwuj bezpłatną rozmowę, zanim wolne miejsca w tym kwartale zostaną zajęte.",
   packetTitle: "Odbierz Bezpłatną Strategię Cyfrową i Mapę Drogową",
   packetVal: "(Wartość 600 zł – Dziś za 0 zł)",
   benefits: [
@@ -163,5 +164,5 @@ export const offer = {
     },
   ],
   cta: "ZAREZERWUJ BEZPŁATNĄ STRATEGIĘ CYFROWĄ",
-  footer: "W tym miesiącu mogę przyjąć do stałego doradztwa strategicznego maksymalnie 2 nowe firmy",
+  footer: "W tym miesiącu mogę przyjąć do stałego doradztwa strategicznego <strong class='text-white font-semibold'>maksymalnie 2 nowe firmy</strong>",
 }

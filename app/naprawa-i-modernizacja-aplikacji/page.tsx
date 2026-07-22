@@ -299,7 +299,7 @@ export default function ModernizacjaOprogramowaniaPage() {
               <CalendarDays className="h-6 w-6" />
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">{offer.title}</h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg">{offer.subtitle}</p>
+            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg" dangerouslySetInnerHTML={{ __html: offer.subtitle }} />
           </div>
           <div className="mx-auto mb-12 w-full max-w-2xl bg-slate-900/40 border border-slate-800 p-6 sm:p-10 rounded-3xl text-left">
             <h3 className="mb-8 text-center text-lg sm:text-xl font-bold text-white border-b border-slate-800 pb-6">{offer.packetTitle} <span className="block sm:inline mt-2 sm:mt-0 sm:ml-2 text-blue-400 text-sm font-normal">{offer.packetVal}</span></h3>
@@ -323,7 +323,7 @@ export default function ModernizacjaOprogramowaniaPage() {
                 <ArrowRight className="h-4 w-4 shrink-0" />
               </Button>
             </a>
-            <p className="mt-4 text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold text-center">{offer.footer}</p>
+            <p className="mt-4 text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold text-center" dangerouslySetInnerHTML={{ __html: offer.footer }} />
           </div>
         </div>
       </section>

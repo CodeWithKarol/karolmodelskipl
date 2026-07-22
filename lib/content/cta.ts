@@ -2,7 +2,7 @@ export const cta = {
   title_part1: "Przestań przepalać budżet na biurokrację.",
   title_highlight: "Zbudujmy technologię, która realnie zwiększa zyski.",
   subtitle:
-    "Ze względu na to, że nie prowadzę masowej fabryki oprogramowania i biorę pełną, osobistą odpowiedzialność za jakość, współpracuję jednocześnie z maksymalnie 2 firmami. Dbam o gęstość wartości, a nie o ilość zleceń.",
+    "Ze względu na to, że nie prowadzę masowej fabryki oprogramowania i biorę pełną, osobistą odpowiedzialność za jakość, <strong class='text-white font-semibold'>współpracuję jednocześnie z maksymalnie 2 firmami</strong>. Dbam o gęstość wartości, a nie o ilość zleceń.",
   meeting_intro:
     "Porozmawiajmy bez zobowiązań. Sprawdźmy, czy w Twoim biznesie są obszary, które możemy szybko usprawnić.",
   meeting_bullets_title:
