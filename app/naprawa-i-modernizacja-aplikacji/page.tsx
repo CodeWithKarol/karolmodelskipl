@@ -149,7 +149,7 @@ export default function ModernizacjaOprogramowaniaPage() {
               Zarezerwuj bezpłatną, 30-minutową diagnozę techniczną. Sprawdzę Twój obecny kod i wskażę miejsca, w których uciekają zyski.
             </p>
             <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
-              <Button size="lg" className="w-full py-6 text-sm font-bold rounded-xl bg-blue-600 hover:bg-blue-700 shadow-lg">{hero.cta}</Button>
+              <Button size="lg" className="w-full py-5 sm:py-6 text-xs sm:text-sm font-bold rounded-xl bg-blue-600 hover:bg-blue-700 shadow-lg whitespace-normal h-auto leading-tight">{hero.cta}</Button>
             </a>
             <p className="text-[10px] sm:text-xs text-slate-500 mt-4 uppercase tracking-widest font-semibold">{hero.footnote}</p>
           </div>
