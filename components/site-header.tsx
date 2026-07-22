@@ -94,71 +94,72 @@ export function SiteHeader() {
                   <span className="sr-only">Otwórz menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent
-                side="top"
-                className="border-b border-slate-800 bg-slate-950/95 p-6 backdrop-blur-xl"
-              >
-                <SheetHeader className="mb-6 text-left">
-                  <SheetTitle className="text-lg font-bold text-slate-200">
-                    {header.menu.mobile.title}
-                  </SheetTitle>
-                  <SheetDescription className="text-xs text-slate-500">
-                    {header.menu.mobile.description}
-                  </SheetDescription>
-                </SheetHeader>
-                <div className="flex flex-col gap-2">
-                  {header.menu.oferta.items.map((item) => (
-                    <SheetClose asChild key={item.href}>
+                <SheetContent
+                  side="top"
+                  showCloseButton={true}
+                  className="max-h-[90vh] overflow-y-auto border-b border-slate-800 bg-slate-950/95 p-4 sm:p-6 backdrop-blur-xl"
+                >
+                  <SheetHeader className="mb-3 text-left">
+                    <SheetTitle className="text-base font-bold text-slate-200">
+                      {header.menu.mobile.title}
+                    </SheetTitle>
+                    <SheetDescription className="text-xs text-slate-500">
+                      {header.menu.mobile.description}
+                    </SheetDescription>
+                  </SheetHeader>
+                  <div className="flex flex-col gap-1 pb-2">
+                    {header.menu.oferta.items.map((item) => (
+                      <SheetClose asChild key={item.href}>
+                        <Link
+                          href={item.href}
+                          className="group flex flex-col gap-0.5 rounded-lg p-2.5 transition-colors hover:bg-slate-800/30 text-left"
+                        >
+                          <div className="flex items-center justify-between text-[13px] font-semibold text-slate-200 group-hover:text-white">
+                            <span className="text-left">{item.title}</span>
+                            <ChevronRight className="h-3.5 w-3.5 text-slate-500 transition-colors group-hover:text-white shrink-0" />
+                          </div>
+                          <span className="text-[11px] text-slate-500 transition-colors group-hover:text-slate-400 text-left line-clamp-1">
+                            {item.description}
+                          </span>
+                        </Link>
+                      </SheetClose>
+                    ))}
+
+                    <div className="my-1.5 h-[1px] w-full bg-slate-800/50" />
+
+                    <SheetClose asChild>
                       <Link
-                        href={item.href}
-                        className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
+                        href={header.cta.href}
+                        className="group flex flex-col gap-0.5 rounded-lg bg-blue-600/10 p-2.5 transition-colors hover:bg-blue-600/20 text-left"
                       >
-                        <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
-                          <span>{item.title}</span>
-                          <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
+                        <div className="flex items-center justify-between text-[13px] font-bold text-blue-400 group-hover:text-blue-300">
+                          <span className="text-left">{header.cta.title}</span>
+                          <ChevronRight className="h-3.5 w-3.5 text-blue-400 shrink-0" />
                         </div>
-                        <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
-                          {item.description}
+                        <span className="text-[11px] text-slate-400 text-left line-clamp-1">
+                          {header.cta.description}
                         </span>
                       </Link>
                     </SheetClose>
-                  ))}
 
-                  <div className="my-2 h-[1px] w-full bg-slate-800/50" />
+                    <div className="my-1.5 h-[1px] w-full bg-slate-800/50" />
 
-                  <SheetClose asChild>
-                    <Link
-                      href={header.cta.href}
-                      className="group flex flex-col gap-1 rounded-lg bg-blue-600/10 p-3 transition-colors hover:bg-blue-600/20"
-                    >
-                      <div className="flex items-center justify-between text-[14px] font-bold text-blue-400 transition-colors group-hover:text-blue-300">
-                        <span>{header.cta.title}</span>
-                        <ChevronRight className="h-4 w-4 text-blue-400 transition-colors group-hover:text-blue-300" />
-                      </div>
-                      <span className="text-[13px] text-slate-400 transition-colors group-hover:text-slate-300">
-                        {header.cta.description}
-                      </span>
-                    </Link>
-                  </SheetClose>
-
-                  <div className="my-2 h-[1px] w-full bg-slate-800/50" />
-
-                  <SheetClose asChild>
-                    <Link
-                      href={header.menu.blog.href}
-                      className="group flex flex-col gap-1 rounded-lg p-3 transition-colors hover:bg-slate-800/30"
-                    >
-                      <div className="flex items-center justify-between text-[14px] font-medium text-slate-300 transition-colors group-hover:text-white">
-                        <span>{header.menu.blog.title}</span>
-                        <ChevronRight className="h-4 w-4 text-slate-500 transition-colors group-hover:text-white" />
-                      </div>
-                      <span className="text-[13px] text-slate-500 transition-colors group-hover:text-slate-400">
-                        {header.menu.blog.description}
-                      </span>
-                    </Link>
-                  </SheetClose>
-                </div>
-              </SheetContent>
+                    <SheetClose asChild>
+                      <Link
+                        href={header.menu.blog.href}
+                        className="group flex flex-col gap-0.5 rounded-lg p-2.5 transition-colors hover:bg-slate-800/30 text-left"
+                      >
+                        <div className="flex items-center justify-between text-[13px] font-semibold text-slate-200 group-hover:text-white">
+                          <span className="text-left">{header.menu.blog.title}</span>
+                          <ChevronRight className="h-3.5 w-3.5 text-slate-500 transition-colors group-hover:text-white shrink-0" />
+                        </div>
+                        <span className="text-[11px] text-slate-500 transition-colors group-hover:text-slate-400 text-left line-clamp-1">
+                          {header.menu.blog.description}
+                        </span>
+                      </Link>
+                    </SheetClose>
+                  </div>
+                </SheetContent>
             </Sheet>
           </div>
         </div>
