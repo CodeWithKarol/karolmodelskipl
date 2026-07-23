@@ -23,7 +23,7 @@ export const contrast = {
     },
     {
       red: { title: "Doświadczenie wykonawcy", desc: "Zmienni, często początkujący programiści" },
-      blue: { title: "Doświadczenie wykonawcy", desc: "Jeden doświadczony Główny Architekt" },
+       blue: { title: "Doświadczenie wykonawcy", desc: "Jeden doświadczony Niezależny Partner Technologiczny" },
     },
   ],
 }

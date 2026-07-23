@@ -26,7 +26,7 @@ export const hero = {
 export const story = {
   title: "Dlaczego właściciele rozwijających się firm przepłacają za oprogramowanie?",
   intro: "Większość małych i średnich firm nie ma własnego, doświadczonego dyrektora technologicznego. Kiedy pojawia się potrzeba stworzenia systemu, właściciel zdany jest na słowo agencji programistycznej, która często sprzedaje rozwiązania najdroższe dla siebie, a nie najkorzystniejsze dla klienta.",
-  context: "Jeśli doświadczasz poniższych sytuacji, Twój biznes potrzebuje stałego wsparcia architektonicznego:",
+   context: "Jeśli doświadczasz poniższych sytuacji, Twój biznes potrzebuje stałego wsparcia niezależnego partnera technologicznego:",
   points: [
     {
       title: "Agencja przesyła niezrozumiałe wyceny",
@@ -59,7 +59,7 @@ export const contrast = {
     },
     {
       red: { title: "Chaos technologiczny", desc: "Każdy moduł pisany jest w innej technologii bez spójnej wizji." },
-      blue: { title: "Spójna architektura", desc: "Jeden bezpieczny standard dopasowany do celów biznesowych na lata." },
+      blue: { title: "Spójne podejście", desc: "Jeden bezpieczny standard dopasowany do celów biznesowych na lata." },
     },
     {
       red: { title: "Ryzyko awarii i błędów", desc: "Systemy sypią się przy wzroście liczby klientów i transakcji." },
@@ -78,7 +78,7 @@ export const mechanism = {
       content: "Rozmawiamy o planach Twojej firmy, obecnych problemach technologicznych i kierunku, w którym chcesz skalować biznes."
     },
     {
-      title: "2. Audyt Architektury i Bezpieczeństwa",
+       title: "2. Audyt Systemu i Bezpieczeństwa",
       subtitle: "",
       content: "Sprawdzam stan obecnych systemów, weryfikuję umowy z dotychczasowymi dostawcami i wykrywam ukryte ryzyka."
     },
@@ -102,7 +102,7 @@ export const mechanism = {
 
 export const guarantee = {
   badge: "Gwarancje i Rygor Bankowy",
-  title: "Architektura oparta na zaufaniu i korporacyjnych standardach",
+   title: "Rozwiązania oparte na zaufaniu i korporacyjnych standardach",
   subtitle: "Doradztwo strategiczne dotyka najważniejszych fundamentów Twojego przedsiębiorstwa. Dlatego zasady współpracy są jasne i bezkompromisowe:",
   items: [
     {
@@ -152,7 +152,7 @@ export const offer = {
   benefits: [
     {
       title: "30 minut strategicznej rozmowy wideo",
-      desc: "Konsultacja z doświadczonym głównym architektem.",
+      desc: "Konsultacja z doświadczonym niezależnym partnerem technologicznym.",
     },
     {
       title: "Diagnoza luk w obecnych systemach",

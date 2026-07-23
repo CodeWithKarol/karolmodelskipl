@@ -8,7 +8,7 @@ export const trustedBy = {
       name: "Citibank",
       category: "Bankowość Inwestycyjna",
       context:
-        "Architektura systemów bankowości elektronicznej, w której nie ma miejsca na błąd, opóźnienia transakcji czy utratę danych.",
+        "Standardy systemów bankowości elektronicznej, w których nie ma miejsca na błąd, opóźnienia transakcji czy utratę danych.",
     },
     {
       name: "BNP Paribas",

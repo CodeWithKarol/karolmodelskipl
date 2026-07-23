@@ -1,6 +1,6 @@
 export const hero = {
   h1: "Buduję wydajne aplikacje internetowe dla firm, które automatyzują procesy i skalują zyski – bez opóźnień i prowizji agencji.",
-  subheading: "Masz dość „głuchego telefonu” z menedżerami projektów, którzy nie rozumieją Twojego biznesu? Jako niezależny partner technologiczny z doświadczeniem w największych instytucjach bankowych (Citibank, BNP Paribas), wdrażam rozwiązania klasy korporacyjnej w tempie, którego nie oferuje żaden software house. Otrzymujesz bezpośredni dostęp do głównego architekta, pełną odpowiedzialność za system i gwarancję, że budujemy to, co realnie przynosi pieniądze.",
+   subheading: "Masz dość „głuchego telefonu” z menedżerami projektów, którzy nie rozumieją Twojego biznesu? Jako niezależny partner technologiczny z doświadczeniem w największych instytucjach bankowych (Citibank, BNP Paribas), wdrażam rozwiązania klasy korporacyjnej w tempie, którego nie oferuje żaden software house. Otrzymujesz bezpośredni dostęp do niezależnego partnera technologicznego, pełną odpowiedzialność za system i gwarancję, że budujemy to, co realnie przynosi pieniądze.",
   
   indicators: [
     { title: "100% budżetu w jakość", desc: "Nie opłacasz mojego biura, rekruterów ani działu handlowego. Płacisz wyłącznie za bezpieczną i wydajną strukturę Twojego systemu." },

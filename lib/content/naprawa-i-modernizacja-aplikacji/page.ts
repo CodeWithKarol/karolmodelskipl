@@ -46,7 +46,7 @@ export const hero = {
 export const story = {
   title: "Jak dług technologiczny powoli wyciąga pieniądze z Twojej firmy?",
   intro: "Gdy zaczynałeś, Twój system internetowy był wystarczający. Jednak w miarę rozwoju firmy, dodawania nowych funkcji i obsługi większej liczby klientów, w kodzie pojawia się tzw. dług technologiczny.",
-  context: "Jeśli obserwujesz u siebie poniższe objawy, Twój system potrzebuje pilnej interwencji architekta:",
+   context: "Jeśli obserwujesz u siebie poniższe objawy, Twój system potrzebuje pilnej interwencji niezależnego partnera technologicznego:",
   points: [
     {
       title: "Aplikacja działa coraz wolniej",
@@ -150,7 +150,7 @@ export const faq = {
       a: "Nie. Wszystkie prace wykonuję w oparciu o uniwersalne, światowe standardy tworzenia oprogramowania, przetestowane w bankowości. Cała struktura jest przejrzysta, uporządkowana i posiada pełną instrukcję. Oznacza to, że w dowolnym momencie każdy inny doświadczony specjalista na rynku bez problemu przejmie opiekę nad Twoim systemem."
     },
     {
-      q: "Czym różni się współpraca z niezależnym architektem od pracy z dużą agencją?",
+       q: "Czym różni się współpraca z niezależnym partnerem technologicznym od pracy z dużą agencją?",
       a: "W agencji płacisz za całą strukturę administracyjną (biuro, kierowników, handlowców) i rozmawiasz z pośrednikami, podczas gdy Twój projekt często wykonują początkujące osoby. U mnie rozmawiasz bezpośrednio z ekspertem, który osobiscie projektuje i naprawia Twój system. 100% Twojego budżetu trafia w jakość oprogramowania, a decyzje zapadają natychmiast, bez zbędnej biurokracji."
     }
   ]

@@ -18,7 +18,7 @@ export const offer = {
       href: "/projektowanie-mvp"
     },
     {
-      title: "4. Doradztwo Strategiczne i Architektura Cyfrowa",
+      title: "4. Doradztwo Strategiczne i Niezależny Partner Technologiczny",
       desc: "Potrzebujesz doświadczonego partnera technologicznego na wyciągnięcie ręki? Przekładam skomplikowane wymogi biznesowe na proste, bezpieczne i trwałe decyzje techniczne.",
       href: "/doradztwo-techniczne-dla-firm"
     }
