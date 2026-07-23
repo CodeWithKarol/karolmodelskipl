@@ -1,7 +1,7 @@
 ---
 title: "Jak zrobić aplikację ze strony internetowej? Dlaczego „zamiana” to nie jest tylko kopiuj-wklej"
 excerpt: "Wiele firm chce przekształcić swoją stronę w aplikację mobilną. Czy to się opłaca? Kiedy warto to zrobić i jak zrobić to dobrze, by zyskać, a nie stracić?"
-silo: "Technologia w Praktyce"
+silo: "Bezinwazyjna Modernizacja Systemów"
 readingTime: "10 min"
 date: "2026-06-18"
 ---

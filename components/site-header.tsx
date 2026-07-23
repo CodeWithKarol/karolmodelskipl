@@ -17,6 +17,7 @@ import {
 export function SiteHeader() {
   const [isOpen, setIsOpen] = React.useState(false)
   const [isOfferOpen, setIsOfferOpen] = React.useState(false)
+  const [isBlogOpen, setIsBlogOpen] = React.useState(false)
 
   // Blokowanie scrolla tła gdy menu mobilne jest otwarte
   React.useEffect(() => {
@@ -75,16 +76,31 @@ export function SiteHeader() {
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
-                    <NavigationMenuLink
-                      render={
-                        <Link
-                          href={header.menu.blog.href}
-                          className="flex h-8 items-center rounded-full px-3 text-[13px] font-medium text-slate-400 transition-colors hover:bg-slate-800/50 hover:text-slate-100"
-                        >
-                          {header.menu.blog.title}
-                        </Link>
-                      }
-                    />
+                    <NavigationMenuTrigger className="h-8 rounded-full px-3 text-[13px] font-medium text-slate-400 hover:bg-slate-800/50 hover:text-slate-100 data-open:bg-slate-800/50 data-open:text-slate-100 data-popup-open:bg-slate-800/50 data-popup-open:text-slate-100 bg-transparent">
+                      {header.menu.bazaWiedzy.title}
+                    </NavigationMenuTrigger>
+                    <NavigationMenuContent className="p-1">
+                      <div className="flex w-[320px] flex-col gap-1 p-1">
+                        {header.menu.bazaWiedzy.items.map((item) => (
+                          <NavigationMenuLink
+                            key={item.href}
+                            render={
+                              <Link
+                                href={item.href}
+                                className="group/item flex flex-col items-start gap-1 rounded-xl p-3 text-left transition-colors hover:bg-slate-800/50 focus:bg-slate-800/50"
+                              >
+                                <span className="text-[14px] font-semibold text-slate-200 group-hover/item:text-white transition-colors">
+                                  {item.title}
+                                </span>
+                                <span className="text-[12px] leading-relaxed text-slate-400 font-light">
+                                  {item.description}
+                                </span>
+                              </Link>
+                            }
+                          />
+                        ))}
+                      </div>
+                    </NavigationMenuContent>
                   </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
@@ -149,15 +165,36 @@ export function SiteHeader() {
               )}
             </div>
 
-            {/* Baza wiedzy */}
-            <Link
-              href={header.menu.blog.href}
-              onClick={() => setIsOpen(false)}
-              className="flex w-full items-center justify-between text-xl font-extrabold tracking-tight text-white py-2 border-b border-slate-800/80"
-            >
-              <span>{header.menu.blog.title}</span>
-              <ArrowRight className="h-5 w-5 text-slate-500" />
-            </Link>
+            {/* Baza wiedzy rozwijana */}
+            <div className="space-y-3">
+              <button
+                onClick={() => setIsBlogOpen(!isBlogOpen)}
+                className="flex w-full items-center justify-between text-xl font-extrabold tracking-tight text-white py-2 border-b border-slate-800/80"
+              >
+                <span>{header.menu.bazaWiedzy.title}</span>
+                <ChevronDown className={`h-5 w-5 text-blue-400 transition-transform duration-300 ${isBlogOpen ? "rotate-180" : ""}`} />
+              </button>
+
+              {isBlogOpen && (
+                <div className="flex flex-col gap-3 pl-4 pt-2 border-l border-blue-500/30 animate-in slide-in-from-top-2 duration-200">
+                  {header.menu.bazaWiedzy.items.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={() => setIsOpen(false)}
+                      className="flex flex-col gap-0.5 py-1.5 text-left"
+                    >
+                      <span className="text-sm font-semibold text-slate-200 hover:text-blue-400 transition-colors">
+                        {item.title}
+                      </span>
+                      <span className="text-[11px] text-slate-400 font-light line-clamp-1">
+                        {item.description}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
             {/* CTA główny w menu */}
             <div className="pt-6">

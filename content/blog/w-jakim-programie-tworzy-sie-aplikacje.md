@@ -1,7 +1,7 @@
 ---
-title: "W jakim programie tworzy się aplikację? Technologia to warsztat, ale to architekt nadaje jej sens"
-excerpt: "Właściciele firm często pytają 'w jakim programie tworzy się aplikację?'. To jak pytanie architekta 'w jakim programie rysuje pan plany?'. Technologia to tylko warsztat."
-silo: "Technologia w Praktyce"
+title: "W jakim programie tworzyć system dla firmy? Architektura oparta na zaufaniu i standardach"
+excerpt: "Dowiedz się, jak zaplanować strukturę oprogramowania, by uniknąć kosztownego długu technologicznego i móc swobodnie rozwijać biznes przez lata."
+silo: "Strategia i Niezależne Partnerstwo Technologiczne"
 readingTime: "10 min"
 date: "2026-06-18"
 ---
