@@ -28,9 +28,10 @@ export function CtaSection() {
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
             {cta.title_part1} {cta.title_highlight}
           </h2>
-          <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg mb-8">
-            {cta.subtitle}
-          </p>
+          <p
+            className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg mb-8"
+            dangerouslySetInnerHTML={{ __html: cta.subtitle }}
+          />
         </div>
 
         {/* Promise Card - Mobile First */}
@@ -71,7 +72,10 @@ export function CtaSection() {
               <ArrowRight className="h-4 w-4 shrink-0" />
             </Button>
           </a>
-          <p className="mt-4 text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold text-center">{cta.footer}</p>
+          <p
+            className="mt-4 text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold text-center"
+            dangerouslySetInnerHTML={{ __html: cta.footer }}
+          />
         </div>
       </div>
     </section>
