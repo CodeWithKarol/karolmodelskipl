@@ -53,6 +53,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.85,
     },
+    {
+      url: "https://www.karolmodelski.pl/blog/bezinwazyjna-modernizacja-systemow",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: "https://www.karolmodelski.pl/blog/szybka-wersja-startowa",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: "https://www.karolmodelski.pl/blog/aplikacje-dla-firm",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: "https://www.karolmodelski.pl/blog/strategia-it",
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
     ...postEntries,
   ]
 }

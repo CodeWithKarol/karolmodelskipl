@@ -10,7 +10,7 @@ export interface BlogPost {
   title: string
   excerpt: string
   date: string
-  silo: "Fundamenty & Strategia" | "Technologia w Praktyce" | "Case Studies"
+  silo: string
   readingTime: string
   content: string // Markdown content
 }

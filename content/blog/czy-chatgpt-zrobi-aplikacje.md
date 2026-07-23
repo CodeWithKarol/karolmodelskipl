@@ -1,7 +1,7 @@
 ---
 title: "Czy ChatGPT zrobi aplikację? Prawda o używaniu sztucznej inteligencji w budowie cyfrowego biznesu"
 excerpt: "AI to nie magiczna różdżka, która zastąpi architekta. Analizuję, dlaczego użycie ChatGPT do stworzenia aplikacji bez nadzoru eksperta to prosty przepis na dług technologiczny."
-silo: "Technologia w Praktyce"
+silo: "Bezinwazyjna Modernizacja Systemów"
 readingTime: "10 min"
 date: "2026-06-18"
 ---

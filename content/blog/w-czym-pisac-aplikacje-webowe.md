@@ -1,7 +1,7 @@
 ---
-title: "W czym pisać aplikacje webowe? Technologia to nie wybór „na oko” – to decyzja o skali Twojego biznesu"
-excerpt: "Właściciele firm z sektora MŚP często popełniają błąd, traktując wybór technologii jak wybór koloru ścian. To fundament, który decyduje o skalowalności Twojego biznesu."
-silo: "Technologia w Praktyce"
+title: "W czym pisać aplikacje dla firmy? Jak wybrać technologię, która nie zestarzeje się za dwa lata?"
+excerpt: "Przewodnik po wyborze technologii i języków programowania z perspektywy biznesowej. Sprawdź, dlaczego stabilność i uniwersalność są ważniejsze od chwilowych mód na rynku."
+silo: "Strategia i Niezależne Partnerstwo Technologiczne"
 readingTime: "10 min"
 date: "2026-06-18"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Jak wygląda tworzenie aplikacji? Od surowego pomysłu do 'maszyny konwersyjnej'"
 excerpt: "Większość właścicieli firm z sektora MŚP wyobraża sobie, że tworzenie aplikacji to proces niemal magiczny. W rzeczywistości proces ten przypomina budowę autostrady bez wcześniejszego planu zagospodarowania terenu."
-silo: "Fundamenty & Strategia"
+silo: "Bezinwazyjna Modernizacja Systemów"
 readingTime: "10 min"
 date: "2026-06-17"
 ---
