@@ -55,9 +55,9 @@ export function GuaranteeSection({ guarantee: customGuarantee }: GuaranteeSectio
               <div className="mb-3 sm:mb-6 flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-xl border border-slate-700 bg-slate-950 text-emerald-400 group-hover:text-emerald-300 transition-colors">
                 <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />
               </div>
-              <h4 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-emerald-400 transition-colors leading-tight">
+              <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-emerald-400 transition-colors leading-tight">
                 {item.title}
-              </h4>
+              </h3>
               <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">
                 {item.desc}
               </p>

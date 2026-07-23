@@ -141,7 +141,19 @@ export default async function BlogPostPage(props: {
           </header>
 
           <div className="prose prose-sm max-w-none prose-invert sm:prose-lg prose-headings:font-bold prose-headings:text-slate-100 prose-p:leading-relaxed prose-p:text-slate-300 prose-a:text-blue-400 hover:prose-a:text-blue-300 prose-blockquote:rounded-r-lg prose-blockquote:border-l-blue-500 prose-blockquote:bg-slate-900/50 prose-blockquote:px-4 prose-blockquote:py-2 prose-blockquote:font-normal prose-blockquote:text-slate-300 sm:prose-blockquote:px-6 prose-strong:font-bold prose-strong:text-white prose-li:text-slate-300 prose-hr:border-slate-800">
-            <MDXRemote source={post.content} />
+            <MDXRemote
+              source={post.content}
+              components={{
+                img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    {...props}
+                    alt={props.alt || "Ilustracja w artykule blogowym"}
+                    className="rounded-xl border border-slate-800 my-6 max-w-full h-auto"
+                  />
+                ),
+              }}
+            />
           </div>
         </article>
       </div>

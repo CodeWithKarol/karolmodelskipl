@@ -42,7 +42,7 @@ export function AboutSection() {
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
               <Image 
                 src="/karol.webp" 
-                alt="Karol Modelski" 
+                alt="Karol Modelski - Niezależny Partner Technologiczny i Architekt Oprogramowania" 
                 fill
                 priority
                 loading="eager"

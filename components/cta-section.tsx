@@ -73,7 +73,7 @@ export function CtaSection() {
             </Button>
           </a>
           <p
-            className="mt-4 text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold text-center"
+            className="mt-4 text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest font-semibold text-center"
             dangerouslySetInnerHTML={{ __html: cta.footer }}
           />
         </div>

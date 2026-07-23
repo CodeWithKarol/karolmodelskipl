@@ -208,13 +208,13 @@ export function SiteHeader() {
                 <span>{header.cta.title}</span>
                 <ArrowRight className="h-4 w-4" />
               </a>
-              <p className="text-center text-[10px] text-slate-500 uppercase tracking-widest font-semibold mt-3">
+              <p className="text-center text-[10px] text-slate-400 uppercase tracking-widest font-semibold mt-3">
                 {header.cta.description}
               </p>
             </div>
           </div>
 
-          <div className="text-center pt-8 text-xs text-slate-600 uppercase tracking-widest font-mono">
+          <div className="text-center pt-8 text-xs text-slate-400 uppercase tracking-widest font-mono">
             {header.brand.name} • 2026
           </div>
         </div>

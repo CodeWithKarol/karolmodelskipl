@@ -31,7 +31,7 @@ export function HeroSection() {
                   {i === 1 && <ShieldCheck className="h-5 w-5" />}
                   {i === 2 && <User className="h-5 w-5" />}
                 </div>
-                <h4 className="text-sm font-bold text-white mb-1 leading-tight">{item.title}</h4>
+                <h2 className="text-sm font-bold text-white mb-1 leading-tight">{item.title}</h2>
                 <p className="text-[11px] text-slate-400 leading-snug">{item.desc}</p>
               </div>
             ))}
@@ -65,7 +65,7 @@ export function HeroSection() {
               </Button>
             </a>
             
-            <p className="text-[10px] text-slate-500 text-center mt-4 uppercase tracking-widest font-semibold">{hero.cta_sub}</p>
+            <p className="text-[10px] text-slate-400 text-center mt-4 uppercase tracking-widest font-semibold">{hero.cta_sub}</p>
           </div>
         </div>
       </div>

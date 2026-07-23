@@ -135,7 +135,7 @@ export default function ModernizacjaOprogramowaniaPage() {
                 <div className="text-blue-400 mb-3 text-xl">
                   {i === 0 ? "⚡" : i === 1 ? "🛡️" : "📈"}
                 </div>
-                <h4 className="text-sm font-bold text-white mb-2 leading-tight">{item.title}</h4>
+                <h2 className="text-sm font-bold text-white mb-2 leading-tight">{item.title}</h2>
                 <p className="text-xs text-slate-400 leading-snug">{item.desc}</p>
               </div>
             ))}
@@ -151,7 +151,7 @@ export default function ModernizacjaOprogramowaniaPage() {
             <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
               <Button size="lg" className="w-full py-5 sm:py-6 text-xs sm:text-sm font-bold rounded-xl bg-blue-600 hover:bg-blue-700 shadow-lg whitespace-normal h-auto leading-tight">{hero.cta}</Button>
             </a>
-            <p className="text-[10px] sm:text-xs text-slate-500 mt-4 uppercase tracking-widest font-semibold">{hero.footnote}</p>
+            <p className="text-[10px] sm:text-xs text-slate-400 mt-4 uppercase tracking-widest font-semibold">{hero.footnote}</p>
           </div>
         </div>
       </section>
@@ -177,9 +177,9 @@ export default function ModernizacjaOprogramowaniaPage() {
             {story.points.map((point, idx) => (
               <div key={idx} className="group bg-slate-900/40 border border-slate-800 p-6 sm:p-8 rounded-2xl hover:border-slate-700 transition-all duration-300">
                 <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-6">
-                  <div className="text-red-500 font-black text-2xl opacity-50 shrink-0">0{idx + 1}</div>
+                  <div className="text-red-400 font-black text-2xl shrink-0" aria-hidden="true">0{idx + 1}</div>
                   <div>
-                    <h4 className="text-base sm:text-lg font-bold text-white mb-2" dangerouslySetInnerHTML={{ __html: point.title }} />
+                    <h3 className="text-base sm:text-lg font-bold text-white mb-2" dangerouslySetInnerHTML={{ __html: point.title }} />
                     <p className="text-slate-400 leading-relaxed text-xs sm:text-sm" dangerouslySetInnerHTML={{ __html: point.desc }} />
                   </div>
                 </div>
@@ -249,13 +249,13 @@ export default function ModernizacjaOprogramowaniaPage() {
             {contrast.comparisons.map((item, i) => (
               <div key={i} className="contents">
                 <div className="bg-slate-900/40 border border-slate-800 p-6 sm:p-8 rounded-2xl flex flex-col hover:border-slate-700 transition-all">
-                  <div className="text-red-500 mb-3 font-bold text-[10px] uppercase tracking-widest">{contrast.red_ocean_title}</div>
-                  <h4 className="text-base sm:text-lg font-bold text-slate-300 mb-3 leading-snug">{item.red.title}</h4>
-                  <p className="text-slate-500 leading-relaxed text-xs sm:text-sm">{item.red.desc}</p>
+                  <div className="text-red-400 mb-3 font-bold text-[10px] uppercase tracking-widest">{contrast.red_ocean_title}</div>
+                  <h3 className="text-base sm:text-lg font-bold text-slate-300 mb-3 leading-snug">{item.red.title}</h3>
+                  <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">{item.red.desc}</p>
                 </div>
                 <div className="bg-blue-600/10 border border-blue-500/30 p-6 sm:p-8 rounded-2xl flex flex-col hover:border-blue-500/50 transition-all">
                   <div className="text-blue-400 mb-3 font-bold text-[10px] uppercase tracking-widest">{contrast.blue_ocean_title}</div>
-                  <h4 className="text-base sm:text-lg font-bold text-white mb-3 leading-snug">{item.blue.title}</h4>
+                  <h3 className="text-base sm:text-lg font-bold text-white mb-3 leading-snug">{item.blue.title}</h3>
                   <p className="text-slate-300 leading-relaxed text-xs sm:text-sm">{item.blue.desc}</p>
                 </div>
               </div>
@@ -323,7 +323,7 @@ export default function ModernizacjaOprogramowaniaPage() {
                 <ArrowRight className="h-4 w-4 shrink-0" />
               </Button>
             </a>
-            <p className="mt-4 text-[10px] sm:text-xs text-slate-500 uppercase tracking-widest font-semibold text-center" dangerouslySetInnerHTML={{ __html: offer.footer }} />
+            <p className="mt-4 text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest font-semibold text-center" dangerouslySetInnerHTML={{ __html: offer.footer }} />
           </div>
         </div>
       </section>

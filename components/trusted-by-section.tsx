@@ -38,10 +38,10 @@ export function TrustedBySection() {
                     <Icon className="h-6 w-6" />
                   </div>
                   <div>
-                    <h4 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-400 transition-colors leading-tight">
+                    <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-400 transition-colors leading-tight">
                       {company.name}
-                    </h4>
-                    <span className="block text-[10px] font-bold text-blue-500 uppercase tracking-widest mt-1">
+                    </h3>
+                    <span className="block text-[10px] font-bold text-blue-400 uppercase tracking-widest mt-1">
                       {company.category}
                     </span>
                   </div>

@@ -35,13 +35,13 @@ export function ContrastSection() {
             >
               {/* TRADYCYJNA AGENCJA (Problem) */}
               <div className="bg-slate-900/40 border border-slate-800 p-6 sm:p-8 rounded-2xl flex flex-col hover:border-slate-700 transition-all">
-                <div className="text-red-500 mb-3 font-bold text-[10px] uppercase tracking-widest">
+                <div className="text-red-400 mb-3 font-bold text-[10px] uppercase tracking-widest">
                   {contrast.red_ocean_title}
                 </div>
-                <h4 className="text-base sm:text-lg font-bold text-slate-300 mb-3 leading-snug">
+                <h3 className="text-base sm:text-lg font-bold text-slate-300 mb-3 leading-snug">
                   {item.red.title}
-                </h4>
-                <p className="text-slate-500 leading-relaxed text-xs sm:text-sm">
+                </h3>
+                <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">
                   {item.red.desc}
                 </p>
               </div>
@@ -51,9 +51,9 @@ export function ContrastSection() {
                 <div className="text-blue-400 mb-3 font-bold text-[10px] uppercase tracking-widest">
                   {contrast.blue_ocean_title}
                 </div>
-                <h4 className="text-base sm:text-lg font-bold text-white mb-3 leading-snug">
+                <h3 className="text-base sm:text-lg font-bold text-white mb-3 leading-snug">
                   {item.blue.title}
-                </h4>
+                </h3>
                 <p className="text-slate-300 leading-relaxed text-xs sm:text-sm">
                   {item.blue.desc}
                 </p>
