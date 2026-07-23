@@ -52,23 +52,23 @@ export default function StrategiaItCategoryPage() {
             Artykuły z kategorii: Strategia i Niezależne Partnerstwo Technologiczne
           </h1>
           <p className="text-[11px] sm:text-lg lg:text-xl text-slate-400 mb-5 sm:mb-10 leading-relaxed max-w-2xl mx-auto font-light">
-            Zastanawiasz się, jak mądrze zarządzać technologią w firmie, jak weryfikować wyceny agencji i dlaczego tradycyjny model software house'ów często prowadzi do chaosu? Znajdziesz tu praktyczne poradniki o zarządzaniu IT na szczeblu zarządczym, oparte na rygorystycznych standardach bankowych i bezpośrednim partnerstwie.
+            Zastanawiasz się, jak mądrze zarządzać technologią w firmie, jak weryfikować wyceny agencji i dlaczego tradycyjny model software house&apos;ów często prowadzi do chaosu? Znajdziesz tu praktyczne poradniki o zarządzaniu IT na szczeblu zarządczym, oparte na rygorystycznych standardach bankowych i bezpośrednim partnerstwie.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 mb-5 sm:mb-12 w-full text-left">
             <div className="bg-white/5 border border-white/10 p-3 sm:p-6 rounded-2xl backdrop-blur-sm">
               <div className="text-blue-400 mb-1 sm:mb-3 text-sm sm:text-xl">🎯</div>
-              <h4 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">Decyzje zarządcze</h4>
+              <h2 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">Decyzje zarządcze</h2>
               <p className="text-[10px] sm:text-xs text-slate-400 leading-snug">Jak kontrolować koszty i jakość oprogramowania w swojej firmie.</p>
             </div>
             <div className="bg-white/5 border border-white/10 p-3 sm:p-6 rounded-2xl backdrop-blur-sm">
               <div className="text-blue-400 mb-1 sm:mb-3 text-sm sm:text-xl">🛡️</div>
-              <h4 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">Ochrona przed pułapkami agencji</h4>
+              <h2 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">Ochrona przed pułapkami agencji</h2>
               <p className="text-[10px] sm:text-xs text-slate-400 leading-snug">Czego wystrzegać się przy podpisywaniu umów z wykonawcami.</p>
             </div>
             <div className="bg-white/5 border border-white/10 p-3 sm:p-6 rounded-2xl backdrop-blur-sm">
               <div className="text-blue-400 mb-1 sm:mb-3 text-sm sm:text-xl">📈</div>
-              <h4 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">Nowoczesna strategia</h4>
+              <h2 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">Nowoczesna strategia</h2>
               <p className="text-[10px] sm:text-xs text-slate-400 leading-snug">Jak sprawić, by technologia realnie napędzała wzrost biznesu.</p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function StrategiaItCategoryPage() {
             <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
               <Button size="lg" className="w-full py-3.5 sm:py-6 text-[11px] sm:text-sm font-bold rounded-xl bg-blue-600 hover:bg-blue-700 shadow-lg whitespace-normal h-auto leading-tight">ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ</Button>
             </a>
-            <p className="text-[9px] sm:text-xs text-slate-500 mt-2.5 sm:mt-4 uppercase tracking-widest font-semibold">100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT</p>
+            <p className="text-[9px] sm:text-xs text-slate-400 mt-2.5 sm:mt-4 uppercase tracking-widest font-semibold">100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT</p>
           </div>
         </div>
       </header>
@@ -121,7 +121,7 @@ export default function StrategiaItCategoryPage() {
                     {post.excerpt}
                   </p>
                 </div>
-                <div className="flex items-center justify-between text-[11px] sm:text-xs font-medium text-slate-500 pt-3 sm:pt-4 border-t border-slate-800/60">
+                <div className="flex items-center justify-between text-[11px] sm:text-xs font-medium text-slate-400 pt-3 sm:pt-4 border-t border-slate-800/60">
                   <span>{post.readingTime} czytania</span>
                   <span className="inline-flex items-center gap-1.5 text-blue-400 font-bold group-hover:translate-x-1 transition-transform">
                     Przeczytaj artykuł <ArrowRight className="h-3.5 w-3.5" />

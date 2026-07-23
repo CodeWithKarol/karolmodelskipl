@@ -58,17 +58,17 @@ export default function ModernizacjaCategoryPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 mb-5 sm:mb-12 w-full text-left">
             <div className="bg-white/5 border border-white/10 p-3 sm:p-6 rounded-2xl backdrop-blur-sm">
               <div className="text-blue-400 mb-1 sm:mb-3 text-sm sm:text-xl">⚡</div>
-              <h4 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">Jak przyspieszyć aplikację</h4>
+              <h2 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">Jak przyspieszyć aplikację</h2>
               <p className="text-[10px] sm:text-xs text-slate-400 leading-snug">Sprawdzone metody optymalizacji kodu i bazy danych.</p>
             </div>
             <div className="bg-white/5 border border-white/10 p-3 sm:p-6 rounded-2xl backdrop-blur-sm">
               <div className="text-blue-400 mb-1 sm:mb-3 text-sm sm:text-xl">🛡️</div>
-              <h4 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">Bezpieczny rozwój w tle</h4>
+              <h2 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">Bezpieczny rozwój w tle</h2>
               <p className="text-[10px] sm:text-xs text-slate-400 leading-snug">Jak wdrażać zmiany, by klienci kupowali bez przerw.</p>
             </div>
             <div className="bg-white/5 border border-white/10 p-3 sm:p-6 rounded-2xl backdrop-blur-sm">
               <div className="text-blue-400 mb-1 sm:mb-3 text-sm sm:text-xl">💸</div>
-              <h4 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">Ochrona budżetu</h4>
+              <h2 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">Ochrona budżetu</h2>
               <p className="text-[10px] sm:text-xs text-slate-400 leading-snug">Dlaczego nie musisz słuchać agencji namawiających na pisanie systemu od zera.</p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function ModernizacjaCategoryPage() {
             <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
               <Button size="lg" className="w-full py-3.5 sm:py-6 text-[11px] sm:text-sm font-bold rounded-xl bg-blue-600 hover:bg-blue-700 shadow-lg whitespace-normal h-auto leading-tight">ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ</Button>
             </a>
-            <p className="text-[9px] sm:text-xs text-slate-500 mt-2.5 sm:mt-4 uppercase tracking-widest font-semibold">100% bezpłatnie • Rozmowa wideo • Bezpośredni kontakt z ekspertem</p>
+            <p className="text-[9px] sm:text-xs text-slate-400 mt-2.5 sm:mt-4 uppercase tracking-widest font-semibold">100% bezpłatnie • Rozmowa wideo • Bezpośredni kontakt z ekspertem</p>
           </div>
         </div>
       </header>
@@ -121,7 +121,7 @@ export default function ModernizacjaCategoryPage() {
                     {post.excerpt}
                   </p>
                 </div>
-                <div className="flex items-center justify-between text-[11px] sm:text-xs font-medium text-slate-500 pt-3 sm:pt-4 border-t border-slate-800/60">
+                <div className="flex items-center justify-between text-[11px] sm:text-xs font-medium text-slate-400 pt-3 sm:pt-4 border-t border-slate-800/60">
                   <span>{post.readingTime} czytania</span>
                   <span className="inline-flex items-center gap-1.5 text-blue-400 font-bold group-hover:translate-x-1 transition-transform">
                     Przeczytaj artykuł <ArrowRight className="h-3.5 w-3.5" />

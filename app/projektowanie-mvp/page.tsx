@@ -144,7 +144,7 @@ export default function ProjektowanieMvpPage() {
                 <div className="text-blue-400 mb-1.5 sm:mb-3 text-base sm:text-xl">
                   {i === 0 ? "🚀" : i === 1 ? "🛡️" : "🤝"}
                 </div>
-                <h4 className="text-[11px] sm:text-sm font-bold text-white mb-1 leading-tight">{item.title}</h4>
+                <h2 className="text-[11px] sm:text-sm font-bold text-white mb-1 leading-tight">{item.title}</h2>
                 <p className="text-[10px] sm:text-xs text-slate-400 leading-snug">{item.desc}</p>
               </div>
             ))}
@@ -160,7 +160,7 @@ export default function ProjektowanieMvpPage() {
             <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
               <Button size="lg" className="w-full py-4 sm:py-6 text-[11px] sm:text-sm font-bold rounded-xl bg-blue-600 hover:bg-blue-700 shadow-lg whitespace-normal h-auto leading-tight">{mvp.hero.cta}</Button>
             </a>
-            <p className="text-[9px] sm:text-xs text-slate-500 mt-3 sm:mt-4 uppercase tracking-widest font-semibold">{mvp.hero.footnote}</p>
+            <p className="text-[9px] sm:text-xs text-slate-400 mt-3 sm:mt-4 uppercase tracking-widest font-semibold">{mvp.hero.footnote}</p>
           </div>
         </div>
       </section>
@@ -188,9 +188,9 @@ export default function ProjektowanieMvpPage() {
             {mvp.trap.negative_points.map((point, idx) => (
               <div key={idx} className="group bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col">
                 <div className="flex items-start gap-3.5 sm:gap-6">
-                  <div className="text-red-500 font-black text-xl sm:text-2xl opacity-50 shrink-0 leading-none">0{idx + 1}</div>
+                  <div className="text-red-400 font-black text-xl sm:text-2xl shrink-0 leading-none" aria-hidden="true">0{idx + 1}</div>
                   <div>
-                    <h4 className="text-sm sm:text-lg font-bold text-white mb-1.5 sm:mb-2 leading-snug">{point.title}</h4>
+                    <h3 className="text-sm sm:text-lg font-bold text-white mb-1.5 sm:mb-2 leading-snug">{point.title}</h3>
                     <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">{point.desc}</p>
                   </div>
                 </div>
@@ -206,7 +206,7 @@ export default function ProjektowanieMvpPage() {
       <section className="relative border-t border-slate-900/50 bg-slate-950 py-12 sm:py-20 text-slate-300 md:py-32">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
 
-        <div className="relative z-10 container mx-auto max-w-5xl px-4">
+        <div className="relative z-10 container mx-auto px-4 max-w-5xl">
           <div className="mb-8 sm:mb-16 text-center">
             <div className="mb-3 sm:mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-wider">
               <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
@@ -224,13 +224,13 @@ export default function ProjektowanieMvpPage() {
             {mvp.contrast.comparisons.map((item, i) => (
               <div key={i} className="grid grid-cols-1 sm:grid-cols-2 md:contents gap-3 sm:gap-0">
                 <div className="bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl flex flex-col hover:border-slate-700 transition-all">
-                  <div className="text-red-500 mb-1.5 sm:mb-3 font-bold text-[9px] sm:text-[10px] uppercase tracking-widest">{mvp.contrast.red_ocean_title}</div>
-                  <h4 className="text-sm sm:text-lg font-bold text-slate-300 mb-1 sm:mb-3 leading-snug">{item.red.title}</h4>
-                  <p className="text-slate-500 leading-relaxed text-[11px] sm:text-sm">{item.red.desc}</p>
+                  <div className="text-red-400 mb-1.5 sm:mb-3 font-bold text-[9px] sm:text-[10px] uppercase tracking-widest">{mvp.contrast.red_ocean_title}</div>
+                  <h3 className="text-sm sm:text-lg font-bold text-slate-300 mb-1 sm:mb-3 leading-snug">{item.red.title}</h3>
+                  <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">{item.red.desc}</p>
                 </div>
                 <div className="bg-blue-600/10 border border-blue-500/30 p-4 sm:p-8 rounded-2xl flex flex-col hover:border-blue-500/50 transition-all">
                   <div className="text-blue-400 mb-1.5 sm:mb-3 font-bold text-[9px] sm:text-[10px] uppercase tracking-widest">{mvp.contrast.blue_ocean_title}</div>
-                  <h4 className="text-sm sm:text-lg font-bold text-white mb-1 sm:mb-3 leading-snug">{item.blue.title}</h4>
+                  <h3 className="text-sm sm:text-lg font-bold text-white mb-1 sm:mb-3 leading-snug">{item.blue.title}</h3>
                   <p className="text-slate-300 leading-relaxed text-[11px] sm:text-sm">{item.blue.desc}</p>
                 </div>
               </div>

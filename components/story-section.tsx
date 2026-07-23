@@ -39,11 +39,11 @@ export function StorySection() {
               className="group bg-slate-900/40 border border-slate-800 p-6 sm:p-8 rounded-2xl hover:border-slate-700 transition-all duration-300"
             >
               <div className="flex flex-col sm:flex-row md:flex-col lg:flex-row items-start gap-3 sm:gap-6">
-                <div className="text-red-500 font-black text-2xl opacity-50 shrink-0">
+                <div className="text-red-400 font-black text-2xl shrink-0" aria-hidden="true">
                   0{idx + 1}
                 </div>
                 <div>
-                  <h4 
+                  <h3 
                     className="text-base sm:text-lg font-bold text-white mb-2 group-hover:text-blue-400 transition-colors [&_strong]:text-white"
                     dangerouslySetInnerHTML={{ __html: point.title }}
                   />

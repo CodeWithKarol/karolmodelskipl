@@ -101,7 +101,7 @@ export default function BlogHubPage() {
                 <div className="text-blue-400 mb-1 sm:mb-3 text-sm sm:text-xl">
                   {i === 0 ? "💡" : i === 1 ? "🛡️" : "📈"}
                 </div>
-                <h4 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">{item.title}</h4>
+                <h2 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">{item.title}</h2>
                 <p className="text-[10px] sm:text-xs text-slate-400 leading-snug">{item.desc}</p>
               </div>
             ))}
@@ -117,7 +117,7 @@ export default function BlogHubPage() {
             <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
               <Button size="lg" className="w-full py-3.5 sm:py-6 text-[11px] sm:text-sm font-bold rounded-xl bg-blue-600 hover:bg-blue-700 shadow-lg whitespace-normal h-auto leading-tight">{blog.header.cta}</Button>
             </a>
-            <p className="text-[9px] sm:text-xs text-slate-500 mt-2.5 sm:mt-4 uppercase tracking-widest font-semibold">{blog.header.footnote}</p>
+            <p className="text-[9px] sm:text-xs text-slate-400 mt-2.5 sm:mt-4 uppercase tracking-widest font-semibold">{blog.header.footnote}</p>
           </div>
         </div>
       </header>
@@ -223,7 +223,7 @@ export default function BlogHubPage() {
                           <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-slate-400">
                             {post.excerpt}
                           </p>
-                          <div className="mt-6 flex flex-wrap items-center gap-3 text-[13px] font-medium text-slate-500">
+                          <div className="mt-6 flex flex-wrap items-center gap-3 text-[13px] font-medium text-slate-400">
                             <span>{post.readingTime} czytania</span>
                             <span>•</span>
                             <span>{post.date}</span>

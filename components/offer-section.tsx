@@ -41,9 +41,9 @@ export function OfferSection() {
                   <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl border border-slate-700 bg-slate-950 text-slate-400 group-hover:text-blue-400 transition-colors">
                     <Icon className="h-6 w-6" />
                   </div>
-                  <h4 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors leading-tight">
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors leading-tight">
                     {path.title}
-                  </h4>
+                  </h3>
                   <p className="text-slate-400 leading-relaxed text-xs sm:text-sm mb-6">
                     {path.desc}
                   </p>

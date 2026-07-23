@@ -190,7 +190,7 @@ export default function BezpieczenstwoKlasyBankowejPage() {
                     {card.title}
                   </h3>
                   {card.subtitle && (
-                    <span className="mb-4 block text-sm font-medium text-slate-500">
+                    <span className="mb-4 block text-sm font-medium text-slate-400">
                       {card.subtitle}
                     </span>
                   )}

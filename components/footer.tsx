@@ -14,7 +14,7 @@ export function Footer() {
           {/* Brand */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4">
             <div className="relative h-16 w-16 rounded-full overflow-hidden border border-slate-700">
-              <Image src="/karol.webp" alt="Karol Modelski" fill sizes="64px" className="object-cover" />
+              <Image src="/karol.webp" alt="Karol Modelski - Zdjęcie profilowe" fill sizes="64px" className="object-cover" />
             </div>
             <h3 className="text-lg font-bold text-white">{footer.brand.name}</h3>
             <p className="text-xs text-blue-400 font-bold uppercase tracking-wider">{footer.brand.title}</p>
@@ -62,7 +62,7 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-slate-800 pt-8 mt-12 flex flex-col items-center text-center gap-4 text-xs text-slate-500">
+        <div className="border-t border-slate-800 pt-8 mt-12 flex flex-col items-center text-center gap-4 text-xs text-slate-400">
           <p className="max-w-xl leading-relaxed">{footer.copyright}</p>
           {footer.legal.items.length > 0 && (
             <div className="flex flex-wrap justify-center gap-6">
