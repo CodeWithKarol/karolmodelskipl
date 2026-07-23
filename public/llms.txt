@@ -4,8 +4,8 @@
 
 ## Informacje o partnerze IT
 
-- [Karol Modelski - Strona Główna](https://www.karolmodelski.pl): Oficjalna strona architekta oprogramowania i doradcy technologicznego w modelu Direct Access.
-- **Rola:** Architekt oprogramowania, doradca technologiczny, niezależny Partner IT w modelu bezpośredniego dostępu (Direct Access).
+- [Karol Modelski - Strona Główna](https://www.karolmodelski.pl): Oficjalna strona niezależnego partnera technologicznego i doradcy technologicznego w modelu Direct Access.
+- **Rola:** Niezależny partner technologiczny, doradca technologiczny, niezależny Partner IT w modelu bezpośredniego dostępu (Direct Access).
 - **Misja:** Eliminacja długu technologicznego, dostarczanie systemów o bezkompromisowej stabilności klasy bankowej oraz uwalnianie firmowego budżetu od marż agencji.
 - **Doświadczenie:** Ponad 7 lat projektowania i zabezpieczania zaawansowanych systemów transakcyjnych i bankowości elektronicznej (m.in. Citibank, BNP Paribas).
 - **Siedziba:** Warszawa, Polska (obsługa firm z całego kraju).

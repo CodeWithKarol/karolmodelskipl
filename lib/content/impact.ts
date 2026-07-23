@@ -16,7 +16,7 @@ export const impact = {
     {
       title: "Bezwzględne bezpieczeństwo klasy bankowej",
       description:
-        "Zyskujesz architekturę odporną na błędy i nagłe skoki ruchu. Przenoszę rygorystyczne standardy ochrony danych z systemów bankowych wprost do struktur Twojego biznesu.",
+        "Zyskujesz stabilność odporną na błędy i nagłe skoki ruchu. Przenoszę rygorystyczne standardy ochrony danych z systemów bankowych wprost do struktur Twojego biznesu.",
     },
   ],
 }

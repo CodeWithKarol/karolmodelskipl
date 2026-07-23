@@ -9,7 +9,7 @@ export const hero = {
   title: "Tworzę dedykowane aplikacje internetowe dla firm, które automatyzują procesy i skalują zyski",
   titleHighlight: "– bez agencji i ukrytych kosztów.",
   description:
-    "Zyskaj nowoczesne oprogramowanie o architekturze klasy bankowej, dopasowane w 100% do specyfiki Twojego biznesu. Zapomnij o „głuchym telefonie” z pośrednikami i przepłacaniu za administrację agencji – pracujesz bezpośrednio ze mną.",
+    "Zyskaj nowoczesne oprogramowanie o standardach klasy bankowej, dopasowane w 100% do specyfiki Twojego biznesu. Zapomnij o „głuchym telefonie” z pośrednikami i przepłacaniu za administrację agencji – pracujesz bezpośrednio ze mną.",
   cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ SYSTEMU",
   footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT",
   indicators: [
@@ -128,7 +128,7 @@ export const faq = {
     },
     {
       q: "Czy muszę dokładnie wiedzieć, jak ma wyglądać system od strony technicznej?",
-      a: "Nie. Ty znasz swój biznes i procesy, które chcesz usprawnić – ja tłumaczę je na bezpieczną technologię i projektuję architekturę systemu od A do Z."
+      a: "Nie. Ty znasz swój biznes i procesy, które chcesz usprawnić – ja tłumaczę je na bezpieczną technologię i projektuję strukturę systemu od A do Z."
     },
     {
       q: "Czym różni się Twoje podejście od pracy z dużą agencją?",

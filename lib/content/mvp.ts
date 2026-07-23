@@ -79,7 +79,7 @@ export const mvp = {
         desc: "Płacisz za czystą inżynierię, a nie za spotkania z kierownikami projektów, którzy przekazują Twoje słowa programiście. Rozmawiasz bezpośrednio z autorem Twojego systemu.",
       },
       {
-        title: "Architektura pod zwrot z inwestycji",
+        title: "Projektowanie pod zwrot z inwestycji",
         desc: "Nie buduję „na zapas”. Projektuję system tak, aby był tani w utrzymaniu, ale gotowy na skalowanie, gdy tylko zaczniesz generować zysk z pierwszych klientów.",
       },
       {
@@ -145,7 +145,7 @@ export const mvp = {
         content: "Podczas bezpłatnej rozmowy odcinamy wszystko, co zbędne na start, i zostawiamy tylko to, co pozwala klientom korzystać z systemu i płacić."
       },
       {
-        title: "2. Architektura i Bankowe Standardy",
+        title: "2. Strategia i Bankowe Standardy",
         content: "Projektuję strukturę opartą na bezpiecznych standardach, dzięki czemu aplikacja od pierwszego dnia działa stabilnie i bezbłędnie."
       },
       {

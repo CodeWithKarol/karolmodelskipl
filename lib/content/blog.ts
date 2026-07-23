@@ -58,7 +58,7 @@ export const blogContent = {
         title: "Strategia i Niezależne Partnerstwo Technologiczne",
         desc: "Poznaj kulisy branży IT. Dowiedz się, dlaczego tradycyjny model współpracy z dużymi software house'ami bywa pułapką i jak zyskać pełną kontrolę nad technologią jako niezależny partner.",
         href: "/blog/strategia-it",
-        cta: "Przejdź do artykułów o strategii i architekturze"
+         cta: "Przejdź do artykułów o strategii i nowoczesnym podejściu"
       }
     ]
   },

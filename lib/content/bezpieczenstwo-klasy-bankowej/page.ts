@@ -29,13 +29,13 @@ export const mechanism = {
       title: "Inteligentna kontrola przepływu informacji",
       subtitle: "",
       content:
-        'Skomplikowane systemy biznesowe często zawieszają się, gdy wielu użytkowników naraz wykonuje różne operacje (np. fakturowanie, sprawdzanie stanów magazynowych i płatności). Projektuję architekturę opartą na natychmiastowym i uporządkowanym przesyłaniu strumieni danych. System przetwarza informacje płynnie i bez opóźnień, co daje 100% odporności na nagłe, masowe skoki ruchu na stronie. Projektuję od podstaw <a href="/aplikacje-internetowe-dla-firm">aplikacje internetowe dla firm</a>, które gwarantują pełną ochronę danych handlowych i stabilność podczas największych akcji sprzedażowych.',
+        'Skomplikowane systemy biznesowe często zawieszają się, gdy wielu użytkowników naraz wykonuje różne operacje (np. fakturowanie, sprawdzanie stanów magazynowych i płatności). Projektuję systemy oparte na natychmiastowym i uporządkowanym przesyłaniu strumieni danych. System przetwarza informacje płynnie i bez opóźnień, co daje 100% odporności na nagłe, masowe skoki ruchu na stronie. Projektuję od podstaw <a href="/aplikacje-internetowe-dla-firm">aplikacje internetowe dla firm</a>, które gwarantują pełną ochronę danych handlowych i stabilność podczas największych akcji sprzedażowych.',
     },
     {
       title: "Bankowe procedury szyfrowania i izolacji danych",
       subtitle: "",
       content:
-        "Wykorzystuję architekturę modułową, która izoluje od siebie poszczególne strefy systemu. Nawet w przypadku próby zewnętrznego ataku, bazy danych Twoich klientów oraz kluczowe informacje handlowe pozostają nienaruszone i całkowicie zaszyfrowane, chroniąc Twoje przedsiębiorstwo przed stratami finansowymi i karami prawnymi.",
+        "Wykorzystuję podejście modułowe, które izoluje od siebie poszczególne strefy systemu. Nawet w przypadku próby zewnętrznego ataku, bazy danych Twoich klientów oraz kluczowe informacje handlowe pozostają nienaruszone i całkowicie zaszyfrowane, chroniąc Twoje przedsiębiorstwo przed stratami finansowymi i karami prawnymi.",
     },
   ],
 }
@@ -53,7 +53,7 @@ export const faq = {
     },
     {
       q: "Jak system klasy bankowej chroni firmę przed stratami podczas nagłego skoku ruchu użytkowników?",
-      a: "Projektuję architekturę oprogramowania w taki sposób, aby płynnie radziła sobie z masowym napływem zapytań (np. podczas akcji promocyjnych czy godzin szczytu w e-commerce). Dzięki odpowiedniemu uporządkowaniu i optymalizacji strumieni danych, system całkowicie eliminuje ryzyko zawieszenia się bazy danych, zapewniając ciągłość sprzedaży i stały dostęp do panelu klienta bez ani jednej sekundy przestoju biznesowego.",
+      a: "Projektuję oprogramowanie w taki sposób, aby płynnie radziło sobie z masowym napływem zapytań (np. podczas akcji promocyjnych czy godzin szczytu w e-commerce). Dzięki odpowiedniemu uporządkowaniu i optymalizacji strumieni danych, system całkowicie eliminuje ryzyko zawieszenia się bazy danych, zapewniając ciągłość sprzedaży i stały dostęp do panelu klienta bez ani jednej sekundy przestoju biznesowego.",
     },
   ],
 }

@@ -7,7 +7,7 @@ export const faq = {
       question:
         "Czym jest aplikacja internetowa (webowa) i jak buduje przewagę biznesową firmy?",
       answer:
-        "To zaawansowane narzędzie biznesowe, które zamiast generować koszty stałe, napędza konwersję i automatyzuje procesy. Rozważając to w kontekście sektora małych i średnich firm, nie mówimy o prostej stronie wizytówkowej, lecz o architekturze, która bezpośrednio skaluje zyski. Moje podejście do tworzenia rozwiązań internetowych eliminuje narzuty technologiczne. Projektuję ścieżki użytkownika w taki sposób, aby każdy moduł realizował konkretny cel biznesowy. Dedykowane aplikacje internetowe dla firm buduję w oparciu o uproszczoną strukturę kodu, co pozwala przedsiębiorstwom zyskać elastyczność i przewagę konkurencyjną.",
+        "To zaawansowane narzędzie biznesowe, które zamiast generować koszty stałe, napędza konwersję i automatyzuje procesy. Rozważając to w kontekście sektora małych i średnich firm, nie mówimy o prostej stronie wizytówkowej, lecz o rozwiązaniu, które bezpośrednio skaluje zyski. Moje podejście do tworzenia rozwiązań internetowych eliminuje narzuty technologiczne. Projektuję ścieżki użytkownika w taki sposób, aby każdy moduł realizował konkretny cel biznesowy. Dedykowane aplikacje internetowe dla firm buduję w oparciu o uproszczoną strukturę kodu, co pozwala przedsiębiorstwom zyskać elastyczność i przewagę konkurencyjną.",
     },
     {
       question:
@@ -25,7 +25,7 @@ export const faq = {
       question:
         "Ile kosztuje stworzenie aplikacji dla firmy w Warszawie i dlaczego nie warto przepłacać w agencjach?",
       answer:
-        "To, ile kosztuje stworzenie aplikacji dla firmy, w tradycyjnej agencji zawiera ukryty podatek od pośrednictwa – opłacasz ich biura, marketing i marże menedżerskie. Wybierając niezależnego eksperta oferującego tworzenie aplikacji internetowych w Warszawie, inwestujesz 100% swojego budżetu w czystą architekturę i inżynierię klasy bankowej. Ceny za elastyczne wdrożenie pierwszej, działającej wersji systemu zaczynają się od ułamka kwot agencji, a produkt jest gotowy do uruchomienia sprzedaży znacznie szybciej. Dokładne określenie kosztów zawsze poprzedzam darmową diagnozą techniczną i stworzeniem spersonalizowanej Mapy Drogowej.",
+        "To, ile kosztuje stworzenie aplikacji dla firmy, w tradycyjnej agencji zawiera ukryty podatek od pośrednictwa – opłacasz ich biura, marketing i marże menedżerskie. Wybierając niezależnego partnera technologicznego oferującego tworzenie aplikacji internetowych w Warszawie, inwestujesz 100% swojego budżetu w czystą inżynierię klasy bankowej. Ceny za elastyczne wdrożenie pierwszej, działającej wersji systemu zaczynają się od ułamka kwot agencji, a produkt jest gotowy do uruchomienia sprzedaży znacznie szybciej. Dokładne określenie kosztów zawsze poprzedzam darmową diagnozą techniczną i stworzeniem spersonalizowanej Mapy Drogowej.",
     },
     {
       question:
@@ -35,7 +35,7 @@ export const faq = {
     },
     {
       question:
-        "Dlaczego warto wybrać bezpośrednią współpracę z architektem w Warszawie zamiast software house’u?",
+        "Dlaczego warto wybrać bezpośrednią współpracę z niezależnym partnerem technologicznym w Warszawie zamiast software house’u?",
       answer:
         "Wybierając projektowanie aplikacji internetowych w Warszawie pod moim okiem, zyskujesz partnera technologicznego na miejscu, który bierze pełną, osobistą odpowiedzialność za Twój produkt. Tradycyjne agencje często delegują projekty w ręce początkujących pracowników. Ja gwarantuję, że Twój system tworzy wyłącznie doświadczony ekspert. Zlecając mi tworzenie systemów, Warszawa staje się punktem wyjścia dla rozwiązania, które łączy zwinność z niezawodnością klasy korporacyjnej. Zapewniam także stałą pomoc do aplikacji internetowych oraz ewolucyjną modernizację – wszystko to bez zatrzymywania Twojej bieżącej sprzedaży.",
     },

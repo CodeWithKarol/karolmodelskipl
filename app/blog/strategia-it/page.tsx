@@ -171,7 +171,7 @@ export default function StrategiaItCategoryPage() {
                     30-minutowa diagnoza strategiczna podczas rozmowy wideo
                   </strong>
                   <span className="text-[11px] sm:text-sm text-slate-400 leading-relaxed">
-                    Konsultacja z doświadczonym głównym architektem.
+                    Konsultacja z doświadczonym niezależnym partnerem technologicznym.
                   </span>
                 </div>
               </li>
