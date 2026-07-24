@@ -165,7 +165,7 @@ export const offer = {
       desc: "",
     },
   ],
-  cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ",
+  cta: "Porozmawiajmy o Twoim projekcie",
   footer: "(W ramach programu zostały tylko <strong class='text-white font-semibold'>2 wolne miejsca</strong>)",
 }
 

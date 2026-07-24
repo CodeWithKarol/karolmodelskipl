@@ -185,6 +185,6 @@ export const offer = {
       desc: "Konkretna strategia modernizacji.",
     },
   ],
-  cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ SYSTEMU",
+  cta: "Porozmawiajmy o Twoim projekcie",
   footer: "W tym miesiącu mogę przyjąć do modernizacji <strong class='text-white font-semibold'>maksymalnie 2 firmy</strong>",
 }
