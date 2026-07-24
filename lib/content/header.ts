@@ -3,9 +3,9 @@ export const header = {
     name: "Karol Modelski",
   },
   cta: {
-    title: "Bezpłatna diagnoza",
+    title: "Umów rozmowę",
     href: "https://calendly.com/kontakt-karolmodelski/30min",
-    description: "Zarezerwuj termin na darmowy audyt.",
+    description: "Porozmawiajmy o Twoim projekcie.",
   },
   menu: {
     mobile: {
