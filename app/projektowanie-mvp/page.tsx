@@ -18,7 +18,6 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import {
-  ArrowRight,
   CheckCircle2,
   Clock,
   Crosshair,
@@ -387,11 +386,10 @@ export default function ProjektowanieMvpPage() {
             >
               <Button
                 size="lg"
-                className="relative flex h-auto min-h-[3.5rem] w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white py-4 sm:py-5 px-3 text-xs sm:text-sm font-bold shadow-lg transition-all whitespace-normal text-center leading-tight"
+                className="relative flex h-auto min-h-[3.5rem] w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white py-4 sm:py-5 px-5 sm:px-6 text-xs sm:text-sm font-bold shadow-lg transition-all whitespace-normal text-center leading-tight"
               >
                 <CalendarDays className="h-5 w-5 shrink-0" />
                 {mvp.cta.cta}
-                <ArrowRight className="h-4 w-4 shrink-0" />
               </Button>
             </a>
             <p className="mt-3 sm:mt-4 text-[11px] sm:text-sm text-slate-400 italic font-medium text-center" dangerouslySetInnerHTML={{ __html: mvp.cta.footer }} />

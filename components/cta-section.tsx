@@ -2,7 +2,6 @@ import {
   CalendarDays,
   CheckCircle2,
   MessageSquare,
-  ArrowRight,
 } from "lucide-react"
 import { content } from "@/lib/content"
 import { siteConfig } from "@/lib/site-config"
@@ -65,11 +64,10 @@ export function CtaSection() {
           >
             <Button
               size="lg"
-              className="relative flex h-auto min-h-[3.5rem] w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white py-5 px-3 text-xs sm:text-sm font-bold shadow-lg transition-all whitespace-normal text-center leading-tight"
+              className="relative flex h-auto min-h-[3.5rem] w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white py-5 px-5 sm:px-6 text-xs sm:text-sm font-bold shadow-lg transition-all whitespace-normal text-center leading-tight"
             >
               <CalendarDays className="h-5 w-5 shrink-0" />
               {cta.button}
-              <ArrowRight className="h-4 w-4 shrink-0" />
             </Button>
           </a>
           <p

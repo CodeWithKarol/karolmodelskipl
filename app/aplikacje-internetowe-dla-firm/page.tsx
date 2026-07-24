@@ -17,7 +17,6 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import {
-  ArrowRight,
   ShieldCheck,
   Target,
   TrendingUp,
@@ -446,11 +445,10 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             >
               <Button
                 size="lg"
-                className="relative flex h-auto min-h-[3.5rem] w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white py-5 px-3 text-xs sm:text-sm font-bold shadow-lg transition-all whitespace-normal text-center leading-tight"
+                className="relative flex h-auto min-h-[3.5rem] w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white py-5 px-5 sm:px-6 text-xs sm:text-sm font-bold shadow-lg transition-all whitespace-normal text-center leading-tight"
               >
                 <CalendarDays className="h-5 w-5 shrink-0" />
                 {offer.cta}
-                <ArrowRight className="h-4 w-4 shrink-0" />
               </Button>
             </a>
             <p className="mt-4 text-xs sm:text-sm text-slate-400 italic font-medium text-center" dangerouslySetInnerHTML={{ __html: offer.footer }} />
