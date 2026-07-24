@@ -15,7 +15,7 @@ export function HeroSection() {
         
         {/* Content Column */}
         <div className="flex-1 w-full max-w-2xl text-left pt-4 sm:pt-8">
-          <div className="mb-4 sm:mb-6 inline-flex items-center gap-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 px-3 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-wide sm:tracking-widest whitespace-nowrap">
+            <div className="mb-4 sm:mb-6 inline-flex items-center gap-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 px-2.5 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-tight sm:tracking-widest whitespace-nowrap">
             {hero.badge}
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1]">
