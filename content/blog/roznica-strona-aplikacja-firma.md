@@ -41,7 +41,7 @@ Całość Twojej inwestycji idzie bezpośrednio w inżynierię, która rozwiązu
 
 ## Dlaczego aplikacja "klasy bankowej" to nie luksus, lecz konieczność?
 
-Moje podejście wywodzi się z projektów dla takich instytucji jak Citibank czy BNP Paribas. Tam błąd w kodzie kosztuje miliony, a systemy muszą być nieprzerwanie dostępne. Dowiedz się więcej o tym, jak działam na stronie: [Bezpieczeństwo klasy bankowej](/bezpieczenstwo-klasy-bankowej).
+Moje podejście wywodzi się z projektów dla takich instytucji jak Citibank czy BNP Paribas. Tam błąd w kodzie kosztuje miliony, a systemy muszą być nieprzerwanie dostępne. Dowiedz się więcej o tym, jak działam, odwiedzając moją [stronę główną](https://www.karolmodelski.pl).
 
 Przenoszę te standardy do świata MŚP:
 

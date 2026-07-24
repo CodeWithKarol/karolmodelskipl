@@ -1,58 +1,59 @@
 # Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa
 
-> Niezależny partner technologiczny (Partner IT) specjalizujący się w projektowaniu, tworzeniu i ewolucyjnej modernizacji aplikacji internetowych oraz systemów biznesowych dla sektora małych i średnich przedsiębiorstw (MŚP) bez marż software house'ów i narzutów agencji.
+> Niezależny partner technologiczny specjalizujący się w projektowaniu, tworzeniu i ewolucyjnej modernizacji aplikacji internetowych oraz systemów biznesowych dla sektora MŚP bez marż software house'ów i narzutów agencji.
 
 ## Informacje o partnerze IT
 
-- [Karol Modelski - Strona Główna](https://www.karolmodelski.pl): Oficjalna strona niezależnego partnera technologicznego i doradcy technologicznego w modelu Direct Access.
-- **Rola:** Niezależny partner technologiczny, doradca technologiczny, niezależny Partner IT w modelu bezpośredniego dostępu (Direct Access).
-- **Misja:** Eliminacja długu technologicznego, dostarczanie systemów o bezkompromisowej stabilności klasy bankowej oraz uwalnianie firmowego budżetu od marż agencji.
-- **Doświadczenie:** Ponad 7 lat projektowania i zabezpieczania zaawansowanych systemów transakcyjnych i bankowości elektronicznej (m.in. Citibank, BNP Paribas).
-- **Siedziba:** Warszawa, Polska (obsługa firm z całego kraju).
+- [Karol Modelski - Strona Główna](https://www.karolmodelski.pl): Aplikacje internetowe dla firm, które realnie zarabiają – bez agencji i ukrytych kosztów.
+- **Rola:** Niezależny Partner Technologiczny, architekt oprogramowania, doradca technologiczny w modelu Direct Access.
+- **Doświadczenie:** Ponad 7 lat projektowania i zabezpieczania systemów transakcyjnych i bankowości elektronicznej (Citibank, BNP Paribas).
+- **Program Wdrożeniowy:** Ograniczony do 2 firm w kwartale. Obejmuje bezpłatną diagnozę, pakiet strategiczny (600 zł) oraz 3 miesiące opieki powdrożeniowej.
 
-## Oferta i Usługi Dedykowane
+## Strony Ofertowe
 
-- [Dedykowane Aplikacje Internetowe](https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm): Projektowanie i wdrażanie niestandardowych systemów biznesowych (CRM, platformy B2B, systemy zamówień, automatyzacje).
-- [Projektowanie i Walidacja MVP](https://www.karolmodelski.pl/projektowanie-mvp): Tworzenie pierwszej, w pełni funkcjonalnej i bezpiecznej wersji systemu biznesowego w 30 dni.
-- [Ewolucyjna Modernizacja Oprogramowania IT](https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji): Bezpieczne usuwanie błędów, przyspieszanie wolno działających baz danych i rozbudowa istniejących aplikacji bez przestojów.
-- [Architektura i Bezpieczeństwo Klasy Bankowej](https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej): Wstrzykiwanie procedur ochrony danych bezpośrednio do oprogramowania firmowego w oparciu o standardy wdrożeń finansowych.
-- [Partner Technologiczny vs Software House](https://www.karolmodelski.pl/doradztwo-techniczne-dla-firm): Porównanie procesów operacyjnych i oszczędności od 40% do 60% budżetu dzięki eliminacji marż pośredników.
+- [Aplikacje Internetowe dla Firm](https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm): Dedykowane aplikacje na zamówienie o stabilności bankowej, automatyzujące procesy i zwiększające zyski.
+- [Szybka Wersja Startowa (MVP)](https://www.karolmodelski.pl/projektowanie-mvp): Uruchomienie kluczowej wersji aplikacji w 30 dni – testuj pomysł na rynku bez przepalania budżetu.
+- [Bezinwazyjna Modernizacja Aplikacji](https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji): Naprawa i przyspieszanie istniejących aplikacji bez wstrzymywania sprzedaży i pisania od nowa.
+- [Doradztwo i Architektura IT](https://www.karolmodelski.pl/doradztwo-techniczne-dla-firm): Osobisty partner technologiczny dla firmy – bez kosztów etatu zarządczego i ryzyka złych decyzji.
 
-## Baza Wiedzy - Kategoriowe Silosy Tematyczne
+## Baza Wiedzy
 
-- [Blog Technologiczny dla Biznesu](https://www.karolmodelski.pl/blog): Strona główna bazy wiedzy o technologii w biznesie.
-- [Silo: Dedykowane Systemy dla Firm (Koszty i Zyski)](https://www.karolmodelski.pl/blog/aplikacje-dla-firm): Analizy budżetowe, kalkulacja ROI i wybór oprogramowania napędzającego sprzedaż.
-- [Silo: Szybka Wersja Startowa Aplikacji (MVP)](https://www.karolmodelski.pl/blog/szybka-wersja-startowa): Jak w 30 dni stworzyć i przetestować działający produkt cyfrowy bez ryzyka.
-- [Silo: Bezinwazyjna Modernizacja Systemów](https://www.karolmodelski.pl/blog/bezinwazyjna-modernizacja-systemow): Przyspieszanie baz danych, naprawa błędów i rozbudowa aplikacji w tle bez przestojów.
-- [Silo: Strategia i Niezależne Partnerstwo Technologiczne](https://www.karolmodelski.pl/blog/strategia-it): Podejmowanie decyzji IT na szczeblu zarządczym, wybór technologii i ochrona przed pułapkami agencji.
+- [Blog - Baza wiedzy o oprogramowaniu dla firm](https://www.karolmodelski.pl/blog): Konkretna wiedza biznesowa bez technicznego żargonu i pułapek agencji.
 
-## Artykuły i Poradniki (Baza Wiedzy)
+### Kategorie
 
-### Dedykowane Systemy dla Firm
-- [Ile kosztuje stworzenie aplikacji webowej?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-webowej): Prawda o wycenach agencji i ukrytych kosztach software house'ów.
-- [Ile kosztuje stworzenie aplikacji mobilnej?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-mobilnej): Prawda o taniej budowie i realnym ROI w aplikacjach mobilnych.
+- [Dedykowane Systemy dla Firm (Koszty i Zyski)](https://www.karolmodelski.pl/blog/aplikacje-dla-firm): Analizy budżetowe, kalkulacje i poradniki o inwestowaniu w oprogramowanie bez ukrytych kosztów agencji.
+- [Szybka Wersja Startowa Aplikacji](https://www.karolmodelski.pl/blog/szybka-wersja-startowa): Jak bezpiecznie wdrożyć kluczowe funkcje aplikacji w 30 dni i przetestować popyt na rynku.
+- [Bezinwazyjna Modernizacja Systemów](https://www.karolmodelski.pl/blog/bezinwazyjna-modernizacja-systemow): Jak unowocześniać oprogramowanie ewolucyjnie bez wstrzymywania sprzedaży i pisania kodu od nowa.
+- [Strategia i Partnerstwo IT](https://www.karolmodelski.pl/blog/strategia-it): Zarządzanie technologią na szczeblu zarządczym, audyt wykonawców i ochrona przed pułapkami agencji.
+
+### Artykuły
+
+#### Dedykowane Systemy dla Firm
+- [Ile kosztuje stworzenie aplikacji dla firmy?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-dla-firmy): Prawda o taniej budowie i realnym ROI.
+- [Ile kosztuje stworzenie aplikacji webowej?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-webowej): Prawda o wycenach agencji i ukrytych kosztach.
+- [Ile kosztuje stworzenie aplikacji mobilnej?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-mobilnej): Realny koszt budowy aplikacji mobilnej dla biznesu.
 - [Ile pieniędzy można zarobić na stworzeniu aplikacji?](https://www.karolmodelski.pl/blog/ile-pieniedzy-mozna-zarobic-na-stworzeniu-aplikacji): Kalkulacja zwrotu z inwestycji w systemy firmowe.
-- [Jaki jest najlepszy program dla firmy?](https://www.karolmodelski.pl/blog/jaki-jest-najlepszy-program-do-prowadzenia-firmy): Przewodnik po wyborze technologii biznesowych bez żargonu.
-- [Aplikacje do organizacji pracy w firmie](https://www.karolmodelski.pl/blog/jaki-jest-najlepszy-program-do-organizacji): Gotowe narzędzia SaaS vs dedykowany system szyty na miarę.
+- [Jaki jest najlepszy program do prowadzenia firmy?](https://www.karolmodelski.pl/blog/jaki-jest-najlepszy-program-do-prowadzenia-firmy): Przewodnik po wyborze technologii biznesowych.
+- [Jaki jest najlepszy program do organizacji?](https://www.karolmodelski.pl/blog/jaki-jest-najlepszy-program-do-organizacji): Gotowe narzędzia SaaS vs dedykowany system szyty na miarę.
 
-### Szybka Wersja Startowa i Samodzielna Budowa (MVP)
-- [Czy można samemu stworzyć aplikację?](https://www.karolmodelski.pl/blog/czy-mozna-samemu-stworzyc-aplikacje): Kiedy samodzielne kodowanie ma sens, a kiedy prowadzi do ślepej uliczki.
-- [Czy taniej jest stworzyć aplikację samemu?](https://www.karolmodelski.pl/blog/czy-taniej-jest-stworzyc-aplikacje-samemu): Realny koszt "zrób to sam" w cyfrowym biznesie.
-- [Jak napisać aplikację za darmo lub z AI?](https://www.karolmodelski.pl/blog/jak-napisac-aplikacje-za-darmo): Granice darmowych narzędzi i generatorów w budowaniu stabilnego biznesu.
+#### Szybka Wersja Startowa (MVP)
+- [Czy można samemu stworzyć aplikację?](https://www.karolmodelski.pl/blog/czy-mozna-samemu-stworzyc-aplikacje): Kiedy samodzielne kodowanie ma sens.
+- [Czy taniej jest stworzyć aplikację samemu?](https://www.karolmodelski.pl/blog/czy-taniej-jest-stworzyc-aplikacje-samemu): Realny koszt zrób to sam w cyfrowym biznesie.
+- [Jak napisać aplikację za darmo?](https://www.karolmodelski.pl/blog/jak-napisac-aplikacje-za-darmo): Granice darmowych narzędzi i AI w budowaniu stabilnego biznesu.
 - [Jakich aplikacji użyć na start działalności?](https://www.karolmodelski.pl/blog/jakich-aplikacji-uzyc-na-start): Dobór optymalnego stosu technologicznego dla nowej firmy.
 
-### Bezinwazyjna Modernizacja i Technologia
+#### Bezinwazyjna Modernizacja
 - [Jak wygląda tworzenie aplikacji od podstaw?](https://www.karolmodelski.pl/blog/jak-wyglada-tworzenie-aplikacji): Proces od surowego pomysłu do maszyny konwersyjnej.
-- [Ile kosztuje stworzenie aplikacji dla firmy?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-dla-firmy): Prawda o taniej budowie, unikaniu poprawek i realnym zysku.
 - [Czy ChatGPT zrobi aplikację?](https://www.karolmodelski.pl/blog/czy-chatgpt-zrobi-aplikacje): Wykorzystanie AI w programowaniu a ryzyko długu technologicznego.
-- [Jak zrobić aplikację ze strony internetowej?](https://www.karolmodelski.pl/blog/jak-zrobic-aplikacje-ze-strony-internetowej): Czy warto przekształcić stronę w aplikację mobilną i jak to zrobić dobrze.
+- [Jak zrobić aplikację ze strony internetowej?](https://www.karolmodelski.pl/blog/jak-zrobic-aplikacje-ze-strony-internetowej): Przekształcanie strony w aplikację – kiedy to ma sens.
 
-### Strategia i Niezależne Partnerstwo
-- [Czym różni się zwykła strona od aplikacji internetowej?](https://www.karolmodelski.pl/blog/roznica-strona-aplikacja-firma): Kiedy wystarczy zwykła wizytówka, a kiedy potrzebujesz dedykowanej aplikacji.
+#### Strategia i Partnerstwo IT
+- [Czym różni się strona od aplikacji internetowej?](https://www.karolmodelski.pl/blog/roznica-strona-aplikacja-firma): Kiedy wystarczy wizytówka, a kiedy potrzebujesz dedykowanego systemu.
 - [Sztuczna inteligencja w aplikacji biznesowej](https://www.karolmodelski.pl/blog/czy-moge-stworzyc-wlasna-aplikacje-z-ai): Jak mądrze wdrożyć AI bez przepalania budżetu.
-- [W czym pisać aplikacje dla firmy?](https://www.karolmodelski.pl/blog/w-czym-pisac-aplikacje-webowe): Jak wybrać język i technologię, która nie zestarzeje się za 2 lata.
-- [W jakim programie tworzyć system dla firmy?](https://www.karolmodelski.pl/blog/w-jakim-programie-tworzy-sie-aplikacje): Architektura oparta na zaufaniu i standardach bankowych.
+- [W czym pisać aplikacje dla firmy?](https://www.karolmodelski.pl/blog/w-czym-pisac-aplikacje-webowe): Wybór języka i technologii, która nie zestarzeje się za 2 lata.
+- [W jakim programie tworzyć system dla firmy?](https://www.karolmodelski.pl/blog/w-jakim-programie-tworzy-sie-aplikacje): Architektura oparta na standardach bankowych.
 
-## Bezpłatna Konsultacja i Lead Magnet
+## Bezpłatna Konsultacja
 
-- [Rezerwacja Bezpłatnej Konsultacji Strategicznej](https://calendly.com/kontakt-karolmodelski/30min): Zarezerwuj termin 30-minutowej konsultacji online (Pakiet Doradczy: diagnoza procesów, plan działania, test bezpieczeństwa).
+- [Rezerwacja rozmowy](https://calendly.com/kontakt-karolmodelski/30min): 30-minutowa konsultacja online – diagnoza procesów, plan działania, test bezpieczeństwa. W ramach Programu Wdrożeniowego (limit 2 firm w kwartale).
