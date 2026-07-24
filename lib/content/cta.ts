@@ -21,7 +21,7 @@ export const cta = {
       desc: "Weryfikacja pomysłów pod kątem rygorystycznych standardów sektora finansowego.",
     },
   ],
-  button: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ",
+  button: "Porozmawiajmy o Twoim projekcie",
   footer: "W ramach Programu Pilotażowego zostały tylko 2 wolne miejsca na ten kwartał",
 }
 

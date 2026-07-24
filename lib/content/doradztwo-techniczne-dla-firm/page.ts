@@ -172,6 +172,6 @@ export const offer = {
       desc: "Dopasowana strategia rozwoju IT dla Twojej firmy.",
     },
   ],
-  cta: "ZAREZERWUJ BEZPŁATNĄ STRATEGIĘ CYFROWĄ",
+  cta: "Porozmawiajmy o Twoim projekcie",
   footer: "W tym miesiącu mogę przyjąć do stałego doradztwa strategicznego <strong class='text-white font-semibold'>maksymalnie 2 nowe firmy</strong>",
 }

@@ -231,7 +231,7 @@ export const mvp = {
         desc: "Weryfikacja pod kątem rygorystycznych standardów finansowych.",
       },
     ],
-    cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ",
+    cta: "Porozmawiajmy o Twoim projekcie",
     footer: "(W ramach programu zostały tylko <strong class='text-white font-semibold'>2 wolne miejsca</strong>)",
   },
 }
