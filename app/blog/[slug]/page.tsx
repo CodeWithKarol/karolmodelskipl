@@ -11,6 +11,7 @@ import {
   ChevronDown,
 } from "lucide-react"
 import { ReadingProgress } from "@/components/reading-progress"
+import { SectionBadge } from "@/components/section-badge"
 import { extractHeadings, slugify, extractTextContent } from "@/lib/utils/heading"
 import type { ReactNode } from "react"
 
@@ -236,9 +237,9 @@ export default async function BlogPostPage(props: {
                 <div className="p-4 sm:p-8 lg:p-12">
                   <header className="mb-6 border-b border-slate-800 pb-6 sm:mb-10 sm:pb-10">
                     <div className="mb-4 flex flex-wrap items-center gap-2 sm:mb-6 sm:gap-3">
-                      <span className="rounded-md border border-blue-500/20 bg-blue-500/10 px-2 py-0.5 text-[11px] font-medium text-blue-400 sm:px-3 sm:py-1 sm:text-sm">
+                      <SectionBadge variant="blue" rounded="md">
                         {post.silo}
-                      </span>
+                      </SectionBadge>
                       <span className="flex items-center gap-1.5 text-xs text-slate-400 sm:text-sm">
                         <span className="h-1 w-1 rounded-full bg-slate-700"></span>{" "}
                         {post.readingTime} czytania
@@ -302,9 +303,9 @@ export default async function BlogPostPage(props: {
                         className="group block"
                       >
                         <article className="h-full rounded-xl border border-slate-800/60 bg-slate-900/50 p-4 backdrop-blur-sm transition-all hover:border-blue-500/30 hover:bg-slate-900/70 sm:p-5">
-                          <div className="mb-2 inline-block rounded-md border border-blue-500/20 bg-blue-500/10 px-2 py-0.5 text-[10px] font-medium text-blue-400">
+                          <SectionBadge variant="blue" rounded="md" className="mb-2 inline-block">
                             {p.silo}
-                          </div>
+                          </SectionBadge>
                           <h3 className="text-sm font-bold leading-snug text-slate-100 transition-colors group-hover:text-blue-400">
                             {p.title}
                           </h3>

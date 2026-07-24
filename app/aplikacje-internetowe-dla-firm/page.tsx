@@ -8,6 +8,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { CtaSection } from "@/components/cta-section"
+import { SectionBadge } from "@/components/section-badge"
 import {
   Table,
   TableBody,
@@ -21,7 +23,6 @@ import {
   Target,
   TrendingUp,
   Banknote,
-  CalendarDays,
   Flame,
   Search,
   ListChecks,
@@ -29,7 +30,10 @@ import {
   RefreshCw,
   Zap,
   HelpCircle,
-  CheckCircle2,
+  Rocket,
+  Handshake,
+  Gem,
+  Map,
 } from "lucide-react"
 import {
   hero,
@@ -37,7 +41,6 @@ import {
   mechanism,
   contrast,
   faq,
-  offer,
   metadata,
   guarantee,
 } from "@/lib/content/aplikacje-internetowe/page"
@@ -137,8 +140,8 @@ export default function AplikacjeInternetoweDlaFirmPage() {
           
           {/* Content Column */}
           <div className="flex-1 w-full max-w-2xl text-left pt-4 sm:pt-8">
-            <div className="mb-4 sm:mb-6 inline-flex items-center gap-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 px-2.5 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-tight sm:tracking-widest whitespace-nowrap">
-              {hero.badge}
+            <div className="mb-4 sm:mb-6">
+              <SectionBadge><Gem className="h-3.5 w-3.5 shrink-0" />{hero.badge}</SectionBadge>
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1]">
               {hero.title}
@@ -163,7 +166,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
               {hero.indicators.map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-slate-300">
                   <span className="text-blue-400 shrink-0 text-base">
-                    {i === 0 ? "🚀" : i === 1 ? "🛡️" : "🤝"}
+                    {i === 0 ? <Rocket className="h-4 w-4" /> : i === 1 ? <ShieldCheck className="h-4 w-4" /> : <Handshake className="h-4 w-4" />}
                   </span>
                   <span className="text-xs sm:text-sm font-medium">{item.title}</span>
                 </div>
@@ -180,7 +183,14 @@ export default function AplikacjeInternetoweDlaFirmPage() {
               <p className="text-xs font-semibold text-white mb-2.5">{hero.pilot_program.package_title}</p>
               <ul className="space-y-1.5 mb-4">
                 {hero.offer_items.map((item, i) => (
-                  <li key={i} className="text-xs text-slate-300 leading-snug">{item.title}</li>
+                  <li key={i} className="text-xs text-slate-300 leading-snug flex items-start gap-2">
+                    <span className="text-blue-400 shrink-0 mt-0.5">
+                      {i === 0 && <Target className="h-3.5 w-3.5" />}
+                      {i === 1 && <ShieldCheck className="h-3.5 w-3.5" />}
+                      {i === 2 && <Map className="h-3.5 w-3.5" />}
+                    </span>
+                    {item.title}
+                  </li>
                 ))}
               </ul>
 
@@ -200,9 +210,11 @@ export default function AplikacjeInternetoweDlaFirmPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
         <div className="relative z-10 container mx-auto px-4 max-w-5xl">
           <div className="mb-10 sm:mb-16 text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-red-500/20 bg-red-500/10 px-3.5 sm:px-4 py-1.5 text-xs font-bold text-red-400 uppercase tracking-wider">
+            <div className="mb-4">
+              <SectionBadge variant="red">
               <Flame className="h-4 w-4" />
               <span>Diagnoza problemu</span>
+            </SectionBadge>
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight max-w-3xl mx-auto">
               {story.title}
@@ -236,9 +248,11 @@ export default function AplikacjeInternetoweDlaFirmPage() {
 
         <div className="relative z-10 container mx-auto max-w-5xl px-4">
           <div className="mb-10 sm:mb-16 text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3.5 sm:px-4 py-1.5 text-xs font-bold text-blue-400 uppercase tracking-wider">
+            <div className="mb-4">
+              <SectionBadge>
               <ShieldCheck className="h-4 w-4" />
               <span>Nowa okazja</span>
+            </SectionBadge>
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight max-w-3xl mx-auto">
               {contrast.title}
@@ -273,9 +287,11 @@ export default function AplikacjeInternetoweDlaFirmPage() {
 
         <div className="relative z-10 container mx-auto px-4 max-w-5xl">
           <div className="mb-10 sm:mb-16 text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3.5 sm:px-4 py-1.5 text-xs font-bold text-blue-400 uppercase tracking-wider">
+            <div className="mb-4">
+              <SectionBadge>
               <TrendingUp className="h-4 w-4" />
               <span>Wzrost i zyski</span>
+            </SectionBadge>
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight max-w-3xl mx-auto">
               Jak dedykowane aplikacje realnie pomagają Twojej firmie?
@@ -330,9 +346,11 @@ export default function AplikacjeInternetoweDlaFirmPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
         <div className="relative z-10 container mx-auto max-w-5xl px-4">
           <div className="mb-10 sm:mb-16 text-center">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3.5 sm:px-4 py-1.5 text-xs font-bold text-blue-400 uppercase tracking-wider">
+            <div className="mb-4">
+              <SectionBadge>
               <ShieldCheck className="h-4 w-4" />
               <span>Krok po kroku</span>
+            </SectionBadge>
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight max-w-3xl mx-auto">
               {mechanism.title}
@@ -380,9 +398,11 @@ export default function AplikacjeInternetoweDlaFirmPage() {
       {/* Sekcja 7: FAQ */}
       <section className="container mx-auto max-w-3xl px-4 py-16 sm:py-20 md:py-32">
         <div className="mb-10 sm:mb-16 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3.5 sm:px-4 py-1.5 text-xs font-bold text-blue-400 uppercase tracking-wider">
+          <div className="mb-4">
+            <SectionBadge>
             <HelpCircle className="h-4 w-4" />
             <span>FAQ</span>
+          </SectionBadge>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight">
             Najczęściej zadawane pytania
@@ -411,74 +431,8 @@ export default function AplikacjeInternetoweDlaFirmPage() {
         </Accordion>
       </section>
 
-      {/* Sekcja 8: FINAL CTA (OFFER) */}
-      <section
-        id="oferta"
-        className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-16 sm:py-20 text-slate-300 md:py-32"
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-950 to-slate-950"></div>
 
-        <div className="relative z-10 container mx-auto max-w-5xl px-4 text-center">
-          <div className="mb-10 sm:mb-12">
-            <div className="mb-4 sm:mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10 text-blue-400">
-              <CalendarDays className="h-6 w-6" />
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight max-w-3xl mx-auto">
-              {offer.title}
-            </h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg" dangerouslySetInnerHTML={{ __html: offer.subtitle }} />
-          </div>
-
-          {/* Ozdobny pakiet wartościowy - Mobile First */}
-          <div className="mx-auto mb-8 sm:mb-12 w-full max-w-2xl bg-slate-900/40 border border-slate-800 p-5 sm:p-10 rounded-2xl sm:rounded-3xl text-left">
-            <h3 className="mb-6 sm:mb-8 text-center text-base sm:text-xl font-bold text-white border-b border-slate-800 pb-4 sm:pb-6 leading-snug">
-              {offer.packetTitle}{" "}
-              <span className="block sm:inline mt-1 sm:mt-0 sm:ml-2 text-blue-400 text-xs sm:text-sm font-normal">
-                {offer.packetVal}
-              </span>
-            </h3>
-
-            <ul className="space-y-4 sm:space-y-6">
-              {offer.benefits.map((b, i) => (
-                <li key={i} className="flex items-center gap-3 sm:gap-4">
-                  <div className="shrink-0 rounded-full bg-emerald-500/10 p-1.5 flex items-center justify-center">
-                    <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                  </div>
-                  <div className="flex-1">
-                    <strong className="block text-xs sm:text-base font-bold text-white leading-snug">
-                      {b.title}
-                    </strong>
-                    {b.desc && (
-                      <span className="text-[11px] sm:text-sm text-slate-400 leading-relaxed">
-                        {b.desc}
-                      </span>
-                    )}
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* CTA Button */}
-          <div className="flex flex-col items-center">
-            <a
-              href="https://calendly.com/kontakt-karolmodelski/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full max-w-md"
-            >
-              <Button
-                size="lg"
-                className="relative flex h-auto min-h-[3.5rem] w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white py-5 px-5 sm:px-6 text-xs sm:text-sm font-bold shadow-lg transition-all whitespace-normal text-center leading-tight"
-              >
-                <CalendarDays className="h-5 w-5 shrink-0" />
-                {offer.cta}
-              </Button>
-            </a>
-            <p className="mt-4 text-xs sm:text-sm text-slate-400 italic font-medium text-center" dangerouslySetInnerHTML={{ __html: offer.footer }} />
-          </div>
-        </div>
-      </section>
+      <CtaSection />
     </main>
   )
 }

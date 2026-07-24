@@ -16,7 +16,7 @@ export const mvp = {
       "Darmowa diagnoza online i pakiet doradczy o wartości 600 zł.",
   },
   hero: {
-    badge: "⚡ Szybka wersja startowa aplikacji",
+    badge: "Szybka wersja startowa aplikacji",
     title: "Uruchom kluczową wersję swojej aplikacji w 30 dni",
     title_highlight: "– zacznij zarabiać i testuj pomysł na rynku bez przepalania budżetu.",
     subtitle:
@@ -43,9 +43,9 @@ export const mvp = {
     },
     cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
     offer_items: [
-      { title: "🚀 Wdrożenie w 30 dni: szybkie wypuszczenie kluczowej funkcjonalności na rynek, abyś mógł zacząć testować popyt i zbierać przychody.", desc: "", val: "" },
-      { title: "🛡️ Ochrona budżetu: zero kosztownych, zbędnych funkcji na start. Inwestujesz tylko w to, co najważniejsze dla Twoich klientów.", desc: "", val: "" },
-      { title: "🗺️ Osobista Mapa Drogowa IT: indywidualny plan wejścia na rynek bez przepalania środków.", desc: "", val: "" },
+      { title: "Wdrożenie w 30 dni: szybkie wypuszczenie kluczowej funkcjonalności na rynek, abyś mógł zacząć testować popyt i zbierać przychody.", desc: "", val: "" },
+      { title: "Ochrona budżetu: zero kosztownych, zbędnych funkcji na start. Inwestujesz tylko w to, co najważniejsze dla Twoich klientów.", desc: "", val: "" },
+      { title: "Osobista Mapa Drogowa IT: indywidualny plan wejścia na rynek bez przepalania środków.", desc: "", val: "" },
     ],
     cta: "Porozmawiajmy o Twoim projekcie",
     footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT"
@@ -232,6 +232,6 @@ export const mvp = {
       },
     ],
     cta: "Porozmawiajmy o Twoim projekcie",
-    footer: "(W ramach programu zostały tylko <strong class='text-white font-semibold'>2 wolne miejsca</strong>)",
+    footer: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
   },
 }

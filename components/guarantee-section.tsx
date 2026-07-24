@@ -1,5 +1,6 @@
 import { ShieldCheck } from "lucide-react"
 import { content } from "@/lib/content"
+import { SectionBadge } from "@/components/section-badge"
 
 interface GuaranteeItem {
   title: string
@@ -31,9 +32,11 @@ export function GuaranteeSection({ guarantee: customGuarantee }: GuaranteeSectio
       <div className="relative z-10 container mx-auto px-4 max-w-5xl">
         {/* Header - Mobile First */}
         <div className="mb-8 sm:mb-16 text-center">
-          <div className="mb-3 sm:mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="mb-3 sm:mb-4">
+            <SectionBadge variant="emerald">
             <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
             <span>{guarantee.badge}</span>
+          </SectionBadge>
           </div>
           <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
             {guarantee.title}

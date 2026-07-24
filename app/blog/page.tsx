@@ -1,8 +1,10 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
-import { FileText, ArrowRight, CalendarDays, CheckCircle2 } from "lucide-react"
+import { CtaSection } from "@/components/cta-section"
+import { FileText, ArrowRight, Lightbulb, ShieldCheck, TrendingUp, BookOpen, Map } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { SectionBadge } from "@/components/section-badge"
 import { content } from "@/lib/content"
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -87,8 +89,8 @@ export default function BlogHubPage() {
         <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-center gap-6 lg:gap-20">
           
           <div className="flex-1 w-full max-w-2xl text-left pt-4 sm:pt-8">
-            <div className="mb-4 sm:mb-6 inline-flex items-center gap-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 px-2.5 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-tight sm:tracking-widest whitespace-nowrap">
-              {blog.header.badge}
+            <div className="mb-4 sm:mb-6">
+              <SectionBadge><BookOpen className="h-3.5 w-3.5 shrink-0" />{blog.header.badge}</SectionBadge>
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1]">
               {blog.header.title}
@@ -110,7 +112,7 @@ export default function BlogHubPage() {
               {blog.header.indicators.map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-slate-300">
                   <span className="text-blue-400 shrink-0 text-base">
-                    {i === 0 ? "💡" : i === 1 ? "🛡️" : "📈"}
+                    {i === 0 ? <Lightbulb className="h-4 w-4" /> : i === 1 ? <ShieldCheck className="h-4 w-4" /> : <TrendingUp className="h-4 w-4" />}
                   </span>
                   <span className="text-xs sm:text-sm font-medium">{item.title}</span>
                 </div>
@@ -126,7 +128,15 @@ export default function BlogHubPage() {
               <p className="text-xs font-semibold text-white mb-2.5">{blog.header.pilot_program.package_title}</p>
               <ul className="space-y-1.5 mb-4">
                 {blog.header.offer_items.map((item, i) => (
-                  <li key={i} className="text-xs text-slate-300 leading-snug">{item.title}</li>
+                  <li key={i} className="text-xs text-slate-300 leading-snug flex items-start gap-2">
+                    <span className="text-blue-400 shrink-0 mt-0.5">
+                      {i === 0 && <Lightbulb className="h-3.5 w-3.5" />}
+                      {i === 1 && <ShieldCheck className="h-3.5 w-3.5" />}
+                      {i === 2 && <TrendingUp className="h-3.5 w-3.5" />}
+                      {i === 3 && <Map className="h-3.5 w-3.5" />}
+                    </span>
+                    {item.title}
+                  </li>
                 ))}
               </ul>
 
@@ -143,8 +153,10 @@ export default function BlogHubPage() {
 
       <main className="container mx-auto max-w-7xl px-4 py-12 sm:py-24">
         <div className="mb-8 sm:mb-16 text-center">
-          <div className="mb-3 sm:mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-wider">
+          <div className="mb-3 sm:mb-4">
+            <SectionBadge>
             <span>{blog.categories.badge}</span>
+          </SectionBadge>
           </div>
           <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-2.5 sm:mb-4 leading-snug">
             {blog.categories.title}
@@ -172,9 +184,11 @@ export default function BlogHubPage() {
 
         <div className="mb-12 sm:mb-20">
           <div className="mb-8 sm:mb-12 text-center">
-            <div className="mb-3 sm:mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-wider">
+            <div className="mb-3 sm:mb-4">
+            <SectionBadge>
               <span>{blog.featured.badge}</span>
-            </div>
+            </SectionBadge>
+          </div>
             <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-2.5 sm:mb-4 leading-snug">
               {blog.featured.title}
             </h2>
@@ -274,76 +288,8 @@ export default function BlogHubPage() {
         </aside>
       </main>
 
-      {/* Sekcja 4: Finałowe Wezwanie do Działania w Bazie Wiedzy */}
-      <section
-        id="oferta"
-        className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-12 sm:py-20 text-slate-300 md:py-32"
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-950 to-slate-950"></div>
 
-        <div className="relative z-10 container mx-auto max-w-5xl px-4 text-center">
-          <div className="mb-8 sm:mb-12">
-            <div className="mb-3 sm:mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-wider">
-              <span>{blog.offer.badge}</span>
-            </div>
-            <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
-              {blog.offer.title}
-            </h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-xs sm:text-base md:text-lg">
-              {blog.offer.description}
-            </p>
-          </div>
-
-          {/* Ozdobny pakiet wartościowy - Mobile First */}
-          <div className="mx-auto mb-6 sm:mb-12 w-full max-w-2xl bg-slate-900/40 border border-slate-800 p-4 sm:p-10 rounded-2xl sm:rounded-3xl text-left">
-            <h3 className="mb-4 sm:mb-8 text-center text-sm sm:text-xl font-bold text-white border-b border-slate-800 pb-3 sm:pb-6 leading-snug">
-              {blog.offer.packetTitle}{" "}
-              <span className="block sm:inline mt-1 sm:mt-0 sm:ml-2 text-blue-400 text-[11px] sm:text-sm font-normal">
-                {blog.offer.packetVal}
-              </span>
-            </h3>
-
-            <ul className="space-y-3 sm:space-y-6">
-              {blog.offer.benefits.map((b, i) => (
-                <li key={i} className="flex items-center gap-3 sm:gap-4">
-                  <div className="shrink-0 rounded-full bg-emerald-500/10 p-1.5 flex items-center justify-center">
-                    <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                  </div>
-                  <div className="flex-1">
-                    <strong className="block text-xs sm:text-base font-bold text-white leading-snug">
-                      {b.title}
-                    </strong>
-                    {b.desc && (
-                      <span className="text-[11px] sm:text-sm text-slate-400 leading-relaxed">
-                        {b.desc}
-                      </span>
-                    )}
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* CTA Button */}
-          <div className="flex flex-col items-center">
-            <a
-              href="https://calendly.com/kontakt-karolmodelski/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full max-w-md"
-            >
-              <Button
-                size="lg"
-                className="relative flex h-auto min-h-[3.5rem] w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white py-4 sm:py-5 px-5 sm:px-6 text-xs sm:text-sm font-bold shadow-lg transition-all whitespace-normal text-center leading-tight"
-              >
-                <CalendarDays className="h-5 w-5 shrink-0" />
-                {blog.offer.cta}
-              </Button>
-            </a>
-            <p className="mt-3 sm:mt-4 text-[11px] sm:text-sm text-slate-400 italic font-medium text-center" dangerouslySetInnerHTML={{ __html: blog.offer.footer }} />
-          </div>
-        </div>
-      </section>
+      <CtaSection />
     </div>
   )
 }

@@ -1,5 +1,5 @@
 export const hero = {
-  badge: "🚀 Niezależny Partner Technologiczny MŚP",
+  badge: "Niezależny Partner Technologiczny MŚP",
   h1: "Aplikacje internetowe dla firm, które realnie zarabiają – bez agencji i ukrytych kosztów.",
   subheading: "Zastąp powolne agencje programistyczne bezpośrednią współpracą z Niezależnym Partnerem Technologicznym. Wdrażam dedykowane aplikacje biznesowe o stabilności bankowej (Citibank, BNP Paribas) dwukrotnie szybciej i bez „głuchego telefonu” z pośrednikami.",
 
@@ -19,8 +19,8 @@ export const hero = {
   cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
 
   offer_items: [
-    { title: "🎯 Diagnoza miejsc blokujących zyski w firmie", desc: "", val: "" },
-    { title: "🛡️ Bankowy Test Bezpieczeństwa Informacji", desc: "", val: "" },
-    { title: "🗺️ Osobista Mapa Drogowa Rozwoju Cyfrowego", desc: "", val: "" },
+    { title: "Diagnoza miejsc blokujących zyski w firmie", desc: "", val: "" },
+    { title: "Bankowy Test Bezpieczeństwa Informacji", desc: "", val: "" },
+    { title: "Osobista Mapa Drogowa Rozwoju Cyfrowego", desc: "", val: "" },
   ]
 }

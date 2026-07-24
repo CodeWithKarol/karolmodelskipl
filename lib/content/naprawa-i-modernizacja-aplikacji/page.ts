@@ -25,7 +25,7 @@ export const guarantee = {
 }
 
 export const hero = {
-  badge: "🛠️ Bezinwazyjna modernizacja oprogramowania",
+  badge: "Bezinwazyjna modernizacja oprogramowania",
   title: "Naprawiam i przyspieszam istniejące aplikacje internetowe",
   titleHighlight: "– bez wstrzymywania sprzedaży i kosztownego pisania od nowa.",
   description:
@@ -45,10 +45,10 @@ export const hero = {
   },
   cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
   offer_items: [
-    { title: "⚡ Zero przestojów w biznesie: wszystkie prace modernizacyjne przebiegają w tle. Twój sklep lub system działa bez przerw 24/7.", desc: "", val: "" },
-    { title: "🛡️ Ochrona dotychczasowego budżetu: nie namawiam na ryzykowne budowanie wszystkiego od zera. Wykorzystujemy to, co działa.", desc: "", val: "" },
-    { title: "📈 Błyskawiczna poprawa szybkości: zwiększam wydajność aplikacji, co bezpośrednio przekłada się na wyższą konwersję.", desc: "", val: "" },
-    { title: "🗺️ Bezpłatny plan poprawek: precyzyjna ścieżka optymalizacji kodu bez przepalania środków.", desc: "", val: "" },
+    { title: "Zero przestojów w biznesie: wszystkie prace modernizacyjne przebiegają w tle. Twój sklep lub system działa bez przerw 24/7.", desc: "", val: "" },
+    { title: "Ochrona dotychczasowego budżetu: nie namawiam na ryzykowne budowanie wszystkiego od zera. Wykorzystujemy to, co działa.", desc: "", val: "" },
+    { title: "Błyskawiczna poprawa szybkości: zwiększam wydajność aplikacji, co bezpośrednio przekłada się na wyższą konwersję.", desc: "", val: "" },
+    { title: "Bezpłatny plan poprawek: precyzyjna ścieżka optymalizacji kodu bez przepalania środków.", desc: "", val: "" },
   ]
 }
 

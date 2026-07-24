@@ -1,5 +1,6 @@
 import { HelpCircle } from "lucide-react"
 import { content } from "@/lib/content"
+import { SectionBadge } from "@/components/section-badge"
 import {
   Accordion,
   AccordionContent,
@@ -20,9 +21,11 @@ export function FaqSection() {
       <div className="relative z-10 container mx-auto px-4 max-w-3xl">
         {/* Header - Mobile First */}
         <div className="mb-12 text-center">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-1.5 text-xs font-bold text-blue-400 uppercase tracking-wider">
+          <div className="mb-6">
+            <SectionBadge>
             <HelpCircle className="h-4 w-4" />
             <span>FAQ</span>
+          </SectionBadge>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
             Najczęściej zadawane pytania

@@ -5,7 +5,7 @@ export const metadata = {
 }
 
 export const hero = {
-  badge: "💻 Aplikacje internetowe dla firm",
+  badge: "Aplikacje internetowe dla firm",
   title: "Aplikacje internetowe dla firm, które automatyzują procesy i zwiększają zyski",
   titleHighlight: "– bez chaosu w agencji i ukrytych kosztów.",
   description:
@@ -25,9 +25,9 @@ export const hero = {
   },
   cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
   offer_items: [
-    { title: "🎯 Diagnoza miejsc blokujących zyski w procesach firmy", desc: "", val: "" },
-    { title: "🛡️ Bankowy Test Bezpieczeństwa Informacji", desc: "", val: "" },
-    { title: "🗺️ Osobista Mapa Drogowa Wdrożenia Aplikacji", desc: "", val: "" },
+    { title: "Diagnoza miejsc blokujących zyski w procesach firmy", desc: "", val: "" },
+    { title: "Bankowy Test Bezpieczeństwa Informacji", desc: "", val: "" },
+    { title: "Osobista Mapa Drogowa Wdrożenia Aplikacji", desc: "", val: "" },
   ]
 }
 
@@ -166,7 +166,7 @@ export const offer = {
     },
   ],
   cta: "Porozmawiajmy o Twoim projekcie",
-  footer: "(W ramach programu zostały tylko <strong class='text-white font-semibold'>2 wolne miejsca</strong>)",
+  footer: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
 }
 
 export const guarantee = {

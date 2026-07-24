@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
-import { ShieldCheck, Zap, User } from "lucide-react"
+import { ShieldCheck, Zap, User, Gem, Target, Map } from "lucide-react"
 import { content } from "@/lib/content"
+import { SectionBadge } from "@/components/section-badge"
 
 export function HeroSection() {
   const { hero } = content
@@ -15,8 +16,8 @@ export function HeroSection() {
         
         {/* Content Column */}
         <div className="flex-1 w-full max-w-2xl text-left pt-4 sm:pt-8">
-            <div className="mb-4 sm:mb-6 inline-flex items-center gap-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 px-2.5 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-tight sm:tracking-widest whitespace-nowrap">
-            {hero.badge}
+            <div className="mb-4 sm:mb-6">
+              <SectionBadge><Gem className="h-3.5 w-3.5 shrink-0" />{hero.badge}</SectionBadge>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1]">
             {hero.h1}
@@ -83,7 +84,12 @@ export function HeroSection() {
             <p className="text-xs font-semibold text-white mb-2.5">{hero.pilot_program.package_title}</p>
             <ul className="space-y-1.5 mb-4">
               {hero.offer_items.map((item, i) => (
-                <li key={i} className="text-xs text-slate-300 leading-snug">
+                <li key={i} className="text-xs text-slate-300 leading-snug flex items-start gap-2">
+                  <span className="text-blue-400 shrink-0 mt-0.5">
+                    {i === 0 && <Target className="h-3.5 w-3.5" />}
+                    {i === 1 && <ShieldCheck className="h-3.5 w-3.5" />}
+                    {i === 2 && <Map className="h-3.5 w-3.5" />}
+                  </span>
                   {item.title}
                 </li>
               ))}
