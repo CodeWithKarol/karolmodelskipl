@@ -5,22 +5,31 @@ export const metadata = {
 }
 
 export const hero = {
-  badge: "Doradztwo Strategiczne",
+  badge: "🎯 Doradztwo i architektura IT dla firm",
   title: "Zyskaj osobistego Niezależnego Partnera Technologicznego dla swojej firmy",
   titleHighlight: "– bez kosztów etatu zarządczego i ryzyka złych decyzji.",
   description:
     "Rozwijasz biznes, ale masz wrażenie, że technologia zamiast pomagać, zaczyna Cię ograniczać? Nie wiesz, w co zainwestować budżet, komu powierzyć rozbudowę systemów i jak uchronić firmę przed kosztownymi błędami programistycznymi? Przejmuję pełną odpowiedzialność za strategię i kierunek cyfrowy Twojego biznesu.",
-  cta: "ZAREZERWUJ BEZPŁATNĄ STRATEGIĘ CYFROWĄ",
+  cta: "Porozmawiajmy o Twoim projekcie",
   footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT",
   indicators: [
     { title: "Decyzje oparte na doświadczeniu bankowym", desc: "Przenoszę rygorystyczne standardy bezpieczeństwa i skalowalności z globalnych instytucji (Citibank, BNP Paribas) wprost do Twojej firmy." },
     { title: "Ochrona przed przepalaniem budżetów", desc: "Weryfikuję plany, wyceny i pracę zewnętrznych dostawców, eliminując naciąganie na zbędne i drogie rozwiązania." },
     { title: "Technologia napędzająca zyski", desc: "Doradzam wprost z perspektywy biznesowej – technologia ma służyć wzrostowi sprzedaży i automatyzacji, a nie sztuce dla sztuki." }
   ],
-  audit_promo: {
-    title: "👉 Potrzebujesz niezależnego oka na technologię w swojej firmie?",
-    desc: "Zarezerwuj bezpłatną, 30-minutową strategię cyfrową. Przeanalizujemy Twoje plany i wskażę najważniejsze priorytety technologiczne na najbliższe miesiące."
-  }
+  pilot_program: {
+    title: "Program Wdrożeniowy: Doradztwo i Architektura Techniczna (Tylko 2 firmy)",
+    description: "Przechodzę z sektora finansowego do wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces doradztwa strategicznego w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> nad rozwojem cyfrowym Twojej firmy.",
+    cta: "Porozmawiajmy o Twoim projekcie",
+    package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
+  },
+  cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+  offer_items: [
+    { title: "🎯 Decyzje oparte na doświadczeniu bankowym: przenoszę rygorystyczne standardy bezpieczeństwa i skalowalności z globalnych instytucji (Citibank, BNP Paribas) wprost do Twojej firmy.", desc: "", val: "" },
+    { title: "🛡️ Ochrona przed przepalaniem budżetów: weryfikuję plany, wyceny i pracę zewnętrznych dostawców, eliminując naciąganie na zbędne i drogie rozwiązania.", desc: "", val: "" },
+    { title: "📈 Technologia napędzająca zyski: doradzam wprost z perspektywy biznesowej – technologia ma służyć wzrostowi sprzedaży i automatyzacji, a nie sztuce dla sztuki.", desc: "", val: "" },
+    { title: "🗺️ Osobista Mapa Drogowa IT: priorytety technologiczne i konsultacje dobrane pod aktualne cele Twojego biznesu.", desc: "", val: "" },
+  ]
 }
 
 export const story = {

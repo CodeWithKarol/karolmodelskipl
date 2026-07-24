@@ -25,22 +25,31 @@ export const guarantee = {
 }
 
 export const hero = {
-  badge: "Modernizacja aplikacji",
+  badge: "🛠️ Bezinwazyjna modernizacja oprogramowania",
   title: "Naprawiam i przyspieszam istniejące aplikacje internetowe",
   titleHighlight: "– bez wstrzymywania sprzedaży i kosztownego pisania od nowa.",
   description:
     "Twój obecny system działa wolno, zacina się lub każda drobna zmiana trwa miesiącami? Nie musisz wyrzucać dotychczasowych inwestycji do kosza. Wprowadzam usprawnienia ewolucyjnie, na żywym organizmie Twojej firmy, dbając o to, by Twoi klienci kupowali bez przeszkód.",
-  cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ SYSTEMU",
+  cta: "Porozmawiajmy o Twoim projekcie",
   footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz bezpłatny plan poprawek",
   indicators: [
     { title: "Zero przestojów w biznesie", desc: "Wszystkie prace modernizacyjne przebiegają w tle. Twój sklep lub system działa bez przerw 24/7." },
     { title: "Ochrona dotychczasowego budżetu", desc: "Nie namawiam na ryzykowne budowanie wszystkiego od zera. Wykorzystujemy to, co działa, i naprawiamy tylko to, co blokuje zyski." },
     { title: "Błyskawiczna poprawa szybkości", desc: "Zwiększam wydajność aplikacji, co bezpośrednio przekłada się na wyższą konwersję i lepsze doświadczenie Twoich klientów." }
   ],
-  audit_promo: {
-    title: "👉 Masz wątpliwości, czy Twój system da się uratować?",
-    desc: "Zarezerwuj bezpłatną, 30-minutową diagnozę techniczną. Sprawdzę Twój obecny kod i wskażę miejsca, w których uciekają zyski."
-  }
+  pilot_program: {
+    title: "Program Wdrożeniowy: Modernizacja i Przyspieszanie Systemów (Tylko 2 firmy)",
+    description: "Przechodzę z sektora finansowego do wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces bezinwazyjnej naprawy oprogramowania w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po wdrożeniu poprawek.",
+    cta: "Porozmawiajmy o Twoim projekcie",
+    package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
+  },
+  cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+  offer_items: [
+    { title: "⚡ Zero przestojów w biznesie: wszystkie prace modernizacyjne przebiegają w tle. Twój sklep lub system działa bez przerw 24/7.", desc: "", val: "" },
+    { title: "🛡️ Ochrona dotychczasowego budżetu: nie namawiam na ryzykowne budowanie wszystkiego od zera. Wykorzystujemy to, co działa.", desc: "", val: "" },
+    { title: "📈 Błyskawiczna poprawa szybkości: zwiększam wydajność aplikacji, co bezpośrednio przekłada się na wyższą konwersję.", desc: "", val: "" },
+    { title: "🗺️ Bezpłatny plan poprawek: precyzyjna ścieżka optymalizacji kodu bez przepalania środków.", desc: "", val: "" },
+  ]
 }
 
 export const story = {
