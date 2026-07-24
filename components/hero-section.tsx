@@ -11,7 +11,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-950 to-slate-950 -z-0"></div>
       <div className="absolute top-0 right-0 w-full h-1/2 bg-[linear-gradient(to_bottom,rgba(30,58,138,0.05),transparent)] pointer-events-none lg:block"></div>
 
-      <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-center gap-6 lg:gap-20">
+      <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-center gap-6 lg:gap-16">
         
         {/* Content Column */}
         <div className="flex-1 w-full max-w-2xl text-left pt-4 sm:pt-8">
@@ -58,8 +58,24 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Promo Card Column — details + CTA (desktop only) */}
-        <div className="hidden w-full max-w-md lg:max-w-sm flex-shrink-0 lg:mt-8 lg:block">
+        {/* Photo + Promo Card Column (desktop only) */}
+        <div className="hidden w-full max-w-md lg:max-w-sm flex-shrink-0 lg:flex lg:flex-col lg:gap-6 lg:mt-8">
+          {/* Photo */}
+          <div className="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/50 shadow-2xl">
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent z-10 pointer-events-none"></div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/karol.webp"
+              alt="Karol Modelski - Niezależny Partner Technologiczny"
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute bottom-0 left-0 right-0 z-20 p-5">
+              <p className="text-sm font-bold text-white">Karol Modelski</p>
+              <p className="text-xs text-slate-400">Niezależny Partner Technologiczny</p>
+            </div>
+          </div>
+
+          {/* Promo Card */}
           <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-5 shadow-2xl">
             <h2 className="text-lg font-bold text-white mb-3 leading-snug">{hero.pilot_program.title}</h2>
             <p className="text-sm text-slate-400 mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: hero.pilot_program.description }} />
