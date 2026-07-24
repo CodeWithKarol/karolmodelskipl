@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Menu, X, ChevronDown, ArrowRight } from "lucide-react"
+import { Menu, X, ChevronDown } from "lucide-react"
 import { header } from "@/lib/content/header"
 import { Button } from "@/components/ui/button"
 import {
@@ -129,93 +129,67 @@ export function SiteHeader() {
         </header>
       </div>
 
-      {/* Modern Custom Mobile Menu Overlay (Mobile First from scratch) */}
+      {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-40 bg-slate-950/95 backdrop-blur-2xl flex flex-col pt-24 px-6 pb-8 md:hidden overflow-y-auto animate-in fade-in duration-200">
-          <div className="flex flex-col space-y-6 w-full max-w-sm mx-auto my-auto">
+        <div className="fixed inset-0 z-40 bg-slate-950/95 backdrop-blur-2xl flex flex-col pt-24 px-6 pb-8 md:hidden overflow-y-auto">
+          <div className="flex flex-col space-y-2 w-full max-w-sm mx-auto my-auto">
             
-            {/* Sekcja Oferta rozwijana */}
-            <div className="space-y-3">
-              <button
-                onClick={() => setIsOfferOpen(!isOfferOpen)}
-                className="flex w-full items-center justify-between text-xl font-extrabold tracking-tight text-white py-2 border-b border-slate-800/80"
-              >
-                <span>{header.menu.oferta.title}</span>
-                <ChevronDown className={`h-5 w-5 text-blue-400 transition-transform duration-300 ${isOfferOpen ? "rotate-180" : ""}`} />
-              </button>
+            <button
+              onClick={() => setIsOfferOpen(!isOfferOpen)}
+              className="flex w-full items-center justify-between py-3 text-base font-bold text-white"
+            >
+              <span>{header.menu.oferta.title}</span>
+              <ChevronDown className={`h-4 w-4 text-slate-500 transition-transform duration-200 ${isOfferOpen ? "rotate-180" : ""}`} />
+            </button>
+            {isOfferOpen && (
+              <div className="flex flex-col pl-4 border-l border-slate-800 mb-2">
+                {header.menu.oferta.items.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="py-2.5 text-sm text-slate-400 hover:text-white transition-colors"
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+            )}
 
-              {isOfferOpen && (
-                <div className="flex flex-col gap-3 pl-4 pt-2 border-l border-blue-500/30 animate-in slide-in-from-top-2 duration-200">
-                  {header.menu.oferta.items.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => setIsOpen(false)}
-                      className="flex flex-col gap-0.5 py-1.5 text-left"
-                    >
-                      <span className="text-sm font-semibold text-slate-200 hover:text-blue-400 transition-colors">
-                        {item.title}
-                      </span>
-                      <span className="text-[11px] text-slate-400 font-light line-clamp-1">
-                        {item.description}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+            <button
+              onClick={() => setIsBlogOpen(!isBlogOpen)}
+              className="flex w-full items-center justify-between py-3 text-base font-bold text-white"
+            >
+              <span>{header.menu.bazaWiedzy.title}</span>
+              <ChevronDown className={`h-4 w-4 text-slate-500 transition-transform duration-200 ${isBlogOpen ? "rotate-180" : ""}`} />
+            </button>
+            {isBlogOpen && (
+              <div className="flex flex-col pl-4 border-l border-slate-800 mb-2">
+                {header.menu.bazaWiedzy.items.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="py-2.5 text-sm text-slate-400 hover:text-white transition-colors"
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+            )}
 
-            {/* Baza wiedzy rozwijana */}
-            <div className="space-y-3">
-              <button
-                onClick={() => setIsBlogOpen(!isBlogOpen)}
-                className="flex w-full items-center justify-between text-xl font-extrabold tracking-tight text-white py-2 border-b border-slate-800/80"
-              >
-                <span>{header.menu.bazaWiedzy.title}</span>
-                <ChevronDown className={`h-5 w-5 text-blue-400 transition-transform duration-300 ${isBlogOpen ? "rotate-180" : ""}`} />
-              </button>
-
-              {isBlogOpen && (
-                <div className="flex flex-col gap-3 pl-4 pt-2 border-l border-blue-500/30 animate-in slide-in-from-top-2 duration-200">
-                  {header.menu.bazaWiedzy.items.map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      onClick={() => setIsOpen(false)}
-                      className="flex flex-col gap-0.5 py-1.5 text-left"
-                    >
-                      <span className="text-sm font-semibold text-slate-200 hover:text-blue-400 transition-colors">
-                        {item.title}
-                      </span>
-                      <span className="text-[11px] text-slate-400 font-light line-clamp-1">
-                        {item.description}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* CTA główny w menu */}
             <div className="pt-6">
               <a
                 href={header.cta.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="flex w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white py-4 px-6 text-sm font-bold shadow-xl transition-all text-center"
+                className="flex w-full items-center justify-center rounded-xl bg-blue-600 hover:bg-blue-700 text-white py-3.5 text-sm font-bold shadow-lg transition-all text-center"
               >
-                <span>{header.cta.title}</span>
-                <ArrowRight className="h-4 w-4" />
+                {header.cta.title}
               </a>
-              <p className="text-center text-[10px] text-slate-400 uppercase tracking-widest font-semibold mt-3">
-                {header.cta.description}
-              </p>
+              <p className="text-center text-[10px] text-slate-500 mt-2">{header.cta.description}</p>
             </div>
-          </div>
-
-          <div className="text-center pt-8 text-xs text-slate-400 uppercase tracking-widest font-mono">
-            {header.brand.name} • 2026
           </div>
         </div>
       )}
