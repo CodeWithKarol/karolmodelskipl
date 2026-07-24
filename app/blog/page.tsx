@@ -80,47 +80,66 @@ export default function BlogHubPage() {
       <div className="pointer-events-none fixed top-1/4 right-0 -z-10 h-[500px] w-[500px] rounded-full bg-blue-600/10 opacity-60 mix-blend-screen blur-[120px] lg:h-[800px] lg:w-[800px]"></div>
       <div className="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_50%,#000_70%,transparent_100%)] bg-[size:3rem_3rem] opacity-25"></div>
 
-      <header className="relative flex flex-col items-center justify-center overflow-hidden border-b border-slate-900/80 bg-slate-950 pt-20 pb-10 sm:pt-36 sm:pb-24 text-center">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[250px] sm:h-[600px] bg-blue-900/10 blur-[90px] sm:blur-[150px] pointer-events-none"></div>
+      <section className="relative w-full flex flex-col bg-slate-950 text-slate-50 pt-16 pb-16 lg:pb-12 lg:min-h-screen">
+        <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
+        <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 opacity-50 mix-blend-screen blur-[120px]"></div>
 
-        <div className="relative z-10 container mx-auto px-4 max-w-4xl">
-          <div className="mb-3 sm:mb-6 inline-flex items-center gap-1.5 sm:gap-2 rounded-full border border-blue-500/20 bg-blue-500/5 px-3 sm:px-4 py-1 text-[9px] sm:text-xs font-bold text-blue-400 uppercase tracking-widest">
-            {blog.header.badge}
-          </div>
-          <h1
-            className="text-lg sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-8 leading-snug sm:leading-[1.15]"
-            dangerouslySetInnerHTML={{ __html: blog.header.title }}
-          />
-          <p className="text-[11px] sm:text-lg lg:text-xl text-slate-400 mb-5 sm:mb-10 leading-relaxed max-w-2xl mx-auto font-light">
-            {blog.header.description}
-          </p>
+        <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-center gap-6 lg:gap-20">
+          
+          <div className="flex-1 w-full max-w-2xl text-left pt-4 sm:pt-8">
+            <div className="mb-4 sm:mb-6 inline-flex items-center gap-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 px-2.5 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-tight sm:tracking-widest whitespace-nowrap">
+              {blog.header.badge}
+            </div>
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1]">
+              {blog.header.title}
+            </h1>
+            <p className="text-base sm:text-lg text-slate-400 mb-5 sm:mb-8 leading-relaxed max-w-xl">
+              {blog.header.description}
+            </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 mb-5 sm:mb-12 w-full text-left">
-            {blog.header.indicators.map((item, i) => (
-              <div key={i} className="bg-white/5 border border-white/10 p-3 sm:p-6 rounded-2xl backdrop-blur-sm">
-                <div className="text-blue-400 mb-1 sm:mb-3 text-sm sm:text-xl">
-                  {i === 0 ? "💡" : i === 1 ? "🛡️" : "📈"}
+            <div className="mb-5 sm:mb-6 lg:hidden">
+              <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
+                <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 text-sm font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-tight">
+                  {blog.header.pilot_program.cta}
+                </Button>
+              </a>
+              <p className="text-[11px] text-slate-400 text-center mt-2 font-medium">{blog.header.cta_sub}</p>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+              {blog.header.indicators.map((item, i) => (
+                <div key={i} className="flex items-center gap-2 text-slate-300">
+                  <span className="text-blue-400 shrink-0 text-base">
+                    {i === 0 ? "💡" : i === 1 ? "🛡️" : "📈"}
+                  </span>
+                  <span className="text-xs sm:text-sm font-medium">{item.title}</span>
                 </div>
-                <h2 className="text-[10px] sm:text-sm font-bold text-white mb-0.5 sm:mb-1 leading-tight">{item.title}</h2>
-                <p className="text-[10px] sm:text-xs text-slate-400 leading-snug">{item.desc}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
-          <div className="bg-slate-900/50 border border-slate-800 rounded-2xl sm:rounded-3xl p-3.5 sm:p-8 max-w-md w-full relative mx-auto shadow-xl">
-            <p className="text-[11px] sm:text-sm md:text-base font-bold text-blue-400 mb-1 sm:mb-2">
-              {blog.header.audit_promo.title.replace("👉 ", "")}
-            </p>
-            <p className="text-[10px] sm:text-sm text-slate-300 mb-3 sm:mb-6 leading-relaxed max-w-sm mx-auto">
-              {blog.header.audit_promo.desc}
-            </p>
-            <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
-              <Button size="lg" className="w-full py-3.5 sm:py-6 text-[11px] sm:text-sm font-bold rounded-xl bg-blue-600 hover:bg-blue-700 shadow-lg whitespace-normal h-auto leading-tight">{blog.header.cta}</Button>
-            </a>
-            <p className="text-[9px] sm:text-xs text-slate-400 mt-2.5 sm:mt-4 uppercase tracking-widest font-semibold">{blog.header.footnote}</p>
+          <div className="hidden w-full max-w-md lg:max-w-sm flex-shrink-0 lg:block lg:mt-8">
+            <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-5 shadow-2xl backdrop-blur-xl">
+              <h2 className="text-lg font-bold text-white mb-3 leading-snug">{blog.header.pilot_program.title}</h2>
+              <p className="text-sm text-slate-400 mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: blog.header.pilot_program.description }} />
+              
+              <p className="text-xs font-semibold text-white mb-2.5">{blog.header.pilot_program.package_title}</p>
+              <ul className="space-y-1.5 mb-4">
+                {blog.header.offer_items.map((item, i) => (
+                  <li key={i} className="text-xs text-slate-300 leading-snug">{item.title}</li>
+                ))}
+              </ul>
+
+              <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
+                <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 text-sm font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-tight">
+                  {blog.header.pilot_program.cta}
+                </Button>
+              </a>
+              <p className="text-[10px] text-slate-400 text-center mt-3 uppercase tracking-widest font-semibold">{blog.header.cta_sub}</p>
+            </div>
           </div>
         </div>
-      </header>
+      </section>
 
       <main className="container mx-auto max-w-7xl px-4 py-12 sm:py-24">
         <div className="mb-8 sm:mb-16 text-center">
