@@ -48,12 +48,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
-      url: "https://www.karolmodelski.pl/bezpieczenstwo-klasy-bankowej",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.85,
-    },
-    {
       url: "https://www.karolmodelski.pl/blog/bezinwazyjna-modernizacja-systemow",
       lastModified: new Date(),
       changeFrequency: "weekly",

@@ -51,12 +51,12 @@ export function Footer() {
               <ExternalLink className="h-3.5 w-3.5 shrink-0" />
               {footer.contact.linkedinLabel}
             </a>
-            <p className="text-xs text-slate-500">{footer.contact.coverage}</p>
+            <p className="text-xs text-slate-400">{footer.contact.coverage}</p>
             <div className="space-y-1 text-sm">
               <p><a href={`mailto:${footer.contact.email}`} className="text-blue-400 hover:text-blue-300 transition-colors">{footer.contact.email}</a></p>
               <p><a href={`tel:${footer.contact.phone.replace(/\s+/g, "")}`} className="text-blue-400 hover:text-blue-300 transition-colors">{footer.contact.phone}</a></p>
             </div>
-            <p className="text-xs text-slate-500">NIP: {footer.contact.nip}</p>
+            <p className="text-xs text-slate-400">NIP: {footer.contact.nip}</p>
           </div>
         </div>
 
@@ -67,9 +67,9 @@ export function Footer() {
                 Porozmawiajmy o Twoim projekcie
               </Button>
             </a>
-            <p className="text-xs text-slate-500 mt-2">100% bezpłatna rozmowa strategiczna • Odbierz plan o wartości 600 zł za 0 zł</p>
+            <p className="text-xs text-slate-400 mt-2">100% bezpłatna rozmowa strategiczna • Odbierz plan o wartości 600 zł za 0 zł</p>
           </div>
-          <p className="text-xs text-slate-500 leading-relaxed">{footer.copyright}</p>
+          <p className="text-xs text-slate-400 leading-relaxed">{footer.copyright}</p>
         </div>
       </div>
     </footer>

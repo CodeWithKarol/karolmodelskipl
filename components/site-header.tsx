@@ -188,7 +188,7 @@ export function SiteHeader() {
               >
                 {header.cta.title}
               </a>
-              <p className="text-center text-[10px] text-slate-500 mt-2">{header.cta.description}</p>
+              <p className="text-center text-[10px] text-slate-400 mt-2">{header.cta.description}</p>
             </div>
           </div>
         </div>

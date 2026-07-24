@@ -42,7 +42,7 @@ export function CtaSection() {
             </ul>
           </div>
 
-          <div className="text-xs sm:text-sm text-slate-500 text-center mb-5 sm:mb-6 leading-relaxed">100% bezpłatnie • Rozmowa wideo w 4 oczy</div>
+          <div className="text-xs sm:text-sm text-slate-400 text-center mb-5 sm:mb-6 leading-relaxed">100% bezpłatnie • Rozmowa wideo w 4 oczy</div>
 
           <div className="flex flex-col items-center">
             <a href={siteConfig.calendlyLink} target="_blank" rel="noopener noreferrer" className="w-full max-w-md">
