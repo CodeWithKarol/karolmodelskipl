@@ -5,11 +5,11 @@ export const metadata = {
 }
 
 export const hero = {
-  badge: "Aplikacje dla firm",
-  title: "Tworzę dedykowane aplikacje internetowe dla firm, które automatyzują procesy i skalują zyski",
-  titleHighlight: "– bez agencji i ukrytych kosztów.",
+  badge: "💻 Aplikacje internetowe dla firm",
+  title: "Aplikacje internetowe dla firm, które automatyzują procesy i zwiększają zyski",
+  titleHighlight: "– bez chaosu w agencji i ukrytych kosztów.",
   description:
-    "Zyskaj nowoczesne oprogramowanie o standardach klasy bankowej, dopasowane w 100% do specyfiki Twojego biznesu. Zapomnij o „głuchym telefonie” z pośrednikami i przepłacaniu za administrację agencji – pracujesz bezpośrednio ze mną.",
+    "Masz dość gotowych systemów, które Cię ograniczają, oraz agencji, w których Twój projekt ginie między pośrednikami? Jako Niezależny Partner Technologiczny projektuję i wdrażam dedykowane aplikacje na zamówienie o stabilności bankowej – dokładnie pod unikalne procesy w Twojej firmie.",
   cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ SYSTEMU",
   footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT",
   indicators: [
@@ -17,10 +17,18 @@ export const hero = {
     { title: "Bezpieczeństwo klasy bankowej", desc: "Przenoszę rygorystyczne standardy ochrony danych i stabilności z sektora finansowego wprost do Twojego biznesu." },
     { title: "Bezpośredni kontakt", desc: "Rozmawiasz wyłącznie z autorem systemu. Natychmiastowe decyzje i pełna odpowiedzialność za wynik." }
   ],
-  audit_promo: {
-    title: "👉 Masz pomysł na system lub chcesz usprawnić działanie firmy?",
-    desc: "Zarezerwuj bezpłatną, 30-minutową rozmowę strategiczną. Przeanalizujemy Twoje potrzeby i wskażę najszybszą ścieżkę wdrożenia."
-  }
+  pilot_program: {
+    title: "Program Wdrożeniowy: Aplikacje Internetowe dla Firm (Tylko 2 miejsca)",
+    description: "Przechodzę z sektora finansowego do wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces budowy dedykowanego oprogramowania. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po wdrożeniu.",
+    cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ SYSTEMU",
+    package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
+  },
+  cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+  offer_items: [
+    { title: "🎯 Diagnoza miejsc blokujących zyski w procesach firmy", desc: "", val: "" },
+    { title: "🛡️ Bankowy Test Bezpieczeństwa Informacji", desc: "", val: "" },
+    { title: "🗺️ Osobista Mapa Drogowa Wdrożenia Aplikacji", desc: "", val: "" },
+  ]
 }
 
 export const story = {
