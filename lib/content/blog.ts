@@ -5,11 +5,11 @@ export const blogContent = {
       "Szukasz odpowiedzi na pytania dotyczące tworzenia, modernizacji i kosztów systemów internetowych w Twojej firmie? Przeczytaj praktyczne poradniki.",
   },
   header: {
-    badge: "Baza wiedzy o oprogramowaniu dla firm",
+    badge: "📚 Baza wiedzy o oprogramowaniu dla firm",
     title:
-      'Konkretna wiedza biznesowa bez technicznego żargonu.',
+      'Konkretna wiedza biznesowa o oprogramowaniu dla firm – bez technicznego żargonu i pułapek agencji.',
     description:
-      "Szukasz odpowiedzi na pytania dotyczące tworzenia, modernizacji i kosztów systemów internetowych w Twojej firmie? Przeczytaj praktyczne poradniki oparte na wieloletnim doświadczeniu korporacyjnym i dowiedz się, jak mądrze inwestować w technologię, unikając kosztownych pułapek agencji.",
+      "Szukasz odpowiedzi na pytania dotyczące tworzenia, modernizacji i realnych kosztów systemów internetowych w Twojej firmie? Przeczytaj praktyczne poradniki oparte na doświadczeniu z sektorów bankowego i MŚP. Dowiedz się, jak mądrze inwestować w technologię, budować dedykowane aplikacje na zamówienie i chronić budżet.",
     indicators: [
       {
         title: "Proste odpowiedzi na trudne pytania",
@@ -24,12 +24,21 @@ export const blogContent = {
         desc: "Sprawdzone metody na ewolucyjny rozwój oprogramowania bez przerw w sprzedaży."
       }
     ],
-    audit_promo: {
-      title: "👉 Nie chcesz czytać setek artykułów i wolisz omówić swój projekt od razu?",
-      desc: "Zarezerwuj bezpłatną, 30-minutową rozmowę strategiczną i odbierz Pakiet Mapy Drogowej o wartości 600 zł za 0 zł."
+    pilot_program: {
+      title: "Program Wdrożeniowy: Rozwój Cyfrowy MŚP (Tylko 2 firmy)",
+      description: "Nie chcesz czytać dziesiątek artykułów i wolisz skonsultować swój projekt bezpośrednio ze mną? Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> w bieżącym kwartale i przetestuj proces doradztwa strategicznego w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> nad systemem.",
+      cta: "Porozmawiajmy o Twoim projekcie",
+      package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
     },
-    cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ",
-    footnote: "100% bezpłatnie • Rozmowa wideo • Bezpośredni kontakt z ekspertem"
+    cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+    offer_items: [
+      { title: "💡 Proste odpowiedzi na trudne pytania: wyjaśniam zawiłości technologiczne językiem czystego biznesu i zysków.", desc: "", val: "" },
+      { title: "🛡️ Ochrona przed przepalaniem budżetów: dowiedz się, jak weryfikować wyceny agencji i unikać błędów kosztujących setki tysięcy złotych.", desc: "", val: "" },
+      { title: "📈 Praktyczne strategie rozwoju: sprawdzone metody na ewolucyjny rozwój oprogramowania dla firm bez przerw w sprzedaży.", desc: "", val: "" },
+      { title: "🗺️ Osobista Mapa Drogowa IT: indywidualny plan wdrożenia lub modernizacji dobrany pod cele Twojego biznesu.", desc: "", val: "" },
+    ],
+    cta: "Porozmawiajmy o Twoim projekcie",
+    footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT"
   },
   categories: {
     badge: "Nawigacja po bazie wiedzy",
@@ -110,7 +119,7 @@ export const blogContent = {
         desc: "Weryfikacja pod kątem rygorystycznych standardów finansowych.",
       },
     ],
-    cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ",
+    cta: "Porozmawiajmy o Twoim projekcie",
     footer: "(W ramach programu doradczego w tym kwartale zostały tylko <strong class='text-white font-semibold'>2 wolne miejsca</strong>)",
   },
 }
