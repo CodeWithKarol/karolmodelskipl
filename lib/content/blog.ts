@@ -5,7 +5,7 @@ export const blogContent = {
       "Szukasz odpowiedzi na pytania dotyczące tworzenia, modernizacji i kosztów systemów internetowych w Twojej firmie? Przeczytaj praktyczne poradniki.",
   },
   header: {
-    badge: "📚 Baza wiedzy o oprogramowaniu dla firm",
+    badge: "Baza wiedzy o oprogramowaniu dla firm",
     title:
       'Konkretna wiedza biznesowa o oprogramowaniu dla firm – bez technicznego żargonu i pułapek agencji.',
     description:
@@ -32,10 +32,10 @@ export const blogContent = {
     },
     cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
     offer_items: [
-      { title: "💡 Proste odpowiedzi na trudne pytania: wyjaśniam zawiłości technologiczne językiem czystego biznesu i zysków.", desc: "", val: "" },
-      { title: "🛡️ Ochrona przed przepalaniem budżetów: dowiedz się, jak weryfikować wyceny agencji i unikać błędów kosztujących setki tysięcy złotych.", desc: "", val: "" },
-      { title: "📈 Praktyczne strategie rozwoju: sprawdzone metody na ewolucyjny rozwój oprogramowania dla firm bez przerw w sprzedaży.", desc: "", val: "" },
-      { title: "🗺️ Osobista Mapa Drogowa IT: indywidualny plan wdrożenia lub modernizacji dobrany pod cele Twojego biznesu.", desc: "", val: "" },
+      { title: "Proste odpowiedzi na trudne pytania: wyjaśniam zawiłości technologiczne językiem czystego biznesu i zysków.", desc: "", val: "" },
+      { title: "Ochrona przed przepalaniem budżetów: dowiedz się, jak weryfikować wyceny agencji i unikać błędów kosztujących setki tysięcy złotych.", desc: "", val: "" },
+      { title: "Praktyczne strategie rozwoju: sprawdzone metody na ewolucyjny rozwój oprogramowania dla firm bez przerw w sprzedaży.", desc: "", val: "" },
+      { title: "Osobista Mapa Drogowa IT: indywidualny plan wdrożenia lub modernizacji dobrany pod cele Twojego biznesu.", desc: "", val: "" },
     ],
     cta: "Porozmawiajmy o Twoim projekcie",
     footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT"
@@ -120,6 +120,6 @@ export const blogContent = {
       },
     ],
     cta: "Porozmawiajmy o Twoim projekcie",
-    footer: "(W ramach programu doradczego w tym kwartale zostały tylko <strong class='text-white font-semibold'>2 wolne miejsca</strong>)",
+    footer: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
   },
 }

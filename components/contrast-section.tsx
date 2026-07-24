@@ -1,3 +1,4 @@
+import { SectionBadge } from "@/components/section-badge"
 import { ShieldCheck } from "lucide-react"
 import { content } from "@/lib/content"
 
@@ -14,9 +15,11 @@ export function ContrastSection() {
       <div className="relative z-10 container mx-auto max-w-5xl px-4">
         {/* Nagłówek */}
         <div className="mb-16 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-1.5 text-xs font-bold text-blue-400 uppercase tracking-wider">
-            <ShieldCheck className="h-4 w-4" />
-            <span>Porównanie modeli</span>
+          <div className="mb-4">
+            <SectionBadge>
+              <ShieldCheck className="h-4 w-4" />
+              <span>Porównanie modeli</span>
+            </SectionBadge>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
             {contrast.title_part1} {contrast.title_highlight}

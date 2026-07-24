@@ -1,5 +1,6 @@
 import { Building, Globe, Cpu, ShoppingCart, ShieldCheck } from "lucide-react"
 import { content } from "@/lib/content"
+import { SectionBadge } from "@/components/section-badge"
 
 export function TrustedBySection() {
   const { trustedBy } = content
@@ -12,9 +13,11 @@ export function TrustedBySection() {
       <div className="relative z-10 container mx-auto px-4 max-w-5xl">
         {/* Header - Mobile First */}
         <div className="mb-12 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-1.5 text-xs font-bold text-emerald-400 uppercase tracking-wider">
+          <div className="mb-4">
+            <SectionBadge variant="emerald">
             <ShieldCheck className="h-4 w-4" />
             <span>{trustedBy.badge}</span>
+          </SectionBadge>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
             {trustedBy.title}

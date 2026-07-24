@@ -1,8 +1,10 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
-import { FileText, ArrowRight, CalendarDays, CheckCircle2 } from "lucide-react"
+import {   BookOpen, FileText, ArrowRight, CheckCircle2, Target, ShieldCheck, TrendingUp, Map } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { CtaSection } from "@/components/cta-section"
+import { SectionBadge } from "@/components/section-badge"
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -44,8 +46,8 @@ export default function StrategiaItCategoryPage() {
         <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-center gap-6 lg:gap-20">
           
           <div className="flex-1 w-full max-w-2xl text-left pt-4 sm:pt-8">
-            <div className="mb-4 sm:mb-6 inline-flex items-center gap-1.5 rounded-full border border-blue-500/20 bg-blue-500/5 px-2.5 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-tight sm:tracking-widest whitespace-nowrap">
-              🎯 Doradztwo i architektura IT dla firm
+            <div className="mb-4 sm:mb-6">
+              <SectionBadge><BookOpen className="h-3.5 w-3.5 shrink-0" />Doradztwo i architektura IT dla firm</SectionBadge>
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1]">
               Strategia IT i doradztwo technologiczne dla firm – bez chaosu agencji i ryzykownych decyzji.
@@ -65,15 +67,15 @@ export default function StrategiaItCategoryPage() {
 
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
               <div className="flex items-center gap-2 text-slate-300">
-                <span className="text-blue-400 shrink-0 text-base">🎯</span>
+                <span className="text-blue-400 shrink-0"><Target className="h-4 w-4" /></span>
                 <span className="text-xs sm:text-sm font-medium">Decyzje zarządcze</span>
               </div>
               <div className="flex items-center gap-2 text-slate-300">
-                <span className="text-blue-400 shrink-0 text-base">🛡️</span>
+                <span className="text-blue-400 shrink-0"><ShieldCheck className="h-4 w-4" /></span>
                 <span className="text-xs sm:text-sm font-medium">Ochrona przed pułapkami agencji</span>
               </div>
               <div className="flex items-center gap-2 text-slate-300">
-                <span className="text-blue-400 shrink-0 text-base">📈</span>
+                <span className="text-blue-400 shrink-0"><TrendingUp className="h-4 w-4" /></span>
                 <span className="text-xs sm:text-sm font-medium">Nowoczesna strategia</span>
               </div>
             </div>
@@ -86,10 +88,10 @@ export default function StrategiaItCategoryPage() {
               
               <p className="text-xs font-semibold text-white mb-2.5">Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):</p>
               <ul className="space-y-1.5 mb-4">
-                <li className="text-xs text-slate-300 leading-snug">🎯 Decyzje zarządcze: jak skutecznie kontrolować koszty, bezpieczeństwo i jakość oprogramowania w swojej firmie.</li>
-                <li className="text-xs text-slate-300 leading-snug">🛡️ Ochrona przed pułapkami agencji: czego wystrzegać się przy podpisywaniu umów i jak audytować wykonawców IT.</li>
-                <li className="text-xs text-slate-300 leading-snug">📈 Nowoczesna strategia IT: jak sprawić, by technologia i dedykowane systemy realnie napędzały wzrost sprzedaży.</li>
-                <li className="text-xs text-slate-300 leading-snug">🗺️ Osobista Mapa Drogowa IT: priorytety i konsultacje technologiczne dobrane pod cele Twojego biznesu.</li>
+                <li className="text-xs text-slate-300 leading-snug flex items-start gap-2"><span className="text-blue-400 shrink-0 mt-0.5"><Target className="h-3.5 w-3.5" /></span>Decyzje zarządcze: jak skutecznie kontrolować koszty, bezpieczeństwo i jakość oprogramowania w swojej firmie.</li>
+                <li className="text-xs text-slate-300 leading-snug flex items-start gap-2"><span className="text-blue-400 shrink-0 mt-0.5"><ShieldCheck className="h-3.5 w-3.5" /></span>Ochrona przed pułapkami agencji: czego wystrzegać się przy podpisywaniu umów i jak audytować wykonawców IT.</li>
+                <li className="text-xs text-slate-300 leading-snug flex items-start gap-2"><span className="text-blue-400 shrink-0 mt-0.5"><TrendingUp className="h-3.5 w-3.5" /></span>Nowoczesna strategia IT: jak sprawić, by technologia i dedykowane systemy realnie napędzały wzrost sprzedaży.</li>
+                <li className="text-xs text-slate-300 leading-snug flex items-start gap-2"><span className="text-blue-400 shrink-0 mt-0.5"><Map className="h-3.5 w-3.5" /></span>Osobista Mapa Drogowa IT: priorytety i konsultacje technologiczne dobrane pod cele Twojego biznesu.</li>
               </ul>
 
               <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
@@ -105,8 +107,10 @@ export default function StrategiaItCategoryPage() {
 
       <main className="container mx-auto max-w-7xl px-4 py-12 sm:py-24">
         <div className="mb-8 sm:mb-12 text-center">
-          <div className="mb-3 sm:mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-wider">
+          <div className="mb-3 sm:mb-4">
+            <SectionBadge>
             <span>Baza wiedzy</span>
+          </SectionBadge>
           </div>
           <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-2.5 sm:mb-4 leading-snug">
             Przeczytaj najnowsze poradniki z tej dziedziny:
@@ -148,95 +152,7 @@ export default function StrategiaItCategoryPage() {
         </div>
       </main>
 
-      {/* Finałowe CTA */}
-      <section
-        id="oferta"
-        className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-12 sm:py-20 text-slate-300 md:py-32"
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-950 to-slate-950"></div>
-
-        <div className="relative z-10 container mx-auto max-w-5xl px-4 text-center">
-          <div className="mb-8 sm:mb-12">
-            <div className="mb-3 sm:mb-4 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-3 sm:px-4 py-1 text-[10px] sm:text-xs font-bold text-blue-400 uppercase tracking-wider">
-              <span>Strategia IT</span>
-            </div>
-            <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
-              Potrzebujesz niezależnego oka na technologię w swojej firmie?
-            </h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-xs sm:text-base md:text-lg">
-              Artykuły i analizy strategiczne pomagają zrozumieć mechanizmy rynkowe, ale każda firma stoi przed unikalnymi wyzwaniami. Jeśli chcesz zyskać wsparcie Niezależnego Partnera Technologicznego i uporządkować infrastrukturę IT bez kosztów pełnego etatu, porozmawiajmy.
-            </p>
-          </div>
-
-          <div className="mx-auto mb-6 sm:mb-12 w-full max-w-2xl bg-slate-900/40 border border-slate-800 p-4 sm:p-10 rounded-2xl sm:rounded-3xl text-left">
-            <h3 className="mb-4 sm:mb-8 text-center text-sm sm:text-xl font-bold text-white border-b border-slate-800 pb-3 sm:pb-6 leading-snug">
-              Zarezerwuj bezpłatny audyt i odbierz Pakiet Mapy Drogowej{" "}
-              <span className="block sm:inline mt-1 sm:mt-0 sm:ml-2 text-blue-400 text-[11px] sm:text-sm font-normal">
-                (Wartość 600 zł za 0 zł)
-              </span>
-            </h3>
-
-            <ul className="space-y-3 sm:space-y-6">
-              <li className="flex items-center gap-3 sm:gap-4">
-                <div className="shrink-0 rounded-full bg-emerald-500/10 p-1.5 flex items-center justify-center">
-                  <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                </div>
-                <div className="flex-1">
-                  <strong className="block text-xs sm:text-base font-bold text-white leading-snug">
-                    30-minutowa diagnoza strategiczna podczas rozmowy wideo
-                  </strong>
-                  <span className="text-[11px] sm:text-sm text-slate-400 leading-relaxed">
-                    Konsultacja z doświadczonym niezależnym partnerem technologicznym.
-                  </span>
-                </div>
-              </li>
-              <li className="flex items-center gap-3 sm:gap-4">
-                <div className="shrink-0 rounded-full bg-emerald-500/10 p-1.5 flex items-center justify-center">
-                  <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                </div>
-                <div className="flex-1">
-                  <strong className="block text-xs sm:text-base font-bold text-white leading-snug">
-                    Weryfikacja planów rozwoju i umów z dostawcami
-                  </strong>
-                  <span className="text-[11px] sm:text-sm text-slate-400 leading-relaxed">
-                    Obiektywna ocena techniczna i biznesowa.
-                  </span>
-                </div>
-              </li>
-              <li className="flex items-center gap-3 sm:gap-4">
-                <div className="shrink-0 rounded-full bg-emerald-500/10 p-1.5 flex items-center justify-center">
-                  <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                </div>
-                <div className="flex-1">
-                  <strong className="block text-xs sm:text-base font-bold text-white leading-snug">
-                    Bankowy Test Bezpieczeństwa Informacji
-                  </strong>
-                  <span className="text-[11px] sm:text-sm text-slate-400 leading-relaxed">
-                    Weryfikacja pod kątem rygorystycznych standardów finansowych.
-                  </span>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <a
-              href="https://calendly.com/kontakt-karolmodelski/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full max-w-md"
-            >
-              <Button
-                size="lg"
-                className="relative flex h-auto min-h-[3.5rem] w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white py-4 sm:py-5 px-5 sm:px-6 text-xs sm:text-sm font-bold shadow-lg transition-all whitespace-normal text-center leading-tight"
-              >
-                Porozmawiajmy o Twoim projekcie
-              </Button>
-            </a>
-            <p className="mt-3 sm:mt-4 text-[11px] sm:text-sm text-slate-400 italic font-medium text-center" dangerouslySetInnerHTML={{ __html: "(W ramach programu doradczego w tym kwartale zostały tylko <strong class='text-white font-semibold'>2 wolne miejsca</strong>)" }} />
-          </div>
-        </div>
-      </section>
+      <CtaSection />
     </div>
   )
 }

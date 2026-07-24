@@ -8,6 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import { CtaSection } from "@/components/cta-section"
 import { ShieldCheck, Banknote, Target, CalendarDays, ArrowRight } from "lucide-react"
 import {
   hero,
@@ -303,6 +304,8 @@ export default function BezpieczenstwoKlasyBankowejPage() {
           </a>
         </div>
       </section>
+
+      <CtaSection />
     </main>
   )
 }

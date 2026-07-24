@@ -1,5 +1,6 @@
 import { Flame } from "lucide-react"
 import { content } from "@/lib/content"
+import { SectionBadge } from "@/components/section-badge"
 
 export function StorySection() {
   const { story } = content
@@ -14,9 +15,11 @@ export function StorySection() {
       <div className="relative z-10 container mx-auto px-4 max-w-5xl">
         {/* Header - Mobile First */}
         <div className="mb-16 text-center">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-red-500/20 bg-red-500/10 px-4 py-1.5 text-xs font-bold text-red-400 uppercase tracking-wider">
+          <div className="mb-4">
+            <SectionBadge variant="red">
             <Flame className="h-4 w-4" />
             <span>Diagnoza problemu</span>
+          </SectionBadge>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
             {story.title}

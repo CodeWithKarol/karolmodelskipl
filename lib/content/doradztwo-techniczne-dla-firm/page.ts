@@ -5,7 +5,7 @@ export const metadata = {
 }
 
 export const hero = {
-  badge: "🎯 Doradztwo i architektura IT dla firm",
+  badge: "Doradztwo i architektura IT dla firm",
   title: "Zyskaj osobistego Niezależnego Partnera Technologicznego dla swojej firmy",
   titleHighlight: "– bez kosztów etatu zarządczego i ryzyka złych decyzji.",
   description:
@@ -25,10 +25,10 @@ export const hero = {
   },
   cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
   offer_items: [
-    { title: "🎯 Decyzje oparte na doświadczeniu bankowym: przenoszę rygorystyczne standardy bezpieczeństwa i skalowalności z globalnych instytucji (Citibank, BNP Paribas) wprost do Twojej firmy.", desc: "", val: "" },
-    { title: "🛡️ Ochrona przed przepalaniem budżetów: weryfikuję plany, wyceny i pracę zewnętrznych dostawców, eliminując naciąganie na zbędne i drogie rozwiązania.", desc: "", val: "" },
-    { title: "📈 Technologia napędzająca zyski: doradzam wprost z perspektywy biznesowej – technologia ma służyć wzrostowi sprzedaży i automatyzacji, a nie sztuce dla sztuki.", desc: "", val: "" },
-    { title: "🗺️ Osobista Mapa Drogowa IT: priorytety technologiczne i konsultacje dobrane pod aktualne cele Twojego biznesu.", desc: "", val: "" },
+    { title: "Decyzje oparte na doświadczeniu bankowym: przenoszę rygorystyczne standardy bezpieczeństwa i skalowalności z globalnych instytucji (Citibank, BNP Paribas) wprost do Twojej firmy.", desc: "", val: "" },
+    { title: "Ochrona przed przepalaniem budżetów: weryfikuję plany, wyceny i pracę zewnętrznych dostawców, eliminując naciąganie na zbędne i drogie rozwiązania.", desc: "", val: "" },
+    { title: "Technologia napędzająca zyski: doradzam wprost z perspektywy biznesowej – technologia ma służyć wzrostowi sprzedaży i automatyzacji, a nie sztuce dla sztuki.", desc: "", val: "" },
+    { title: "Osobista Mapa Drogowa IT: priorytety technologiczne i konsultacje dobrane pod aktualne cele Twojego biznesu.", desc: "", val: "" },
   ]
 }
 

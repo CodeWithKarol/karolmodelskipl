@@ -1,5 +1,6 @@
 import { User } from "lucide-react"
 import { content } from "@/lib/content"
+import { SectionBadge } from "@/components/section-badge"
 import Image from "next/image"
 
 export function AboutSection() {
@@ -17,9 +18,11 @@ export function AboutSection() {
           
           {/* Treść (Zmieniona kolejność dla mobile-first: najpierw treść) */}
           <div className="order-1 text-center lg:text-left">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-4 py-1.5 text-xs font-bold text-blue-400 uppercase tracking-wider mx-auto lg:mx-0">
+            <div className="mb-6 mx-auto lg:mx-0">
+              <SectionBadge>
               <User className="h-4 w-4" />
               <span>{about.badge}</span>
+            </SectionBadge>
             </div>
             
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-8 leading-tight">
