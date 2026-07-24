@@ -9,7 +9,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import {
-  ArrowRight,
   ShieldCheck,
   CalendarDays,
   UserCheck,
@@ -381,11 +380,10 @@ export default function DoradztwoTechnicznePage() {
             >
               <Button
                 size="lg"
-                className="relative flex h-auto min-h-[3.5rem] w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white py-5 px-3 text-xs sm:text-sm font-bold shadow-lg transition-all whitespace-normal text-center leading-tight"
+                className="relative flex h-auto min-h-[3.5rem] w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-700 text-white py-5 px-5 sm:px-6 text-xs sm:text-sm font-bold shadow-lg transition-all whitespace-normal text-center leading-tight"
               >
                 <CalendarDays className="h-5 w-5 shrink-0" />
                 {offer.cta}
-                <ArrowRight className="h-4 w-4 shrink-0" />
               </Button>
             </a>
             <p className="mt-4 text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest font-semibold text-center" dangerouslySetInnerHTML={{ __html: offer.footer }} />

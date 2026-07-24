@@ -299,7 +299,6 @@ export default function BezpieczenstwoKlasyBankowejPage() {
             >
               <CalendarDays className="h-5 w-5 shrink-0 sm:h-6 sm:w-6" />
               <span>{offer.cta}</span>
-              <ArrowRight className="hidden h-5 w-5 shrink-0 transition-transform group-hover:translate-x-1 sm:block" />
             </Button>
           </a>
         </div>
