@@ -10,7 +10,7 @@ export const hero = {
   titleHighlight: "– bez chaosu w agencji i ukrytych kosztów.",
   description:
     "Masz dość gotowych systemów, które Cię ograniczają, oraz agencji, w których Twój projekt ginie między pośrednikami? Jako Niezależny Partner Technologiczny projektuję i wdrażam dedykowane aplikacje na zamówienie o stabilności bankowej – dokładnie pod unikalne procesy w Twojej firmie.",
-  cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ SYSTEMU",
+  cta: "Porozmawiajmy o Twojej aplikacji",
   footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT",
   indicators: [
     { title: "Oprogramowanie szyte na miarę", desc: "Tworzę systemy dokładnie pod procesy w Twojej firmie, eliminując ręczną pracę i błędy ludzkie." },
@@ -20,7 +20,7 @@ export const hero = {
   pilot_program: {
     title: "Program Wdrożeniowy: Aplikacje Internetowe dla Firm (Tylko 2 miejsca)",
     description: "Przechodzę z sektora finansowego do wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces budowy dedykowanego oprogramowania. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po wdrożeniu.",
-    cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ SYSTEMU",
+    cta: "Porozmawiajmy o Twojej aplikacji",
     package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
   },
   cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",

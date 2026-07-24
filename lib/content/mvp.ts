@@ -16,9 +16,9 @@ export const mvp = {
       "Darmowa diagnoza online i pakiet doradczy o wartości 600 zł.",
   },
   hero: {
-    badge: "Praktyczne podejście eksperta w działaniu",
-    title: "Uruchom kluczową wersję swojej aplikacji w 30 dni – zacznij zarabiać i testuj pomysł na rynku bez przepalania budżetu.",
-    title_highlight: "",
+    badge: "⚡ Szybka wersja startowa aplikacji",
+    title: "Uruchom kluczową wersję swojej aplikacji w 30 dni",
+    title_highlight: "– zacznij zarabiać i testuj pomysł na rynku bez przepalania budżetu.",
     subtitle:
       "Masz pomysł na system lub nową aplikację dla firmy, ale tradycyjne agencje wyceniają projekt na pół roku pracy i gigantyczne kwoty? Zamiast czekać miesiącami na idealny produkt, buduję pierwszą, w pełni funkcjonalną wersję startową w zaledwie 30 dni, skupiając się wyłącznie na tym, co generuje zysk.",
     indicators: [
@@ -35,11 +35,19 @@ export const mvp = {
         desc: "Pracujesz ze mną, a nie z łańcuchem pośredników. Szybkie decyzje i pełna kontrola nad projektem."
       }
     ],
-    audit_promo: {
-      title: "👉 Chcesz sprawdzić, czy Twój pomysł da się wdrożyć w miesiąc?",
-      desc: "Zarezerwuj bezpłatną, 30-minutową rozmowę strategiczną. Przeanalizujemy Twój projekt i wskażę najkrótszą ścieżkę wejścia na rynek."
+    pilot_program: {
+      title: "Program Wdrożeniowy: Szybka Wersja Startowa (Tylko 2 firmy)",
+      description: "Przechodzę z sektora finansowego do wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces szybkiego wdrożenia aplikacji w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po uruchomieniu.",
+      cta: "Porozmawiajmy o Twoim projekcie",
+      package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
     },
-    cta: "ZAREZERWUJ BEZPŁATNĄ DIAGNOZĘ PROJEKTU",
+    cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+    offer_items: [
+      { title: "🚀 Wdrożenie w 30 dni: szybkie wypuszczenie kluczowej funkcjonalności na rynek, abyś mógł zacząć testować popyt i zbierać przychody.", desc: "", val: "" },
+      { title: "🛡️ Ochrona budżetu: zero kosztownych, zbędnych funkcji na start. Inwestujesz tylko w to, co najważniejsze dla Twoich klientów.", desc: "", val: "" },
+      { title: "🗺️ Osobista Mapa Drogowa IT: indywidualny plan wejścia na rynek bez przepalania środków.", desc: "", val: "" },
+    ],
+    cta: "Porozmawiajmy o Twoim projekcie",
     footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT"
   },
   trap: {
