@@ -17,10 +17,10 @@ export const mvp = {
   },
   hero: {
     badge: "Szybka wersja startowa aplikacji",
-    title: "Uruchom kluczową wersję swojej aplikacji w 30 dni",
-    title_highlight: "– zacznij zarabiać i testuj pomysł na rynku bez przepalania budżetu.",
+    title: "Masz pomysł na aplikację?",
+    title_highlight: "Postaw jej serce na rynku w 30 dni. Zacznij zarabiać, zanim tradycyjne agencje w ogóle wyślą Ci wstępną wycenę.",
     subtitle:
-      "Masz pomysł na system lub nową aplikację dla firmy, ale tradycyjne agencje wyceniają projekt na pół roku pracy i gigantyczne kwoty? Zamiast czekać miesiącami na idealny produkt, buduję pierwszą, w pełni funkcjonalną wersję startową w zaledwie 30 dni, skupiając się wyłącznie na tym, co generuje zysk.",
+      "Masz w głowie system lub aplikację dla swojej firmy, ale tradycyjne agencje straszą Cię półrocznymi pracami i fakturami na dziesiątki tysięcy? Dobra wiadomość: nie potrzebujesz skomplikowanych planów ani znajomości kodu. Podczas pierwszej rozmowy wspólnie wybieramy serce Twojego biznesu, które zarabia pieniądze od pierwszego dnia.",
     indicators: [
       {
         title: "Wdrożenie w 30 dni",
@@ -36,26 +36,27 @@ export const mvp = {
       }
     ],
     pilot_program: {
-      title: "Program Wdrożeniowy: Szybka Wersja Startowa (Tylko 2 firmy)",
-      description: "Przechodzę z sektora finansowego do wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces szybkiego wdrożenia aplikacji w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po uruchomieniu.",
-      cta: "Porozmawiajmy o Twoim projekcie",
-      package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
+      title: "Zostań Partnerem Założycielem (Tylko 2 firmy w kwartale)",
+      description: "Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – jedną z pierwszych dwóch firm, które wdrożą swoje MVP bez agencyjnego cyrku. Pracowałem przy systemach finansowych (Citibank, BNP Paribas) i przenoszę te standardy do firm takich jak Twoja. W zamian za opinię po projekcie zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po uruchomieniu.",
+      cta: "Odbierz Pakiet Strategiczny i Zarezerwuj Miejsce (0 zł)",
+      package_title: "Co otrzymujesz w ramach Pakietu Strategicznego (Wartość 600 zł za 0 zł):"
     },
-    cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+    cta_sub: "Zajmij jedno z 2 wolnych miejsc w tym kwartale, zanim konkurencja pierwsza wypuści podobne rozwiązanie na rynek. Odkładanie decyzji technologicznej oznacza kolejne miesiące uciekających przychodów.",
     offer_items: [
-      { title: "Wdrożenie w 30 dni: szybkie wypuszczenie kluczowej funkcjonalności na rynek, abyś mógł zacząć testować popyt i zbierać przychody.", desc: "", val: "" },
-      { title: "Ochrona budżetu: zero kosztownych, zbędnych funkcji na start. Inwestujesz tylko w to, co najważniejsze dla Twoich klientów.", desc: "", val: "" },
-      { title: "Osobista Mapa Drogowa IT: indywidualny plan wejścia na rynek bez przepalania środków.", desc: "", val: "" },
+      { title: "Robimy to w miesiąc. Wypuszczamy na rynek to, co najważniejsze, żebyś od razu sprawdził, czy ludzie chcą za to płacić.", desc: "", val: "" },
+      { title: "Dostajesz stabilny system i kod, który jest w 100% twój – żaden programista cię później nie szantażuje.", desc: "", val: "" },
+      { title: "Płacisz za dany etap dopiero wtedy, gdy widzisz działający system na swoim ekranie.", desc: "", val: "" },
     ],
-    cta: "Porozmawiajmy o Twoim projekcie",
+    cta: "Odbierz Pakiet Strategiczny i Zarezerwuj Miejsce (0 zł)",
     footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT"
   },
   trap: {
-    title: "Dlaczego czekanie pół roku na gotową aplikację często kończy się porażką?",
+    title: "Dlaczego czekanie na „idealny produkt” zabija biznesy, zanim wystartują?",
     title_highlight: "",
     text1:
-      "Większość przedsiębiorców uważa, że przed startem na rynku aplikacja musi mieć absolutnie wszystkie możliwe funkcje. Tradycyjne agencje chętnie podtrzymują ten mit, bo im bardziej skomplikowany projekt, tym wyższą fakturę mogą wystawić.",
-    text2: "W rezultacie dochodzi do typowych problemów:",
+      "Tradycyjne agencje programistyczne chcą budować gotowy kombajn przez 6 miesięcy. Wydajesz dziesiątki tysięcy złotych na funkcje, których Twoi klienci mogą w ogóle nie chcieć.",
+    text2:
+      "Wersja Startowa (MVP) działa inaczej: kupujesz nie tylko kod w 30 dni, ale przede wszystkim święty spokój i szybką weryfikację popytu. Zamiast ryzykować płynność finansową na wielomiesięcznym projekcie, wypuszczamy na rynek absolutne serce Twojej aplikacji. Sprawdzasz, czy ludzie chcą za to płacić – szybko i bez ryzyka.",
     negative_points: [
       {
         title: "Przepalone dziesiątki tysięcy złotych",
@@ -66,8 +67,8 @@ export const mvp = {
         desc: "Zamiast obiecywanych 3 miesięcy, wdrożenie przeciąga się do roku przez rozbudowaną biurokrację agencyjną."
       },
       {
-        title: "Zbyt skomplikowany produkt (Over-engineering)",
-        desc: "Aplikacja jest przeładowana funkcjami, z których nikt nie korzysta, a użytkownicy gubią się w skomplikowanej obsłudze."
+        title: "Produkt przeładowany funkcjami",
+        desc: "Aplikacja ma mnóstwo przycisków, których nikt nie używa, a ludzie gubią się w obsłudze."
       },
       {
         title: "Zbyt późny start",
@@ -98,7 +99,7 @@ export const mvp = {
   },
   contrast: {
     title: "Metoda Bezpiecznego Startu: Od pomysłu do działającego systemu w 30 dni",
-    subtitle: "Zamiast budować od razu cały skomplikowany kombajn, stosuję podejście znane z najbardziej udanych przedsięwzięć technologicznych: wybieramy serce Twojego pomysłu (funkcję, która przynosi największą wartość użytkownikowi) i wdrażamy ją w rekordowym tempie.",
+    subtitle: "Zamiast budować od razu cały skomplikowany kombajn, wybieramy serce Twojego pomysłu – funkcję, która ma największe znaczenie dla ludzi – i wdrażamy ją w rekordowym tempie.",
     red_ocean_title: "Tradycyjne podejście agencji",
     blue_ocean_title: "Moje podejście (Szybka wersja startowa)",
     comparisons: [
@@ -145,43 +146,35 @@ export const mvp = {
     ]
   },
   mechanism: {
-    title: "Jak krok po kroku uruchamiamy Twoją aplikację w 30 dni?",
-    subtitle: "Cały proces został zaprojektowany z myślą o maksymalnej szybkości, bezpieczeństwie i braku zbędnych formalności:",
+    title: "Jak to możliwe w 30 dni? Dokładnie, a nie na oko.",
+    subtitle: "Wiedzę i standardy z wielkich systemów finansowych przeniosłem do firm takich jak Twoja – bez korpo-biurokracji i opóźnień. Zamiast obiecywać cuda, rozbijam te 30 dni na 3 przejrzyste etapy:",
     cards: [
       {
-        title: "1. Selekcja Kluczowych Funkcji",
-        content: "Podczas bezpłatnej rozmowy odcinamy wszystko, co zbędne na start, i zostawiamy tylko to, co pozwala klientom korzystać z systemu i płacić."
+        title: "Tydzień 1 (Selekcja serca biznesu)",
+        content: "Wyrzucamy rozpraszacze. Zostawiamy dokładnie jedną, najważniejszą funkcję, która ma od razu przynosić zysk."
       },
       {
-        title: "2. Strategia i Bankowe Standardy",
-        content: "Projektuję strukturę opartą na bezpiecznych standardach, dzięki czemu aplikacja od pierwszego dnia działa stabilnie i bezbłędnie."
+        title: "Tydzień 2–3 (Budowa rdzenia)",
+        content: "Tworzę czysty, stabilny kod w standardach bankowych – takich samych, jakie chronią transakcje w Citibanku. Twoja aplikacja nie wyłoży się przy pierwszym skoku ruchu, a system jest w 100% Twój."
       },
       {
-        title: "3. Intensywne Wdrożenie",
-        content: "W ciągu 30 dni buduję działającą aplikację, pozostając z Tobą w stałym kontakcie i pokazując postępy prac."
-      },
-      {
-        title: "4. Start i Testy na Rynku",
-        content: "Uruchamiamy system dla Twoich pierwszych użytkowników. Zbierasz realne opinie i zarabiasz, zamiast zgadywać, czego potrzebuje rynek."
-      },
-      {
-        title: "5. Ewolucyjny Rozwój",
-        content: "Gdy aplikacja zarabia i ma użytkowników, stopniowo dodajemy kolejne moduły w bezpiecznych, krótkich etapach."
+        title: "Tydzień 4 (Testy i wdrożenie)",
+        content: "Wypuszczamy system na żywy organizm. Testujesz go z prawdziwymi użytkownikami, zanim wygasną jakiekolwiek budżety."
       }
     ]
   },
   guarantee: {
     badge: "Gwarancje i Bezpieczeństwo",
-    title: "Bezpieczny start bez ryzyka finansowego",
-    subtitle: "Wiem, że start z nowym projektem cyfrowym wiąże się z obawami o budżet. Dlatego zasady współpracy są w 100% uczciwe:",
+    title: "Najlepszy dowód to struktura rozliczeń",
+    subtitle: "Skoro nie masz jeszcze moich opinii w branży, twardym dowodem staje się sposób rozliczeń. Płatność etapowa oraz Pakiet Strategiczny za 0 zł pokazują, że to ja biorę na siebie ryzyko wykonawcze:",
     items: [
       {
-        title: "Płatność etapowa za efekty",
-        desc: "Prace dzielimy na małe etapy. Płacisz za dany krok dopiero wtedy, gdy zobaczysz go na ekranie i upewnisz się, że działa idealnie."
+        title: "Płatność etapowa (20% depozytu)",
+        desc: "Zaczynasz od 20% depozytu, a resztę płacisz dopiero po zobaczeniu działającego kodu na swoim ekranie. To ja biorę na siebie ryzyko wykonawcze."
       },
       {
-        title: "Gwarancja dopasowania do biznesu",
-        desc: "Tworzę oprogramowanie ściśle pod Twoje założenia strategiczne, a nie sztuczne cele technologiczne agencji."
+        title: "Pakiet Strategiczny za 0 zł",
+        desc: "Otrzymujesz wartość 600 zł w pełni za darmo, zanim cokolwiek zapłacisz. W ten sposób pokazuję, że nie rozliczam się za obietnice, tylko za konkretny efekt."
       },
       {
         title: "Pełna własność i przejrzystość kodu",
@@ -195,43 +188,42 @@ export const mvp = {
     items: [
       {
         question: "Czy wersja startowa w 30 dni to pełnoprawna aplikacja?",
-        answer: "Tak. To w pełni działający system, który posiada najważniejszą, kluczową funkcję biznesową (tzw. serce aplikacji). Pozwala użytkownikom na rejestrację, korzystanie z usługi lub dokonywanie zakupów. Nie ma w niej natomiast setek zbędnych dodatków, które mogłyby opóźnić start o wiele miesięcy."
+        answer: "Tak. Działa jak trzeba i ma najważniejszą funkcję – serce Twojego biznesu. Ludzie mogą się rejestrować, korzystać z usługi albo płacić. Nie ma w niej dziesiątek dodatków, które i tak opóźniłyby start."
       },
       {
         question: "Co dzieje się z aplikacją po tych 30 dniach?",
-        answer: "Gdy system działa już na rynku i przynosi pierwsze efekty, płynnie przechodzimy do kolejnego etapu. Na podstawie realnych opinii Twoich klientów decydujemy, które dodatkowe funkcje warto dodać w następnej kolejności."
+        answer: "System działa na rynku i przynosi pierwsze efekty. Na podstawie tego, co mówią Twoi klienci, decydujemy, jakie funkcje dodać w następnej kolejności."
       },
       {
         question: "Czy mój pomysł jest bezpieczny i poufny?",
-        answer: "Oczywiście. Przed jakąkolwiek rozmową podpisuję standardową umowę o zachowaniu poufności (NDA). Twój pomysł i dane biznesowe są w 100% bezpieczne."
+        answer: "Oczywiście. Przed rozmową podpisuję standardową umowę o zachowaniu poufności (NDA). Twój pomysł i dane są w 100% bezpieczne."
       },
       {
-        question: "Dlaczego warto wybrać Ciebie zamiast dużej agencji do budowy wersji startowej?",
-        answer: "Duże agencje traktują małe projekty startowe po macoszemu lub wyceniają je zaporowo, bo ich struktura biurowa generuje ogromne koszty stałe. U mnie pracujesz bezpośrednio z doświadczonym ekspertem, który dowozi gotowy system dwukrotnie szybciej i za ułamek ceny agencji."
+        question: "Dlaczego warto wybrać Ciebie zamiast dużej agencji?",
+        answer: "W agencji nawet połowa budżetu znika na biuro w warszawskim Mordorze i ludzi, którzy tylko przekazują Twoje słowa programiście. U mnie 100% kasy idzie w kod, który realnie dotyka ekranu Twojego klienta. Pracujesz bezpośrednio ze mną – gotowy system dostajesz dwukrotnie szybciej i za ułamek ceny agencji."
       }
     ],
   },
   cta: {
-    title: "Przestań czekać z idealnym momentem. Zbudujmy wersję startową w 30 dni.",
-    title_highlight: "",
-    subtitle: "Ze względu na bezpośredni model pracy i pełne zaangażowanie w każdy projekt, <strong class='text-white font-semibold'>współpracuję jednocześnie z maksymalnie 2 firmami</strong>. Zarezerwuj rozmowę, zanim wolne miejsca na ten kwartał zostaną zajęte.",
-    packetTitle: "Odbierz Bezpłatną Mapę Drogową Rozwoju IT",
-    packetVal: "(Wartość 600 zł – Dziś za 0 zł)",
-    benefits: [
+    badge: "Program Wdrożeniowy: Szybka Wersja Startowa",
+    title: "Zostań Partnerem Założycielem (Tylko 2 firmy w kwartale)",
+    description: "Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – jedną z pierwszych dwóch firm, które wdrożą swoje MVP bez agencyjnego cyrku. Pracowałem przy systemach finansowych (Citibank, BNP Paribas) i przenoszę te standardy do firm takich jak Twoja. W zamian za opinię po projekcie zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po uruchomieniu.",
+    package_title: "Co otrzymujesz w ramach Pakietu Strategicznego (Wartość 600 zł za 0 zł):",
+    offer_items: [
       {
-        title: "30-minutowa diagnoza podczas rozmowy wideo",
-        desc: "Zlokalizujemy wąskie gardła w procesach Twojej firmy.",
+        title: "Robimy to w miesiąc. Wypuszczamy na rynek to, co najważniejsze, żebyś od razu sprawdził, czy ludzie chcą za to płacić.",
+        desc: "",
       },
       {
-        title: "Indywidualny Plan Wdrożenia aplikacji w 30 dni",
-        desc: "Otrzymasz najszybszą ścieżkę wdrożenia.",
+        title: "Dostajesz stabilny system i kod, który jest w 100% twój – żaden programista cię później nie szantażuje.",
+        desc: "",
       },
       {
-        title: "Bankowy Test Bezpieczeństwa Informacji",
-        desc: "Weryfikacja pod kątem rygorystycznych standardów finansowych.",
+        title: "Płacisz za dany etap dopiero wtedy, gdy widzisz działający system na swoim ekranie.",
+        desc: "",
       },
     ],
-    cta: "Porozmawiajmy o Twoim projekcie",
-    footer: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+    button: "Odbierz Pakiet Strategiczny i Zarezerwuj Miejsce (0 zł)",
+    footer: "Zajmij jedno z 2 wolnych miejsc w tym kwartale, zanim konkurencja pierwsza wypuści podobne rozwiązanie na rynek. Odkładanie decyzji technologicznej oznacza kolejne miesiące uciekających przychodów.",
   },
 }
