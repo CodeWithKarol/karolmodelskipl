@@ -301,16 +301,20 @@ export default function ProjektowanieMvpPage() {
             {mvp.mechanism.cards.map((card, i) => {
               const icons = [Search, ListChecks, Server, RefreshCw, CheckCircle2];
               const Icon = icons[i % icons.length];
+              const spanClass =
+                mvp.mechanism.cards.length === 3
+                  ? i === 2
+                    ? "md:col-span-2 lg:col-span-2 max-w-xl mx-auto md:max-w-none w-full"
+                    : "lg:col-span-2 md:col-span-1"
+                  : i < 3
+                    ? "lg:col-span-2 md:col-span-1"
+                    : i === 3
+                      ? "lg:col-span-3 md:col-span-1"
+                      : "lg:col-span-3 md:col-span-2 max-w-xl mx-auto md:max-w-none w-full";
               return (
                 <div
                   key={i}
-                  className={`group bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col ${
-                    i < 3 
-                      ? "lg:col-span-2 md:col-span-1" 
-                      : i === 3 
-                      ? "lg:col-span-3 md:col-span-1" 
-                      : "lg:col-span-3 md:col-span-2 max-w-xl mx-auto md:max-w-none w-full"
-                  }`}
+                  className={`group bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col ${spanClass}`}
                 >
                   <div className="mb-3 sm:mb-6 flex h-10 w-10 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl border border-blue-500/20 bg-blue-500/10 text-blue-400 group-hover:scale-105 transition-transform duration-500">
                     <Icon className="h-5 w-5 sm:h-7 sm:w-7" />
@@ -372,7 +376,7 @@ export default function ProjektowanieMvpPage() {
       </section>
 
 
-      <CtaSection />
+      <CtaSection content={mvp.cta} />
     </main>
   )
 }

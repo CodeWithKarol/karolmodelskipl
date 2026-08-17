@@ -4,8 +4,22 @@ import { Button } from "./ui/button"
 import { Sparkles, Target, ShieldCheck, Map } from "lucide-react"
 import { SectionBadge } from "@/components/section-badge"
 
-export function CtaSection() {
-  const { cta } = content
+export type CtaContent = {
+  badge: string
+  title: string
+  description: string
+  package_title: string
+  offer_items: { title: string; desc?: string }[]
+  button: string
+  footer: string
+}
+
+type CtaSectionProps = {
+  content?: CtaContent
+}
+
+export function CtaSection({ content: pageContent }: CtaSectionProps = {}) {
+  const cta = pageContent ?? content.cta
 
   return (
     <section
