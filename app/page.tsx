@@ -105,7 +105,7 @@ export default function Page() {
       <GuaranteeSection />
       <AboutSection />
       <FaqSection />
-      <CtaSection />
+      <CtaSection content={content.cta} />
     </main>
   )
 }

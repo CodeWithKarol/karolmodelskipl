@@ -1,29 +1,27 @@
 export const contrast = {
-  title_part1: "Zobacz, dlaczego bezpośrednie partnerstwo",
-  title_highlight: "bije na głowę tradycyjną agencję:",
-  subtitle: "Zamiast dopasowywać swój biznes do ociężałych procedur agencji programistycznej, zyskujesz pełną elastyczność i bezpośredni kontakt z ekspertem. Zobacz zestawienie, które pokazuje różnicę w efektach, bezpieczeństwie i realnym wykorzystaniu Twojego budżetu.",
-  red_ocean_title: "Tradycyjna Agencja Programistyczna",
-  blue_ocean_title: "Bezpośrednia współpraca",
-  comparisons: [
+  title: "Dlaczego bezpośrednia współpraca bije na głowę tradycyjną agencję?",
+  blue_title: "Karol Modelski (Niezależny Partner)",
+  red_title: "Tradycyjna agencja (Software House)",
+  rows: [
     {
-      red: { title: "Komunikacja", desc: "„Głuchy telefon” (5 poziomów pośredników)" },
-      blue: { title: "Komunikacja", desc: "Bezpośredni kontakt (Rozmawiasz z autorem systemu)" },
+      area: "Gdzie idą Twoje pieniądze?",
+      blue: "100% budżetu idzie w działający kod i logikę biznesową.",
+      red: "Płacisz za prowizje handlowców, pensje account managerów i drogi open space w centrum Warszawy.",
     },
     {
-      red: { title: "Podejście do projektu", desc: "„Przepiszmy cały system od zera” (Ogromne ryzyko)" },
-      blue: { title: "Podejście do projektu", desc: "Ewolucyjna modernizacja (Praca na żywym organizmie bez przerw w sprzedaży)" },
+      area: "Komunikacja",
+      blue: "Rozmawiasz i ustalasz szczegóły bezpośrednio z inżynierem, który pisze Twój system. Zero filtrów.",
+      red: "„Głuchy telefon” – rozmawiasz z project managerem, który dopiero przekazuje notatki junior developerom.",
     },
     {
-      red: { title: "Wykorzystanie budżetu", desc: "Do 50% budżetu idzie na biuro, rekrutację i zarząd agencji" },
-      blue: { title: "Wykorzystanie budżetu", desc: "100% budżetu inwestowane bezpośrednio w jakość systemu" },
+      area: "Gwarancja i bezpieczeństwo",
+      blue: "Płatność etapowa. Płacisz dopiero wtedy, gdy widzisz działający etap na swoim ekranie.",
+      red: "Wysokie faktury z góry, zaliczki i brak gwarancji dowiezienia ustalonego terminu.",
     },
     {
-      red: { title: "Płatności i ryzyko", desc: "Duże zaliczki i fakturowanie „za nieokreślone godziny”" },
-      blue: { title: "Płatności i ryzyko", desc: "Płatność etapowa (Płacisz po pokazaniu działającego efektu)" },
-    },
-    {
-      red: { title: "Doświadczenie wykonawcy", desc: "Zmienni, często początkujący programiści" },
-       blue: { title: "Doświadczenie wykonawcy", desc: "Jeden doświadczony Niezależny Partner Technologiczny" },
+      area: "Niezależność kodu",
+      blue: "Czysty, uniwersalny kod i pełna dokumentacja – jesteś w 100% właścicielem swojego systemu.",
+      red: "Częste uzależnianie klienta od własnych, zamkniętych frameworków (vendor lock-in).",
     },
   ],
 }

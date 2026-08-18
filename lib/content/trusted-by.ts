@@ -1,32 +1,16 @@
 export const trustedBy = {
   badge: "Doświadczenie Korporacyjne",
-  title: "Standardy korporacyjne, które przejmiesz w swoim biznesie",
-  subtitle:
-    "Przenoszę doświadczenie z projektowania zaawansowanych systemów finansowych i technologicznych bezpośrednio do rozwijających się firm.",
+  title:
+    "Inżynieryjna precyzja z bankowości przeniesiona wprost do małych i średnich firm.",
+  quote: [
+    "Przez lata odpowiadałem za architekturę i bezpieczeństwo systemów dla globalnych instytucji finansowych, w których błąd kosztuje miliony. Dziś te same zasady — bezwzględną stabilność, czysty kod i zero przestojów w godzinach szczytu — wdrażam w firmach z sektora MŚP.",
+    "Dla Ciebie oznacza to jedno: Twój system nie wyłoży się w piątek o 16:00, a oprogramowanie powstaje bez korporacyjnej ociężałości, bez garniturów i za ułamek budżetów wielkich korporacji.",
+  ],
+  quote_author: "Karol Modelski – Niezależny Partner Technologiczny",
   logos: [
-    {
-      name: "Citibank",
-      category: "Bankowość Inwestycyjna",
-      context:
-        "Standardy systemów bankowości elektronicznej, w których nie ma miejsca na błąd, opóźnienia transakcji czy utratę danych.",
-    },
-    {
-      name: "BNP Paribas",
-      category: "Finanse i Bankowość",
-      context:
-        "Bezpieczeństwo informacji i niezawodność pod wymogiem najwyższych regulacji rynkowych.",
-    },
-    {
-      name: "Silent Eight",
-      category: "Ochrona Danych & Sztuczna Inteligencja",
-      context:
-        "Zaawansowana logika przetwarzania danych i tworzenie rozwiązań gotowych na duże obciążenia.",
-    },
-    {
-      name: "Amway",
-      category: "Globalny E-commerce",
-      context:
-        "Optymalizacja wydajności globalnych systemów sprzedaży projektowanych pod kątem maksymalnej konwersji użytkownika.",
-    },
+    { name: "Citibank", category: "Bankowość Inwestycyjna" },
+    { name: "BNP Paribas", category: "Finanse i Bankowość" },
+    { name: "Silent Eight", category: "Ochrona Danych i AI" },
+    { name: "Amway", category: "Globalny E-commerce" },
   ],
 }
