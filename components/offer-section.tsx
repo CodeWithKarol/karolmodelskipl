@@ -1,11 +1,11 @@
-import { Rocket, RefreshCw, Layers, Gauge, ArrowRight } from "lucide-react"
+import { Workflow, Rocket, RefreshCw, Gauge, Layers, ArrowRight } from "lucide-react"
 import { content } from "@/lib/content"
 import { SectionBadge } from "@/components/section-badge"
 import Link from "next/link"
 
 export function OfferSection() {
   const { offer } = content
-  const icons = [Rocket, RefreshCw, Layers, Gauge]
+  const icons = [Workflow, Rocket, RefreshCw, Gauge]
 
   return (
     <section
@@ -20,7 +20,7 @@ export function OfferSection() {
           <div className="mb-4">
             <SectionBadge>
             <Layers className="h-4 w-4" />
-            <span>Ścieżki współpracy</span>
+            <span>Zwrotnica problemów</span>
           </SectionBadge>
           </div>
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
@@ -44,8 +44,11 @@ export function OfferSection() {
                   <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl border border-slate-700 bg-slate-950 text-slate-400 group-hover:text-blue-400 transition-colors">
                     <Icon className="h-6 w-6" />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors leading-tight">
+                  <p className="mb-2 text-xs font-bold uppercase tracking-wider text-blue-400">
                     {path.title}
+                  </p>
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors leading-tight">
+                    {path.situation}
                   </h3>
                   <p className="text-slate-400 leading-relaxed text-xs sm:text-sm mb-6">
                     {path.desc}
@@ -54,13 +57,10 @@ export function OfferSection() {
                 
                 <Link
                   href={path.href}
-                  className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-blue-400 transition-all hover:gap-3 hover:text-blue-300"
+                  className="inline text-sm sm:text-sm font-bold text-blue-400 transition-colors hover:text-blue-300 after:absolute after:inset-0 after:content-['']"
                 >
-                  {i === 0 ? "Zobacz jak buduję dedykowane aplikacje" : 
-                   i === 1 ? "Zobacz jak modernizuję systemy" :
-                   i === 2 ? "Zobacz jak buduję działającą wersję startową" : 
-                   "Poznaj model Bezpośredniego Partnerstwa"} 
-                  <ArrowRight className="h-3.5 w-3.5" />
+                  {path.link}
+                  <ArrowRight className="ml-1.5 inline h-3.5 w-3.5 align-middle transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
             )
