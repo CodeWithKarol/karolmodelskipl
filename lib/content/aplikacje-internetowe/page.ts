@@ -6,10 +6,10 @@ export const metadata = {
 
 export const hero = {
   badge: "Aplikacje internetowe dla firm",
-  title: "Aplikacje internetowe dla firm, które automatyzują procesy i zwiększają zyski",
-  titleHighlight: "– bez chaosu w agencji i ukrytych kosztów.",
+  title: "Dedykowane aplikacje internetowe dla firm, które automatyzują procesy i zwiększają zyski",
+  titleHighlight: "– bez agencyjnego chaosu i ukrytych kosztów.",
   description:
-    "Masz dość gotowych systemów, które Cię ograniczają, oraz agencji, w których Twój projekt ginie między pośrednikami? Jako Niezależny Partner Technologiczny projektuję i wdrażam dedykowane aplikacje na zamówienie o stabilności bankowej – dokładnie pod unikalne procesy w Twojej firmie.",
+    "Masz dość gotowych systemów, które bez przerwy Cię ograniczają, oraz agencji, w których Twój projekt i budżet giną w głuchym telefonie między kolejnymi pośrednikami i project managerami? Jako Niezależny Partner Technologiczny projektuję i wdrażam systemy skrojone pod unikalne procesy w Twojej firmie. Rozmawiasz i pracujesz bezpośrednio z inżynierem, który buduje Twój system.",
   cta: "Porozmawiajmy o Twojej aplikacji",
   footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT",
   indicators: [
@@ -100,27 +100,31 @@ export const funnel = {
   boxRightSub: "Maszyna ROI i sprzedaży",
 }
 
-export const contrast = {
-  title: "Nowa jakość tworzenia oprogramowania dla biznesu",
-  subtitle: "Zamiast finansować cudzą administrację i biura, inwestujesz 100% budżetu bezpośrednio w jakość i wydajność swojego systemu.",
-  red_ocean_title: "Tradycyjna Agencja / Software House",
-  blue_ocean_title: "Model Bezpośredniego Partnerstwa (Ze mną)",
-  comparisons: [
+export const comparison = {
+  badge: "Porównanie",
+  title: "Bezpośrednia współpraca vs. tradycyjna agencja",
+  subtitle:
+    "Twarde, tabelaryczne porównanie pokazujące przewagę bezpośredniej współpracy nad agencją.",
+  columns: {
+    feature: "Cecha projektu",
+    me: "Współpraca ze mną",
+    agency: "Tradycyjna agencja (Software House)",
+  },
+  rows: [
     {
-      red: { title: "Długi łańcuch pośredników", desc: "Handlowiec, Kierownik, Analityk" },
-      blue: { title: "Bezpośredni kontakt", desc: "Z głównym twórcą systemu" },
+      feature: "Komunikacja",
+      me: "Rozmawiasz bezpośrednio z twórcą systemu. Zero filtrów i głuchego telefonu.",
+      agency: "Rozmawiasz z handlowcem lub juniorem (PM), który nie rozumie kodu.",
     },
     {
-      red: { title: "Płacenie za armię ludzi", desc: "I utrzymanie biurowca" },
-      blue: { title: "100% budżetu", desc: "Inwestowane w kod i funkcjonalność" },
+      feature: "Struktura kosztów",
+      me: "100% budżetu idzie w jakość kodu i logikę biznesową.",
+      agency: "Płacisz za biura agencji, prowizje handlowców i pensje pośredników.",
     },
     {
-      red: { title: "Zmienni, często początkujący", desc: "Programiści z rotującego zespołu" },
-      blue: { title: "Wieloletnie doświadczenie", desc: "Korporacyjne i bankowe zaplecze inżynieryjne" },
-    },
-    {
-      red: { title: "Ryzyko opóźnień", desc: "I skomplikowana biurokracja korporacyjna" },
-      blue: { title: "Szybkie decyzje", desc: "I ewolucyjne wdrożenia bez przestojów" },
+      feature: "Gwarancja ryzyka",
+      me: "Rozliczenie etapowe. Płacisz dopiero, gdy widzisz działający etap na ekranie.",
+      agency: "Wielkie zaliczki na start (faktury z góry) i brak gwarancji dowiezienia terminu.",
     },
   ],
 }
@@ -146,27 +150,35 @@ export const faq = {
 }
 
 export const offer = {
-  title: "Przestań tracić czas na niesprawdzone rozwiązania. Zbudujmy system, który realnie zarabia.",
-  subtitle:
-    "Ze względu na bezpośredni model współpracy i dbałość o najwyższą jakość, <strong class='text-white font-semibold'>współpracuję jednocześnie z maksymalnie 2 firmami</strong>. Zarezerwuj bezpłatną rozmowę, zanim wolne miejsca w tym kwartale zostaną zajęte.",
-  packetTitle: "Odbierz Bezpłatną Mapę Drogową Rozwoju IT",
-  packetVal: "(Wartość 600 zł – Dziś za 0 zł)",
-  benefits: [
+  badge: "Program Wdrożeniowy",
+  title: "Dedykowane Aplikacje (Tylko 2 miejsca w tym kwartale)",
+  description:
+    "Ponieważ nie prowadzę masowej fabryki kodu, w danym kwartale współpracuję maksymalnie z dwoma firmami, dając projektom swój wyłączny czas. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i odbierz na start <strong class='text-white font-semibold'>Pakiet Strategiczny o wartości 600 zł za 0 zł</strong> (Diagnoza wąskich gardeł + Osobista Mapa Drogowa Wdrożenia IT).",
+  package_title: "Odbierz na start Pakiet Strategiczny (Wartość 600 zł za 0 zł):",
+  offer_items: [
     {
-      title: "30-minutowa diagnoza podczas rozmowy wideo",
+      title: "Diagnoza wąskich gardeł w procesach firmy",
       desc: "",
     },
     {
-      title: "Indywidualny Plan Wdrożenia systemu w 30 dni",
-      desc: "",
-    },
-    {
-      title: "Bankowy Test Bezpieczeństwa Informacji",
+      title: "Osobista Mapa Drogowa Wdrożenia IT",
       desc: "",
     },
   ],
-  cta: "Porozmawiajmy o Twoim projekcie",
-  footer: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+  button: "Odbierz Pakiet Strategiczny i Zarezerwuj Miejsce (0 zł)",
+  footer:
+    "Zajmij jedno z 2 wolnych miejsc w tym kwartale. Odkładanie cyfryzacji firmy na bliżej nieokreślone „kiedyś” to zgoda na dalsze przepalanie setek godzin na ręczną pracę, uciekające zyski i oglądanie pleców konkurencji, która szybciej wdroży automatyzację.",
+}
+
+export const bankingStability = {
+  badge: "Doświadczenie bankowe",
+  title:
+    "Standardy bezpieczeństwa z globalnych banków, wdrożone bez korporacyjnego zadęcia.",
+  intro:
+    "Moje doświadczenie w projektowaniu systemów dla instytucji takich jak Citibank czy BNP Paribas przenoszę bezpośrednio do elastycznego świata MŚP. Odcinam korporacyjną biurokrację, zostawiając to, co kluczowe: inżynieryjną precyzję i bezwzględne bezpieczeństwo.",
+  subtitle: "Co „stabilność klasy bankowej” oznacza dla Twojego biznesu w praktyce?",
+  text:
+    "To nie oznacza, że będziemy budować ociężały system przez pół roku, tonąc w procedurach. To oznacza, że Twój system nie wyłoży się w piątek o godzinie 16:00, kiedy masz w firmie największy ruch, najwięcej zamówień i musisz dowieźć wyniki. Otrzymujesz czysty, uniwersalny i w pełni udokumentowany kod – Twój system działa stabilnie i nigdy nie jest uzależniony od kaprysu agencji czy jednego programisty.",
 }
 
 export const guarantee = {

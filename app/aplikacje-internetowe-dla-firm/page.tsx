@@ -1,6 +1,5 @@
 import { Metadata } from "next"
 import { Breadcrumbs } from "@/components/breadcrumbs"
-import { siteConfig } from "@/lib/site-config"
 import { Button } from "@/components/ui/button"
 import {
   Accordion,
@@ -34,15 +33,19 @@ import {
   Handshake,
   Gem,
   Map,
+  FileSpreadsheet,
+  Scale,
 } from "lucide-react"
 import {
   hero,
   story,
   mechanism,
-  contrast,
   faq,
   metadata,
   guarantee,
+  bankingStability,
+  comparison,
+  offer,
 } from "@/lib/content/aplikacje-internetowe/page"
 import { GuaranteeSection } from "@/components/guarantee-section"
 
@@ -242,41 +245,87 @@ export default function AplikacjeInternetoweDlaFirmPage() {
         </div>
       </section>
 
-      {/* Sekcja 3: VISUAL CONTRAST MATRIX (Nowa Okazja – Model Bezpośredniego Partnerstwa) */}
-      <section className="relative border-t border-slate-900/50 bg-slate-950 py-16 sm:py-20 text-slate-300 md:py-32">
+      {/* Sekcja 4: PORÓWNANIE – tabela */}
+      <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-12 sm:py-20 text-slate-300 md:py-32">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
 
-        <div className="relative z-10 container mx-auto max-w-5xl px-4">
-          <div className="mb-10 sm:mb-16 text-center">
-            <div className="mb-4">
+        <div className="relative z-10 container mx-auto max-w-4xl px-4">
+          <div className="mb-8 sm:mb-12 text-center">
+            <div className="mb-3 sm:mb-4">
               <SectionBadge>
-              <ShieldCheck className="h-4 w-4" />
-              <span>Nowa okazja</span>
-            </SectionBadge>
+                <Scale className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                <span>{comparison.badge}</span>
+              </SectionBadge>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight max-w-3xl mx-auto">
-              {contrast.title}
+            <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
+              {comparison.title}
             </h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg">
-              {contrast.subtitle}
+            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-xs sm:text-base md:text-lg">
+              {comparison.subtitle}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            {contrast.comparisons.map((item, i) => (
-              <div key={i} className="contents">
-                <div className="bg-slate-900/40 border border-slate-800 p-5 sm:p-8 rounded-2xl flex flex-col hover:border-slate-700 transition-all">
-                  <div className="text-red-400 mb-2 sm:mb-3 font-bold text-[10px] uppercase tracking-widest">{contrast.red_ocean_title}</div>
-                  <h3 className="text-base sm:text-lg font-bold text-slate-300 mb-2 sm:mb-3 leading-snug">{item.red.title}</h3>
-                  <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">{item.red.desc}</p>
-                </div>
-                <div className="bg-blue-600/10 border border-blue-500/30 p-5 sm:p-8 rounded-2xl flex flex-col hover:border-blue-500/50 transition-all">
-                  <div className="text-blue-400 mb-2 sm:mb-3 font-bold text-[10px] uppercase tracking-widest">{contrast.blue_ocean_title}</div>
-                  <h3 className="text-base sm:text-lg font-bold text-white mb-2 sm:mb-3 leading-snug">{item.blue.title}</h3>
-                  <p className="text-slate-300 leading-relaxed text-xs sm:text-sm">{item.blue.desc}</p>
+          {/* Mobile: stacked comparison cards */}
+          <div className="grid gap-3 sm:gap-4 lg:hidden">
+            {comparison.rows.map((row, i) => (
+              <div key={i} className="rounded-2xl border border-slate-800 bg-slate-900/40 p-4 sm:p-6">
+                <h3 className="mb-3 sm:mb-4 text-sm sm:text-base font-bold text-white leading-snug">
+                  {row.feature}
+                </h3>
+                <div className="space-y-2.5 sm:space-y-3">
+                  <div className="rounded-xl border border-blue-500/30 bg-blue-500/10 p-3 sm:p-4">
+                    <p className="mb-1 text-[10px] font-bold uppercase tracking-widest text-blue-400">
+                      {comparison.columns.me}
+                    </p>
+                    <p className="text-[11px] sm:text-sm leading-relaxed text-slate-300">
+                      {row.me}
+                    </p>
+                  </div>
+                  <div className="rounded-xl border border-red-500/30 bg-red-500/10 p-3 sm:p-4">
+                    <p className="mb-1 text-[10px] font-bold uppercase tracking-widest text-red-400">
+                      {comparison.columns.agency}
+                    </p>
+                    <p className="text-[11px] sm:text-sm leading-relaxed text-slate-400">
+                      {row.agency}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Desktop: table */}
+          <div className="hidden lg:block overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/40 backdrop-blur-sm">
+            <Table className="border-collapse">
+              <TableHeader>
+                <TableRow className="border-slate-800 hover:bg-transparent">
+                  <TableHead className="w-28 sm:w-44 px-3 sm:px-6 py-4 sm:py-5 text-[11px] sm:text-sm text-slate-400 whitespace-normal leading-snug">
+                    {comparison.columns.feature}
+                  </TableHead>
+                  <TableHead className="px-3 sm:px-6 py-4 sm:py-5 text-[11px] sm:text-sm text-blue-400 whitespace-normal leading-snug">
+                    {comparison.columns.me}
+                  </TableHead>
+                  <TableHead className="px-3 sm:px-6 py-4 sm:py-5 text-[11px] sm:text-sm text-red-400 whitespace-normal leading-snug">
+                    {comparison.columns.agency}
+                  </TableHead>
+                </TableRow>
+              </TableHeader>
+              <TableBody>
+                {comparison.rows.map((row, i) => (
+                  <TableRow key={i} className="border-slate-800 hover:bg-slate-900/60">
+                    <TableCell className="px-3 sm:px-6 py-3.5 sm:py-5 align-top whitespace-normal text-[11px] sm:text-sm font-bold text-white">
+                      {row.feature}
+                    </TableCell>
+                    <TableCell className="px-3 sm:px-6 py-3.5 sm:py-5 align-top whitespace-normal text-[11px] sm:text-sm text-slate-300">
+                      {row.me}
+                    </TableCell>
+                    <TableCell className="px-3 sm:px-6 py-3.5 sm:py-5 align-top whitespace-normal text-[11px] sm:text-sm text-slate-400">
+                      {row.agency}
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
           </div>
         </div>
       </section>
@@ -294,50 +343,81 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             </SectionBadge>
             </div>
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight max-w-3xl mx-auto">
-              Jak dedykowane aplikacje realnie pomagają Twojej firmie?
+              Przestań marnować czas zespołu na powtarzalną, ręczną robotę.
             </h2>
             <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg">
               Nowoczesne oprogramowanie biznesowe to nie koszt, lecz inwestycja, która bezpośrednio usuwa wąskie gardła i napędza sprzedaż:
             </p>
           </div>
 
-          <div className="grid gap-4 sm:gap-6 md:grid-cols-3">
-            <div className="group bg-slate-900/40 border border-slate-800 p-5 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col">
-              <div className="mb-4 sm:mb-6 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-blue-500/20 bg-blue-500/10 text-blue-400 group-hover:scale-105 transition-transform duration-500">
-                <Zap className="h-6 w-6" />
+          <div className="grid gap-3 sm:gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+            <div className="group relative bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col">
+              <div className="mb-3 sm:mb-6 flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-xl border border-blue-500/30 bg-blue-500/10 text-blue-400 group-hover:text-blue-300 transition-colors">
+                <FileSpreadsheet className="h-5 w-5 sm:h-6 sm:w-6" />
               </div>
-              <h3 className="mb-2 sm:mb-3 text-base sm:text-lg font-bold text-white leading-tight group-hover:text-blue-400 transition-colors">
-                Automatyzacja powtarzalnych zadań
+              <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-blue-400 transition-colors leading-tight">
+                Koniec z chaosem w arkuszach
               </h3>
-              <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">
-                Całkowicie eliminuję ręczną pracę Twojego zespołu, pozwalając pracownikom skupić się na strategii i zarabianiu pieniędzy.
+              <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">
+                Zapomnij o nerwowym przeklipywaniu danych między pięcioma różnymi arkuszami Excela i pilnowaniu, czy ktoś czegoś nie usunął. Dedykowany system spina wszystko w jednym bezpiecznym miejscu.
               </p>
             </div>
 
-            <div className="group bg-slate-900/40 border border-slate-800 p-5 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col">
-              <div className="mb-4 sm:mb-6 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-blue-500/20 bg-blue-500/10 text-blue-400 group-hover:scale-105 transition-transform duration-500">
-                <TrendingUp className="h-6 w-6" />
+            <div className="group relative bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col">
+              <div className="mb-3 sm:mb-6 flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-xl border border-blue-500/30 bg-blue-500/10 text-blue-400 group-hover:text-blue-300 transition-colors">
+                <Zap className="h-5 w-5 sm:h-6 sm:w-6" />
               </div>
-              <h3 className="mb-2 sm:mb-3 text-base sm:text-lg font-bold text-white leading-tight group-hover:text-blue-400 transition-colors">
-                Szybkość, która sprzedaje
+              <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-blue-400 transition-colors leading-tight">
+                Święty spokój dla zespołu
               </h3>
-              <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">
-                Tworzę błyskawiczne platformy, które eliminują opór na ścieżce zakupowej, drastycznie zmniejszając liczbę porzuconych koszyków i zwiększając konwersję.
+              <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">
+                Twój pracownik zamiast spędzać 40 minut na ręcznym wklepywaniu jednego zamówienia, klika jeden przycisk. System automatycznie wystawia fakturę, aktualizuje magazyn i powiadamia klienta.
               </p>
             </div>
 
-            <div className="group bg-slate-900/40 border border-slate-800 p-5 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col md:col-span-3 lg:col-span-1 max-w-xl mx-auto md:max-w-none w-full">
-              <div className="mb-4 sm:mb-6 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-blue-500/20 bg-blue-500/10 text-blue-400 group-hover:scale-105 transition-transform duration-500">
-                <ShieldCheck className="h-6 w-6" />
+            <div className="group relative bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col md:col-span-2 max-w-xl mx-auto w-full">
+              <div className="mb-3 sm:mb-6 flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-xl border border-blue-500/30 bg-blue-500/10 text-blue-400 group-hover:text-blue-300 transition-colors">
+                <TrendingUp className="h-5 w-5 sm:h-6 sm:w-6" />
               </div>
-              <h3 className="mb-2 sm:mb-3 text-base sm:text-lg font-bold text-white leading-tight group-hover:text-blue-400 transition-colors">
-                Bezpieczeństwo i stabilność
+              <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-blue-400 transition-colors leading-tight">
+                Eliminacja wąskich gardeł
               </h3>
-              <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">
-                Systemy gotowe na nagłe skoki ruchu i duże obciążenia, chroniące wrażliwe dane klientów i transakcji.
+              <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">
+                Nie inwestujesz w „zaawansowane języki programowania dla sztuki”. Inwestujesz w to, żeby Twoja firma mogła obsłużyć 3 razy więcej zamówień przy tym samym zespole, bez chaosu i bez błędów.
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Sekcja: Bankowa stabilność w realiach MŚP */}
+      <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-12 sm:py-20 text-slate-300 md:py-32">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
+        <div className="relative z-10 container mx-auto px-4 max-w-3xl">
+          <div className="mb-8 sm:mb-12 text-center">
+            <div className="mb-3 sm:mb-4">
+              <SectionBadge>
+                <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                <span>{bankingStability.badge}</span>
+              </SectionBadge>
+            </div>
+            <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight">
+              {bankingStability.title}
+            </h2>
+          </div>
+
+          <blockquote className="mb-8 sm:mb-12 rounded-r-2xl border-l-2 border-blue-500/60 bg-slate-900/40 p-4 sm:p-8">
+            <p className="text-slate-300 font-light leading-relaxed text-sm sm:text-base md:text-lg">
+              {bankingStability.intro}
+            </p>
+          </blockquote>
+
+          <h3 className="mb-2 sm:mb-4 text-base sm:text-2xl font-bold text-white leading-snug sm:leading-tight">
+            {bankingStability.subtitle}
+          </h3>
+          <p className="text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg">
+            {bankingStability.text}
+          </p>
         </div>
       </section>
 
@@ -368,13 +448,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
               return (
                 <div
                   key={i}
-                  className={`group bg-slate-900/40 border border-slate-800 p-5 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col ${
-                    i < 2 
-                      ? "lg:col-span-3 md:col-span-1" 
-                      : i === 2 
-                      ? "lg:col-span-3 md:col-span-1" 
-                      : "lg:col-span-3 md:col-span-2 max-w-xl mx-auto md:max-w-none w-full"
-                  }`}
+                  className="group bg-slate-900/40 border border-slate-800 p-5 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col lg:col-span-3 md:col-span-1"
                 >
                   <div className="mb-4 sm:mb-6 flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl border border-blue-500/20 bg-blue-500/10 text-blue-400 group-hover:scale-105 transition-transform duration-500">
                     <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
@@ -432,7 +506,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
       </section>
 
 
-      <CtaSection />
+      <CtaSection content={offer} />
     </main>
   )
 }
