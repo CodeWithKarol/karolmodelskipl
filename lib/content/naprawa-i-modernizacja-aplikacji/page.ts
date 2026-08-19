@@ -29,7 +29,7 @@ export const hero = {
   title: "Naprawiam i przyspieszam istniejące aplikacje internetowe",
   titleHighlight: "– bez wstrzymywania sprzedaży i kosztownego pisania od nowa.",
   description:
-    "Twój obecny system działa wolno, zacina się lub każda drobna zmiana trwa miesiącami? Nie musisz wyrzucać dotychczasowych inwestycji do kosza. Wprowadzam usprawnienia ewolucyjnie, na żywym organizmie Twojej firmy, dbając o to, by Twoi klienci kupowali bez przeszkód.",
+    "Twój obecny system działa wolno, zacina się przy większym ruchu, a każda drobna zmiana trwa miesiącami? Nie musisz wyrzucać dotychczasowych inwestycji do kosza ani płacić fortuny za budowę platformy od zera. Wprowadzam usprawnienia ewolucyjnie, na żywym organizmie firmy – wymieniamy fundamenty pokój po pokoju, podczas gdy Twoi klienci nieprzerwanie składają zamówienia.",
   cta: "Porozmawiajmy o Twoim projekcie",
   footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz bezpłatny plan poprawek",
   indicators: [
@@ -53,57 +53,79 @@ export const hero = {
 }
 
 export const story = {
-  title: "Jak dług technologiczny powoli wyciąga pieniądze z Twojej firmy?",
-  intro: "Gdy zaczynałeś, Twój system internetowy był wystarczający. Jednak w miarę rozwoju firmy, dodawania nowych funkcji i obsługi większej liczby klientów, w kodzie pojawia się tzw. dług technologiczny.",
+  title: "Kiedy wiesz, że Twój system potrzebuje inżyniera, a nie kolejnych wymówek?",
+  intro: "Gdy zaczynałeś, Twoja aplikacja była wystarczająca. Jednak w miarę rozwoju firmy, dodawania nowych funkcji i obsługi większej liczby klientów, w kodzie pojawia się tzw. dług technologiczny.",
    context: "Jeśli obserwujesz u siebie poniższe objawy, Twój system potrzebuje pilnej interwencji niezależnego partnera technologicznego:",
   points: [
     {
-      title: "Aplikacja działa coraz wolniej",
-      desc: "Klienci nie chcą czekać kilku sekund na załadowanie strony. Każda sekunda opóźnienia to realny spadek liczby sfinalizowanych zamówień."
+      title: "Objaw 01: Spadek szybkości i utrata klientów",
+      desc: "Strony ładują się powyżej 3 sekund, a baza danych dławi się przy większym ruchu. Każda sekunda zwłoki w koszyku to porzuceni klienci i uciekające zyski."
     },
     {
-      title: "Każda zmiana wywołuje nowe błędy",
-      desc: "Naprawienie jednej rzeczy w aplikacji powoduje, że przestają działać dwie inne. Programiści boją się dotykać starych fragmentów kodu."
+      title: "Objaw 02: Paraliż rozwoju nowych funkcji",
+      desc: "Dodanie prostego przycisku, integracji z kurierem czy nowego raportu trwa 6 tygodni, bo programiści boją się, że drobna zmiana wysypie cały system."
     },
     {
-      title: "Miesięczne koszty serwerów rosną bez powodu",
-      desc: "Niewydajnie napisany system zużywa wielokrotnie więcej zasobów, niż powinien, co generuje wysokie, niepotrzebne rachunki za infrastrukturę."
+      title: "Objaw 03: Rosnące koszty serwerów",
+      desc: "Zamiast zoptymalizować zapytania do bazy, ktoś stale dokupuje droższe serwery. Płacisz setki złotych miesięcznie za „leczenie objawów”, a nie przyczyny."
     },
     {
-      title: "Agencja rozkłada ręce i mówi: „Trzeba napisać od nowa”",
-      desc: "To najczęstsza odpowiedź software house'ów. Przepisanie systemu oznacza dla nich wielomiesięczny, drogi kontrakt, a dla Ciebie – gigantyczne ryzyko sparaliżowania firmy na pół roku."
+      title: "Objaw 04: Agencja mówi: „Tego się nie da naprawić, trzeba napisać od nowa”",
+      desc: "Agencje tak mówią, bo ich juniorzy boją się czytać cudzy kod, a software house woli sprzedać Ci nowy projekt za 150 tysięcy i 8 miesięcy prac, niż naprawić to, co masz w 3 tygodnie. Prawda jest taka: <strong class='text-white font-semibold'>90% systemów da się uzdrowić bez burzenia całego biznesu</strong>."
     }
   ]
 }
 
+export const safety = {
+  badge: "Inżynieryjna gwarancja bezpieczeństwa",
+  title: "Jak modernizujemy oprogramowanie bez ani jednej sekundy przestoju w biznesie?",
+  fear: "„A co, jeśli programista dotknie kodu w piątek i w sobotę rano platforma padnie?”",
+  lead: "Oto dlaczego u mnie jest to niemożliwe:",
+  steps: [
+    {
+      title: "Prace tylko na izolowanym środowisku",
+      desc: "Nigdy nie dotykam Twojego działającego sklepu ani systemu produkcyjnego na żywo. Wszystkie prace optymalizacyjne, refaktoryzację kodu i testy przeprowadzam na odizolowanej kopii testowej (stagingu)."
+    },
+    {
+      title: "Cicha podmiana po Twojej akceptacji",
+      desc: "Dopiero wtedy, gdy sam przetestujesz przyspieszenie na ekranie i zaakceptujesz wynik, wykonujemy cichą, bezpieczną podmianę modułu w godzinach najmniejszego ruchu."
+    }
+  ],
+  guarantees: [
+    "Zero ryzyka utraty zamówień",
+    "Standardy bezpieczeństwa wypracowane w bankowości (Citibank, BNP Paribas)",
+    "Pisemna Gwarancja Płynności Operacyjnej"
+  ]
+}
+
 export const mechanism = {
-  title: "Jak krok po kroku przywracamy wydajność Twojej aplikacji?",
+  title: "Proces wdrożeniowy w 5 krokach",
   subtitle: "Proces modernizacji zaprojektowałem tak, aby zapewnić Ci pełną przewidywalność i zerowe ryzyko operacyjne. Zamiast chaotycznych zmian i niekończących się poprawek, przechodzimy przez przejrzystą i bezpieczną ścieżkę:",
   cards: [
     {
-      title: "1. Bezpłatny Audyt i Diagnoza",
+      title: "1. Bezpłatna Diagnoza i Audyt",
       subtitle: "",
-      content: "Analizuję Twój system i wskazuję 2–3 najbardziej krytyczne punkty, które spowalniają działanie aplikacji i generują błędy."
+      content: "Wskazuję 2–3 wąskie gardła, które najbardziej spowalniają system i blokują zyski."
     },
     {
-      title: "2. Plan Ulepszeń (Bez niespodzianek)",
+      title: "2. Plan Modernizacji Krok po Kroku",
       subtitle: "",
-      content: "Ustalamy priorytety. Dzielimy prace na małe, 2-tygodniowe etapy, koncentrując się na rzeczach, które przyniosą najszybszy zwrot z inwestycji."
+      content: "Dostajesz precyzyjną mapę: co naprawiamy najpierw, w jakim czasie i za jaką kwotę."
     },
     {
-      title: "3. Wdrożenie w Tle",
+      title: "3. Prace w Tle (Izolacja)",
       subtitle: "",
-      content: "Wprowadzam poprawki w kodzie na osobnym środowisku testowym. Prace nie wpływają na to, co widzą Twoi klienci."
+      content: "Buduję i optymalizuję moduły na bezpiecznym środowisku testowym. Twój biznes działa normalnie."
     },
     {
-      title: "4. Pokaz i Akceptacja",
+      title: "4. Testy i Pokaz Efektu",
       subtitle: "",
-      content: "Prezentuję Ci działający, przyspieszony moduł na ekranie. Płacisz za dany etap dopiero w momencie, gdy widzisz i akceptujesz efekt."
+      content: "Sprawdzasz działanie na własnym ekranie. Płacisz za etap dopiero po zatwierdzeniu wyniku."
     },
     {
       title: "5. Cicha Podmiana",
       subtitle: "",
-      content: "Podmieniamy ulepszony element w systemie produkcyjnym. Klienci zauważają jedynie, że strona działa szybciej i płynniej."
+      content: "Wdrażamy zoptymalizowany element na produkcję. System przyspiesza bez przestoju w sprzedaży."
     }
   ]
 }
@@ -166,25 +188,26 @@ export const faq = {
 }
 
 export const offer = {
-  title: "Przestań tracić klientów przez wolny system. Zdiagnozujmy go za darmo.",
-  subtitle:
-    "Ze względu na bezpośredni model współpracy i dbałość o najwyższą jakość, <strong class='text-white font-semibold'>współpracuję jednocześnie z maksymalnie 2 firmami</strong>. Zarezerwuj bezpłatną rozmowę, zanim wolne miejsca w tym kwartale zostaną zajęte.",
-  packetTitle: "Odbierz Bezpłatny Audyt Modernizacyjny",
-  packetVal: "(Wartość 600 zł – Dziś za 0 zł)",
-  benefits: [
+  badge: "Program Wdrożeniowy: Modernizacja i Przyspieszanie Systemów",
+  title: "Zostań Partnerem Założycielem (Tylko 2 firmy w kwartale)",
+  description:
+    "Zamiast masowej obsługi, w danym kwartale biorę na warsztat maksymalnie dwa systemy, gwarantując Ci 100% mojego osobistego skupienia. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – napraw swój system na preferencyjnych warunkach i zyskaj <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki technicznej</strong> po wdrożeniu poprawek.",
+  package_title: "Co dokładnie otrzymujesz na start w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
+  offer_items: [
     {
-      title: "30-minutowa diagnoza podczas rozmowy wideo",
-      desc: "Analiza Twojego systemu na żywo.",
+      title: "Bezpłatny Audyt Kodu: Wskazanie 2–3 krytycznych wąskich gardeł blokujących szybkość i zyski.",
+      desc: "",
     },
     {
-      title: "Raport najcięższych błędów",
-      desc: "Wskazanie elementów spowalniających aplikację.",
+      title: "Bankowy Test Stabilności i Bezpieczeństwa: Weryfikacja podatności na awarie i wycieki danych.",
+      desc: "",
     },
     {
-      title: "Plan bezpiecznego wdrożenia poprawek w 30 dni",
-      desc: "Konkretna strategia modernizacji.",
+      title: "Plan Modernizacji Krok po Kroku: Przejrzysta wycena etapowa i harmonogram prac bez żadnych ukrytych kosztów.",
+      desc: "",
     },
   ],
-  cta: "Porozmawiajmy o Twoim projekcie",
-  footer: "W tym miesiącu mogę przyjąć do modernizacji <strong class='text-white font-semibold'>maksymalnie 2 firmy</strong>",
+  button: "Odbierz Bezpłatny Audyt i Zarezerwuj Miejsce (0 zł)",
+  footer:
+    "Zajmij jedno z 2 wolnych miejsc w tym kwartale. Każdy kolejny tydzień zwłoki z mulącym systemem to przepłacone serwery, zmęczeni pracownicy i klienci, którzy uciekają do szybszej konkurencji.",
 }
