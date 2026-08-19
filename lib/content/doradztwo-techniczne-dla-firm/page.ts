@@ -10,25 +10,24 @@ export const hero = {
   titleHighlight: "– bez kosztów pełnego etatu i ryzyka złych decyzji.",
   description:
     "Rozwijasz biznes, ale masz wrażenie, że technologia zaczyna Cię ograniczać? Masz na stole wyceny od agencji, z których nic nie rozumiesz, i boisz się przepalenia dziesiątek tysięcy złotych? Jako Twój Fractional CTO (Dyrektor Technologiczny na godziny) przejmuję pełną odpowiedzialność za strategię IT. Nie piszę kodu – weryfikuję Twoich programistów, pilnuję Twojego portfela i tłumaczę technologię na język zysków.",
-  cta: "Porozmawiajmy o Twoim projekcie",
-  footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT",
+  cta: "Umów bezpłatną konsultację strategiczną",
+  footnote: "100% bezpłatnie • Wideorozmowa w 4 oczy • Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
   indicators: [
     { title: "Decyzje oparte na doświadczeniu bankowym", desc: "Przenoszę rygorystyczne standardy bezpieczeństwa i skalowalności z globalnych instytucji (Citibank, BNP Paribas) wprost do Twojej firmy." },
     { title: "Ochrona przed przepalaniem budżetów", desc: "Weryfikuję plany, wyceny i pracę zewnętrznych dostawców, eliminując naciąganie na zbędne i drogie rozwiązania." },
     { title: "Technologia napędzająca zyski", desc: "Doradzam wprost z perspektywy biznesowej – technologia ma służyć wzrostowi sprzedaży i automatyzacji, a nie sztuce dla sztuki." }
   ],
   pilot_program: {
-    title: "Program Wdrożeniowy: Doradztwo i Architektura Techniczna (Tylko 2 firmy)",
-    description: "Przechodzę z sektora finansowego do wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces doradztwa strategicznego w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> nad rozwojem cyfrowym Twojej firmy.",
-    cta: "Porozmawiajmy o Twoim projekcie",
+    title: "Program Partnerski: Opieka Strategiczna Fractional CTO (Tylko 2 firmy)",
+    description: "Przechodzę z sektora finansowego do bezpośredniego wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i zyskaj osobistego Dyrektora Technologicznego na godziny w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnego nadzoru</strong> nad rozwojem cyfrowym Twojej firmy.",
+    cta: "Umów bezpłatną konsultację strategiczną",
     package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
   },
-  cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+  cta_sub: "100% bezpłatnie • Wideorozmowa w 4 oczy • Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
   offer_items: [
-    { title: "Decyzje oparte na doświadczeniu bankowym: przenoszę rygorystyczne standardy bezpieczeństwa i skalowalności z globalnych instytucji (Citibank, BNP Paribas) wprost do Twojej firmy.", desc: "", val: "" },
-    { title: "Ochrona przed przepalaniem budżetów: weryfikuję plany, wyceny i pracę zewnętrznych dostawców, eliminując naciąganie na zbędne i drogie rozwiązania.", desc: "", val: "" },
-    { title: "Technologia napędzająca zyski: doradzam wprost z perspektywy biznesowej – technologia ma służyć wzrostowi sprzedaży i automatyzacji, a nie sztuce dla sztuki.", desc: "", val: "" },
-    { title: "Osobista Mapa Drogowa IT: priorytety technologiczne i konsultacje dobrane pod aktualne cele Twojego biznesu.", desc: "", val: "" },
+    { title: "Audyt Umów i Wycen IT: niezależna weryfikacja ofert od agencji i software house'ów oraz zablokowanie naciągania budżetu.", desc: "", val: "" },
+    { title: "Bankowy Test Bezpieczeństwa i Architektury: sprawdzenie stabilności systemów i ryzyk związanych z zależnością od pojedynczych programistów.", desc: "", val: "" },
+    { title: "Strategiczna Mapa Drogowa IT: priorytety technologiczne, dobór architektury i plan rozwoju dopasowany do realnych celów biznesowych.", desc: "", val: "" },
   ]
 }
 

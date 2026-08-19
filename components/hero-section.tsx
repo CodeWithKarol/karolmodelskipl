@@ -41,7 +41,7 @@ export function HeroSection() {
                 {hero.pilot_program.cta}
               </Button>
             </a>
-            <p className="text-[11px] text-slate-400 text-center mt-2 font-medium">{hero.cta_sub}</p>
+            <p className="text-[11px] text-amber-400/90 text-center mt-2 font-semibold tracking-wide">{hero.cta_sub}</p>
           </div>
 
           {/* Indicators - Inline value props */}
@@ -100,7 +100,7 @@ export function HeroSection() {
                 {hero.pilot_program.cta}
               </Button>
             </a>
-            <p className="text-[10px] text-slate-400 text-center mt-3 uppercase tracking-widest font-semibold">{hero.cta_sub}</p>
+            <p className="text-[10px] text-amber-400/90 text-center mt-3 uppercase tracking-widest font-bold">{hero.cta_sub}</p>
           </div>
         </div>
       </div>

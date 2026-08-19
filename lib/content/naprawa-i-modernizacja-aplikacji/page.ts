@@ -30,7 +30,7 @@ export const hero = {
   titleHighlight: "– bez wstrzymywania sprzedaży i kosztownego pisania od nowa.",
   description:
     "Twój obecny system działa wolno, zacina się przy większym ruchu, a każda drobna zmiana trwa miesiącami? Nie musisz wyrzucać dotychczasowych inwestycji do kosza ani płacić fortuny za budowę platformy od zera. Wprowadzam usprawnienia ewolucyjnie, na żywym organizmie firmy – wymieniamy fundamenty pokój po pokoju, podczas gdy Twoi klienci nieprzerwanie składają zamówienia.",
-  cta: "Porozmawiajmy o Twoim projekcie",
+  cta: "Umów bezpłatny audyt wydajności",
   footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz bezpłatny plan poprawek",
   indicators: [
     { title: "Zero przestojów w biznesie", desc: "Wszystkie prace modernizacyjne przebiegają w tle. Twój sklep lub system działa bez przerw 24/7." },
@@ -38,17 +38,16 @@ export const hero = {
     { title: "Błyskawiczna poprawa szybkości", desc: "Zwiększam wydajność aplikacji, co bezpośrednio przekłada się na wyższą konwersję i lepsze doświadczenie Twoich klientów." }
   ],
   pilot_program: {
-    title: "Program Wdrożeniowy: Modernizacja i Przyspieszanie Systemów (Tylko 2 firmy)",
+    title: "Program Partnerski: Modernizacja i Przyspieszanie Systemów (Tylko 2 firmy)",
     description: "Przechodzę z sektora finansowego do wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces bezinwazyjnej naprawy oprogramowania w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po wdrożeniu poprawek.",
-    cta: "Porozmawiajmy o Twoim projekcie",
+    cta: "Umów bezpłatny audyt wydajności",
     package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
   },
-  cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+  cta_sub: "100% bezpłatnie • Wideorozmowa w 4 oczy • Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
   offer_items: [
-    { title: "Zero przestojów w biznesie: wszystkie prace modernizacyjne przebiegają w tle. Twój sklep lub system działa bez przerw 24/7.", desc: "", val: "" },
-    { title: "Ochrona dotychczasowego budżetu: nie namawiam na ryzykowne budowanie wszystkiego od zera. Wykorzystujemy to, co działa.", desc: "", val: "" },
-    { title: "Błyskawiczna poprawa szybkości: zwiększam wydajność aplikacji, co bezpośrednio przekłada się na wyższą konwersję.", desc: "", val: "" },
-    { title: "Bezpłatny plan poprawek: precyzyjna ścieżka optymalizacji kodu bez przepalania środków.", desc: "", val: "" },
+    { title: "Diagnoza Wąskich Gardeł: namierzenie miejsc, w których kod i bazy danych spowalniają działanie aplikacji i powodują błędy.", desc: "", val: "" },
+    { title: "Bankowy Test Wydajności i Bezpieczeństwa: weryfikacja stabilności systemu pod kątem obciążenia ruchem klientów.", desc: "", val: "" },
+    { title: "Ewolucyjna Mapa Naprawy: precyzyjny plan eliminacji długu technologicznego krok po kroku — bez wstrzymywania sprzedaży i bez pisania od nowa.", desc: "", val: "" },
   ]
 }
 

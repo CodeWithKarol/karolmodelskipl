@@ -10,17 +10,17 @@ export const hero = {
   ],
 
   pilot_program: {
-    title: "Program Wdrożeniowy: Aplikacje Internetowe dla Firm (Tylko 2 firmy)",
-    description: "Przechodzę z sektora finansowego do wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces budowy oprogramowania dla Twojego biznesu w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po wdrożeniu.",
-    cta: "Porozmawiajmy o wdrożeniu aplikacji",
-    package_title: "Pakiet Strategiczny (Wartość 600 zł za 0 zł na start):"
+    title: "Program Partnerski: Rozwój Cyfrowy MŚP (Tylko 2 firmy)",
+    description: "Przechodzę z sektora finansowego do bezpośredniego wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną uporządkowanie technologii w Twojej firmie w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong>.",
+    cta: "Porozmawiajmy o Twoim projekcie",
+    package_title: "Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
   },
 
-  cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+  cta_sub: "ZOSTAŁO TYLKO 1 Z 2 WOLNYCH MIEJSC W TYM KWARTALE",
 
   offer_items: [
-    { title: "Diagnoza wąskich gardeł w procesach firmy", desc: "", val: "" },
-    { title: "Bankowy Test Bezpieczeństwa Informacji", desc: "", val: "" },
-    { title: "Osobista Mapa Drogowa Wdrożenia IT", desc: "", val: "" },
+    { title: "Diagnoza wąskich gardeł blokujących zyski i rozwój", desc: "", val: "" },
+    { title: "Bankowy Test Bezpieczeństwa i stabilności IT", desc: "", val: "" },
+    { title: "Osobista Mapa Drogowa wdrożenia, modernizacji lub audytu", desc: "", val: "" },
   ]
 }
