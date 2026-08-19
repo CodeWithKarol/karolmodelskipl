@@ -7,9 +7,9 @@ export const blogContent = {
   header: {
     badge: "Baza wiedzy o oprogramowaniu dla firm",
     title:
-      'Konkretna wiedza biznesowa o oprogramowaniu dla firm – bez technicznego żargonu i pułapek agencji.',
+      "Konkretna wiedza o oprogramowaniu dla firm – bez technicznego żargonu i pułapek agencji.",
     description:
-      "Szukasz odpowiedzi na pytania dotyczące tworzenia, modernizacji i realnych kosztów systemów internetowych w Twojej firmie? Przeczytaj praktyczne poradniki oparte na doświadczeniu z sektorów bankowego i MŚP. Dowiedz się, jak mądrze inwestować w technologię, budować dedykowane aplikacje na zamówienie i chronić budżet.",
+      "Szukasz prawdy o realnych kosztach, terminach i architekturze IT w sektorze MŚP? Przeczytaj praktyczne poradniki oparte na 7-letnim doświadczeniu z sektorów bankowego i średniego biznesu. Dowiedz się, jak mądrze inwestować w technologię, rozwijać systemy i chronić budżet przed naciąganiem.",
     indicators: [
       {
         title: "Proste odpowiedzi na trudne pytania",
@@ -42,32 +42,32 @@ export const blogContent = {
   },
   categories: {
     badge: "Nawigacja po bazie wiedzy",
-    title: "Wybierz obszar, który najbardziej interesuje Twoją firmę:",
+    title: "Wybierz obszar, który chcesz uporządkować w swojej firmie:",
     subtitle: "Możesz przeglądać artykuły podzielone na cztery kluczowe kategorie dopasowane do aktualnych potrzeb Twojego biznesu:",
     items: [
       {
-        title: "Bezinwazyjna Modernizacja Systemów",
-        desc: "Masz aplikację, która działa wolno, zacina się lub wymaga ciągłych napraw? Zobacz, jak unowocześniać oprogramowanie ewolucyjnie, bez wstrzymywania sprzedaży i bez kosztownego pisania kodu od nowa.",
-        href: "/blog/bezinwazyjna-modernizacja-systemow",
-        cta: "Przejdź do artykułów o modernizacji"
-      },
-      {
-        title: "Szybka Wersja Startowa Aplikacji",
-        desc: "Masz pomysł na nowy produkt cyfrowy lub narzędzie dla klientów? Dowiedz się, jak bezpiecznie uruchomić kluczową funkcję w 30 dni, przetestować pomysł na rynku i nie przepalić budżetu.",
-        href: "/blog/szybka-wersja-startowa",
-        cta: "Przejdź do artykułów o wersji startowej"
-      },
-      {
-        title: "Dedykowane Systemy dla Firm (Koszty i Zyski)",
-        desc: "Zastanawiasz się, ile naprawdę kosztuje oprogramowanie szyte na miarę i jak automatyzacja procesów przekłada się na wzrost zysków? Sprawdź twarde realia rynkowe bez ukrytych kosztów agencji.",
+        title: "Automatyzacja i Aplikacje Dedykowane",
+        desc: "Jak liczyć ROI z inwestycji w oprogramowanie, jak unikać pułapek w umowach typu fixed-price i jak układać logikę biznesową, by uwolnić czas zespołu z arkuszy Excela.",
         href: "/blog/aplikacje-dla-firm",
-        cta: "Przejdź do artykułów o aplikacjach dla firm"
+        cta: "Przejdź do artykułów: Aplikacje dla Firm"
       },
       {
-        title: "Strategia i Niezależne Partnerstwo Technologiczne",
-        desc: "Poznaj kulisy branży IT. Dowiedz się, dlaczego tradycyjny model współpracy z dużymi software house'ami bywa pułapką i jak zyskać pełną kontrolę nad technologią jako niezależny partner.",
+        title: "Walidacja Rynku i MVP w 30 dni",
+        desc: "Instrukcje dla przedsiębiorców z nowymi pomysłami. Jak okroić specyfikację do absolutnego serca biznesu, jak przetestować popyt przy minimalnym budżecie i uruchomić wersję startową w miesiąc.",
+        href: "/blog/szybka-wersja-startowa",
+        cta: "Przejdź do artykułów: Szybki Start & MVP"
+      },
+      {
+        title: "Modernizacja i Ratowanie Kodu",
+        desc: "Co robić, gdy system działa jak muł, bazy danych się dławią, a programiści mówią, że „trzeba napisać od nowa”. Przewodniki o bezpiecznej refaktoryzacji ewolucyjnej bez wyłączania sprzedaży.",
+        href: "/blog/bezinwazyjna-modernizacja-systemow",
+        cta: "Przejdź do artykułów: Naprawa i Przyspieszanie"
+      },
+      {
+        title: "Architektura IT i Nadzór nad Agencjami",
+        desc: "Jak bezpiecznie czytać wyceny od software house'ów, jak rozmawiać z programistami bez znajomości kodu i kiedy warto zaangażować Fractional CTO jako pancerną tarczę dla budżetu firmy.",
         href: "/blog/strategia-it",
-         cta: "Przejdź do artykułów o strategii i nowoczesnym podejściu"
+        cta: "Przejdź do artykułów: Doradztwo Strategiczne"
       }
     ]
   },
@@ -120,6 +120,20 @@ export const blogContent = {
       },
     ],
     cta: "Porozmawiajmy o Twoim projekcie",
+    footer: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+  },
+  cta: {
+    badge: "Bezpłatny audyt w 4 oczy",
+    title: "Nie chcesz czytać dziesiątek artykułów? Zróbmy bezpłatny audyt w 4 oczy.",
+    description:
+      "Zamiast tracić czas na samodzielną analizę techniczną, przenieś problem na moje barki. W każdym kwartale obejmuję opieką strategiczną i technologiczną <strong class='text-white font-semibold'>maksymalnie 2 firmy</strong>. W zamian za opinię po zakończeniu analizy, możesz odebrać kompletny Pakiet Strategiczny całkowicie bezpłatnie.",
+    package_title: "Odbierz kompletny Pakiet Strategiczny (Wartość 600 zł za 0 zł):",
+    offer_items: [
+      { title: "30-minutowa diagnoza podczas rozmowy wideo w 4 oczy", desc: "" },
+      { title: "Indywidualny Plan Wdrożenia lub Modernizacji w 30 dni", desc: "" },
+      { title: "Bankowy Test Bezpieczeństwa Informacji", desc: "" },
+    ],
+    button: "Zarezerwuj bezpłatny audyt w 4 oczy",
     footer: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
   },
 }
