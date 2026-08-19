@@ -182,8 +182,7 @@ export default function DoradztwoTechnicznePage() {
                     <span className="text-blue-400 shrink-0 mt-0.5">
                       {i === 0 && <Target className="h-3.5 w-3.5" />}
                       {i === 1 && <ShieldCheck className="h-3.5 w-3.5" />}
-                      {i === 2 && <TrendingUp className="h-3.5 w-3.5" />}
-                      {i === 3 && <Map className="h-3.5 w-3.5" />}
+                      {i === 2 && <Map className="h-3.5 w-3.5" />}
                     </span>
                     {item.title}
                   </li>

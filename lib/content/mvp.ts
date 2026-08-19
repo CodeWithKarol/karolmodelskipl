@@ -39,13 +39,13 @@ export const mvp = {
       title: "Zostań Partnerem Założycielem (Tylko 2 firmy w kwartale)",
       description: "Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – jedną z pierwszych dwóch firm, które wdrożą swoje MVP bez agencyjnego cyrku. Pracowałem przy systemach finansowych (Citibank, BNP Paribas) i przenoszę te standardy do firm takich jak Twoja. W zamian za opinię po projekcie zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po uruchomieniu.",
       cta: "Odbierz Pakiet Strategiczny i Zarezerwuj Miejsce (0 zł)",
-      package_title: "Co otrzymujesz w ramach Pakietu Strategicznego (Wartość 600 zł za 0 zł):"
+      package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
     },
     cta_sub: "Zajmij jedno z 2 wolnych miejsc w tym kwartale, zanim konkurencja pierwsza wypuści podobne rozwiązanie na rynek. Odkładanie decyzji technologicznej oznacza kolejne miesiące uciekających przychodów.",
     offer_items: [
-      { title: "Robimy to w miesiąc. Wypuszczamy na rynek to, co najważniejsze, żebyś od razu sprawdził, czy ludzie chcą za to płacić.", desc: "", val: "" },
-      { title: "Dostajesz stabilny system i kod, który jest w 100% twój – żaden programista cię później nie szantażuje.", desc: "", val: "" },
-      { title: "Płacisz za dany etap dopiero wtedy, gdy widzisz działający system na swoim ekranie.", desc: "", val: "" },
+      { title: "Selekcja Serca Biznesu: odcinamy zbędne moduły, skupiając się tylko na funkcji, która od razu generuje zysk.", desc: "", val: "" },
+      { title: "Bankowy Test Bezpieczeństwa: weryfikacja stabilności i ochrony danych Twojego pomysłu.", desc: "", val: "" },
+      { title: "Osobista Mapa Drogowa MVP: precyzyjny plan i harmonogram wdrożenia działającego systemu w 30 dni.", desc: "", val: "" },
     ],
     cta: "Odbierz Pakiet Strategiczny i Zarezerwuj Miejsce (0 zł)",
     footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT"
@@ -208,18 +208,18 @@ export const mvp = {
     badge: "Program Wdrożeniowy: Szybka Wersja Startowa",
     title: "Zostań Partnerem Założycielem (Tylko 2 firmy w kwartale)",
     description: "Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – jedną z pierwszych dwóch firm, które wdrożą swoje MVP bez agencyjnego cyrku. Pracowałem przy systemach finansowych (Citibank, BNP Paribas) i przenoszę te standardy do firm takich jak Twoja. W zamian za opinię po projekcie zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po uruchomieniu.",
-    package_title: "Co otrzymujesz w ramach Pakietu Strategicznego (Wartość 600 zł za 0 zł):",
+    package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):",
     offer_items: [
       {
-        title: "Robimy to w miesiąc. Wypuszczamy na rynek to, co najważniejsze, żebyś od razu sprawdził, czy ludzie chcą za to płacić.",
+        title: "Selekcja Serca Biznesu: odcinamy zbędne moduły, skupiając się tylko na funkcji, która od razu generuje zysk.",
         desc: "",
       },
       {
-        title: "Dostajesz stabilny system i kod, który jest w 100% twój – żaden programista cię później nie szantażuje.",
+        title: "Bankowy Test Bezpieczeństwa: weryfikacja stabilności i ochrony danych Twojego pomysłu.",
         desc: "",
       },
       {
-        title: "Płacisz za dany etap dopiero wtedy, gdy widzisz działający system na swoim ekranie.",
+        title: "Osobista Mapa Drogowa MVP: precyzyjny plan i harmonogram wdrożenia działającego systemu w 30 dni.",
         desc: "",
       },
     ],

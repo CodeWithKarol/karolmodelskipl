@@ -19,15 +19,15 @@ export const hero = {
   ],
   pilot_program: {
     title: "Program Wdrożeniowy: Aplikacje Internetowe dla Firm (Tylko 2 miejsca)",
-    description: "Przechodzę z sektora finansowego do wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces budowy dedykowanego oprogramowania. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po wdrożeniu.",
-    cta: "Porozmawiajmy o Twojej aplikacji",
+    description: "Przechodzę z sektora finansowego do bezpośredniego wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces budowy dedykowanego oprogramowania w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po wdrożeniu.",
+    cta: "Umów bezpłatną rozmowę o Twojej aplikacji",
     package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
   },
-  cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
+  cta_sub: "100% bezpłatnie • Wideorozmowa w 4 oczy • Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
   offer_items: [
-    { title: "Diagnoza miejsc blokujących zyski w procesach firmy", desc: "", val: "" },
-    { title: "Bankowy Test Bezpieczeństwa Informacji", desc: "", val: "" },
-    { title: "Osobista Mapa Drogowa Wdrożenia Aplikacji", desc: "", val: "" },
+    { title: "Diagnoza miejsc blokujących zyski w procesach Twojej firmy", desc: "", val: "" },
+    { title: "Bankowy Test Bezpieczeństwa i stabilności oprogramowania", desc: "", val: "" },
+    { title: "Osobista Mapa Drogowa wdrożenia dedykowanej aplikacji", desc: "", val: "" },
   ]
 }
 
