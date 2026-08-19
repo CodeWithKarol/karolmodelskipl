@@ -1,10 +1,31 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
-import {   BookOpen, FileText, ArrowRight, CheckCircle2, Rocket, ShieldCheck, TrendingUp, Map } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { CtaSection } from "@/components/cta-section"
+import { BookOpen, ArrowRight } from "lucide-react"
+import { CtaSection, type CtaContent } from "@/components/cta-section"
 import { SectionBadge } from "@/components/section-badge"
+
+const ctaContent: CtaContent = {
+  badge: "Program Wdrożeniowy: Szybka Wersja Startowa (MVP)",
+  title: "Masz gotowy pomysł na aplikację i wolisz omówić architekturę MVP od razu w 4 oczy?",
+  description:
+    "Zamiast tracić godziny na analizowanie artykułów i domysły, przenieś wyzwanie na moje barki. Jako Niezależny Partner Technologiczny w każdym kwartale prowadzę <strong class='text-white font-semibold'>maksymalnie dwa wdrożenia</strong>, dając projektom 100% mojego skupienia. W zamian za opinię po zakończeniu analizy, możesz odebrać kompletny Pakiet Strategiczny na start za 0 zł.",
+  package_title: "Co namacalnie otrzymujesz w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
+  offer_items: [
+    {
+      title: "Bezpłatna Diagnoza i Audyt Pomysłu: Pomagam Ci wybrać serce Twojego systemu i odrzucić zbędny przerost formy agencji.",
+    },
+    {
+      title: "Bankowy Test Stabilności i Bezpieczeństwa: Weryfikacja, czy Twój pomysł na architekturę spełnia standardy bezpieczeństwa danych.",
+    },
+    {
+      title: "Osobista Mapa Drogowa MVP: Rozpisany krok po kroku plan działania, harmonogram wdrożenia w 30 dni oraz przejrzysta wycena etapowa.",
+    },
+  ],
+  button: "Odbierz Pakiet Strategiczny i Skonsultuj Pomysł (0 zł)",
+  footer:
+    "Zajmij jedno z 2 wolnych miejsc na ten kwartał. Odkładanie walidacji biznesowej na „kiedyś” to zgoda na to, że konkurencja pierwsza wypuści podobne rozwiązanie i przejmie rynek.",
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -42,64 +63,33 @@ export default function SzybkaWersjaStartowaCategoryPage() {
       <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
       <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 opacity-50 mix-blend-screen blur-[120px]"></div>
 
-      <section className="relative w-full flex flex-col bg-slate-950 text-slate-50 pt-16 pb-12">
-        <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-center gap-6 lg:gap-20">
-          
-          <div className="flex-1 w-full max-w-2xl text-left pt-4 sm:pt-8">
-            <div className="mb-4 sm:mb-6">
-              <SectionBadge><BookOpen className="h-3.5 w-3.5 shrink-0" />Szybka wersja startowa aplikacji</SectionBadge>
+      <section className="relative flex flex-col overflow-hidden bg-slate-950 text-slate-50 pt-16 pb-12 sm:pt-20 lg:pt-24 sm:pb-16 lg:pb-20">
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
+        <div className="pointer-events-none absolute top-0 left-1/2 -z-10 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 opacity-50 mix-blend-screen blur-[120px]"></div>
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_80%_60%_at_50%_50%,#000_70%,transparent_100%)] bg-[size:3rem_3rem] opacity-25"></div>
+
+        <div className="relative z-10 container mx-auto px-4 text-center py-4">
+          <div className="w-full">
+            <div className="mb-6 sm:mb-8 flex justify-center">
+              <SectionBadge><BookOpen className="h-3.5 w-3.5 shrink-0" />Szybka wersja startowa aplikacji (MVP)</SectionBadge>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1]">
-              Szybka wersja startowa aplikacji (MVP) – testuj pomysły na rynku i zarabiaj bez przepalania budżetu.
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tighter text-white mb-6 sm:mb-8 leading-tight sm:leading-[1.05] text-balance max-w-5xl mx-auto">
+              Szybka Wersja Startowa (MVP) – Poradniki i Praktyka
             </h1>
-            <p className="text-base sm:text-lg text-slate-400 mb-5 sm:mb-8 leading-relaxed max-w-xl">
-              Masz pomysł na nowy produkt cyfrowy, system lub narzędzie dla klientów, ale obawiasz się wysokich kosztów i wielomiesięcznego oczekiwania na agencję? Znajdziesz tu praktyczne poradniki o tym, jak w bezpieczny sposób wdrożyć kluczowe funkcje aplikacji dla firmy w 30 dni, przetestować realny popyt na rynku i zminimalizować ryzyko finansowe.
+            <p className="text-base sm:text-lg lg:text-xl text-slate-400 mb-8 sm:mb-10 leading-relaxed max-w-3xl mx-auto text-pretty">
+              Jak przetestować pomysł na aplikację lub system w 30 dni bez przepalania 100 tysięcy złotych w agencji? Zobacz artykuły, w których krok po kroku wyjaśniam inżynierskie metody obcinania zakresu specyfikacji, architekturę startową oraz bezpieczną walidację rynkowego popytu.
             </p>
 
-            <div className="mb-5 sm:mb-6 lg:hidden">
-              <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
-                <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 text-sm font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-tight">
-                  Porozmawiajmy o Twoim projekcie
-                </Button>
-              </a>
-              <p className="text-[11px] text-slate-400 text-center mt-2 font-medium">Zostało tylko 1 z 2 wolnych miejsc w tym kwartale</p>
-            </div>
-
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
-              <div className="flex items-center gap-2 text-slate-300">
-                <span className="text-blue-400 shrink-0"><Rocket className="h-4 w-4" /></span>
-                <span className="text-xs sm:text-sm font-medium">Start w 30 dni</span>
-              </div>
-              <div className="flex items-center gap-2 text-slate-300">
-                <span className="text-blue-400 shrink-0"><ShieldCheck className="h-4 w-4" /></span>
-                <span className="text-xs sm:text-sm font-medium">Ochrona budżetu</span>
-              </div>
-              <div className="flex items-center gap-2 text-slate-300">
-                <span className="text-blue-400 shrink-0"><TrendingUp className="h-4 w-4" /></span>
-                <span className="text-xs sm:text-sm font-medium">Testowanie pomysłów</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="hidden w-full max-w-md lg:max-w-sm flex-shrink-0 lg:block lg:mt-8">
-            <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-5 shadow-2xl backdrop-blur-xl">
-              <h2 className="text-lg font-bold text-white mb-3 leading-snug">Program Wdrożeniowy: Szybka Wersja Startowa Aplikacji (Tylko 2 firmy)</h2>
-              <p className="text-sm text-slate-400 mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: "Nie chcesz czytać dziesiątek artykułów i wolisz sprawdzić możliwości swojego pomysłu bezpośrednio ze mną? Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> w bieżącym kwartale i przetestuj proces szybkiego wdrożenia aplikacji na zamówienie w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po uruchomieniu." }} />
-              
-              <p className="text-xs font-semibold text-white mb-2.5">Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):</p>
-              <ul className="space-y-1.5 mb-4">
-                <li className="text-xs text-slate-300 leading-snug flex items-start gap-2"><span className="text-blue-400 shrink-0 mt-0.5"><Rocket className="h-3.5 w-3.5" /></span>Start w 30 dni: jak skupić się na najważniejszej funkcji i szybko wyjść do klientów.</li>
-                <li className="text-xs text-slate-300 leading-snug flex items-start gap-2"><span className="text-blue-400 shrink-0 mt-0.5"><ShieldCheck className="h-3.5 w-3.5" /></span>Ochrona budżetu: dlaczego nie warto inwestować w zbędne dodatki przed weryfikacją pomysłu przez rynek.</li>
-                <li className="text-xs text-slate-300 leading-snug flex items-start gap-2"><span className="text-blue-400 shrink-0 mt-0.5"><TrendingUp className="h-3.5 w-3.5" /></span>Testowanie pomysłów: jak sprawdzić, czy Twój biznes cyfrowy ma szansę na sukces i generowanie zysków.</li>
-                <li className="text-xs text-slate-300 leading-snug flex items-start gap-2"><span className="text-blue-400 shrink-0 mt-0.5"><Map className="h-3.5 w-3.5" /></span>Osobista Mapa Drogowa IT: najkrótsza ścieżka wejścia na rynek dopasowana do Twojego budżetu.</li>
-              </ul>
-
-              <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
-                <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 text-sm font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-tight">
-                  Porozmawiajmy o Twoim projekcie
-                </Button>
-              </a>
-              <p className="text-[10px] text-slate-400 text-center mt-3 uppercase tracking-widest font-semibold">Zostało tylko 1 z 2 wolnych miejsc w tym kwartale</p>
+            <div className="flex w-full sm:w-auto sm:inline-flex flex-wrap items-center justify-center gap-x-2 gap-y-1 rounded-xl border border-blue-500/20 bg-blue-500/5 px-4 py-3 text-sm sm:text-base text-slate-300 shadow-[0_0_30px_-12px_rgba(59,130,246,0.4)]">
+              <span aria-hidden className="text-blue-400 shrink-0">💡</span>
+              <span>Szukasz bezpośredniego wykonania technicznego przez inżyniera?</span>
+              <Link
+                href="/projektowanie-mvp"
+                className="group inline-flex items-center gap-1.5 font-bold text-blue-400 transition-colors hover:text-blue-300"
+              >
+                Przejdź do oferty: Wdrożenie MVP w 30 dni
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Link>
             </div>
           </div>
         </div>
@@ -107,17 +97,9 @@ export default function SzybkaWersjaStartowaCategoryPage() {
 
       <main className="container mx-auto max-w-7xl px-4 py-12 sm:py-24">
         <div className="mb-8 sm:mb-12 text-center">
-          <div className="mb-3 sm:mb-4">
-            <SectionBadge>
-            <span>Baza wiedzy</span>
-          </SectionBadge>
-          </div>
           <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-2.5 sm:mb-4 leading-snug">
-            Przeczytaj najnowsze poradniki z tej dziedziny:
+            Poradniki i analizy dotyczące budowy MVP:
           </h2>
-          <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-xs sm:text-base">
-            Wybierz interesujący Cię temat i dowiedz się, jak bezpiecznie wystartować z nowym produktem cyfrowym.
-          </p>
         </div>
 
         <div className="grid gap-3 sm:gap-6 md:grid-cols-2 lg:grid-cols-3 mb-20">
@@ -152,7 +134,7 @@ export default function SzybkaWersjaStartowaCategoryPage() {
         </div>
       </main>
 
-      <CtaSection />
+      <CtaSection content={ctaContent} />
     </div>
   )
 }
