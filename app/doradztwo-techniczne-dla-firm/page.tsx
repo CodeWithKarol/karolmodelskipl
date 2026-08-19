@@ -34,6 +34,7 @@ import {
   guarantee,
   faq,
   metadata,
+  cta,
 } from "@/lib/content/doradztwo-techniczne-dla-firm/page"
 import { GuaranteeSection } from "@/components/guarantee-section"
 
@@ -301,13 +302,7 @@ export default function DoradztwoTechnicznePage() {
               return (
                 <div
                   key={i}
-                  className={`group bg-slate-900/40 border border-slate-800 p-5 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col ${
-                    i < 3 
-                      ? "lg:col-span-2 md:col-span-1" 
-                      : i === 3 
-                      ? "lg:col-span-3 md:col-span-1" 
-                      : "lg:col-span-3 md:col-span-2 max-w-xl mx-auto md:max-w-none w-full"
-                  }`}
+                  className={`group bg-slate-900/40 border border-slate-800 p-5 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col lg:col-span-3`}
                 >
                   <div className="mb-4 sm:mb-6 flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl border border-blue-500/20 bg-blue-500/10 text-blue-400 group-hover:scale-105 transition-transform duration-500">
                     <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
@@ -365,7 +360,7 @@ export default function DoradztwoTechnicznePage() {
       </section>
 
 
-      <CtaSection />
+      <CtaSection content={cta} />
     </main>
   )
 }
