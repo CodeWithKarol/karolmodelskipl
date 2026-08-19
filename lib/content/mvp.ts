@@ -205,21 +205,21 @@ export const mvp = {
     ],
   },
   cta: {
-    badge: "Program Wdrożeniowy: Szybka Wersja Startowa",
-    title: "Zostań Partnerem Założycielem (Tylko 2 firmy w kwartale)",
-    description: "Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – jedną z pierwszych dwóch firm, które wdrożą swoje MVP bez agencyjnego cyrku. Pracowałem przy systemach finansowych (Citibank, BNP Paribas) i przenoszę te standardy do firm takich jak Twoja. W zamian za opinię po projekcie zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po uruchomieniu.",
-    package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):",
+    badge: "Program Partnerski: Szybka Wersja Startowa MVP (Tylko 2 firmy)",
+    title: "Nie czekaj 6 miesięcy na agencję. Zweryfikujmy Twój pomysł w 30 dni.",
+    description: "Ponieważ do każdego projektu podchodzę osobiście, w każdym kwartale buduję maksymalnie 2 wersje startowe (MVP), dając Twojemu pomysłowi 100% inżynierskiego skupienia. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – wypuść działający produkt bez agencyjnego rozmycia i zyskaj <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki technicznej</strong> po uruchomieniu.",
+    package_title: "Co dokładnie otrzymujesz w ramach Pakietu Strategicznego (Wartość 600 zł za 0 zł):",
     offer_items: [
       {
-        title: "Selekcja Serca Biznesu: odcinamy zbędne moduły, skupiając się tylko na funkcji, która od razu generuje zysk.",
+        title: "Selekcja Serca Biznesu: odcinamy zbędny przerost formy, skupiając się wyłącznie na kluczowej funkcji, za którą klienci zechcą zapłacić.",
         desc: "",
       },
       {
-        title: "Bankowy Test Bezpieczeństwa: weryfikacja stabilności i ochrony danych Twojego pomysłu.",
+        title: "Bankowy Test Bezpieczeństwa: weryfikacja stabilności architektury i ochrony danych Twojego projektu.",
         desc: "",
       },
       {
-        title: "Osobista Mapa Drogowa MVP: precyzyjny plan i harmonogram wdrożenia działającego systemu w 30 dni.",
+        title: "Osobista Mapa Drogowa MVP: precyzyjny plan, harmonogram wdrożenia działającej aplikacji w 30 dni oraz etapowa wycena.",
         desc: "",
       },
     ],

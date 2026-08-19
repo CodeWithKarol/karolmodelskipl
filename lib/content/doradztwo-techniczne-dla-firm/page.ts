@@ -143,22 +143,22 @@ export const faq = {
 }
 
 export const cta = {
-  badge: "Program Wdrożeniowy: Opieka Strategiczna Fractional CTO",
-  title: "Program Partnerski: Opieka Strategiczna Fractional CTO (Tylko 2 firmy w kwartale)",
+  badge: "Program Partnerski: Opieka Strategiczna Fractional CTO",
+  title: "Nie podpisuj kolejnej umowy z agencją w ciemno. Przeanalizujmy Twoje IT w 4 oczy.",
   description:
-    "Ponieważ osobiście i z pełnym skupieniem wchodzę w procesy biznesowe moich klientów, w każdym kwartale obejmuję opieką strategiczną maksymalnie 2 firmy, pełniąc rolę Twojego Niezależnego Dyrektora Technologicznego na żądanie. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – zabezpiecz swoje IT na preferencyjnych warunkach i odbierz na start nasz ujednolicony pakiet wejścia.",
-  package_title: "Co dokładnie otrzymujesz na start w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
+    "Ponieważ osobiście i z pełnym skupieniem wchodzę w architekturę moich klientów, w każdym kwartale obejmuję opieką maksymalnie 2 firmy jako Niezależny Dyrektor Technologiczny na żądanie. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – zabezpiecz swoje IT na preferencyjnych warunkach i odbierz bezpłatny pakiet audytowy na start.",
+  package_title: "Co dokładnie otrzymujesz w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
   offer_items: [
     {
-      title: "Bezpłatny Audyt Umów i Wycen IT: Wskazanie wąskich gardeł finansowych i technologicznych w relacjach z obecnymi agencjami.",
+      title: "Bezpłatny Audyt Umów i Wycen IT: wskazanie wąskich gardeł finansowych i technologicznych w ofertach i relacjach z obecnymi agencjami.",
       desc: "",
     },
     {
-      title: "Bankowy Test Stabilności i Bezpieczeństwa: Weryfikacja, czy Twój biznes jest bezpieczny na wypadek odejścia programisty lub awarii.",
+      title: "Bankowy Test Stabilności i Bezpieczeństwa: weryfikacja, czy Twój biznes jest odporny na awarie i bezpieczny na wypadek odejścia kluczowego programisty.",
       desc: "",
     },
     {
-      title: "Plan Modernizacji i Mapa Drogowa IT: Strategiczny, rozpisany krok po kroku harmonogram rozwoju technologii w firmie – bez niespodzianek.",
+      title: "Strategiczna Mapa Drogowa IT: rozpisany krok po kroku plan rozwoju technologii w firmie – z twardymi priorytetami i bez ukrytych kosztów.",
       desc: "",
     },
   ],

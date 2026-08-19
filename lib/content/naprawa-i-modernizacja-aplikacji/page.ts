@@ -187,22 +187,22 @@ export const faq = {
 }
 
 export const offer = {
-  badge: "Program Wdrożeniowy: Modernizacja i Przyspieszanie Systemów",
-  title: "Zostań Partnerem Założycielem (Tylko 2 firmy w kwartale)",
+  badge: "Program Partnerski: Modernizacja i Przyspieszanie Systemów (Tylko 2 firmy)",
+  title: "Nie czekaj, aż system padnie w szczycie sprzedaży. Zdiagnozujmy kod w 4 oczy.",
   description:
-    "Zamiast masowej obsługi, w danym kwartale biorę na warsztat maksymalnie dwa systemy, gwarantując Ci 100% mojego osobistego skupienia. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – napraw swój system na preferencyjnych warunkach i zyskaj <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki technicznej</strong> po wdrożeniu poprawek.",
+    "Zamiast masowej obsługi kilkunastu projektów naraz, w każdym kwartale biorę na warsztat maksymalnie dwa systemy, dając Twojej platformie 100% mojego osobistego skupienia. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – napraw swój system na preferencyjnych warunkach i zyskaj <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki technicznej</strong> po wdrożeniu poprawek.",
   package_title: "Co dokładnie otrzymujesz na start w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
   offer_items: [
     {
-      title: "Bezpłatny Audyt Kodu: Wskazanie 2–3 krytycznych wąskich gardeł blokujących szybkość i zyski.",
+      title: "Bezpłatny Audyt Kodu: namierzenie 2–3 krytycznych wąskich gardeł blokujących szybkość i generujących błędy.",
       desc: "",
     },
     {
-      title: "Bankowy Test Stabilności i Bezpieczeństwa: Weryfikacja podatności na awarie i wycieki danych.",
+      title: "Bankowy Test Stabilności i Bezpieczeństwa: weryfikacja podatności na awarie pod obciążeniem ruchem klientów.",
       desc: "",
     },
     {
-      title: "Plan Modernizacji Krok po Kroku: Przejrzysta wycena etapowa i harmonogram prac bez żadnych ukrytych kosztów.",
+      title: "Plan Modernizacji Krok po Kroku: przejrzysta, etapowa wycena naprawy w tle bez wyłączania sprzedaży i bez ukrytych kosztów.",
       desc: "",
     },
   ],
