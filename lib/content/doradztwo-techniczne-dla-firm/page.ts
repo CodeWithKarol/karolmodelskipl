@@ -7,9 +7,9 @@ export const metadata = {
 export const hero = {
   badge: "Doradztwo i architektura IT dla firm",
   title: "Zyskaj osobistego Niezależnego Partnera Technologicznego dla swojej firmy",
-  titleHighlight: "– bez kosztów etatu zarządczego i ryzyka złych decyzji.",
+  titleHighlight: "– bez kosztów pełnego etatu i ryzyka złych decyzji.",
   description:
-    "Rozwijasz biznes, ale masz wrażenie, że technologia zamiast pomagać, zaczyna Cię ograniczać? Nie wiesz, w co zainwestować budżet, komu powierzyć rozbudowę systemów i jak uchronić firmę przed kosztownymi błędami programistycznymi? Przejmuję pełną odpowiedzialność za strategię i kierunek cyfrowy Twojego biznesu.",
+    "Rozwijasz biznes, ale masz wrażenie, że technologia zaczyna Cię ograniczać? Masz na stole wyceny od agencji, z których nic nie rozumiesz, i boisz się przepalenia dziesiątek tysięcy złotych? Jako Twój Fractional CTO (Dyrektor Technologiczny na godziny) przejmuję pełną odpowiedzialność za strategię IT. Nie piszę kodu – weryfikuję Twoich programistów, pilnuję Twojego portfela i tłumaczę technologię na język zysków.",
   cta: "Porozmawiajmy o Twoim projekcie",
   footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT",
   indicators: [
@@ -33,25 +33,25 @@ export const hero = {
 }
 
 export const story = {
-  title: "Dlaczego właściciele rozwijających się firm przepłacają za oprogramowanie?",
+  title: "Kiedy technologia zamiast napędzać firmę, staje się czarną skrzynką, która pożera gotówkę?",
   intro: "Większość małych i średnich firm nie ma własnego, doświadczonego dyrektora technologicznego. Kiedy pojawia się potrzeba stworzenia systemu, właściciel zdany jest na słowo agencji programistycznej, która często sprzedaje rozwiązania najdroższe dla siebie, a nie najkorzystniejsze dla klienta.",
    context: "Jeśli doświadczasz poniższych sytuacji, Twój biznes potrzebuje stałego wsparcia niezależnego partnera technologicznego:",
   points: [
     {
-      title: "Agencja przesyła niezrozumiałe wyceny",
-      desc: "Dostajesz ofertę na setki tysięcy złotych i nie masz pojęcia, czy koszty są realne, czy ktoś próbuje naciągnąć Cię na drogie i zbędne moduły."
+      title: "Brak „Tłumacza” i ślepe ubolewanie nad wycenami",
+      desc: "Gdy programista lub agencja mówi Ci, że „trzeba pilnie przepisać mikroserwisy w nowym frameworku, bo refaktoryzacja legacy kodu jest niemożliwa” – Ty widzisz tylko fakturę. Ja wkraczam jako Twój tłumacz. Sprawdzam, czy to realna potrzeba biznesowa, czy próba naciągnięcia Cię na 40 tysięcy złotych za zbędną robotę."
     },
     {
-      title: "Technologia nie nadąża za biznesem",
-      desc: "Każda próba dodania nowej funkcji kończy się informacją, że „system trzeba budować od zera”, bo fundamenty zostały źle zaprojektowane."
+      title: "Strach przed odejściem kluczowego programisty",
+      desc: "Cała wiedza o systemie siedzi w głowie jednego człowieka, który nie zostawił dokumentacji. Żyjesz na bombie zegarowej – jeśli odejdzie, firma staje. Wprowadzam procedury i standardy, które uniezależniają Cię od kaprysów jednostki."
     },
     {
-      title: "Brak kontroli nad zewnętrznymi wykonawcami",
-      desc: "Programiści lub podwykonawcy obiecują złote góry, ale nie ma w firmie osoby o kompetencjach technicznych, która mogłaby rzetelnie ocenić jakość ich pracy i bezpieczeństwo kodu."
+      title: "Podejrzanie rosnące faktury i niedotrzymywane terminy",
+      desc: "Projekt, który miał trwać 2 miesiące, ciągnie się od pół roku, a software house co chwilę żąda dopłat za „prace dodatkowe”. Koniec z tym. Weryfikuję ich postępy linijka po linijce, rozliczając agencję z realnych efektów."
     },
     {
-      title: "Strach przed utratą danych i awariami",
-      desc: "Masz rosnący biznes i obawiasz się, że w kluczowym momencie system ulegnie awarii, a Ty stracisz klientów i reputację."
+      title: "Chaos przy wyborze technologii",
+      desc: "Chcesz wdrożyć nowy system CRM, ERP lub aplikację, ale nie wiesz, co wybrać z setek ofert. Moja rola to niezależny dobór architektury – tak, aby system rósł razem z Twoimi zyskami, a nie z kosztami."
     }
   ]
 }
@@ -78,53 +78,44 @@ export const contrast = {
 }
 
 export const mechanism = {
-  title: "Jak przejmujemy kontrolę nad technologią w Twojej firmie?",
-  subtitle: "Współpraca strategiczna opiera się na pełnej przejrzystości, bez zbędnych raportów i korporacyjnej biurokracji:",
+  title: "Jak wygląda współpraca w praktyce?",
+  subtitle: "Przewidywalny, czysty proces nadzorczy, w którym to Ty trzymasz stery:",
   cards: [
     {
-      title: "1. Bezpłatna Diagnoza i Przegląd Celów",
+      title: "1. Bezpłatna Diagnoza Sytuacji",
       subtitle: "",
-      content: "Rozmawiamy o planach Twojej firmy, obecnych problemach technologicznych i kierunku, w którym chcesz skalować biznes."
+      content: "Na pierwszej rozmowie analizujemy Twoje obecne problemy z IT, umowy z agencjami i budżet."
     },
     {
-       title: "2. Audyt Systemu i Bezpieczeństwa",
+       title: "2. Odcięcie Przepalania Kasy",
       subtitle: "",
-      content: "Sprawdzam stan obecnych systemów, weryfikuję umowy z dotychczasowymi dostawcami i wykrywam ukryte ryzyka."
+      content: "Prześwietlam wyceny i pracę obecnego zespołu programistów. Znajduję i blokuję ukryte koszty."
     },
     {
-      title: "3. Budowa Strategicznej Mapy Drogowej",
+      title: "3. Stworzenie Mapy Drogowej IT",
       subtitle: "",
-      content: "Opracowujemy prosty, bezpieczny plan rozwoju oprogramowania na najbliższe 6–12 miesięcy z podziałem na mniejsze, kontrolowane etapy."
+      content: "Układam przejrzystą strategię technologiczną dla Twojej firmy na najbliższe miesiące (składnik ujednoliconego pakietu)."
     },
     {
-      title: "4. Nadzór nad Wykonawcami",
+      title: "4. Ciągły Nadzór i Tarcza Ochronna",
       subtitle: "",
-      content: "Jeśli realizujesz prace z zewnętrznym zespołem, pełnię rolę Twojego technicznego reprezentanta – rozmawiam z programistami ich językiem i egzekwuję najwyższą jakość kodu."
-    },
-    {
-      title: "5. Stałe Doradztwo i Decyzje",
-      subtitle: "",
-      content: "Jesteś w stałym kontakcie ze mną. Kiedy stajesz przed kluczową decyzją biznesowo-technologiczną, otrzymujesz szybką, ekspercką poradę."
+      content: "Wchodzę na spotkania z agencjami jako Twój Dyrektor IT. Odbieram ich prace, weryfikuję jakość i egzekwuję terminy."
     }
   ]
 }
 
 export const guarantee = {
-  badge: "Gwarancje i Rygor Bankowy",
-   title: "Rozwiązania oparte na zaufaniu i korporacyjnych standardach",
-  subtitle: "Doradztwo strategiczne dotyka najważniejszych fundamentów Twojego przedsiębiorstwa. Dlatego zasady współpracy są jasne i bezkompromisowe:",
+  badge: "Gwarancje Niezależności",
+   title: "Standardy bezpieczeństwa z globalnych banków, chroniące wyłącznie Twój portfel.",
+  subtitle: "Jako ekspert z doświadczeniem w Citibank i BNP Paribas wiem, jak zarządzać technologią bez biurokracji i z zachowaniem bezwzględnego bezpieczeństwa. W roli Twojego Fractional CTO podpisuję z Tobą dwie twarde gwarancje:",
   items: [
     {
-      title: "Niezależność i Brak Ukrytych Prowizji",
-      desc: "Nie polecam konkretnych technologii czy podwykonawców z zysku dla prowizji. Moim jedynym celem jest dobro i bezpieczeństwo finansowe Twojego biznesu."
+      title: "Gwarancja Niezależności (0% Prowizji)",
+      desc: "Nigdy nie biorę i nie przyjmę żadnych prowizji, „kopert” ani bonusów partnerskich od agencji i software house'ów. Nie mam interesu w polecaniu Ci konkretnego wykonawcy. Reprezentuję wyłącznie Ciebie i Twój budżet."
     },
     {
-      title: "Poufność i Ochrona Danych",
-      desc: "Pracuję w oparciu o rygorystyczne procedury ochrony informacji wypracowane w instytucjach finansowych (Citibank, BNP Paribas)."
-    },
-    {
-      title: "Rozliczenie za Realną Wartość",
-      desc: "Płacisz za faktyczne doradztwo strategiczne i mierzalne efekty w postaci zabezpieczonych projektów i zaoszczędzonych budżetów."
+      title: "Gwarancja Zwrotu z Audytu",
+      desc: "Jeśli podczas weryfikacji aktualnych umów, procesów i wycen od Twoich agencji technologicznych nie wskażę miejsc do optymalizacji kosztów IT przewyższających koszt mojej konsultacji – nie płacisz za moją pracę ani złotówki."
     }
   ]
 }
@@ -152,26 +143,26 @@ export const faq = {
   ]
 }
 
-export const offer = {
-  title: "Zadbaj o bezpieczną przyszłość technologiczną swojej firmy.",
-  subtitle:
-    "Ze względu na bezpośredni model współpracy i dbałość o najwyższą jakość, <strong class='text-white font-semibold'>współpracuję jednocześnie z maksymalnie 2 firmami</strong>. Zarezerwuj bezpłatną rozmowę, zanim wolne miejsca w tym kwartale zostaną zajęte.",
-  packetTitle: "Odbierz Bezpłatną Strategię Cyfrową i Mapę Drogową",
-  packetVal: "(Wartość 600 zł – Dziś za 0 zł)",
-  benefits: [
+export const cta = {
+  badge: "Program Wdrożeniowy: Opieka Strategiczna Fractional CTO",
+  title: "Program Partnerski: Opieka Strategiczna Fractional CTO (Tylko 2 firmy w kwartale)",
+  description:
+    "Ponieważ osobiście i z pełnym skupieniem wchodzę w procesy biznesowe moich klientów, w każdym kwartale obejmuję opieką strategiczną maksymalnie 2 firmy, pełniąc rolę Twojego Niezależnego Dyrektora Technologicznego na żądanie. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – zabezpiecz swoje IT na preferencyjnych warunkach i odbierz na start nasz ujednolicony pakiet wejścia.",
+  package_title: "Co dokładnie otrzymujesz na start w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
+  offer_items: [
     {
-      title: "30 minut strategicznej rozmowy wideo",
-      desc: "Konsultacja z doświadczonym niezależnym partnerem technologicznym.",
+      title: "Bezpłatny Audyt Umów i Wycen IT: Wskazanie wąskich gardeł finansowych i technologicznych w relacjach z obecnymi agencjami.",
+      desc: "",
     },
     {
-      title: "Diagnoza luk w obecnych systemach",
-      desc: "Wskazanie obszarów wymagających natychmiastowej poprawy.",
+      title: "Bankowy Test Stabilności i Bezpieczeństwa: Weryfikacja, czy Twój biznes jest bezpieczny na wypadek odejścia programisty lub awarii.",
+      desc: "",
     },
     {
-      title: "Wstępny plan optymalizacji technologicznej",
-      desc: "Dopasowana strategia rozwoju IT dla Twojej firmy.",
+      title: "Plan Modernizacji i Mapa Drogowa IT: Strategiczny, rozpisany krok po kroku harmonogram rozwoju technologii w firmie – bez niespodzianek.",
+      desc: "",
     },
   ],
-  cta: "Porozmawiajmy o Twoim projekcie",
-  footer: "W tym miesiącu mogę przyjąć do stałego doradztwa strategicznego <strong class='text-white font-semibold'>maksymalnie 2 nowe firmy</strong>",
+  button: "Odbierz Pakiet Strategiczny i Zabezpiecz Budżet (0 zł)",
+  footer: "Zajmij jedno z 2 wolnych miejsc na ten kwartał. Odkładanie kontroli nad technologią na „kiedyś” to zgoda na dalsze dyktowanie warunków przez agencje, ryzyko krytycznych awarii i bezradne patrzenie, jak Twój budżet ucieka przez palce.",
 }
