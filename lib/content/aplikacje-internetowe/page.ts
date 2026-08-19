@@ -150,18 +150,22 @@ export const faq = {
 }
 
 export const offer = {
-  badge: "Program Wdrożeniowy",
-  title: "Dedykowane Aplikacje (Tylko 2 miejsca w tym kwartale)",
+  badge: "Program Partnerski: Dedykowane Aplikacje dla Firm (Tylko 2 miejsca)",
+  title: "Koniec z ręczną pracą w Excelu. Zaplanujmy Twój dedykowany system w 4 oczy.",
   description:
-    "Ponieważ nie prowadzę masowej fabryki kodu, w danym kwartale współpracuję maksymalnie z dwoma firmami, dając projektom swój wyłączny czas. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i odbierz na start <strong class='text-white font-semibold'>Pakiet Strategiczny o wartości 600 zł za 0 zł</strong> (Diagnoza wąskich gardeł + Osobista Mapa Drogowa Wdrożenia IT).",
-  package_title: "Odbierz na start Pakiet Strategiczny (Wartość 600 zł za 0 zł):",
+    "Ponieważ nie prowadzę masowej fabryki kodu, w każdym kwartale buduję dedykowane systemy dla <strong class='text-white font-semibold'>maksymalnie dwóch firm</strong>, dając Twojemu projektowi 100% mojego osobistego skupienia. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – stwórz oprogramowanie bez pośredników i zyskaj <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki technicznej</strong> po wdrożeniu.",
+  package_title: "Co dokładnie otrzymujesz w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
   offer_items: [
     {
-      title: "Diagnoza wąskich gardeł w procesach firmy",
+      title: "Diagnoza Wąskich Gardeł: analiza procesów w firmie i wskazanie miejsc, w których dedykowany system natychmiast uwolni czas zespołu i zwiększy zyski.",
       desc: "",
     },
     {
-      title: "Osobista Mapa Drogowa Wdrożenia IT",
+      title: "Bankowy Test Bezpieczeństwa Informacji: weryfikacja stabilności architektury i standardów ochrony danych.",
+      desc: "",
+    },
+    {
+      title: "Osobista Mapa Drogowa Wdrożenia IT: precyzyjny plan działania, harmonogram etapowy i transparentna wycena bez ukrytych kosztów.",
       desc: "",
     },
   ],
