@@ -16,13 +16,15 @@ export const footer = {
   guarantees: {
     title: "Gwarancje Bezpieczeństwa",
     items: [
-      { title: "Gwarancja dostarczenia", desc: "Płacisz za dany etap dopiero wtedy, gdy widzisz działający system na swoim ekranie." },
+      { title: "Gwarancja dostarczenia", desc: "Płacisz za dany etap dopiero po akceptacji działającego efektu lub raportu." },
       { title: "Jakość bankowa", desc: "Standardy bezpieczeństwa i ochrony danych sprawdzone w globalnych instytucjach (Citibank, BNP Paribas)." },
       { title: "Niezależność technologiczna", desc: "Uniwersalny, w pełni udokumentowany kod – Twój system nigdy nie jest uzależniony od jednej osoby." },
     ],
   },
   contact: {
     title: "Masz pytania dotyczące systemu w Twojej firmie?",
+    ctaSentence: "Umów bezpłatną rozmowę wideo (4 oczy) i odbierz Pakiet Strategiczny o wartości 600 zł za 0 zł.",
+    ctaButton: "Umów bezpłatną rozmowę strategiczną",
     owner: "Karol Modelski – Niezależny Partner Technologiczny dla MŚP",
     linkedin: "https://www.linkedin.com/in/karol-modelski/",
     linkedinLabel: "Zobacz mój profil na LinkedIn",

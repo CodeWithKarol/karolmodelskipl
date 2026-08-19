@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Briefcase, ShieldCheck, MessageCircle, ExternalLink } from "lucide-react"
+import { Briefcase, ShieldCheck, MessageCircle, ExternalLink, ArrowRight } from "lucide-react"
 import { content } from "@/lib/content"
 import { siteConfig } from "@/lib/site-config"
 import { Button } from "@/components/ui/button"
@@ -46,6 +46,11 @@ export function Footer() {
 
           <div className="text-center lg:text-left space-y-4">
             <h3 className="text-sm font-bold text-white flex items-center justify-center lg:justify-start gap-2"><MessageCircle className="h-4 w-4 text-blue-400 shrink-0" />{footer.contact.title}</h3>
+            <p className="text-sm text-slate-300 leading-relaxed">{footer.contact.ctaSentence}</p>
+            <a href={siteConfig.calendlyLink} target="_blank" rel="noopener noreferrer" className="inline-flex w-full sm:w-auto items-center justify-center gap-1.5 rounded-xl border border-blue-400/30 bg-blue-400/10 px-4 py-3 text-sm font-semibold text-blue-400 hover:bg-blue-400/20 hover:text-blue-300 transition-colors sm:py-1.5">
+              {footer.contact.ctaButton}
+              <ArrowRight className="h-4 w-4 shrink-0" />
+            </a>
             <p className="text-sm text-slate-400 leading-relaxed">{footer.contact.owner}</p>
             <a href={footer.contact.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm text-blue-400 hover:text-blue-300 transition-colors">
               <ExternalLink className="h-3.5 w-3.5 shrink-0" />
