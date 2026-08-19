@@ -2,14 +2,41 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
 import { BookOpen, ArrowRight, Zap, ShieldCheck, Banknote } from "lucide-react"
-import { CtaSection } from "@/components/cta-section"
+import { CtaSection, type CtaContent } from "@/components/cta-section"
 import { SectionBadge } from "@/components/section-badge"
+
+const ctaContent: CtaContent = {
+  badge: "Program Wdrożeniowy: Audyt Wydajności i Architektury (Tylko 2 firmy w kwartale)",
+  title:
+    "Twój system działa wolno, generuje błędy przy obciążeniu i wolisz zdiagnozować wąskie gardła od razu w 4 oczy?",
+  description:
+    "Zamiast tracić tygodnie na domysły i kolejne bezowocne dyskusje z programistami, przenieś analizę na moje barki. Jako Niezależny Partner Technologiczny w każdym kwartale biorę na warsztat <strong class='text-white font-semibold'>maksymalnie dwa systemy</strong>. W zamian za opinię po zakończeniu analizy, możesz odebrać dedykowany Pakiet Strategiczny całkowicie <strong class='text-white font-semibold'>za 0 zł</strong>.",
+  package_title:
+    "Co namacalnie otrzymujesz w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
+  offer_items: [
+    {
+      title:
+        "Bezpłatna Diagnoza Wąskich Gardeł i Długu Technologicznego: Wskazanie 2–3 krytycznych miejsc w kodzie i architekturze, które realnie dławią szybkość systemu i blokują zyski.",
+    },
+    {
+      title:
+        "Bankowy Test Stabilności pod Obciążeniem: Weryfikacja odporności Twojego oprogramowania na awarie w godzinach największego ruchu i sprzedaży.",
+    },
+    {
+      title:
+        "Ewolucyjna Mapa Drogowa Naprawy: Rozpisany krok po kroku plan wymiany modułów na środowisku testowym – z gwarancją zero przestojów w biznesie.",
+    },
+  ],
+  button: "Odbierz Bezpłatny Audyt Wydajności i Zarezerwuj Miejsce (0 zł)",
+  footer:
+    "Zajmij jedno z 2 wolnych miejsc w tym kwartale. Każdy kolejny dzień z mulącym systemem to porzucone koszyki, sfrustrowany zespół i ryzyko krytycznej awarii w najważniejszym momencie sprzedażowym.",
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Bezinwazyjna Modernizacja Systemów | Artykuły i Poradniki IT",
     description:
-      "Masz aplikację, która działa wolno, zacina się lub wymaga ciągłych napraw? Przeczytaj praktyczne poradniki o ewolucyjnej modernizacji oprogramowania.",
+      "Jak zoptymalizować działający kod, wyeliminować błędy w bazie danych i przyspieszyć aplikację bez zatrzymywania sprzedaży? Praktyczne poradniki i analizy oparte na bankowych standardach inżynieryjnych, przeniesione do realiów MŚP.",
     alternates: {
       canonical:
         "https://www.karolmodelski.pl/blog/bezinwazyjna-modernizacja-systemow",
@@ -30,9 +57,9 @@ export default function ModernizacjaCategoryPage() {
         "@id":
           "https://www.karolmodelski.pl/blog/bezinwazyjna-modernizacja-systemow#webpage",
         url: "https://www.karolmodelski.pl/blog/bezinwazyjna-modernizacja-systemow",
-        name: "Bezinwazyjna Modernizacja Systemów | Artykuły",
+        name: "Bezinwazyjna Modernizacja i Przyspieszanie Systemów | Poradniki i Praktyka IT",
         description:
-          "Praktyczne poradniki i analizy wyjaśniające, jak unowocześniać oprogramowanie ewolucyjnie.",
+          "Praktyczne przewodniki i analizy o ratowaniu i optymalizacji kodu, oparte na bankowych standardach inżynieryjnych przeniesionych do realiów MŚP.",
       },
     ],
   }
@@ -52,19 +79,19 @@ export default function ModernizacjaCategoryPage() {
           <div className="mb-4 flex justify-start sm:mb-6 sm:justify-center">
             <SectionBadge>
               <BookOpen className="h-3.5 w-3.5 shrink-0" />
-              Bezinwazyjna modernizacja oprogramowania
+              Poradniki i praktyka IT
             </SectionBadge>
           </div>
           <h1 className="mb-5 max-w-4xl text-3xl leading-[1.1] font-extrabold tracking-tighter text-balance text-white sm:mx-auto sm:mb-6 sm:text-4xl lg:text-6xl">
-            Bezinwazyjna modernizacja aplikacji i systemów dla firm – bez
-            wstrzymywania sprzedaży i kosztownego pisania od nowa.
+            Bezinwazyjna Modernizacja i Przyspieszanie Systemów – Poradniki i
+            Praktyka IT
           </h1>
           <p className="mb-6 max-w-2xl text-base leading-relaxed text-pretty text-slate-400 sm:mx-auto sm:mb-8 sm:text-lg">
-            Masz wrażenie, że Twoja aplikacja internetowa działa coraz wolniej,
-            generuje błędy albo wymaga ciągłych napraw? Znajdziesz tu praktyczne
-            poradniki i analizy wyjaśniające, jak unowocześniać oprogramowanie
-            dla firm ewolucyjnie – bez wstrzymywania sprzedaży, bez ryzyka
-            paraliżu biznesu i bez przepalania budżetu.
+            Jak zoptymalizować działający kod, wyeliminować błędy w bazie danych
+            i przyspieszyć aplikację bez zatrzymywania bieżącej sprzedaży i bez
+            kosztownego pisania wszystkiego od nowa? Przeczytaj praktyczne
+            przewodniki oraz analizy oparte na bankowych standardach
+            inżynieryjnych przeniesionych bezpośrednio do realiów MŚP.
           </p>
 
           <div className="flex w-full flex-wrap items-center justify-start gap-x-2 gap-y-1 rounded-xl border border-blue-500/20 bg-blue-500/5 px-4 py-3 text-sm text-slate-300 shadow-[0_0_30px_-12px_rgba(59,130,246,0.4)] sm:inline-flex sm:w-auto sm:justify-center sm:text-base">
@@ -114,18 +141,9 @@ export default function ModernizacjaCategoryPage() {
 
       <main className="container mx-auto max-w-7xl px-4 py-12 sm:py-24">
         <div className="mb-8 text-center sm:mb-12">
-          <div className="mb-3 sm:mb-4">
-            <SectionBadge>
-              <span>Baza wiedzy</span>
-            </SectionBadge>
-          </div>
           <h2 className="mb-2.5 text-xl leading-snug font-extrabold tracking-tight text-white sm:mb-4 sm:text-3xl md:text-4xl">
-            Przeczytaj najnowsze poradniki z tej dziedziny:
+            Poradniki i analizy dotyczące modernizacji oprogramowania:
           </h2>
-          <p className="mx-auto max-w-2xl text-xs leading-relaxed font-light text-slate-400 sm:text-base">
-            Wybierz interesujący Cię temat i dowiedz się, jak bezinwazyjnie
-            usprawnić oprogramowanie w swojej firmie.
-          </p>
         </div>
 
         <div className="mb-20 grid gap-3 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -160,7 +178,7 @@ export default function ModernizacjaCategoryPage() {
         </div>
       </main>
 
-      <CtaSection />
+      <CtaSection content={ctaContent} />
     </div>
   )
 }
