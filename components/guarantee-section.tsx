@@ -57,23 +57,23 @@ export function GuaranteeSection({ guarantee: customGuarantee }: GuaranteeSectio
               <Reveal
                 key={i}
                 delay={i * 0.05}
-                className={`group relative flex flex-col bg-slate-900/30 ring-1 ring-white/5 p-5 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 hover:ring-white/10 hover:shadow-[0_20px_60px_-20px_rgba(16,185,129,0.25)] ${
-                  guarantee.items.length === 3 && i === 2
-                    ? "md:col-span-2"
-                    : i % 2 === 1 && guarantee.items.length === 4
-                      ? "md:translate-y-8"
-                      : ""
-                }`}
+                className={guarantee.items.length === 3 && i === 2 ? "md:col-span-2" : ""}
               >
-                <div className="mb-4 sm:mb-6 flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center text-emerald-400 group-hover:text-emerald-300 transition-colors">
-                  <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
+                <div
+                  className={`group relative flex flex-col h-full bg-slate-900/30 ring-1 ring-white/5 p-5 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 hover:ring-white/10 hover:shadow-[0_20px_60px_-20px_rgba(16,185,129,0.25)] ${
+                    i % 2 === 1 && guarantee.items.length === 4 ? "md:translate-y-8" : ""
+                  }`}
+                >
+                  <div className="mb-4 sm:mb-6 flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                    <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
+                  </div>
+                  <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-emerald-400 transition-colors leading-tight">
+                    {item.title}
+                  </h3>
+                  <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">
+                    {item.desc}
+                  </p>
                 </div>
-                <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-emerald-400 transition-colors leading-tight">
-                  {item.title}
-                </h3>
-                <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">
-                  {item.desc}
-                </p>
               </Reveal>
             )
           })}

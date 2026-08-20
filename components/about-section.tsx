@@ -18,7 +18,7 @@ export function AboutSection() {
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Treść (mobile-first: najpierw treść) */}
-          <Reveal className="order-1 text-center lg:text-left">
+          <Reveal className="order-1 w-full text-center lg:text-left">
             <div className="mb-6 mx-auto lg:mx-0">
               <SectionBadge>
               <User className="h-4 w-4" />
@@ -58,11 +58,11 @@ export function AboutSection() {
             </div>
 
             {/* Floating badge - borderless */}
-            <div className="absolute -bottom-5 -left-4 sm:-left-8 flex items-center gap-3 bg-slate-900/80 backdrop-blur-xl ring-1 ring-white/10 rounded-2xl px-4 py-3 shadow-lg">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center text-blue-400">
-                <Landmark className="h-6 w-6" />
+            <div className="absolute -bottom-5 left-2 sm:-left-8 flex max-w-[calc(100%-1rem)] items-center gap-2.5 sm:gap-3 bg-slate-900/80 backdrop-blur-xl ring-1 ring-white/10 rounded-2xl px-3 py-2.5 sm:px-4 sm:py-3 shadow-lg">
+              <span className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center text-blue-400">
+                <Landmark className="h-5 w-5 sm:h-6 sm:w-6" />
               </span>
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm sm:text-base font-bold text-white leading-tight">7+ lat</p>
                 <p className="text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400">
                   Doświadczenia bankowego

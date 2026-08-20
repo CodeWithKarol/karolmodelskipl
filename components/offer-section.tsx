@@ -64,38 +64,38 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
               <Reveal
                 key={i}
                 delay={i * 0.05}
-                className={`group relative flex flex-col h-full bg-slate-900/30 ring-1 ring-white/5 rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:ring-white/10 hover:shadow-[0_20px_60px_-20px_rgba(37,99,235,0.35)] ${
-                  offer.paths.length === 3 && i === 2
-                    ? "md:col-span-2"
-                    : i % 2 === 1 && offer.paths.length !== 3
-                      ? "md:translate-y-10"
-                      : ""
-                }`}
+                className={offer.paths.length === 3 && i === 2 ? "md:col-span-2" : ""}
               >
-                <div className="flex-1">
-                  <div className="mb-6 flex h-12 w-12 items-center justify-center text-blue-400 transition-colors group-hover:text-blue-300">
-                    <Icon className="h-7 w-7" />
+                <div
+                  className={`group relative flex flex-col h-full bg-slate-900/30 ring-1 ring-white/5 rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:ring-white/10 hover:shadow-[0_20px_60px_-20px_rgba(37,99,235,0.35)] ${
+                    i % 2 === 1 && offer.paths.length !== 3 ? "md:translate-y-10" : ""
+                  }`}
+                >
+                  <div className="flex-1">
+                    <div className="mb-6 flex h-12 w-12 items-center justify-center text-blue-400 transition-colors group-hover:text-blue-300">
+                      <Icon className="h-7 w-7" />
+                    </div>
+                    <p className="mb-2 text-xs font-bold uppercase tracking-wider text-blue-400">
+                      {path.title}
+                    </p>
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors leading-tight">
+                      {path.situation}
+                    </h3>
+                    <p className="text-slate-400 leading-relaxed text-xs sm:text-sm mb-6">
+                      {path.desc}
+                    </p>
                   </div>
-                  <p className="mb-2 text-xs font-bold uppercase tracking-wider text-blue-400">
-                    {path.title}
-                  </p>
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors leading-tight">
-                    {path.situation}
-                  </h3>
-                  <p className="text-slate-400 leading-relaxed text-xs sm:text-sm mb-6">
-                    {path.desc}
-                  </p>
-                </div>
 
-                {path.href && (
-                  <Link
-                    href={path.href}
-                    className="inline text-sm sm:text-sm font-bold text-blue-400 transition-colors hover:text-blue-300 after:absolute after:inset-0 after:content-['']"
-                  >
-                    {path.link}
-                    <ArrowRight className="ml-1.5 inline h-3.5 w-3.5 align-middle transition-transform group-hover:translate-x-1" />
-                  </Link>
-                )}
+                  {path.href && (
+                    <Link
+                      href={path.href}
+                      className="inline text-sm sm:text-sm font-bold text-blue-400 transition-colors hover:text-blue-300 after:absolute after:inset-0 after:content-['']"
+                    >
+                      {path.link}
+                      <ArrowRight className="ml-1.5 inline h-3.5 w-3.5 align-middle transition-transform group-hover:translate-x-1" />
+                    </Link>
+                  )}
+                </div>
               </Reveal>
             )
           })}
