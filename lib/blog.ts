@@ -11,6 +11,7 @@ export interface BlogPost {
   excerpt: string
   date: string
   silo: string
+  related: string[]
   readingTime: string
   content: string // Markdown content
 }
@@ -33,6 +34,7 @@ export function getPostBySlug(slug: string): BlogPost | null {
       excerpt: data.excerpt || "",
       date: data.date || "",
       silo: data.silo || "Fundamenty & Strategia",
+      related: Array.isArray(data.related) ? data.related.map(String) : [],
       readingTime: calculateReadingTime(content),
       content,
     }
