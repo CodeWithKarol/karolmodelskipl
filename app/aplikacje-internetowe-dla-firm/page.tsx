@@ -1,40 +1,20 @@
 import { Metadata } from "next"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Button } from "@/components/ui/button"
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
 import { CtaSection } from "@/components/cta-section"
 import { SectionBadge } from "@/components/section-badge"
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
+import { StorySection } from "@/components/story-section"
+import { ContrastSection } from "@/components/contrast-section"
+import { OfferSection } from "@/components/offer-section"
+import { FaqSection } from "@/components/faq-section"
 import {
   ShieldCheck,
   Target,
-  TrendingUp,
   Banknote,
-  Flame,
-  Search,
-  ListChecks,
-  Server,
-  RefreshCw,
-  Zap,
-  HelpCircle,
   Rocket,
   Handshake,
   Gem,
   Map,
-  FileSpreadsheet,
-  Scale,
 } from "lucide-react"
 import {
   hero,
@@ -139,23 +119,23 @@ export default function AplikacjeInternetoweDlaFirmPage() {
         <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
         <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 opacity-50 mix-blend-screen blur-[120px]"></div>
 
-        <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-center gap-6 lg:gap-20">
-          
+        <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-between gap-10 lg:gap-8">
+
           {/* Content Column */}
           <div className="flex-1 w-full max-w-2xl text-left pt-4 sm:pt-8">
-            <div className="mb-4 sm:mb-6">
+            <div className="mb-4 sm:mb-6 animate-[fade-up_0.7s_ease-out_both]">
               <SectionBadge><Gem className="h-3.5 w-3.5 shrink-0" />{hero.badge}</SectionBadge>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1]">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1] animate-[fade-up_0.7s_ease-out_0.1s_both]">
               {hero.title}
               <span className="block text-blue-500 mt-1 sm:mt-2">{hero.titleHighlight}</span>
             </h1>
-            <p className="text-base sm:text-lg text-slate-400 mb-5 sm:mb-8 leading-relaxed max-w-xl">
+            <p className="text-base sm:text-lg text-slate-400 mb-5 sm:mb-8 leading-relaxed max-w-xl animate-[fade-up_0.7s_ease-out_0.2s_both]">
               {hero.description}
             </p>
 
             {/* Mobile CTA — above the fold */}
-            <div className="mb-5 sm:mb-6 lg:hidden">
+            <div className="mb-5 sm:mb-6 lg:hidden animate-[fade-up_0.7s_ease-out_0.25s_both]">
               <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
                 <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 text-sm font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-tight">
                   {hero.cta}
@@ -165,7 +145,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             </div>
 
             {/* Indicators - Inline value props */}
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 animate-[fade-up_0.7s_ease-out_0.3s_both]">
               {hero.indicators.map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-slate-300">
                   <span className="text-blue-400 shrink-0 text-base">
@@ -177,12 +157,14 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             </div>
           </div>
 
-          {/* Promo Card (desktop only) */}
-          <div className="hidden w-full max-w-md lg:max-w-sm flex-shrink-0 lg:block lg:mt-8">
-            <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-5 shadow-2xl backdrop-blur-xl">
+          {/* Promo Card — asymmetric composition (desktop only) */}
+          <div className="relative hidden w-full max-w-md lg:max-w-sm flex-shrink-0 lg:block lg:mt-14 lg:animate-[fade-in_0.9s_ease-out_0.15s_both]">
+            <div className="absolute -top-8 -left-10 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl pointer-events-none"></div>
+            <div className="absolute top-1/3 -right-8 h-24 w-24 rounded-full bg-emerald-400/10 blur-2xl pointer-events-none"></div>
+            <div className="relative rotate-1 rounded-[2rem] bg-slate-900/70 backdrop-blur-xl ring-1 ring-white/5 p-6 shadow-[0_25px_80px_-20px_rgba(37,99,235,0.35)]">
               <h2 className="text-lg font-bold text-white mb-3 leading-snug">{hero.pilot_program.title}</h2>
               <p className="text-sm text-slate-400 mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: hero.pilot_program.description }} />
-              
+
               <p className="text-xs font-semibold text-white mb-2.5">{hero.pilot_program.package_title}</p>
               <ul className="space-y-1.5 mb-4">
                 {hero.offer_items.map((item, i) => (
@@ -209,186 +191,57 @@ export default function AplikacjeInternetoweDlaFirmPage() {
       </section>
 
       {/* Sekcja 2: STORY (Agitacja bólu) */}
-      <section id="problem" className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-16 sm:py-20 text-slate-300 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
-        <div className="relative z-10 container mx-auto px-4 max-w-5xl">
-          <div className="mb-10 sm:mb-16 text-center">
-            <div className="mb-4">
-              <SectionBadge variant="red">
-              <Flame className="h-4 w-4" />
-              <span>Diagnoza problemu</span>
-            </SectionBadge>
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight max-w-3xl mx-auto">
-              {story.title}
-            </h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg mb-3 sm:mb-4">
-              {story.intro}
-            </p>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg italic text-slate-200">
-              {story.context}
-            </p>
-          </div>
-          <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
-            {story.points.map((point, idx) => (
-              <div key={idx} className="group bg-slate-900/40 border border-slate-800 p-5 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col">
-                <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-6">
-                  <div className="text-red-400 font-black text-2xl shrink-0" aria-hidden="true">0{idx + 1}</div>
-                  <div>
-                    <h3 className="text-base sm:text-lg font-bold text-white mb-2 leading-snug">{point.title}</h3>
-                    <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">{point.desc}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <StorySection
+        title={story.title}
+        intro={story.intro}
+        context={story.context}
+        points={story.points}
+        className="py-16 sm:py-20"
+      />
 
-      {/* Sekcja 4: PORÓWNANIE – tabela */}
-      <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-12 sm:py-20 text-slate-300 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
-
-        <div className="relative z-10 container mx-auto max-w-4xl px-4">
-          <div className="mb-8 sm:mb-12 text-center">
-            <div className="mb-3 sm:mb-4">
-              <SectionBadge>
-                <Scale className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                <span>{comparison.badge}</span>
-              </SectionBadge>
-            </div>
-            <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
-              {comparison.title}
-            </h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-xs sm:text-base md:text-lg">
-              {comparison.subtitle}
-            </p>
-          </div>
-
-          {/* Mobile: stacked comparison cards */}
-          <div className="grid gap-3 sm:gap-4 lg:hidden">
-            {comparison.rows.map((row, i) => (
-              <div key={i} className="rounded-2xl border border-slate-800 bg-slate-900/40 p-4 sm:p-6">
-                <h3 className="mb-3 sm:mb-4 text-sm sm:text-base font-bold text-white leading-snug">
-                  {row.feature}
-                </h3>
-                <div className="space-y-2.5 sm:space-y-3">
-                  <div className="rounded-xl border border-blue-500/30 bg-blue-500/10 p-3 sm:p-4">
-                    <p className="mb-1 text-[10px] font-bold uppercase tracking-widest text-blue-400">
-                      {comparison.columns.me}
-                    </p>
-                    <p className="text-[11px] sm:text-sm leading-relaxed text-slate-300">
-                      {row.me}
-                    </p>
-                  </div>
-                  <div className="rounded-xl border border-red-500/30 bg-red-500/10 p-3 sm:p-4">
-                    <p className="mb-1 text-[10px] font-bold uppercase tracking-widest text-red-400">
-                      {comparison.columns.agency}
-                    </p>
-                    <p className="text-[11px] sm:text-sm leading-relaxed text-slate-400">
-                      {row.agency}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Desktop: table */}
-          <div className="hidden lg:block overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/40 backdrop-blur-sm">
-            <Table className="border-collapse">
-              <TableHeader>
-                <TableRow className="border-slate-800 hover:bg-transparent">
-                  <TableHead className="w-28 sm:w-44 px-3 sm:px-6 py-4 sm:py-5 text-[11px] sm:text-sm text-slate-400 whitespace-normal leading-snug">
-                    {comparison.columns.feature}
-                  </TableHead>
-                  <TableHead className="px-3 sm:px-6 py-4 sm:py-5 text-[11px] sm:text-sm text-blue-400 whitespace-normal leading-snug">
-                    {comparison.columns.me}
-                  </TableHead>
-                  <TableHead className="px-3 sm:px-6 py-4 sm:py-5 text-[11px] sm:text-sm text-red-400 whitespace-normal leading-snug">
-                    {comparison.columns.agency}
-                  </TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {comparison.rows.map((row, i) => (
-                  <TableRow key={i} className="border-slate-800 hover:bg-slate-900/60">
-                    <TableCell className="px-3 sm:px-6 py-3.5 sm:py-5 align-top whitespace-normal text-[11px] sm:text-sm font-bold text-white">
-                      {row.feature}
-                    </TableCell>
-                    <TableCell className="px-3 sm:px-6 py-3.5 sm:py-5 align-top whitespace-normal text-[11px] sm:text-sm text-slate-300">
-                      {row.me}
-                    </TableCell>
-                    <TableCell className="px-3 sm:px-6 py-3.5 sm:py-5 align-top whitespace-normal text-[11px] sm:text-sm text-slate-400">
-                      {row.agency}
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
-        </div>
-      </section>
+      {/* Sekcja: PORÓWNANIE – tabela */}
+      <ContrastSection
+        contrast={{
+          badge: comparison.badge,
+          title: comparison.title,
+          blue_title: comparison.columns.me,
+          red_title: comparison.columns.agency,
+          rows: comparison.rows.map((row) => ({
+            area: row.feature,
+            blue: row.me,
+            red: row.agency,
+          })),
+        }}
+        className="py-16 sm:py-20"
+      />
 
       {/* Sekcja 4: KEY CONTENT (Jak bezpośrednie partnerstwo / dedykowane aplikacje realnie pomagają Twojej firmie?) */}
-      <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-16 sm:py-20 text-slate-300 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
-
-        <div className="relative z-10 container mx-auto px-4 max-w-5xl">
-          <div className="mb-10 sm:mb-16 text-center">
-            <div className="mb-4">
-              <SectionBadge>
-              <TrendingUp className="h-4 w-4" />
-              <span>Wzrost i zyski</span>
-            </SectionBadge>
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight max-w-3xl mx-auto">
-              Przestań marnować czas zespołu na powtarzalną, ręczną robotę.
-            </h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg">
-              Nowoczesne oprogramowanie biznesowe to nie koszt, lecz inwestycja, która bezpośrednio usuwa wąskie gardła i napędza sprzedaż:
-            </p>
-          </div>
-
-          <div className="grid gap-3 sm:gap-6 md:grid-cols-2 max-w-4xl mx-auto">
-            <div className="group relative bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col">
-              <div className="mb-3 sm:mb-6 flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-xl border border-blue-500/30 bg-blue-500/10 text-blue-400 group-hover:text-blue-300 transition-colors">
-                <FileSpreadsheet className="h-5 w-5 sm:h-6 sm:w-6" />
-              </div>
-              <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-blue-400 transition-colors leading-tight">
-                Koniec z chaosem w arkuszach
-              </h3>
-              <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">
-                Zapomnij o nerwowym przeklipywaniu danych między pięcioma różnymi arkuszami Excela i pilnowaniu, czy ktoś czegoś nie usunął. Dedykowany system spina wszystko w jednym bezpiecznym miejscu.
-              </p>
-            </div>
-
-            <div className="group relative bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col">
-              <div className="mb-3 sm:mb-6 flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-xl border border-blue-500/30 bg-blue-500/10 text-blue-400 group-hover:text-blue-300 transition-colors">
-                <Zap className="h-5 w-5 sm:h-6 sm:w-6" />
-              </div>
-              <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-blue-400 transition-colors leading-tight">
-                Święty spokój dla zespołu
-              </h3>
-              <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">
-                Twój pracownik zamiast spędzać 40 minut na ręcznym wklepywaniu jednego zamówienia, klika jeden przycisk. System automatycznie wystawia fakturę, aktualizuje magazyn i powiadamia klienta.
-              </p>
-            </div>
-
-            <div className="group relative bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col md:col-span-2 max-w-xl mx-auto w-full">
-              <div className="mb-3 sm:mb-6 flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-xl border border-blue-500/30 bg-blue-500/10 text-blue-400 group-hover:text-blue-300 transition-colors">
-                <TrendingUp className="h-5 w-5 sm:h-6 sm:w-6" />
-              </div>
-              <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-blue-400 transition-colors leading-tight">
-                Eliminacja wąskich gardeł
-              </h3>
-              <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">
-                Nie inwestujesz w „zaawansowane języki programowania dla sztuki”. Inwestujesz w to, żeby Twoja firma mogła obsłużyć 3 razy więcej zamówień przy tym samym zespole, bez chaosu i bez błędów.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <OfferSection
+        badge="Wzrost i zyski"
+        offer={{
+          title: "Przestań marnować czas zespołu na powtarzalną, ręczną robotę.",
+          subheading:
+            "Nowoczesne oprogramowanie biznesowe to nie koszt, lecz inwestycja, która bezpośrednio usuwa wąskie gardła i napędza sprzedaż:",
+          paths: [
+            {
+              title: "Koniec z chaosem w arkuszach",
+              situation: "Uwolnij zespół od ręcznej roboty",
+              desc: "Zapomnij o nerwowym przeklipywaniu danych między pięcioma różnymi arkuszami Excela i pilnowaniu, czy ktoś czegoś nie usunął. Dedykowany system spina wszystko w jednym bezpiecznym miejscu.",
+            },
+            {
+              title: "Święty spokój dla zespołu",
+              situation: "Jeden przycisk zamiast 40 minut pracy",
+              desc: "Twój pracownik zamiast spędzać 40 minut na ręcznym wklepywaniu jednego zamówienia, klika jeden przycisk. System automatycznie wystawia fakturę, aktualizuje magazyn i powiadamia klienta.",
+            },
+            {
+              title: "Eliminacja wąskich gardeł",
+              situation: "3× więcej zamówień przy tym samym zespole",
+              desc: "Nie inwestujesz w „zaawansowane języki programowania dla sztuki”. Inwestujesz w to, żeby Twoja firma mogła obsłużyć 3 razy więcej zamówień przy tym samym zespole, bez chaosu i bez błędów.",
+            },
+          ],
+        }}
+        className="py-16 sm:py-20"
+      />
 
       {/* Sekcja: Bankowa stabilność w realiach MŚP */}
       <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-12 sm:py-20 text-slate-300 md:py-32">
@@ -406,7 +259,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             </h2>
           </div>
 
-          <blockquote className="mb-8 sm:mb-12 rounded-r-2xl border-l-2 border-blue-500/60 bg-slate-900/40 p-4 sm:p-8">
+          <blockquote className="mb-8 sm:mb-12 border-l-2 border-blue-500/60 pl-4 sm:pl-6">
             <p className="text-slate-300 font-light leading-relaxed text-sm sm:text-base md:text-lg">
               {bankingStability.intro}
             </p>
@@ -422,88 +275,35 @@ export default function AplikacjeInternetoweDlaFirmPage() {
       </section>
 
       {/* Sekcja 5: Mechanizm / Proces tworzenia aplikacji krok po kroku */}
-      <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-16 sm:py-20 text-slate-300 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
-        <div className="relative z-10 container mx-auto max-w-5xl px-4">
-          <div className="mb-10 sm:mb-16 text-center">
-            <div className="mb-4">
-              <SectionBadge>
-              <ShieldCheck className="h-4 w-4" />
-              <span>Krok po kroku</span>
-            </SectionBadge>
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight max-w-3xl mx-auto">
-              {mechanism.title}
-            </h2>
-            {mechanism.subtitle && (
-              <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg">
-                {mechanism.subtitle}
-              </p>
-            )}
-          </div>
-          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-6">
-            {mechanism.cards.map((card, i) => {
-              const icons = [Search, ListChecks, Server, RefreshCw];
-              const Icon = icons[i % icons.length];
-              return (
-                <div
-                  key={i}
-                  className="group bg-slate-900/40 border border-slate-800 p-5 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col lg:col-span-3 md:col-span-1"
-                >
-                  <div className="mb-4 sm:mb-6 flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl border border-blue-500/20 bg-blue-500/10 text-blue-400 group-hover:scale-105 transition-transform duration-500">
-                    <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
-                  </div>
-                  <h3 className="mb-2 sm:mb-3 text-base sm:text-lg font-bold text-white leading-tight group-hover:text-blue-400 transition-colors">
-                    {card.title.replace(/^\d+\.\s+/, "")}
-                  </h3>
-                  <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">
-                    {card.content}
-                  </p>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
+      <OfferSection
+        badge="Krok po kroku"
+        offer={{
+          title: mechanism.title,
+          subheading: mechanism.subtitle,
+          paths: mechanism.cards.map((card, i) => ({
+            title: `Krok ${i + 1}`,
+            situation: card.title.replace(/^\d+\.\s+/, ""),
+            desc: card.content,
+          })),
+        }}
+        className="py-16 sm:py-20"
+      />
 
       {/* Sekcja 6: Gwarancje i Bezpieczeństwo */}
       <GuaranteeSection guarantee={guarantee} />
 
       {/* Sekcja 7: FAQ */}
-      <section className="container mx-auto max-w-3xl px-4 py-16 sm:py-20 md:py-32">
-        <div className="mb-10 sm:mb-16 text-center">
-          <div className="mb-4">
-            <SectionBadge>
-            <HelpCircle className="h-4 w-4" />
-            <span>FAQ</span>
-          </SectionBadge>
-          </div>
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-4 sm:mb-6 leading-tight">
-            Najczęściej zadawane pytania
-          </h2>
-          <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg">
-            {faq.subtitle}
-          </p>
-        </div>
-
-        <Accordion type="single" collapsible className="w-full space-y-3 sm:space-y-4">
-          {faq.items.map((item, i) => (
-            <AccordionItem
-              key={i}
-              value={`item-${i}`}
-              className="rounded-2xl border border-slate-800/60 bg-slate-900/40 px-4 sm:px-6 backdrop-blur-sm transition-all hover:border-slate-700 data-[state=open]:border-blue-500/30"
-            >
-              <AccordionTrigger className="py-4 sm:py-6 text-left text-xs sm:text-sm md:text-base font-bold text-slate-200 hover:text-white hover:no-underline">
-                {item.q}
-              </AccordionTrigger>
-              <AccordionContent
-                className="pb-4 sm:pb-6 text-xs sm:text-sm leading-relaxed text-slate-400 [&_a]:font-medium [&_a]:text-blue-400 [&_a]:transition-colors [&_a:hover]:text-blue-300 [&_a:hover]:underline"
-                dangerouslySetInnerHTML={{ __html: item.a }}
-              />
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </section>
+      <FaqSection
+        faq={{
+          title: "Najczęściej zadawane pytania",
+          subtitle: faq.subtitle,
+          items: faq.items.map((item) => ({
+            question: item.q,
+            answer: item.a,
+          })),
+        }}
+        className="py-16 sm:py-20"
+      />
 
 
       <CtaSection content={offer} />

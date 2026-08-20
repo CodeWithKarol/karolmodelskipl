@@ -3,6 +3,7 @@ import { siteConfig } from "@/lib/site-config"
 import { Button } from "./ui/button"
 import { Sparkles, Target, ShieldCheck, Map } from "lucide-react"
 import { SectionBadge } from "@/components/section-badge"
+import { Reveal } from "@/components/reveal"
 
 export type CtaContent = {
   badge: string
@@ -27,9 +28,10 @@ export function CtaSection({ content: pageContent }: CtaSectionProps = {}) {
         className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-14 text-slate-300 sm:py-20 md:py-32"
       >
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-950 to-slate-950"></div>
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl pointer-events-none"></div>
 
         <div className="relative z-10 container mx-auto px-4 max-w-5xl">
-          <div className="text-center mb-8 sm:mb-16">
+          <Reveal as="header" className="text-center mb-8 sm:mb-16">
             <div className="mb-4">
               <SectionBadge><Sparkles className="h-3.5 w-3.5 shrink-0" />{cta.badge}</SectionBadge>
             </div>
@@ -37,14 +39,14 @@ export function CtaSection({ content: pageContent }: CtaSectionProps = {}) {
               {cta.title}
             </h2>
             <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg text-pretty" dangerouslySetInnerHTML={{ __html: cta.description }} />
-          </div>
+          </Reveal>
 
-          <div className="max-w-2xl mx-auto">
-            <div className="bg-slate-900/40 border border-slate-800 rounded-2xl sm:rounded-3xl p-5 sm:p-8 mb-6 sm:mb-8">
+          <Reveal className="max-w-2xl mx-auto">
+            <div className="mb-6 sm:mb-8">
               <p className="text-xs sm:text-sm font-semibold text-white mb-4 sm:mb-5 text-center">{cta.package_title}</p>
-              <ul className="space-y-3 sm:space-y-2.5">
+              <div className="divide-y divide-slate-800/80 border-y border-slate-800/80">
                 {cta.offer_items.map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-left">
+                  <div key={i} className="flex items-start gap-3 text-left py-3.5 sm:py-4">
                     <span className="flex h-[1.625em] shrink-0 items-center text-blue-400 text-xs sm:text-sm">
                       {i === 0 && <Target className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
                       {i === 1 && <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
@@ -60,9 +62,9 @@ export function CtaSection({ content: pageContent }: CtaSectionProps = {}) {
                         item.title
                       )}
                     </span>
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
 
             <div className="text-xs sm:text-sm text-slate-400 text-center mb-5 sm:mb-6 leading-relaxed">100% bezpłatnie • Rozmowa wideo w 4 oczy</div>
@@ -75,7 +77,7 @@ export function CtaSection({ content: pageContent }: CtaSectionProps = {}) {
               </a>
               <p className="text-xs sm:text-sm text-slate-400 mt-3 font-medium leading-relaxed text-pretty">{cta.footer}</p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
   )

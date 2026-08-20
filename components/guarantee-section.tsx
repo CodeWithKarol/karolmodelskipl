@@ -1,6 +1,7 @@
-import { ShieldCheck } from "lucide-react"
+import { ShieldCheck, Shield, FileCode, Headphones } from "lucide-react"
 import { content } from "@/lib/content"
 import { SectionBadge } from "@/components/section-badge"
+import { Reveal } from "@/components/reveal"
 
 interface GuaranteeItem {
   title: string
@@ -18,6 +19,8 @@ interface GuaranteeSectionProps {
   guarantee?: GuaranteeData
 }
 
+const icons = [ShieldCheck, Shield, FileCode, Headphones]
+
 export function GuaranteeSection({ guarantee: customGuarantee }: GuaranteeSectionProps = {}) {
   const { guarantee: defaultGuarantee } = content
   const guarantee = customGuarantee || defaultGuarantee
@@ -31,7 +34,7 @@ export function GuaranteeSection({ guarantee: customGuarantee }: GuaranteeSectio
 
       <div className="relative z-10 container mx-auto px-4 max-w-5xl">
         {/* Header - Mobile First */}
-        <div className="mb-8 sm:mb-16 text-center">
+        <Reveal as="header" className="mb-8 sm:mb-16 text-center">
           <div className="mb-3 sm:mb-4">
             <SectionBadge variant="emerald">
             <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
@@ -44,28 +47,36 @@ export function GuaranteeSection({ guarantee: customGuarantee }: GuaranteeSectio
           <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-xs sm:text-base md:text-lg">
             {guarantee.subtitle}
           </p>
-        </div>
+        </Reveal>
 
-        {/* Grid - Mobile: 1 col, Tablet+: 2 col */}
-        <div className="grid gap-3 sm:gap-6 md:grid-cols-2 max-w-4xl mx-auto">
-          {guarantee.items.map((item, i) => (
-            <div 
-              key={i} 
-              className={`group relative bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col ${
-                i === 2 && guarantee.items.length === 3 ? "md:col-span-2 max-w-xl mx-auto w-full" : ""
-              }`}
-            >
-              <div className="mb-3 sm:mb-6 flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-xl border border-slate-700 bg-slate-950 text-emerald-400 group-hover:text-emerald-300 transition-colors">
-                <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />
-              </div>
-              <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-emerald-400 transition-colors leading-tight">
-                {item.title}
-              </h3>
-              <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">
-                {item.desc}
-              </p>
-            </div>
-          ))}
+        {/* Grid - Mobile: 1 col, Desktop: 2 col with stagger */}
+        <div className="grid gap-3 sm:gap-10 md:grid-cols-2 max-w-4xl mx-auto">
+          {guarantee.items.map((item, i) => {
+            const Icon = icons[i % icons.length]
+            return (
+              <Reveal
+                key={i}
+                delay={i * 0.05}
+                className={`group relative flex flex-col bg-slate-900/30 ring-1 ring-white/5 p-5 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 hover:ring-white/10 hover:shadow-[0_20px_60px_-20px_rgba(16,185,129,0.25)] ${
+                  guarantee.items.length === 3 && i === 2
+                    ? "md:col-span-2"
+                    : i % 2 === 1 && guarantee.items.length === 4
+                      ? "md:translate-y-8"
+                      : ""
+                }`}
+              >
+                <div className="mb-4 sm:mb-6 flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                  <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
+                </div>
+                <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-emerald-400 transition-colors leading-tight">
+                  {item.title}
+                </h3>
+                <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">
+                  {item.desc}
+                </p>
+              </Reveal>
+            )
+          })}
         </div>
       </div>
     </section>

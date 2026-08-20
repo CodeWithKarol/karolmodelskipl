@@ -13,7 +13,7 @@ export function Footer() {
       <div className="container mx-auto max-w-7xl px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4">
-            <div className="relative h-16 w-16 rounded-full overflow-hidden border border-slate-700">
+            <div className="relative h-16 w-16 rounded-full overflow-hidden ring-1 ring-blue-500/20 shadow-[0_8px_30px_-10px_rgba(37,99,235,0.4)]">
               <Image src="/karol.webp" alt="Karol Modelski" fill sizes="64px" className="object-cover" />
             </div>
             <h3 className="text-lg font-bold text-white">{footer.brand.name}</h3>
@@ -47,7 +47,7 @@ export function Footer() {
           <div className="text-center lg:text-left space-y-4">
             <h3 className="text-sm font-bold text-white flex items-center justify-center lg:justify-start gap-2"><MessageCircle className="h-4 w-4 text-blue-400 shrink-0" />{footer.contact.title}</h3>
             <p className="text-sm text-slate-300 leading-relaxed">{footer.contact.ctaSentence}</p>
-            <a href={siteConfig.calendlyLink} target="_blank" rel="noopener noreferrer" className="inline-flex w-full sm:w-auto items-center justify-center gap-1.5 rounded-xl border border-blue-400/30 bg-blue-400/10 px-4 py-3 text-sm font-semibold text-blue-400 hover:bg-blue-400/20 hover:text-blue-300 transition-colors sm:py-1.5">
+            <a href={siteConfig.calendlyLink} target="_blank" rel="noopener noreferrer" className="inline-flex w-full sm:w-auto items-center justify-center gap-1.5 rounded-xl border border-blue-400/20 bg-blue-400/5 px-4 py-3 text-sm font-semibold text-blue-400 hover:bg-blue-400/10 hover:text-blue-300 transition-colors sm:py-1.5">
               {footer.contact.ctaButton}
               <ArrowRight className="h-4 w-4 shrink-0" />
             </a>

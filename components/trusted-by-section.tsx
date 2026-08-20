@@ -1,10 +1,10 @@
-import { Building, Globe, Cpu, ShoppingCart, ShieldCheck } from "lucide-react"
+import { ShieldCheck } from "lucide-react"
 import { content } from "@/lib/content"
 import { SectionBadge } from "@/components/section-badge"
+import { Reveal } from "@/components/reveal"
 
 export function TrustedBySection() {
   const { trustedBy } = content
-  const icons = [Building, Globe, Cpu, ShoppingCart]
 
   return (
     <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-20 text-slate-300 md:py-32">
@@ -12,7 +12,7 @@ export function TrustedBySection() {
 
       <div className="relative z-10 container mx-auto px-4 max-w-5xl">
         {/* Header - Mobile First */}
-        <div className="mb-10 sm:mb-14 text-center">
+        <Reveal as="header" className="mb-10 sm:mb-14 text-center">
           <div className="mb-4">
             <SectionBadge variant="emerald">
             <ShieldCheck className="h-4 w-4" />
@@ -22,10 +22,10 @@ export function TrustedBySection() {
           <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
             {trustedBy.title}
           </h2>
-        </div>
+        </Reveal>
 
         {/* Bridge of Trust - First-person quote, Mobile First */}
-        <blockquote className="relative max-w-3xl mx-auto mb-10 sm:mb-14">
+        <Reveal as="blockquote" className="relative max-w-3xl mx-auto mb-10 sm:mb-14">
           <span aria-hidden="true" className="absolute -top-6 -left-2 sm:-left-6 text-6xl sm:text-7xl leading-none text-blue-500/15 font-serif select-none">
             &ldquo;
           </span>
@@ -42,33 +42,29 @@ export function TrustedBySection() {
               {trustedBy.quote_author}
             </cite>
           </footer>
-        </blockquote>
+        </Reveal>
+      </div>
 
-        {/* Grounded logo strip - Mobile: 1 col full width, Tablet+: 2 col, Desktop: 4 col */}
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 md:grid-cols-4">
-          {trustedBy.logos.map((company, index) => {
-            const Icon = icons[index % icons.length]
-            return (
+      {/* Full-bleed wordmark strip - borderless, no boxes */}
+      <Reveal className="relative z-10 border-y border-white/5 bg-slate-900/30 backdrop-blur-sm">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 gap-x-4 gap-y-8 py-8 sm:gap-y-10 md:flex md:flex-row md:items-center md:py-10 md:divide-x md:divide-white/5">
+            {trustedBy.logos.map((company) => (
               <div
                 key={company.name}
-                className="group flex items-center justify-start gap-3 rounded-xl border border-slate-800 bg-slate-900/40 px-4 py-3 transition-colors hover:border-slate-700 sm:justify-center"
+                className="flex flex-col items-center px-2 text-center min-w-0 md:flex-1 md:justify-center"
               >
-                <div className="flex h-9 w-9 sm:h-10 sm:w-10 shrink-0 items-center justify-center rounded-lg border border-slate-800 bg-slate-950 text-slate-500 transition-colors group-hover:text-blue-400">
-                  <Icon className="h-4 w-4 sm:h-5 sm:w-5" />
-                </div>
-                <div className="min-w-0">
-                  <p className="text-sm sm:text-base font-bold text-white">
-                    {company.name}
-                  </p>
-                  <p className="text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-500">
-                    {company.category}
-                  </p>
-                </div>
+                <p className="text-base sm:text-lg md:text-xl font-bold tracking-tight text-white">
+                  {company.name}
+                </p>
+                <p className="mt-1 text-[10px] sm:text-[11px] uppercase tracking-widest text-slate-500 leading-snug">
+                  {company.category}
+                </p>
               </div>
-            )
-          })}
+            ))}
+          </div>
         </div>
-      </div>
+      </Reveal>
     </section>
   )
 }
