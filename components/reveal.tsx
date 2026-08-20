@@ -7,7 +7,7 @@ interface RevealProps {
   children: React.ReactNode
   delay?: number
   className?: string
-  as?: "div" | "section" | "header" | "footer" | "li" | "article" | "blockquote"
+  as?: "div" | "section" | "header" | "footer" | "li" | "article" | "blockquote" | "figure"
 }
 
 export function Reveal({ children, delay = 0, className, as = "div" }: RevealProps) {
