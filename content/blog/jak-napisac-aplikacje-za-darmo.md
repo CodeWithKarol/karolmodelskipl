@@ -58,105 +58,77 @@ Jesteś jej wieczystym najemcą.
 
 Gdy zajdzie potrzeba dodania unikalnej funkcji, której nie przewidział twórca no-code, utkniesz w miejscu.
 
-## MIT NR 2: „Sztuczna Inteligencja napisze to za mnie”
+## MIT NR 2: „Sztuczna inteligencja napisze mi aplikację za darmo”
 
-AI jest niesamowita.
+Modele językowe robią wrażenie.
 
-Może wygenerować kod w kilka sekund.
+Wpisz prompt, a w kilka sekund dostaniesz „całą aplikację” – pliki, funkcje, kod, który wygląda sensownie.
 
-Może poprawić błędy.
+To fascynujące i równocześnie najniebezpieczniejsze złudzenie współczesnej technologii.
 
-Ale AI potrzebuje „szyn”.
+Model nie buduje systemu.
 
-Jeśli nie masz architektury, AI wygeneruje Ci stertę tekstu, który wygląda jak program, ale nie jest przewidywalny.
+Model generuje najbardziej prawdopodobną sekwencję znaków na podstawie milionów wpisów z internetu – w tym forów pełnych porad od początkujących.
 
-Budowanie aplikacji z AI wymaga seniora, który wie, jak prowadzić model, jak weryfikować bezpieczeństwo i jak pilnować modułowości kodu.
+Dlatego wygenerowany kod potrafi się nawet kompilować.
 
-Bez tej wiedzy, AI tworzy chaos szybciej, niż kiedykolwiek robili to początkujący programiści.
+Problem zaczyna się w momencie, w którym ten kod ma przyjmować płatności, przechowywać dane klientów i działać, gdy zaloguje się stu użytkowników naraz.
 
-## Realne koszty, o których nikt nie mówi
+Wtedy kończy się zabawa w generator, a zaczyna odpowiedzialność inżynierska.
 
-Cena aplikacji to nie tylko faktura dla wykonawcy.
+## Halucynacje architektoniczne: kod, który wygląda dobrze, a nie istnieje
 
-To także ukryte koszty, które pojawiają się po wdrożeniu.
+Modele językowe mają błąd, jakiego nie zna żaden człowiek: halucynację.
 
-Musisz uwzględnić:
+AI z pełnym przekonaniem poda Ci bibliotekę, której nie ma w rejestrze npm.
 
-1. **Czas Twojego zespołu:** Nawet jeśli aplikacja kosztowała „0 zł”, to ile godzin poświęciłeś na „klikaniu” w narzędziach no-code, zamiast na sprzedaży?
-2. **Koszty utraconych korzyści:** Jakie zyski ominęły Cię, bo system nie działał tak, jak powinien, albo nie miał funkcji, której potrzebowali klienci?
-3. **Koszt długu technologicznego:** Płacenie za naprawianie „darmowego” kodu przez następne dwa lata.
+Wygeneruje import z paczki, którą ktoś wycofał trzy lata temu – albo z paczki, która od miesięcy ma niezałataną lukę znaną jako CVE.
 
-Pamiętaj: tania technologia to najdroższy koszt w firmie.
+Potrafi napisać funkcję „zabezpieczającą” płatności, która w rzeczywistości wysyła numer karty w adresie URL.
 
-## Jak napisać aplikację mądrze (i nie zbankrutować)?
+Najgorsze jest to, że wszystko to wygląda sensownie.
 
-Zamiast szukać „za darmo”, szukaj „maksymalizacji zwrotu z inwestycji (ROI)”.
+Dopóki system nie trafi na produkcję i nie zawiedzie przy pierwszym prawdziwym kliencie.
 
-To jest klucz do sukcesu w MŚP.
+Senior architekt dostrzega te pułapki, bo widzi je w kontekście całego systemu: zależności, wersji, przepływu danych i testów.
 
-Oto moja strategia, jak budować aplikacje efektywnie:
+AI widzi tylko statystykę słów.
 
-### 1. Skup się na MVP (Minimum Viable Product)
-Budujemy tylko to, co jest absolutnie niezbędne do zdobycia pierwszego klienta.
-Nie budujemy systemu do obsługi całego świata od pierwszego dnia.
-Budujemy maszynę konwersyjną, która sprawdzi, czy Twój pomysł ma nogi.
+## Klucze API i dane klientów: najdroższa lekcja „darmowego” kodu
 
-### 2. Wykorzystaj gotowe komponenty (Standardy Enterprise)
-Nie wymyślamy koła na nowo.
-Używamy sprawdzonych wzorców, które pozwalają na wielokrotne wykorzystanie kodu.
-To jest prawdziwa „darmowość” – budujemy nową funkcję na bazie tego, co już mamy.
+Najczęstszy błąd, jaki widuję w aplikacjach wygenerowanych przez AI, to sekrety w kodzie.
 
-### 3. Inwestuj w architekturę, nie w wygląd
-Na starcie nie potrzebujesz designu od agencji za 50 tysięcy.
-Potrzebujesz przejrzystej struktury, która pozwoli na łatwą zmianę wyglądu w przyszłości.
+Klucze API wgrane do repozytorium.
 
-## Czy to znaczy, że musisz mieć ogromny budżet?
+Tokeny dostępu zaszyte na sztywno we frontendzie.
 
-Absolutnie nie.
+Polityka CORS, która pozwala dowolnej stronie w internecie wysyłać zapytania do Twojego backendu.
 
-Możesz zacząć od budżetu, który jest „bezpieczny” dla Twojego biznesu.
+Efekt? Każdy, kto odczyta kod Twojej aplikacji w przeglądarce, ma dostęp do Twoich danych i danych Twoich klientów.
 
-W modelu, który proponuję, eliminujemy narzuty agencji.
+AI nie podpowie Ci, gdzie trzymać sekrety, bo to nie kwestia składni.
 
-Całość Twojego budżetu idzie bezpośrednio w kod i architekturę.
+To kwestia architektury bezpieczeństwa: szyfrowanie w spoczynku i w transporcie, kontrola dostępu oparta na rolach, zarządzanie sekretami poza kodem i testy bezpieczeństwa przed startem.
 
-Zyskujesz eksperta klasy Enterprise w cenie, którą w agencji zapłaciłbyś za zespół juniorów z menedżerem.
+Niezależnie od tego, czy kod pisał człowiek, czy maszyna – wymagaj tych standardów na piśmie.
 
-To jest najbardziej efektywny sposób na budowanie aplikacji w obecnych czasach.
+## Kiedy AI naprawdę oszczędza budżet MŚP?
 
-## Bezpośredni kontakt to Twoja przewaga
+Nie zrozum mnie źle: AI to nie zło.
 
-Kiedy pracujesz ze mną, nie masz „głuchego telefonu”.
+AI to narzędzie, a nie wykonawca.
 
-Nie ma PM-ów, nie ma raportów, których nikt nie czyta.
+W moim procesie pracuję w tandemie: senior architekt + AI.
 
-Jest wspólna praca nad Twoim celem biznesowym.
+AI automatyzuje testy jednostkowe, generuje boilerplate i typowanie TypeScript.
 
-Tłumaczę zawiłości techniczne na język korzyści.
+Ja projektuję architekturę, pilnuję bezpieczeństwa i biorę odpowiedzialność za logikę biznesową.
 
-Dzięki temu wiesz dokładnie, na co idzie każda złotówka.
+Ty dostajesz szybkość juniora z bezpieczeństwem klasy bankowej.
 
-To buduje zaufanie – a w biznesie MŚP zaufanie jest najcenniejszą walutą.
+Dzięki temu szybko dowozimy działający [MVP w 3-4 tygodnie](/projektowanie-mvp) zamiast w kilka miesięcy.
 
-## Prawda o „taniej” pracy programistów
-
-Spotkałem się z sytuacjami, gdzie firmy wybierały oferty o 70% tańsze od moich.
-
-Po roku okazywało się, że „tani” system nie jest w stanie obsłużyć 100 użytkowników jednocześnie.
-
-Naprawa tego błędu kosztowała ich 3 razy więcej niż pierwotna oferta, którą odrzucili.
-
-Jakość w technologii jest jak w budownictwie – nie da się jej obejść.
-
-Możesz kupić tańsze materiały, ale konstrukcja będzie słabsza.
-
-W technologii to oznacza, że system będzie niestabilny, wolny i trudny w rozbudowie.
-
-Zawsze powtarzam: jakość kodu to jedyny sposób na długofalowe obniżenie kosztów utrzymania (TCO – Total Cost of Ownership).
-
-Kiedy piszę kod, myślę o tym, żeby był czytelny za rok, za dwa i za pięć lat.
-
-To właśnie dzięki temu moi klienci nie muszą mnie co chwilę wołać do „gaszenia pożarów”.
+Różnica między „używaniem AI jako narzędzia” a „zleceniem AI całej aplikacji” to różnica między inwestycją a hazardem.
 
 ## Czy potrzebujesz aplikacji, czy rozwiązania problemu?
 
@@ -198,9 +170,9 @@ Szybkość to w biznesie przewaga, której nie da się kupić.
 
 ## Dlaczego ewolucja jest lepsza niż rewolucja?
 
-Jeśli już masz aplikację, która jakoś działa – nie wyrzucaj jej.
+Jeśli już masz aplikację, która jakoś działa – nie wyrzucaj jej do kosza.
 
-Modernizuj.
+Postaw na [modernizację](/naprawa-i-modernizacja-aplikacji) zamiast na budowanie wszystkiego od zera.
 
 Ewolucja pozwala uczyć się na błędach.
 
@@ -230,7 +202,7 @@ To jest możliwe, jeśli podejdziesz do tego z głową.
 
 Zapraszam Cię do przejścia przez mój proces diagnozy.
 
-Nie musisz być ekspertem IT, aby wiedzieć, czy technologia w Twojej firmie zarabia – wystarczy, że usiądziemy i przeanalizujemy, gdzie uciekają Twoje pieniądze.
+Przynieś ze sobą kod, który wygenerowało AI, albo prototyp z no-code – w trakcie bezpłatnej rozmowy pokażę Ci, co dokładnie w nim ryzykujesz i jak to zabezpieczyć.
 
 ## Twoja firma zasługuje na standardy bankowe
 
@@ -242,7 +214,7 @@ Ryzyko awarii to ryzyko utraty zaufania klientów.
 
 Nikt nie buduje biznesu na fundamencie, który może się zawalić w każdej chwili.
 
-Standardy, które stosuję, pochodzą z największych banków w Europie.
+Standardy [rygoru bezpieczeństwa](/doradztwo-techniczne-dla-firm), które stosuję, pochodzą z największych banków w Europie.
 
 Są teraz dostępne dla Ciebie.
 
@@ -270,23 +242,17 @@ To wszystko wyjdzie w trakcie naszej konsultacji.
 
 Technologia to Twój najpotężniejszy sprzymierzeniec, jeśli tylko przestaniesz traktować ją jako konieczne zło.
 
-Razem zbudujemy system, który będzie pracował dla Ciebie, a nie Ty dla niego.
+Razem zamienimy „darmowy” kod z AI w stabilny system, który pracuje dla Ciebie, a nie Ty dla niego.
 
-Nie pozwól, aby Twoje ambicje biznesowe były ograniczane przez błędy w kodzie czy opieszałość Twojej agencji.
+Nie pozwól, aby Twoje ambicje biznesowe rozbijały się o błędy w kodzie, którego nikt nie zweryfikował.
 
-Zróbmy to mądrze.
-
-Zmieńmy sposób, w jaki podchodzisz do IT.
-
-Zmieńmy wydatki na programistów w zyski z Twojego systemu.
-
-To jest możliwe, jeśli podejdziesz do tego z właściwym partnerem.
+Zróbmy to mądrze – zanim Twój pomysł trafi na produkcję.
 
 Czy jesteś gotowy na stworzenie aplikacji, która napędza Twój zysk?
 
 ---
-### 💡 Zbuduj aplikację bezpiecznie i profesjonalnie.
-Pobierz plan, który pozwoli Ci bezpiecznie wejść na rynek bez ukrytych pułapek darmowych narzędzi.
+### 💡 Masz wygenerowany kod z AI lub prototyp no-code i nie wiesz, co dalej?
+Zamiast ryzykować awarię i wyciek danych klientów, sprawdźmy stabilność i bezpieczeństwo Twojej architektury podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ODBIERZ BEZPŁATNY PLAN BEZPIECZNEGO STARTU TWOJEJ APLIKACJI](/projektowanie-mvp)**
-*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*
+👉 **[ODBIERZ PAKIET STRATEGICZNY I ZWERYFIKUJ KOD Z AI (0 ZŁ)](/projektowanie-mvp)**
+*(30 minut wideorozmowy • Bankowy rygor bezpieczeństwa • Plan wdrożenia MVP w 30 dni)*
