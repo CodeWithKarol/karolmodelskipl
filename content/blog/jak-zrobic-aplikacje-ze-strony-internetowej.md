@@ -72,7 +72,7 @@ Dla wielu firm z sektora MŚP to idealny kompromis.
 
 Nie musisz budować dwóch osobnych aplikacji (na iOS i Androida) i utrzymywać dwóch zespołów deweloperskich.
 
-Budujemy jedną, nowoczesną platformę webową, która zachowuje się jak aplikacja.
+Budujemy jedną, nowoczesną [platformę webową dla firm](/aplikacje-internetowe-dla-firm), która zachowuje się jak aplikacja.
 
 Dzięki architekturze opartej na Nx Monorepo, o której często piszę w kontekście optymalizacji, współdzielimy kod między przeglądarką a wersją mobilną.
 
@@ -83,6 +83,8 @@ Oszczędzasz czas, budżet i zyskujesz spójność danych w całym ekosystemie.
 Nie każdy biznes potrzebuje aplikacji mobilnej.
 
 Jeśli masz sklep internetowy, który raz na miesiąc odwiedza klient, aplikacja tylko zajmie mu miejsce.
+
+Zanim zdecydujesz, czy budować aplikację, [przetestuj swój pomysł w szybkiej wersji startowej (MVP)](/projektowanie-mvp) — to najtańszy sposób, by sprawdzić realne zainteresowanie klientów.
 
 Ale jeśli:
 1. Twoi klienci korzystają z Twoich usług codziennie.
@@ -173,7 +175,7 @@ Współpraca ze mną pozwoli Ci uniknąć błędów, które kosztowały inne fir
 
 Zamiast martwić się o technologię, zajmij się tym, co robisz najlepiej – rozwojem swojego biznesu.
 
-Zapraszam Cię do przejścia przez mój proces diagnozy.
+Zapraszam Cię do przejścia przez mój [proces diagnozy i doboru technologii](/doradztwo-techniczne-dla-firm).
 
 Nie musisz być ekspertem IT, aby wiedzieć, czy technologia w Twojej firmie zarabia – wystarczy, że usiądziemy i przeanalizujemy, jak wykorzystać to, co już masz, aby zbudować aplikację, która naprawdę wspiera Twój wzrost.
 
@@ -186,8 +188,8 @@ Twój biznes zasługuje na architekturę klasy Enterprise.
 Czy jesteś gotowy, aby o nią zawalczyć?
 
 ---
-### 💡 Twój system wymaga modernizacji, a nie pełnej przebudowy?
-Odbierz plan, dzięki któremu unowocześnimy Twoją aplikację ewolucyjnie, dbając o płynność sprzedaży.
+### 💡 Zastanawiasz się, czy Twoja firma naprawdę potrzebuje aplikacji mobilnej?
+Nie daj się wciągnąć w drogie „opakowywanie strony" ani przepłacać za zbędne aplikacje natywne. Przeanalizujmy Twój model biznesowy i dobierzmy optymalną technologię (Web / PWA / Native) podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ODBIERZ PLAN BEZINWAZYJNEGO PRZYSPIESZENIA SYSTEMU](/naprawa-i-modernizacja-aplikacji)**
-*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*
+👉 **[ODBIERZ PAKIET STRATEGICZNY I SKONSULTUJ ARCHITEKTURĘ (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+*(30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Konkretna rekomendacja bez naciągania)*

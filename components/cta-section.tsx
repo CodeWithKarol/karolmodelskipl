@@ -45,12 +45,21 @@ export function CtaSection({ content: pageContent }: CtaSectionProps = {}) {
               <ul className="space-y-3 sm:space-y-2.5">
                 {cta.offer_items.map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-left">
-                    <span className="text-blue-400 shrink-0 mt-0.5">
+                    <span className="flex h-[1.625em] shrink-0 items-center text-blue-400 text-xs sm:text-sm">
                       {i === 0 && <Target className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
                       {i === 1 && <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
                       {i === 2 && <Map className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
                     </span>
-                    <span className="text-xs sm:text-sm text-slate-300 leading-relaxed text-pretty">{item.title}</span>
+                    <span className="text-xs sm:text-sm text-slate-300 leading-relaxed text-pretty">
+                      {item.desc ? (
+                        <>
+                          <strong className="font-semibold text-white">{item.title}</strong>{" "}
+                          {item.desc}
+                        </>
+                      ) : (
+                        item.title
+                      )}
+                    </span>
                   </li>
                 ))}
               </ul>
