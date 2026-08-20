@@ -113,9 +113,15 @@ export default async function BlogPostPage(props: {
 
   const headings = extractHeadings(post.content)
   const allPosts = getAllPosts()
-  const relatedPosts = allPosts
-    .filter((p) => p.slug !== post.slug && p.silo === post.silo)
-    .slice(0, 3)
+  const relatedPosts =
+    post.related.length > 0
+      ? post.related
+          .map((slug) => allPosts.find((p) => p.slug === slug))
+          .filter((p): p is NonNullable<typeof p> => p !== undefined)
+          .slice(0, 3)
+      : allPosts
+          .filter((p) => p.slug !== post.slug && p.silo === post.silo)
+          .slice(0, 3)
 
   const jsonLd = {
     "@context": "https://schema.org",
