@@ -1,13 +1,23 @@
 export const cta = {
-  badge: "Program Partnerski: Rozwój Cyfrowy MŚP",
-  title: "Program Wdrożeniowy: Zostań Partnerem Założycielem",
+  badge: "Program Partnerski dla MŚP",
+  title: "Zostań Partnerem Założycielem (Tylko 2 firmy w kwartale)",
   description:
-    "Zamiast masowej obsługi kilkunastu projektów naraz, w każdym kwartale prowadzę <strong class='text-white font-semibold'>maksymalnie 2 wdrożenia</strong>, dając Twojej firmie 100% mojego skupienia. W zamian za feedback i opinię po projekcie zyskujesz preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po wdrożeniu.",
-  package_title: "Pakiet Strategiczny (Wartość 600 zł za 0 zł na start):",
+    "Zamiast masowej obsługi kilkunastu projektów naraz, w każdym kwartale współpracuję z <strong class='text-white font-semibold'>maksymalnie dwoma firmami</strong>, dając Twojemu biznesowi 100% mojego skupienia. Zostań Partnerem Założycielem – rozwijaj technologię na preferencyjnych warunkach i zyskaj <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po uruchomieniu systemu.",
+  package_title:
+    "Co dokładnie otrzymujesz w Pakiecie Strategicznym (Wartość 600 zł za 0 zł na start):",
   offer_items: [
-    { title: "Diagnoza wąskich gardeł w procesach firmy", desc: "" },
-    { title: "Bankowy Test Bezpieczeństwa Informacji", desc: "" },
-    { title: "Osobista Mapa Drogowa Wdrożenia IT", desc: "" },
+    {
+      title: "Diagnoza Wąskich Gardeł:",
+      desc: "wskazanie procesów, w których technologia natychmiast uwolni czas zespołu i zwiększy zyski.",
+    },
+    {
+      title: "Bankowy Test Bezpieczeństwa Informacji:",
+      desc: "rygorystyczna weryfikacja stabilności kodu i ochrony danych Twoich klientów.",
+    },
+    {
+      title: "Osobista Mapa Drogowa IT:",
+      desc: "precyzyjny, rozpisany krok po kroku plan rozwoju oprogramowania – bez ukrytych kosztów i niespodzianek.",
+    },
   ],
   button: "Odbierz Pakiet Strategiczny i Zarezerwuj Miejsce (0 zł)",
   footer:

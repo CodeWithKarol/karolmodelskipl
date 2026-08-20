@@ -6,12 +6,12 @@ import { MDXRemote } from "next-mdx-remote/rsc"
 import {
   ArrowLeft,
   Clock,
-  CalendarDays,
   List,
   ChevronDown,
 } from "lucide-react"
 import { ReadingProgress } from "@/components/reading-progress"
 import { SectionBadge } from "@/components/section-badge"
+import { CtaSection } from "@/components/cta-section"
 import { extractHeadings, slugify, extractTextContent } from "@/lib/utils/heading"
 import type { ReactNode } from "react"
 
@@ -322,32 +322,12 @@ export default async function BlogPostPage(props: {
                   </div>
                 </section>
               )}
-
-              <section className="mt-10 overflow-hidden rounded-xl border border-blue-500/20 bg-gradient-to-br from-blue-900/20 to-slate-900/50 p-5 text-center sm:mt-12 sm:rounded-2xl sm:p-10">
-                <h2 className="text-balance text-base font-bold text-white sm:text-xl">
-                  Umów bezpłatną konsultację
-                </h2>
-                <p className="mx-auto mt-2 max-w-lg text-sm leading-relaxed text-slate-300 sm:mt-3">
-                  Opowiedz o swoim pomyśle — podpowiem Ci, jak go zrealizować i
-                  oszacuję koszty. Bez zobowiązań, bez presji.
-                </p>
-                <a
-                  href="https://calendly.com/kontakt-karolmodelski/30min"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-5 inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-bold text-white shadow-lg transition-all hover:bg-blue-700 active:scale-[0.98] sm:mt-6 sm:px-6"
-                >
-                  <CalendarDays className="h-4 w-4 shrink-0" />
-                  ZAREZERWUJ SPOTKANIE
-                </a>
-                <p className="mt-3 text-xs text-slate-500">
-                  30 minut online · Bez zobowiązań · Odpowiem na Twoje pytania
-                </p>
-              </section>
             </div>
           </div>
         </div>
       </div>
+
+      <CtaSection />
     </>
   )
 }

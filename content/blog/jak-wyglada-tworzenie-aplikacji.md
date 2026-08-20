@@ -20,11 +20,11 @@ Nie pytam Cię o to, „jakie przyciski mają być na ekranie”. Pytam: „Jaki
 
 Software house’y często przeskakują etap solidnego projektowania, by jak najszybciej „zacząć kodować” i móc raportować postępy. To błąd, który jest głównym źródłem długu technologicznego. Jeśli zaczniesz budować bez przemyślanej struktury, po kilku miesiącach każda próba zmiany będzie wymagała przebudowy całego systemu.
 
-Ja projektuję architekturę w oparciu o standardy klasy Enterprise – modularnie, bezpiecznie i skalowalnie. Wykorzystuję podejście Nx Monorepo, co pozwala na współdzielenie logiki biznesowej między wersją webową a mobilną. Dla Ciebie oznacza to drastyczne obniżenie kosztów utrzymania w przyszłości i błyskawiczne wdrożenia nowych funkcji. To etap, na którym inwestujesz w fundamenty, które nie wymagają naprawy po pół roku.
+Ja [projektuję architekturę](/doradztwo-techniczne-dla-firm) w oparciu o standardy klasy Enterprise – modularnie, bezpiecznie i skalowalnie. Wykorzystuję podejście Nx Monorepo, co pozwala na współdzielenie logiki biznesowej między wersją webową a mobilną. Dla Ciebie oznacza to drastyczne obniżenie kosztów utrzymania w przyszłości i błyskawiczne wdrożenia nowych funkcji. To etap, na którym inwestujesz w fundamenty, które nie wymagają naprawy po pół roku.
 
 ## Krok 3: Budowa MVP (Hyper-Lean Execution)
 
-Zamiast budować „wszystko naraz” w ramach wielomiesięcznych kontraktów, skupiamy się na jednej, kluczowej ścieżce użytkownika. To moment, w którym stosuję moje podejście "Hyper-Lean MVP". Wykorzystuję nowoczesne narzędzia oraz automatyzację, by dostarczyć działający, klikalny produkt w zaledwie 3-4 tygodnie.
+Zamiast budować „wszystko naraz” w ramach wielomiesięcznych kontraktów, skupiamy się na jednej, kluczowej ścieżce użytkownika. To moment, w którym stosuję moje podejście [Hyper-Lean MVP](/projektowanie-mvp). Wykorzystuję nowoczesne narzędzia oraz automatyzację, by dostarczyć działający, klikalny produkt w zaledwie 3-4 tygodnie.
 
 W agencjach ten czas często zajęłaby sama „analiza wstępna” i wyceny. U nas w tym samym czasie masz już produkt, który możesz pokazać pierwszym klientom. Nie ma tu miejsca na over-engineering – nie budujemy rakiety, jeśli potrzebujesz sprawnego samochodu. Budujemy tylko to, co jest niezbędne do zamknięcia pierwszej sprzedaży i weryfikacji Twojej hipotezy rynkowej.
 
@@ -33,6 +33,14 @@ W agencjach ten czas często zajęłaby sama „analiza wstępna” i wyceny. U 
 Tworzenie aplikacji nie kończy się w dniu jej wdrożenia. To dopiero początek. Jako Twój partner technologiczny, nie zostawiam Cię z gotowym „produktem w pudełku”. Pracujemy w dynamicznej pętli: wdrażamy, sprawdzamy dane użytkowników, optymalizujemy i poprawiamy.
 
 Jeśli widzimy, że klienci rezygnują w konkretnym miejscu formularza rejestracyjnego – naprawiamy to w ciągu kilku godzin, a nie tygodni. To jest elastyczność, której nie zapewni Ci żaden "głuchy telefon" w wielopoziomowej strukturze agencji. Nasza pętla zwrotna jest błyskawiczna, co pozwala Ci osiągnąć dopasowanie produktu do rynku (Product-Market Fit) w rekordowym czasie.
+
+> 💡 **Chcesz przejść Krok 1 i zamienić surowy pomysł w precyzyjny plan?**
+>
+> Zamiast przepalać budżet na agencyjne briefy, stwórzmy architekturę Twojej aplikacji bezpośrednio ze mną podczas bezpłatnej rozmowy w 4 oczy.
+>
+> 👉 **[ODBIERZ PAKIET STRATEGICZNY I ZAPLANUJ APLIKACJĘ (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+>
+> *30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Osobista Mapa Drogowa IT*
 
 ## Dlaczego bezpośredni kontakt to Twój najważniejszy atut?
 
@@ -76,7 +84,7 @@ Praca ze mną to praca z architektem, który bierze odpowiedzialność za wynik.
 
 ## Podsumowanie: Twój nowy model budowy IT
 
-Tworzenie aplikacji to proces budowania Twojej przewagi konkurencyjnej. Jeśli chcesz:
+Tworzenie [dedykowanej aplikacji biznesowej](/aplikacje-internetowe-dla-firm) to proces budowania Twojej przewagi konkurencyjnej. Jeśli chcesz:
 1. Skrócić czas wdrożenia o miesiące, unikając paraliżu decyzyjnego agencji.
 2. Uniknąć kosztownego długu technologicznego, który pożera marże.
 3. Pracować bezpośrednio z architektem, który myśli o Twoim biznesie jak o własnym.
@@ -89,7 +97,7 @@ Nie czekaj, aż system sam zacznie Cię ograniczać. Zmieńmy go w Twoją przewa
 
 ---
 ### 💡 Zmień surowy pomysł w maszynę konwersyjną.
-Nie trać czasu na zgadywanie. Pobierz plan, który przeprowadzi Cię przez proces wdrożenia w 30 dni.
+Nie trać czasu na zgadywanie. Zróbmy Krok 1 – przejdź bezpłatną diagnozę i warsztat architektury podczas rozmowy w 4 oczy.
 
-👉 **[PRZEKSZTAŁĆ SWÓJ POMYSŁ W DZIAŁAJĄCY SYSTEM W 30 DNI (POBIERZ PLAN)](/projektowanie-mvp)**
-*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*
+👉 **[ODBIERZ PAKIET STRATEGICZNY I ZAPLANUJ APLIKACJĘ (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+*(30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Osobista Mapa Drogowa IT)*
