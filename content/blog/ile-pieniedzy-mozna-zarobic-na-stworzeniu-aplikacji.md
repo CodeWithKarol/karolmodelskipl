@@ -16,6 +16,9 @@ Wielu przedsiębiorców myśli o budowie aplikacji w kategoriach czystego kosztu
 
 Ile warta jest godzina pracy Twojego specjalisty? Jeśli przyjmiemy 100 PLN, to tylko ta jedna automatyzacja generuje dla Ciebie 5000 PLN zysku dziennie. W miesiącu daje to 150 000 PLN „czystego” odzysku, który wcześniej był marnowany na nieefektywne, ręczne procesy. To jest realny zwrot z inwestycji (ROI), o którym agencje nie wspominają, bo wolą sprzedawać „godziny kodowania”.
 
+> **100 powtórzeń procesu dziennie × skrócenie o 50% = 50h zaoszczędzonego czasu**
+> **50h × 100 PLN = 5 000 PLN zysku dziennie → 150 000 PLN odzyskanego zysku miesięcznie**
+
 ## Gdzie szukać zysków? Trzy filary zarabiania
 
 Tworzenie aplikacji webowej generuje pieniądze w trzech głównych obszarach. Zrozumienie ich pozwoli Ci lepiej zaplanować budżet i oczekiwania.
@@ -33,7 +36,7 @@ Dzięki nowoczesnej architekturze, współdzielimy biblioteki między wersją we
 
 Zarobić na aplikacji może tylko ta, która działa bezawaryjnie. Jeśli aplikacja „pada” w momencie szczytowej sprzedaży (np. w Black Friday), tracisz nie tylko pieniądze, ale i zaufanie. „Tanie” aplikacje to te, które nie mają pokrycia testami, są pisane przez juniorów bez nadzoru i opierają się na przestarzałych technologiach. 
 
-Naprawa błędów w takim systemie po wdrożeniu jest wielokrotnie droższa niż zbudowanie solidnego fundamentu na początku. W swojej karierze widziałem firmy, które straciły setki tysięcy złotych, próbując „łatać” tanio postawione systemy. Inwestycja w architekturę klasy Enterprise to jedyny sposób, by aplikacja stała się „maszyną konwersyjną”, a nie „problemem do naprawy”.
+Naprawa błędów w takim systemie po wdrożeniu jest wielokrotnie droższa niż zbudowanie solidnego fundamentu na początku. W swojej karierze widziałem firmy, które straciły setki tysięcy złotych, próbując „łatać” tanio postawione systemy. Inwestycja w [architekturę klasy Enterprise i dedykowane systemy](/aplikacje-internetowe-dla-firm) to jedyny sposób, by aplikacja stała się „maszyną konwersyjną”, a nie „problemem do naprawy”.
 
 ## Architektura jako Twoje ubezpieczenie biznesowe
 
@@ -45,13 +48,13 @@ W świecie biznesu przewidywalność to zysk. Jeśli wiesz, że możesz dodać n
 
 Agencje często wpadają w pułapkę „greenfield”, czyli budowania od zera. Twierdzą, że Twój stary kod nie nadaje się do niczego. To najdroższa decyzja, jaką możesz podjąć. Pisanie od nowa to ryzyko – tracisz logikę biznesową, którą Twoja firma wypracowała latami. 
 
-Moim podejściem jest ewolucyjna modernizacja. Naprawiamy system, zachowując jego wartość, ale eliminując dług technologiczny. To kosztuje mniej, jest bezpieczniejsze i pozwala na ciągłość operacyjną. Jeśli agencja mówi Ci, że wszystko jest do wyrzucenia – zatrzymaj się. Często to tylko sposób na wygenerowanie większej faktury.
+Moim podejściem jest [ewolucyjna modernizacja i ratowanie kodu](/naprawa-i-modernizacja-aplikacji). Naprawiamy system, zachowując jego wartość, ale eliminując dług technologiczny. To kosztuje mniej, jest bezpieczniejsze i pozwala na ciągłość operacyjną. Jeśli agencja mówi Ci, że wszystko jest do wyrzucenia – zatrzymaj się. Często to tylko sposób na wygenerowanie większej faktury.
 
 ## Jak liczyć realny zwrot z inwestycji?
 
 Aby zrozumieć, ile możesz zarobić, musisz znać swój „technologiczny punkt krytyczny”. To moment, w którym koszt posiadania systemu (i jego utrzymania) staje się mniejszy niż zysk, jaki generuje.
 
-* **Koszt wejścia:** Budowa MVP (np. 3-4 tygodnie w modelu Hyper-Lean).
+* **Koszt wejścia:** [Budowa MVP (3-4 tygodnie w modelu Hyper-Lean)](/projektowanie-mvp).
 * **Koszt utrzymania:** Stabilna, czysta architektura (brak „gaszenia pożarów”).
 * **Wartość wyjściowa:** Ile nowych klientów pozyskasz, mając narzędzie, którego konkurencja Ci zazdrości?
 
@@ -67,7 +70,7 @@ Jeśli AI zautomatyzuje 30% pracy programistycznej przy budowie Twojego systemu,
 
 W dużych software house'ach płacisz „podatek od pośrednictwa”. Płacisz za dział sprzedaży, za account managerów, za piękne biuro w centrum Warszawy. Czy to dodaje jakąś wartość do Twojego kodu? Nie. To tylko zwiększa koszt. 
 
-Pracując bezpośrednio z architektem (modelem Elite Frontend Development), 100% Twoich pieniędzy pracuje na Twój produkt. Płacisz za wiedzę i doświadczenie, które przekłada się na stabilność kodu. To najczystsza forma inwestycji. Brak pośredników to również brak szumu informacyjnego. Decyzje projektowe zapadają w minuty, a nie dni. W biznesie czas to pieniądz, więc skrócenie ścieżki decyzyjnej to Twoja bezpośrednia oszczędność.
+Pracując bezpośrednio z [niezależnym partnerem technologicznym](/doradztwo-techniczne-dla-firm) (modelem Elite Frontend Development), 100% Twoich pieniędzy pracuje na Twój produkt. Płacisz za wiedzę i doświadczenie, które przekłada się na stabilność kodu. To najczystsza forma inwestycji. Brak pośredników to również brak szumu informacyjnego. Decyzje projektowe zapadają w minuty, a nie dni. W biznesie czas to pieniądz, więc skrócenie ścieżki decyzyjnej to Twoja bezpośrednia oszczędność.
 
 ## Optymalizacja kosztów przez "Product-Led" podejście
 
@@ -90,8 +93,8 @@ Jeśli Twoim celem jest zarabianie, przestań pytać: „ile kosztuje aplikacja�
 Zapraszam Cię do przejścia przez mój proces diagnozy. Nie musisz być ekspertem IT, aby wiedzieć, czy technologia w Twojej firmie zarabia – wystarczy, że usiądziemy i przeanalizujemy, gdzie uciekają Twoje pieniądze.
 
 ---
-### 💡 Zbuduj aplikację, która realnie zwiększa zyski.
-Dowiedz się, jak technologia może stać się Twoją najsilniejszą dźwignią finansową. Odbierz darmowy plan działania.
+### 💡 Chcesz policzyć, ile godzin i zysków uwalnia dedykowany system w Twojej firmie?
+Zamiast zgadywać opłacalność, przeanalizujmy procesy w Twoim zespole i wyznaczmy realny zwrot z inwestycji (ROI) podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ZOBACZ, JAK ZBUDOWAĆ APLIKACJĘ, KTÓRA REALNIE ZWIĘKSZA ZYSKI](/aplikacje-internetowe-dla-firm)**
-*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*
+👉 **[ODBIERZ PAKIET STRATEGICZNY I OBLICZ REALNE ROI (0 ZŁ)](/aplikacje-internetowe-dla-firm)**
+*(30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Konkretna kalkulacja zysków)*

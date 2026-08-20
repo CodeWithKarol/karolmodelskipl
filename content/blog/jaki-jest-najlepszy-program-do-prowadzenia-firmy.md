@@ -50,7 +50,7 @@ Jeśli są źle dobrane, woda w rurach stoi.
 
 Dlatego w pracy z MŚP nie wdrażam „magicznych aplikacji”.
 
-Wdrażam architekturę API-first.
+Wdrażam [architekturę API-first](/doradztwo-techniczne-dla-firm).
 
 To podejście pozwala na łączenie różnych, wyspecjalizowanych narzędzi w jeden, spójny organizm.
 
@@ -70,7 +70,7 @@ Wdrożenie AI, które realnie zwiększa zyski, wymaga zrozumienia Twoich danych.
 
 Jeśli używasz ogólnego programu do faktur, jego „wbudowane AI” nie pomoże Ci w analizie Twojej konkretnej strategii sprzedaży.
 
-Pomoże Ci wtedy, gdy stworzysz własny, dedykowany moduł, który analizuje Twoje dane w sposób bezpieczny i unikalny.
+Pomoże Ci wtedy, gdy stworzysz własny, [dedykowany moduł](/aplikacje-internetowe-dla-firm), który analizuje Twoje dane w sposób bezpieczny i unikalny.
 
 To jest różnica między „gadżetem” a „przewagą konkurencyjną”.
 
@@ -104,7 +104,7 @@ Większość firm, z którymi współpracuję, wcale nie potrzebuje „nowego pr
 
 Potrzebuje po prostu, by to, co już mają, zaczęło ze sobą współpracować.
 
-W ramach mojego procesu „Bezpłatnej Mapy Drogowej Modernizacji IT”, podczas 30-minutowej rozmowy online, zidentyfikujemy, gdzie ucieka wydajność w Twoim biznesie.
+W ramach mojego procesu [„Bezpłatnej Mapy Drogowej Modernizacji IT”](/naprawa-i-modernizacja-aplikacji), podczas 30-minutowej rozmowy online, zidentyfikujemy, gdzie ucieka wydajność w Twoim biznesie.
 
 Często okazuje się, że wystarczy drobna zmiana w architekturze przepływu danych, by zaoszczędzić dziesiątki godzin miesięcznie.
 
@@ -140,9 +140,7 @@ Skalowanie biznesu na słabych fundamentach IT to proszenie się o katastrofę.
 
 Gdy zaczynasz zarabiać więcej, systemy muszą działać jeszcze szybciej i jeszcze stabilniej.
 
-Zbudowałem systemy dla Citibank, BNP Paribas i Silent Eight – wiem, co to znaczy wysoka skala obciążeń.
-
-Przenoszę tę wiedzę do sektora MŚP, bo wierzę, że każda firma zasługuje na to, by działać w oparciu o solidną, nowoczesną technologię.
+W bankowości globalnej (Citibank, BNP Paribas) nikt nie próbuje stawiać jednego monolitu do obsługi milionów klientów. Buduje się architekturę mikrousług i niezależnych modułów spiętych bezpiecznym API. Dokładnie tę samą elastyczność i odporność na awarie przenoszę do firm z sektora MŚP – Twoje narzędzia rosną razem z biznesem bez konieczności kosztownego przepisywania wszystkiego od nowa.
 
 Zmieńmy sposób, w jaki podchodzisz do IT.
 
@@ -189,8 +187,10 @@ Zróbmy pierwszy krok w stronę nowoczesności, która przekłada się na wyniki
 Twoja firma zasługuje na to, by działać w oparciu o najlepsze możliwe standardy.
 
 ---
-### 💡 Twoja firma potrzebuje narzędzi szytych na miarę.
-Pobierz plan budowy systemu, który idealnie dopasuje się do Twoich procesów biznesowych.
+### 💡 Zamiast szukać mitycznego „programu do wszystkiego”, połączmy Twoje narzędzia w jeden spójny system.
 
-👉 **[ZBUDUJ OPROGRAMOWANIE SZYTE NA MIARĘ TWOJEGO BIZNESU (PLAN ZA 0 ZŁ)](/aplikacje-internetowe-dla-firm)**
-*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*
+Przeanalizujmy przepływ danych w Twojej firmie podczas bezpłatnej rozmowy w 4 oczy. Wskażę Ci, gdzie wystarczy gotowa integracja API, a gdzie dedykowany moduł przyniesie najwyższy zwrot z inwestycji.
+
+👉 **[ODBIERZ PAKIET STRATEGICZNY I ZAPLANUJ ARCHITEKTURĘ IT (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+
+*(30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Osobista Mapa Drogowa IT)*

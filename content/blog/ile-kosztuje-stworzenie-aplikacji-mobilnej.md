@@ -1,12 +1,12 @@
 ---
 title: "Ile kosztuje stworzenie aplikacji mobilnej? Prawda o „taniej” budowie i realnym ROI"
-excerpt: "Analiza kosztów i zwrotu z inwestycji w aplikacje mobilne dla firm. Jak planować budżet, by nie przepłacić i zyskać przewagę?"
+excerpt: "Poznaj realne koszty aplikacji mobilnej na iOS i Androida: ukryte prowizje App Store i Google Play, pułapka dwóch osobnych wycen i moment, w którym aplikacja na telefon naprawdę zaczyna zarabiać."
 silo: "Dedykowane Systemy dla Firm (Koszty i Zyski)"
 readingTime: "10 min"
 date: "2026-06-18"
 ---
 
-Wielu właścicieli firm z sektora MŚP przychodzi do mnie z jednym, konkretnym pytaniem: „Karol, ile muszę wydać na aplikację mobilną, żeby była nowoczesna i zarabiała?”.
+Wielu właścicieli firm z sektora MŚP przychodzi do mnie z jednym, konkretnym pytaniem: „Karol, ile muszę wydać na aplikację na telefon, żeby moi klienci i pracownicy mogli z niej korzystać na iOS i Androidzie?”.
 
 To pytanie jest jak pytanie: „Ile kosztuje samochód?”.
 
@@ -14,7 +14,7 @@ Cena zależy od tego, czy potrzebujesz auta do jazdy po bułki do sklepu, czy ci
 
 Większość agencji zaczyna rozmowę od wyceny, nie pytając o Twój cel biznesowy.
 
-Ja zaczynam od pytania: „Po co Ci ta aplikacja?”.
+Ja zaczynam od pytania: „Po co Twoim klientom aplikacja na smartfon?”.
 
 W świecie IT, w którym budowałem systemy dla Citibank, BNP Paribas czy Silent Eight, nauczyłem się jednej kluczowej lekcji: oprogramowanie to nie wydatek.
 
@@ -42,23 +42,39 @@ Dług ten spłacasz nie tylko pieniędzmi, ale przede wszystkim czasem.
 
 Każdy tydzień zwłoki, każda awaria w szczycie sprzedaży, każdy błąd, który odstrasza klientów – to są pieniądze, których nie zarabiasz.
 
-## Budowa aplikacji: Web vs. Mobile. Gdzie jest haczyk?
+## Ukryte koszty App Store i Google Play, o których nikt nie mówi na wstępie
 
-Częstym błędem jest myślenie, że „aplikacja mobilna” to coś, co buduje się zupełnie oddzielnie od strony WWW.
+„Koszt aplikacji mobilnej” to nie tylko faktura od dewelopera. To także opłaty, które pojawiają się co roku – i o których żadna agencja nie wspomina, dopóki nie podpiszesz umowy.
 
-Software house’y kochają ten mit, bo mogą sprzedać Ci dwa osobne kontrakty.
+Konto deweloperskie Apple kosztuje 99 USD rocznie. Google Play pobiera jednorazową opłatę 25 USD, ale obie platformy biorą od 15% do 30% prowizji od każdej płatności cyfrowej, którą uruchomisz w aplikacji.
 
-Jeden dla zespołu programistów webowych (np. Angular/React), drugi dla zespołu mobilnego (np. Flutter/Swift/Kotlin).
+Jeśli Twoja aplikacja sprzedaje abonament, subskrypcję albo usługę – część każdej transakcji ląduje w kieszeni Apple i Google.
 
-Podwójny zespół, podwójne koszty, podwójny czas budowy, podwójne problemy przy synchronizacji logiki.
+Do tego dochodzi rygor, którego nie ma w aplikacjach webowych. Sklepy wymagają czytelnej polityki prywatności, zgód na dostęp do danych użytkowników i aktualizacji pod nowe wersje systemów iOS i Android.
+
+Każda duża zmiana systemu to obowiązkowy przegląd Twojej aplikacji, testy i publikacja od nowa.
+
+Dlatego TCO aplikacji mobilnej zawsze liczy się inaczej niż strony WWW: budowa to tylko pierwsza rata.
+
+## Budowa aplikacji mobilnej: dwa systemy, dwie wyceny
+
+To najczęstsza pułapka, na którą nabierają się właściciele firm.
+
+Agencje wyceniają aplikację mobilną osobno na iOS i osobno na Androida.
+
+Wersję na iPhone’a pisze się w języku Swift, a wersję na urządzenia z Androidem – w Kotlinie.
+
+Dwa języki, dwa zespoły, dwa terminarze.
+
+Efekt? Budżet, który mógł wystarczyć na jedną, porządną aplikację, nagle staje się za mały na dwie – a Ty płacisz podwójnie za każdą zmianę, bo logika biznesowa jest zdublowana w dwóch projektach.
 
 W mojej pracy jako Niezależny Partner Technologiczny proponuję podejście inne.
 
-Dzięki zaawansowanej architekturze Nx Monorepo buduję jeden „mózg” aplikacji, który zasila zarówno wersję webową, jak i mobilną.
+Dzięki zaawansowanej architekturze Nx Monorepo i technologii React Native buduję jeden „mózg” aplikacji, który zasila jednocześnie wersję na iOS, Androida oraz web.
 
-Dla Twojej firmy to nawet 40% oszczędności w skali całego projektu.
+Dla Twojej firmy to nawet [40% oszczędności dzięki wspólnej architekturze Nx Monorepo](/doradztwo-techniczne-dla-firm) w skali całego projektu.
 
-Otrzymujesz dwa rozwiązania w cenie jednego, przy zachowaniu pełnej spójności danych.
+Otrzymujesz jedną aplikację działającą na każdym ekranie, przy zachowaniu pełnej spójności danych i jednego miejsca na rozwój.
 
 ## Architektura klasy Enterprise: Dlaczego warto płacić za seniora?
 
@@ -74,7 +90,7 @@ Stosuję potoki testowe (Jest + Cypress), które osiągają 95% pokrycia kodu.
 
 To moje ubezpieczenie Twojego biznesu.
 
-Daje Ci gwarancję, że każda aktualizacja jest stabilna i nie zniszczy tego, co już zbudowaliśmy.
+Daje Ci gwarancję, że każda aktualizacja systemu iOS lub Androida nie zniszczy tego, co już zbudowaliśmy.
 
 Czy agencja juniorów Ci to zagwarantuje?
 
@@ -82,7 +98,7 @@ Rzadko.
 
 ## MVP: Szybka walidacja zamiast wielomiesięcznej budowy
 
-Zamiast budować „wszystko” przez 6 miesięcy, proponuję strategię Hyper-Lean MVP.
+Zamiast budować „wszystko” przez 6 miesięcy, proponuję strategię [Hyper-Lean MVP](/projektowanie-mvp).
 
 Budujemy tylko te funkcje, które są niezbędne do weryfikacji Twojego biznesu.
 
@@ -112,11 +128,27 @@ AI nie pisze za mnie architektury – AI pisze „szkielet”, nad którym ja sp
 
 Dzięki temu Twoja aplikacja jest nowocześniejsza, szybsza i tańsza w rozwoju.
 
+## Kiedy aplikacja mobilna naprawdę zarabia?
+
+Aplikacja na smartfon to nie wizytówka firmy w sklepie z aplikacjami. To kanał, który generuje powtarzalne przychody – pod warunkiem że wie, kiedy i do kogo się odezwać.
+
+Weźmy trzy scenariusze, w których aplikacja mobilna zwraca się najszybciej.
+
+**Powiadomienia PUSH o porzuconych koszykach.** Klient dodaje produkty, rozprasza się i wychodzi. Aplikacja po godzinie przypomina mu o koszyku – a Ty odzyskujesz transakcję, której bez PUSH nie byłoby nigdy.
+
+**Praca offline.** Kierowcy, handlowcy i magazynierzy nie zawsze mają zasięg. Aplikacja, która działa bez internetu i synchronizuje dane po powrocie do sieci, eliminuje przestoje i błędy „przepisane z kartki”.
+
+**Stała obecność na ekranie telefonu klienta.** Ikona Twojej aplikacji jest widoczna każdego dnia – w przeciwieństwie do zakładki w przeglądarce. Klient, który ma Cię na ekranie głównym, wybiera Cię szybciej niż konkurencję, którą musi wyszukiwać.
+
+To właśnie takie [dedykowane systemy generujące zysk](/aplikacje-internetowe-dla-firm) buduję z myślą o powtarzalnym ROI – a nie o samym fakcie „bycia w sklepie”.
+
 ## Bezpieczeństwo bankowe – Twoja przewaga konkurencyjna
 
 W sektorze MŚP bezpieczeństwo jest często ignorowane do momentu pierwszego wycieku danych.
 
-Dla Twoich klientów to sygnał: „oni nie szanują moich informacji”.
+Aplikacja mobilna zbiera dane z Twoich serwerów na tysiącach telefonów klientów.
+
+Każde urządzenie to potencjalne drzwi do Twojego systemu.
 
 Przenosząc standardy z sektora bankowego (Citibank, BNP Paribas) do Twojego biznesu, zmieniam bezpieczeństwo z „koniecznego zła” w Twoją przewagę konkurencyjną.
 
@@ -132,6 +164,8 @@ Tanie aplikacje mają bardzo niski koszt budowy, ale astronomiczny koszt posiada
 
 Musisz płacić za poprawki, za serwery, które padają pod obciążeniem, za stracony czas.
 
+Do tego dochodzi ukryta opłata za każdą aktualizację systemu iOS lub Androida, której „tania” aplikacja nie przetrwa bez gruntownego remontu.
+
 Moja oferta to optymalizacja TCO (Total Cost of Ownership).
 
 Budujemy raz, porządnie, w oparciu o czysty kod, który jest łatwy w rozbudowie.
@@ -140,11 +174,11 @@ Płacisz za inżynierię, która pracuje dla Ciebie przez lata.
 
 To jest podejście, które wybierają właściciele firm myślący o skali, a nie o przetrwaniu kolejnego miesiąca.
 
-## Podsumowanie: Czy to się opłaca?
+## Podsumowanie: Czy aplikacja mobilna się opłaca?
 
-Tworzenie aplikacji mobilnej to inwestycja w skalowalność.
+Aplikacja mobilna to inwestycja w skalowalność – pod warunkiem że budujesz jeden mózg systemu zamiast przepłacać za dwa osobne zespoły agencji.
 
-Jeśli Twój biznes jest gotowy na przejście na wyższy poziom, aplikacja jest niezbędnym narzędziem.
+Najtańsza aplikacja to ta, która działa na jednej architekturze, zasila iOS i Androida oraz wie, jak zamieniać powiadomienia w przychody.
 
 Ale zrób to z głową.
 
