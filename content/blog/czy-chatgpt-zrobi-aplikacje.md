@@ -95,7 +95,7 @@ W moim procesie AI:
 2. Generuje powtarzalny kod (boilerplate), który musiałbym pisać ręcznie.
 3. Pomaga mi analizować ogromne ilości danych, by szybciej diagnozować wąskie gardła.
 
-Dzięki temu Ty zyskujesz szybciej dowożone MVP, a ja mam pewność, że architektura jest bezpieczna i zgodna ze standardami Enterprise.
+Dzięki temu Ty zyskujesz [szybciej dowożone MVP](/projektowanie-mvp), a ja mam pewność, że architektura jest bezpieczna i zgodna ze [standardami Enterprise](/doradztwo-techniczne-dla-firm).
 
 To jest synergia, której szukają najlepsi partnerzy technologiczni.
 
@@ -131,7 +131,7 @@ Musi mieć architekturę, która pozwoli jej działać w sposób przewidywalny.
 
 Budowa aplikacji z AI to szansa na ogromny skok wydajnościowy dla Twojego biznesu.
 
-To może być automatyzacja sprzedaży, inteligentny system wsparcia klienta czy personalizacja oferty, która zamieni zwykłego klienta w wiernego fana.
+To może być [automatyzacja sprzedaży](/aplikacje-internetowe-dla-firm), inteligentny system wsparcia klienta czy personalizacja oferty, która zamieni zwykłego klienta w wiernego fana.
 
 Wszystkie te rzeczy są dziś dostępne dla MŚP.
 
