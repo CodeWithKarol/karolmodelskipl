@@ -8,6 +8,7 @@ import { StorySection } from "@/components/story-section"
 import { ContrastSection } from "@/components/contrast-section"
 import { OfferSection } from "@/components/offer-section"
 import { FaqSection } from "@/components/faq-section"
+import { Reveal } from "@/components/reveal"
 import {
   ShieldCheck,
   Target,
@@ -203,7 +204,7 @@ export default function ModernizacjaOprogramowaniaPage() {
       <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-20 text-slate-300 md:py-32">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
         <div className="relative z-10 container mx-auto max-w-5xl px-4">
-          <div className="mb-12 sm:mb-16 text-center">
+          <Reveal as="header" className="mb-12 sm:mb-16 text-center">
             <div className="mb-4">
               <SectionBadge variant="emerald">
               <ShieldCheck className="h-4 w-4" />
@@ -213,27 +214,28 @@ export default function ModernizacjaOprogramowaniaPage() {
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
               {safety.title}
             </h2>
-          </div>
+          </Reveal>
 
-          <figure className="mx-auto mb-8 sm:mb-12 max-w-3xl text-center">
+          <Reveal as="figure" className="mx-auto mb-8 sm:mb-12 max-w-3xl text-center">
             <blockquote className="text-lg sm:text-2xl md:text-[28px] font-bold text-white leading-snug sm:leading-snug">
               {safety.fear}
             </blockquote>
-          </figure>
+          </Reveal>
 
-          <p className="mb-10 sm:mb-16 text-center text-sm sm:text-lg font-semibold text-emerald-400 tracking-wide">
+          <Reveal className="mb-10 sm:mb-16 text-center text-sm sm:text-lg font-semibold text-emerald-400 tracking-wide">
             {safety.lead}
-          </p>
+          </Reveal>
 
           <div className="mx-auto grid max-w-4xl gap-8 sm:gap-12 md:grid-cols-2 md:gap-0">
             {safety.steps.map((item, i) => (
-              <div
+              <Reveal
                 key={i}
+                delay={i * 0.1}
                 className={`flex flex-col items-start gap-3 sm:gap-4 ${
                   i === 1 ? "md:border-l md:border-slate-800 md:pl-10 lg:pl-14" : "md:pr-10 lg:pr-14"
                 }`}
               >
-                <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400">
+                <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full ring-1 ring-emerald-500/20 bg-emerald-500/10 text-emerald-400">
                   <ShieldCheck className="h-5 w-5 sm:h-6 sm:w-6" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-white leading-snug">
@@ -242,11 +244,11 @@ export default function ModernizacjaOprogramowaniaPage() {
                 <p className="text-slate-400 leading-relaxed text-sm sm:text-base">
                   {item.desc}
                 </p>
-              </div>
+              </Reveal>
             ))}
           </div>
 
-          <div className="mt-12 sm:mt-16 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center sm:gap-8 sm:divide-x sm:divide-slate-800">
+          <Reveal className="mt-12 sm:mt-16 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center sm:gap-8 sm:divide-x sm:divide-slate-800">
             {safety.guarantees.map((item, i) => (
               <div key={i} className="flex items-start gap-2.5 sm:items-center sm:px-2">
                 <CheckCircle2 className="mt-0.5 h-4 w-4 sm:mt-0 sm:h-5 sm:w-5 shrink-0 text-emerald-400" />
@@ -255,7 +257,7 @@ export default function ModernizacjaOprogramowaniaPage() {
                 </p>
               </div>
             ))}
-          </div>
+          </Reveal>
         </div>
       </section>
 
