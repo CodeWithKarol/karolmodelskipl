@@ -112,7 +112,7 @@ export function SiteHeader() {
             {/* Desktop CTA Button */}
             <Button
               asChild
-              className="hidden h-8 shrink-0 rounded-full border border-blue-500/30 bg-blue-600 px-4 text-[12px] font-semibold text-white shadow-[0_0_20px_-5px_rgba(37,99,235,0.4)] transition-all hover:bg-blue-500 min-[400px]:inline-flex sm:h-9 sm:px-5 sm:text-[13px]"
+              className="hidden h-8 shrink-0 rounded-full bg-blue-600 px-4 text-[12px] font-semibold text-white shadow-[0_0_20px_-5px_rgba(37,99,235,0.5)] transition-all hover:bg-blue-500 min-[400px]:inline-flex sm:h-9 sm:px-5 sm:text-[13px]"
             >
               <a href={header.cta.href} target="_blank" rel="noopener noreferrer">{header.cta.title}</a>
             </Button>
@@ -120,7 +120,7 @@ export function SiteHeader() {
             {/* Mobile Hamburger Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-800 bg-slate-900 text-slate-300 hover:bg-slate-800 hover:text-white md:hidden transition-colors"
+              className="flex h-9 w-9 items-center justify-center rounded-full text-slate-300 hover:bg-slate-800/50 hover:text-white md:hidden transition-colors"
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
@@ -142,7 +142,7 @@ export function SiteHeader() {
               <ChevronDown className={`h-4 w-4 text-slate-500 transition-transform duration-200 ${isOfferOpen ? "rotate-180" : ""}`} />
             </button>
             {isOfferOpen && (
-              <div className="flex flex-col pl-4 border-l border-slate-800 mb-2">
+              <div className="flex flex-col pl-4 border-l border-blue-500/20 mb-2">
                 {header.menu.oferta.items.map((item) => (
                   <Link
                     key={item.href}
@@ -164,7 +164,7 @@ export function SiteHeader() {
               <ChevronDown className={`h-4 w-4 text-slate-500 transition-transform duration-200 ${isBlogOpen ? "rotate-180" : ""}`} />
             </button>
             {isBlogOpen && (
-              <div className="flex flex-col pl-4 border-l border-slate-800 mb-2">
+              <div className="flex flex-col pl-4 border-l border-blue-500/20 mb-2">
                 {header.menu.bazaWiedzy.items.map((item) => (
                   <Link
                     key={item.href}

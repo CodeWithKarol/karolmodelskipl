@@ -2,20 +2,16 @@ import { Metadata } from "next"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { siteConfig } from "@/lib/site-config"
 import { Button } from "@/components/ui/button"
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
 import { CtaSection } from "@/components/cta-section"
 import { SectionBadge } from "@/components/section-badge"
+import { StorySection } from "@/components/story-section"
+import { ContrastSection } from "@/components/contrast-section"
+import { OfferSection } from "@/components/offer-section"
+import { FaqSection } from "@/components/faq-section"
 import {
   ShieldCheck,
   Target,
   Banknote,
-  HelpCircle,
-  Flame,
   Zap,
   TrendingUp,
   Gem,
@@ -124,23 +120,23 @@ export default function ModernizacjaOprogramowaniaPage() {
         <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
         <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 opacity-50 mix-blend-screen blur-[120px]"></div>
 
-        <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-center gap-6 lg:gap-20">
+        <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-between gap-10 lg:gap-8">
           
           <div className="flex-1 w-full max-w-2xl text-left pt-4 sm:pt-8">
-            <div className="mb-4 sm:mb-6">
+            <div className="mb-4 sm:mb-6 animate-[fade-up_0.7s_ease-out_both]">
               <SectionBadge><Gem className="h-3.5 w-3.5 shrink-0" />{hero.badge}</SectionBadge>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1]">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1] animate-[fade-up_0.7s_ease-out_0.1s_both]">
               {hero.title}
               {hero.titleHighlight && (
                 <span className="block text-blue-500 mt-1 sm:mt-2">{hero.titleHighlight}</span>
               )}
             </h1>
-            <p className="text-base sm:text-lg text-slate-400 mb-5 sm:mb-8 leading-relaxed max-w-xl">
+            <p className="text-base sm:text-lg text-slate-400 mb-5 sm:mb-8 leading-relaxed max-w-xl animate-[fade-up_0.7s_ease-out_0.2s_both]">
               {hero.description}
             </p>
 
-            <div className="mb-5 sm:mb-6 lg:hidden">
+            <div className="mb-5 sm:mb-6 lg:hidden animate-[fade-up_0.7s_ease-out_0.25s_both]">
               <a href={siteConfig.calendlyLink} target="_blank" rel="noopener noreferrer" className="block w-full">
                 <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 text-sm font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-tight">
                   {hero.pilot_program.cta}
@@ -149,7 +145,7 @@ export default function ModernizacjaOprogramowaniaPage() {
               <p className="text-[11px] text-slate-400 text-center mt-2 font-medium">{hero.cta_sub}</p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 animate-[fade-up_0.7s_ease-out_0.3s_both]">
               {hero.indicators.map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-slate-300">
                   <span className="text-blue-400 shrink-0 text-base">
@@ -161,8 +157,11 @@ export default function ModernizacjaOprogramowaniaPage() {
             </div>
           </div>
 
-          <div className="hidden w-full max-w-md lg:max-w-sm flex-shrink-0 lg:block lg:mt-8">
-            <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-5 shadow-2xl backdrop-blur-xl">
+          {/* Promo Card — asymmetric composition (desktop only) */}
+          <div className="relative hidden w-full max-w-md lg:max-w-sm flex-shrink-0 lg:block lg:mt-14 lg:animate-[fade-in_0.9s_ease-out_0.15s_both]">
+            <div className="absolute -top-8 -left-10 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl pointer-events-none"></div>
+            <div className="absolute top-1/3 -right-8 h-24 w-24 rounded-full bg-emerald-400/10 blur-2xl pointer-events-none"></div>
+            <div className="relative rotate-1 rounded-[2rem] bg-slate-900/70 backdrop-blur-xl ring-1 ring-white/5 p-6 shadow-[0_25px_80px_-20px_rgba(37,99,235,0.35)]">
               <h2 className="text-lg font-bold text-white mb-3 leading-snug">{hero.pilot_program.title}</h2>
               <p className="text-sm text-slate-400 mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: hero.pilot_program.description }} />
               
@@ -192,39 +191,13 @@ export default function ModernizacjaOprogramowaniaPage() {
       </section>
 
       {/* Sekcja 2: STORY (Agitacja bólu) */}
-      <section id="problem" className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-20 text-slate-300 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
-        <div className="relative z-10 container mx-auto px-4 max-w-5xl">
-          <div className="mb-16 text-center">
-            <div className="mb-4">
-              <SectionBadge variant="red">
-              <Flame className="h-4 w-4" />
-              <span>Diagnoza problemu</span>
-            </SectionBadge>
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
-              {story.title}
-            </h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg mb-4" dangerouslySetInnerHTML={{ __html: story.intro }} />
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg italic text-slate-200">
-              {story.context}
-            </p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2">
-            {story.points.map((point, idx) => (
-              <div key={idx} className="group bg-slate-900/40 border border-slate-800 p-6 sm:p-8 rounded-2xl hover:border-slate-700 transition-all duration-300">
-                <div className="flex flex-col sm:flex-row items-start gap-3 sm:gap-6">
-                  <div className="text-red-400 font-black text-2xl shrink-0" aria-hidden="true">0{idx + 1}</div>
-                  <div>
-                    <h3 className="text-base sm:text-lg font-bold text-white mb-2" dangerouslySetInnerHTML={{ __html: point.title.replace(/^Objaw\s+\d+:\s*/, "") }} />
-                    <p className="text-slate-400 leading-relaxed text-xs sm:text-sm" dangerouslySetInnerHTML={{ __html: point.desc }} />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <StorySection
+        title={story.title}
+        intro={story.intro}
+        context={story.context}
+        points={story.points}
+        stripPointPrefix
+      />
 
       {/* Sekcja 3: INŻYNIERYJNA GWARANCJA BEZPIECZEŃSTWA */}
       <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-20 text-slate-300 md:py-32">
@@ -287,112 +260,37 @@ export default function ModernizacjaOprogramowaniaPage() {
       </section>
 
       {/* Sekcja 4: REWOLUCYJNY MECHANIZM (Proces pracy krok po kroku) */}
-      <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-20 text-slate-300 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
-        <div className="relative z-10 container mx-auto max-w-5xl px-4">
-          <div className="mb-16 text-center">
-            <div className="mb-4">
-              <SectionBadge>
-              <ShieldCheck className="h-4 w-4" />
-              <span>Krok po kroku</span>
-            </SectionBadge>
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
-              {mechanism.title}
-            </h2>
-            {mechanism.subtitle && <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg">{mechanism.subtitle}</p>}
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-6">
-            {mechanism.cards.map((card, i) => (
-              <div
-                key={i}
-                className={`group bg-slate-900/40 border border-slate-800 p-8 rounded-3xl hover:border-slate-700 transition-all flex flex-col ${
-                  i < 3 
-                    ? "lg:col-span-2 md:col-span-1" 
-                    : i === 3 
-                    ? "lg:col-span-3 md:col-span-1" 
-                    : "lg:col-span-3 md:col-span-2"
-                }`}
-              >
-                <span className="hidden">0{i + 1}</span>
-                <div className="mb-6 flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10 text-blue-400 font-bold text-lg shadow-inner z-10">
-                  {i + 1}
-                </div>
-                <h3 className="mb-2 text-lg font-bold text-white leading-tight group-hover:text-blue-400 transition-colors z-10">
-                  {card.title.replace(/^\d+\.\s+/, "")}
-                </h3>
-                <p className="text-slate-400 leading-relaxed text-sm z-10">
-                  {card.content}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <OfferSection
+        badge="Krok po kroku"
+        offer={{
+          title: mechanism.title,
+          subheading: mechanism.subtitle,
+          paths: mechanism.cards.map((card, i) => ({
+            title: `Krok ${i + 1}`,
+            situation: card.title.replace(/^\d+\.\s+/, ""),
+            desc: card.content,
+          })),
+        }}
+      />
 
       {/* Sekcja 4: VISUAL CONTRAST MATRIX */}
-      <section className="relative border-t border-slate-900/50 bg-slate-950 py-20 text-slate-300 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
-        <div className="relative z-10 container mx-auto max-w-5xl px-4">
-          <div className="mb-16 text-center">
-            <div className="mb-4">
-              <SectionBadge>
-              <ShieldCheck className="h-4 w-4" />
-              <span>Porównanie metod</span>
-            </SectionBadge>
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
-              {contrast.title}
-            </h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg">{contrast.subtitle}</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {contrast.comparisons.map((item, i) => (
-              <div key={i} className="contents">
-                <div className="bg-slate-900/40 border border-slate-800 p-6 sm:p-8 rounded-2xl flex flex-col hover:border-slate-700 transition-all">
-                  <div className="text-red-400 mb-3 font-bold text-[10px] uppercase tracking-widest">{contrast.red_ocean_title}</div>
-                  <h3 className="text-base sm:text-lg font-bold text-slate-300 mb-3 leading-snug">{item.red.title}</h3>
-                  <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">{item.red.desc}</p>
-                </div>
-                <div className="bg-blue-600/10 border border-blue-500/30 p-6 sm:p-8 rounded-2xl flex flex-col hover:border-blue-500/50 transition-all">
-                  <div className="text-blue-400 mb-3 font-bold text-[10px] uppercase tracking-widest">{contrast.blue_ocean_title}</div>
-                  <h3 className="text-base sm:text-lg font-bold text-white mb-3 leading-snug">{item.blue.title}</h3>
-                  <p className="text-slate-300 leading-relaxed text-xs sm:text-sm">{item.blue.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ContrastSection contrast={contrast} />
 
       {/* Sekcja 5: Gwarancje */}
       <GuaranteeSection guarantee={guarantee} />
 
       {/* Sekcja 6: FAQ */}
-      <section className="container mx-auto max-w-3xl px-4 py-16 sm:py-24">
-        <div className="mb-12 text-center">
-          <div className="mb-6">
-            <SectionBadge>
-            <HelpCircle className="h-4 w-4" />
-            <span>FAQ</span>
-          </SectionBadge>
-          </div>
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-            Najczęściej zadawane pytania
-          </h2>
-          <p className="text-slate-400 font-light leading-relaxed text-base sm:text-lg">
-            {faq.subtitle}
-          </p>
-        </div>
-        <Accordion type="single" collapsible className="w-full space-y-4">
-          {faq.items.map((item, i) => (
-            <AccordionItem key={i} value={`item-${i}`} className="rounded-2xl border border-slate-800/60 bg-slate-900/40 px-5 sm:px-6 backdrop-blur-sm transition-all hover:border-slate-700 data-[state=open]:border-blue-500/30">
-              <AccordionTrigger className="py-4 sm:py-6 text-left text-sm sm:text-base font-bold text-slate-200 hover:text-white hover:no-underline">{item.q}</AccordionTrigger>
-              <AccordionContent className="pb-5 sm:pb-6 text-xs sm:text-sm leading-relaxed text-slate-400">{item.a}</AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </section>
+      <FaqSection
+        faq={{
+          title: "Najczęściej zadawane pytania",
+          subtitle: faq.subtitle,
+          items: faq.items.map((item) => ({
+            question: item.q,
+            answer: item.a,
+          })),
+        }}
+        className="py-16 sm:py-24"
+      />
 
 
       <CtaSection content={offer} />

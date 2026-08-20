@@ -4,34 +4,16 @@ import { siteConfig } from "@/lib/site-config"
 import { Button } from "@/components/ui/button"
 import { CtaSection } from "@/components/cta-section"
 import { SectionBadge } from "@/components/section-badge"
+import { StorySection } from "@/components/story-section"
+import { ContrastSection } from "@/components/contrast-section"
+import { OfferSection } from "@/components/offer-section"
+import { FaqSection } from "@/components/faq-section"
 import { content } from "@/lib/content"
 import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
-import {
-  CheckCircle2,
   Clock,
   Crosshair,
   LineChart,
-  XCircle,
-  Flame,
   ShieldCheck,
-  Search,
-  ListChecks,
-  Server,
-  RefreshCw,
-  HelpCircle,
   Rocket,
   Handshake,
   Gem,
@@ -132,23 +114,23 @@ export default function ProjektowanieMvpPage() {
         <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
         <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 opacity-50 mix-blend-screen blur-[120px]"></div>
 
-        <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-center gap-6 lg:gap-20">
+        <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-between gap-10 lg:gap-8">
           
           <div className="flex-1 w-full max-w-2xl text-left pt-4 sm:pt-8">
-            <div className="mb-4 sm:mb-6">
+            <div className="mb-4 sm:mb-6 animate-[fade-up_0.7s_ease-out_both]">
               <SectionBadge><Gem className="h-3.5 w-3.5 shrink-0" />{mvp.hero.badge}</SectionBadge>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1]">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1] animate-[fade-up_0.7s_ease-out_0.1s_both]">
               {mvp.hero.title}
               {mvp.hero.title_highlight && (
                 <span className="block text-blue-500 mt-1 sm:mt-2">{mvp.hero.title_highlight}</span>
               )}
             </h1>
-            <p className="text-base sm:text-lg text-slate-400 mb-5 sm:mb-8 leading-relaxed max-w-xl">
+            <p className="text-base sm:text-lg text-slate-400 mb-5 sm:mb-8 leading-relaxed max-w-xl animate-[fade-up_0.7s_ease-out_0.2s_both]">
               {mvp.hero.subtitle}
             </p>
 
-            <div className="mb-5 sm:mb-6 lg:hidden">
+            <div className="mb-5 sm:mb-6 lg:hidden animate-[fade-up_0.7s_ease-out_0.25s_both]">
               <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
                 <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 text-sm font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-tight">
                   {mvp.hero.pilot_program.cta}
@@ -157,7 +139,7 @@ export default function ProjektowanieMvpPage() {
               <p className="text-[11px] text-slate-400 text-center mt-2 font-medium">{mvp.hero.cta_sub}</p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 animate-[fade-up_0.7s_ease-out_0.3s_both]">
               {mvp.hero.indicators.map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-slate-300">
                   <span className="text-blue-400 shrink-0 text-base">
@@ -169,8 +151,11 @@ export default function ProjektowanieMvpPage() {
             </div>
           </div>
 
-          <div className="hidden w-full max-w-md lg:max-w-sm flex-shrink-0 lg:block lg:mt-8">
-            <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-5 shadow-2xl backdrop-blur-xl">
+          {/* Promo Card — asymmetric composition (desktop only) */}
+          <div className="relative hidden w-full max-w-md lg:max-w-sm flex-shrink-0 lg:block lg:mt-14 lg:animate-[fade-in_0.9s_ease-out_0.15s_both]">
+            <div className="absolute -top-8 -left-10 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl pointer-events-none"></div>
+            <div className="absolute top-1/3 -right-8 h-24 w-24 rounded-full bg-emerald-400/10 blur-2xl pointer-events-none"></div>
+            <div className="relative rotate-1 rounded-[2rem] bg-slate-900/70 backdrop-blur-xl ring-1 ring-white/5 p-6 shadow-[0_25px_80px_-20px_rgba(37,99,235,0.35)]">
               <h2 className="text-lg font-bold text-white mb-3 leading-snug">{mvp.hero.pilot_program.title}</h2>
               <p className="text-sm text-slate-400 mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: mvp.hero.pilot_program.description }} />
               
@@ -200,180 +185,39 @@ export default function ProjektowanieMvpPage() {
       </section>
 
       {/* Sekcja 2: THE "AGENCY TRAP" (Agitacja bólu) */}
-      <section id="problem" className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-12 sm:py-20 text-slate-300 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
-        <div className="relative z-10 container mx-auto px-4 max-w-5xl">
-          <div className="mb-8 sm:mb-16 text-center">
-            <div className="mb-3 sm:mb-4">
-              <SectionBadge variant="red">
-              <Flame className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-              <span>Diagnoza problemu</span>
-            </SectionBadge>
-            </div>
-            <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
-              {mvp.trap.title}
-            </h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-xs sm:text-base md:text-lg mb-2.5 sm:mb-4">
-              {mvp.trap.text1}
-            </p>
-            <p className="max-w-2xl mx-auto text-slate-300 font-medium leading-relaxed text-xs sm:text-base md:text-lg">
-              {mvp.trap.text2}
-            </p>
-          </div>
-          <div className="grid gap-3 sm:gap-6 md:grid-cols-2">
-            {mvp.trap.negative_points.map((point, idx) => (
-              <div key={idx} className="group bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col">
-                <div className="flex items-start gap-3.5 sm:gap-6">
-                  <div className="text-red-400 font-black text-xl sm:text-2xl shrink-0 leading-none" aria-hidden="true">0{idx + 1}</div>
-                  <div>
-                    <h3 className="text-sm sm:text-lg font-bold text-white mb-1.5 sm:mb-2 leading-snug">{point.title}</h3>
-                    <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">{point.desc}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <StorySection
+        title={mvp.trap.title}
+        intro={mvp.trap.text1}
+        context={mvp.trap.text2}
+        points={mvp.trap.negative_points}
+        className="py-12 sm:py-20"
+      />
 
 
 
       {/* Sekcja 3: VISUAL CONTRAST MATRIX (Nowa Okazja – Podejście Szybkiej Wersji Startowej) */}
-      <section className="relative border-t border-slate-900/50 bg-slate-950 py-12 sm:py-20 text-slate-300 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
-
-        <div className="relative z-10 container mx-auto px-4 max-w-5xl">
-          <div className="mb-8 sm:mb-16 text-center">
-            <div className="mb-3 sm:mb-4">
-              <SectionBadge>
-              <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-              <span>Nowa okazja</span>
-            </SectionBadge>
-            </div>
-            <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
-              {mvp.contrast.title}
-            </h2>
-            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-xs sm:text-base md:text-lg">
-              {mvp.contrast.subtitle}
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6">
-            {mvp.contrast.comparisons.map((item, i) => (
-              <div key={i} className="grid grid-cols-1 sm:grid-cols-2 md:contents gap-3 sm:gap-0">
-                <div className="bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl flex flex-col hover:border-slate-700 transition-all">
-                  <div className="text-red-400 mb-1.5 sm:mb-3 font-bold text-[9px] sm:text-[10px] uppercase tracking-widest">{mvp.contrast.red_ocean_title}</div>
-                  <h3 className="text-sm sm:text-lg font-bold text-slate-300 mb-1 sm:mb-3 leading-snug">{item.red.title}</h3>
-                  <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">{item.red.desc}</p>
-                </div>
-                <div className="bg-blue-600/10 border border-blue-500/30 p-4 sm:p-8 rounded-2xl flex flex-col hover:border-blue-500/50 transition-all">
-                  <div className="text-blue-400 mb-1.5 sm:mb-3 font-bold text-[9px] sm:text-[10px] uppercase tracking-widest">{mvp.contrast.blue_ocean_title}</div>
-                  <h3 className="text-sm sm:text-lg font-bold text-white mb-1 sm:mb-3 leading-snug">{item.blue.title}</h3>
-                  <p className="text-slate-300 leading-relaxed text-[11px] sm:text-sm">{item.blue.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ContrastSection contrast={mvp.contrast} className="py-12 sm:py-20" />
 
       {/* Sekcja 4: MECHANISM / PROCESS (Jak krok po kroku uruchamiamy Twoją aplikację w 30 dni?) */}
-      <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-12 sm:py-20 text-slate-300 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
-        <div className="relative z-10 container mx-auto max-w-5xl px-4">
-          <div className="mb-8 sm:mb-16 text-center">
-            <div className="mb-3 sm:mb-4">
-              <SectionBadge>
-              <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-              <span>Krok po kroku</span>
-            </SectionBadge>
-            </div>
-            <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
-              {mvp.mechanism.title}
-            </h2>
-            {mvp.mechanism.subtitle && (
-              <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-xs sm:text-base md:text-lg">
-                {mvp.mechanism.subtitle}
-              </p>
-            )}
-          </div>
-          <div className="grid gap-3 sm:gap-6 md:grid-cols-2 lg:grid-cols-6">
-            {mvp.mechanism.cards.map((card, i) => {
-              const icons = [Search, ListChecks, Server, RefreshCw, CheckCircle2];
-              const Icon = icons[i % icons.length];
-              const spanClass =
-                mvp.mechanism.cards.length === 3
-                  ? i === 2
-                    ? "md:col-span-2 lg:col-span-2 max-w-xl mx-auto md:max-w-none w-full"
-                    : "lg:col-span-2 md:col-span-1"
-                  : i < 3
-                    ? "lg:col-span-2 md:col-span-1"
-                    : i === 3
-                      ? "lg:col-span-3 md:col-span-1"
-                      : "lg:col-span-3 md:col-span-2 max-w-xl mx-auto md:max-w-none w-full";
-              return (
-                <div
-                  key={i}
-                  className={`group bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col ${spanClass}`}
-                >
-                  <div className="mb-3 sm:mb-6 flex h-10 w-10 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-2xl border border-blue-500/20 bg-blue-500/10 text-blue-400 group-hover:scale-105 transition-transform duration-500">
-                    <Icon className="h-5 w-5 sm:h-7 sm:w-7" />
-                  </div>
-                  <h3 className="mb-1.5 sm:mb-3 text-sm sm:text-lg font-bold text-white leading-tight group-hover:text-blue-400 transition-colors">
-                    {card.title.replace(/^\d+\.\s+/, "")}
-                  </h3>
-                  <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm">
-                    {card.content}
-                  </p>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
+      <OfferSection
+        badge="Krok po kroku"
+        offer={{
+          title: mvp.mechanism.title,
+          subheading: mvp.mechanism.subtitle,
+          paths: mvp.mechanism.cards.map((card, i) => ({
+            title: `Krok ${i + 1}`,
+            situation: card.title.replace(/^\d+\.\s+/, ""),
+            desc: card.content,
+          })),
+        }}
+        className="py-12 sm:py-20"
+      />
 
       {/* Sekcja 5: Gwarancje i Bezpieczeństwo */}
       <GuaranteeSection guarantee={mvp.guarantee} />
 
       {/* Sekcja 6: FAQ */}
-      <section className="relative border-y border-slate-800/80 bg-slate-900/20 py-12 sm:py-24">
-        <div className="container mx-auto max-w-3xl px-4 sm:px-6">
-          <div className="mb-8 sm:mb-16 text-center">
-            <div className="mb-3 sm:mb-4">
-              <SectionBadge>
-              <HelpCircle className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-              <span>FAQ</span>
-            </SectionBadge>
-            </div>
-            <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight">
-              {mvp.faq.title}
-            </h2>
-            {mvp.faq.subtitle && (
-              <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-xs sm:text-base md:text-lg">
-                {mvp.faq.subtitle}
-              </p>
-            )}
-          </div>
-
-          <Accordion type="single" collapsible className="w-full space-y-3 sm:space-y-4">
-            {mvp.faq.items.map((item, i) => (
-              <AccordionItem
-                key={i}
-                value={`item-${i}`}
-                className="rounded-2xl border border-slate-800/60 bg-slate-900/40 px-4 sm:px-6 backdrop-blur-sm transition-all hover:border-slate-700 data-[state=open]:border-blue-500/30"
-              >
-                <AccordionTrigger className="py-4 sm:py-6 text-left text-xs sm:text-sm md:text-base font-bold text-slate-200 hover:text-white hover:no-underline">
-                  {item.question}
-                </AccordionTrigger>
-                <AccordionContent
-                  className="pb-4 sm:pb-6 text-xs sm:text-sm leading-relaxed text-slate-400 [&_a]:font-medium [&_a]:text-blue-400 [&_a]:transition-colors [&_a:hover]:text-blue-300 [&_a:hover]:underline"
-                  dangerouslySetInnerHTML={{ __html: item.answer }}
-                />
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
+      <FaqSection faq={mvp.faq} className="py-12 sm:py-24" />
 
 
       <CtaSection content={mvp.cta} />
