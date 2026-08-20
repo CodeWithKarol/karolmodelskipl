@@ -13,16 +13,18 @@ export function Footer() {
       <div className="container mx-auto max-w-7xl px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4">
-            <div className="relative h-16 w-16 rounded-full overflow-hidden ring-1 ring-blue-500/20 shadow-[0_8px_30px_-10px_rgba(37,99,235,0.4)]">
-              <Image src="/karol.webp" alt="Karol Modelski" fill sizes="64px" className="object-cover" />
+            <div className="flex items-center gap-3">
+              <div className="relative h-10 w-10 shrink-0 rounded-full overflow-hidden ring-1 ring-blue-500/20 shadow-[0_8px_30px_-10px_rgba(37,99,235,0.4)]">
+                <Image src="/karol.webp" alt="Karol Modelski" fill sizes="40px" className="object-cover" />
+              </div>
+              <h3 className="text-lg font-bold text-white">{footer.brand.name}</h3>
             </div>
-            <h3 className="text-lg font-bold text-white">{footer.brand.name}</h3>
             <p className="text-xs text-blue-400 font-bold uppercase tracking-wider">{footer.brand.title}</p>
             <p className="text-sm leading-relaxed text-slate-400 max-w-xs">{footer.brand.description}</p>
           </div>
 
           <div className="text-center lg:text-left space-y-4">
-            <h3 className="text-sm font-bold text-white flex items-center justify-center lg:justify-start gap-2"><Briefcase className="h-4 w-4 text-blue-400 shrink-0" />{footer.solutions.title}</h3>
+            <h3 className="text-sm font-bold text-white flex items-start justify-center lg:justify-start gap-2"><Briefcase className="mt-0.5 h-4 w-4 text-blue-400 shrink-0" />{footer.solutions.title}</h3>
             <ul className="space-y-2.5">
               {footer.solutions.items.map((item, i) => (
                 <li key={i}>
@@ -33,7 +35,7 @@ export function Footer() {
           </div>
 
           <div className="text-center lg:text-left space-y-4">
-            <h3 className="text-sm font-bold text-white flex items-center justify-center lg:justify-start gap-2"><ShieldCheck className="h-4 w-4 text-emerald-500 shrink-0" />{footer.guarantees.title}</h3>
+            <h3 className="text-sm font-bold text-white flex items-start justify-center lg:justify-start gap-2"><ShieldCheck className="mt-0.5 h-4 w-4 text-emerald-500 shrink-0" />{footer.guarantees.title}</h3>
             <ul className="space-y-3">
               {footer.guarantees.items.map((item, i) => (
                 <li key={i} className="flex flex-col items-center lg:items-start gap-0.5 text-sm">
@@ -45,10 +47,10 @@ export function Footer() {
           </div>
 
           <div className="text-center lg:text-left space-y-4">
-            <h3 className="text-sm font-bold text-white flex items-center justify-center lg:justify-start gap-2"><MessageCircle className="h-4 w-4 text-blue-400 shrink-0" />{footer.contact.title}</h3>
+            <h3 className="text-sm font-bold text-white flex items-start justify-center lg:justify-start gap-2"><MessageCircle className="mt-0.5 h-4 w-4 text-blue-400 shrink-0" />{footer.contact.title}</h3>
             <p className="text-sm text-slate-300 leading-relaxed">{footer.contact.ctaSentence}</p>
-            <a href={siteConfig.calendlyLink} target="_blank" rel="noopener noreferrer" className="inline-flex w-full sm:w-auto items-center justify-center gap-1.5 rounded-xl border border-blue-400/20 bg-blue-400/5 px-4 py-3 text-sm font-semibold text-blue-400 hover:bg-blue-400/10 hover:text-blue-300 transition-colors sm:py-1.5">
-              {footer.contact.ctaButton}
+            <a href={siteConfig.calendlyLink} target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-between gap-3 rounded-xl border border-blue-400/20 bg-blue-400/5 px-4 py-3 text-sm font-semibold text-blue-400 hover:bg-blue-400/10 hover:text-blue-300 transition-colors sm:w-auto sm:justify-center sm:gap-1.5 sm:py-1.5">
+              <span>{footer.contact.ctaButton}</span>
               <ArrowRight className="h-4 w-4 shrink-0" />
             </a>
             <p className="text-sm text-slate-400 leading-relaxed">{footer.contact.owner}</p>
