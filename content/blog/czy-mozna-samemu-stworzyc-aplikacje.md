@@ -74,7 +74,7 @@ Pewnie pomyślisz: „Ale jest AI, ona wygeneruje mi kod!”.
 
 I to prawda, AI jest w tym coraz lepsza.
 
-Ale AI jest tylko tak dobra, jak architektura, na której pracuje.
+Ale AI jest tylko tak dobra, jak [architektura](/doradztwo-techniczne-dla-firm), na której pracuje.
 
 Jeśli wrzucisz AI do „darmowego” projektu, który sam stworzyłeś bez fundamentów, otrzymasz potwora.
 
@@ -108,6 +108,16 @@ Naprawa tego „darmowego” systemu w trybie awaryjnym kosztuje wtedy 5 razy wi
 
 To nie jest oszczędność. To jest hazard.
 
+---
+
+**💡 Szkoda Twojego czasu na naukę kodowania po nocach.** Zamiast utknąć w ograniczeniach no-code lub niespójnym kodzie z generatorów AI, stwórzmy bezpieczną architekturę Twojego [MVP w 30 dni](/projektowanie-mvp). Porozmawiajmy bezpośrednio podczas bezpłatnej rozmowy w 4 oczy.
+
+👉 **[ODBIERZ PAKIET STRATEGICZNY I ZAPLANUJ MVP (0 ZŁ)](/projektowanie-mvp)**
+
+*(30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Osobista Mapa Drogowa IT)*
+
+---
+
 ## Czy stworzenie aplikacji „za darmo” jest kiedykolwiek możliwe?
 
 Tak, jeśli masz miesiące wolnego czasu, talent do nauki skomplikowanych technologii i nie musisz w tym czasie zarabiać na życie.
@@ -130,11 +140,11 @@ Przestań myśleć o aplikacji jak o przedmiocie, który kupujesz.
 
 Traktuj ją jak inwestycję w infrastrukturę swojej firmy.
 
-Tak jak nie budujesz fabryki własnymi rękami, używając narzędzi z marketu budowlanego, tak nie budujesz systemu Enterprise w domowym zaciszu.
+Tak jak nie budujesz fabryki własnymi rękami, używając narzędzi z marketu budowlanego, tak nie budujesz [systemu Enterprise](/aplikacje-internetowe-dla-firm) w domowym zaciszu.
 
 Budujesz ją z profesjonalistami, którzy gwarantują, że ta maszyna będzie dla Ciebie zarabiać, a nie tylko „działać”.
 
-Wybór Partnera Technologicznego to wybór, czy chcesz spędzić kolejne dwa lata na naprawianiu błędów, czy na skalowaniu biznesu.
+Wybór [Partnera Technologicznego](/doradztwo-techniczne-dla-firm) to wybór, czy chcesz spędzić kolejne dwa lata na naprawianiu błędów, czy na skalowaniu biznesu.
 
 Wartość biznesowa, którą dostarczam, opiera się na eliminacji zbędnej „waty” procesowej.
 
@@ -154,7 +164,7 @@ Zamiast spędzać wieczory przed edytorem kodu, spędzasz je z rodziną lub na p
 
 Większość przedsiębiorców, którzy przychodzą do mnie z wizją „darmowego kodu”, szybko rozumie, że to był błąd.
 
-Dlatego wdrożyłem proces "Bezpłatnej Mapy Drogowej".
+Dlatego wdrożyłem proces ["Bezpłatnej Mapy Drogowej"](/projektowanie-mvp).
 
 Podczas 30-minutowej konsultacji pokażę Ci, jak zoptymalizować Twój proces biznesowy, byś mógł zarobić na stworzenie aplikacji z zysków, które ona sama wygeneruje.
 
@@ -247,8 +257,9 @@ Pamiętaj: Każdy dzień, w którym korzystasz z przestarzałego lub źle zaproj
 Twoja firma zasługuje na to, by działać w oparciu o najlepsze możliwe standardy.
 
 ---
-### 💡 Oszczędź miesiące prób i błędów.
-Zamiast ryzykować samodzielne budowanie, odbierz sprawdzony plan wdrożenia aplikacji w 30 dni.
 
-👉 **[ODBIERZ DARMOWĄ MAPĘ DROGOWĄ WDROŻENIA APLIKACJI](/projektowanie-mvp)**
-*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*
+**Twój czas jest zbyt drogi, by testować „samodzielnie” kolejne no-code'owe wtyczki.** Zamiast dokładać do siebie kolejny miesiąc frustracji, odbierz bezpłatnie Osobistą Mapę Drogową IT i sprawdź, jak wystartować w 30 dni pod okiem architekta.
+
+👉 **[ROZPOCZNIJ OD BEZPŁATNEJ MAPY DROGOWEJ (0 ZŁ)](/projektowanie-mvp)**
+
+*(30 minut rozmowy wideo • Bezpośredni kontakt z architektem • Zero zobowiązań)*

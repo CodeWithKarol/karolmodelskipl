@@ -136,7 +136,7 @@ Zaczniesz płacić za dużo za subskrypcje, a jednocześnie nie dostaniesz funkc
 
 Wtedy wkraczam ja.
 
-Modernizujemy Twój stos technologiczny, integrujemy dane i budujemy dedykowane rozwiązanie.
+Modernizujemy Twój stos technologiczny, integrujemy dane i budujemy [dedykowane rozwiązanie](/aplikacje-internetowe-dla-firm).
 
 Budujemy je na bazie danych, które przez te lata zbierałeś w swoich systemach.
 
@@ -154,7 +154,7 @@ Uważaj na nie.
 
 Wielokrotnie ratowałem firmy, które utopiły setki tysięcy złotych w wdrożeniach systemów, które w ogóle nie pasowały do ich modelu biznesowego.
 
-Mój proces „Bezpłatnej Mapy Drogowej” ma za zadanie wyeliminować ten błąd na starcie.
+Mój proces [„Bezpłatnej Mapy Drogowej”](/doradztwo-techniczne-dla-firm) ma za zadanie wyeliminować ten błąd na starcie.
 
 Przeanalizujemy Twój stos technologiczny.
 
@@ -184,7 +184,7 @@ Biorę pełną odpowiedzialność za to, by Twoje IT było Twoim największym at
 
 Niezależnie od tego, czy używasz darmowego CRM-a, czy budujemy Twoją autorską aplikację – Twoje dane są narażone na ataki.
 
-Wdrażając nowoczesne standardy, uczę moich klientów, jak dbać o bezpieczeństwo na każdym poziomie.
+Wdrażając [nowoczesne standardy](/doradztwo-techniczne-dla-firm#gwarancje), uczę moich klientów, jak dbać o bezpieczeństwo na każdym poziomie.
 
 To nie jest „przesada”.
 
@@ -245,8 +245,8 @@ Zróbmy pierwszy krok w stronę nowoczesności, która przekłada się na wyniki
 Twoja firma zasługuje na to, by działać w oparciu o najlepsze możliwe standardy.
 
 ---
-### 💡 Dobierz technologię, która nie hamuje Twojego rozwoju.
-Zbuduj wersję startową, która od razu sprzedaje. Odbierz darmowy audyt i zacznij działać bez przepalania budżetu.
+### 💡 Skonfiguruj cyfrowy warsztat firmy i uniknij przepłacania za abonamenty.
+Zamiast testować dziesiątki programów metodą prób i błędów, przeanalizujmy procesy w Twoim biznesie i ułóżmy zintegrowany stos technologiczny podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ZBUDUJ WERSJĘ STARTOWĄ BEZ PRZEPALANIA BUDŻETU (DARMOWY AUDYT)](/projektowanie-mvp)**
-*(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*
+👉 **[ODBIERZ PAKIET STRATEGICZNY I DOBIERZ STOS TECHNOLOGICZNY (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+*(30 minut wideorozmowy • Eliminacja zbędnych kosztów • Plan automatyzacji na start)*
