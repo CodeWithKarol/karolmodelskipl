@@ -68,5 +68,5 @@ Wybierz partnera, który buduje systemy gotowe na wzrost, a nie tylko na „dzia
 **💡 Stoisz przed wyborem technologii dla nowej aplikacji lub modernizacji obecnego systemu?**
 Zamiast ufać chwilowym modom lub propozycjom agencji szukających tanich wykonawców, przeanalizujmy Twój model biznesowy podczas bezpłatnej rozmowy w 4 oczy. Dobierzemy architekturę, która obsłuży Twój wzrost bez konieczności przepisywania kodu za dwa lata.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I DOBIERZ ARCHITEKTURĘ (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+ **[ODBIERZ PAKIET STRATEGICZNY I DOBIERZ ARCHITEKTURĘ (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
 *(30 minut wideorozmowy • Standardy bankowe • Osobista Mapa Drogowa IT)*

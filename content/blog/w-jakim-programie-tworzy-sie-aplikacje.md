@@ -72,5 +72,5 @@ Dopiero wtedy, znając realia Twojego biznesu, dobieram programy, frameworki i r
 **💡 Zastanawiasz się, w jakich technologiach zbudować lub zmodernizować system w firmie?**
 Zamiast ufać amatorskim kreatorom czy ryzykownemu vibe-codingowi z AI, przeanalizujmy procesy w Twoim biznesie podczas bezpłatnej rozmowy w 4 oczy. Zaprojektuję architekturę, która da Ci stabilność bankową i przewidywalny zysk.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I ZAPROJEKTUJ SYSTEM (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+ **[ODBIERZ PAKIET STRATEGICZNY I ZAPROJEKTUJ SYSTEM (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
 *(30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Osobista Mapa Drogowa IT)*

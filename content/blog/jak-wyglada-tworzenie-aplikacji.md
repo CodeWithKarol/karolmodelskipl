@@ -38,7 +38,7 @@ Jeśli widzimy, że klienci rezygnują w konkretnym miejscu formularza rejestrac
 >
 > Zamiast przepalać budżet na agencyjne briefy, stwórzmy architekturę Twojej aplikacji bezpośrednio ze mną podczas bezpłatnej rozmowy w 4 oczy.
 >
-> 👉 **[ODBIERZ PAKIET STRATEGICZNY I ZAPLANUJ APLIKACJĘ (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+>  **[ODBIERZ PAKIET STRATEGICZNY I ZAPLANUJ APLIKACJĘ (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
 >
 > *30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Osobista Mapa Drogowa IT*
 
@@ -99,5 +99,5 @@ Nie czekaj, aż system sam zacznie Cię ograniczać. Zmieńmy go w Twoją przewa
 ### 💡 Zmień surowy pomysł w maszynę konwersyjną.
 Nie trać czasu na zgadywanie. Zróbmy Krok 1 – przejdź bezpłatną diagnozę i warsztat architektury podczas rozmowy w 4 oczy.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I ZAPLANUJ APLIKACJĘ (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+ **[ODBIERZ PAKIET STRATEGICZNY I ZAPLANUJ APLIKACJĘ (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
 *(30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Osobista Mapa Drogowa IT)*

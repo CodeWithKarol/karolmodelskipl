@@ -254,5 +254,5 @@ Czy jesteś gotowy na stworzenie aplikacji, która napędza Twój zysk?
 ### 💡 Masz wygenerowany kod z AI lub prototyp no-code i nie wiesz, co dalej?
 Zamiast ryzykować awarię i wyciek danych klientów, sprawdźmy stabilność i bezpieczeństwo Twojej architektury podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I ZWERYFIKUJ KOD Z AI (0 ZŁ)](/projektowanie-mvp)**
+ **[ODBIERZ PAKIET STRATEGICZNY I ZWERYFIKUJ KOD Z AI (0 ZŁ)](/projektowanie-mvp)**
 *(30 minut wideorozmowy • Bankowy rygor bezpieczeństwa • Plan wdrożenia MVP w 30 dni)*

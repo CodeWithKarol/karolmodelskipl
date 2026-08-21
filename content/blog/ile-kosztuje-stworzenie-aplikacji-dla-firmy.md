@@ -174,5 +174,5 @@ Czy jesteś gotowy, aby o nią zawalczyć?
 ### 💡 Planujesz inwestycję w dedykowaną aplikację i chcesz poznać realny budżet?
 Nie płać za agencyjne marże ani przypadkowy kod. Przeanalizujmy procesy w Twojej firmie i stwórzmy transparentną mapę wdrożenia podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I OBLICZ KOSZT WDROŻENIA (0 ZŁ)](/aplikacje-internetowe-dla-firm)**
+ **[ODBIERZ PAKIET STRATEGICZNY I OBLICZ KOSZT WDROŻENIA (0 ZŁ)](/aplikacje-internetowe-dla-firm)**
 *(30 minut wideorozmowy • Standardy bankowe • Wycena etapowa bez ukrytych kosztów)*

@@ -10,9 +10,10 @@ import {
   ChevronDown,
 } from "lucide-react"
 import { ReadingProgress } from "@/components/reading-progress"
-import { SectionBadge } from "@/components/section-badge"
+import { BlogPostGrid } from "@/components/blog-post-grid"
 import { CtaSection } from "@/components/cta-section"
 import { extractHeadings, slugify, extractTextContent } from "@/lib/utils/heading"
+import { ctaCalloutPlugin } from "@/lib/utils/mdx-cta"
 import type { ReactNode } from "react"
 
 const headingTags = { 2: "h2", 3: "h3" } as const
@@ -47,8 +48,8 @@ function TableOfContents({
   headings: { level: number; text: string; id: string }[]
 }) {
   return (
-    <details className="group mb-8 rounded-lg border border-slate-800 bg-slate-900/80 lg:hidden">
-      <summary className="flex cursor-pointer items-center gap-2 px-4 py-3 text-xs font-bold uppercase tracking-widest text-slate-500 transition-colors hover:text-slate-300 select-none">
+    <details className="group mb-6 lg:hidden">
+      <summary className="flex cursor-pointer items-center gap-2 py-2 text-[11px] font-semibold uppercase tracking-widest text-slate-500 transition-colors hover:text-slate-300 select-none">
         <List className="h-3.5 w-3.5 shrink-0 text-blue-400" />
         <span className="flex-1">Spis treści</span>
         <span className="text-slate-600 font-normal normal-case">
@@ -56,13 +57,13 @@ function TableOfContents({
         </span>
         <ChevronDown className="h-3.5 w-3.5 shrink-0 text-slate-500 transition-transform group-open:rotate-180" />
       </summary>
-      <nav className="border-t border-slate-800 px-4 py-3">
-        <ul className="space-y-1">
+      <nav className="border-t border-slate-800/60 py-2">
+        <ul className="space-y-0.5">
           {headings.map((h, i) => (
             <li key={i}>
               <a
                 href={`#${h.id}`}
-                className="block py-2 text-sm leading-snug text-slate-400 transition-colors hover:text-blue-400"
+                className="block py-1.5 text-[13px] leading-snug text-slate-500 transition-colors hover:text-blue-400"
                 style={{ paddingLeft: `${(h.level - 2) * 14}px` }}
               >
                 {h.text}
@@ -195,30 +196,22 @@ export default async function BlogPostPage(props: {
         <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
         <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[300px] w-[600px] -translate-x-1/2 rounded-full bg-blue-600/10 opacity-30 mix-blend-screen blur-[100px] sm:opacity-50 sm:h-[400px] sm:w-[800px] sm:blur-[120px]"></div>
 
-        <div className="mx-auto w-full max-w-6xl flex-1 px-4 pt-20 pb-16 sm:pb-24">
-          <Link
-            href="/blog"
-            className="group mb-6 inline-flex items-center gap-2 text-sm font-medium text-slate-400 transition-colors hover:text-white sm:mb-10"
-          >
-            <ArrowLeft className="h-4 w-4 shrink-0 transition-transform group-hover:-translate-x-1" />
-            <span className="leading-snug">Powrót do Bazy Wiedzy</span>
-          </Link>
-
+        <div className="mx-auto w-full max-w-6xl flex-1 px-4 pt-24 pb-16 sm:pt-28 sm:pb-24 lg:pt-32">
           <div className="lg:grid lg:grid-cols-[280px_1fr] lg:gap-12">
             {headings.length > 0 && (
               <aside className="hidden lg:block">
                 <div className="sticky top-24">
-                  <h2 className="mb-4 flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-slate-500">
+                  <h2 className="mb-3 flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-slate-600">
                     <List className="h-3.5 w-3.5 text-blue-400" />
                     Spis treści
                   </h2>
-                  <nav className="border-l border-slate-800">
-                    <ul className="space-y-2">
+                  <nav>
+                    <ul className="space-y-1.5">
                       {headings.map((h, i) => (
                         <li key={i}>
                           <a
                             href={`#${h.id}`}
-                            className="block text-sm leading-snug text-slate-400 transition-colors hover:text-blue-400"
+                            className="block text-[13px] leading-snug text-slate-500 transition-colors hover:text-blue-400"
                             style={{
                               paddingLeft: `${(h.level - 2) * 14 + 12}px`,
                             }}
@@ -230,7 +223,7 @@ export default async function BlogPostPage(props: {
                     </ul>
                   </nav>
 
-                  <div className="mt-6 flex items-center gap-2 text-xs text-slate-600">
+                  <div className="mt-6 flex items-center gap-2 text-[11px] text-slate-600">
                     <Clock className="h-3 w-3" />
                     <span>{post.readingTime} czytania</span>
                   </div>
@@ -239,39 +232,44 @@ export default async function BlogPostPage(props: {
             )}
 
             <div className="min-w-0">
-              <article className="overflow-hidden rounded-xl border border-slate-800/80 bg-slate-900/50 shadow-lg backdrop-blur-xl sm:shadow-2xl sm:rounded-2xl">
-                <div className="p-4 sm:p-8 lg:p-12">
-                  <header className="mb-6 border-b border-slate-800 pb-6 sm:mb-10 sm:pb-10">
-                    <div className="mb-4 flex flex-wrap items-center gap-2 sm:mb-6 sm:gap-3">
-                      <SectionBadge variant="blue" rounded="md">
+              <Link
+                href="/blog"
+                className="group mb-5 inline-flex items-center gap-2 text-sm font-medium text-slate-500 transition-colors hover:text-white sm:mb-6"
+              >
+                <ArrowLeft className="h-4 w-4 shrink-0 transition-transform group-hover:-translate-x-1" />
+                <span className="leading-snug">Powrót do Bazy Wiedzy</span>
+              </Link>
+
+              <article>
+                <div>
+                  <header className="mb-6 border-b border-slate-800/60 pb-5 sm:mb-8 sm:pb-8">
+                    <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-slate-500 sm:mb-5 sm:text-sm">
+                      <span className="font-semibold uppercase tracking-wider text-blue-400">
                         {post.silo}
-                      </SectionBadge>
-                      <span className="flex items-center gap-1.5 text-xs text-slate-400 sm:text-sm">
-                        <span className="h-1 w-1 rounded-full bg-slate-700"></span>{" "}
-                        {post.readingTime} czytania
                       </span>
-                      <span className="flex items-center gap-1.5 text-xs text-slate-400 sm:text-sm">
-                        <span className="h-1 w-1 rounded-full bg-slate-700"></span>{" "}
-                        {post.date}
-                      </span>
+                      <span className="h-0.5 w-0.5 rounded-full bg-slate-700"></span>
+                      <span>{post.readingTime} czytania</span>
+                      <span className="h-0.5 w-0.5 rounded-full bg-slate-700"></span>
+                      <span>{post.date}</span>
                     </div>
-                    <h1 className="text-xl leading-[1.25] font-extrabold tracking-tight text-balance text-white sm:text-3xl lg:text-4xl xl:text-5xl">
+                    <h1 className="text-xl leading-snug font-bold tracking-tight text-balance text-white sm:text-2xl lg:text-3xl xl:text-4xl">
                       {post.title}
                     </h1>
                   </header>
 
                   {headings.length > 0 && <TableOfContents headings={headings} />}
 
-                  <div className="prose prose-sm max-w-none prose-invert md:prose-base lg:prose-lg prose-headings:font-bold prose-headings:text-slate-100 prose-headings:scroll-mt-24 prose-p:leading-[1.7] prose-p:text-slate-300 prose-p:my-4 prose-a:text-blue-400 hover:prose-a:text-blue-300 prose-a:no-underline hover:prose-a:underline prose-a:font-medium prose-blockquote:rounded-r-lg prose-blockquote:border-l-blue-500 prose-blockquote:bg-slate-900/80 prose-blockquote:px-4 prose-blockquote:py-3 prose-blockquote:font-normal prose-blockquote:text-slate-300 sm:prose-blockquote:px-6 prose-strong:font-bold prose-strong:text-white prose-li:text-slate-300 prose-li:my-2 prose-hr:border-slate-800 prose-img:rounded-xl prose-img:border prose-img:border-slate-800">
+                  <div className="prose prose-sm max-w-none prose-invert md:prose-base prose-headings:font-bold prose-headings:text-slate-100 prose-headings:scroll-mt-24 prose-p:leading-[1.7] prose-p:text-slate-300 prose-p:my-3 prose-a:text-blue-400 hover:prose-a:text-blue-300 prose-a:no-underline hover:prose-a:underline prose-a:font-medium prose-blockquote:rounded-r-lg prose-blockquote:border-l-blue-500 prose-blockquote:bg-slate-900/80 prose-blockquote:px-4 prose-blockquote:py-2.5 prose-blockquote:font-normal prose-blockquote:text-slate-300 sm:prose-blockquote:px-6 prose-strong:font-bold prose-strong:text-white prose-li:text-slate-300 prose-li:my-1 prose-hr:border-slate-800 prose-img:rounded-xl prose-img:border prose-img:border-slate-800">
                     <MDXRemote
                       source={post.content}
+                      options={{ mdxOptions: { rehypePlugins: [ctaCalloutPlugin] } }}
                       components={{
                         img: (props) => (
                           // eslint-disable-next-line @next/next/no-img-element
                           <img
                             {...props}
                             alt={props.alt || "Ilustracja w artykule blogowym"}
-                            className="rounded-xl border border-slate-800 my-8 max-w-full h-auto"
+                            className="rounded-xl border border-slate-800 my-6 max-w-full h-auto"
                           />
                         ),
                         h2: (props) => (
@@ -298,34 +296,10 @@ export default async function BlogPostPage(props: {
 
               {relatedPosts.length > 0 && (
                 <section className="mt-10 sm:mt-12">
-                  <h2 className="mb-4 text-base font-bold text-white sm:text-xl sm:mb-6">
+                  <h2 className="mb-5 text-base font-bold text-white sm:mb-6 sm:text-lg">
                     Powiązane artykuły
                   </h2>
-                  <div className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    {relatedPosts.map((p) => (
-                      <Link
-                        key={p.slug}
-                        href={`/blog/${p.slug}`}
-                        className="group block"
-                      >
-                        <article className="h-full rounded-xl border border-slate-800/60 bg-slate-900/50 p-4 backdrop-blur-sm transition-all hover:border-blue-500/30 hover:bg-slate-900/70 sm:p-5">
-                          <SectionBadge variant="blue" rounded="md" className="mb-2 inline-block">
-                            {p.silo}
-                          </SectionBadge>
-                          <h3 className="text-sm font-bold leading-snug text-slate-100 transition-colors group-hover:text-blue-400">
-                            {p.title}
-                          </h3>
-                          <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-slate-400">
-                            {p.excerpt}
-                          </p>
-                          <div className="mt-3 flex items-center gap-1.5 text-xs text-slate-500">
-                            <Clock className="h-3 w-3 shrink-0" />
-                            <span>{p.readingTime} czytania</span>
-                          </div>
-                        </article>
-                      </Link>
-                    ))}
-                  </div>
+                  <BlogPostGrid posts={relatedPosts} />
                 </section>
               )}
             </div>

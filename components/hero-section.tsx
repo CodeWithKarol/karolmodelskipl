@@ -7,7 +7,7 @@ export function HeroSection() {
   const { hero } = content
 
   return (
-    <section className="relative w-full flex flex-col bg-slate-950 text-slate-50 pt-16 pb-16 lg:pb-12 lg:min-h-screen overflow-hidden">
+    <section className="relative w-full flex flex-col bg-slate-950 text-slate-50 pt-24 pb-16 sm:pt-28 lg:pb-12 lg:min-h-screen overflow-hidden">
       {/* Background Ambience */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/20 via-slate-950 to-slate-950 -z-0"></div>
       <div className="absolute top-0 right-0 w-full h-1/2 bg-[linear-gradient(to_bottom,rgba(30,58,138,0.05),transparent)] pointer-events-none lg:block"></div>
