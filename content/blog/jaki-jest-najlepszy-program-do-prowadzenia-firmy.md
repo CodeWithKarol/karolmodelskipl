@@ -191,6 +191,6 @@ Twoja firma zasługuje na to, by działać w oparciu o najlepsze możliwe standa
 
 Przeanalizujmy przepływ danych w Twojej firmie podczas bezpłatnej rozmowy w 4 oczy. Wskażę Ci, gdzie wystarczy gotowa integracja API, a gdzie dedykowany moduł przyniesie najwyższy zwrot z inwestycji.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I ZAPLANUJ ARCHITEKTURĘ IT (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+ **[ODBIERZ PAKIET STRATEGICZNY I ZAPLANUJ ARCHITEKTURĘ IT (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
 
 *(30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Osobista Mapa Drogowa IT)*

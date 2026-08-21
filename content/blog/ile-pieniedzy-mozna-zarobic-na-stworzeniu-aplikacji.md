@@ -96,5 +96,5 @@ Zapraszam Cię do przejścia przez mój proces diagnozy. Nie musisz być ekspert
 ### 💡 Chcesz policzyć, ile godzin i zysków uwalnia dedykowany system w Twojej firmie?
 Zamiast zgadywać opłacalność, przeanalizujmy procesy w Twoim zespole i wyznaczmy realny zwrot z inwestycji (ROI) podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I OBLICZ REALNE ROI (0 ZŁ)](/aplikacje-internetowe-dla-firm)**
+ **[ODBIERZ PAKIET STRATEGICZNY I OBLICZ REALNE ROI (0 ZŁ)](/aplikacje-internetowe-dla-firm)**
 *(30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Konkretna kalkulacja zysków)*

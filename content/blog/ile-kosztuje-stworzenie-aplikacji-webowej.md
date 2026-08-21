@@ -255,5 +255,5 @@ Czy jesteś gotowy, aby o nią zawalczyć?
 
 Zamiast finansować marże pośredników i koszty operacyjne software house'ów, przeanalizujmy architekturę Twojego systemu i stwórzmy transparentną kalkulację podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I PRZELICZ KOSZT SYSTEMU (0 ZŁ)](/aplikacje-internetowe-dla-firm)**
+ **[ODBIERZ PAKIET STRATEGICZNY I PRZELICZ KOSZT SYSTEMU (0 ZŁ)](/aplikacje-internetowe-dla-firm)**
 *(30 minut wideorozmowy • Standardy bankowe • Wycena etapowa bez ukrytych opłat)*

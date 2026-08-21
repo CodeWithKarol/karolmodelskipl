@@ -228,5 +228,5 @@ To jest „Mapą Drogową Modernizacji IT”, która jest Twoim pierwszym krokie
 ### 💡 Policzmy opłacalność Twojego pomysłu, zanim wydasz choćby złotówkę.
 Zamiast przepalać setki godzin na samodzielne testy, przeanalizujmy model biznesowy i stwórzmy transparentną kalkulację MVP w 30 dni podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I PRZELICZ KOSZT MVP (0 ZŁ)](/projektowanie-mvp)**
+ **[ODBIERZ PAKIET STRATEGICZNY I PRZELICZ KOSZT MVP (0 ZŁ)](/projektowanie-mvp)**
 *(30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Konkretna kalkulacja ROI)*

@@ -116,5 +116,5 @@ Jeśli jesteś gotowy przestać przepalać budżet i zacząć budować oprogramo
 
 Zamiast przepłacać za agencyjny over-engineering i armię pośredników, przeanalizujmy procesy w Twoim zespole podczas bezpłatnej rozmowy w 4 oczy. Wskażę Ci, co realnie przyniesie zysk, a co jest zbędnym wydatkiem.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I SKONSULTUJ SYSTEM (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+ **[ODBIERZ PAKIET STRATEGICZNY I SKONSULTUJ SYSTEM (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
 *(30 minut wideorozmowy • Standardy bankowe • Osobista Mapa Drogowa IT)*

@@ -248,5 +248,5 @@ Twoja firma zasługuje na to, by działać w oparciu o najlepsze możliwe standa
 ### 💡 Skonfiguruj cyfrowy warsztat firmy i uniknij przepłacania za abonamenty.
 Zamiast testować dziesiątki programów metodą prób i błędów, przeanalizujmy procesy w Twoim biznesie i ułóżmy zintegrowany stos technologiczny podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I DOBIERZ STOS TECHNOLOGICZNY (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+ **[ODBIERZ PAKIET STRATEGICZNY I DOBIERZ STOS TECHNOLOGICZNY (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
 *(30 minut wideorozmowy • Eliminacja zbędnych kosztów • Plan automatyzacji na start)*

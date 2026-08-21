@@ -154,3 +154,38 @@
     @apply font-sans;
     }
 }
+
+.article-cta {
+  @apply relative my-8 overflow-hidden rounded-2xl border border-blue-500/20 bg-gradient-to-b from-blue-950/40 to-slate-900/50 px-5 py-6 sm:px-7 sm:py-7;
+}
+
+.article-cta::before {
+  content: "";
+  @apply pointer-events-none absolute -top-20 left-1/2 h-40 w-3/4 -translate-x-1/2 rounded-full bg-blue-500/15 blur-3xl;
+}
+
+.article-cta .article-cta-title,
+.article-cta .article-cta-title strong {
+  @apply relative mb-3 mt-0 text-lg font-bold text-blue-300 sm:text-xl;
+}
+
+.article-cta p {
+  @apply relative mb-3 last:mb-0;
+}
+
+.article-cta .article-cta-link {
+  @apply relative mt-5 mb-2 last:mb-0;
+}
+
+.article-cta .article-cta-link a {
+  @apply block w-full rounded-xl bg-blue-600 px-5 py-3 text-center text-sm font-bold text-white no-underline shadow-[0_0_30px_-10px_rgba(59,130,246,0.8)] transition-colors hover:bg-blue-500 hover:no-underline sm:inline-block sm:w-auto sm:text-left;
+}
+
+.article-cta .article-cta-link em {
+  @apply mt-2 block text-xs font-normal text-slate-500 not-italic;
+}
+
+.article-cta .article-cta-meta,
+.article-cta .article-cta-meta em {
+  @apply relative mt-1 text-xs font-normal text-slate-500 not-italic;
+}

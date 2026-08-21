@@ -208,5 +208,5 @@ Czy jesteś gotowy, aby o nią zawalczyć?
 ### 💡 Chcesz bezpiecznej aplikacji mobilnej bez prowizji agencji?
 Odbierz darmowy plan budowy, który pozwoli Ci poznać realne koszty i uniknąć pułapek.
 
-👉 **[ODBIERZ BEZPŁATNĄ WYCENĘ I PLAN BUDOWY BEZPIECZNEJ APLIKACJI](/aplikacje-internetowe-dla-firm)**
+ **[ODBIERZ BEZPŁATNĄ WYCENĘ I PLAN BUDOWY BEZPIECZNEJ APLIKACJI](/aplikacje-internetowe-dla-firm)**
 *(30 minut rozmowy wideo • Bezpośredni kontakt z ekspertem • Zero zobowiązań)*

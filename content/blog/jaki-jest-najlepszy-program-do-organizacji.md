@@ -226,5 +226,5 @@ Twoja firma zasługuje na to, by działać w oparciu o najlepsze możliwe standa
 
 Zamiast płacić za kolejne subskrypcje lub ręcznie przeklepywać dane, przeanalizujmy Twój warsztat pracy podczas bezpłatnej rozmowy w 4 oczy. Wskażę Ci, które narzędzia zintegrować, a które bez żalu usunąć.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I UPORZĄDKUJ SYSTEMY (0 ZŁ)](/aplikacje-internetowe-dla-firm)**
+ **[ODBIERZ PAKIET STRATEGICZNY I UPORZĄDKUJ SYSTEMY (0 ZŁ)](/aplikacje-internetowe-dla-firm)**
 *(30 minut wideorozmowy • Eliminacja zbędnych subskrypcji • Plan automatyzacji procesów)*

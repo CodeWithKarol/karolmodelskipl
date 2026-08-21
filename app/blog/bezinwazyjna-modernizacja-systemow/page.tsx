@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
+import { FeaturedPosts } from "@/components/featured-posts"
 import { BookOpen, ArrowRight, Zap, ShieldCheck, Banknote } from "lucide-react"
 import { CtaSection, type CtaContent } from "@/components/cta-section"
 import { SectionBadge } from "@/components/section-badge"
@@ -146,36 +147,17 @@ export default function ModernizacjaCategoryPage() {
           </h2>
         </div>
 
-        <div className="mb-20 grid gap-3 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="group block"
-            >
-              <article className="relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-slate-800/60 bg-slate-900/40 p-4 backdrop-blur-sm transition-all hover:border-blue-500/30 hover:bg-slate-900 sm:rounded-3xl sm:p-6">
-                <div>
-                  <div className="absolute top-0 left-0 h-1 w-full bg-slate-800 transition-colors group-hover:bg-blue-500"></div>
-                  <span className="mb-2.5 inline-block rounded-full border border-blue-500/20 bg-blue-500/10 px-2.5 py-0.5 text-[9px] font-bold tracking-wider text-blue-400 uppercase sm:mb-3 sm:text-[10px]">
-                    {post.silo}
-                  </span>
-                  <h3 className="mb-2 text-sm leading-snug font-bold text-white transition-colors group-hover:text-blue-400 sm:mb-3 sm:text-lg">
-                    {post.title}
-                  </h3>
-                  <p className="mb-4 line-clamp-3 text-[11px] leading-relaxed text-slate-400 sm:mb-6 sm:text-sm">
-                    {post.excerpt}
-                  </p>
-                </div>
-                <div className="flex items-center justify-between border-t border-slate-800/60 pt-3 text-[11px] font-medium text-slate-400 sm:pt-4 sm:text-xs">
-                  <span>{post.readingTime} czytania</span>
-                  <span className="inline-flex items-center gap-1.5 font-bold text-blue-400 transition-transform group-hover:translate-x-1">
-                    Przeczytaj artykuł <ArrowRight className="h-3.5 w-3.5" />
-                  </span>
-                </div>
-              </article>
-            </Link>
-          ))}
-        </div>
+        <FeaturedPosts
+          posts={posts.map((post) => ({
+            slug: post.slug,
+            title: post.title,
+            desc: post.excerpt,
+            cta: "Przeczytaj artykuł",
+            readingTime: post.readingTime,
+            date: post.date,
+          }))}
+          className="mb-20"
+        />
       </main>
 
       <CtaSection content={ctaContent} />

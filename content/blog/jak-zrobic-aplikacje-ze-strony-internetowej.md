@@ -191,5 +191,5 @@ Czy jesteś gotowy, aby o nią zawalczyć?
 ### 💡 Zastanawiasz się, czy Twoja firma naprawdę potrzebuje aplikacji mobilnej?
 Nie daj się wciągnąć w drogie „opakowywanie strony" ani przepłacać za zbędne aplikacje natywne. Przeanalizujmy Twój model biznesowy i dobierzmy optymalną technologię (Web / PWA / Native) podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I SKONSULTUJ ARCHITEKTURĘ (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+ **[ODBIERZ PAKIET STRATEGICZNY I SKONSULTUJ ARCHITEKTURĘ (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
 *(30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Konkretna rekomendacja bez naciągania)*

@@ -159,6 +159,6 @@ Wtedy „cena” aplikacji przestaje mieć znaczenie, bo staje się ona Twoim na
 
 Zamiast kupować niesprawdzone nowinki technologiczne, przeanalizujmy procesy w Twoim biznesie podczas bezpłatnej rozmowy w 4 oczy. Wyznaczymy jeden proces, w którym sztuczna inteligencja przyniesie natychmiastowy zysk.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I SKONSULTUJ WDROŻENIE AI (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
+ **[ODBIERZ PAKIET STRATEGICZNY I SKONSULTUJ WDROŻENIE AI (0 ZŁ)](/doradztwo-techniczne-dla-firm)**
 
 *(30 minut wideorozmowy • Izolacja danych i standardy bankowe • Osobista Mapa Drogowa IT)*

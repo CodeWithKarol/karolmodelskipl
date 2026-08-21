@@ -2,8 +2,10 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
 import { CtaSection } from "@/components/cta-section"
-import { FileText, ArrowRight, Lightbulb, ShieldCheck, TrendingUp, BookOpen } from "lucide-react"
+import { OfferSection } from "@/components/offer-section"
+import { FileText, Lightbulb, ShieldCheck, TrendingUp, BookOpen } from "lucide-react"
 import { SectionBadge } from "@/components/section-badge"
+import { FeaturedPosts, type FeaturedPostItem } from "@/components/featured-posts"
 import { content } from "@/lib/content"
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -24,6 +26,19 @@ export default function BlogHubPage() {
   const silo1 = posts.filter((p) => p.silo === "Fundamenty & Strategia")
   const silo2 = posts.filter((p) => p.silo === "Technologia w Praktyce")
   const silo3 = posts.filter((p) => p.silo === "Case Studies")
+
+  const postsBySlug = new Map(posts.map((post) => [post.slug, post]))
+  const featuredItems: FeaturedPostItem[] = blog.featured.items.map((art) => {
+    const post = postsBySlug.get(art.slug)
+    return {
+      slug: art.slug,
+      title: art.title,
+      desc: art.desc,
+      cta: art.cta,
+      readingTime: post?.readingTime,
+      date: post?.date,
+    }
+  })
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -110,39 +125,21 @@ export default function BlogHubPage() {
       </section>
 
       <main className="container mx-auto max-w-7xl px-4 py-12 sm:py-24">
-        <div className="mb-8 sm:mb-16 text-center">
-          <div className="mb-3 sm:mb-4">
-            <SectionBadge>
-            <span>{blog.categories.badge}</span>
-          </SectionBadge>
-          </div>
-          <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-white mb-2.5 sm:mb-4 leading-snug">
-            {blog.categories.title}
-          </h2>
-          <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-xs sm:text-base">
-            {blog.categories.subtitle}
-          </p>
-        </div>
-
-        <div className="grid gap-3 sm:gap-6 md:grid-cols-2 mb-12 sm:mb-20">
-          {blog.categories.items.map((cat, i) => (
-            <Link
-              key={i}
-              href={cat.href}
-              className="group bg-slate-900/40 border border-slate-800 p-4 sm:p-8 rounded-2xl sm:rounded-3xl hover:border-blue-500/40 transition-all duration-300 flex flex-col justify-between"
-            >
-              <div>
-                <div className="text-blue-400 font-bold text-[9px] sm:text-xs uppercase tracking-widest mb-1.5 sm:mb-2">Kategoria 0{i + 1}</div>
-                <h3 className="text-sm sm:text-xl font-bold text-white mb-2 sm:mb-3 leading-snug group-hover:text-blue-400 transition-colors">{cat.title}</h3>
-                <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm mb-4 sm:mb-6">{cat.desc}</p>
-              </div>
-              <div className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-blue-400 group-hover:text-blue-300 transition-colors">
-                <span>{cat.cta}</span>
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </div>
-            </Link>
-          ))}
-        </div>
+        <OfferSection
+          badge={blog.categories.badge}
+          offer={{
+            title: blog.categories.title,
+            subheading: blog.categories.subtitle,
+            paths: blog.categories.items.map((cat, i) => ({
+              title: `Kategoria 0${i + 1}`,
+              situation: cat.title,
+              desc: cat.desc,
+              link: cat.cta,
+              href: cat.href,
+            })),
+          }}
+          className="mb-12 sm:mb-20"
+        />
 
         <div className="mb-12 sm:mb-20">
           <div className="mb-8 sm:mb-12 text-center">
@@ -159,29 +156,7 @@ export default function BlogHubPage() {
             </p>
           </div>
 
-          <div className="grid gap-3 sm:gap-6 md:grid-cols-3">
-            {blog.featured.items.map((art, i) => (
-              <Link key={i} href={`/blog/${art.slug}`} className="group block">
-                <article className="bg-slate-900/40 border border-slate-800 p-4 sm:p-6 rounded-2xl sm:rounded-3xl hover:border-slate-700 transition-all duration-300 flex flex-col justify-between h-full">
-                  <div>
-                    <span className="inline-block bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[9px] sm:text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full mb-2.5 sm:mb-3">
-                      {art.badge}
-                    </span>
-                    <h3 className="text-sm sm:text-lg font-bold text-white mb-2 sm:mb-3 leading-snug group-hover:text-blue-400 transition-colors">
-                      {art.title}
-                    </h3>
-                    <p className="text-slate-400 leading-relaxed text-[11px] sm:text-sm mb-3 sm:mb-4">
-                      {art.desc}
-                    </p>
-                  </div>
-                  <div className="inline-flex items-center gap-2 text-[11px] sm:text-sm font-bold text-blue-400 group-hover:text-blue-300 transition-colors">
-                    <span>{art.cta}</span>
-                    <ArrowRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 transition-transform group-hover:translate-x-1" />
-                  </div>
-                </article>
-              </Link>
-            ))}
-          </div>
+          <FeaturedPosts posts={featuredItems} />
         </div>
         <section
           className="flex flex-1 flex-col gap-16"

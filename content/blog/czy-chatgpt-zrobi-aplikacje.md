@@ -175,5 +175,5 @@ Czy jesteś gotowy, aby wykorzystać potencjał AI w swoim biznesie w sposób ko
 ### 💡 Planujesz wdrożyć AI lub stworzyć aplikację bez przepalania budżetu?
 Nie ryzykuj budowania „cyfrowego domku z kart”. Przeanalizujmy architekturę Twojego pomysłu podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I SKONSULTUJ ARCHITEKTURĘ (0 ZŁ)](/projektowanie-mvp)**
+ **[ODBIERZ PAKIET STRATEGICZNY I SKONSULTUJ ARCHITEKTURĘ (0 ZŁ)](/projektowanie-mvp)**
 *(30 minut wideorozmowy • Bankowy rygor bezpieczeństwa • Zero zobowiązań)*

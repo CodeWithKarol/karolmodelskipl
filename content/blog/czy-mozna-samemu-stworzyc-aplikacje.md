@@ -110,9 +110,10 @@ To nie jest oszczędność. To jest hazard.
 
 ---
 
-**💡 Szkoda Twojego czasu na naukę kodowania po nocach.** Zamiast utknąć w ograniczeniach no-code lub niespójnym kodzie z generatorów AI, stwórzmy bezpieczną architekturę Twojego [MVP w 30 dni](/projektowanie-mvp). Porozmawiajmy bezpośrednio podczas bezpłatnej rozmowy w 4 oczy.
+### 💡 Szkoda Twojego czasu na naukę kodowania po nocach?
+Zamiast utknąć w ograniczeniach no-code lub niespójnym kodzie z generatorów AI, stwórzmy bezpieczną architekturę Twojego [MVP w 30 dni](/projektowanie-mvp). Porozmawiajmy bezpośrednio podczas bezpłatnej rozmowy w 4 oczy.
 
-👉 **[ODBIERZ PAKIET STRATEGICZNY I ZAPLANUJ MVP (0 ZŁ)](/projektowanie-mvp)**
+ **[ODBIERZ PAKIET STRATEGICZNY I ZAPLANUJ MVP (0 ZŁ)](/projektowanie-mvp)**
 
 *(30 minut wideorozmowy • Bankowe standardy bezpieczeństwa • Osobista Mapa Drogowa IT)*
 
@@ -258,8 +259,9 @@ Twoja firma zasługuje na to, by działać w oparciu o najlepsze możliwe standa
 
 ---
 
-**Twój czas jest zbyt drogi, by testować „samodzielnie” kolejne no-code'owe wtyczki.** Zamiast dokładać do siebie kolejny miesiąc frustracji, odbierz bezpłatnie Osobistą Mapę Drogową IT i sprawdź, jak wystartować w 30 dni pod okiem architekta.
+### 💡 Twój czas jest zbyt drogi, by testować „samodzielnie” kolejne no-code'owe wtyczki?
+Zamiast dokładać do siebie kolejny miesiąc frustracji, odbierz bezpłatnie Osobistą Mapę Drogową IT i sprawdź, jak wystartować w 30 dni pod okiem architekta.
 
-👉 **[ROZPOCZNIJ OD BEZPŁATNEJ MAPY DROGOWEJ (0 ZŁ)](/projektowanie-mvp)**
+ **[ROZPOCZNIJ OD BEZPŁATNEJ MAPY DROGOWEJ (0 ZŁ)](/projektowanie-mvp)**
 
 *(30 minut rozmowy wideo • Bezpośredni kontakt z architektem • Zero zobowiązań)*
