@@ -189,3 +189,114 @@
 .article-cta .article-cta-meta em {
   @apply relative mt-1 text-xs font-normal text-slate-500 not-italic;
 }
+
+.prose blockquote p:first-of-type::before,
+.prose blockquote p:last-of-type::after {
+  content: none;
+}
+
+.prose table {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.table-mobile-cards {
+  @apply my-6;
+}
+
+.table-mobile-cards .table-card-label {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .table-mobile-cards {
+    overflow-x: auto;
+    border-radius: 0.75rem;
+    border: 1px solid rgb(30 41 59);
+  }
+  .table-mobile-cards th,
+  .table-mobile-cards td {
+    padding: 0.75rem 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .table-mobile-cards table {
+    display: block;
+    width: 100%;
+  }
+  .table-mobile-cards thead {
+    display: none;
+  }
+  .table-mobile-cards tbody {
+    display: block;
+  }
+  .table-mobile-cards tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem 0.5rem;
+    border: 1px solid rgb(30 41 59);
+    border-radius: 0.75rem;
+    background: rgb(15 23 42 / 0.5);
+  }
+  .table-mobile-cards td {
+    display: block;
+    padding: 0.4rem 0;
+    border: none;
+  }
+  .table-mobile-cards td:first-child {
+    margin-bottom: 0.375rem;
+    font-weight: 700;
+    color: #f1f5f9;
+  }
+  .table-mobile-cards td:not(:first-child) .table-card-label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #94a3b8;
+  }
+  .table-mobile-cards--single {
+    border: 1px solid rgb(30 41 59);
+    border-radius: 0.75rem;
+    background: rgb(15 23 42 / 0.5);
+    padding: 1rem 1rem 0.5rem;
+  }
+  .table-mobile-cards--single thead {
+    display: block;
+    border-bottom: none;
+  }
+  .table-mobile-cards--single thead th {
+    display: block;
+    padding: 0 0 0.75rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid rgb(30 41 59);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #94a3b8;
+  }
+  .table-mobile-cards--single tbody {
+    display: block;
+  }
+  .table-mobile-cards--single tbody tr {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: none;
+  }
+  .table-mobile-cards--single td {
+    display: block;
+    padding: 0.4rem 0;
+  }
+  .table-mobile-cards--single td:first-child {
+    margin-bottom: 0;
+    font-weight: 400;
+    color: inherit;
+  }
+}

@@ -49,6 +49,8 @@
 - [Jak zrobić aplikację ze strony internetowej?](https://www.karolmodelski.pl/blog/jak-zrobic-aplikacje-ze-strony-internetowej): Przekształcanie strony w aplikację – kiedy to ma sens.
 - [Co to jest modernizacja aplikacji legacy?](https://www.karolmodelski.pl/blog/co-to-jest-modernizacja-aplikacji-legacy): Bezpieczny przewodnik dla właścicieli firm – dlaczego przepisywanie od zera to pułapka na budżet.
 - [Jakie są korzyści z modernizacji systemów IT?](https://www.karolmodelski.pl/blog/korzysci-z-modernizacji-systemow-it): Recepta na szybszy biznes bez pisania aplikacji od zera – koniec z przepalaniem budżetu na łatanie starego kodu.
+- [Jak wybrać dostawcę usług modernizacji aplikacji?](https://www.karolmodelski.pl/blog/jak-wybrac-dostawce-modernizacji-aplikacji): Praktyczny przewodnik dla właścicieli firm – typy wykonawców, pytania weryfikacyjne, ukryte koszty i prawa autorskie.
+- [Ile kosztuje modernizacja aplikacji webowej?](https://www.karolmodelski.pl/blog/ile-kosztuje-modernizacja-aplikacji-webowej): Realne stawki rynkowe 2026, ukryte pułapki w wycenach agencji i bezpieczny proces ewolucyjny bez wstrzymywania sprzedaży.
 
 #### Strategia i Partnerstwo IT
 - [Czym różni się strona od aplikacji internetowej?](https://www.karolmodelski.pl/blog/roznica-strona-aplikacja-firma): Kiedy wystarczy wizytówka, a kiedy potrzebujesz dedykowanego systemu.
