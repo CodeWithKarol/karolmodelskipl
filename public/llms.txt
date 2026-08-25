@@ -47,6 +47,8 @@
 - [Jak wygląda tworzenie aplikacji od podstaw?](https://www.karolmodelski.pl/blog/jak-wyglada-tworzenie-aplikacji): Proces od surowego pomysłu do maszyny konwersyjnej.
 - [Czy ChatGPT zrobi aplikację?](https://www.karolmodelski.pl/blog/czy-chatgpt-zrobi-aplikacje): Wykorzystanie AI w programowaniu a ryzyko długu technologicznego.
 - [Jak zrobić aplikację ze strony internetowej?](https://www.karolmodelski.pl/blog/jak-zrobic-aplikacje-ze-strony-internetowej): Przekształcanie strony w aplikację – kiedy to ma sens.
+- [Co to jest modernizacja aplikacji legacy?](https://www.karolmodelski.pl/blog/co-to-jest-modernizacja-aplikacji-legacy): Bezpieczny przewodnik dla właścicieli firm – dlaczego przepisywanie od zera to pułapka na budżet.
+- [Jakie są korzyści z modernizacji systemów IT?](https://www.karolmodelski.pl/blog/korzysci-z-modernizacji-systemow-it): Recepta na szybszy biznes bez pisania aplikacji od zera – koniec z przepalaniem budżetu na łatanie starego kodu.
 
 #### Strategia i Partnerstwo IT
 - [Czym różni się strona od aplikacji internetowej?](https://www.karolmodelski.pl/blog/roznica-strona-aplikacja-firma): Kiedy wystarczy wizytówka, a kiedy potrzebujesz dedykowanego systemu.
