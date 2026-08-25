@@ -15,9 +15,91 @@ import { BlogPostGrid } from "@/components/blog-post-grid"
 import { CtaSection } from "@/components/cta-section"
 import { extractHeadings, slugify, extractTextContent } from "@/lib/utils/heading"
 import { ctaCalloutPlugin } from "@/lib/utils/mdx-cta"
-import type { ReactNode } from "react"
+import { Children, cloneElement, isValidElement, type ReactElement, type ReactNode } from "react"
 
 const headingTags = { 2: "h2", 3: "h3" } as const
+
+function getTableHeaderLabels(children: ReactNode): string[] {
+  const nodes = Children.toArray(children)
+  const thead = nodes.find(
+    (node) => isValidElement(node) && node.type === "thead"
+  )
+  if (!isValidElement(thead)) return []
+  const rows = Children.toArray(
+    (thead.props as { children?: ReactNode }).children
+  )
+  const firstRow = rows.find((row) => isValidElement(row))
+  if (!isValidElement(firstRow)) return []
+  return Children.toArray(
+    (firstRow.props as { children?: ReactNode }).children
+  )
+    .filter((cell): cell is ReactElement => isValidElement(cell))
+    .map((cell) =>
+      extractTextContent((cell.props as { children?: ReactNode }).children)
+    )
+}
+
+function ResponsiveTable({ children }: { children: ReactNode }) {
+  const labels = getTableHeaderLabels(children)
+
+  if (labels.length === 0) {
+    return (
+      <div className="my-6 overflow-x-auto rounded-xl border border-slate-800">
+        <table>{children}</table>
+      </div>
+    )
+  }
+
+  if (labels.length === 1) {
+    return (
+      <div className="table-mobile-cards table-mobile-cards--single">
+        <table>{children}</table>
+      </div>
+    )
+  }
+
+  const nodes = Children.toArray(children)
+  const tbodyIndex = nodes.findIndex(
+    (node) => isValidElement(node) && node.type === "tbody"
+  )
+  const tbody = tbodyIndex >= 0 ? (nodes[tbodyIndex] as ReactElement) : null
+
+  const newChildren = nodes.map((node, index) => {
+    if (index !== tbodyIndex || !tbody) return node
+    const rows = Children.toArray(
+      (tbody.props as { children?: ReactNode }).children
+    )
+    const newRows = rows.map((row) => {
+      if (!isValidElement(row)) return row
+      const cells = Children.toArray(
+        (row.props as { children?: ReactNode }).children
+      )
+      const newCells = cells.map((cell, i) => {
+        if (!isValidElement(cell) || i === 0) return cell
+        return cloneElement(cell as ReactElement<{ children?: ReactNode }>, {
+          children: (
+            <>
+              <span className="table-card-label">{labels[i] ?? ""}</span>
+              {(cell.props as { children?: ReactNode }).children}
+            </>
+          ),
+        })
+      })
+      return cloneElement(row as ReactElement<{ children?: ReactNode }>, {
+        children: newCells,
+      })
+    })
+    return cloneElement(tbody as ReactElement<{ children?: ReactNode }>, {
+      children: newRows,
+    })
+  })
+
+  return (
+    <div className="table-mobile-cards">
+      <table>{newChildren}</table>
+    </div>
+  )
+}
 
 function HeadingAnchor({
   level,
@@ -113,7 +195,9 @@ export default async function BlogPostPage(props: {
     return notFound()
   }
 
-  const headings = extractHeadings(post.content)
+  const headings = extractHeadings(post.content).filter(
+    (h) => h.level === 2 || h.level === 3
+  )
   const allPosts = getAllPosts()
   const relatedPosts =
     post.related.length > 0
@@ -277,6 +361,9 @@ export default async function BlogPostPage(props: {
                             alt={props.alt || "Ilustracja w artykule blogowym"}
                             className="rounded-xl border border-slate-800 my-6 max-w-full h-auto"
                           />
+                        ),
+                        table: (props) => (
+                          <ResponsiveTable>{props.children}</ResponsiveTable>
                         ),
                         h2: (props) => (
                           <HeadingAnchor
