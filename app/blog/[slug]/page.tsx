@@ -3,6 +3,7 @@ import { getPostBySlug, getPostSlugs, getAllPosts } from "@/lib/blog"
 import Link from "next/link"
 import type { Metadata } from "next"
 import { MDXRemote } from "next-mdx-remote/rsc"
+import remarkGfm from "remark-gfm"
 import {
   ArrowLeft,
   Clock,
@@ -262,7 +263,12 @@ export default async function BlogPostPage(props: {
                   <div className="prose prose-sm max-w-none prose-invert md:prose-base prose-headings:font-bold prose-headings:text-slate-100 prose-headings:scroll-mt-24 prose-p:leading-[1.7] prose-p:text-slate-300 prose-p:my-3 prose-a:text-blue-400 hover:prose-a:text-blue-300 prose-a:no-underline hover:prose-a:underline prose-a:font-medium prose-blockquote:rounded-r-lg prose-blockquote:border-l-blue-500 prose-blockquote:bg-slate-900/80 prose-blockquote:px-4 prose-blockquote:py-2.5 prose-blockquote:font-normal prose-blockquote:text-slate-300 sm:prose-blockquote:px-6 prose-strong:font-bold prose-strong:text-white prose-li:text-slate-300 prose-li:my-1 prose-hr:border-slate-800 prose-img:rounded-xl prose-img:border prose-img:border-slate-800">
                     <MDXRemote
                       source={post.content}
-                      options={{ mdxOptions: { rehypePlugins: [ctaCalloutPlugin] } }}
+                      options={{
+                        mdxOptions: {
+                          remarkPlugins: [remarkGfm],
+                          rehypePlugins: [ctaCalloutPlugin],
+                        },
+                      }}
                       components={{
                         img: (props) => (
                           // eslint-disable-next-line @next/next/no-img-element
