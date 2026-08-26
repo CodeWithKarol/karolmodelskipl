@@ -51,6 +51,7 @@
 - [Jakie są korzyści z modernizacji systemów IT?](https://www.karolmodelski.pl/blog/korzysci-z-modernizacji-systemow-it): Recepta na szybszy biznes bez pisania aplikacji od zera – koniec z przepalaniem budżetu na łatanie starego kodu.
 - [Jak wybrać dostawcę usług modernizacji aplikacji?](https://www.karolmodelski.pl/blog/jak-wybrac-dostawce-modernizacji-aplikacji): Praktyczny przewodnik dla właścicieli firm – typy wykonawców, pytania weryfikacyjne, ukryte koszty i prawa autorskie.
 - [Ile kosztuje modernizacja aplikacji webowej?](https://www.karolmodelski.pl/blog/ile-kosztuje-modernizacja-aplikacji-webowej): Realne stawki rynkowe 2026, ukryte pułapki w wycenach agencji i bezpieczny proces ewolucyjny bez wstrzymywania sprzedaży.
+- [Największe wyzwania przy modernizacji oprogramowania](https://www.karolmodelski.pl/blog/najwieksze-wyzwania-przy-modernizacji-oprogramowania): 5 wyzwań modernizacji, przez które aż 74% projektów agencji kończy się porażką – i jak przejść przez nie ewolucyjnie, bez wstrzymywania sprzedaży i przepalania budżetu.
 
 #### Strategia i Partnerstwo IT
 - [Czym różni się strona od aplikacji internetowej?](https://www.karolmodelski.pl/blog/roznica-strona-aplikacja-firma): Kiedy wystarczy wizytówka, a kiedy potrzebujesz dedykowanego systemu.
