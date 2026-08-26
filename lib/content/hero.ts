@@ -13,7 +13,7 @@ export const hero = {
     title: "Program Partnerski: Rozwój Cyfrowy MŚP (Tylko 2 firmy)",
     description: "Przechodzę z sektora finansowego do bezpośredniego wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną uporządkowanie technologii w Twojej firmie w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong>.",
     cta: "Porozmawiajmy o Twoim projekcie",
-    package_title: "Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
+    package_title: "Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):"
   },
 
   cta_sub: "ZOSTAŁO TYLKO 1 Z 2 WOLNYCH MIEJSC W TYM KWARTALE",

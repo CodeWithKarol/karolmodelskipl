@@ -39,7 +39,7 @@ export const mvp = {
       title: "Zostań Partnerem Założycielem (Tylko 2 firmy w kwartale)",
       description: "Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – jedną z pierwszych dwóch firm, które wdrożą swoje MVP bez agencyjnego cyrku. Pracowałem przy systemach finansowych (Citibank, BNP Paribas) i przenoszę te standardy do firm takich jak Twoja. W zamian za opinię po projekcie zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po uruchomieniu.",
       cta: "Odbierz Pakiet Strategiczny i Zarezerwuj Miejsce (0 zł)",
-      package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
+      package_title: "Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):"
     },
     cta_sub: "Zajmij jedno z 2 wolnych miejsc w tym kwartale, zanim konkurencja pierwsza wypuści podobne rozwiązanie na rynek. Odkładanie decyzji technologicznej oznacza kolejne miesiące uciekających przychodów.",
     offer_items: [

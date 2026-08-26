@@ -115,7 +115,7 @@ Zanim uściśniesz dłoń wykonawcy i przelejesz zaliczkę, upewnij się, że:
 >
 > Zamiast podpisywać umowę w ciemno i przepłacać za armię pośredników, skonsultuj swój system bezpośrednio z inżynierem.
 >
-> **Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):**
+> **Odbierz Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):**
 >
 > - **Niezależny Audyt Wyceny Agencyjnej:** weryfikacja, czy agencja nie zawyża budżetu i czy faktycznie musisz pisać kod od nowa.
 > - **Bankowy Test Stabilności i Bezpieczeństwa:** namierzenie 2–3 krytycznych wąskich gardeł w kodzie i bazie.

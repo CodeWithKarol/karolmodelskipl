@@ -21,7 +21,7 @@ export const hero = {
     title: "Program Partnerski: Opieka Strategiczna Fractional CTO (Tylko 2 firmy)",
     description: "Przechodzę z sektora finansowego do bezpośredniego wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i zyskaj osobistego Dyrektora Technologicznego na godziny w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnego nadzoru</strong> nad rozwojem cyfrowym Twojej firmy.",
     cta: "Umów bezpłatną konsultację strategiczną",
-    package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
+    package_title: "Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):"
   },
   cta_sub: "100% bezpłatnie • Wideorozmowa w 4 oczy • Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
   offer_items: [

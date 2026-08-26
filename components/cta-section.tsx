@@ -75,7 +75,8 @@ export function CtaSection({ content: pageContent }: CtaSectionProps = {}) {
                   {cta.button}
                 </Button>
               </a>
-              <p className="text-xs sm:text-sm text-slate-400 mt-3 font-medium leading-relaxed text-pretty">{cta.footer}</p>
+              <p className="text-xs sm:text-sm text-slate-400 mt-3 font-medium leading-relaxed text-pretty">30-minutowa wideorozmowa diagnostyczna + kompletny plan wdrożenia przesłany po spotkaniu.</p>
+              <p className="text-xs sm:text-sm text-slate-400 mt-2 font-medium leading-relaxed text-pretty">{cta.footer}</p>
             </div>
           </Reveal>
         </div>
