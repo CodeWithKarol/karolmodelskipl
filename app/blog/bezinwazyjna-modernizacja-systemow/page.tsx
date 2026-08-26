@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
 import { FeaturedPosts } from "@/components/featured-posts"
+import { BlogPostGrid } from "@/components/blog-post-grid"
 import { BookOpen, ArrowRight, Zap, ShieldCheck, Banknote } from "lucide-react"
 import { CtaSection, type CtaContent } from "@/components/cta-section"
 import { SectionBadge } from "@/components/section-badge"
@@ -148,7 +149,7 @@ export default function ModernizacjaCategoryPage() {
         </div>
 
         <FeaturedPosts
-          posts={posts.map((post) => ({
+          posts={posts.slice(0, 3).map((post) => ({
             slug: post.slug,
             title: post.title,
             desc: post.excerpt,
@@ -156,8 +157,9 @@ export default function ModernizacjaCategoryPage() {
             readingTime: post.readingTime,
             date: post.date,
           }))}
-          className="mb-20"
+          className={posts.length > 3 ? "mb-10 sm:mb-16" : "mb-20"}
         />
+        {posts.length > 3 && <BlogPostGrid posts={posts.slice(3)} className="mb-20" />}
       </main>
 
       <CtaSection content={ctaContent} />
