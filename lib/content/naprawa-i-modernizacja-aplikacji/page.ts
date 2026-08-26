@@ -41,7 +41,7 @@ export const hero = {
     title: "Program Partnerski: Modernizacja i Przyspieszanie Systemów (Tylko 2 firmy)",
     description: "Przechodzę z sektora finansowego do wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces bezinwazyjnej naprawy oprogramowania w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po wdrożeniu poprawek.",
     cta: "Umów bezpłatny audyt wydajności",
-    package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
+    package_title: "Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):"
   },
   cta_sub: "100% bezpłatnie • Wideorozmowa w 4 oczy • Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
   offer_items: [

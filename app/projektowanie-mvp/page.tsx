@@ -178,7 +178,8 @@ export default function ProjektowanieMvpPage() {
                   {mvp.hero.pilot_program.cta}
                 </Button>
               </a>
-              <p className="text-[10px] text-slate-400 text-center mt-3 uppercase tracking-widest font-semibold">{mvp.hero.cta_sub}</p>
+              <p className="text-[11px] text-slate-400 text-center mt-2 font-medium leading-snug">30-minutowa wideorozmowa diagnostyczna + kompletny plan wdrożenia przesłany po spotkaniu</p>
+              <p className="text-[10px] text-slate-400 text-center mt-2 uppercase tracking-widest font-semibold">{mvp.hero.cta_sub}</p>
             </div>
           </div>
         </div>

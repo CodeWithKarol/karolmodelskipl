@@ -81,7 +81,7 @@ To samo podejście — bankowe standardy stabilności i bezpieczeństwa bez korp
 
 ---
 ### 💡 Twój system działa wolno lub blokuje sprzedaż? Zdiagnozujmy kod w 4 oczy.
-Zamiast agencyjnego „głuchego telefonu” i wycen na dziesiątki tysięcy w ciemno, skorzystaj z bezpośredniej współpracy z inżynierem. Jako Niezależny Partner Technologiczny przenoszę standardy stabilności i bezpieczeństwa wypracowane w bankowości (Citibank, BNP Paribas) wprost do sektora MŚP. Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł) i poznaj wąskie gardła swojego systemu.
+Zamiast agencyjnego „głuchego telefonu” i wycen na dziesiątki tysięcy w ciemno, skorzystaj z bezpośredniej współpracy z inżynierem. Jako Niezależny Partner Technologiczny przenoszę standardy stabilności i bezpieczeństwa wypracowane w bankowości (Citibank, BNP Paribas) wprost do sektora MŚP. Odbierz Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł) i poznaj wąskie gardła swojego systemu.
 
  **[ODBIERZ BEZPŁATNY AUDYT WYDAJNOŚCI I ZAREZERWUJ MIEJSCE (0 ZŁ)](/naprawa-i-modernizacja-aplikacji)**
 *(0 zł • 30 minut wideorozmowy w 4 oczy • Wskażę 2–3 błędy blokujące Twoje zyski • Zero ryzyka, bez zatrzymywania sprzedaży • Zostało 1 z 2 miejsc w tym kwartale)*

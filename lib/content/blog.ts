@@ -28,7 +28,7 @@ export const blogContent = {
       title: "Program Wdrożeniowy: Rozwój Cyfrowy MŚP (Tylko 2 firmy)",
       description: "Nie chcesz czytać dziesiątek artykułów i wolisz skonsultować swój projekt bezpośrednio ze mną? Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> w bieżącym kwartale i przetestuj proces doradztwa strategicznego w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> nad systemem.",
       cta: "Porozmawiajmy o Twoim projekcie",
-      package_title: "Odbierz Pakiet Strategiczny na start (Wartość 600 zł za 0 zł):"
+      package_title: "Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):"
     },
     cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
     offer_items: [
@@ -127,7 +127,7 @@ export const blogContent = {
     title: "Nie chcesz czytać dziesiątek artykułów? Zróbmy bezpłatny audyt w 4 oczy.",
     description:
       "Zamiast tracić czas na samodzielną analizę techniczną, przenieś problem na moje barki. W każdym kwartale obejmuję opieką strategiczną i technologiczną <strong class='text-white font-semibold'>maksymalnie 2 firmy</strong>. W zamian za opinię po zakończeniu analizy, możesz odebrać kompletny Pakiet Strategiczny całkowicie bezpłatnie.",
-    package_title: "Odbierz kompletny Pakiet Strategiczny (Wartość 600 zł za 0 zł):",
+    package_title: "Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):",
     offer_items: [
       { title: "30-minutowa diagnoza podczas rozmowy wideo w 4 oczy", desc: "" },
       { title: "Indywidualny Plan Wdrożenia lub Modernizacji w 30 dni", desc: "" },
