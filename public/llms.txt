@@ -30,10 +30,13 @@
 ### Artykuły
 
 #### Dedykowane Systemy dla Firm
+- [Co to jest aplikacja webowa?](https://www.karolmodelski.pl/blog/co-to-jest-aplikacja-webowa): Różnica między stroną, aplikacją webową i mobilną, kiedy dedykowany system zaczyna zarabiać na firmę oraz pułapki agencji przy zamawianiu oprogramowania – po ludzku i bez żargonu.
+- [Czy stworzenie aplikacji dla firmy jest trudne?](https://www.karolmodelski.pl/blog/czy-stworzenie-aplikacji-dla-firmy-jest-trudne): Skąd biorą się mity o trudności budowy aplikacji i jak podejść do projektu mądrze, by nie przepalić budżetu.
 - [Ile kosztuje stworzenie aplikacji dla firmy?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-dla-firmy): Prawda o taniej budowie i realnym ROI.
 - [Ile kosztuje stworzenie aplikacji webowej?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-webowej): Prawda o wycenach agencji i ukrytych kosztach.
 - [Ile kosztuje stworzenie aplikacji mobilnej?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-mobilnej): Realny koszt budowy aplikacji mobilnej dla biznesu.
 - [Ile pieniędzy można zarobić na stworzeniu aplikacji?](https://www.karolmodelski.pl/blog/ile-pieniedzy-mozna-zarobic-na-stworzeniu-aplikacji): Kalkulacja zwrotu z inwestycji w systemy firmowe.
+- [Ile tak naprawdę trwa tworzenie aplikacji?](https://www.karolmodelski.pl/blog/ile-trwa-tworzenie-aplikacji): Realne terminy budowy oprogramowania – MVP w 30 dni, dedykowany system w 2–4 miesiące, rozbudowany ekosystem w 6–12 miesięcy. Bez agencyjnego przeciągania projektów.
 - [Jaki jest najlepszy program do prowadzenia firmy?](https://www.karolmodelski.pl/blog/jaki-jest-najlepszy-program-do-prowadzenia-firmy): Przewodnik po wyborze technologii biznesowych.
 - [Jaki jest najlepszy program do organizacji?](https://www.karolmodelski.pl/blog/jaki-jest-najlepszy-program-do-organizacji): Gotowe narzędzia SaaS vs dedykowany system szyty na miarę.
 
