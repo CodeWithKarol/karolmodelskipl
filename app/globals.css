@@ -178,16 +178,16 @@
 }
 
 .article-cta .article-cta-link a {
-  @apply block w-full rounded-xl bg-blue-600 px-5 py-3 text-center text-sm font-bold text-white no-underline shadow-[0_0_30px_-10px_rgba(59,130,246,0.8)] transition-colors hover:bg-blue-500 hover:no-underline sm:inline-block sm:w-auto sm:text-left;
+  @apply relative flex min-h-11 w-full items-center justify-center rounded-xl bg-blue-600 px-5 py-3 text-center text-sm font-bold text-white no-underline shadow-[0_0_30px_-10px_rgba(59,130,246,0.8)] transition-colors hover:bg-blue-500 hover:no-underline sm:inline-flex sm:w-auto;
 }
 
 .article-cta .article-cta-link em {
-  @apply mt-2 block text-xs font-normal text-slate-500 not-italic;
+  @apply mt-2 block text-center text-xs font-normal text-slate-500 not-italic sm:text-left;
 }
 
 .article-cta .article-cta-meta,
 .article-cta .article-cta-meta em {
-  @apply relative mt-1 text-xs font-normal text-slate-500 not-italic;
+  @apply relative mt-1 text-center text-xs font-normal text-slate-500 not-italic sm:text-left;
 }
 
 .prose blockquote p:first-of-type::before,

@@ -77,24 +77,10 @@ export const blogContent = {
     subtitle: "Poznaj najpopularniejsze analizy i poradniki oparte na wieloletnim doświadczeniu inżynieryjnym.",
     items: [
       {
-        title: "Ile kosztuje stworzenie aplikacji dla firmy? Prawda o „taniej” budowie i realnym ROI",
-        desc: "Wielu właścicieli firm szuka taniej aplikacji. Analizuję, dlaczego to najkosztowniejszy błąd i jak podejść do budowy systemu, który faktycznie zarabia.",
-        badge: "Wyróżniony artykuł",
-        slug: "ile-kosztuje-stworzenie-aplikacji-dla-firmy",
-        cta: "Przeczytaj artykuł"
-      },
-      {
         title: "Jak wygląda tworzenie aplikacji? Od surowego pomysłu do 'maszyny konwersyjnej'",
         desc: "Większość właścicieli firm wyobraża sobie tworzenie aplikacji jako proces magiczny. W rzeczywistości przypomina to budowę autostrady bez planu – zobacz, jak robić to profesjonalnie.",
         badge: "Wyróżniony artykuł",
         slug: "jak-wyglada-tworzenie-aplikacji",
-        cta: "Przeczytaj artykuł"
-      },
-      {
-        title: "Czy mogę stworzyć własną aplikację wykorzystującą sztuczną inteligencję?",
-        desc: "Wiele firm marzy o wdrożeniu AI, ale gubi się w gąszczu obietnic. Analizuję, czy warto budować własne rozwiązania AI i jak podejść do tego strategicznie.",
-        badge: "Wyróżniony artykuł",
-        slug: "czy-moge-stworzyc-wlasna-aplikacje-z-ai",
         cta: "Przeczytaj artykuł"
       }
     ]

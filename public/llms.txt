@@ -32,24 +32,21 @@
 #### Dedykowane Systemy dla Firm
 - [Co to jest aplikacja webowa?](https://www.karolmodelski.pl/blog/co-to-jest-aplikacja-webowa): Różnica między stroną, aplikacją webową i mobilną, kiedy dedykowany system zaczyna zarabiać na firmę oraz pułapki agencji przy zamawianiu oprogramowania – po ludzku i bez żargonu.
 - [Czy stworzenie aplikacji dla firmy jest trudne?](https://www.karolmodelski.pl/blog/czy-stworzenie-aplikacji-dla-firmy-jest-trudne): Skąd biorą się mity o trudności budowy aplikacji i jak podejść do projektu mądrze, by nie przepalić budżetu.
-- [Ile kosztuje stworzenie aplikacji dla firmy?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-dla-firmy): Prawda o taniej budowie i realnym ROI.
-- [Ile kosztuje stworzenie aplikacji webowej?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-webowej): Prawda o wycenach agencji i ukrytych kosztach.
-- [Ile kosztuje stworzenie aplikacji mobilnej?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-mobilnej): Realny koszt budowy aplikacji mobilnej dla biznesu.
-- [Ile pieniędzy można zarobić na stworzeniu aplikacji?](https://www.karolmodelski.pl/blog/ile-pieniedzy-mozna-zarobic-na-stworzeniu-aplikacji): Kalkulacja zwrotu z inwestycji w systemy firmowe.
+- [Ile kosztuje stworzenie aplikacji webowej?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-webowej): Realny przewodnik po cenach, ukrytych pułapkach i oszczędnościach – widełki rynkowe, prawda o agencyjnych marżach, ukryte koszty utrzymania oraz 4 zasady obniżające koszt budowy o 40–50%.
+- [Ile naprawdę kosztuje stworzenie aplikacji mobilnej?](https://www.karolmodelski.pl/blog/ile-kosztuje-stworzenie-aplikacji-mobilnej): Realne widełki cenowe aplikacji mobilnej w Polsce, prawda o agencyjnych marżach i „głuchym telefonie”, ukryte koszty utrzymania oraz 4 decyzje, które obniżają koszt budowy o 35–45%.
+- [Ile można zarobić na własnej aplikacji? Brutalna prawda, realne liczby i mechanizmy zysku w 2026 roku](https://www.karolmodelski.pl/blog/ile-pieniedzy-mozna-zarobic-na-stworzeniu-aplikacji): Realne statystyki zarobków twórców aplikacji konsumenckich, porównanie 4 modeli monetyzacji, ukryte koszty (prowizje sklepów, CAC, utrzymanie) oraz sposób, by nie przepalić budżetu w agencyjnym chaosie dzięki metodzie MVP w 30 dni.
 - [Ile tak naprawdę trwa tworzenie aplikacji?](https://www.karolmodelski.pl/blog/ile-trwa-tworzenie-aplikacji): Realne terminy budowy oprogramowania – MVP w 30 dni, dedykowany system w 2–4 miesiące, rozbudowany ekosystem w 6–12 miesięcy. Bez agencyjnego przeciągania projektów.
-- [Jaki jest najlepszy program do prowadzenia firmy?](https://www.karolmodelski.pl/blog/jaki-jest-najlepszy-program-do-prowadzenia-firmy): Przewodnik po wyborze technologii biznesowych.
+- [Jak stworzyć aplikację webową, która realnie zarabia?](https://www.karolmodelski.pl/blog/jak-stworzyc-aplikacje-ktora-zarabia): Praktyczny przewodnik dla właścicieli firm – od pomysłu do działającej aplikacji internetowej bez przepalania budżetu. MVP w 30 dni, 5 etapów budowy, na czym nie wolno oszczędzać oraz model Niezależnego Partnera Technologicznego zamiast agencyjnych narzutów.
 - [Jaki jest najlepszy program do organizacji?](https://www.karolmodelski.pl/blog/jaki-jest-najlepszy-program-do-organizacji): Gotowe narzędzia SaaS vs dedykowany system szyty na miarę.
 
 #### Szybka Wersja Startowa (MVP)
 - [Czy można samemu stworzyć aplikację?](https://www.karolmodelski.pl/blog/czy-mozna-samemu-stworzyc-aplikacje): Kiedy samodzielne kodowanie ma sens.
-- [Czy taniej jest stworzyć aplikację samemu?](https://www.karolmodelski.pl/blog/czy-taniej-jest-stworzyc-aplikacje-samemu): Realny koszt zrób to sam w cyfrowym biznesie.
 - [Jak napisać aplikację za darmo?](https://www.karolmodelski.pl/blog/jak-napisac-aplikacje-za-darmo): Granice darmowych narzędzi i AI w budowaniu stabilnego biznesu.
-- [Jakich aplikacji użyć na start działalności?](https://www.karolmodelski.pl/blog/jakich-aplikacji-uzyc-na-start): Dobór optymalnego stosu technologicznego dla nowej firmy.
 
 #### Bezinwazyjna Modernizacja
 - [Jak wygląda tworzenie aplikacji od podstaw?](https://www.karolmodelski.pl/blog/jak-wyglada-tworzenie-aplikacji): Proces od surowego pomysłu do maszyny konwersyjnej.
 - [Czy ChatGPT zrobi aplikację?](https://www.karolmodelski.pl/blog/czy-chatgpt-zrobi-aplikacje): Wykorzystanie AI w programowaniu a ryzyko długu technologicznego.
-- [Jak zrobić aplikację ze strony internetowej?](https://www.karolmodelski.pl/blog/jak-zrobic-aplikacje-ze-strony-internetowej): Przekształcanie strony w aplikację – kiedy to ma sens.
+- [Jak zrobić aplikację ze strony internetowej?](https://www.karolmodelski.pl/blog/jak-zrobic-aplikacje-ze-strony-internetowej): Zamiana strony w aplikację bez przepalania budżetu – 3 ścieżki (PWA, inteligentny kontener WebView/TWA, przebudowa od zera), porównanie kosztów i czasu, pułapki regulaminowe Apple (wytyczna 4.2) i Google (testy zamknięte: 12 testerów przez 14 dni) oraz 4 kroki wdrożenia bez przestojów w biznesie.
 - [Co to jest modernizacja aplikacji legacy?](https://www.karolmodelski.pl/blog/co-to-jest-modernizacja-aplikacji-legacy): Bezpieczny przewodnik dla właścicieli firm – dlaczego przepisywanie od zera to pułapka na budżet.
 - [Jakie są korzyści z modernizacji systemów IT?](https://www.karolmodelski.pl/blog/korzysci-z-modernizacji-systemow-it): Recepta na szybszy biznes bez pisania aplikacji od nowa – 6 biznesowych korzyści ewolucyjnej modernizacji: cięcie kosztów utrzymania, szybsze działanie i koniec z porzucanymi koszykami, zwrotność rynkowa, automatyzacja, bezpieczeństwo klasy bankowej oraz fundament pod AI.
 - [Jak wybrać dostawcę usług modernizacji aplikacji?](https://www.karolmodelski.pl/blog/jak-wybrac-dostawce-modernizacji-aplikacji): Praktyczny przewodnik dla właścicieli firm – typy wykonawców, pytania weryfikacyjne, ukryte koszty i prawa autorskie.
@@ -60,10 +57,7 @@
 - [Ile kosztuje modernizacja aplikacji w średniej wielkości firmie?](https://www.karolmodelski.pl/blog/ile-kosztuje-modernizacja-aplikacji): Konkretne liczby dla firm MŚP – 4 ścieżki modernizacji z realnymi widełkami budżetowymi, ukryte koszty, o których agencje wolą milczeć, oraz bezpieczny proces etapowy bez przestojów w sprzedaży.
 
 #### Strategia i Partnerstwo IT
-- [Czym różni się strona od aplikacji internetowej?](https://www.karolmodelski.pl/blog/roznica-strona-aplikacja-firma): Kiedy wystarczy wizytówka, a kiedy potrzebujesz dedykowanego systemu.
-- [Sztuczna inteligencja w aplikacji biznesowej](https://www.karolmodelski.pl/blog/czy-moge-stworzyc-wlasna-aplikacje-z-ai): Jak mądrze wdrożyć AI bez przepalania budżetu.
 - [W czym pisać aplikacje dla firmy?](https://www.karolmodelski.pl/blog/w-czym-pisac-aplikacje-webowe): Wybór języka i technologii, która nie zestarzeje się za 2 lata.
-- [W jakim programie tworzyć system dla firmy?](https://www.karolmodelski.pl/blog/w-jakim-programie-tworzy-sie-aplikacje): Architektura oparta na standardach bankowych.
 
 ## Bezpłatna Konsultacja
 
