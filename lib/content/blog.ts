@@ -77,10 +77,34 @@ export const blogContent = {
     subtitle: "Poznaj najpopularniejsze analizy i poradniki oparte na wieloletnim doświadczeniu inżynieryjnym.",
     items: [
       {
-        title: "Jak wygląda tworzenie aplikacji? Od surowego pomysłu do 'maszyny konwersyjnej'",
-        desc: "Większość właścicieli firm wyobraża sobie tworzenie aplikacji jako proces magiczny. W rzeczywistości przypomina to budowę autostrady bez planu – zobacz, jak robić to profesjonalnie.",
+        title: "Ile można zarobić na własnej aplikacji? Brutalna prawda, realne liczby i mechanizmy zysku",
+        desc: "Jakie pieniądze naprawdę generuje aplikacja mobilna czy system dla firm? Realne statystyki, porównanie modeli monetyzacji i ukryte koszty, które decydują o tym, czy inwestycja się zwraca.",
         badge: "Wyróżniony artykuł",
-        slug: "jak-wyglada-tworzenie-aplikacji",
+        slug: "ile-pieniedzy-mozna-zarobic-na-stworzeniu-aplikacji",
+        cta: "Przeczytaj artykuł"
+      },
+      {
+        title: "Jak zrobić aplikację ze strony internetowej? To nie jest kopiuj-wklej",
+        desc: "Wiele firm chce przekształcić swoją stronę w aplikację mobilną. Sprawdź, kiedy to się opłaca i jak zrobić to dobrze, by zyskać, a nie stracić.",
+        slug: "jak-zrobic-aplikacje-ze-strony-internetowej",
+        cta: "Przeczytaj artykuł"
+      },
+      {
+        title: "Czy ChatGPT zrobi aplikację dla Twojej firmy? Prawda bez ściemniania",
+        desc: "W czym ChatGPT realnie wyręczy Cię przy budowie aplikacji, gdzie kończą się jego możliwości (płatności, bezpieczeństwo, utrzymanie) i dlaczego ślepe zaufanie automatowi bywa kosztowną pułapką.",
+        slug: "czy-chatgpt-zrobi-aplikacje",
+        cta: "Przeczytaj artykuł"
+      },
+      {
+        title: "Ile kosztuje stworzenie aplikacji webowej? Realny przewodnik po cenach",
+        desc: "Konkretne widełki rynkowe, prawda o agencyjnych marżach, ukryte koszty utrzymania oraz 4 zasady, które obniżają koszt budowy aplikacji o 40–50%.",
+        slug: "ile-kosztuje-stworzenie-aplikacji-webowej",
+        cta: "Przeczytaj artykuł"
+      },
+      {
+        title: "W czym pisać aplikacje webowe? Przewodnik bez technicznego żargonu",
+        desc: "Jak wybrać frontend, backend i bazę danych z perspektywy biznesowej, aby obniżyć koszty, uniknąć przepłacania i nie utknąć w ślepym zaułku technologicznym.",
+        slug: "w-czym-pisac-aplikacje-webowe",
         cta: "Przeczytaj artykuł"
       }
     ]

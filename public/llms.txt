@@ -40,8 +40,8 @@
 - [Jakie są najlepsze aplikacje do prowadzenia firmy?](https://www.karolmodelski.pl/blog/jakie-sa-najlepsze-aplikacje-do-prowadzenia-firmy): Przegląd sprawdzonych narzędzi do fakturowania (KSeF), CRM, zadań i komunikacji zespołowej oraz granice gotowych programów SaaS – kiedy warto postawić na system szyty na miarę.
 
 #### Szybka Wersja Startowa (MVP)
-- [Czy można samemu stworzyć aplikację?](https://www.karolmodelski.pl/blog/czy-mozna-samemu-stworzyc-aplikacje): Kiedy samodzielne kodowanie ma sens.
-- [Jak napisać aplikację za darmo?](https://www.karolmodelski.pl/blog/jak-napisac-aplikacje-za-darmo): Granice darmowych narzędzi i AI w budowaniu stabilnego biznesu.
+- [Czy można samemu zrobić aplikację? Prawda o narzędziach AI, No-Code i pułapkach, o których nikt nie mówi](https://www.karolmodelski.pl/blog/czy-mozna-samemu-stworzyc-aplikacje): Trzy drogi dla przedsiębiorcy (No-Code, AI App Builders, Low-Code), kiedy samodzielne budowanie aplikacji ma sens, 4 ukryte pułapki (koszty infrastruktury, bezpieczeństwo i RODO, stabilność pod obciążeniem, biurokracja sklepów App Store/Google Play) oraz strategia wyboru rozwiązania w tabeli.
+- [Jak napisać aplikację za darmo? Praktyczny przewodnik dla przedsiębiorców bez technicznego żargonu](https://www.karolmodelski.pl/blog/jak-napisac-aplikacje-za-darmo): Czy da się stworzyć działającą aplikację bez wydawania złotówki – trzy ścieżki (generatory AI, platformy no-code, samodzielny kod), darmowe bazy danych (SQLite, Supabase, Neon) z haczykami zimnego startu, ominięcie opłat Apple/Google dzięki standardowi PWA, obowiązki RODO za 0 zł oraz rachunek zysków i strat porównujący samodzielną naukę, agencję i MVP w 30 dni.
 
 #### Bezinwazyjna Modernizacja
 - [Jak wygląda tworzenie aplikacji od podstaw?](https://www.karolmodelski.pl/blog/jak-wyglada-tworzenie-aplikacji): Proces od surowego pomysłu do maszyny konwersyjnej.
