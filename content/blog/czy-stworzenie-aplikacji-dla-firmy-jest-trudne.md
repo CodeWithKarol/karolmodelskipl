@@ -5,14 +5,13 @@ silo: "Dedykowane Systemy dla Firm (Koszty i Zyski)"
 readingTime: "10 min"
 date: "2026-08-27"
 related:
-  - ile-kosztuje-stworzenie-aplikacji-dla-firmy
   - ile-kosztuje-stworzenie-aplikacji-webowej
   - jak-wyglada-tworzenie-aplikacji
 ---
 
 Gdy rozmawiam z właścicielami firm z sektora MŚP, niemal każdy na początku zadaje to samo pytanie: *„Panie Karolu, czy stworzenie dedykowanej aplikacji dla naszej firmy jest w ogóle trudne i czy nas na to stać?”*.
 
-Większość z nich ma w głowie czarny scenariusz: opasłe dokumentacje na setki stron, [wyceny idące w setki tysięcy złotych](/blog/ile-kosztuje-stworzenie-aplikacji-dla-firmy), 8 miesięcy czekania i zespół programistów mówiący językiem, którego nikt w firmie nie rozumie.
+Większość z nich ma w głowie czarny scenariusz: opasłe dokumentacje na setki stron, wyceny idące w setki tysięcy złotych, 8 miesięcy czekania i zespół programistów mówiący językiem, którego nikt w firmie nie rozumie.
 
 Krótka odpowiedź brzmi: **Samo napisanie kodu nie jest dziś największą trudnością. Prawdziwym wyzwaniem jest stworzenie narzędzia, które precyzyjnie rozwiązuje problem biznesowy, nie generuje chaosu i realnie zarabia na siebie od pierwszego miesiąca.**
 
