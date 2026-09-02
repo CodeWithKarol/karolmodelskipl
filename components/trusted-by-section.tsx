@@ -19,7 +19,7 @@ export function TrustedBySection() {
             <span>{trustedBy.badge}</span>
           </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
             {trustedBy.title}
           </h2>
         </Reveal>

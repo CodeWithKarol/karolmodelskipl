@@ -74,7 +74,7 @@ export function Footer() {
                 Porozmawiajmy o Twoim projekcie
               </Button>
             </a>
-            <p className="text-xs text-slate-400 mt-2">100% bezpłatna rozmowa strategiczna • Odbierz plan o wartości 600 zł za 0 zł</p>
+            <p className="text-xs text-slate-400 mt-2">100% bezpłatna rozmowa strategiczna • Otrzymasz Audyt Technologiczny i Plan Działań (PDF po spotkaniu)</p>
           </div>
           <p className="text-xs text-slate-400 leading-relaxed">{footer.copyright}</p>
         </div>

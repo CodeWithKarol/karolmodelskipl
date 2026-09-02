@@ -49,18 +49,18 @@ export function StorySection({
             <span>{badge}</span>
           </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
             {title ?? story.title}
           </h2>
           {(intro ?? story.intro) && (
             <p
-              className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg mb-4 [&_em]:text-slate-200 [&_em]:not-italic [&_em]:font-medium"
+              className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg mb-4 [&_em]:text-slate-200 [&_em]:not-italic [&_em]:font-medium [&_strong]:text-white [&_strong]:font-semibold"
               dangerouslySetInnerHTML={{ __html: intro ?? story.intro }}
             />
           )}
           {(context ?? story.context) && (
             <p
-              className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg [&_em]:italic [&_em]:text-slate-200"
+              className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg [&_em]:italic [&_em]:text-slate-200 [&_strong]:text-white [&_strong]:font-semibold"
               dangerouslySetInnerHTML={{ __html: context ?? story.context }}
             />
           )}
@@ -77,15 +77,15 @@ export function StorySection({
               <Reveal
                 key={idx}
                 delay={idx * 0.05}
-                className="group flex items-start gap-5 sm:gap-6 border-t border-slate-800 pt-6 pb-8 sm:pt-7 sm:pb-10"
+                className="group flex flex-col gap-3 sm:gap-4 border-t border-slate-800 pt-6 pb-8 sm:pt-7 sm:pb-10 md:flex-row md:items-start md:gap-6"
               >
                 <div
-                  className="text-red-400 font-black text-3xl sm:text-4xl leading-none shrink-0 group-hover:text-blue-400 transition-colors"
+                  className="text-red-400 font-black text-2xl leading-none shrink-0 group-hover:text-blue-400 transition-colors sm:text-4xl"
                   aria-hidden="true"
                 >
                   0{idx + 1}
                 </div>
-                <div>
+                <div className="min-w-0">
                   <h3
                     className="text-base sm:text-lg font-bold text-white mb-2 [&_strong]:text-white"
                     dangerouslySetInnerHTML={{ __html: cleanTitle }}

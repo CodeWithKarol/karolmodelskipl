@@ -16,8 +16,8 @@ export const guarantee = {
       desc: "System tworzę w oparciu o uniwersalne standardy używane w bankowości. Cała struktura jest czytelna i udokumentowana. Gdyby z przyczyn losowych nasza współpraca się skończyła, każdy inny wysokiej klasy specjalista przejmie ten projekt bez przeszkód."
     },
     {
-      title: "3 Miesiące Bezpłatnej Asysty Awaryjnej",
-      desc: "Po uruchomieniu aplikacji nie zostawiam Cię samego. Przez pierwsze 3 miesiące bezpłatnie czuwam nad stabilnością systemu i dbam o to, by idealnie wpasował się w pracę Twojego zespołu."
+      title: "60 Dni Dedykowanej Opieki Inżynierskiej",
+      desc: "Po uruchomieniu aplikacji nie zostawiam Cię samego. Przez pierwsze 60 dni bezpłatnie czuwam nad stabilnością systemu i dbam o to, by idealnie wpasował się w pracę Twojego zespołu."
     }
   ]
 }

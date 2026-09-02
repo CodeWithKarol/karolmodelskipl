@@ -41,7 +41,7 @@ export function GuaranteeSection({ guarantee: customGuarantee }: GuaranteeSectio
             <span>{guarantee.badge}</span>
           </SectionBadge>
           </div>
-          <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
             {guarantee.title}
           </h2>
           <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-xs sm:text-base md:text-lg">
@@ -49,30 +49,18 @@ export function GuaranteeSection({ guarantee: customGuarantee }: GuaranteeSectio
           </p>
         </Reveal>
 
-        {/* Grid - Mobile: 1 col, Desktop: 2 col with stagger */}
-        <div className="grid gap-3 sm:gap-10 md:grid-cols-2 max-w-4xl mx-auto">
+        {/* Lista - Mobile: kolumna (icon nad treścią), Desktop: icon obok treści */}
+        <div className="mx-auto max-w-3xl">
           {guarantee.items.map((item, i) => {
             const Icon = icons[i % icons.length]
             return (
-              <Reveal
-                key={i}
-                delay={i * 0.05}
-                className={guarantee.items.length === 3 && i === 2 ? "md:col-span-2" : ""}
-              >
-                <div
-                  className={`group relative flex flex-col h-full bg-slate-900/30 ring-1 ring-white/5 p-5 sm:p-8 rounded-2xl sm:rounded-3xl transition-all duration-300 hover:ring-white/10 hover:shadow-[0_20px_60px_-20px_rgba(16,185,129,0.25)] ${
-                    i % 2 === 1 && guarantee.items.length === 4 ? "md:translate-y-8" : ""
-                  }`}
-                >
-                  <div className="mb-4 sm:mb-6 flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center text-emerald-400 group-hover:text-emerald-300 transition-colors">
-                    <Icon className="h-6 w-6 sm:h-7 sm:w-7" />
+              <Reveal key={i} delay={i * 0.05}>
+                <div className="flex flex-col gap-2.5 border-t border-slate-800 py-6 sm:flex-row sm:items-start sm:gap-5 sm:py-8">
+                  <Icon className="h-5 w-5 shrink-0 text-emerald-400 sm:mt-1" />
+                  <div className="min-w-0">
+                    <h3 className="text-base font-bold text-white leading-snug sm:text-xl">{item.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-400 sm:text-[15px]">{item.desc}</p>
                   </div>
-                  <h3 className="text-sm sm:text-xl font-bold text-white mb-1.5 sm:mb-3 group-hover:text-emerald-400 transition-colors leading-tight">
-                    {item.title}
-                  </h3>
-                  <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">
-                    {item.desc}
-                  </p>
                 </div>
               </Reveal>
             )

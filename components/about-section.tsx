@@ -26,7 +26,7 @@ export function AboutSection() {
             </SectionBadge>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-8 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold tracking-tight text-white mb-8 leading-tight">
               {about.title}
             </h2>
 
