@@ -17,10 +17,11 @@ export const mvp = {
   },
   hero: {
     badge: "Szybka wersja startowa aplikacji",
-    title: "Masz pomysł na aplikację?",
-    title_highlight: "Postaw jej serce na rynku w 30 dni. Zacznij zarabiać, zanim tradycyjne agencje w ogóle wyślą Ci wstępną wycenę.",
+    title: "Budujesz produkt cyfrowy?",
+    title_highlight:
+      "Wypuść jego działające serce na rynek w 30 dni. Zacznij przyjmować pierwsze transakcje, zanim tradycyjne agencje programistyczne w ogóle wyślą Ci wstępną wycenę.",
     subtitle:
-      "Masz w głowie system lub aplikację dla swojej firmy, ale tradycyjne agencje straszą Cię półrocznymi pracami i fakturami na dziesiątki tysięcy? Dobra wiadomość: nie potrzebujesz skomplikowanych planów ani znajomości kodu. Podczas pierwszej rozmowy wspólnie wybieramy serce Twojego biznesu, które zarabia pieniądze od pierwszego dnia.",
+      "Masz kapitał i gotowy pomysł na platformę lub B2B SaaS, ale software house'y straszą Cię półrocznymi terminami i fakturami na setki tysięcy złotych? Nie potrzebujesz miesięcy analiz ani znajomości kodu. Podczas 30-minutowej rozmowy biorę Twój projekt na warsztat, odcinam zbędne funkcje i przygotowuję plan wdrożenia stabilnego, zabezpieczonego bankowo systemu, który w równe 30 dni jest gotowy na przyjęcie pierwszej wpłaty od klienta.",
     indicators: [
       {
         title: "Wdrożenie w 30 dni",

@@ -1,4 +1,4 @@
-import { Geist_Mono, Inter } from "next/font/google"
+import { Inter } from "next/font/google"
 import { Metadata } from "next"
 
 import "./globals.css"
@@ -8,7 +8,6 @@ import { Footer } from "@/components/footer"
 import { SiteHeader } from "@/components/site-header"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
-const fontMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -68,7 +67,6 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={cn(
         "scroll-smooth antialiased",
-        fontMono.variable,
         inter.variable
       )}
     >
