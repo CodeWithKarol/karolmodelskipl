@@ -151,19 +151,22 @@ export default function ProjektowanieMvpPage() {
               <p className="text-[11px] sm:text-xs text-slate-400 text-center mt-2.5 font-medium leading-relaxed">{mvp.hero.cta_sub}</p>
               <TrustLogos label={mvp.hero.qualification.trust_label} logos={mvp.hero.qualification.trust_logos} />
             </div>
+          </div>
 
-            <div className="grid gap-y-6 sm:grid-cols-3 sm:gap-y-0 sm:mt-14 mt-10 text-left animate-[fade-up_0.7s_ease-out_0.35s_both]">
+          <div className="w-full max-w-4xl mx-auto mt-10 sm:mt-14 text-left animate-[fade-up_0.7s_ease-out_0.35s_both]">
+            <div className="grid gap-y-6 sm:grid-cols-3 sm:gap-y-0">
               {mvp.hero.pegs.map((peg, i) => {
                 const Icon = [Banknote, CalendarCheck, KeyRound][i % 3]
+                const isLast = i === mvp.hero.pegs.length - 1
+                const cellClass = [
+                  i > 0 ? "border-t border-slate-800 pt-5 sm:mt-0 sm:border-t-0 sm:pt-0 sm:border-l" : "",
+                  !isLast ? "sm:pr-8" : "",
+                  i > 0 ? "sm:pl-8" : "",
+                ]
+                  .filter(Boolean)
+                  .join(" ")
                 return (
-                  <div
-                    key={peg.title}
-                    className={
-                      i > 0
-                        ? "border-t border-slate-800 pt-5 sm:mt-0 sm:border-t-0 sm:border-l sm:pt-0 sm:pl-8"
-                        : "sm:pr-2"
-                    }
-                  >
+                  <div key={peg.title} className={cellClass}>
                     <Icon className="mb-3 h-5 w-5 sm:h-6 sm:w-6 text-blue-400" />
                     <p className="text-sm font-semibold text-white leading-snug mb-1.5">{peg.title}</p>
                     <p className="text-xs text-slate-400 leading-relaxed">{peg.desc}</p>
