@@ -4,8 +4,8 @@ export const guarantee = {
   subtitle: "Wiem, że powierzenie systemów firmy nowej osobie wymaga wielkiego zaufania. Dlatego zasady współpracy są proste i uczciwe:",
   items: [
     {
-      title: "Płatność etapowa (Płacisz za efekty, nie za obietnice)",
-      desc: "Projekt dzielimy na małe, 2-tygodniowe etapy. Wpłacasz jedynie niewielki depozyt rezerwacyjny (20%), a resztę regulujesz dopiero wtedy, gdy uruchomię dany etap na Twoim ekranie i zobaczysz, że działa bez zarzutu."
+      title: "Płatność etapowa w 2-tygodniowych sprintach (Model 50/50)",
+      desc: "Większe wdrożenia i modernizacje dzielimy na zamknięte, 2-tygodniowe etapy inżynierskie. Każdy etap rozliczamy w przejrzystym modelu 50/50: pierwsze 50% uruchamia rezerwację czasu inżynierskiego i start prac nad danym zakresem, a drugie 50% regulujesz po prezentacji działających funkcji w środowisku testowym i potwierdzeniu ich zgodności z podpisaną specyfikacją techniczną. Zawsze wiesz, za co płacisz – nie finansujesz wielomiesięcznych eksperymentów agencji, a budżet projektu pozostaje pod Twoją stałą kontrolą."
     },
     {
       title: "Gwarancja Płynności Biznesowej",

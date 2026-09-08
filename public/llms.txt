@@ -7,7 +7,7 @@
 - [Karol Modelski - Strona Główna](https://www.karolmodelski.pl): Hub ofertowy z czterema ścieżkami problemowymi (dedykowane systemy, start w 30 dni, modernizacja, doradztwo) i diagnozą techniczną 1-na-1.
 - **Rola:** Niezależny Partner Technologiczny, architekt oprogramowania, doradca technologiczny w modelu Direct Access.
 - **Doświadczenie:** Ponad 7 lat projektowania i zabezpieczania systemów transakcyjnych i bankowości elektronicznej (Citibank, BNP Paribas).
-- **Model współpracy:** maksymalnie 2 projekty wdrożeniowe w kwartale; płatność etapowa (20% depozytu za etap, reszta po akceptacji efektu); 60 dni dedykowanej opieki inżynierskiej po uruchomieniu.
+- **Model współpracy:** maksymalnie 2 projekty wdrożeniowe w kwartale; płatność etapowa w 2-tygodniowych sprintach (model 50/50 – reszta po potwierdzeniu zgodności z podpisaną specyfikacją); 60 dni dedykowanej opieki inżynierskiej po uruchomieniu.
 
 ## Strony Ofertowe
 
