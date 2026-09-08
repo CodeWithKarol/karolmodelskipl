@@ -5,7 +5,7 @@ export const footer = {
     description: "Projektuję i buduję stabilne oprogramowanie biznesowe dla małych i średnich firm. Zastępuję agencje programistyczne bezpośrednią współpracą, dając Ci bezpieczeństwo wypracowane w bankowości oraz 100% inwestycji w jakość Twojego systemu.",
   },
   solutions: {
-    title: "Rozwiązania dla Firmy",
+    title: "Obszary współpracy",
     items: [
       { label: "Aplikacje internetowe dla firm", href: "/aplikacje-internetowe-dla-firm" },
       { label: "Szybka wersja startowa (MVP)", href: "/projektowanie-mvp" },
@@ -22,13 +22,10 @@ export const footer = {
     ],
   },
   contact: {
-    title: "Masz pytania dotyczące systemu w Twojej firmie?",
-    ctaSentence: "Umów bezpłatną rozmowę wideo (4 oczy) i odbierz Audyt Technologiczny i Plan Działań (dokument PDF po spotkaniu).",
-    ctaButton: "Umów bezpłatną rozmowę strategiczną",
-    owner: "Karol Modelski – Niezależny Partner Technologiczny dla MŚP",
+    title: "Bezpośredni kontakt",
     linkedin: "https://www.linkedin.com/in/karol-modelski/",
-    linkedinLabel: "Zobacz mój profil na LinkedIn",
-    coverage: "Obszar działania: Warszawa oraz cała Polska (współpraca zdalna i bezpośrednia)",
+    linkedinLabel: "Profil na LinkedIn",
+    coverage: "Warszawa oraz cała Polska (współpraca zdalna i bezpośrednia)",
     email: "kontakt@karolmodelski.pl",
     phone: "+48 664 598 563",
     address: "ul. Mieczysława Karłowicza 1 lok. 40, 58-506 Jelenia Góra",

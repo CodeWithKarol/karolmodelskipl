@@ -1,9 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Briefcase, ShieldCheck, MessageCircle, ExternalLink, ArrowRight } from "lucide-react"
+import { Briefcase, MessageCircle, ExternalLink } from "lucide-react"
 import { content } from "@/lib/content"
-import { siteConfig } from "@/lib/site-config"
-import { Button } from "@/components/ui/button"
 
 export function Footer() {
   const { footer } = content
@@ -11,7 +9,7 @@ export function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-slate-900 bg-slate-950 pt-12 text-slate-300 sm:pt-16 md:pt-24">
       <div className="container mx-auto max-w-7xl px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 mb-10 sm:mb-12">
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4">
             <div className="flex items-center gap-3">
               <div className="relative h-10 w-10 shrink-0 rounded-full overflow-hidden ring-1 ring-blue-500/20 shadow-[0_8px_30px_-10px_rgba(37,99,235,0.4)]">
@@ -35,47 +33,32 @@ export function Footer() {
           </div>
 
           <div className="text-center lg:text-left space-y-4">
-            <h3 className="text-sm font-bold text-white flex items-start justify-center lg:justify-start gap-2"><ShieldCheck className="mt-0.5 h-4 w-4 text-emerald-500 shrink-0" />{footer.guarantees.title}</h3>
-            <ul className="space-y-3">
-              {footer.guarantees.items.map((item, i) => (
-                <li key={i} className="flex flex-col items-center lg:items-start gap-0.5 text-sm">
-                  <span className="font-semibold text-white">{item.title}</span>
-                  <span className="text-xs text-slate-400 leading-relaxed">{item.desc}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="text-center lg:text-left space-y-4">
             <h3 className="text-sm font-bold text-white flex items-start justify-center lg:justify-start gap-2"><MessageCircle className="mt-0.5 h-4 w-4 text-blue-400 shrink-0" />{footer.contact.title}</h3>
-            <p className="text-sm text-slate-300 leading-relaxed">{footer.contact.ctaSentence}</p>
-            <a href={siteConfig.calendlyLink} target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-between gap-3 rounded-xl border border-blue-400/20 bg-blue-400/5 px-4 py-3 text-sm font-semibold text-blue-400 hover:bg-blue-400/10 hover:text-blue-300 transition-colors sm:w-auto sm:justify-center sm:gap-1.5 sm:py-1.5">
-              <span>{footer.contact.ctaButton}</span>
-              <ArrowRight className="h-4 w-4 shrink-0" />
-            </a>
-            <p className="text-sm text-slate-400 leading-relaxed">{footer.contact.owner}</p>
-            <a href={footer.contact.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-sm text-blue-400 hover:text-blue-300 transition-colors">
-              <ExternalLink className="h-3.5 w-3.5 shrink-0" />
-              {footer.contact.linkedinLabel}
-            </a>
-            <p className="text-xs text-slate-400">{footer.contact.coverage}</p>
+
             <div className="space-y-1 text-sm">
-              <p><a href={`mailto:${footer.contact.email}`} className="text-blue-400 hover:text-blue-300 transition-colors">{footer.contact.email}</a></p>
-              <p><a href={`tel:${footer.contact.phone.replace(/\s+/g, "")}`} className="text-blue-400 hover:text-blue-300 transition-colors">{footer.contact.phone}</a></p>
+              <p>
+                <a href={`mailto:${footer.contact.email}`} className="text-slate-300 hover:text-white transition-colors">{footer.contact.email}</a>
+              </p>
+              <p>
+                <a href={`tel:${footer.contact.phone.replace(/\s+/g, "")}`} className="text-slate-300 hover:text-white transition-colors">{footer.contact.phone}</a>
+              </p>
             </div>
-            <p className="text-xs text-slate-400">NIP: {footer.contact.nip}</p>
+
+            <div>
+              <a href={footer.contact.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs text-blue-400 hover:text-blue-300 transition-colors">
+                <ExternalLink className="h-3.5 w-3.5 shrink-0" />
+                {footer.contact.linkedinLabel}
+              </a>
+            </div>
+
+            <div className="text-xs text-slate-500 space-y-1">
+              <p>NIP: {footer.contact.nip}</p>
+              <p>{footer.contact.coverage}</p>
+            </div>
           </div>
         </div>
 
         <div className="border-t border-slate-800 pt-6 sm:pt-8 pb-8 sm:pb-6 text-center">
-          <div className="max-w-md mx-auto mb-5 sm:mb-6">
-            <a href={siteConfig.calendlyLink} target="_blank" rel="noopener noreferrer" className="block w-full">
-              <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 text-sm font-bold rounded-xl shadow-lg transition-all whitespace-normal h-auto leading-tight">
-                Porozmawiajmy o Twoim projekcie
-              </Button>
-            </a>
-            <p className="text-xs text-slate-400 mt-2">100% bezpłatna rozmowa strategiczna • Otrzymasz Audyt Technologiczny i Plan Działań (PDF po spotkaniu)</p>
-          </div>
           <p className="text-xs text-slate-400 leading-relaxed">{footer.copyright}</p>
         </div>
       </div>
