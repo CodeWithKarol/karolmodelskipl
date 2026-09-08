@@ -9,6 +9,7 @@ export interface OfferPath {
   title: string
   situation: string
   desc: string
+  result?: string
   link?: string
   href?: string
 }
@@ -22,16 +23,19 @@ interface OfferData {
 interface OfferSectionProps {
   offer?: OfferData
   badge?: string
+  mdColumns?: "2" | "3"
+  sectionId?: string
   className?: string
 }
 
-export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów", className }: OfferSectionProps = {}) {
-  const offer = customOffer ?? content.offer
+export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów", mdColumns = "2", sectionId = "oferta", className }: OfferSectionProps = {}) {
+  const offer = (customOffer ?? content.offer) as OfferData
   const icons = [Workflow, Rocket, RefreshCw, Gauge]
+  const threeColumns = mdColumns === "3"
 
   return (
     <section
-      id="oferta"
+      id={sectionId}
       className={cn(
         "relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-20 text-slate-300 md:py-32",
         className
@@ -48,7 +52,7 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
             <span>{badge}</span>
           </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
             {offer.title}
           </h2>
           <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg">
@@ -56,50 +60,85 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
           </p>
         </Reveal>
 
-        {/* Paths Grid - Mobile First: 1 col, Desktop: 2 col with stagger */}
-        <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
-          {offer.paths.map((path, i) => {
-            const Icon = icons[i % icons.length]
-            return (
-              <Reveal
-                key={i}
-                delay={i * 0.05}
-                className={offer.paths.length === 3 && i === 2 ? "md:col-span-2" : ""}
-              >
-                <div
-                  className={`group relative flex flex-col h-full bg-slate-900/30 ring-1 ring-white/5 rounded-2xl p-6 sm:p-8 transition-all duration-300 hover:ring-white/10 hover:shadow-[0_20px_60px_-20px_rgba(37,99,235,0.35)] ${
-                    i % 2 === 1 && offer.paths.length !== 3 ? "md:translate-y-10" : ""
-                  }`}
-                >
-                  <div className="flex-1">
-                    <div className="mb-6 flex h-12 w-12 items-center justify-center text-blue-400 transition-colors group-hover:text-blue-300">
-                      <Icon className="h-7 w-7" />
-                    </div>
-                    <p className="mb-2 text-xs font-bold uppercase tracking-wider text-blue-400">
-                      {path.title}
-                    </p>
-                    <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors leading-tight">
-                      {path.situation}
-                    </h3>
-                    <p className="text-slate-400 leading-relaxed text-xs sm:text-sm mb-6">
-                      {path.desc}
-                    </p>
-                  </div>
-
-                  {path.href && (
-                    <Link
-                      href={path.href}
-                      className="inline text-sm sm:text-sm font-bold text-blue-400 transition-colors hover:text-blue-300 after:absolute after:inset-0 after:content-['']"
-                    >
-                      {path.link}
-                      <ArrowRight className="ml-1.5 inline h-3.5 w-3.5 align-middle transition-transform group-hover:translate-x-1" />
-                    </Link>
+        {threeColumns ? (
+          <div className="grid gap-y-10 sm:gap-y-12 md:grid-cols-3 md:gap-y-0">
+            {offer.paths.map((path, i) => {
+              const Icon = icons[i % icons.length]
+              return (
+                <Reveal
+                  key={i}
+                  delay={i * 0.05}
+                  className={cn(
+                    "h-full border-t border-slate-800 pt-6 pb-2 sm:pt-7 sm:pb-3 md:border-t-0 md:px-8 md:pb-0 md:pt-0",
+                    i > 0 && "md:border-l"
                   )}
-                </div>
-              </Reveal>
-            )
-          })}
-        </div>
+                >
+                  <div className="flex h-full flex-col justify-between">
+                    <div>
+                      <div className="mb-4 flex items-center gap-3">
+                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-500/10 text-blue-400">
+                          <Icon className="h-5 w-5" />
+                        </span>
+                        <p className="text-xs font-bold uppercase tracking-widest text-blue-400">{path.title}</p>
+                      </div>
+                      <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors leading-snug">
+                        {path.situation}
+                      </h3>
+                      <p className="text-slate-400 leading-relaxed text-sm">{path.desc}</p>
+                    </div>
+                    {path.result && (
+                      <div className="mt-6 border-t border-slate-800/60 pt-4 text-[11px] font-semibold text-slate-400">
+                        {path.result}
+                      </div>
+                    )}
+                  </div>
+                </Reveal>
+              )
+            })}
+          </div>
+        ) : (
+          <div className="border-t border-slate-800/70">
+            {offer.paths.map((path, i) => {
+              const Icon = icons[i % icons.length]
+              const rowClassName =
+                "group relative flex items-start gap-4 sm:gap-6 border-b border-slate-800/70 py-6 sm:py-8 transition-colors hover:bg-white/[0.02]"
+              const contentNode = (
+                <>
+                  <span className="flex shrink-0 items-start pt-0.5 text-blue-400">
+                    <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <p className="mb-1.5 text-[11px] font-bold uppercase tracking-widest text-blue-400 sm:text-xs">{path.title}</p>
+                    <h3 className="text-base font-bold text-white mb-2 leading-snug sm:text-xl">{path.situation}</h3>
+                    <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">{path.desc}</p>
+                    {path.result && (
+                      <div className="mt-4 pt-3 sm:mt-5 sm:pt-4 border-t border-slate-800/60 text-[11px] font-semibold text-slate-400">
+                        {path.result}
+                      </div>
+                    )}
+                    {path.href && (
+                      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-blue-400 transition-colors group-hover:text-blue-300 sm:mt-5">
+                        {path.link}
+                        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                      </span>
+                    )}
+                  </div>
+                </>
+              )
+              return (
+                <Reveal key={i} delay={i * 0.05}>
+                  {path.href ? (
+                    <Link href={path.href} className={rowClassName}>
+                      {contentNode}
+                    </Link>
+                  ) : (
+                    <div className={rowClassName}>{contentNode}</div>
+                  )}
+                </Reveal>
+              )
+            })}
+          </div>
+        )}
       </div>
     </section>
   )

@@ -101,7 +101,7 @@ export default function Page() {
       <TrustedBySection />
       <StorySection />
       <ContrastSection />
-      <OfferSection />
+      <OfferSection sectionId="zwrotnica" className="scroll-mt-20 sm:scroll-mt-16" />
       <GuaranteeSection />
       <AboutSection />
       <FaqSection />

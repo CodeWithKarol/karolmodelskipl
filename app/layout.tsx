@@ -1,14 +1,12 @@
-import { Geist_Mono, Inter } from "next/font/google"
+import { Inter } from "next/font/google"
 import { Metadata } from "next"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { AppChrome } from "@/components/app-chrome"
 import { cn } from "@/lib/utils"
-import { Footer } from "@/components/footer"
-import { SiteHeader } from "@/components/site-header"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
-const fontMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono" })
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -68,7 +66,6 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       className={cn(
         "scroll-smooth antialiased",
-        fontMono.variable,
         inter.variable
       )}
     >
@@ -80,9 +77,7 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeProvider>
-          <SiteHeader />
-          {children}
-          <Footer />
+          <AppChrome>{children}</AppChrome>
         </ThemeProvider>
       </body>
     </html>

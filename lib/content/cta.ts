@@ -2,24 +2,27 @@ export const cta = {
   badge: "Program Partnerski dla MŚP",
   title: "Zostań Partnerem Założycielem (Tylko 2 firmy w kwartale)",
   description:
-    "Zamiast masowej obsługi kilkunastu projektów naraz, w każdym kwartale współpracuję z <strong class='text-white font-semibold'>maksymalnie dwoma firmami</strong>, dając Twojemu biznesowi 100% mojego skupienia. Zostań Partnerem Założycielem – rozwijaj technologię na preferencyjnych warunkach i zyskaj <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po uruchomieniu systemu.",
+    "Zamiast masowej obsługi kilkunastu projektów naraz, w każdym kwartale współpracuję z <strong class='text-white font-semibold'>maksymalnie dwoma firmami</strong>, dając Twojemu biznesowi 100% mojego skupienia. Zostań Partnerem Założycielem – rozwijaj technologię na preferencyjnych warunkach i zyskaj <strong class='text-white font-semibold'>60 dni dedykowanej opieki inżynierskiej</strong> po uruchomieniu systemu.",
   package_title:
-    "Co dokładnie otrzymujesz w Pakiecie Strategicznym (Wartość 600 zł za 0 zł na start):",
+    "Przebieg 30-minutowej diagnozy architektonicznej (Spotkanie 1-na-1):",
   offer_items: [
     {
-      title: "Diagnoza Wąskich Gardeł:",
-      desc: "wskazanie procesów, w których technologia natychmiast uwolni czas zespołu i zwiększy zyski.",
+      title: "Identyfikacja wąskich gardeł:",
+      desc: "Przeglądamy procesy w Twojej firmie i wskazujemy miejsca, w których technologia natychmiast uwolni czas zespołu lub zabezpieczy przychód.",
     },
     {
-      title: "Bankowy Test Bezpieczeństwa Informacji:",
-      desc: "rygorystyczna weryfikacja stabilności kodu i ochrony danych Twoich klientów.",
+      title: "Wstępny audyt stabilności i ryzyk:",
+      desc: "Weryfikujemy Twój obecny stos technologiczny lub założenia nowego projektu pod kątem bezpieczeństwa bankowego i ukrytych kosztów.",
     },
     {
-      title: "Osobista Mapa Drogowa IT:",
-      desc: "precyzyjny, rozpisany krok po kroku plan rozwoju oprogramowania – bez ukrytych kosztów i niespodzianek.",
+      title: "Rekomendacja ścieżki wdrożenia:",
+      desc: "Wychodzisz ze spotkania z jasną odpowiedzią, czy Twój problem wymaga dedykowanego systemu, modernizacji, czy prostego rozwiązania bez kodowania.",
     },
   ],
-  button: "Odbierz Pakiet Strategiczny i Zarezerwuj Miejsce (0 zł)",
-  footer:
-    "Zajmij jedno z 2 wolnych miejsc w tym kwartale. Każdy miesiąc odkładania porządku technologicznego to kolejne godziny zmarnowane na ręczną robotę i uciekające zyski.",
+  button: "Umów 30-minutową diagnozę techniczną →",
+  format:
+    "Format spotkania: 100% bezpłatnie • Rozmowa wideo 1-na-1 • Konkretne wnioski inżynierskie bez handlowego żargonu.\n(Jeśli Twój projekt zakwalifikuje się do wdrożenia, kompletną specyfikację techniczną i kosztorys otrzymasz w kolejnym kroku).",
+  note: "Wybierz dogodny termin w kalendarzu. Podczas rozmowy przeanalizujemy architekturę i wyzwania w Twojej firmie.",
+  availability: "Dostępność: Maksymalnie 2 wdrożenia w kwartale",
+  footer: "",
 }

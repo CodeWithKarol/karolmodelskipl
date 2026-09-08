@@ -71,7 +71,7 @@ export function ContrastSection({ contrast: customContrast, className }: Contras
               <span>{badge}</span>
             </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
             {title}
           </h2>
         </Reveal>
@@ -92,9 +92,9 @@ export function ContrastSection({ contrast: customContrast, className }: Contras
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {/* BEZPOŚREDNIA WSPÓŁPRACA (Rozwiązanie) */}
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-blue-400 shrink-0 mt-0.5" />
-                  <div>
+                <div className="flex flex-col gap-2 md:flex-row md:items-start md:gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-blue-400 shrink-0 md:mt-0.5" />
+                  <div className="min-w-0">
                     {blueLabel && (
                       <div className="text-blue-400 mb-1 font-bold text-[10px] uppercase tracking-widest">
                         {blueLabel}
@@ -112,9 +112,9 @@ export function ContrastSection({ contrast: customContrast, className }: Contras
                 </div>
 
                 {/* TRADYCYJNA AGENCJA (Problem) */}
-                <div className="flex items-start gap-3 md:border-l md:border-slate-800 md:pl-6">
-                  <XCircle className="h-5 w-5 text-red-400 shrink-0 mt-0.5" />
-                  <div>
+                <div className="flex flex-col gap-2 md:flex-row md:items-start md:gap-3 md:border-l md:border-slate-800 md:pl-6">
+                  <XCircle className="h-5 w-5 text-red-400 shrink-0 md:mt-0.5" />
+                  <div className="min-w-0">
                     {redLabel && (
                       <div className="text-red-400 mb-1 font-bold text-[10px] uppercase tracking-widest">
                         {redLabel}

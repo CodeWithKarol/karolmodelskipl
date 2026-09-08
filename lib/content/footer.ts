@@ -23,7 +23,7 @@ export const footer = {
   },
   contact: {
     title: "Masz pytania dotyczące systemu w Twojej firmie?",
-    ctaSentence: "Umów bezpłatną rozmowę wideo (4 oczy) i odbierz Pakiet Strategiczny o wartości 600 zł za 0 zł.",
+    ctaSentence: "Umów bezpłatną rozmowę wideo (4 oczy) i odbierz Audyt Technologiczny i Plan Działań (dokument PDF po spotkaniu).",
     ctaButton: "Umów bezpłatną rozmowę strategiczną",
     owner: "Karol Modelski – Niezależny Partner Technologiczny dla MŚP",
     linkedin: "https://www.linkedin.com/in/karol-modelski/",
