@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { GuaranteeSection } from "@/components/guarantee-section"
 import { Button } from "@/components/ui/button"
+import { Banknote, CalendarCheck, KeyRound } from "lucide-react"
 import { CtaSection } from "@/components/cta-section"
 import { SectionBadge } from "@/components/section-badge"
 import { StorySection } from "@/components/story-section"
@@ -151,13 +152,24 @@ export default function ProjektowanieMvpPage() {
               <TrustLogos label={mvp.hero.qualification.trust_label} logos={mvp.hero.qualification.trust_logos} />
             </div>
 
-            <div className="grid gap-3 sm:gap-4 sm:grid-cols-3 mt-10 sm:mt-14 text-left animate-[fade-up_0.7s_ease-out_0.35s_both]">
-              {mvp.hero.pegs.map((peg) => (
-                <div key={peg.title} className="rounded-2xl border border-white/5 bg-white/[0.02] p-4 sm:p-5">
-                  <p className="text-sm font-semibold text-white leading-snug mb-1.5">{peg.title}</p>
-                  <p className="text-xs text-slate-400 leading-relaxed">{peg.desc}</p>
-                </div>
-              ))}
+            <div className="grid gap-y-6 sm:grid-cols-3 sm:gap-y-0 sm:mt-14 mt-10 text-left animate-[fade-up_0.7s_ease-out_0.35s_both]">
+              {mvp.hero.pegs.map((peg, i) => {
+                const Icon = [Banknote, CalendarCheck, KeyRound][i % 3]
+                return (
+                  <div
+                    key={peg.title}
+                    className={
+                      i > 0
+                        ? "border-t border-slate-800 pt-5 sm:mt-0 sm:border-t-0 sm:border-l sm:pt-0 sm:pl-8"
+                        : "sm:pr-2"
+                    }
+                  >
+                    <Icon className="mb-3 h-5 w-5 sm:h-6 sm:w-6 text-blue-400" />
+                    <p className="text-sm font-semibold text-white leading-snug mb-1.5">{peg.title}</p>
+                    <p className="text-xs text-slate-400 leading-relaxed">{peg.desc}</p>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
