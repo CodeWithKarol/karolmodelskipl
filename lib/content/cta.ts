@@ -1,8 +1,8 @@
 export const cta = {
-  badge: "Program Partnerski dla MŚP",
-  title: "Zostań Partnerem Założycielem (Tylko 2 firmy w kwartale)",
+  badge: "Status: 2 sloty wdrożeniowe w kwartale",
+  title: "Bezpośrednia współpraca inżynierska (Maksymalnie 2 projekty w kwartale)",
   description:
-    "Zamiast masowej obsługi kilkunastu projektów naraz, w każdym kwartale współpracuję z <strong class='text-white font-semibold'>maksymalnie dwoma firmami</strong>, dając Twojemu biznesowi 100% mojego skupienia. Zostań Partnerem Założycielem – rozwijaj technologię na preferencyjnych warunkach i zyskaj <strong class='text-white font-semibold'>60 dni dedykowanej opieki inżynierskiej</strong> po uruchomieniu systemu.",
+    "Zamiast masowej obsługi kilkunastu projektów naraz, w każdym kwartale realizuję <strong class='text-white font-semibold'>maksymalnie 2 projekty</strong>. Zyskujesz 100% mojego skupienia inżynierskiego – bez delegowania zadań podwykonawcom i bez ukrytych kosztów. Po uruchomieniu systemu otrzymujesz <strong class='text-white font-semibold'>60 dni dedykowanej opieki inżynierskiej</strong>.",
   package_title:
     "Przebieg 30-minutowej diagnozy architektonicznej (Spotkanie 1-na-1):",
   offer_items: [

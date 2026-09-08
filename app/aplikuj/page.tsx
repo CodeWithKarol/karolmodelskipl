@@ -7,6 +7,10 @@ export async function generateMetadata(): Promise<Metadata> {
     title: "Aplikacja o projekt | Karol Modelski",
     description:
       "Sprawdź, czy Twój projekt kwalifikuje się do startu w 30 dni. 3 pytania, zanim otworzę kalendarz na rozmowę kwalifikacyjną.",
+    robots: {
+      index: false,
+      follow: true,
+    },
     alternates: {
       canonical: "https://www.karolmodelski.pl/aplikuj",
     },

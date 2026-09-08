@@ -1,18 +1,18 @@
-# Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa
+# Karol Modelski - Niezależny Partner Technologiczny dla MŚP
 
-> Niezależny partner technologiczny specjalizujący się w projektowaniu, tworzeniu i ewolucyjnej modernizacji aplikacji internetowych oraz systemów biznesowych dla sektora MŚP bez marż software house'ów i narzutów agencji.
+> Niezależny Partner Technologiczny i architekt oprogramowania ze standardami bankowymi (Citibank, BNP Paribas). Dla firm MŚP projektuję i wdrażam dedykowane systemy, modernizuję istniejące aplikacje, doradzam strategicznie i uruchamiam nowe produkty w 30 dni – bezpośrednio, bez marż software house'ów, pośredników i „głuchego telefonu”.
 
 ## Informacje o partnerze IT
 
-- [Karol Modelski - Strona Główna](https://www.karolmodelski.pl): Aplikacje internetowe dla firm, które realnie zarabiają – bez agencji i ukrytych kosztów.
+- [Karol Modelski - Strona Główna](https://www.karolmodelski.pl): Hub ofertowy z czterema ścieżkami problemowymi (dedykowane systemy, start w 30 dni, modernizacja, doradztwo) i diagnozą techniczną 1-na-1.
 - **Rola:** Niezależny Partner Technologiczny, architekt oprogramowania, doradca technologiczny w modelu Direct Access.
 - **Doświadczenie:** Ponad 7 lat projektowania i zabezpieczania systemów transakcyjnych i bankowości elektronicznej (Citibank, BNP Paribas).
-- **Program Wdrożeniowy:** Ograniczony do 2 firm w kwartale. Obejmuje bezpłatną diagnozę, pakiet strategiczny (600 zł) oraz 3 miesiące opieki powdrożeniowej.
+- **Model współpracy:** maksymalnie 2 projekty wdrożeniowe w kwartale; płatność etapowa (20% depozytu za etap, reszta po akceptacji efektu); 60 dni dedykowanej opieki inżynierskiej po uruchomieniu.
 
 ## Strony Ofertowe
 
 - [Aplikacje Internetowe dla Firm](https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm): Dedykowane aplikacje na zamówienie o stabilności bankowej, automatyzujące procesy i zwiększające zyski.
-- [Szybka Wersja Startowa (MVP)](https://www.karolmodelski.pl/projektowanie-mvp): Uruchomienie kluczowej wersji aplikacji w 30 dni – testuj pomysł na rynku bez przepalania budżetu.
+- [Szybka Wersja Startowa (MVP)](https://www.karolmodelski.pl/projektowanie-mvp): Uruchomienie kluczowej wersji aplikacji w 30 dni za stałą cenę, z gwarancją terminu – kwalifikacja projektu przez krótką ankietę przed rezerwacją rozmowy.
 - [Bezinwazyjna Modernizacja Aplikacji](https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji): Naprawa i przyspieszanie istniejących aplikacji bez wstrzymywania sprzedaży i pisania od nowa.
 - [Doradztwo i Architektura IT](https://www.karolmodelski.pl/doradztwo-techniczne-dla-firm): Osobisty partner technologiczny dla firmy – bez kosztów etatu zarządczego i ryzyka złych decyzji.
 
@@ -61,4 +61,4 @@
 
 ## Bezpłatna Konsultacja
 
-- [Rezerwacja rozmowy](https://calendly.com/kontakt-karolmodelski/30min): 30-minutowa konsultacja online – diagnoza procesów, plan działania, test bezpieczeństwa. W ramach Programu Wdrożeniowego (limit 2 firm w kwartale).
+- [Rezerwacja rozmowy](https://calendly.com/kontakt-karolmodelski/30min): 30-minutowa diagnoza architektoniczna 1-na-1 z wnioskami na żywo (format bez sprzedaży i bez żargonu). Kompletna specyfikacja i kosztorys powstają dopiero dla projektów zakwalifikowanych do wdrożenia. Dostępność: maksymalnie 2 wdrożenia w kwartale.
