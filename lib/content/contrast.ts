@@ -15,7 +15,7 @@ export const contrast = {
     },
     {
       area: "Gwarancja i bezpieczeństwo",
-      blue: "Płatność etapowa. Płacisz dopiero wtedy, gdy widzisz działający etap na swoim ekranie.",
+      blue: "Rozliczenie w 2-tygodniowych sprintach (50/50). Płacisz za dowiezione, zdefiniowane moduły techniczne, a nie za niekończące się roboczogodziny.",
       red: "Wysokie faktury z góry, zaliczki i brak gwarancji dowiezienia ustalonego terminu.",
     },
     {

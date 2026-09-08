@@ -6,7 +6,7 @@ export const faq = {
     {
       question: "Jak wygląda płatność etapowa i kiedy dokładnie płacę drugą część za dany etap?",
       answer:
-        "Pracę dzielimy na przejrzyste etapy (m.in. analiza i architektura, wdrożenie modułów, uruchomienie i opieka). Każdy etap rozpoczyna się od 20% depozytu, a pozostałą część płacisz dopiero po zaakceptowaniu działającego efektu lub raportu z danego etapu. Nigdy nie płacisz z góry za pracę, której jeszcze nie widziałeś – to standard, który chroni Twój budżet w każdej fazie projektu.",
+        "Pracę dzielimy na zamknięte, 2-tygodniowe sprinty inżynierskie, rozliczane w przejrzystym modelu 50/50. Pierwsze 50% rezerwuje czas inżynierski i uruchamia pracę nad danym zakresem; drugie 50% płacisz po prezentacji działających funkcji w środowisku testowym i potwierdzeniu ich zgodności z podpisaną specyfikacją techniczną. Zawsze wiesz, za co płacisz – nie finansujesz wielomiesięcznych eksperymentów, a budżet pozostaje pod Twoją kontrolą na każdym etapie.",
     },
     {
       question: "Co w sytuacji, gdy mój obecny system nie ma żadnej dokumentacji, a programista zniknął?",
