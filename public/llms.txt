@@ -4,17 +4,17 @@
 
 ## Informacje o partnerze IT
 
-- [Karol Modelski - Strona Główna](https://www.karolmodelski.pl): Hub ofertowy z czterema ścieżkami problemowymi (dedykowane systemy, start w 30 dni, modernizacja, doradztwo) i diagnozą techniczną 1-na-1.
+- [Karol Modelski - Strona Główna](https://www.karolmodelski.pl): Hub ofertowy z czterema ścieżkami problemowymi (Systemy Skalowania Operacji, Fundament SaaS/B2B w 30 dni, Tarcza Portfela IT, Modernizacja Systemów w Locie) i diagnozą techniczną 1-na-1.
 - **Rola:** Niezależny Partner Technologiczny, architekt oprogramowania, doradca technologiczny w modelu Direct Access.
 - **Doświadczenie:** Ponad 7 lat projektowania i zabezpieczania systemów transakcyjnych i bankowości elektronicznej (Citibank, BNP Paribas).
 - **Model współpracy:** maksymalnie 2 projekty wdrożeniowe w kwartale; płatność etapowa w 2-tygodniowych sprintach (model 50/50 – reszta po potwierdzeniu zgodności z podpisaną specyfikacją); 60 dni dedykowanej opieki inżynierskiej po uruchomieniu.
 
 ## Strony Ofertowe
 
-- [Aplikacje Internetowe dla Firm](https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm): Dedykowane aplikacje na zamówienie o stabilności bankowej, automatyzujące procesy i zwiększające zyski.
-- [Szybka Wersja Startowa (MVP)](https://www.karolmodelski.pl/projektowanie-mvp): Uruchomienie kluczowej wersji aplikacji w 30 dni za stałą cenę, z gwarancją terminu – kwalifikacja projektu przez krótką ankietę przed rezerwacją rozmowy.
-- [Bezinwazyjna Modernizacja Aplikacji](https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji): Naprawa i przyspieszanie istniejących aplikacji bez wstrzymywania sprzedaży i pisania od nowa.
-- [Doradztwo i Architektura IT](https://www.karolmodelski.pl/doradztwo-techniczne-dla-firm): Osobisty partner technologiczny dla firmy – bez kosztów etatu zarządczego i ryzyka złych decyzji.
+- [Fundament SaaS/B2B w 30 dni](https://www.karolmodelski.pl/projektowanie-mvp): Kompletny fundament technologiczny Twojego SaaS/B2B w klasie bankowej — działająca platforma pod Twoją domeną w 30 dni. Stała cena, gwarancja terminu i zwrotu.
+- [Tarcza Portfela IT (Fractional CTO)](https://www.karolmodelski.pl/doradztwo-techniczne-dla-firm): Niezależna weryfikacja wycen agencji i ochrona przed przepalaniem budżetu. Stałe wsparcie Niezależnego Partnera Technologicznego bez kosztów etatu zarządczego.
+- [Modernizacja Systemów w Locie](https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji): Przyspieszenie mulącej aplikacji w 2–4 tygodnie bez ani jednej sekundy przestoju w sprzedaży i bez pisania od nowa.
+- [Systemy Skalowania Operacji](https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm): Zastąpienie paraliżu w Excelu automatyzacją jednym kliknięciem – obsłuż 3× więcej zamówień przy tym samym zespole. Dedykowany system operacyjny w rygorze bankowym (Citibank, BNP Paribas).
 
 ## Baza Wiedzy
 

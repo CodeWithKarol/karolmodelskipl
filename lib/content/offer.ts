@@ -5,18 +5,19 @@ export const offer = {
   paths: [
     {
       title: "Dedykowane aplikacje i automatyzacja procesów",
-      situation:
-        "Masz dość ograniczeń gotowych narzędzi i marnowania setek godzin na ręczną robotę?",
-      desc: "Jeśli Excel pęka w szwach, a powtarzalne czynności zabierają Twojemu zespołowi pół dnia – budujemy dedykowany system skrojony pod unikalne procesy Twojej firmy, który uwalnia czas i skaluje operacje.",
-      link: "Zobacz jak automatyzujemy procesy dedykowanym systemem",
+      situation: "Dedykowany System Operacyjny (Zastąpienie Excela)",
+      subtitle:
+        "Masz dość chaosu w arkuszach i marnowania setek godzin na ręczne wklepywanie danych?",
+      desc: "Jeśli Excel pęka w szwach, a powtarzalna praca paraliżuje Twój zespół – buduję stabilny system operacyjny w rygorze bankowym (Citibank, BNP Paribas). Zamień 40 minut klepania zamówienia na 1 kliknięcie i obsłuż 3× więcej zamówień przy tym samym zespole, bez zatrudniania powolnych agencji.",
+      link: "Sprawdź, jak zautomatyzować firmę w 30 dni",
       href: "/aplikacje-internetowe-dla-firm",
     },
     {
-      title: "Szybka wersja startowa (MVP w 30 dni)",
+      title: "Fundament SaaS/B2B w 30 dni (Klasa Bankowa)",
       situation:
-        "Masz nowy pomysł na aplikację i chcesz sprawdzić rynek w 30 dni bez przepalania budżetu?",
-      desc: "Nie potrzebujesz gotowej specyfikacji ani 6 miesięcy prac w agencji. Odcinamy zbędny przerost formy, wybieramy serce Twojego biznesu i wypuszczamy działającą wersję na rynek w 30 dni, by zacząć testować i zarabiać.",
-      link: "Sprawdź jak uruchomić MVP w 30 dni",
+        "Chcesz wypuścić produkt pod własną domeną i zacząć przyjmować wpłaty w 30 dni — bez 6 miesięcy w agencji?",
+      desc: "Buduję kompletny fundament technologiczny Twojego SaaS/B2B w standardach bankowych (Citibank, BNP Paribas): produkcyjna platforma pod Twoją domeną, gotowa na realne wpłaty. Zero zbędnych funkcji, 100% własności kodu.",
+      link: "Zobacz, jak wygląda fundament SaaS/B2B w 30 dni",
       href: "/projektowanie-mvp",
     },
     {

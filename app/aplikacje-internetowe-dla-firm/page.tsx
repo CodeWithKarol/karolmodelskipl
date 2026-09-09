@@ -1,25 +1,15 @@
 import { Metadata } from "next"
-import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Button } from "@/components/ui/button"
 import { CtaSection } from "@/components/cta-section"
 import { SectionBadge } from "@/components/section-badge"
 import { StorySection } from "@/components/story-section"
 import { ContrastSection } from "@/components/contrast-section"
-import { OfferSection } from "@/components/offer-section"
 import { FaqSection } from "@/components/faq-section"
-import {
-  ShieldCheck,
-  Target,
-  Banknote,
-  Rocket,
-  Handshake,
-  Gem,
-  Map,
-} from "lucide-react"
+import { ArrowRight, Check, ShieldCheck } from "lucide-react"
 import {
   hero,
   story,
-  mechanism,
+  valueStack,
   faq,
   metadata,
   guarantee,
@@ -28,6 +18,7 @@ import {
   offer,
 } from "@/lib/content/aplikacje-internetowe/page"
 import { GuaranteeSection } from "@/components/guarantee-section"
+import { PackageSpecSection } from "@/components/package-spec-section"
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -114,78 +105,59 @@ export default function AplikacjeInternetoweDlaFirmPage() {
       />
 
 
-      {/* Sekcja 1: HERO SECTION */}
-      <section className="relative w-full flex flex-col bg-slate-950 text-slate-50 pt-16 pb-16 lg:pb-12 lg:min-h-screen">
+      {/* Sekcja 1: HERO */}
+      <section className="relative w-full flex flex-col bg-slate-950 text-slate-50 pt-20 pb-16 sm:pt-24 lg:pb-12 lg:min-h-screen">
         <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
         <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 opacity-50 mix-blend-screen blur-[120px]"></div>
 
-        <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-between gap-10 lg:gap-8">
+        <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col items-center justify-center text-center pt-4 sm:pt-8">
 
-          {/* Content Column */}
-          <div className="flex-1 w-full max-w-2xl text-left pt-4 sm:pt-8">
-            <div className="mb-4 sm:mb-6 animate-[fade-up_0.7s_ease-out_both]">
-              <SectionBadge><Gem className="h-3.5 w-3.5 shrink-0" />{hero.badge}</SectionBadge>
+          <div className="w-full max-w-3xl mx-auto pt-4 sm:pt-8">
+            {/* Callout — badge jak w /projektowanie-mvp */}
+            <div className="mb-5 sm:mb-7 flex justify-center animate-[fade-up_0.7s_ease-out_both]">
+              <SectionBadge className="border-white/10 bg-white/5 text-slate-400 text-[10px] sm:text-xs text-center max-w-md sm:max-w-lg">
+                {hero.callout}
+              </SectionBadge>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-white mb-5 sm:mb-6 leading-[1.1] animate-[fade-up_0.7s_ease-out_0.1s_both]">
-              {hero.title}
-              <span className="block text-blue-500 mt-1 sm:mt-2">{hero.titleHighlight}</span>
+
+            <h1 className="text-4xl leading-[1.12] tracking-tight text-balance text-white mb-4 sm:mb-5 animate-[fade-up_0.7s_ease-out_0.1s_both] sm:text-5xl sm:leading-[1.1] lg:text-6xl">
+              <span className="block">
+                {hero.h1Lead}{" "}
+                <span className="text-blue-500">{hero.h1Highlight}</span>{" "}
+                {hero.h1Tail}
+              </span>
+              <span className="block mt-3 sm:mt-4 text-lg font-semibold leading-relaxed text-slate-300 sm:text-xl lg:text-2xl lg:leading-snug">
+                {hero.h1Second}
+              </span>
             </h1>
-            <p className="text-base sm:text-lg text-slate-400 mb-5 sm:mb-8 leading-relaxed max-w-xl animate-[fade-up_0.7s_ease-out_0.2s_both]">
-              {hero.description}
+
+            <p className="text-base sm:text-lg text-slate-400 mb-7 sm:mb-9 leading-relaxed max-w-2xl mx-auto animate-[fade-up_0.7s_ease-out_0.2s_both]">
+              {hero.subheading}
             </p>
 
-            {/* Mobile CTA — above the fold */}
-            <div className="mb-5 sm:mb-6 lg:hidden animate-[fade-up_0.7s_ease-out_0.25s_both]">
-              <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
-                <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 text-sm font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-tight">
-                  {hero.cta}
-                </Button>
-              </a>
-              <p className="text-[11px] text-slate-400 text-center mt-2 font-medium">{hero.footnote}</p>
-            </div>
+            {/* CTA */}
+            <div className="animate-[fade-up_0.7s_ease-out_0.3s_both]">
+              <Button asChild size="lg" className="w-full max-w-md mx-auto bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 text-xs font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-snug sm:py-4 sm:text-sm">
+                <a href={hero.cta.href} role="button">
+                  <span className="block">{hero.cta.label}</span>
+                  <ArrowRight className="h-4 w-4 shrink-0" />
+                </a>
+              </Button>
 
-            {/* Indicators - Inline value props */}
-            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 animate-[fade-up_0.7s_ease-out_0.3s_both]">
-              {hero.indicators.map((item, i) => (
-                <div key={i} className="flex items-center gap-2 text-slate-300">
-                  <span className="text-blue-400 shrink-0 text-base">
-                    {i === 0 ? <Rocket className="h-4 w-4" /> : i === 1 ? <ShieldCheck className="h-4 w-4" /> : <Handshake className="h-4 w-4" />}
-                  </span>
-                  <span className="text-xs sm:text-sm font-medium">{item.title}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Promo Card — asymmetric composition (desktop only) */}
-          <div className="relative hidden w-full max-w-md lg:max-w-sm flex-shrink-0 lg:block lg:mt-14 lg:animate-[fade-in_0.9s_ease-out_0.15s_both]">
-            <div className="absolute -top-8 -left-10 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl pointer-events-none"></div>
-            <div className="absolute top-1/3 -right-8 h-24 w-24 rounded-full bg-emerald-400/10 blur-2xl pointer-events-none"></div>
-            <div className="relative rotate-1 rounded-[2rem] bg-slate-900/70 backdrop-blur-xl ring-1 ring-white/5 p-6 shadow-[0_25px_80px_-20px_rgba(37,99,235,0.35)]">
-              <h2 className="text-lg font-bold text-white mb-3 leading-snug">{hero.pilot_program.title}</h2>
-              <p className="text-sm text-slate-400 mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: hero.pilot_program.description }} />
-
-              <p className="text-xs font-semibold text-white mb-2.5">{hero.pilot_program.package_title}</p>
-              <ul className="space-y-1.5 mb-4">
-                {hero.offer_items.map((item, i) => (
-                  <li key={i} className="text-xs text-slate-300 leading-snug flex items-start gap-2">
-                    <span className="text-blue-400 shrink-0 mt-0.5">
-                      {i === 0 && <Target className="h-3.5 w-3.5" />}
-                      {i === 1 && <ShieldCheck className="h-3.5 w-3.5" />}
-                      {i === 2 && <Map className="h-3.5 w-3.5" />}
-                    </span>
-                    {item.title}
+              {/* Micro-copy pod CTA */}
+              <ul className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2.5">
+                {hero.microcopy.map((item, i) => (
+                  <li
+                    key={i}
+                    className={`inline-flex items-center gap-2 text-left text-xs sm:text-sm leading-snug ${
+                      item.urgent ? "text-amber-300 font-semibold" : "text-slate-400 font-medium"
+                    }`}
+                  >
+                    <Check className={`h-4 w-4 shrink-0 ${item.urgent ? "text-amber-400" : "text-blue-500"}`} />
+                    <span>{item.title}</span>
                   </li>
                 ))}
               </ul>
-
-              <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer" className="block w-full">
-                <Button size="lg" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-5 text-sm font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-tight">
-                  {hero.pilot_program.cta}
-                </Button>
-              </a>
-              <p className="text-[11px] text-slate-400 text-center mt-2 font-medium leading-snug">30-minutowa wideorozmowa diagnostyczna + kompletny plan wdrożenia przesłany po spotkaniu</p>
-              <p className="text-[10px] text-slate-400 text-center mt-2 uppercase tracking-widest font-semibold">{hero.cta_sub}</p>
             </div>
           </div>
         </div>
@@ -200,6 +172,9 @@ export default function AplikacjeInternetoweDlaFirmPage() {
         className="py-16 sm:py-20"
       />
 
+      {/* Sekcja 3: STOS WARTOŚCI (Fundament + Bonusy) */}
+      <PackageSpecSection spec={valueStack} className="py-16 sm:py-20" />
+
       {/* Sekcja: PORÓWNANIE – tabela */}
       <ContrastSection
         contrast={{
@@ -212,34 +187,6 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             blue: row.me,
             red: row.agency,
           })),
-        }}
-        className="py-16 sm:py-20"
-      />
-
-      {/* Sekcja 4: KEY CONTENT (Jak bezpośrednie partnerstwo / dedykowane aplikacje realnie pomagają Twojej firmie?) */}
-      <OfferSection
-        badge="Wzrost i zyski"
-        offer={{
-          title: "Przestań marnować czas zespołu na powtarzalną, ręczną robotę.",
-          subheading:
-            "Nowoczesne oprogramowanie biznesowe to nie koszt, lecz inwestycja, która bezpośrednio usuwa wąskie gardła i napędza sprzedaż:",
-          paths: [
-            {
-              title: "Koniec z chaosem w arkuszach",
-              situation: "Uwolnij zespół od ręcznej roboty",
-              desc: "Zapomnij o nerwowym przeklipywaniu danych między pięcioma różnymi arkuszami Excela i pilnowaniu, czy ktoś czegoś nie usunął. Dedykowany system spina wszystko w jednym bezpiecznym miejscu.",
-            },
-            {
-              title: "Święty spokój dla zespołu",
-              situation: "Jeden przycisk zamiast 40 minut pracy",
-              desc: "Twój pracownik zamiast spędzać 40 minut na ręcznym wklepywaniu jednego zamówienia, klika jeden przycisk. System automatycznie wystawia fakturę, aktualizuje magazyn i powiadamia klienta.",
-            },
-            {
-              title: "Eliminacja wąskich gardeł",
-              situation: "3× więcej zamówień przy tym samym zespole",
-              desc: "Nie inwestujesz w „zaawansowane języki programowania dla sztuki”. Inwestujesz w to, żeby Twoja firma mogła obsłużyć 3 razy więcej zamówień przy tym samym zespole, bez chaosu i bez błędów.",
-            },
-          ],
         }}
         className="py-16 sm:py-20"
       />
@@ -275,21 +222,6 @@ export default function AplikacjeInternetoweDlaFirmPage() {
         </div>
       </section>
 
-      {/* Sekcja 5: Mechanizm / Proces tworzenia aplikacji krok po kroku */}
-      <OfferSection
-        badge="Krok po kroku"
-        offer={{
-          title: mechanism.title,
-          subheading: mechanism.subtitle,
-          paths: mechanism.cards.map((card, i) => ({
-            title: `Krok ${i + 1}`,
-            situation: card.title.replace(/^\d+\.\s+/, ""),
-            desc: card.content,
-          })),
-        }}
-        className="py-16 sm:py-20"
-      />
-
       {/* Sekcja 6: Gwarancje i Bezpieczeństwo */}
       <GuaranteeSection guarantee={guarantee} />
 
@@ -307,7 +239,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
       />
 
 
-      <CtaSection content={offer} />
+      <CtaSection content={offer} ctaHref="/kwalifikacja" />
     </main>
   )
 }

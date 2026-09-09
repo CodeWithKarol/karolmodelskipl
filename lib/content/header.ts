@@ -16,28 +16,28 @@ export const header = {
       title: "Oferta",
       items: [
         {
-          title: "Dedykowane aplikacje internetowe dla firm",
-          href: "/aplikacje-internetowe-dla-firm",
-          description:
-            "Oprogramowanie szyte na miarę, które automatyzuje procesy i zwiększa zyski.",
-        },
-        {
-          title: "Szybka wersja startowa aplikacji",
+          title: "Fundament SaaS/B2B w 30 dni",
           href: "/projektowanie-mvp",
           description:
-            "Uruchomienie kluczowej funkcji w 30 dni i bezpieczny start sprzedaży bez przepalania budżetu.",
+            "Kompletny fundament technologiczny Twojego SaaS/B2B w klasie bankowej — działająca platforma pod Twoją domeną w 30 dni.",
         },
         {
-          title: "Bezinwazyjna modernizacja aplikacji",
-          href: "/naprawa-i-modernizacja-aplikacji",
-          description:
-            "Usuwanie błędów i przyspieszanie oprogramowania bez przestojów w codziennej pracy firmy.",
-        },
-        {
-          title: "Doradztwo techniczne i partnerstwo",
+          title: "Tarcza Portfela IT (Fractional CTO)",
           href: "/doradztwo-techniczne-dla-firm",
           description:
-            "Stałe wsparcie Niezależnego Partnera Technologicznego i ochrona budżetu.",
+            "Niezależna weryfikacja wycen agencji i ochrona przed przepalaniem budżetu.",
+        },
+        {
+          title: "Modernizacja Systemów w Locie",
+          href: "/naprawa-i-modernizacja-aplikacji",
+          description:
+            "Przyspieszenie mulącej aplikacji w 2–4 tygodnie bez ani jednej sekundy przestoju w sprzedaży.",
+        },
+        {
+          title: "Systemy Skalowania Operacji",
+          href: "/aplikacje-internetowe-dla-firm",
+          description:
+            "Zastąpienie paraliżu w Excelu automatyzacją jednym kliknięciem – obsłuż 3× więcej zamówień.",
         },
       ],
     },

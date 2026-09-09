@@ -1,26 +1,38 @@
 import { Package, BadgeCheck, Lock, FileCode2, CircleCheck } from "lucide-react"
 import { SectionBadge } from "@/components/section-badge"
 import { Reveal } from "@/components/reveal"
+import { cn } from "@/lib/utils"
 
 interface PackageSpecContent {
   badge: string
   title: string
   intro: string
-  core: { title: string; value: string; desc: string }
-  bonuses: { tag: string; title: string; value: string; desc: string }[]
-  summary_label: string
-  summary_value: string
-  price_label: string
-  price_amount: string
-  payment: string
-  bullets: string[]
+  core: { tag?: string; value?: string; title: string; desc: string }
+  bonuses: { tag: string; title: string; value?: string; desc: string }[]
+  summary_label?: string
+  summary_value?: string
+  price_label?: string
+  price_amount?: string
+  payment?: string
+  bullets?: string[]
 }
 
-export function PackageSpecSection({ spec }: { spec: PackageSpecContent }) {
+export function PackageSpecSection({
+  spec,
+  className,
+}: {
+  spec: PackageSpecContent
+  className?: string
+}) {
   const bonusIcons = [BadgeCheck, Lock, FileCode2]
 
   return (
-    <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-12 text-slate-300 sm:py-20 md:py-24">
+    <section
+      className={cn(
+        "relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-12 text-slate-300 sm:py-20 md:py-24",
+        className
+      )}
+    >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
 
       <div className="relative z-10 container mx-auto px-4 max-w-4xl">
@@ -40,12 +52,23 @@ export function PackageSpecSection({ spec }: { spec: PackageSpecContent }) {
           {/* Rdzeń */}
           <Reveal>
             <div className="border-t border-slate-800 py-7 sm:py-9">
-              <div className="mb-4 flex flex-col items-start gap-1.5 sm:flex-row sm:items-center sm:gap-x-3">
-                <Package className="h-5 w-5 shrink-0 text-blue-400" />
-                <p className="text-[13px] font-medium leading-snug text-slate-400 sm:font-semibold sm:text-sm sm:text-blue-300">
-                  {spec.core.value}
-                </p>
-              </div>
+              {(spec.core.value || spec.core.tag) && (
+                <div className="mb-4 flex flex-col items-start gap-1.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-3">
+                  <span className="flex items-center gap-2">
+                    <Package className="h-5 w-5 shrink-0 text-blue-400" />
+                    {spec.core.tag && (
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-blue-400 sm:text-xs">
+                        {spec.core.tag}
+                      </span>
+                    )}
+                  </span>
+                  {spec.core.value && (
+                    <span className="text-[11px] font-medium text-slate-500 sm:text-xs">
+                      {spec.core.value}
+                    </span>
+                  )}
+                </div>
+              )}
               <h3 className="text-lg font-bold text-white leading-snug sm:text-xl">{spec.core.title}</h3>
               <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400 sm:text-[15px]">
                 {spec.core.desc}
@@ -66,7 +89,9 @@ export function PackageSpecSection({ spec }: { spec: PackageSpecContent }) {
                         {bonus.tag}
                       </span>
                     </span>
-                    <span className="text-[11px] font-medium text-slate-500 sm:text-xs">{bonus.value}</span>
+                    {bonus.value && (
+                      <span className="text-[11px] font-medium text-slate-500 sm:text-xs">{bonus.value}</span>
+                    )}
                   </div>
                   <h3 className="text-lg font-bold text-white leading-snug sm:text-xl">{bonus.title}</h3>
                   <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400 sm:text-[15px]">
@@ -77,38 +102,55 @@ export function PackageSpecSection({ spec }: { spec: PackageSpecContent }) {
             )
           })}
 
-          {/* Podsumowanie wartości i cena */}
-          <Reveal>
-            <div className="border-t border-slate-800 pt-10 text-center sm:pt-14">
-              <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-500 sm:text-xs">
-                {spec.summary_label}
-              </p>
-              <p className="mx-auto mt-2 max-w-2xl text-sm font-semibold text-slate-200 sm:text-base md:text-lg">
-                {spec.summary_value}
-              </p>
+          {/* Podsumowanie wartości i cena (opcjonalne) */}
+          {spec.price_amount && (
+            <Reveal>
+              <div className="border-t border-slate-800 pt-10 text-center sm:pt-14">
+                {spec.summary_label && spec.summary_value && (
+                  <>
+                    <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-500 sm:text-xs">
+                      {spec.summary_label}
+                    </p>
+                    <p className="mx-auto mt-2 max-w-2xl text-sm font-semibold text-slate-200 sm:text-base md:text-lg">
+                      {spec.summary_value}
+                    </p>
+                  </>
+                )}
 
-              <div className="mx-auto mt-10 max-w-xl border-t border-slate-800 pt-9 sm:mt-12">
-                <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-500 sm:text-xs">
-                  {spec.price_label}
-                </p>
-                <p className="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-                  {spec.price_amount}
-                </p>
-                <p className="mx-auto mt-3 max-w-lg text-xs leading-relaxed text-slate-400 sm:text-sm">
-                  {spec.payment}
-                </p>
+                <div className="mx-auto mt-10 max-w-xl border-t border-slate-800 pt-9 sm:mt-12">
+                  <p className="text-[11px] font-semibold uppercase tracking-widest text-slate-500 sm:text-xs">
+                    {spec.price_label}
+                  </p>
+                  <p
+                    className={cn(
+                      "mt-2 font-extrabold tracking-tight text-white",
+                      (spec.price_amount ?? "").length <= 18
+                        ? "text-3xl sm:text-4xl"
+                        : "text-xl leading-snug sm:text-2xl sm:leading-snug"
+                    )}
+                  >
+                    {spec.price_amount}
+                  </p>
+                  {spec.payment && (
+                    <p className="mx-auto mt-3 max-w-lg text-xs leading-relaxed text-slate-400 sm:text-sm">
+                      {spec.payment}
+                    </p>
+                  )}
 
-                <ul className="mx-auto mt-6 max-w-md space-y-2.5 text-left">
-                  {spec.bullets.map((bullet) => (
-                    <li key={bullet} className="flex items-start gap-2 text-xs text-slate-300 sm:text-sm">
-                      <CircleCheck className="mt-0.5 h-4 w-4 shrink-0 text-blue-400" />
-                      <span>{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
+                  {spec.bullets && spec.bullets.length > 0 && (
+                    <ul className="mx-auto mt-6 max-w-md space-y-2.5 text-left">
+                      {spec.bullets.map((bullet) => (
+                        <li key={bullet} className="flex items-start gap-2 text-xs text-slate-300 sm:text-sm">
+                          <CircleCheck className="mt-0.5 h-4 w-4 shrink-0 text-blue-400" />
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
-            </div>
-          </Reveal>
+            </Reveal>
+          )}
         </div>
       </div>
     </section>
