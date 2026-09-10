@@ -94,9 +94,10 @@ export function CtaSection({ content: pageContent, ctaHref }: CtaSectionProps = 
               ) : (
                 <p className="text-xs sm:text-sm text-slate-400 mt-3 font-medium text-center leading-relaxed text-pretty">🔒 Po pozytywnej weryfikacji danych w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.</p>
               )}
-              {cta.availability ? (
+              {cta.availability && (
                 <p className="text-xs text-amber-400/90 text-center mt-2 font-semibold tracking-wide uppercase">{cta.availability}</p>
-              ) : (
+              )}
+              {cta.footer && (
                 <p className="text-xs sm:text-sm text-slate-400 mt-2 font-medium text-center leading-relaxed text-pretty">{cta.footer}</p>
               )}
             </div>

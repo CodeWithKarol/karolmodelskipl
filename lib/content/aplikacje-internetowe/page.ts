@@ -5,81 +5,100 @@ export const metadata = {
 }
 
 export const hero = {
-  badge: "Aplikacje internetowe dla firm",
-  title: "Dedykowane aplikacje internetowe dla firm, które automatyzują procesy i zwiększają zyski",
-  titleHighlight: "– bez agencyjnego chaosu i ukrytych kosztów.",
-  description:
-    "Masz dość gotowych systemów, które bez przerwy Cię ograniczają, oraz agencji, w których Twój projekt i budżet giną w głuchym telefonie między kolejnymi pośrednikami i project managerami? Jako Niezależny Partner Technologiczny projektuję i wdrażam systemy skrojone pod unikalne procesy w Twojej firmie. Rozmawiasz i pracujesz bezpośrednio z inżynierem, który buduje Twój system.",
-  cta: "Porozmawiajmy o Twojej aplikacji",
-  footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT",
-  indicators: [
-    { title: "Oprogramowanie szyte na miarę", desc: "Tworzę systemy dokładnie pod procesy w Twojej firmie, eliminując ręczną pracę i błędy ludzkie." },
-    { title: "Bezpieczeństwo klasy bankowej", desc: "Przenoszę rygorystyczne standardy ochrony danych i stabilności z sektora finansowego wprost do Twojego biznesu." },
-    { title: "Bezpośredni kontakt", desc: "Rozmawiasz wyłącznie z autorem systemu. Natychmiastowe decyzje i pełna odpowiedzialność za wynik." }
-  ],
-  pilot_program: {
-    title: "Program Wdrożeniowy: Aplikacje Internetowe dla Firm (Tylko 2 miejsca)",
-    description: "Przechodzę z sektora finansowego do bezpośredniego wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i przetestuj ze mną proces budowy dedykowanego oprogramowania w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> po wdrożeniu.",
-    cta: "Umów bezpłatną rozmowę o Twojej aplikacji",
-    package_title: "Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):"
+  callout:
+    "Dla właścicieli rosnących firm MŚP, których operacje utknęły w arkuszach kalkulacyjnych i ręcznym wklepywaniu danych.",
+
+  h1Lead: "Obsłuż",
+  h1Highlight: "3× więcej zamówień",
+  h1Tail: "przy tym samym zespole.",
+  h1Second:
+    "Zamień paraliż w Excelu na dedykowany system klasy bankowej – bez zatrudniania agencji i bez wielomiesięcznych opóźnień.",
+
+  subheading:
+    "Zastąp 40-minutowe klepanie pojedynczego zamówienia jednym kliknięciem. Projektuję i wdrażam stabilne oprogramowanie transakcyjne w rygorze Citibanku i BNP Paribas – bezpośrednio z architektem, w zamkniętych 2-tygodniowych sprintach rozliczanych za dowieziony efekt (model 50/50).",
+
+  cta: {
+    label: "Aplikuj o 1 z 2 miejsc na wdrożenie w tym kwartale",
+    href: "/kwalifikacja",
   },
-  cta_sub: "100% bezpłatnie • Wideorozmowa w 4 oczy • Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
-  offer_items: [
-    { title: "Diagnoza miejsc blokujących zyski w procesach Twojej firmy", desc: "", val: "" },
-    { title: "Bankowy Test Bezpieczeństwa i stabilności oprogramowania", desc: "", val: "" },
-    { title: "Osobista Mapa Drogowa wdrożenia dedykowanej aplikacji", desc: "", val: "" },
-  ]
+
+  microcopy: [
+    { title: "Rozmowa kwalifikacyjna 1-na-1 z architektem", urgent: false },
+    { title: "Wstępna diagnoza wąskich gardeł w procesach (Wartość: 5 000 zł za 0 zł)", urgent: false },
+    { title: "Zostało tylko 1 wolne miejsce na ten kwartał", urgent: true },
+  ],
 }
 
 export const story = {
-  title: "Dlaczego mniejsze firmy tracą setki tysięcy na współpracy z dużymi agencjami?",
-  intro: "Większość właścicieli firm po kontakcie z tradycyjnymi wykonawcami ma to samo bolesne doświadczenie: koszty rosną, terminy się przesuwają, a dostarczony system jest zbyt skomplikowany i nie przynosi zysków.",
-  context: "Główne pułapki tradycyjnego modelu agencji programistycznych to:",
+  title:
+    "Ile gotówki przepala Twoja firma każdego dnia, gdy zwlekasz z automatyzacją?",
+  intro:
+    "To nie koszt wdrożenia nowego systemu jest Twoim największym wydatkiem. Najdroższa jest codzienna, ręczna praca, której jeszcze nie zautomatyzowałeś. Tradycyjny software house każe Ci płacić 150 000 zł z góry i czekać rok, podczas gdy Twoje operacje krwawią każdego dnia:",
+  context: "",
   points: [
     {
-      title: "„Głuchy telefon” w komunikacji",
-      desc: "Twój pomysł krąży między handlowcem, kierownikiem projektu a analitykiem. Po drodze cele biznesowe ulegają całkowitemu zniekształceniu."
+      title: "Więzienie w arkuszach i błąd ludzki",
+      desc: "Zamiast skalować sprzedaż, Twój zespół spędza pół dnia na nerwowym przeklikiwaniu danych między 5 różnymi plikami Excela. Jeden przypadkowo usunięty wiersz lub literówka w zamówieniu paraliżuje realizację i niszczy relację z klientem."
     },
     {
-      title: "Płacisz za naukę początkujących",
-      desc: "Agencje przypisują do projektów mniej doświadczonych programistów, podczas gdy Ty płacisz stawkę za całą strukturę i biuro."
+      title: "40 minut ręcznej roboty na jedno zamówienie",
+      desc: "Płacisz pensje wykwalifikowanym ludziom nie za myślenie i rozwój firmy, ale za bycie „ludzkimi taśmociągami” kopiującymi numery faktur, adresy i stany magazynowe."
     },
     {
-      title: "Przerost formy nad treścią",
-      desc: "Tworzenie przeładowanych, ociężałych systemów tylko po to, by wystawić fakturę za większą liczbę przepracowanych godzin."
+      title: "Ograniczenia narzędzi pudełkowych (SaaS)",
+      desc: "Płacisz miesięczne subskrypcje za gotowe systemy, które miały pomóc, ale narzucają sztywne ramy, nie pasują do Twojej logiki biznesowej i blokują wzrost firmy."
     },
     {
-      title: "Brak odpowiedzialności za zysk",
-      desc: "Agencja dowozi kod, a nie Twój sukces biznesowy. Kiedy system nie zarabia, problem zostaje po Twojej stronie."
+      title: "„Głuchy telefon” i faktury za naukę w software house",
+      desc: "Próbujesz zlecić system agencji? Trafiasz na handlowca i junior PM-a. Agencja buduje ociężały kombajn przez 9 miesięcy, bo zarabia na roboczogodzinach, a do kodu wpuszcza stażystów, którzy uczą się zawodu za Twój budżet."
     }
   ]
 }
 
-export const mechanism = {
-  title: "Jak krok po kroku budujemy dedykowany system dla Twojej firmy?",
-  subtitle: "Proces współpracy jest przejrzysty, podzielony na bezpieczne etapy i uwolniony od agencjonalnej biurokracji:",
-  cards: [
+export const valueStack = {
+  badge: "Stos Wartości",
+  title:
+    "Kompletny fundament operacyjny plus bonusy likwidujące ryzyko wdrożenia",
+  intro:
+    "Rozbijam wdrożenie na części składowe, abyś widział, który element usuwa wąskie gardła w Twojej firmie i ile wynosi realna alternatywa rynkowa:",
+  core: {
+    tag: "Fundament Systemu",
+    value: "Rynkowy koszt w agencji: ~110 000 zł i miesiące chaosu",
+    title: "Dedykowany Rdzeń Operacyjny Firmy",
+    desc: "Oprogramowanie skrojone precyzyjnie pod unikalne procesy Twojego biznesu: automatyczne fakturowanie, synchronizacja magazynu, spięcie statusów zamówień i baza danych oparta na rygorach Citibanku i BNP Paribas. 100% praw autorskich do kodu i serwerów w rękach Twojej firmy od pierwszego dnia.",
+  },
+  bonuses: [
     {
-      title: "1. Bezpłatna Diagnoza i Analiza Celów",
-      subtitle: "",
-      content: "Rozmawiamy o Twoich procesach, wyzwaniach i celach biznesowych. Sprawdzamy, jakie rozwiązanie przyniesie najszybszy zwrot z inwestycji."
+      tag: "Bonus 1",
+      title: "Szybka Wersja Startowa w 30 Dni",
+      value: "Wartość rynkowa: 25 000 zł",
+      desc: "Nie czekasz pół roku na cały kombajn w ciemno. W ciągu pierwszych 30 dni oddaję kluczowy, działający moduł transakcyjny, aby Twój zespół zaczął pracować na nowym rozwiązaniu i generować oszczędności od pierwszego miesiąca.",
     },
     {
-      title: "2. Szybka Wersja Startowa (Pierwszy etap w 30 dni)",
-      subtitle: "",
-      content: "Zamiast czekać pół roku na cały system, budujemy kluczową funkcjonalność w miesiąc, byś mógł zacząć testować ją z klientami."
+      tag: "Bonus 2",
+      title: "Paszport Techniczny i Czysty Kod",
+      value: "Wartość rynkowa: 15 000 zł",
+      desc: "Czysta architektura bez „złotej klatki” (brak vendor lock-in). Pełna dokumentacja inżynierska i instrukcje uruchomieniowe – każdy zewnętrzny programista przejmie system w 24 godziny bez marudzenia.",
     },
     {
-      title: "3. Płatność etapowa za efekty",
-      subtitle: "",
-      content: "Projekt dzielimy na krótkie etapy. Płacisz za dany moduł dopiero wtedy, gdy zobaczysz go na ekranie i upewnisz się, że działa bez zarzutu."
+      tag: "Bonus 3",
+      title: "3 Miesiące Osobistej Asysty Powdrożeniowej",
+      value: "Wartość rynkowa: 20 000 zł",
+      desc: "Wdrożenie to przede wszystkim adaptacja ludzi. Przez pełny kwartał po uruchomieniu osobiście czuwam nad nawykami zespołu i stabilnością procesów, gwarantując, że pracownicy płynnie przejdą z Excela na automatyzację jednym kliknięciem.",
     },
-    {
-      title: "4. Wdrożenie i Asysta",
-      subtitle: "",
-      content: "Uruchamiamy system bez przerw w działaniu firmy i otaczamy go 3-miesięczną bezpłatną opieką powdrożeniową."
-    }
-  ]
+  ],
+  summary_label: "Alternatywa – ręczne wklepywanie danych w Excelu kosztuje Cię:",
+  summary_value:
+    "180 000 zł rocznie – utrzymanie 3 pracowników do przepisywania danych między arkuszami, w pensjach i kosztach błędów ludzkich",
+  price_label: "Twój koszt – budowa modułów w stałych sprintach:",
+  price_amount: "50/50 – płacisz tylko za działające moduły",
+  payment:
+    "50% uruchamia 2-tygodniowy sprint, a drugie 50% płacisz dopiero po odbiorze działającego modułu na ekranie testowym i potwierdzeniu specyfikacji przez Twój zespół.",
+  bullets: [
+    "Pełna faktura VAT",
+    "Zero zaliczek na całość i zero ukrytych roboczogodzin",
+    "Pisemna Gwarancja Odbioru Modułu – poprawki na mój koszt",
+  ],
 }
 
 export const funnel = {
@@ -102,76 +121,96 @@ export const funnel = {
 
 export const comparison = {
   badge: "Porównanie",
-  title: "Bezpośrednia współpraca vs. tradycyjna agencja",
+  title: "Bezpośrednia Współpraca vs. Tradycyjna Agencja",
   subtitle:
     "Twarde, tabelaryczne porównanie pokazujące przewagę bezpośredniej współpracy nad agencją.",
   columns: {
-    feature: "Cecha projektu",
-    me: "Współpraca ze mną",
-    agency: "Tradycyjna agencja (Software House)",
+    feature: "Obszar",
+    me: "Współpraca ze Mną (Partner IT)",
+    agency: "Tradycyjna Agencja (Software House)",
   },
   rows: [
     {
       feature: "Komunikacja",
-      me: "Rozmawiasz bezpośrednio z twórcą systemu. Zero filtrów i głuchego telefonu.",
-      agency: "Rozmawiasz z handlowcem lub juniorem (PM), który nie rozumie kodu.",
+      me: "Rozmawiasz bezpośrednio z twórcą systemu (zero filtrów).",
+      agency: "„Głuchy telefon” – handlowcy, PM-owie i rotujący juniorzy.",
     },
     {
-      feature: "Struktura kosztów",
-      me: "100% budżetu idzie w jakość kodu i logikę biznesową.",
-      agency: "Płacisz za biura agencji, prowizje handlowców i pensje pośredników.",
+      feature: "Struktura Kosztów",
+      me: "100% budżetu idzie w jakość kodu i automatyzację procesów.",
+      agency: "Płacisz za warszawskie open space’y, handlowców i narzuty agencji.",
     },
     {
-      feature: "Gwarancja ryzyka",
-      me: "Rozliczenie etapowe. Płacisz dopiero, gdy widzisz działający etap na ekranie.",
-      agency: "Wielkie zaliczki na start (faktury z góry) i brak gwarancji dowiezienia terminu.",
+      feature: "Model Ryzyka",
+      me: "Zamknięte sprinty 50/50 – płacisz po zatwierdzeniu modułu.",
+      agency: "Wielkie zaliczki w ciemno i faktury za niekończące się roboczogodziny.",
+    },
+    {
+      feature: "Czas do Wartości",
+      me: "Działający moduł transakcyjny w rękach zespołu już w 30 dni.",
+      agency: "6 do 12 miesięcy analiz, planowania i ciągłych aneksów.",
     },
   ],
 }
 
 export const faq = {
-  title: "Najczęściej Zadawane Pytania",
+  title: "Najczęściej zadawane pytania",
   subtitle:
-    "Decyzja o wdrożeniu nowego oprogramowania szytego na miarę i wybór partnera technologicznego rodzą wiele ważnych pytań. Oto jasne odpowiedzi na kwestie, które najczęściej poruszają właściciele firm przed rozpoczęciem współpracy:",
+    "Odpowiedzi na kluczowe pytania dotyczące bezpieczeństwa procesów, czasu wdrożenia i warunków technicznych przed podjęciem współpracy:",
   items: [
     {
-      q: "Ile trwa stworzenie dedykowanej aplikacji dla firmy?",
-      a: "Kluczową wersję systemu (pozwalającą na start sprzedaży i testy na rynku) wdrażamy w zaledwie 30 dni. Dalszy rozwój i kolejne moduły dodajemy ewolucyjnie w krótkich, 2-tygodniowych etapach."
-    },
-    {
       q: "Czy muszę dokładnie wiedzieć, jak ma wyglądać system od strony technicznej?",
-      a: "Nie. Ty znasz swój biznes i procesy, które chcesz usprawnić – ja tłumaczę je na bezpieczną technologię i projektuję strukturę systemu od A do Z."
+      a: "Nie. Twoją rolą jest opowiedzieć o procesach biznesowych, wąskich gardłach i miejscach, w których zespół traci czas na powtarzalną robotę. Ja biorę na siebie 100% prac inżynierskich: dobór architektury, logikę bazodanową i integracje. Rozmawiamy w języku zysków, wygody pracowników i płynności operacji, bez technicznego żargonu."
     },
     {
-      q: "Czym różni się Twoje podejście od pracy z dużą agencją?",
-      a: "U mnie nie płacisz za utrzymanie biura handlowego, menedżerów i pośredników. Rozmawiasz bezpośrednio z twórcą oprogramowania, dzięki czemu eliminujemy błędy komunikacyjne, a 100% Twojego budżetu idzie w czystą jakość kodu."
+      q: "Kiedy zobaczę pierwsze realne efekty i odciążenie w firmie?",
+      a: "Zamiast czekać 6 do 12 miesięcy na cały kombajn w ciemno, wdrażamy szybką wersję startową w dokładnie 30 dni od zatwierdzenia planu. Kluczowy moduł transakcyjny trafia w ręce Twojego zespołu w pierwszym miesiącu, generując oszczędności czasu, a dalszy rozwój realizujemy w zamkniętych, 2-tygodniowych sprintach."
+    },
+    {
+      q: "Czy podpisujemy umowę o zachowaniu poufności (NDA) przed wejściem w dane firmy?",
+      a: "Tak, bezwzględnie. Zanim przeanalizujemy logikę arkuszy, obieg zamówień i strukturę baz danych, podpisujemy twardą umowę o poufności (NDA). Standardy ochrony informacji opieram na regułach przetestowanych w instytucjach finansowych (Citibank, BNP Paribas) – Twoje dane biznesowe są w pełni chronione przed wyciekiem."
+    },
+    {
+      q: "Czy po zakończeniu prac będę uzależniony od Twojej osoby (vendor lock-in)?",
+      a: "Absolutnie nie. Wraz z gotowym systemem otrzymujesz 100% praw autorskich do kodu oraz Paszport Techniczny – pełną dokumentację inżynierską i instrukcję uruchomienia. Kod powstaje w oparciu o czyste, powszechne standardy bankowe, co oznacza, że każdy inny programista na rynku może przejąć i rozwijać projekt w 24 godziny."
+    },
+    {
+      q: "Co w sytuacji, gdy pracownicy będą bali się nowego narzędzia i spróbują wrócić do Excela?",
+      a: "Wdrożenie technologii to przede wszystkim adaptacja ludzi. Dlatego projekt nie kończy się na oddaniu plików – otrzymujesz 3 miesiące bezpłatnej opieki powdrożeniowej, podczas której osobiście asystuję zespołowi, eliminuję wątpliwości i dbam o to, by automatyzacja jednym kliknięciem stała się ich naturalnym, codziennym nawykiem."
     }
   ]
 }
 
 export const offer = {
-  badge: "Program Partnerski: Dedykowane Aplikacje dla Firm (Tylko 2 miejsca)",
+  badge: "Program Partnerski: Dedykowane Systemy dla Firm (Tylko 2 miejsca)",
   title: "Koniec z ręczną pracą w Excelu. Zaplanujmy Twój dedykowany system w 4 oczy.",
   description:
-    "Ponieważ nie prowadzę masowej fabryki kodu, w każdym kwartale buduję dedykowane systemy dla <strong class='text-white font-semibold'>maksymalnie dwóch firm</strong>, dając Twojemu projektowi 100% mojego osobistego skupienia. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – stwórz oprogramowanie bez pośredników i zyskaj <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki technicznej</strong> po wdrożeniu.",
-  package_title: "Co dokładnie otrzymujesz w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
+    "Ponieważ osobiście odpowiadam za architekturę każdego wdrożenia i nie deleguję zadań podwykonawcom, w każdym kwartale obejmuję opieką maksymalnie 2 firmy. Zostań Partnerem Założycielem – zabezpiecz preferencyjne warunki wdrożenia i odbierz 3 miesiące dedykowanej asysty powdrożeniowej w cenie projektu.",
+  package_title:
+    "Przebieg 30-minutowej Diagnozy Architektonicznej i Indywidualnego Pakietu (Wartość: 5 000 zł za 0 zł):",
   offer_items: [
     {
-      title: "Diagnoza Wąskich Gardeł: analiza procesów w firmie i wskazanie miejsc, w których dedykowany system natychmiast uwolni czas zespołu i zwiększy zyski.",
-      desc: "",
+      title: "Krok 1: W trakcie rozmowy wideo 1-na-1 (Diagnoza Wąskich Gardeł):",
+      desc: "Bierzemy pod lupę procesy w Twojej firmie i wskazujemy miejsca, w których ręczne przeklikiwanie arkuszy najbardziej blokuje wzrost i generuje błędy.",
     },
     {
-      title: "Bankowy Test Bezpieczeństwa Informacji: weryfikacja stabilności architektury i standardów ochrony danych.",
-      desc: "",
+      title: "Krok 2: Po spotkaniu – Bankowy Test Bezpieczeństwa Informacji:",
+      desc: "W oparciu o zebrane dane przygotowuję analizę ryzyka: weryfikację stabilności przepływu danych, podatności na błędy ludzkie oraz standardów ochrony informacji w Twojej firmie.",
     },
     {
-      title: "Osobista Mapa Drogowa Wdrożenia IT: precyzyjny plan działania, harmonogram etapowy i transparentna wycena bez ukrytych kosztów.",
-      desc: "",
+      title: "Krok 3: Po spotkaniu – Osobista Mapa Drogowa Wdrożenia IT (Dokument PDF):",
+      desc: "Otrzymujesz gotowy plan działania: podział prac na 2-tygodniowe sprinty inżynierskie, specyfikację pierwszego modułu w 30 dni oraz transparentną wycenę bez ukrytych kosztów.",
     },
   ],
-  button: "Odbierz Pakiet Strategiczny i Zarezerwuj Miejsce (0 zł)",
+  button: "Wypełnij 60-sekundową ankietę i sprawdź dostępność terminu →",
+  format:
+    "100% bezpłatnie • Wideorozmowa w 4 oczy z architektem • Kompletny plan wdrożenia przesłany po spotkaniu",
+  note:
+    "🔒 Po pozytywnej weryfikacji danych w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.",
+  availability:
+    "Dostępność: Maksymalnie 2 wdrożenia w kwartale (Zostało 1 wolne miejsce).",
   footer:
-    "Zajmij jedno z 2 wolnych miejsc w tym kwartale. Odkładanie cyfryzacji firmy na bliżej nieokreślone „kiedyś” to zgoda na dalsze przepalanie setek godzin na ręczną pracę, uciekające zyski i oglądanie pleców konkurencji, która szybciej wdroży automatyzację.",
+    "Odkładanie automatyzacji na bliżej nieokreślone „kiedyś” to zgoda na dalsze błędy w zamówieniach, przepalanie setek roboczogodzin i oglądanie pleców konkurencji.",
 }
 
 export const bankingStability = {
@@ -186,21 +225,120 @@ export const bankingStability = {
 }
 
 export const guarantee = {
-  badge: "Gwarancje i Bezpieczeństwo",
-  title: "Zdejmuję z Twoich barków 100% ryzyka wykonawczego",
-  subtitle: "Wiem, że powierzenie stworzenia oprogramowania nowemu partnerowi wymaga zaufania. Dlatego zasady współpracy są uczciwe i bezpieczne:",
+  badge: "Gwarancje Wykonawcze",
+  title:
+    "Zdejmuję z Twoich barków 100% ryzyka finansowego i technologicznego",
+  subtitle: "",
+  steps: [
+    "30-minutowa diagnoza i zamrożenie zakresu",
+    "Wdrożenie modułu transakcyjnego w 30 dni",
+    "Rozbudowa w 2-tygodniowych sprintach 50/50 + 3 miesiące asysty w zespole",
+  ],
   items: [
     {
-      title: "Płatność po pokazaniu efektów",
-      desc: "Płacisz za etap dopiero po jego ukończeniu i akceptacji. Zero wielkich zaliczek w ciemno."
+      title: "Pisemna Gwarancja Odbioru Sprintu",
+      desc: "Jeśli po 2 tygodniach moduł nie realizuje uzgodnionej specyfikacji na środowisku testowym – pracuję nad poprawkami na własny koszt, a Ty nie płacisz drugiej transzy (50%) ani złotówki, dopóki osobiście nie zatwierdzisz działania na żywym procesie."
     },
     {
-      title: "Standardy bankowe",
-      desc: "Bezpieczeństwo danych przetestowane w projektach dla instytucji takich jak Citibank czy BNP Paribas."
-    },
-    {
-      title: "Przejrzystość kodu",
-      desc: "Tworzę system w oparciu o uniwersalne, światowe standardy. Kod jest w pełni udokumentowany – nie uzależniam Cię od swojej osoby."
+      title: "Standard Bezpieczeństwa Klasy Bankowej",
+      desc: "Architektura budowana w rygorze Citibanku i BNP Paribas. Twój system jest projektowany tak, aby wytrzymać nagłe spiętrzenie zamówień i nigdy nie wyłożyć się w piątek o godzinie 16:00, paraliżując firmę."
     }
   ]
+}
+
+export const qualification = {
+  badge: "Weryfikacja kwalifikacyjna",
+  title: "Sprawdź, czy Twoja firma kwalifikuje się do wdrożenia w tym kwartale",
+  intro:
+    "5 szybkich pytań (60 sekund). Jeśli spełniasz kryteria, od razu otwieram dostęp do prywatnego kalendarza na 30-minutową rozmowę 1-na-1 z architektem.",
+  steps: [
+    {
+      key: "need",
+      label: "1. Jaki proces operacyjny najbardziej obciąża dziś Twój zespół?",
+      options: [
+        {
+          value: "reczne",
+          label: "Ręczne przepisywanie zamówień i danych między arkuszami Excela",
+        },
+        {
+          value: "fakturowanie",
+          label: "Chaos w fakturowaniu i synchronizacji magazynu",
+        },
+        {
+          value: "saas",
+          label: "Ograniczenia gotowych narzędzi pudełkowych (SaaS)",
+        },
+        { value: "inne", label: "Inne" },
+      ],
+    },
+    {
+      key: "scale",
+      label:
+        "2. Ile szacunkowo godzin tygodniowo cały zespół traci łącznie na tę ręczną pracę?",
+      options: [
+        { value: "ponizej5", label: "Mniej niż 5 godzin" },
+        { value: "5-20", label: "5 – 20 godzin" },
+        { value: "ponad20", label: "Ponad 20 godzin tygodniowo" },
+      ],
+    },
+    {
+      key: "authority",
+      label: "3. Jaka jest Twoja rola w strukturze firmy?",
+      options: [
+        {
+          value: "wlasciciel",
+          label: "Właściciel / Członek Zarządu",
+          hint: "Podejmuję ostateczne decyzje finansowe i strategiczne",
+        },
+        {
+          value: "manager",
+          label: "Dyrektor Operacyjny / Manager",
+          hint: "Rekomenduję rozwiązania zarządowi",
+        },
+        { value: "pracownik", label: "Pracownik zbierający oferty" },
+      ],
+    },
+    {
+      key: "budget",
+      label:
+        "4. Dedykowane systemy realizujemy w zamkniętych sprintach 50/50, a minimalny budżet wdrożenia startowego wynosi od 30 000 – 50 000 zł netto. Czy Twoja firma posiada zabezpieczony budżet na automatyzację tych operacji?",
+      options: [
+        {
+          value: "tak",
+          label:
+            "Tak, mamy zabezpieczone środki i chcemy rozwiązać problem w tym kwartale",
+        },
+        { value: "pozniej", label: "Budżet będzie dostępny w kolejnych kwartałach" },
+        {
+          value: "darmowe",
+          label: "Szukamy bezpłatnych porad / nie planujemy inwestycji",
+        },
+      ],
+    },
+    {
+      key: "timing",
+      label:
+        "5. Kiedy realnie zależy Ci na uruchomieniu pierwszego modułu w firmie?",
+      options: [
+        { value: "30dni", label: "Natychmiast (w ciągu 30 dni)" },
+        { value: "2-3mies", label: "W ciągu 2–3 miesięcy" },
+        { value: "niewiem", label: "Jeszcze nie wiem" },
+      ],
+    },
+  ],
+  messages: {
+    rejected: {
+      title: "Dziękujemy za zgłoszenie",
+      body: "W tym kwartale prowadzimy wdrożenia wyłącznie dla maksymalnie 2 zakwalifikowanych firm. Zapraszamy do zapoznania się z materiałami w naszej bazie wiedzy.",
+      button: "Przejdź do bazy wiedzy",
+      href: "/blog",
+    },
+  },
+  qualified: {
+    title: "Gratulacje – Twoja firma wstępnie się kwalifikuje",
+    body: "Zarezerwuj 30-minutowy slot w kalendarzu. Na rozmowie przeanalizujemy wąskie gardła w Twoich procesach i wskażę najszybszą ścieżkę wdrożenia.",
+    button: "Wybierz termin w kalendarzu",
+    footer:
+      "Rozmowa wideo 1-na-1 z architektem • Zero technicznego żargonu • Raport z rekomendacjami po spotkaniu",
+  },
 }

@@ -8,6 +8,7 @@ import { Reveal } from "@/components/reveal"
 export interface OfferPath {
   title: string
   situation: string
+  subtitle?: string
   desc: string
   result?: string
   link?: string
@@ -55,9 +56,11 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
             {offer.title}
           </h2>
-          <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg">
-            {offer.subheading}
-          </p>
+          {offer.subheading && (
+            <p className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg">
+              {offer.subheading}
+            </p>
+          )}
         </Reveal>
 
         {threeColumns ? (
@@ -84,7 +87,14 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
                       <h3 className="text-lg sm:text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors leading-snug">
                         {path.situation}
                       </h3>
-                      <p className="text-slate-400 leading-relaxed text-sm">{path.desc}</p>
+                      {path.subtitle && (
+                        <p className="mb-3 text-sm font-medium leading-snug text-slate-300 sm:text-base">
+                          {path.subtitle}
+                        </p>
+                      )}
+                      {path.desc && (
+                        <p className="text-slate-400 leading-relaxed text-sm">{path.desc}</p>
+                      )}
                     </div>
                     {path.result && (
                       <div className="mt-6 border-t border-slate-800/60 pt-4 text-[11px] font-semibold text-slate-400">
@@ -110,7 +120,14 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
                   <div className="min-w-0 flex-1">
                     <p className="mb-1.5 text-[11px] font-bold uppercase tracking-widest text-blue-400 sm:text-xs">{path.title}</p>
                     <h3 className="text-base font-bold text-white mb-2 leading-snug sm:text-xl">{path.situation}</h3>
-                    <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">{path.desc}</p>
+                    {path.subtitle && (
+                      <p className="mb-2 text-sm font-medium leading-snug text-slate-300 sm:text-base">
+                        {path.subtitle}
+                      </p>
+                    )}
+                    {path.desc && (
+                      <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">{path.desc}</p>
+                    )}
                     {path.result && (
                       <div className="mt-4 pt-3 sm:mt-5 sm:pt-4 border-t border-slate-800/60 text-[11px] font-semibold text-slate-400">
                         {path.result}

@@ -2,9 +2,10 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { siteConfig } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
 
-type ApplicationContent = {
+type QualificationContent = {
   badge: string
   title: string
   intro: string
@@ -24,38 +25,42 @@ type ApplicationContent = {
   }
 }
 
-export function ApplicationForm({ application }: { application: ApplicationContent }) {
+export function QualificationForm({
+  qualification,
+}: {
+  qualification: QualificationContent
+}) {
   const [answers, setAnswers] = useState<Record<string, string>>({})
 
-  const stage = answers.stage
-  const budget = answers.budget
-  const timeline = answers.timeline
-  const allAnswered = Boolean(stage && budget && timeline)
+  const requiredKeys = qualification.steps.map((step) => step.key)
+  const allAnswered = requiredKeys.every((key) => answers[key])
 
   let result: "rejected" | "qualified" | null = null
   if (allAnswered) {
-    result = timeline === "rozeznanie" ? "rejected" : "qualified"
+    const rejected =
+      answers.budget === "darmowe" || answers.authority === "pracownik"
+    result = rejected ? "rejected" : "qualified"
   }
 
-  const select = (stepKey: string, value: string) =>
-    setAnswers((prev) => ({ ...prev, [stepKey]: value }))
+  const select = (key: string, value: string) =>
+    setAnswers((prev) => ({ ...prev, [key]: value }))
 
   return (
-    <section id="aplikuj" className="pt-28 pb-16 sm:pt-36 sm:pb-28">
+    <section id="kwalifikacja" className="pt-28 pb-16 sm:pt-36 sm:pb-28">
       <div className="container mx-auto px-4">
         <div className="mx-auto w-full max-w-3xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-400 sm:px-4 sm:text-xs">
-            {application.badge}
+            {qualification.badge}
           </span>
           <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-balance text-white sm:text-4xl">
-            {application.title}
+            {qualification.title}
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-400 sm:text-lg">
-            {application.intro}
+            {qualification.intro}
           </p>
 
-          <div className="mt-9 sm:mt-12 text-left">
-            {application.steps.map((step) => (
+          <div className="mt-9 text-left sm:mt-12">
+            {qualification.steps.map((step) => (
               <fieldset key={step.key} className="mb-8 last:mb-0">
                 <legend className="mb-3.5 text-xs font-semibold uppercase tracking-wider text-slate-400">
                   {step.label}
@@ -91,21 +96,26 @@ export function ApplicationForm({ application }: { application: ApplicationConte
 
             {!allAnswered && (
               <p className="text-center text-xs text-slate-500">
-                Odpowiedz na wszystkie 3 pytania, aby zobaczyć dalszy krok.
+                Odpowiedz na wszystkie {requiredKeys.length} pytań, aby zobaczyć
+                dalszy krok.
               </p>
             )}
 
             {result === "rejected" && (
               <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-5 text-center">
-                <p className="text-base font-semibold text-white">{application.messages.rejected.title}</p>
-                <p className="mx-auto mt-2 max-w-xl text-sm leading-relaxed text-slate-400">{application.messages.rejected.body}</p>
+                <p className="text-base font-semibold text-white">
+                  {qualification.messages.rejected.title}
+                </p>
+                <p className="mx-auto mt-2 max-w-xl text-sm leading-relaxed text-slate-400">
+                  {qualification.messages.rejected.body}
+                </p>
                 <Button
                   asChild
                   variant="outline"
                   className="mt-5 border-white/15 bg-white/5 text-slate-200 hover:bg-white/10 hover:text-white"
                 >
-                  <a href={application.messages.rejected.href}>
-                    {application.messages.rejected.button}
+                  <a href={qualification.messages.rejected.href}>
+                    {qualification.messages.rejected.button}
                   </a>
                 </Button>
               </div>
@@ -113,18 +123,28 @@ export function ApplicationForm({ application }: { application: ApplicationConte
 
             {result === "qualified" && (
               <div className="rounded-2xl border border-blue-500/20 bg-blue-500/5 p-5 text-center">
-                <p className="text-base font-semibold text-white">{application.qualified.title}</p>
-                <p className="mx-auto mt-2 max-w-xl text-sm leading-relaxed text-slate-400">{application.qualified.body}</p>
+                <p className="text-base font-semibold text-white">
+                  {qualification.qualified.title}
+                </p>
+                <p className="mx-auto mt-2 max-w-xl text-sm leading-relaxed text-slate-400">
+                  {qualification.qualified.body}
+                </p>
                 <Button
                   asChild
                   size="lg"
-                  className="w-full max-w-md bg-blue-600 hover:bg-blue-700 text-white py-5 text-sm font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-tight"
+                  className="mt-5 w-full max-w-md whitespace-normal rounded-xl bg-blue-600 px-6 py-5 text-sm font-bold leading-tight text-white shadow-lg hover:bg-blue-700"
                 >
-                  <a href="https://calendly.com/kontakt-karolmodelski/30min" target="_blank" rel="noopener noreferrer">
-                    {application.qualified.button}
+                  <a
+                    href={siteConfig.calendlyLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {qualification.qualified.button}
                   </a>
                 </Button>
-                <p className="mt-3 text-[11px] font-medium text-slate-400">{application.qualified.footer}</p>
+                <p className="mt-3 text-[11px] font-medium text-slate-400">
+                  {qualification.qualified.footer}
+                </p>
               </div>
             )}
           </div>

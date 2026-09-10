@@ -1,13 +1,13 @@
 export const mvp = {
   metadata: {
-    title: "Pierwsza wersja aplikacji dla firm w 30 dni | Partner IT",
+    title: "Kompletny Fundament Technologiczny SaaS/B2B w 30 Dni (Klasa Bankowa)",
     description:
-      "Zbuduj pierwszą wersję aplikacji w 30 dni z niezależnym partnerem technologicznym. Bez zbędnego komplikowania i marż agencji. Sprawdź, czy zarabiasz!",
+      "W 30 dni buduję kompletny fundament technologiczny Twojego SaaS/B2B: produkcyjna platforma pod Twoją domeną w standardach bankowych, gotowa na realne wpłaty. Stała cena 50 000 zł, gwarancja terminu i zwrotu.",
   },
   service: {
-    title: "Pierwsza wersja aplikacji dla firm w 30 dni",
+    title: "Kompletny Fundament Technologiczny SaaS/B2B w 30 Dni (Klasa Bankowa)",
     description:
-      "Szybkie tworzenie pierwszych, działających wersji oprogramowania dla biznesu. Eliminacja zbędnych funkcji i natychmiastowe uruchomienie sprzedaży bez ryzyka.",
+      "Produkcyjna platforma SaaS/B2B pod Twoją domeną zbudowana w 30 dni w standardach bankowych — rejestracja użytkowników, bezpieczna baza danych, panel zarządzania i moduł płatności subskrypcyjnych. 100% praw autorskich do kodu w Twoich rękach.",
     type: "Tworzenie wersji pilotażowych oprogramowania",
     offerName: "Bezpłatna Konsultacja Strategiczna i Plan Działania",
     offerPrice: "0",
@@ -24,7 +24,7 @@ export const mvp = {
     qualification: {
       status_label: "Status na ten kwartał",
       status_value: "Zostało 1 z 2 miejsc",
-      title: "Program Wdrożenia MVP w 30 Dni",
+      title: "Program Wdrożenia Fundamentu SaaS/B2B w 30 Dni",
       description:
         "Osobiste przejęcie 100% technologii i dowiezienie działającego produktu pod Twoją marką w standardach bankowych.",
       cta: "Sprawdź, czy Twój projekt kwalifikuje się do startu w 30 dni",
@@ -75,7 +75,7 @@ export const mvp = {
       }
     ],
     positive_point:
-      "Zamiast miesiącami czekać na idealny produkt, buduję pierwszą wersję startową w 30 dni, skupiając się wyłącznie na tym, co generuje zysk.",
+      "Zamiast miesiącami czekać na idealny produkt, buduję kompletny fundament technologiczny Twojego SaaS/B2B w 30 dni, skupiając się wyłącznie na tym, co generuje zysk.",
   },
   usp: {
     title: 'Model "Elite": Twoja przewaga technologiczna',
@@ -233,8 +233,8 @@ export const mvp = {
     subtitle: "Decyzja o szybkim starcie nowej aplikacji rodzi naturalne pytania. Oto odpowiedzi na kwestie, które najczęściej poruszają przedsiębiorcy:",
     items: [
       {
-        question: "Czy wersja startowa w 30 dni to pełnoprawna aplikacja?",
-        answer: "Tak, w 100%. Nie buduję klikalnych makiet, prototypów ani prowizorycznych stron. Otrzymujesz w pełni działający, produkcyjny system postawiony na Twojej domenie, z bezpieczną bazą danych, panelem użytkownika i działającymi płatnościami. Wersja startowa różni się od oprogramowania korporacyjnego tylko jednym: nie ma w niej 20 zbędnych zakładek, których nikt nie używa. Skupiamy się na jednym kluczowym procesie, za który klienci płacą. Architektura jest przygotowana w standardach bankowych, dzięki czemu system udźwignie tysiące transakcji bez konieczności przepisywania od zera."
+        question: "Czy fundament technologiczny w 30 dni to pełnoprawna aplikacja?",
+        answer: "Tak, w 100%. Nie buduję klikalnych makiet, prototypów ani prowizorycznych stron. Otrzymujesz w pełni działający, produkcyjny system postawiony na Twojej domenie, z bezpieczną bazą danych, panelem użytkownika i działającymi płatnościami. Fundament technologiczny różni się od oprogramowania korporacyjnego tylko jednym: nie ma w nim 20 zbędnych zakładek, których nikt nie używa. Skupiamy się na jednym kluczowym procesie, za który klienci płacą. Architektura jest przygotowana w standardach bankowych, dzięki czemu system udźwignie tysiące transakcji bez konieczności przepisywania od zera."
       },
       {
         question: "Co dzieje się z aplikacją po tych 30 dniach?",
@@ -251,7 +251,7 @@ export const mvp = {
     ],
   },
   cta: {
-    badge: "Program Partnerski: Gotowa Platforma B2B / SaaS w 30 Dni (Tylko 2 projekty w kwartale)",
+    badge: "Program Partnerski: Kompletny Fundament Technologiczny SaaS/B2B w 30 Dni (Tylko 2 projekty w kwartale)",
     title: "Nie trać 6 miesięcy na software house. Wypuść gotowy produkt na rynek w 30 dni.",
     description:
       "Osobiście odpowiadam za architekturę każdego systemu i nie zrzucam prac na podwykonawców — dlatego w każdym kwartale uruchamiam dokładnie 2 platformy. Zyskujesz moje pełne inżynierskie skupienie, kod w rygorze bankowym oraz <strong class='text-white font-semibold'>60 dni osobistej tarczy technologicznej</strong> po premierze.",
@@ -291,41 +291,38 @@ export const mvp = {
       },
       {
         key: "budget",
-        label: "Jaki budżet operacyjny masz zabezpieczony na wdrożenie fundamentu technologicznego?",
+        label:
+          "Fundament technologiczny realizuję w stałej cenie 50 000 zł netto (model 50/50: 25 000 zł na start i 25 000 zł po udanej transakcji testowej). Czy Twoja firma posiada zabezpieczony budżet na to wdrożenie?",
         options: [
-          { value: "ponizej20", label: "Poniżej 20 000 zł" },
-          { value: "25-45", label: "25 000 – 45 000 zł" },
-          { value: "50-80", label: "50 000 – 80 000 zł" },
-          { value: "powyzej", label: "Powyżej 80 000 zł" },
+          {
+            value: "tak",
+            label:
+              "Tak, mam zabezpieczone 50 000 zł netto i chcę wystartować w tym kwartale",
+          },
+          { value: "pozniej", label: "Budżet będzie dostępny w kolejnych kwartałach" },
+          {
+            value: "ponizej",
+            label: "Szukam tańszych rozwiązań / budżet poniżej 25 000 zł",
+          },
         ],
       },
       {
         key: "timeline",
         label: "Kiedy planujesz wystartować z pracami nad platformą?",
         options: [
-          { value: "30dni", label: "Natychmiast (najbliższe 30 dni)", hint: "priorytetowy dostęp do kalendarza na bieżący slot" },
-          { value: "1-2mies", label: "W ciągu 1–2 miesięcy", hint: "kwalifikuje się do rezerwacji drugiego slotu w tym kwartale" },
-          { value: "3-6mies", label: "Za 3–6 miesięcy", hint: "wstępna rozmowa lub lista rezerwowa na kolejny kwartał" },
-          { value: "rozeznanie", label: "Jeszcze nie wiem, robię rozeznanie rynku", hint: "wróć, gdy wybierzesz konkretny horyzont" },
+          { value: "30dni", label: "Natychmiast (najbliższe 30 dni)" },
+          { value: "1-2mies", label: "W ciągu 1–2 miesięcy" },
+          { value: "3-6mies", label: "Za 3–6 miesięcy" },
+          { value: "rozeznanie", label: "Jeszcze nie wiem, robię rozeznanie rynku" },
         ],
       },
     ],
     messages: {
-      early_stage: {
-        title: "Najpierw zweryfikuj sam pomysł.",
-        body: "Na tym etapie nie potrzebujesz wykonawcy, tylko rozmów z klientami i testu, czy ktokolwiek zapłaci. Gdy potwierdzisz model biznesowy, wróć i wypełnij formularz — kalendarz będzie na Ciebie czekał.",
-      },
-      no_budget: {
-        title: "Na ten moment to nie będzie najlepsza inwestycja.",
-        body: "Dziękuję za szczerość — przy budżecie poniżej 20 000 zł dedykowane wdrożenie nie ma sensu finansowego. Zanim do mnie wrócisz, polecam wystartować z narzędziami no-code (np. Webflow + Stripe, Tally, Make) i zweryfikować popyt pierwszymi wpłatami.",
-      },
-      research: {
-        title: "Daj mi znać, gdy decyzja dojrzeje.",
-        body: "Zanim odłożysz projekt, zjedź niżej i przeczytaj sekcję pytań i odpowiedzi — większość wątpliwości dotyczy kosztów i tego, co dokładnie dostajesz w 30 dni. Gdy wybierzesz konkretny horyzont, formularz będzie na Ciebie czekał.",
-      },
-      waitlist: {
-        title: "Twój horyzont to kolejny kwartał — zapisz się na listę.",
-        body: "Nie otwieram kalendarza na rozmowę, zanim nie będziesz gotów ruszać. Napisz do mnie przez LinkedIn z tematem „start [miesiąc]”, a potwierdzę dostępność i odezwę się, gdy otworzę sloty na kolejny kwartał.",
+      rejected: {
+        title: "Dziękujemy za zgłoszenie",
+        body: "W tym kwartale prowadzimy wdrożenia wyłącznie dla maksymalnie 2 zakwalifikowanych firm. Zapraszamy do zapoznania się z materiałami w naszej bazie wiedzy.",
+        button: "Przejdź do bazy wiedzy",
+        href: "/blog",
       },
     },
     qualified: {

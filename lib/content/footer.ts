@@ -7,10 +7,10 @@ export const footer = {
   solutions: {
     title: "Obszary współpracy",
     items: [
-      { label: "Aplikacje internetowe dla firm", href: "/aplikacje-internetowe-dla-firm" },
-      { label: "Szybka wersja startowa (MVP)", href: "/projektowanie-mvp" },
-      { label: "Bezinwazyjna modernizacja aplikacji", href: "/naprawa-i-modernizacja-aplikacji" },
-      { label: "Doradztwo i architektura IT", href: "/doradztwo-techniczne-dla-firm" },
+      { label: "Fundament SaaS/B2B w 30 dni", href: "/projektowanie-mvp" },
+      { label: "Tarcza Portfela IT (Fractional CTO)", href: "/doradztwo-techniczne-dla-firm" },
+      { label: "Modernizacja Systemów w Locie", href: "/naprawa-i-modernizacja-aplikacji" },
+      { label: "Systemy Skalowania Operacji", href: "/aplikacje-internetowe-dla-firm" },
     ],
   },
   guarantees: {
