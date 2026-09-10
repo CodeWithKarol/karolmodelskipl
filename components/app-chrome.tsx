@@ -74,7 +74,7 @@ function FunnelFooter({ variant }: { variant: FunnelVariant }) {
   const { title, description, tagline } = FOOTER_VARIANTS[variant]
 
   return (
-    <footer className="relative border-t border-slate-800/60 bg-slate-950 py-12 text-slate-400 sm:py-16">
+    <footer className="relative border-t border-slate-800/60 bg-slate-950 pt-12 text-slate-400 sm:pt-16 md:pt-24">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr] md:gap-12">
           <div>
@@ -105,7 +105,7 @@ function FunnelFooter({ variant }: { variant: FunnelVariant }) {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-slate-800/60 pt-6 sm:mt-12 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-2 border-t border-slate-800/60 pt-6 pb-8 text-center sm:mt-12 sm:flex-row sm:items-center sm:justify-center sm:gap-8 sm:pt-8 sm:pb-6">
           <p className="text-xs text-slate-500 sm:text-sm">© 2026 Karol Modelski. Wszelkie prawa zastrzeżone.</p>
           <p className="text-[11px] uppercase tracking-wider text-slate-600 sm:text-xs">
             {tagline}
