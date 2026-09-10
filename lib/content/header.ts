@@ -2,11 +2,6 @@ export const header = {
   brand: {
     name: "Karol Modelski",
   },
-  cta: {
-    title: "Konsultacja 1:1",
-    href: "https://calendly.com/kontakt-karolmodelski/30min",
-    description: "30-minutowa konsultacja 1:1 z architektem — diagnostyka Twojego projektu, nie rozmowa handlowa.",
-  },
   menu: {
     mobile: {
       title: "Nawigacja",

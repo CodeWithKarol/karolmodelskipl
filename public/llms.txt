@@ -59,6 +59,11 @@
 #### Strategia i Partnerstwo IT
 - [W czym pisać aplikacje webowe? Praktyczny przewodnik dla właścicieli firm (bez technicznego żargonu)](https://www.karolmodelski.pl/blog/w-czym-pisac-aplikacje-webowe): Biznesowy przewodnik po wyborze technologii do budowy aplikacji webowych – frontend (React/Next.js, Vue/Nuxt), backend (TypeScript/NestJS, Python, .NET/Java, PHP) i baza danych (PostgreSQL) oraz 3 złote zasady wyboru: unikanie vendor lock-in, najprostsze skuteczne narzędzie i czystość kodu.
 
-## Bezpłatna Konsultacja
+## Kwalifikacja i Rezerwacja
 
-- [Rezerwacja rozmowy](https://calendly.com/kontakt-karolmodelski/30min): 30-minutowa diagnoza architektoniczna 1-na-1 z wnioskami na żywo (format bez sprzedaży i bez żargonu). Kompletna specyfikacja i kosztorys powstają dopiero dla projektów zakwalifikowanych do wdrożenia. Dostępność: maksymalnie 2 wdrożenia w kwartale.
+Dostęp do kalendarza jest ograniczony: przed rezerwacją rozmowy wymagane jest przejście krótkiej ankiety kwalifikacyjnej (limit 2 wdrożeń na kwartał). Po pozytywnej weryfikacji ankieta od razu otwiera prywatny kalendarz.
+
+- [Kwalifikacja – Systemy Skalowania Operacji](https://www.karolmodelski.pl/kwalifikacja-aplikacje): 3 pytania (skala marnowanego czasu, rola decyzyjna, budżet) dla firm MŚP z chaosem w arkuszach i ręcznym wklepywaniem danych.
+- [Kwalifikacja – Modernizacja Systemów w Locie](https://www.karolmodelski.pl/kwalifikacja-modernizacja): 3 pytania (ruch/wolumen, rola decyzyjna, budżet) dla e-commerce i platform z długiem technologicznym.
+- [Kwalifikacja – Fundament SaaS/B2B w 30 dni](https://www.karolmodelski.pl/kwalifikacja-saas): 3 pytania dla założycieli budujących produkt SaaS/B2B.
+- [Kalendarz – rezerwacja rozmowy](https://calendly.com/kontakt-karolmodelski/30min): 30-minutowa diagnoza architektoniczna 1-na-1 z wnioskami na żywo, dostępna po pozytywnej kwalifikacji. Maksymalnie 2 wdrożenia w kwartale.

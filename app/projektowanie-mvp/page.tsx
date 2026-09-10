@@ -143,7 +143,7 @@ export default function ProjektowanieMvpPage() {
                 size="lg"
                 className="flex-col gap-1 w-full max-w-md mx-auto bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 text-xs font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-snug sm:gap-1.5 sm:py-4 sm:text-sm"
               >
-                <a href="/aplikuj" role="button">
+                <a href="/kwalifikacja-saas" role="button">
                   <span className="block">{mvp.hero.qualification.cta_line1}</span>
                   <span className="block">{mvp.hero.qualification.cta_line2} →</span>
                 </a>
@@ -219,7 +219,7 @@ export default function ProjektowanieMvpPage() {
       {/* Sekcja 7: FAQ */}
       <FaqSection faq={mvp.faq} className="py-12 sm:py-24" />
 
-      <CtaSection content={mvp.cta} ctaHref="/aplikuj" />
+      <CtaSection content={mvp.cta} ctaHref="/kwalifikacja-saas" />
     </main>
   )
 }

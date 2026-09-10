@@ -52,9 +52,11 @@ export function FaqSection({ faq: customFaq, className }: FaqSectionProps = {}) 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white mb-6 leading-tight">
             {title}
           </h2>
-          <p className="text-slate-400 font-light leading-relaxed text-base sm:text-lg">
-            {faq.subtitle}
-          </p>
+          {faq.subtitle && (
+            <p className="text-slate-400 font-light leading-relaxed text-base sm:text-lg">
+              {faq.subtitle}
+            </p>
+          )}
         </Reveal>
 
         {/* Akordeon - borderless, hairline dividers */}

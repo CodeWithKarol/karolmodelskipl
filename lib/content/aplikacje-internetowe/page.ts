@@ -19,7 +19,7 @@ export const hero = {
 
   cta: {
     label: "Aplikuj o 1 z 2 miejsc na wdrożenie w tym kwartale",
-    href: "/kwalifikacja",
+    href: "/kwalifikacja-aplikacje",
   },
 
   microcopy: [
@@ -250,31 +250,12 @@ export const qualification = {
   badge: "Weryfikacja kwalifikacyjna",
   title: "Sprawdź, czy Twoja firma kwalifikuje się do wdrożenia w tym kwartale",
   intro:
-    "5 szybkich pytań (60 sekund). Jeśli spełniasz kryteria, od razu otwieram dostęp do prywatnego kalendarza na 30-minutową rozmowę 1-na-1 z architektem.",
+    "3 szybkie pytania (30 sekund). Jeśli spełniasz kryteria, od razu otwieram dostęp do prywatnego kalendarza na 30-minutową rozmowę 1-na-1 z architektem.",
   steps: [
-    {
-      key: "need",
-      label: "1. Jaki proces operacyjny najbardziej obciąża dziś Twój zespół?",
-      options: [
-        {
-          value: "reczne",
-          label: "Ręczne przepisywanie zamówień i danych między arkuszami Excela",
-        },
-        {
-          value: "fakturowanie",
-          label: "Chaos w fakturowaniu i synchronizacji magazynu",
-        },
-        {
-          value: "saas",
-          label: "Ograniczenia gotowych narzędzi pudełkowych (SaaS)",
-        },
-        { value: "inne", label: "Inne" },
-      ],
-    },
     {
       key: "scale",
       label:
-        "2. Ile szacunkowo godzin tygodniowo cały zespół traci łącznie na tę ręczną pracę?",
+        "1. Ile szacunkowo godzin tygodniowo cały zespół traci łącznie na ręczną pracę?",
       options: [
         { value: "ponizej5", label: "Mniej niż 5 godzin" },
         { value: "5-20", label: "5 – 20 godzin" },
@@ -283,7 +264,7 @@ export const qualification = {
     },
     {
       key: "authority",
-      label: "3. Jaka jest Twoja rola w strukturze firmy?",
+      label: "2. Jaka jest Twoja rola w strukturze firmy?",
       options: [
         {
           value: "wlasciciel",
@@ -301,7 +282,7 @@ export const qualification = {
     {
       key: "budget",
       label:
-        "4. Dedykowane systemy realizujemy w zamkniętych sprintach 50/50, a minimalny budżet wdrożenia startowego wynosi od 30 000 – 50 000 zł netto. Czy Twoja firma posiada zabezpieczony budżet na automatyzację tych operacji?",
+        "3. Dedykowane systemy realizujemy w zamkniętych sprintach 50/50, a minimalny budżet wdrożenia startowego wynosi od 30 000 – 50 000 zł netto. Czy Twoja firma posiada zabezpieczony budżet na automatyzację tych operacji?",
       options: [
         {
           value: "tak",
@@ -313,16 +294,6 @@ export const qualification = {
           value: "darmowe",
           label: "Szukamy bezpłatnych porad / nie planujemy inwestycji",
         },
-      ],
-    },
-    {
-      key: "timing",
-      label:
-        "5. Kiedy realnie zależy Ci na uruchomieniu pierwszego modułu w firmie?",
-      options: [
-        { value: "30dni", label: "Natychmiast (w ciągu 30 dni)" },
-        { value: "2-3mies", label: "W ciągu 2–3 miesięcy" },
-        { value: "niewiem", label: "Jeszcze nie wiem" },
       ],
     },
   ],

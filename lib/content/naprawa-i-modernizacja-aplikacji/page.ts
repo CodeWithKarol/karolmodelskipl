@@ -1,41 +1,39 @@
 export const metadata = {
-  title: "Modernizacja oprogramowania IT | Niezależny Partner IT",
+  title: "Bezinwazyjna modernizacja oprogramowania | Niezależny Partner IT",
   description:
     "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży. Odbierz darmową diagnozę!",
 }
 
 export const guarantee = {
-  badge: "Gwarancje Bezpieczeństwa",
-  title: "Bezpieczeństwo Twojego biznesu jest na 1. miejscu",
-  subtitle: "Doskonale wiem, że powierzenie kluczowych systemów nowemu wykonawcy budzi obawy o płynność finansową i ciągłość obsługi klientów. Dlatego cały proces modernizacji opieram na twardych gwarancjach, które w 100% chronią Twoje finanse, dane oraz codzienne operacje:",
+  badge: "Gwarancje Wykonawcze",
+  title: "Zdejmuję z Ciebie 100% ryzyka operacyjnego i technologicznego",
+  subtitle: "",
   items: [
     {
-      title: "Pisemna Gwarancja Płynności",
-      desc: "Zobowiązuję się, że moje prace nie przerwą codziennego funkcjonowania Twojego sklepu lub oprogramowania."
+      title: "Pisemna Gwarancja Płynności Biznesowej",
+      desc: "Zobowiązuję się w umowie, że prowadzone prace inżynierskie nie zakłócą codziennego funkcjonowania Twojego oprogramowania ani na minutę. Twoi klienci cały czas kupują."
     },
     {
-      title: "Gwarancja Płatności za Efekt",
-      desc: "Nie płacisz za obietnice. Po wpłacie niewielkiego depozytu, rozliczamy się etapami – fakturę opłacasz po akceptacji wykonanego kroku."
-    },
-    {
-      title: "Standardy Finansowe",
-      desc: "Stosuję zasady bezpieczeństwa danych przetestowane w bankowości inwestycyjnej (Citibank, BNP Paribas). Twój system jest w pełni chroniony przed wyciekiem i utratą informacji."
+      title: "Gwarancja Płatności za Zademonstrowany Efekt (Model 50/50)",
+      desc: "Każdy 2-tygodniowy etap modernizacji dzielimy na dwie transze: 50% uruchamia prace na środowisku testowym, a drugie 50% płacisz dopiero wtedy, gdy sam przetestujesz przyspieszenie na ekranie i potwierdzisz stabilność. Jeśli moduł nie spełnia założeń – poprawiam go na własny koszt."
     }
   ]
 }
 
 export const hero = {
-  badge: "Bezinwazyjna modernizacja oprogramowania",
-  title: "Naprawiam i przyspieszam istniejące aplikacje internetowe",
-  titleHighlight: "– bez wstrzymywania sprzedaży i kosztownego pisania od nowa.",
+  badge:
+    "Dla właścicieli e-commerce, platform i systemów B2B, których oprogramowanie dławi się przy większym ruchu klientów.",
+  title: "Uzdrowię i przyspieszę Twój system w 2–4 tygodnie.",
+  titleHighlight:
+    "Bez wyłączania sprzedaży, bez ryzyka utraty zamówień i bez przepłacania 150 000 zł za pisanie kodu od zera.",
   description:
-    "Twój obecny system działa wolno, zacina się przy większym ruchu, a każda drobna zmiana trwa miesiącami? Nie musisz wyrzucać dotychczasowych inwestycji do kosza ani płacić fortuny za budowę platformy od zera. Wprowadzam usprawnienia ewolucyjnie, na żywym organizmie firmy – wymieniamy fundamenty pokój po pokoju, podczas gdy Twoi klienci nieprzerwanie składają zamówienia.",
+    "Twój system ładuje się powyżej 3 sekund, a baza danych zatyka się w szczycie ruchu? Agencja twierdzi, że „tego się nie da naprawić” i proponuje 8 miesięcy prac? Prawda jest taka: 90% systemów da się uratować. Wymieniam fundamenty pokój po pokoju na żywym organizmie firmy – prace prowadzimy na odizolowanym środowisku testowym, a Twoi klienci nieprzerwanie składają zamówienia.",
   cta: "Umów bezpłatny audyt wydajności",
   footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz bezpłatny plan poprawek",
-  indicators: [
-    { title: "Zero przestojów w biznesie", desc: "Wszystkie prace modernizacyjne przebiegają w tle. Twój sklep lub system działa bez przerw 24/7." },
-    { title: "Ochrona dotychczasowego budżetu", desc: "Nie namawiam na ryzykowne budowanie wszystkiego od zera. Wykorzystujemy to, co działa, i naprawiamy tylko to, co blokuje zyski." },
-    { title: "Błyskawiczna poprawa szybkości", desc: "Zwiększam wydajność aplikacji, co bezpośrednio przekłada się na wyższą konwersję i lepsze doświadczenie Twoich klientów." }
+  microcopy: [
+    { title: "Rozmowa diagnostyczna 1-na-1 z architektem (30 min)", urgent: false },
+    { title: "Bankowy Test Wydajności i Bezpieczeństwa Kodu (Wartość: 5 000 zł za 0 zł)", urgent: false },
+    { title: "Zostało tylko 1 z 2 wolnych miejsc na ten kwartał", urgent: true }
   ],
   pilot_program: {
     title: "Program Partnerski: Modernizacja i Przyspieszanie Systemów (Tylko 2 firmy)",
@@ -52,161 +50,210 @@ export const hero = {
 }
 
 export const story = {
-  title: "Kiedy wiesz, że Twój system potrzebuje inżyniera, a nie kolejnych wymówek?",
-  intro: "Gdy zaczynałeś, Twoja aplikacja była wystarczająca. Jednak w miarę rozwoju firmy, dodawania nowych funkcji i obsługi większej liczby klientów, w kodzie pojawia się tzw. dług technologiczny.",
-   context: "Jeśli obserwujesz u siebie poniższe objawy, Twój system potrzebuje pilnej interwencji niezależnego partnera technologicznego:",
+  title: "Ile zysków traci Twój biznes w każdej sekundzie opóźnienia koszyka?",
+  intro:
+    "Gdy zaczynałeś, system wystarczał. Jednak przy wzroście liczby transakcji w kodzie urósł dług technologiczny. Oto cztery symptomy, które oznaczają, że Twój system potrzebuje natychmiastowej interwencji inżyniera:",
+  context: "",
   points: [
     {
-      title: "Objaw 01: Spadek szybkości i utrata klientów",
-      desc: "Strony ładują się powyżej 3 sekund, a baza danych dławi się przy większym ruchu. Każda sekunda zwłoki w koszyku to porzuceni klienci i uciekające zyski."
+      title: "Spadek szybkości i uciekający klienci",
+      desc: "Każda sekunda zwłoki w ładowaniu koszyka to porzuceni kupujący i realna strata gotówki. Baza dławi się dokładnie wtedy, gdy masz w firmie największy ruch."
     },
     {
-      title: "Objaw 02: Paraliż rozwoju nowych funkcji",
-      desc: "Dodanie prostego przycisku, integracji z kurierem czy nowego raportu trwa 6 tygodni, bo programiści boją się, że drobna zmiana wysypie cały system."
+      title: "Paraliż rozwoju nowych funkcji",
+      desc: "Wdrożenie prostej integracji z kurierem lub nowego raportu trwa 6 tygodni, bo programiści boją się, że drobna zmiana wysypie całą platformę."
     },
     {
-      title: "Objaw 03: Rosnące koszty serwerów",
-      desc: "Zamiast zoptymalizować zapytania do bazy, ktoś stale dokupuje droższe serwery. Płacisz setki złotych miesięcznie za „leczenie objawów”, a nie przyczyny."
+      title: "Przepalanie budżetu na droższe serwery",
+      desc: "Zamiast zoptymalizować zapytania do bazy danych, ktoś stale dokupuje większą moc obliczeniową. Płacisz tysiące złotych miesięcznie za leczenie objawów, a nie przyczyny."
     },
     {
-      title: "Objaw 04: Agencja mówi: „Tego się nie da naprawić, trzeba napisać od nowa”",
-      desc: "Agencje tak mówią, bo ich juniorzy boją się czytać cudzy kod, a software house woli sprzedać Ci nowy projekt za 150 tysięcy i 8 miesięcy prac, niż naprawić to, co masz w 3 tygodnie. Prawda jest taka: <strong class='text-white font-semibold'>90% systemów da się uzdrowić bez burzenia całego biznesu</strong>."
+      title: "Agencyjne kłamstwo: „Trzeba napisać od nowa”",
+      desc: "Software house woli sprzedać Ci nowy projekt za 150 000 zł i ciągnąć go przez 8 miesięcy, bo ich rotujący juniorzy boją się czytać cudzy kod. Nie musisz burzyć działającego biznesu."
     }
   ]
 }
 
-export const safety = {
-  badge: "Inżynieryjna gwarancja bezpieczeństwa",
-  title: "Jak modernizujemy oprogramowanie bez ani jednej sekundy przestoju w biznesie?",
-  fear: "„A co, jeśli programista dotknie kodu w piątek i w sobotę rano platforma padnie?”",
-  lead: "Oto dlaczego u mnie jest to niemożliwe:",
-  steps: [
+export const valueStack = {
+  badge: "Stos Wartości",
+  title: "Uzdrowienie architektury w tle plus gwarancje ciągłości biznesu",
+  intro: "",
+  core: {
+    tag: "Fundament Systemu",
+    value: "Rynkowa alternatywa: 150 000 zł i paraliż firmy w nowym projekcie",
+    title: "Inżynieryjna Optymalizacja w Locie",
+    desc: "Usunięcie krytycznych wąskich gardeł, optymalizacja zapytań SQL i refaktoryzacja newralgicznych modułów w standardzie Citibanku i BNP Paribas.",
+  },
+  bonuses: [
     {
-      title: "Prace tylko na izolowanym środowisku",
-      desc: "Nigdy nie dotykam Twojego działającego sklepu ani systemu produkcyjnego na żywo. Wszystkie prace optymalizacyjne, refaktoryzację kodu i testy przeprowadzam na odizolowanej kopii testowej (stagingu)."
+      tag: "Bonus 1",
+      title: "Prace w Pełnej Izolacji (Staging)",
+      value: "Wartość: 15 000 zł",
+      desc: "Nigdy nie dotykam Twojego działającego sklepu ani aplikacji na żywo. Całość prac, testy obciążeniowe i wdrożenia poprawek realizujemy na odizolowanej kopii testowej.",
     },
     {
-      title: "Cicha podmiana po Twojej akceptacji",
-      desc: "Dopiero wtedy, gdy sam przetestujesz przyspieszenie na ekranie i zaakceptujesz wynik, wykonujemy cichą, bezpieczną podmianę modułu w godzinach najmniejszego ruchu."
-    }
+      tag: "Bonus 2",
+      title: "Cicha Podmiana Nocna",
+      value: "Wartość: 10 000 zł",
+      desc: "Wdrożenie zoptymalizowanego modułu na serwer produkcyjny następuje dopiero po Twojej akceptacji, w godzinach najmniejszego ruchu – bez ani jednej sekundy przestoju w procesowaniu płatności.",
+    },
+    {
+      tag: "Bonus 3",
+      title: "3 Miesiące Dedykowanej Opieki Technicznej",
+      value: "Wartość: 20 000 zł",
+      desc: "Po wdrożeniu poprawek nie zostajesz sam. Przez 90 dni osobiście monitoruję wydajność i stabilność zoptymalizowanych modułów pod realnym obciążeniem transakcyjnym.",
+    },
   ],
-  guarantees: [
-    "Zero ryzyka utraty zamówień",
-    "Standardy bezpieczeństwa wypracowane w bankowości (Citibank, BNP Paribas)",
-    "Pisemna Gwarancja Płynności Operacyjnej"
-  ]
-}
-
-export const mechanism = {
-  title: "Proces wdrożeniowy w 5 krokach",
-  subtitle: "Proces modernizacji zaprojektowałem tak, aby zapewnić Ci pełną przewidywalność i zerowe ryzyko operacyjne. Zamiast chaotycznych zmian i niekończących się poprawek, przechodzimy przez przejrzystą i bezpieczną ścieżkę:",
-  cards: [
-    {
-      title: "1. Bezpłatna Diagnoza i Audyt",
-      subtitle: "",
-      content: "Wskazuję 2–3 wąskie gardła, które najbardziej spowalniają system i blokują zyski."
-    },
-    {
-      title: "2. Plan Modernizacji Krok po Kroku",
-      subtitle: "",
-      content: "Dostajesz precyzyjną mapę: co naprawiamy najpierw, w jakim czasie i za jaką kwotę."
-    },
-    {
-      title: "3. Prace w Tle (Izolacja)",
-      subtitle: "",
-      content: "Buduję i optymalizuję moduły na bezpiecznym środowisku testowym. Twój biznes działa normalnie."
-    },
-    {
-      title: "4. Testy i Pokaz Efektu",
-      subtitle: "",
-      content: "Sprawdzasz działanie na własnym ekranie. Płacisz za etap dopiero po zatwierdzeniu wyniku."
-    },
-    {
-      title: "5. Cicha Podmiana",
-      subtitle: "",
-      content: "Wdrażamy zoptymalizowany element na produkcję. System przyspiesza bez przestoju w sprzedaży."
-    }
-  ]
 }
 
 export const contrast = {
-  title: "Metoda „Modernizacji w Locie” – Bezpieczny sposób na szybki system",
-  subtitle: "Zamiast burzyć dom, w którym mieszkasz, wymieniamy i wzmacniamy fundamenty pokój po pokoju.",
-  red_ocean_title: "Tradycyjne „Przepisywanie od Zera”",
-  blue_ocean_title: "Moja „Bezinwazyjna Modernizacja”",
+  title: "Porównanie Modeli: Modernizacja w Locie vs. Pisanie od Zera",
+  red_ocean_title: "Przepisywanie od Zera (Software House)",
+  blue_ocean_title: "Bezinwazyjna Modernizacja (Karol Modelski)",
   comparisons: [
     {
-      red: { title: "Ryzyko biznesowe", desc: "Ogromne (Możliwość paraliżu firmy na miesiące)" },
-      blue: { title: "Ryzyko biznesowe", desc: "Minimalne (System działa bez przerw)" },
+      red: { title: "Ryzyko biznesowe", desc: "Ekstremalne – groźba wielomiesięcznego paraliżu firmy." },
+      blue: { title: "Ryzyko biznesowe", desc: "Minimalne – system nieprzerwanie generuje gotówkę." },
     },
     {
-      red: { title: "Czas do pierwszych efektów", desc: "6–12 miesięcy (Czekasz na gotową całość)" },
-      blue: { title: "Czas do pierwszych efektów", desc: "2–4 tygodnie (Szybkie poprawki kluczowych modułów)" },
+      red: { title: "Czas do efektu", desc: "6–12 miesięcy czekania na mityczną całość." },
+      blue: { title: "Czas do efektu", desc: "2–4 tygodnie na odczuwalne przyspieszenie modułów." },
     },
     {
-      red: { title: "Koszt początkowy", desc: "Bardzo wysoki (Finansujesz cały nowy projekt)" },
-      blue: { title: "Koszt początkowy", desc: "Niski (Płacisz tylko za naprawiane elementy)" },
+      red: { title: "Ciągłość sprzedaży", desc: "Ryzyko błędów i wstrzymania zamówień przy przełączeniu." },
+      blue: { title: "Ciągłość sprzedaży", desc: "100% płynności operacyjnej (zero przestojów)." },
     },
     {
-      red: { title: "Ciągłość sprzedaży", desc: "Częste przerwy i błędy przy przełączeniu" },
-      blue: { title: "Ciągłość sprzedaży", desc: "100% płynności transakcji" },
+      red: { title: "Model budżetu", desc: "150 000 zł+ w ciemno i faktury za niekończące się roboczogodziny." },
+      blue: { title: "Model budżetu", desc: "Zamknięte sprinty 50/50 rozliczane za dowiezione przyspieszenie." },
     },
   ],
 }
 
 export const faq = {
-  title: "Najczęściej Zadawane Pytania dotyczące modernizacji systemów",
-  subtitle:
-    "Rozumiem, że decyzja o wprowadzeniu poprawek w działającym oprogramowaniu firmy wymaga pełnego poczucia bezpieczeństwa. Oto odpowiedzi na pytania, które najczęściej zadają właściciele firm przed rozpoczęciem prac:",
+  title: "Najczęściej zadawane pytania",
+  subtitle: "",
   items: [
     {
-      q: "Czy mój system naprawdę da się zmodernizować, czy trzeba go napisać od nowa?",
-      a: "Większość agencji proponuje budowę systemu od zera, ponieważ tak jest dla nich łatwiej i zyskowniej. W zdecydowanej większości przypadków nie ma jednak takiej potrzeby. Podczas bezpłatnej diagnozy dokładnie sprawdzam obecną strukturę i wskazuję, które elementy wymagają jedynie naprawy lub przyspieszenia, a które działają dobrze. Oczyszczamy i wzmacniamy istniejący system bez konieczności niszczenia tego, w co już zainwestowałeś."
+      q: "Co w sytuacji, gdy mój obecny system nie ma żadnej dokumentacji, a programista zniknął?",
+      a: "To powszechna sytuacja w rozwijających się firmach. Agencje często boją się czytać cudzy kod i wolą sprzedać przepisanie całości od nowa za 150 000 zł. Z doświadczenia w środowiskach bankowych (Citibank, BNP Paribas) wiem, jak przeprowadzić inżynierski audyt, zmapować architekturę i zoptymalizować zapytania do bazy danych bez konieczności kontaktu z poprzednim twórcą."
     },
     {
-      q: "Czy w trakcie prac moja strona lub sklep przestaną działać dla klientów?",
-      a: "Nie. Wszystkie ulepszenia wprowadzam w bezpiecznym, odseparowanym środowisku testowym. Twoja firma działa normalnie, Twoi klienci kupują bez przeszkód, a ulepszone fragmenty systemu podmieniamy dopiero wtedy, gdy zostaną przetestowane i przez Ciebie zaakceptowane. Sprzedaż i obsługa klientów trwają bez ani jednej minuty przerwy."
+      q: "Czy podpisujemy umowę o poufności (NDA) przed wejściem w kod i bazy danych firmy?",
+      a: "Tak, bezwzględnie. Zanim dotknę jakichkolwiek repozytoriów, baz danych czy procesów transakcyjnych Twojego sklepu lub aplikacji, podpisujemy wiążącą umowę NDA. Zasady bezpieczeństwa i ochrony danych opieram na standardach wypracowanych w bankowości inwestycyjnej."
     },
     {
-      q: "Kiedy zobaczę pierwsze realne efekty modernizacji?",
-      a: "Pierwsze widoczne rezultaty pojawiają się zazwyczaj już po 2–3 tygodniach. Pracujemy w krótkich etapach, skupiając się w pierwszej kolejności na obszarach, które najbardziej spowalniają działanie oprogramowania lub wywołują błędy. Nie czekasz pół roku na gotową całość – system staje się szybszy i bardziej stabilny krok po kroku."
+      q: "Czy w trakcie prac moja platforma lub sklep przestaną działać dla kupujących?",
+      a: "Nie. W ramach Pisemnej Gwarancji Płynności Biznesowej 100% prac naprawczych, testów obciążeniowych i refaktoryzacji realizuję na odizolowanej kopii testowej (stagingu). Podmiana zoptymalizowanego modułu na serwerze produkcyjnym odbywa się w nocy, w godzinach minimalnego ruchu, dopiero po Twojej weryfikacji i zatwierdzeniu wyniku."
     },
     {
-      q: "Jak wygląda rozliczenie i co jeśli efekt nie spełni moich oczekiwań?",
-      a: "Stosuję bezpieczny model płatności po pokazaniu efektów. Projekt dzielimy na małe etapy. Przed każdym etapem wpłacasz jedynie niewielki depozyt rezerwacyjny (20%), a właściwą płatność regulujesz dopiero wtedy, gdy zobaczysz działający i przyspieszony moduł na swoim ekranie. Jeśli efekt wymaga poprawek, nanoszę je w ramach danego etapu, zanim przejdziemy dalej."
+      q: "Kiedy zobaczę pierwsze realne efekty przyspieszenia?",
+      a: "W metodzie „modernizacji w locie” pierwsze odczuwalne rezultaty i odciążenie bazy danych pojawiają się już w ciągu 2 do 4 tygodni od startu pierwszego sprintu. Zamiast czekać 6–12 miesięcy na mityczny nowy system, rozwiązujemy 2–3 najbardziej palące wąskie gardła od razu."
     },
     {
       q: "Czy po zakończeniu modernizacji będę uzależniony od jednej osoby?",
-      a: "Nie. Wszystkie prace wykonuję w oparciu o uniwersalne, światowe standardy tworzenia oprogramowania, przetestowane w bankowości. Cała struktura jest przejrzysta, uporządkowana i posiada pełną instrukcję. Oznacza to, że w dowolnym momencie każdy inny doświadczony specjalista na rynku bez problemu przejmie opiekę nad Twoim systemem."
-    },
-    {
-       q: "Czym różni się współpraca z niezależnym partnerem technologicznym od pracy z dużą agencją?",
-      a: "W agencji płacisz za całą strukturę administracyjną (biuro, kierowników, handlowców) i rozmawiasz z pośrednikami, podczas gdy Twój projekt często wykonują początkujące osoby. U mnie rozmawiasz bezpośrednio z ekspertem, który osobiscie projektuje i naprawia Twój system. 100% Twojego budżetu trafia w jakość oprogramowania, a decyzje zapadają natychmiast, bez zbędnej biurokracji."
+      a: "Nie. Wszystkie poprawki wprowadzam w oparciu o powszechne, uniwersalne standardy inżynieryjne. Otrzymujesz czysty, w pełni udokumentowany kod i zaktualizowany Paszport Techniczny – każdy kompetentny inżynier na rynku bez trudu zrozumie wprowadzone zmiany i przejmie dalszy rozwój platformy."
     }
   ]
 }
 
 export const offer = {
-  badge: "Program Partnerski: Modernizacja i Przyspieszanie Systemów (Tylko 2 firmy)",
+  badge: "Program Partnerski: Modernizacja Systemów (Tylko 2 firmy w kwartale)",
   title: "Nie czekaj, aż system padnie w szczycie sprzedaży. Zdiagnozujmy kod w 4 oczy.",
   description:
-    "Zamiast masowej obsługi kilkunastu projektów naraz, w każdym kwartale biorę na warsztat maksymalnie dwa systemy, dając Twojej platformie 100% mojego osobistego skupienia. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – napraw swój system na preferencyjnych warunkach i zyskaj <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki technicznej</strong> po wdrożeniu poprawek.",
-  package_title: "Co dokładnie otrzymujesz na start w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
+    "Ponieważ osobiście biorę na warsztat architekturę Twojej platformy, w każdym kwartale realizuję maksymalnie 2 modernizacje. Zostań Partnerem Założycielem – zabezpiecz stabilność swojego biznesu i odbierz 3 miesiące bezpłatnej opieki powdrożeniowej w cenie projektu.",
+  package_title: "Przebieg 30-minutowej Diagnozy Wydajności (Wartość: 5 000 zł za 0 zł):",
   offer_items: [
     {
-      title: "Bezpłatny Audyt Kodu: namierzenie 2–3 krytycznych wąskich gardeł blokujących szybkość i generujących błędy.",
-      desc: "",
+      title: "W trakcie rozmowy wideo 1-na-1:",
+      desc: "Analizujemy architekturę i wskazujemy 2–3 krytyczne wąskie gardła, które najbardziej spowalniają system i generują straty.",
     },
     {
-      title: "Bankowy Test Stabilności i Bezpieczeństwa: weryfikacja podatności na awarie pod obciążeniem ruchem klientów.",
-      desc: "",
+      title: "Po spotkaniu (Bankowy Test Wydajności):",
+      desc: "Weryfikacja podatności oprogramowania na awarie pod skokowym obciążeniem ruchem.",
     },
     {
-      title: "Plan Modernizacji Krok po Kroku: przejrzysta, etapowa wycena naprawy w tle bez wyłączania sprzedaży i bez ukrytych kosztów.",
-      desc: "",
+      title: "Po spotkaniu (Ewolucyjna Mapa Naprawy PDF):",
+      desc: "Precyzyjny, etapowy plan naprawy w 2-tygodniowych sprintach bez wyłączania sprzedaży i bez ukrytych kosztów.",
     },
   ],
-  button: "Odbierz Bezpłatny Audyt i Zarezerwuj Miejsce (0 zł)",
+  button: "Wypełnij 60-sekundową ankietę i sprawdź dostępność terminu →",
+  format:
+    "100% bezpłatnie • Wideorozmowa w 4 oczy z architektem • Kompletny plan naprawy przesłany po spotkaniu",
+  note:
+    "🔒 Po pozytywnej weryfikacji danych w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.",
+  availability:
+    "Dostępność: Maksymalnie 2 modernizacje w kwartale (Zostało 1 wolne miejsce).",
   footer:
-    "Zajmij jedno z 2 wolnych miejsc w tym kwartale. Każdy kolejny tydzień zwłoki z mulącym systemem to przepłacone serwery, zmęczeni pracownicy i klienci, którzy uciekają do szybszej konkurencji.",
+    "Odkładanie naprawy kodu to ryzyko, że system wyłoży się w najgorszym możliwym momencie – w piątek o 16:00, zostawiając Cię z pustym koszykiem i wściekłymi klientami.",
+}
+
+export const qualification = {
+  badge: "Weryfikacja kwalifikacyjna",
+  title:
+    "Sprawdź, czy Twoja platforma kwalifikuje się do modernizacji w tym kwartale",
+  intro:
+    "3 szybkie pytania (30 sekund). Jeśli platforma ma realny wolumen ruchu i budżet na naprawę, od razu otwieram dostęp do prywatnego kalendarza na 30-minutową rozmowę diagnostyczną 1-na-1.",
+  steps: [
+    {
+      key: "scale",
+      label:
+        "1. Jakiego rzędu ruch lub wolumen transakcji obsługuje obecnie Twoja platforma / sklep?",
+      options: [
+        {
+          value: "powyzej50k",
+          label: "Ponad 50 000 wizyt miesięcznie lub setki zamówień dziennie",
+        },
+        { value: "10-50k", label: "10 000 – 50 000 wizyt miesięcznie" },
+        { value: "ponizej5k", label: "Mniej niż 5 000 wizyt miesięcznie" },
+      ],
+    },
+    {
+      key: "authority",
+      label: "2. Kim jesteś w strukturze firmy?",
+      options: [
+        {
+          value: "wlasciciel",
+          label: "Właściciel / Członek Zarządu",
+        },
+        {
+          value: "head",
+          label: "Head of E-commerce / Dyrektor Operacyjny / CTO",
+        },
+        { value: "pracownik", label: "Pracownik zbierający wstępne informacje" },
+      ],
+    },
+    {
+      key: "budget",
+      label:
+        "3. Prace modernizacyjne realizujemy w zamkniętych 2-tygodniowych sprintach inżynierskich w modelu 50/50. Czy Twoja firma planuje zabezpieczyć budżet na rozpoczęcie prac w ciągu najbliższych 30 dni?",
+      options: [
+        {
+          value: "tak",
+          label: "Tak, zależy nam na szybkiej likwidacji problemu w tym kwartale",
+        },
+        {
+          value: "przyszly",
+          label:
+            "Dopiero rozpoznajemy rynek, planujemy działania na przyszły rok",
+        },
+        { value: "darmowa", label: "Szukamy darmowej konsultacji" },
+      ],
+    },
+  ],
+  messages: {
+    rejected: {
+      title: "Dziękujemy za kontakt",
+      body: "Ze względu na limit 2 projektów w kwartale skupiamy się na platformach o wysokim wolumenie transakcji. Zapraszamy do zapoznania się z materiałami w naszej bazie wiedzy.",
+      button: "Przejdź do bazy wiedzy",
+      href: "/blog",
+    },
+  },
+  qualified: {
+    title: "Twoje zgłoszenie zostało wstępnie zakwalifikowane",
+    body: "Wybierz 30-minutowy slot na rozmowę diagnostyczną 1-na-1 z Karolem Modelskim.",
+    button: "Wybierz termin w kalendarzu",
+    footer:
+      "Rozmowa wideo 1-na-1 • Zero technicznego żargonu • Plan naprawy przesłany po spotkaniu",
+  },
 }

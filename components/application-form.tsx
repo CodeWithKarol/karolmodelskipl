@@ -34,7 +34,8 @@ export function ApplicationForm({ application }: { application: ApplicationConte
 
   let result: "rejected" | "qualified" | null = null
   if (allAnswered) {
-    result = timeline === "rozeznanie" ? "rejected" : "qualified"
+    const rejected = timeline === "rozeznanie" || budget === "ponizej"
+    result = rejected ? "rejected" : "qualified"
   }
 
   const select = (stepKey: string, value: string) =>

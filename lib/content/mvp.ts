@@ -302,7 +302,7 @@ export const mvp = {
           { value: "pozniej", label: "Budżet będzie dostępny w kolejnych kwartałach" },
           {
             value: "ponizej",
-            label: "Szukam tańszych rozwiązań / budżet poniżej 25 000 zł",
+            label: "Szukam tańszych rozwiązań / budżet poniżej 50 000 zł",
           },
         ],
       },

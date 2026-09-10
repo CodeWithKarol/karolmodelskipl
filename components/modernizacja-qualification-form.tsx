@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { siteConfig } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
 
-type QualificationContent = {
+type ModernizacjaQualificationContent = {
   badge: string
   title: string
   intro: string
@@ -25,10 +25,10 @@ type QualificationContent = {
   }
 }
 
-export function QualificationForm({
+export function ModernizacjaQualificationForm({
   qualification,
 }: {
-  qualification: QualificationContent
+  qualification: ModernizacjaQualificationContent
 }) {
   const [answers, setAnswers] = useState<Record<string, string>>({})
 
@@ -38,9 +38,10 @@ export function QualificationForm({
   let result: "rejected" | "qualified" | null = null
   if (allAnswered) {
     const rejected =
-      answers.scale === "ponizej5" ||
+      answers.scale === "ponizej5k" ||
       answers.authority === "pracownik" ||
-      answers.budget === "darmowe"
+      answers.budget === "przyszly" ||
+      answers.budget === "darmowa"
     result = rejected ? "rejected" : "qualified"
   }
 
