@@ -111,10 +111,10 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
             {offer.paths.map((path, i) => {
               const Icon = icons[i % icons.length]
               const rowClassName =
-                "group relative flex items-start gap-4 sm:gap-6 border-b border-slate-800/70 py-6 sm:py-8 transition-colors hover:bg-white/[0.02]"
+                "group relative flex flex-col gap-3 border-b border-slate-800/70 py-6 transition-colors hover:bg-white/[0.02] sm:flex-row sm:items-start sm:gap-6 sm:py-8"
               const contentNode = (
                 <>
-                  <span className="flex shrink-0 items-start pt-0.5 text-blue-400">
+                  <span className="flex shrink-0 items-start text-blue-400 sm:pt-0.5">
                     <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                   </span>
                   <div className="min-w-0 flex-1">
@@ -134,9 +134,9 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
                       </div>
                     )}
                     {path.href && (
-                      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-blue-400 transition-colors group-hover:text-blue-300 sm:mt-5">
+                      <span className="mt-4 inline-block text-sm font-bold text-blue-400 transition-colors group-hover:text-blue-300 sm:mt-5">
                         {path.link}
-                        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        <ArrowRight className="ml-1 inline h-4 w-4 align-middle transition-transform group-hover:translate-x-1" />
                       </span>
                     )}
                   </div>

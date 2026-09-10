@@ -7,7 +7,7 @@ import { GuaranteeSection } from "@/components/guarantee-section"
 import { OfferSection } from "@/components/offer-section"
 import { ContrastSection } from "@/components/contrast-section"
 import { FaqSection } from "@/components/faq-section"
-import { CtaSection } from "@/components/cta-section"
+import { ContactHubSection } from "@/components/contact-hub-section"
 import { content } from "@/lib/content"
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -105,7 +105,7 @@ export default function Page() {
       <GuaranteeSection />
       <AboutSection />
       <FaqSection />
-      <CtaSection content={content.cta} />
+      <ContactHubSection />
     </main>
   )
 }

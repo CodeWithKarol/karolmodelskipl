@@ -4,7 +4,6 @@ import * as React from "react"
 import Link from "next/link"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { header } from "@/lib/content/header"
-import { Button } from "@/components/ui/button"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -14,10 +13,55 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
+function MobileNavGroup({
+  title,
+  open,
+  onToggle,
+  children,
+}: {
+  title: string
+  open: boolean
+  onToggle: () => void
+  children: React.ReactNode
+}) {
+  return (
+    <div className="border-b border-white/5 last:border-b-0">
+      <button
+        type="button"
+        onClick={onToggle}
+        aria-expanded={open}
+        className="flex min-h-[56px] w-full items-center justify-between gap-4 py-4 text-left text-base font-bold text-white transition-colors active:text-blue-400"
+      >
+        <span>{title}</span>
+        <ChevronDown
+          className={`h-5 w-5 shrink-0 text-slate-500 transition-transform duration-300 ${
+            open ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+      <div
+        aria-hidden={!open}
+        inert={!open}
+        className={`grid transition-all duration-300 ease-out ${
+          open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+        }`}
+      >
+        <div className="overflow-hidden">
+          <div className="flex flex-col gap-1 pb-4">{children}</div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export function SiteHeader() {
   const [isOpen, setIsOpen] = React.useState(false)
-  const [isOfferOpen, setIsOfferOpen] = React.useState(false)
-  const [isBlogOpen, setIsBlogOpen] = React.useState(false)
+  const [openSection, setOpenSection] = React.useState<"oferta" | "baza" | null>(
+    null
+  )
+
+  const toggleSection = (key: "oferta" | "baza") =>
+    setOpenSection((prev) => (prev === key ? null : key))
 
   // Blokowanie scrolla tła gdy menu mobilne jest otwarte
   React.useEffect(() => {
@@ -34,7 +78,7 @@ export function SiteHeader() {
   return (
     <>
       <div className="pointer-events-none fixed top-0 z-50 flex w-full justify-center sm:top-4 sm:px-4">
-        <header className="pointer-events-auto flex h-16 w-full min-w-[280px] items-center justify-between gap-2 border-b border-slate-800/60 bg-slate-950/80 px-4 shadow-2xl backdrop-blur-xl supports-[backdrop-filter]:bg-slate-950/60 sm:h-14 sm:w-auto sm:max-w-4xl sm:min-w-[300px] sm:gap-16 sm:rounded-full sm:border sm:px-6">
+        <header className="pointer-events-auto flex h-16 w-full min-w-[280px] items-center justify-between gap-2 border-b border-slate-800/60 bg-slate-950/80 px-4 shadow-2xl backdrop-blur-xl supports-[backdrop-filter]:bg-slate-950/60 md:justify-center sm:h-14 sm:w-auto sm:max-w-4xl sm:min-w-[300px] sm:rounded-full sm:border sm:px-6">
           {/* Logo / Brand */}
           <div className="flex items-center gap-4 sm:gap-6">
             <Link href="/" className="group flex shrink-0 items-center space-x-2">
@@ -108,18 +152,13 @@ export function SiteHeader() {
           </div>
 
           {/* Right Action */}
-          <div className="flex items-center gap-2">
-            {/* Desktop CTA Button */}
-            <Button
-              asChild
-              className="hidden h-8 shrink-0 rounded-full bg-blue-600 px-4 text-[12px] font-semibold text-white shadow-[0_0_20px_-5px_rgba(37,99,235,0.5)] transition-all hover:bg-blue-500 min-[400px]:inline-flex sm:h-9 sm:px-5 sm:text-[13px]"
-            >
-              <a href={header.cta.href} target="_blank" rel="noopener noreferrer">{header.cta.title}</a>
-            </Button>
-
+          <div className="flex items-center gap-2 md:hidden">
             {/* Mobile Hamburger Button */}
             <button
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => {
+                if (isOpen) setOpenSection(null)
+                setIsOpen(!isOpen)
+              }}
               className="flex h-9 w-9 items-center justify-center rounded-full text-slate-300 hover:bg-slate-800/50 hover:text-white md:hidden transition-colors"
               aria-label="Toggle menu"
             >
@@ -131,66 +170,57 @@ export function SiteHeader() {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-40 bg-slate-950/95 backdrop-blur-2xl flex flex-col pt-24 px-6 pb-8 md:hidden overflow-y-auto">
-          <div className="flex flex-col space-y-2 w-full max-w-sm mx-auto my-auto">
-            
-            <button
-              onClick={() => setIsOfferOpen(!isOfferOpen)}
-              className="flex w-full items-center justify-between py-3 text-base font-bold text-white"
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Nawigacja mobilna"
+          className="fixed inset-0 z-40 flex flex-col overflow-y-auto bg-slate-950/95 px-5 pb-[calc(2rem+env(safe-area-inset-bottom))] pt-20 backdrop-blur-2xl md:hidden"
+        >
+          <nav className="mx-auto flex w-full max-w-sm flex-col">
+            <MobileNavGroup
+              title={header.menu.oferta.title}
+              open={openSection === "oferta"}
+              onToggle={() => toggleSection("oferta")}
             >
-              <span>{header.menu.oferta.title}</span>
-              <ChevronDown className={`h-4 w-4 text-slate-500 transition-transform duration-200 ${isOfferOpen ? "rotate-180" : ""}`} />
-            </button>
-            {isOfferOpen && (
-              <div className="flex flex-col pl-4 border-l border-blue-500/20 mb-2">
-                {header.menu.oferta.items.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className="py-2.5 text-sm text-slate-400 hover:text-white transition-colors"
-                  >
+              {header.menu.oferta.items.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className="flex min-h-[44px] flex-col justify-center gap-0.5 rounded-xl px-3 py-3 transition-colors hover:bg-white/5 active:bg-white/10"
+                >
+                  <span className="text-[15px] font-semibold text-slate-100">
                     {item.title}
-                  </Link>
-                ))}
-              </div>
-            )}
+                  </span>
+                  <span className="text-xs leading-relaxed text-slate-500">
+                    {item.description}
+                  </span>
+                </Link>
+              ))}
+            </MobileNavGroup>
 
-            <button
-              onClick={() => setIsBlogOpen(!isBlogOpen)}
-              className="flex w-full items-center justify-between py-3 text-base font-bold text-white"
+            <MobileNavGroup
+              title={header.menu.bazaWiedzy.title}
+              open={openSection === "baza"}
+              onToggle={() => toggleSection("baza")}
             >
-              <span>{header.menu.bazaWiedzy.title}</span>
-              <ChevronDown className={`h-4 w-4 text-slate-500 transition-transform duration-200 ${isBlogOpen ? "rotate-180" : ""}`} />
-            </button>
-            {isBlogOpen && (
-              <div className="flex flex-col pl-4 border-l border-blue-500/20 mb-2">
-                {header.menu.bazaWiedzy.items.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className="py-2.5 text-sm text-slate-400 hover:text-white transition-colors"
-                  >
+              {header.menu.bazaWiedzy.items.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setIsOpen(false)}
+                  className="flex min-h-[44px] flex-col justify-center gap-0.5 rounded-xl px-3 py-3 transition-colors hover:bg-white/5 active:bg-white/10"
+                >
+                  <span className="text-[15px] font-semibold text-slate-100">
                     {item.title}
-                  </Link>
-                ))}
-              </div>
-            )}
-
-            <div className="pt-6">
-              <a
-                href={header.cta.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setIsOpen(false)}
-                className="flex w-full items-center justify-center rounded-xl bg-blue-600 hover:bg-blue-700 text-white py-3.5 text-sm font-bold shadow-lg transition-all text-center"
-              >
-                {header.cta.title}
-              </a>
-              <p className="text-center text-[10px] text-slate-400 mt-2">{header.cta.description}</p>
-            </div>
-          </div>
+                  </span>
+                  <span className="text-xs leading-relaxed text-slate-500">
+                    {item.description}
+                  </span>
+                </Link>
+              ))}
+            </MobileNavGroup>
+          </nav>
         </div>
       )}
     </>

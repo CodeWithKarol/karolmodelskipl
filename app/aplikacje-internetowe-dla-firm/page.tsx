@@ -239,7 +239,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
       />
 
 
-      <CtaSection content={offer} ctaHref="/kwalifikacja" />
+      <CtaSection content={offer} ctaHref="/kwalifikacja-aplikacje" />
     </main>
   )
 }

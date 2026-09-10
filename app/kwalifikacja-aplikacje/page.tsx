@@ -6,13 +6,13 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Weryfikacja kwalifikacyjna | Aplikacje internetowe dla firm",
     description:
-      "5 szybkich pytań (60 sekund). Sprawdź, czy Twoja firma kwalifikuje się do wdrożenia dedykowanego systemu w tym kwartale.",
+      "3 szybkie pytania (30 sekund). Sprawdź, czy Twoja firma kwalifikuje się do wdrożenia dedykowanego systemu w tym kwartale.",
     robots: {
       index: false,
       follow: true,
     },
     alternates: {
-      canonical: "https://www.karolmodelski.pl/kwalifikacja",
+      canonical: "https://www.karolmodelski.pl/kwalifikacja-aplikacje",
     },
   }
 }

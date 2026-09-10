@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation"
 import { SiteHeader } from "@/components/site-header"
 import { Footer } from "@/components/footer"
 
-const FUNNEL_PATHS = ["/projektowanie-mvp", "/aplikuj", "/aplikacje-internetowe-dla-firm", "/kwalifikacja"]
+const FUNNEL_PATHS = ["/projektowanie-mvp", "/aplikacje-internetowe-dla-firm", "/naprawa-i-modernizacja-aplikacji", "/kwalifikacja-aplikacje", "/kwalifikacja-modernizacja", "/kwalifikacja-saas"]
 
 function FunnelHeader() {
   return (
@@ -22,21 +22,56 @@ function FunnelHeader() {
   )
 }
 
-function FunnelFooter({ isSme }: { isSme?: boolean }) {
+const FOOTER_VARIANTS = {
+  sme: {
+    title: "Karol Modelski – Niezależny Partner Technologiczny dla MŚP",
+    description:
+      "Projektuję i wdrażam dedykowane systemy operacyjne w standardach bankowych (Citibank, BNP Paribas). Zastępuję agencje programistyczne bezpośrednią współpracą inżynierską – zamieniając paraliż w arkuszach Excela na stabilny zysk i automatyzację procesów.",
+    tagline: "MŚP • Standardy bankowe • 100% własności kodu",
+  },
+  modernizacja: {
+    title: "Karol Modelski – Niezależny Partner Technologiczny dla MŚP",
+    description:
+      "Projektuję i optymalizuję architekturę systemów transakcyjnych w standardach bankowych (Citibank, BNP Paribas). Zastępuję agencje programistyczne bezpośrednią współpracą inżynierską – eliminując dług technologiczny, przyspieszając platformy i gwarantując bezawaryjną sprzedaż w szczytach ruchu.",
+    tagline: "MŚP • Standardy bankowe • 100% własności kodu",
+  },
+  b2b: {
+    title: "Karol Modelski – Partner Technologiczny dla Założycieli B2B & SaaS",
+    description:
+      "Projektuję i wdrażam stabilne systemy internetowe w standardach bankowych (Citibank, BNP Paribas). Zastępuję agencje programistyczne bezpośrednią współpracą inżynierską — od pomysłu do działającego kodu w 30 dni.",
+    tagline: "B2B / SaaS · Bankowe standardy · 30 dni",
+  },
+} as const
+
+type FunnelVariant = keyof typeof FOOTER_VARIANTS
+
+function getFunnelVariant(pathname: string): FunnelVariant {
+  if (
+    pathname === "/naprawa-i-modernizacja-aplikacji" ||
+    pathname === "/kwalifikacja-modernizacja"
+  )
+    return "modernizacja"
+  if (
+    pathname === "/aplikacje-internetowe-dla-firm" ||
+    pathname === "/kwalifikacja-aplikacje"
+  )
+    return "sme"
+  return "b2b"
+}
+
+function FunnelFooter({ variant }: { variant: FunnelVariant }) {
+  const { title, description, tagline } = FOOTER_VARIANTS[variant]
+
   return (
     <footer className="relative border-t border-slate-800/60 bg-slate-950 py-12 text-slate-400 sm:py-16">
       <div className="container mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr] md:gap-12">
           <div>
             <p className="text-base font-bold text-slate-200 sm:text-lg">
-              {isSme
-                ? "Karol Modelski – Niezależny Partner Technologiczny dla MŚP"
-                : "Karol Modelski – Partner Technologiczny dla Założycieli B2B & SaaS"}
+              {title}
             </p>
             <p className="mt-3 max-w-xl text-sm leading-relaxed text-slate-400 sm:text-[15px]">
-              {isSme
-                ? "Projektuję i wdrażam dedykowane systemy operacyjne w standardach bankowych (Citibank, BNP Paribas). Zastępuję agencje programistyczne bezpośrednią współpracą inżynierską – zamieniając paraliż w arkuszach Excela na stabilny zysk i automatyzację procesów."
-                : "Projektuję i wdrażam stabilne systemy internetowe w standardach bankowych (Citibank, BNP Paribas). Zastępuję agencje programistyczne bezpośrednią współpracą inżynierską — od pomysłu do działającego kodu w 30 dni."}
+              {description}
             </p>
           </div>
 
@@ -62,9 +97,7 @@ function FunnelFooter({ isSme }: { isSme?: boolean }) {
         <div className="mt-10 flex flex-col gap-2 border-t border-slate-800/60 pt-6 sm:mt-12 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-slate-500 sm:text-sm">© 2026 Karol Modelski. Wszelkie prawa zastrzeżone.</p>
           <p className="text-[11px] uppercase tracking-wider text-slate-600 sm:text-xs">
-            {isSme
-              ? "MŚP • Standardy bankowe • 100% własności kodu"
-              : "B2B / SaaS · Bankowe standardy · 30 dni"}
+            {tagline}
           </p>
         </div>
       </div>
@@ -81,12 +114,7 @@ export function AppChrome({ children }: { children: React.ReactNode }) {
       {isFunnel ? <FunnelHeader /> : <SiteHeader />}
       {children}
       {isFunnel ? (
-        <FunnelFooter
-          isSme={
-            pathname === "/aplikacje-internetowe-dla-firm" ||
-            pathname === "/kwalifikacja"
-          }
-        />
+        <FunnelFooter variant={getFunnelVariant(pathname)} />
       ) : (
         <Footer />
       )}

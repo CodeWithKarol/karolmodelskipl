@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
       follow: true,
     },
     alternates: {
-      canonical: "https://www.karolmodelski.pl/aplikuj",
+      canonical: "https://www.karolmodelski.pl/kwalifikacja-saas",
     },
   }
 }

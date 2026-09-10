@@ -43,9 +43,11 @@ export function PackageSpecSection({
           <h2 className="mx-auto max-w-3xl text-2xl font-bold tracking-tight text-balance text-white leading-tight sm:text-3xl md:text-4xl">
             {spec.title}
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-400 sm:text-base md:text-lg">
-            {spec.intro}
-          </p>
+          {spec.intro && (
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-400 sm:text-base md:text-lg">
+              {spec.intro}
+            </p>
+          )}
         </Reveal>
 
         <div className="space-y-0">
