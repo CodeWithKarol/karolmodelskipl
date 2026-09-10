@@ -6,7 +6,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Weryfikacja kwalifikacyjna | Aplikacje internetowe dla firm",
     description:
-      "3 szybkie pytania (30 sekund). Sprawdź, czy Twoja firma kwalifikuje się do wdrożenia dedykowanego systemu w tym kwartale.",
+      "3 szybkie pytania. Sprawdź, czy Twoja firma kwalifikuje się do wdrożenia dedykowanego systemu w tym kwartale.",
     robots: {
       index: false,
       follow: true,

@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation"
 import { SiteHeader } from "@/components/site-header"
 import { Footer } from "@/components/footer"
 
-const FUNNEL_PATHS = ["/projektowanie-mvp", "/aplikacje-internetowe-dla-firm", "/naprawa-i-modernizacja-aplikacji", "/kwalifikacja-aplikacje", "/kwalifikacja-modernizacja", "/kwalifikacja-saas"]
+const FUNNEL_PATHS = ["/projektowanie-mvp", "/aplikacje-internetowe-dla-firm", "/naprawa-i-modernizacja-aplikacji", "/doradztwo-techniczne-dla-firm", "/kwalifikacja-aplikacje", "/kwalifikacja-modernizacja", "/kwalifikacja-saas", "/kwalifikacja-doradztwo"]
 
 function FunnelHeader() {
   return (
@@ -35,6 +35,12 @@ const FOOTER_VARIANTS = {
       "Projektuję i optymalizuję architekturę systemów transakcyjnych w standardach bankowych (Citibank, BNP Paribas). Zastępuję agencje programistyczne bezpośrednią współpracą inżynierską – eliminując dług technologiczny, przyspieszając platformy i gwarantując bezawaryjną sprzedaż w szczytach ruchu.",
     tagline: "MŚP • Standardy bankowe • 100% własności kodu",
   },
+  doradztwo: {
+    title: "Karol Modelski – Niezależny Partner Technologiczny dla MŚP",
+    description:
+      "Wchodzę do Twojej firmy jako niezależny Fractional CTO w standardach bankowych (Citibank, BNP Paribas). Weryfikuję wyceny agencji, przejmuję nadzór nad kodem i chronię Twój budżet IT – bez prowizji i bez konfliktu interesów.",
+    tagline: "MŚP • Standardy bankowe • 0% prowizji od agencji",
+  },
   b2b: {
     title: "Karol Modelski – Partner Technologiczny dla Założycieli B2B & SaaS",
     description:
@@ -51,6 +57,11 @@ function getFunnelVariant(pathname: string): FunnelVariant {
     pathname === "/kwalifikacja-modernizacja"
   )
     return "modernizacja"
+  if (
+    pathname === "/doradztwo-techniczne-dla-firm" ||
+    pathname === "/kwalifikacja-doradztwo"
+  )
+    return "doradztwo"
   if (
     pathname === "/aplikacje-internetowe-dla-firm" ||
     pathname === "/kwalifikacja-aplikacje"

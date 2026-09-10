@@ -202,7 +202,7 @@ export const offer = {
       desc: "Otrzymujesz gotowy plan działania: podział prac na 2-tygodniowe sprinty inżynierskie, specyfikację pierwszego modułu w 30 dni oraz transparentną wycenę bez ukrytych kosztów.",
     },
   ],
-  button: "Wypełnij 60-sekundową ankietę i sprawdź dostępność terminu →",
+  button: "Wypełnij ankietę i sprawdź dostępność terminu →",
   format:
     "100% bezpłatnie • Wideorozmowa w 4 oczy z architektem • Kompletny plan wdrożenia przesłany po spotkaniu",
   note:
@@ -250,7 +250,7 @@ export const qualification = {
   badge: "Weryfikacja kwalifikacyjna",
   title: "Sprawdź, czy Twoja firma kwalifikuje się do wdrożenia w tym kwartale",
   intro:
-    "3 szybkie pytania (30 sekund). Jeśli spełniasz kryteria, od razu otwieram dostęp do prywatnego kalendarza na 30-minutową rozmowę 1-na-1 z architektem.",
+    "3 szybkie pytania. Jeśli spełniasz kryteria, od razu otwieram dostęp do prywatnego kalendarza na 30-minutową rozmowę 1-na-1 z architektem.",
   steps: [
     {
       key: "scale",

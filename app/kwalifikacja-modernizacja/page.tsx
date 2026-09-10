@@ -6,7 +6,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Weryfikacja kwalifikacyjna | Bezinwazyjna modernizacja oprogramowania",
     description:
-      "3 szybkie pytania (30 sekund). Sprawdź, czy Twoja platforma kwalifikuje się do modernizacji w tym kwartale.",
+      "3 szybkie pytania. Sprawdź, czy Twoja platforma kwalifikuje się do modernizacji w tym kwartale.",
     robots: {
       index: false,
       follow: true,

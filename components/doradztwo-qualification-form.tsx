@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
 import { ArrowLeft, ArrowRight, Check } from "lucide-react"
 
-type ModernizacjaQualificationContent = {
+type DoradztwoQualificationContent = {
   badge: string
   title: string
   intro: string
@@ -26,10 +26,10 @@ type ModernizacjaQualificationContent = {
   }
 }
 
-export function ModernizacjaQualificationForm({
+export function DoradztwoQualificationForm({
   qualification,
 }: {
-  qualification: ModernizacjaQualificationContent
+  qualification: DoradztwoQualificationContent
 }) {
   const [step, setStep] = useState(0)
   const [answers, setAnswers] = useState<Record<string, string>>({})
@@ -46,10 +46,9 @@ export function ModernizacjaQualificationForm({
 
   const rejected =
     allAnswered &&
-    (answers.scale === "ponizej5k" ||
-      answers.authority === "pracownik" ||
-      answers.budget === "przyszly" ||
-      answers.budget === "darmowa")
+    (answers.budget === "ponizej20" ||
+      answers.role === "pracownik" ||
+      answers.timeline === "kilka-miesiecy")
   const qualified = allAnswered && !rejected
 
   const progress = ((step + (answered ? 1 : 0)) / total) * 100
@@ -70,6 +69,7 @@ export function ModernizacjaQualificationForm({
                 {qualification.intro}
               </p>
 
+              {/* Postęp */}
               <div className="mt-9 sm:mt-12">
                 <div className="flex items-center justify-between text-xs font-medium text-slate-400">
                   <span>
