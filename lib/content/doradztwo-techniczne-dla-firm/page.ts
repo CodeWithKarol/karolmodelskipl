@@ -1,167 +1,291 @@
 export const metadata = {
-  title: "Doradztwo Technologiczne dla Firm | Niezależny Partner IT",
+  title: "Niezależny Fractional CTO & Architekt IT",
   description:
     "Zyskaj osobistego Niezależnego Partnera Technologicznego dla swojej firmy. Doradztwo strategiczne, nadzór nad IT i standardy bankowe bez kosztów etatu. Sprawdź!",
 }
 
 export const hero = {
-  badge: "Doradztwo i architektura IT dla firm",
-  title: "Zyskaj osobistego Niezależnego Partnera Technologicznego dla swojej firmy",
-  titleHighlight: "– bez kosztów pełnego etatu i ryzyka złych decyzji.",
+  badge:
+    "Dla właścicieli firm MŚP i zarządów, którzy zlecają projekty IT zewnętrznym agencjom i nie chcą przepalać setek tysięcy złotych na zawyżonych wycenach.",
+  title: "Twój Niezależny Dyrektor Techniczny (Fractional CTO).",
+  titleHighlight:
+    "Chronię Twój budżet przed naciąganiem na roboczogodziny, blokuję aneksy software house'ów i przejmuję 100% nadzoru nad kodem — za ułamek etatu dyrektora.",
   description:
-    "Rozwijasz biznes, ale masz wrażenie, że technologia zaczyna Cię ograniczać? Masz na stole wyceny od agencji, z których nic nie rozumiesz, i boisz się przepalenia dziesiątek tysięcy złotych? Jako Twój Fractional CTO (Dyrektor Technologiczny na godziny) przejmuję pełną odpowiedzialność za strategię IT. Nie piszę kodu – weryfikuję Twoich programistów, pilnuję Twojego portfela i tłumaczę technologię na język zysków.",
+    "Zatrudniasz agencję programistyczną i czujesz, że tracisz kontrolę nad kosztami? Handlowcy rzucają technicznym żargonem, wyceny rosną z miesiąca na miesiąc, a Ty nie masz pewności, czy płacisz za realną pracę, czy za naukę rotujących juniorów? Wchodzę do Twojej firmy jako niezależny architekt klasy bankowej (Citibank, BNP Paribas). Reprezentuję wyłącznie Twój interes biznesowy — bez prowizji od agencji i bez technicznego ściemniania.",
   cta: "Umów bezpłatną konsultację strategiczną",
-  footnote: "100% bezpłatnie • Wideorozmowa w 4 oczy • Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
-  indicators: [
-    { title: "Decyzje oparte na doświadczeniu bankowym", desc: "Przenoszę rygorystyczne standardy bezpieczeństwa i skalowalności z globalnych instytucji (Citibank, BNP Paribas) wprost do Twojej firmy." },
-    { title: "Ochrona przed przepalaniem budżetów", desc: "Weryfikuję plany, wyceny i pracę zewnętrznych dostawców, eliminując naciąganie na zbędne i drogie rozwiązania." },
-    { title: "Technologia napędzająca zyski", desc: "Doradzam wprost z perspektywy biznesowej – technologia ma służyć wzrostowi sprzedaży i automatyzacji, a nie sztuce dla sztuki." }
+  microcopy: [
+    {
+      title: "30-minutowa Diagnoza Ryzyk i Umów IT 1-na-1 z architektem",
+      urgent: false,
+    },
+    {
+      title:
+        "Bankowy Test Uczciwości Wycen Software House'u (Wartość: 5 000 zł za 0 zł)",
+      urgent: false,
+    },
+    {
+      title:
+        "Maksymalnie 2 mandaty doradcze w kwartale (Zostało 1 wolne miejsce)",
+      urgent: true,
+    },
   ],
-  pilot_program: {
-    title: "Program Partnerski: Opieka Strategiczna Fractional CTO (Tylko 2 firmy)",
-    description: "Przechodzę z sektora finansowego do bezpośredniego wsparcia MŚP. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> i zyskaj osobistego Dyrektora Technologicznego na godziny w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnego nadzoru</strong> nad rozwojem cyfrowym Twojej firmy.",
-    cta: "Umów bezpłatną konsultację strategiczną",
-    package_title: "Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):"
-  },
-  cta_sub: "100% bezpłatnie • Wideorozmowa w 4 oczy • Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
-  offer_items: [
-    { title: "Audyt Umów i Wycen IT: niezależna weryfikacja ofert od agencji i software house'ów oraz zablokowanie naciągania budżetu.", desc: "", val: "" },
-    { title: "Bankowy Test Bezpieczeństwa i Architektury: sprawdzenie stabilności systemów i ryzyk związanych z zależnością od pojedynczych programistów.", desc: "", val: "" },
-    { title: "Strategiczna Mapa Drogowa IT: priorytety technologiczne, dobór architektury i plan rozwoju dopasowany do realnych celów biznesowych.", desc: "", val: "" },
-  ]
 }
 
 export const story = {
-  title: "Kiedy technologia zamiast napędzać firmę, staje się czarną skrzynką, która pożera gotówkę?",
-  intro: "Większość małych i średnich firm nie ma własnego, doświadczonego dyrektora technologicznego. Kiedy pojawia się potrzeba stworzenia systemu, właściciel zdany jest na słowo agencji programistycznej, która często sprzedaje rozwiązania najdroższe dla siebie, a nie najkorzystniejsze dla klienta.",
-   context: "Jeśli doświadczasz poniższych sytuacji, Twój biznes potrzebuje stałego wsparcia niezależnego partnera technologicznego:",
+  title:
+    "Jak agencje software'owe drenują budżety firm, które nie mają własnego CTO?",
+  intro:
+    "Gdy właściciel firmy bez wykształcenia technicznego rozmawia z agencją programistyczną, gra toczy się na nierównych zasadach. Software house zarabia na sprzedanych godzinach, a nie na Twoim zysku:",
+  context: "",
   points: [
     {
-      title: "Brak „Tłumacza” i ślepe ubolewanie nad wycenami",
-      desc: "Gdy programista lub agencja mówi Ci, że „trzeba pilnie przepisać mikroserwisy w nowym frameworku, bo refaktoryzacja legacy kodu jest niemożliwa” – Ty widzisz tylko fakturę. Ja wkraczam jako Twój tłumacz. Sprawdzam, czy to realna potrzeba biznesowa, czy próba naciągnięcia Cię na 40 tysięcy złotych za zbędną robotę."
+      title: "Zawyżone estymacje i „wymyślanie koła na nowo”",
+      desc: "Płacisz 80 000 zł za moduł, który doświadczony architekt postawiłby w 3 dni na gotowych, bezpiecznych bibliotekach. Agencja sprzedaje Ci miesiące pracy stażystów."
     },
     {
-      title: "Strach przed odejściem kluczowego programisty",
-      desc: "Cała wiedza o systemie siedzi w głowie jednego człowieka, który nie zostawił dokumentacji. Żyjesz na bombie zegarowej – jeśli odejdzie, firma staje. Wprowadzam procedury i standardy, które uniezależniają Cię od kaprysów jednostki."
+      title: "Pułapka aneksu do umowy (Scope Creep)",
+      desc: "Podpisujesz umowę na 100 000 zł, a po 4 miesiącach słyszysz: „Tego nie było w specyfikacji, musimy doliczyć kolejne 60 000 zł”. Ponieważ projekt jest rozgrzebany, płacisz jak zakładnik."
     },
     {
-      title: "Podejrzanie rosnące faktury i niedotrzymywane terminy",
-      desc: "Projekt, który miał trwać 2 miesiące, ciągnie się od pół roku, a software house co chwilę żąda dopłat za „prace dodatkowe”. Koniec z tym. Weryfikuję ich postępy linijka po linijce, rozliczając agencję z realnych efektów."
+      title: "Złota klatka (Vendor Lock-in)",
+      desc: "Kod jest pisany chaotycznie, bez dokumentacji i testów. Żaden inny programista nie chce go dotknąć, a Ty zostajesz uzależniony od kaprysów jednej agencji na lata."
     },
     {
-      title: "Chaos przy wyborze technologii",
-      desc: "Chcesz wdrożyć nowy system CRM, ERP lub aplikację, ale nie wiesz, co wybrać z setek ofert. Moja rola to niezależny dobór architektury – tak, aby system rósł razem z Twoimi zyskami, a nie z kosztami."
+      title: "Koszt pełnego etatu CTO to 35 000+ zł miesięcznie",
+      desc: "Nie potrzebujesz dyrektora technicznego na 160 godzin w miesiącu za 400 000 zł rocznie. Potrzebujesz chirurga, który wejdzie na 10–20 godzin w miesiącu, przetnie nadużycia agencji i zabezpieczy architekturę."
     }
   ]
 }
 
-export const contrast = {
-  title: "Model Bezpośredniego Partnerstwa Strategicznego",
-  subtitle: "Nie musisz zatrudniać drogiego dyrektora technologicznego na pełny etat (co w firmie MŚP jest finansowo nieuzasadnione). Zyskujesz elastyczne wsparcie eksperta z doświadczeniem korporacyjnym dokładnie wtedy, kiedy tego potrzebujesz.",
-  red_ocean_title: "Tradycyjna ścieżka (Brak nadzoru)",
-  blue_ocean_title: "Współpraca ze mną jako Niezależnym Partnerem Technologicznym",
-  comparisons: [
+export const valueStack = {
+  badge: "Stos Wartości",
+  title: "Instytucjonalna kontrola IT w Twojej firmie plus twarde zabezpieczenia",
+  intro: "",
+  core: {
+    tag: "Fundament",
+    value:
+      "Rynkowa alternatywa: 420 000 zł rocznie za etatowy kontrakt dyrektora IT",
+    title: "Niezależny Nadzór Architektoniczny & Fractional CTO",
+    desc: "Biorę na siebie weryfikację specyfikacji technicznych, udział w kluczowych negocjacjach z wykonawcami i kontrolę jakości dostarczanego kodu w standardach instytucji finansowych. Zero prowizji od polecanych narzędzi – działam wyłącznie w interesie Twojego P&L.",
+  },
+  bonuses: [
     {
-      red: { title: "Przepłacanie za projekty", desc: "Akceptujesz wyceny agencji w ciemno, bo nie masz zaplecza technicznego." },
-      blue: { title: "Pełna kontrola kosztów", desc: "Weryfikuję i negocjuję zakresy prac, chroniąc Twój budżet przed naciąganiem." },
+      tag: "Bonus 1",
+      title: "Bezlitosny Audyt Wycen i Umów IT",
+      value: "Wartość: 15 000 zł",
+      desc: "Prześwietlam oferty software house'ów punkt po punkcie. Wycinam sztucznie napompowane roboczogodziny, blokuję niekorzystne zapisy licencyjne i zamykam luki prawne pozwalające agencji windować koszty.",
     },
     {
-      red: { title: "Chaos technologiczny", desc: "Każdy moduł pisany jest w innej technologii bez spójnej wizji." },
-      blue: { title: "Spójne podejście", desc: "Jeden bezpieczny standard dopasowany do celów biznesowych na lata." },
+      tag: "Bonus 2",
+      title: "Procedura Odbioru Kodu i Git-Gate",
+      value: "Wartość: 12 000 zł",
+      desc: "Agencja nie dostanie zapłaty za etap, dopóki osobiście nie sprawdzę czystości repozytorium, testów i dokumentacji. Koniec z płaceniem za „działa u mnie na komputerze”.",
     },
     {
-      red: { title: "Ryzyko awarii i błędów", desc: "Systemy sypią się przy wzroście liczby klientów i transakcji." },
-      blue: { title: "Standardy bankowe", desc: "Stabilność i bezpieczeństwo przetestowane w branży finansowej." },
+      tag: "Bonus 3",
+      title: "Zapasowy Plan Ewakuacyjny",
+      value: "Wartość: 10 000 zł",
+      desc: "Pilnuję, by projekt był od dnia pierwszego przygotowany do natychmiastowej zmiany wykonawcy w 24 godziny, eliminując jakiekolwiek ryzyko vendor lock-in.",
     },
   ],
 }
 
-export const mechanism = {
-  title: "Jak wygląda współpraca w praktyce?",
-  subtitle: "Przewidywalny, czysty proces nadzorczy, w którym to Ty trzymasz stery:",
-  cards: [
+export const comparison = {
+  badge: "Porównanie",
+  title: "Porównanie: Trzy Drogi do Nadzoru Technicznego",
+  columns: [
+    "Niezależny Fractional CTO (Karol Modelski)",
+    "Etatowy Dyrektor IT / CTO",
+    "Brak CTO (Ufanie Agencji)",
+  ],
+  rows: [
     {
-      title: "1. Bezpłatna Diagnoza Sytuacji",
-      subtitle: "",
-      content: "Na pierwszej rozmowie analizujemy Twoje obecne problemy z IT, umowy z agencjami i budżet."
+      criterion: "Koszt roczny",
+      values: [
+        "Ułamek budżetu (elastyczny retainer / sprint)",
+        "350 000 – 500 000 zł + podatki i benefity",
+        "Setki tysięcy utopione w aneksach i błędach",
+      ],
     },
     {
-       title: "2. Odcięcie Przepalania Kasy",
-      subtitle: "",
-      content: "Prześwietlam wyceny i pracę obecnego zespołu programistów. Znajduję i blokuję ukryte koszty."
+      criterion: "Konflikt interesów",
+      values: [
+        "ZERO (reprezentuję tylko Ciebie)",
+        "Brak (ale wysoki koszt stały)",
+        "Ogromny (agencja zarabia na Twojej niewiedzy)",
+      ],
     },
     {
-      title: "3. Stworzenie Mapy Drogowej IT",
-      subtitle: "",
-      content: "Układam przejrzystą strategię technologiczną dla Twojej firmy na najbliższe miesiące (składnik ujednoliconego pakietu)."
+      criterion: "Doświadczenie",
+      values: [
+        "Rygor bankowy (Citibank, BNP Paribas)",
+        "Zależne od kandydata z rekrutacji",
+        "Poziom rotujących juniorów w software house",
+      ],
     },
     {
-      title: "4. Ciągły Nadzór i Tarcza Ochronna",
-      subtitle: "",
-      content: "Wchodzę na spotkania z agencjami jako Twój Dyrektor IT. Odbieram ich prace, weryfikuję jakość i egzekwuję terminy."
-    }
-  ]
+      criterion: "Czas wejścia",
+      values: [
+        "Od zaraz (natychmiastowe zabezpieczenie umów)",
+        "3–6 miesięcy rekrutacji i wdrożenia",
+        "Jesteś zdany na łaskę handlowca agencji",
+      ],
+    },
+  ],
 }
 
 export const guarantee = {
-  badge: "Gwarancje Niezależności",
-   title: "Standardy bezpieczeństwa z globalnych banków, chroniące wyłącznie Twój portfel.",
-  subtitle: "Jako ekspert z doświadczeniem w Citibank i BNP Paribas wiem, jak zarządzać technologią bez biurokracji i z zachowaniem bezwzględnego bezpieczeństwa. W roli Twojego Fractional CTO podpisuję z Tobą dwie twarde gwarancje:",
+  badge: "Gwarancja Wykonawcza",
+  title: "Gwarancja Zwrotu z Audytu Wyceny (Risk Reversal)",
+  subtitle:
+    "Jeśli wchodzę do audytu oferty lub umowy przygotowanej dla Ciebie przez software house i nie wykażę zbędnych kosztów, naciąganych estymacji lub ryzyk licencyjnych na kwotę przewyższającą koszt mojego wynagrodzenia — zwracam 100% kwoty audytu.",
   items: [
     {
-      title: "Gwarancja Niezależności (0% Prowizji)",
-      desc: "Nigdy nie biorę i nie przyjmę żadnych prowizji, „kopert” ani bonusów partnerskich od agencji i software house'ów. Nie mam interesu w polecaniu Ci konkretnego wykonawcy. Reprezentuję wyłącznie Ciebie i Twój budżet."
-    },
-    {
-      title: "Gwarancja Zwrotu z Audytu",
-      desc: "Jeśli podczas weryfikacji aktualnych umów, procesów i wycen od Twoich agencji technologicznych nie wskażę miejsc do optymalizacji kosztów IT przewyższających koszt mojej konsultacji – nie płacisz za moją pracę ani złotówki."
+      title: "Nie ponosisz żadnego ryzyka finansowego",
+      desc: "Moja obecność przy stole z wykonawcą zawsze generuje twarde, mierzalne oszczędności w Twoim portfelu."
     }
   ]
 }
 
 export const faq = {
-  title: "Najczęściej Zadawane Pytania",
-  subtitle: "Decyzje oparte na technologii i współpracy z zewnętrznym ekspertem na szczeblu zarządczym budzą naturalne pytania. Oto odpowiedzi na kwestie, które najczęściej poruszają właściciele firm przed podjęciem strategicznej współpracy:",
+  title: "Najczęściej zadawane pytania",
+  subtitle: "",
   items: [
     {
-      q: "Dla jak dużych firm przeznaczone jest to doradztwo?",
-      a: "Model ten dedykuję małym i średnim firmom (MŚP), które już generują stabilne przychody, planują skalowanie biznesu, rozwój własnych platform internetowych lub chcą uporządkować chaos technologiczny po współpracy z poprzednimi wykonawcami."
+      q: "Kiedy firmie najbardziej opłaca się model Fractional CTO?",
+      a: "Wtedy, gdy planujesz lub prowadzisz inwestycję technologiczną powyżej 100 000 zł i nie posiadasz wewnątrz wspólnika-programisty. Zatrudnianie pełnoetatowego CTO za 35 000 zł miesięcznie to marnowanie kapitału — potrzebujesz strategicznego wsparcia inżyniera tylko w momentach kluczowych decyzji, weryfikacji umów i odbioru etapów."
     },
     {
-      q: "Czy muszę zwalniać obecnych programistów lub agencję?",
-      a: "Niekoniecznie. Często wchodzę w rolę nadzorczą – pomagam Twój obecny zespół lub agencję pracować efektywniej, weryfikuję jakość dostarczanego kodu i dbam o to, by realizowali cele biznesowe zgodnie z ustaleniami."
+      q: "Czy agencja nie obrazi się, że wprowadzam „kontrolera z zewnątrz”?",
+      a: "Profesjonalne firmy programistyczne witają niezależnego CTO z ulgą, bo mają po drugiej stronie partnera, który potrafi precyzyjnie sformułować wymagania architektoniczne. Agencje nieuczciwe, które zarabiają na naciąganiu nieświadomych klientów, natychmiast zaczynają protestować — i to jest dla Ciebie najlepszy sygnał ostrzegawczy, że Twój budżet był zagrożony."
     },
     {
-      q: "Jak często odbywają się spotkania i konsultacje?",
-      a: "Częstotliwość dopasowujemy do potrzeb Twojego biznesu. Może to być stały, cotygodniowy panel konsultacyjny, doraźne wsparcie przy podejmowaniu kluczowych decyzji lub intensywny audyt na początku współpracy."
+      q: "Czy podpisujemy umowę o poufności (NDA)?",
+      a: "Tak, bezwzględnie przed rozpoczęciem jakiejkolwiek analizy dokumentów, budżetów czy architektury podpisujemy twardą umowę NDA."
     },
     {
-      q: "Czym różni się ta usługa od zwykłego programowania?",
-      a: "Programista pisze kod na podstawie cudzych wytycznych. Jako Niezależny Partner Technologiczny projektuję całą strategię, zapobiegam kosztownym błędom, dbam o bezpieczeństwo danych i pilnuję, aby każda wydana złotówka na informatykę przynosiła realny zwrot dla firmy."
+      q: "W jakich modelach współpracujemy?",
+      a: "W zależności od etapu: realizujemy zamknięty Audyt Wycen i Umów IT przed podpisaniem kontraktu z wykonawcą lub stały miesięczny Nadzór Architektoniczny (Retainer) obejmujący cotygodniową kontrolę prac agencji i odbiory sprintów."
     }
   ]
 }
 
 export const cta = {
-  badge: "Program Partnerski: Opieka Strategiczna Fractional CTO",
-  title: "Nie podpisuj kolejnej umowy z agencją w ciemno. Przeanalizujmy Twoje IT w 4 oczy.",
+  badge:
+    "Program Partnerski: Niezależny Fractional CTO (Tylko 2 mandaty w kwartale)",
+  title:
+    "Zablokuj przepalanie budżetu IT. Prześwietlmy Twoje umowy i architekturę w 4 oczy.",
   description:
-    "Ponieważ osobiście i z pełnym skupieniem wchodzę w architekturę moich klientów, w każdym kwartale obejmuję opieką maksymalnie 2 firmy jako Niezależny Dyrektor Technologiczny na żądanie. Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> – zabezpiecz swoje IT na preferencyjnych warunkach i odbierz bezpłatny pakiet audytowy na start.",
-  package_title: "Co dokładnie otrzymujesz w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
+    "Ponieważ osobiście biorę odpowiedzialność za weryfikację kodu i negocjacje inżynierskie, w każdym kwartale obejmuję stałym nadzorem maksymalnie 2 firmy. Zostań Partnerem Założycielem – zabezpiecz swój budżet technologiczny i zyskaj spokój operacyjny.",
+  package_title:
+    "Przebieg 30-minutowej Diagnozy Ryzyk IT (Wartość: 5 000 zł za 0 zł):",
   offer_items: [
     {
-      title: "Bezpłatny Audyt Umów i Wycen IT: wskazanie wąskich gardeł finansowych i technologicznych w ofertach i relacjach z obecnymi agencjami.",
-      desc: "",
+      title: "W trakcie rozmowy wideo 1-na-1:",
+      desc: "Analizujemy obecne wyceny, umowy lub relacje z wykonawcą i lokalizujemy krytyczne ryzyka budżetowe.",
     },
     {
-      title: "Bankowy Test Stabilności i Bezpieczeństwa: weryfikacja, czy Twój biznes jest odporny na awarie i bezpieczny na wypadek odejścia kluczowego programisty.",
-      desc: "",
+      title: "Po spotkaniu (Bankowy Test Uczciwości Wyceny):",
+      desc: "Raport wskazujący zawyżone pozycje kosztowe i ukryte luki w umowach.",
     },
     {
-      title: "Strategiczna Mapa Drogowa IT: rozpisany krok po kroku plan rozwoju technologii w firmie – z twardymi priorytetami i bez ukrytych kosztów.",
-      desc: "",
+      title: "Po spotkaniu (Strategiczna Mapa Nadzoru IT):",
+      desc: "Rekomendacja dalszych kroków: czy renegocjować kontrakt, zmienić zakres, czy wprowadzić niezależny nadzór nad sprintami.",
     },
   ],
-  button: "Odbierz Pakiet Strategiczny i Zabezpiecz Budżet (0 zł)",
-  footer: "Zajmij jedno z 2 wolnych miejsc na ten kwartał. Odkładanie kontroli nad technologią na „kiedyś” to zgoda na dalsze dyktowanie warunków przez agencje, ryzyko krytycznych awarii i bezradne patrzenie, jak Twój budżet ucieka przez palce.",
+  button: "Wypełnij ankietę i sprawdź dostępność terminu →",
+  format:
+    "100% bezpłatnie • Wideorozmowa w 4 oczy z architektem • Raport ryzyk przesłany po spotkaniu",
+  note:
+    "🔒 Po pozytywnej weryfikacji profilu w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.",
+  availability:
+    "Dostępność: Maksymalnie 2 mandaty w kwartale (Zostało 1 wolne miejsce).",
+  footer:
+    "Podpisanie umowy z agencją bez inżynierskiej weryfikacji to otwarcie czeku in blanco na kolejne aneksy i miesiące opóźnień.",
+}
+
+export const qualification = {
+  badge: "Weryfikacja kwalifikacyjna",
+  title: "Sprawdź, czy Twój projekt kwalifikuje się do współpracy w tym kwartale",
+  intro:
+    "4 szybkie pytania. Jeśli spełniasz kryteria, od razu otwieram dostęp do prywatnego kalendarza na 30-minutową rozmowę 1-na-1 z architektem.",
+  steps: [
+    {
+      key: "area",
+      label:
+        "W jakim obszarze Twoja firma potrzebuje natychmiastowego wsparcia inżynierskiego?",
+      options: [
+        {
+          value: "skalowanie",
+          label: "Skalowanie operacji",
+          hint: "Chcemy zastąpić arkusze Excel dedykowanym systemem operacyjnym.",
+        },
+        {
+          value: "saas",
+          label: "Fundament SaaS / B2B",
+          hint: "Chcemy zbudować komercyjne MVP i ruszyć ze sprzedażą w 30 dni.",
+        },
+        {
+          value: "wydajnosc",
+          label: "Ratunek wydajności",
+          hint: "Mamy działający system/e-commerce, który muli, a baza dławi się w szczycie.",
+        },
+        {
+          value: "cto",
+          label: "Ochrona budżetu (Fractional CTO)",
+          hint: "Chcemy prześwietlić wyceny/umowy agencji lub przejąć kontrolę nad kodem.",
+        },
+      ],
+    },
+    {
+      key: "budget",
+      label:
+        "Jaki budżet Twoja firma planuje zabezpieczyć na rozwiązanie tego problemu w najbliższym kwartale?",
+      options: [
+        { value: "ponizej20", label: "Poniżej 20 000 zł" },
+        { value: "20-50", label: "20 000 zł – 50 000 zł" },
+        { value: "50-120", label: "50 000 zł – 120 000 zł" },
+        { value: "powyzej120", label: "Powyżej 120 000 zł / Stały retainer CTO" },
+      ],
+    },
+    {
+      key: "role",
+      label: "Kim jesteś w organizacji?",
+      options: [
+        {
+          value: "wlasciciel",
+          label: "Właściciel / Członek Zarządu / CEO",
+        },
+        {
+          value: "dyrektor",
+          label: "Dyrektor Operacyjny / Head of E-commerce / Tech Lead",
+        },
+        { value: "pracownik", label: "Pracownik zbierający oferty z rynku" },
+      ],
+    },
+    {
+      key: "timeline",
+      label: "Kiedy zależy Ci na uruchomieniu prac?",
+      options: [
+        { value: "natychmiast", label: "Natychmiast (w ciągu 14–30 dni)" },
+        { value: "kwartal", label: "W tym kwartale" },
+        { value: "kilka-miesiecy", label: "Za kilka miesięcy / rozpoznaję rynek" },
+      ],
+    },
+  ],
+  messages: {
+    rejected: {
+      title: "Dziękujemy za przesłanie zgłoszenia",
+      body: "Ze względu na limit 2 wdrożeń w kwartale skupiamy się na projektach o określonej skali inżynierskiej. Zapraszamy do zapoznania się z materiałami w naszej bazie wiedzy.",
+      button: "Przejdź do bazy wiedzy",
+      href: "/blog",
+    },
+  },
+  qualified: {
+    title: "Wstępna kwalifikacja pomyślna",
+    body: "Wybierz termin 30-minutowej wideorozmowy w 4 oczy z architektem Karolem Modelskim. W trakcie spotkania zdiagnozujemy architekturę i przygotujemy dedykowany plan działania.",
+    button: "Wybierz termin w kalendarzu",
+    footer:
+      "Rozmowa wideo 1-na-1 • Zero technicznego żargonu • Plan działania po spotkaniu",
+  },
 }

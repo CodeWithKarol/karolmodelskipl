@@ -61,9 +61,10 @@
 
 ## Kwalifikacja i Rezerwacja
 
-Dostęp do kalendarza jest ograniczony: przed rezerwacją rozmowy wymagane jest przejście krótkiej ankiety kwalifikacyjnej (limit 2 wdrożeń na kwartał). Po pozytywnej weryfikacji ankieta od razu otwiera prywatny kalendarz.
+Dostęp do kalendarza jest ograniczony: przed rezerwacją rozmowy wymagane jest przejście wielokrokowego kreatora kwalifikacyjnego (limit 2 wdrożeń na kwartał). Po pozytywnej weryfikacji ankieta od razu otwiera prywatny kalendarz.
 
-- [Kwalifikacja – Systemy Skalowania Operacji](https://www.karolmodelski.pl/kwalifikacja-aplikacje): 3 pytania (skala marnowanego czasu, rola decyzyjna, budżet) dla firm MŚP z chaosem w arkuszach i ręcznym wklepywaniem danych.
-- [Kwalifikacja – Modernizacja Systemów w Locie](https://www.karolmodelski.pl/kwalifikacja-modernizacja): 3 pytania (ruch/wolumen, rola decyzyjna, budżet) dla e-commerce i platform z długiem technologicznym.
-- [Kwalifikacja – Fundament SaaS/B2B w 30 dni](https://www.karolmodelski.pl/kwalifikacja-saas): 3 pytania dla założycieli budujących produkt SaaS/B2B.
+- [Kwalifikacja – Systemy Skalowania Operacji](https://www.karolmodelski.pl/kwalifikacja-aplikacje): 3 kroki (skala marnowanego czasu, rola decyzyjna, budżet) dla firm MŚP z chaosem w arkuszach i ręcznym wklepywaniem danych.
+- [Kwalifikacja – Modernizacja Systemów w Locie](https://www.karolmodelski.pl/kwalifikacja-modernizacja): 3 kroki (ruch/wolumen, rola decyzyjna, budżet) dla e-commerce i platform z długiem technologicznym.
+- [Kwalifikacja – Fundament SaaS/B2B w 30 dni](https://www.karolmodelski.pl/kwalifikacja-saas): 3 kroki (etap projektu, budżet, termin startu) dla założycieli budujących produkt SaaS/B2B.
+- [Kwalifikacja – Niezależny Fractional CTO](https://www.karolmodelski.pl/kwalifikacja-doradztwo): 4 kroki (obszar wyzwania, budżet, rola decyzyjna, termin) dla firm MŚP i zarządów zlecających projekty IT agencjom.
 - [Kalendarz – rezerwacja rozmowy](https://calendly.com/kontakt-karolmodelski/30min): 30-minutowa diagnoza architektoniczna 1-na-1 z wnioskami na żywo, dostępna po pozytywnej kwalifikacji. Maksymalnie 2 wdrożenia w kwartale.

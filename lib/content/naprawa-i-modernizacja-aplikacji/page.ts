@@ -177,7 +177,7 @@ export const offer = {
       desc: "Precyzyjny, etapowy plan naprawy w 2-tygodniowych sprintach bez wyłączania sprzedaży i bez ukrytych kosztów.",
     },
   ],
-  button: "Wypełnij 60-sekundową ankietę i sprawdź dostępność terminu →",
+  button: "Wypełnij ankietę i sprawdź dostępność terminu →",
   format:
     "100% bezpłatnie • Wideorozmowa w 4 oczy z architektem • Kompletny plan naprawy przesłany po spotkaniu",
   note:
@@ -193,7 +193,7 @@ export const qualification = {
   title:
     "Sprawdź, czy Twoja platforma kwalifikuje się do modernizacji w tym kwartale",
   intro:
-    "3 szybkie pytania (30 sekund). Jeśli platforma ma realny wolumen ruchu i budżet na naprawę, od razu otwieram dostęp do prywatnego kalendarza na 30-minutową rozmowę diagnostyczną 1-na-1.",
+    "3 szybkie pytania. Jeśli platforma ma realny wolumen ruchu i budżet na naprawę, od razu otwieram dostęp do prywatnego kalendarza na 30-minutową rozmowę diagnostyczną 1-na-1.",
   steps: [
     {
       key: "scale",

@@ -270,7 +270,7 @@ export const mvp = {
         desc: "Dostajesz gotowy dokument techniczny: precyzyjny podział prac inżynierskich, harmonogram 30-dniowego wdrożenia oraz potwierdzenie stałej, gwarantowanej ceny (50 000 zł netto w modelu 50/50) — bez ryzyka eskalacji kosztów.",
       },
     ],
-    button: "Wypełnij 60-sekundową ankietę i sprawdź dostępność terminu →",
+    button: "Wypełnij ankietę i sprawdź dostępność terminu →",
     footer:
       "Dostępność: Dokładnie 2 projekty w kwartale. Po wyczerpaniu miejsc kolejny nabór rusza dopiero za 3 miesiące.",
   },
@@ -278,7 +278,7 @@ export const mvp = {
     badge: "Aplikacja o projekt",
     title: "Zanim otworzę Ci kalendarz — 3 pytania.",
     intro:
-      "Przyjmuję tylko 2 wdrożenia na kwartał, dlatego przed rezerwacją terminu krótko sprawdzam, czy projekt ma sens w tej formule. Odpowiedzi zajmą Ci 30 sekund.",
+      "Przyjmuję tylko 2 wdrożenia na kwartał, dlatego przed rezerwacją terminu krótko sprawdzam, czy projekt ma sens w tej formule.",
     steps: [
       {
         key: "stage",
