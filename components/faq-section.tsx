@@ -74,7 +74,7 @@ export function FaqSection({ faq: customFaq, className }: FaqSectionProps = {}) 
                   </span>
                 </AccordionTrigger>
                 <AccordionContent
-                  className="pb-5 sm:pb-6 text-xs sm:text-sm leading-relaxed text-slate-400 [&_a]:font-medium [&_a]:text-blue-400 [&_a]:transition-colors [&_a:hover]:text-blue-300 [&_a:hover]:underline"
+                  className="max-w-prose pb-5 sm:pb-6 text-xs sm:text-sm leading-relaxed text-slate-400 [&_a]:font-medium [&_a]:text-blue-400 [&_a]:transition-colors [&_a:hover]:text-blue-300 [&_a:hover]:underline"
                   dangerouslySetInnerHTML={{ __html: item.answer }}
                 />
               </AccordionItem>
