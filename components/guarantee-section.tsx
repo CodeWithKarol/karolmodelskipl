@@ -90,7 +90,7 @@ export function GuaranteeSection({
                   <Icon className={`h-5 w-5 shrink-0 sm:mt-1 ${iconColors[variant]}`} />
                   <div className="min-w-0">
                     <h3 className="text-base font-bold text-white leading-snug sm:text-xl">{item.title}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-slate-400 sm:text-[15px]">{item.desc}</p>
+                    <p className="mt-2 max-w-prose text-sm leading-relaxed text-slate-400 sm:text-[15px]">{item.desc}</p>
                   </div>
                 </div>
               </Reveal>

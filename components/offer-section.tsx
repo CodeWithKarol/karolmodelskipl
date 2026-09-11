@@ -126,7 +126,7 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
                       </p>
                     )}
                     {path.desc && (
-                      <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">{path.desc}</p>
+                      <p className="max-w-prose text-slate-400 leading-relaxed text-xs sm:text-sm">{path.desc}</p>
                     )}
                     {path.result && (
                       <div className="mt-4 pt-3 sm:mt-5 sm:pt-4 border-t border-slate-800/60 text-[11px] font-semibold text-slate-400">

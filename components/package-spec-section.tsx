@@ -7,14 +7,43 @@ interface PackageSpecContent {
   badge: string
   title: string
   intro: string
-  core: { tag?: string; value?: string; title: string; desc: string }
-  bonuses: { tag: string; title: string; value?: string; desc: string }[]
+  core: {
+    tag?: string
+    value?: string
+    title: string
+    desc?: string
+    tiers?: { label: string; text: string }[]
+  }
+  bonuses: {
+    tag: string
+    title: string
+    value?: string
+    desc?: string
+    tiers?: { label: string; text: string }[]
+  }[]
   summary_label?: string
   summary_value?: string
   price_label?: string
   price_amount?: string
   payment?: string
   bullets?: string[]
+}
+
+function TierGrid({ tiers }: { tiers: { label: string; text: string }[] }) {
+  return (
+    <div className="mt-6 grid gap-6 sm:grid-cols-3 sm:gap-5">
+      {tiers.map((tier) => (
+        <div key={tier.label} className="border-t border-slate-800 pt-4">
+          <span className="text-[10px] font-bold uppercase tracking-widest text-blue-400 sm:text-xs">
+            {tier.label}
+          </span>
+          <p className="mt-2 text-sm leading-relaxed text-slate-400 sm:text-[15px]">
+            {tier.text}
+          </p>
+        </div>
+      ))}
+    </div>
+  )
 }
 
 export function PackageSpecSection({
@@ -72,9 +101,15 @@ export function PackageSpecSection({
                 </div>
               )}
               <h3 className="text-lg font-bold text-white leading-snug sm:text-xl">{spec.core.title}</h3>
-              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400 sm:text-[15px]">
-                {spec.core.desc}
-              </p>
+              {spec.core.desc && (
+                <p className="mt-3 max-w-prose text-sm leading-relaxed text-slate-400 sm:text-[15px]">
+                  {spec.core.desc}
+                </p>
+              )}
+
+              {spec.core.tiers && spec.core.tiers.length > 0 && (
+                <TierGrid tiers={spec.core.tiers} />
+              )}
             </div>
           </Reveal>
 
@@ -96,9 +131,14 @@ export function PackageSpecSection({
                     )}
                   </div>
                   <h3 className="text-lg font-bold text-white leading-snug sm:text-xl">{bonus.title}</h3>
-                  <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-400 sm:text-[15px]">
-                    {bonus.desc}
-                  </p>
+                  {bonus.desc && (
+                <p className="mt-3 max-w-prose text-sm leading-relaxed text-slate-400 sm:text-[15px]">
+                      {bonus.desc}
+                    </p>
+                  )}
+                  {bonus.tiers && bonus.tiers.length > 0 && (
+                    <TierGrid tiers={bonus.tiers} />
+                  )}
                 </div>
               </Reveal>
             )

@@ -44,8 +44,8 @@ const FOOTER_VARIANTS = {
   b2b: {
     title: "Karol Modelski – Partner Technologiczny dla Założycieli B2B & SaaS",
     description:
-      "Projektuję i wdrażam stabilne systemy internetowe w standardach bankowych (Citibank, BNP Paribas). Zastępuję agencje programistyczne bezpośrednią współpracą inżynierską — od pomysłu do działającego kodu w 30 dni.",
-    tagline: "B2B / SaaS · Bankowe standardy · 30 dni",
+      "Buduję dochodowe platformy internetowe dla założycieli firm — od pomysłu do działającego, gotowego do sprzedaży systemu w 30 dni.",
+    tagline: "B2B / SaaS · Start platformy w 30 dni · 100% własności kodu",
   },
 } as const
 
