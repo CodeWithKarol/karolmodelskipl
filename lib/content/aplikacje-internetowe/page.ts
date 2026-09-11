@@ -5,99 +5,124 @@ export const metadata = {
 }
 
 export const hero = {
-  callout:
-    "Dla właścicieli rosnących firm MŚP, których operacje utknęły w arkuszach kalkulacyjnych i ręcznym wklepywaniu danych.",
+  badge: "Dla właścicieli firm MŚP, które utknęły w arkuszach Excela",
 
-  h1Lead: "Obsłuż",
-  h1Highlight: "3× więcej zamówień",
-  h1Tail: "przy tym samym zespole.",
-  h1Second:
-    "Zamień paraliż w Excelu na dedykowany system klasy bankowej – bez zatrudniania agencji i bez wielomiesięcznych opóźnień.",
+  title: "Zastąp 40-minutowe klepanie zamówień jednym kliknięciem.",
+  title_highlight:
+    "Zamień chaos w arkuszach na dedykowany system operacyjny w dokładnie 30 dni — bez zatrudniania kolejnych ludzi do przepisywania danych.",
 
-  subheading:
-    "Zastąp 40-minutowe klepanie pojedynczego zamówienia jednym kliknięciem. Projektuję i wdrażam stabilne oprogramowanie transakcyjne w rygorze Citibanku i BNP Paribas – bezpośrednio z architektem, w zamkniętych 2-tygodniowych sprintach rozliczanych za dowieziony efekt (model 50/50).",
+  subtitle:
+    "Działający system w Dniu 30 albo zwracam 20 000 zł zaliczki, a system zostaje u Ciebie.",
 
-  cta: {
-    label: "Aplikuj o 1 z 2 miejsc na wdrożenie w tym kwartale",
-    href: "/kwalifikacja-aplikacje",
+  qualification: {
+    cta_line1: "Zdiagnozuj wąskie gardła →",
+    trust_label: "Stabilność i architektura przetestowane w systemach dla:",
+    trust_logos: ["Citibank", "BNP Paribas", "Silent Eight", "Amway"],
   },
 
-  microcopy: [
-    { title: "Rozmowa kwalifikacyjna 1-na-1 z architektem", urgent: false },
-    { title: "Wstępna diagnoza wąskich gardeł w procesach (Wartość: 5 000 zł za 0 zł)", urgent: false },
-    { title: "Zostało tylko 1 wolne miejsce na ten kwartał", urgent: true },
+  cta_sub:
+    "Bezpłatna diagnoza 1-na-1 • 0 zł • Tylko 2 wdrożenia w kwartale (Zostało 1 miejsce)",
+
+  pegs: [
+    {
+      title: "Stała cena (40 000 zł w 50/50)",
+      desc: "Jedna kwota za działający system — koniec z dopłacaniem za roboczogodziny.",
+    },
+    {
+      title: "Gwarancja Działania w 30 Dni",
+      desc: "W Dniu 30 zespół przetwarza pierwsze prawdziwe zamówienie albo oddaję zaliczkę.",
+    },
+    {
+      title: "3 miesiące asysty w cenie",
+      desc: "Czuwam nad adaptacją zespołu, aby pracownicy bez stresu porzucili arkusze.",
+    },
   ],
 }
 
 export const story = {
   title:
-    "Ile gotówki przepala Twoja firma każdego dnia, gdy zwlekasz z automatyzacją?",
+    "Ile gotówki przepala Twoja firma każdego miesiąca, gdy zwlekasz z automatyzacją?",
   intro:
-    "To nie koszt wdrożenia nowego systemu jest Twoim największym wydatkiem. Najdroższa jest codzienna, ręczna praca, której jeszcze nie zautomatyzowałeś. Tradycyjny software house każe Ci płacić 150 000 zł z góry i czekać rok, podczas gdy Twoje operacje krwawią każdego dnia:",
+    "To nie koszt nowego systemu drenuje Twoje konto. Najdroższa jest codzienna, powtarzalna praca ludzi, którzy zamiast rozwijać firmę, ręcznie kopiują dane między plikami.",
   context: "",
   points: [
     {
-      title: "Więzienie w arkuszach i błąd ludzki",
-      desc: "Zamiast skalować sprzedaż, Twój zespół spędza pół dnia na nerwowym przeklikiwaniu danych między 5 różnymi plikami Excela. Jeden przypadkowo usunięty wiersz lub literówka w zamówieniu paraliżuje realizację i niszczy relację z klientem."
+      title: "Więzienie w 5 plikach Excela i kosztowny błąd ludzki",
+      desc: "Jeden przypadkowo usunięty wiersz, zły numer NIP lub pomyłka w adresie dostawy potrafi zablokować realizację, wstrzymać wysyłkę i zniszczyć relację z kluczowym klientem. Twój zespół żyje w permanentnym stresie, sprawdzając te same komórki po trzy razy."
     },
     {
-      title: "40 minut ręcznej roboty na jedno zamówienie",
-      desc: "Płacisz pensje wykwalifikowanym ludziom nie za myślenie i rozwój firmy, ale za bycie „ludzkimi taśmociągami” kopiującymi numery faktur, adresy i stany magazynowe."
+      title: "Płacenie pensji za bycie „ludzkim taśmociągiem”",
+      desc: "Płacisz pensje specjalistom, a oni marnują 70% dnia na ręczne wystawianie faktur, sprawdzanie stanów magazynowych na kartkach i przeklepywanie maili. Żeby obsłużyć więcej zleceń, musisz zatrudniać kolejne osoby do klikania — zamiast do sprzedaży."
     },
     {
-      title: "Ograniczenia narzędzi pudełkowych (SaaS)",
-      desc: "Płacisz miesięczne subskrypcje za gotowe systemy, które miały pomóc, ale narzucają sztywne ramy, nie pasują do Twojej logiki biznesowej i blokują wzrost firmy."
+      title: "Pudełkowe programy (SaaS), które uwierają zamiast pomagać",
+      desc: "Płacisz co miesiąc abonamenty za gotowe systemy, ale one narzucają sztywne schematy i nie pasują do tego, jak naprawdę działa Twój biznes. Kończy się tym, że pracownicy i tak tworzą „pomocnicze” arkusze Excela na boku."
     },
     {
-      title: "„Głuchy telefon” i faktury za naukę w software house",
-      desc: "Próbujesz zlecić system agencji? Trafiasz na handlowca i junior PM-a. Agencja buduje ociężały kombajn przez 9 miesięcy, bo zarabia na roboczogodzinach, a do kodu wpuszcza stażystów, którzy uczą się zawodu za Twój budżet."
+      title: "Software house'y, które uczą się branży za Twoje pieniądze",
+      desc: "Tradycyjna agencja każe płacić 150 000 zł z góry za roboczogodziny, przydziela junior project managera i buduje kombajn przez 9 miesięcy. Na koniec dostajesz system tak skomplikowany, że pracownicy boją się go dotknąć."
     }
   ]
 }
 
 export const valueStack = {
   badge: "Stos Wartości",
-  title:
-    "Kompletny fundament operacyjny plus bonusy likwidujące ryzyko wdrożenia",
+  title: "Co dokładnie otrzymujesz w pakiecie?",
   intro:
     "Rozbijam wdrożenie na części składowe, abyś widział, który element usuwa wąskie gardła w Twojej firmie i ile wynosi realna alternatywa rynkowa:",
   core: {
-    tag: "Fundament Systemu",
-    value: "Rynkowy koszt w agencji: ~110 000 zł i miesiące chaosu",
+    tag: "Moduł Główny",
+    value: "Wartość rynkowa: ~110 000 zł",
     title: "Dedykowany Rdzeń Operacyjny Firmy",
-    desc: "Oprogramowanie skrojone precyzyjnie pod unikalne procesy Twojego biznesu: automatyczne fakturowanie, synchronizacja magazynu, spięcie statusów zamówień i baza danych oparta na rygorach Citibanku i BNP Paribas. 100% praw autorskich do kodu i serwerów w rękach Twojej firmy od pierwszego dnia.",
+    desc: "System dopasowany do Twoich procesów — zamiast 40 minut klepania danych, jedno kliknięcie:",
+    tiers: [
+      {
+        label: "Automatyzacja obiegu",
+        text: "Samodzielne generowanie faktur, aktualizacja magazynu i powiadomienie klienta.",
+      },
+      {
+        label: "Koniec z pomyłkami",
+        text: "Eliminacja zgubionych zamówień, błędów w adresach i gaszenia pożarów w biurze.",
+      },
+      {
+        label: "Płynna praca",
+        text: "Zespół przestaje być „ludzkim taśmociągiem” i wraca do obsługi klientów.",
+      },
+    ],
   },
   bonuses: [
     {
       tag: "Bonus 1",
-      title: "Szybka Wersja Startowa w 30 Dni",
-      value: "Wartość rynkowa: 25 000 zł",
-      desc: "Nie czekasz pół roku na cały kombajn w ciemno. W ciągu pierwszych 30 dni oddaję kluczowy, działający moduł transakcyjny, aby Twój zespół zaczął pracować na nowym rozwiązaniu i generować oszczędności od pierwszego miesiąca.",
+      title: "Bezpieczna Migracja Danych ze Starych Arkuszy",
+      value: "Wartość rynkowa: ~15 000 zł",
+      desc: "Osobiście czyszczę i przenoszę całą historię Twoich zamówień i bazę klientów do nowego systemu, żeby pracownicy nie musieli wklepywać niczego ręcznie.",
     },
     {
       tag: "Bonus 2",
-      title: "Paszport Techniczny i Czysty Kod",
-      value: "Wartość rynkowa: 15 000 zł",
-      desc: "Czysta architektura bez „złotej klatki” (brak vendor lock-in). Pełna dokumentacja inżynierska i instrukcje uruchomieniowe – każdy zewnętrzny programista przejmie system w 24 godziny bez marudzenia.",
+      title: "3 Miesiące Osobistej Asysty i Adaptacji Zespołu",
+      value: "Wartość rynkowa: ~20 000 zł",
+      desc: "Kod to tylko połowa sukcesu — kluczem jest to, by zespół nie wrócił do Excela:",
+      bullets: [
+        "Przez 90 dni osobiście czuwam nad nawykami pracowników i odpowiadam na pytania.",
+        "Koryguję procesy w locie, w trakcie codziennej pracy Twojej firmy.",
+        "Zyskujesz pewność, że zespół przyjmie nowe narzędzie z ulgą, a nie z oporem.",
+      ],
     },
     {
       tag: "Bonus 3",
-      title: "3 Miesiące Osobistej Asysty Powdrożeniowej",
-      value: "Wartość rynkowa: 20 000 zł",
-      desc: "Wdrożenie to przede wszystkim adaptacja ludzi. Przez pełny kwartał po uruchomieniu osobiście czuwam nad nawykami zespołu i stabilnością procesów, gwarantując, że pracownicy płynnie przejdą z Excela na automatyzację jednym kliknięciem.",
+      title: "Gwarancja Ciągłości i Pełna Własność",
+      value: "Wartość rynkowa: ~15 000 zł",
+      desc: "100% praw autorskich do kodu, brak ukrytych licencji i brak uzależnienia od jednej osoby. System jest zbudowany na przejrzystych, nowoczesnych technologiach i posiada pełną dokumentację stanowiskową. Twoja firma zyskuje niezależny fundament, który możesz w przyszłości rozwijać ze mną lub z dowolnym innym inżynierem.",
     },
   ],
-  summary_label: "Alternatywa – ręczne wklepywanie danych w Excelu kosztuje Cię:",
+  summary_label: "Alternatywa rynkowa",
   summary_value:
-    "180 000 zł rocznie – utrzymanie 3 pracowników do przepisywania danych między arkuszami, w pensjach i kosztach błędów ludzkich",
-  price_label: "Twój koszt – budowa modułów w stałych sprintach:",
-  price_amount: "50/50 – płacisz tylko za działające moduły",
-  payment:
-    "50% uruchamia 2-tygodniowy sprint, a drugie 50% płacisz dopiero po odbiorze działającego modułu na ekranie testowym i potwierdzeniu specyfikacji przez Twój zespół.",
+    "Utrzymanie 2–3 pracowników wyłącznie do przepisywania danych z arkuszy to koszt 120 000 – 180 000 zł rocznie — nie licząc strat wynikających z pomyłek ludzkich. Tradycyjny software house to 120 000 zł i 9 miesięcy niepewności.",
+  price_label: "Stała inwestycja za Pakiet Wdrożeniowy (30 Dni):",
+  price_amount: "40 000 zł netto (pełna faktura VAT)",
   bullets: [
-    "Pełna faktura VAT",
-    "Zero zaliczek na całość i zero ukrytych roboczogodzin",
-    "Pisemna Gwarancja Odbioru Modułu – poprawki na mój koszt",
+    "Bezpieczny model 50/50: 20 000 zł przy rezerwacji terminu, a 20 000 zł dopiero w Dniu 30 — po udanym przetworzeniu pierwszego zamówienia.",
+    "Gwarancja kompletności: to cena za w 100% zamknięty system — nie musisz dokupować żadnych dodatkowych modułów ani sprintów, by firma działała płynnie.",
   ],
 }
 
@@ -120,35 +145,66 @@ export const funnel = {
 }
 
 export const comparison = {
-  badge: "Porównanie",
-  title: "Bezpośrednia Współpraca vs. Tradycyjna Agencja",
+  badge: "Porównanie modeli",
+  title: "Tradycyjny Software House vs. Twój Osobisty Partner Technologiczny",
   subtitle:
     "Twarde, tabelaryczne porównanie pokazujące przewagę bezpośredniej współpracy nad agencją.",
   columns: {
     feature: "Obszar",
-    me: "Współpraca ze Mną (Partner IT)",
+    me: "Bezpośrednia Współpraca ze Mną",
     agency: "Tradycyjna Agencja (Software House)",
   },
   rows: [
     {
-      feature: "Komunikacja",
-      me: "Rozmawiasz bezpośrednio z twórcą systemu (zero filtrów).",
-      agency: "„Głuchy telefon” – handlowcy, PM-owie i rotujący juniorzy.",
+      feature: "Czas do pierwszego odciążenia",
+      me: "Dokładnie 30 dni do uruchomienia Rdzenia Systemu i pierwszych oszczędności czasu.",
+      agency: "Od 6 do 12 miesięcy niekończącego się planowania i ciągłych aneksów terminowych.",
     },
     {
-      feature: "Struktura Kosztów",
-      me: "100% budżetu idzie w jakość kodu i automatyzację procesów.",
-      agency: "Płacisz za warszawskie open space’y, handlowców i narzuty agencji.",
+      feature: "Budżet i rozliczenie",
+      me: "Jedna, stała kwota pakietowa (model 50/50). Płacisz drugą część dopiero, gdy system działa.",
+      agency: "Płatność za roboczogodziny: rachunki rosną co miesiąc, brak ostatecznej ceny.",
     },
     {
-      feature: "Model Ryzyka",
-      me: "Zamknięte sprinty 50/50 – płacisz po zatwierdzeniu modułu.",
-      agency: "Wielkie zaliczki w ciemno i faktury za niekończące się roboczogodziny.",
+      feature: "Kontakt i odpowiedzialność",
+      me: "Rozmawiasz bezpośrednio z doświadczonym inżynierem (zero pośredników).",
+      agency: "„Głuchy telefon”: handlowcy, project managerowie i rotujący juniorzy.",
     },
     {
-      feature: "Czas do Wartości",
-      me: "Działający moduł transakcyjny w rękach zespołu już w 30 dni.",
-      agency: "6 do 12 miesięcy analiz, planowania i ciągłych aneksów.",
+      feature: "Adaptacja pracowników",
+      me: "3 miesiące mojej osobistej asysty we wdrażaniu nawyków w zespole.",
+      agency: "Szkolenie z prezentacji PDF, zostawienie zespołu samemu sobie i ucieczka do kolejnego klienta.",
+    },
+    {
+      feature: "Niezależność",
+      me: "100% praw autorskich, otwarte technologie, zero obowiązkowych abonamentów.",
+      agency: "Uzależnienie od jednej agencji i płacenie za każdą drobną zmianę w procedurach.",
+    },
+  ],
+}
+
+export const process = {
+  badge: "Proces wdrożenia",
+  title: "Jak wdrażamy system w 30 dni?",
+  subheading: "Sprawdzony, 3-etapowy proces",
+  paths: [
+    {
+      title: "Dni 1–5",
+      situation: "Inżynierskie cięcie chaosu i zamrożenie zakresu",
+      desc: "Siadamy z Twoim zespołem i bierzemy pod lupę obecny obieg dokumentów. Wycinamy 80% zbędnych czynności i niepotrzebnych pól. Projektujemy jedną, prostą ścieżkę: od przyjęcia zamówienia, przez magazyn, po automatyczną fakturę i wysyłkę.",
+      result: "Rezultat: Podpisana, niezmienna specyfikacja procesu ze stałą ceną w umowie.",
+    },
+    {
+      title: "Dni 6–24",
+      situation: "Budowa pancernego silnika operacyjnego",
+      desc: "Biorę na siebie 100% prac programistycznych. Buduję system skrojony pod Twoją firmę: z automatycznym fakturowaniem, spięciem statusów zamówień i bazą danych odporną na błędy ludzkie. Twój zespół pracuje normalnie — bez paraliżowania bieżącej działalności.",
+      result: "Rezultat: Kompletny, przetestowany system przygotowany do wdrożenia na Twoich danych.",
+    },
+    {
+      title: "Dni 25–30",
+      situation: "Bezpieczna migracja i test pierwszego zamówienia",
+      desc: "Przenosimy dane z dotychczasowych arkuszy. Przeprowadzamy zespół przez interfejs i wspólnie przetwarzamy pierwsze prawdziwe zamówienie jednym kliknięciem. Od Dnia 30 firma oficjalnie pracuje na nowym rozwiązaniu.",
+      result: "Rezultat: Działający system, odciążony zespół i natychmiastowe oszczędności roboczogodzin.",
     },
   ],
 }
@@ -160,51 +216,50 @@ export const faq = {
   items: [
     {
       q: "Czy muszę dokładnie wiedzieć, jak ma wyglądać system od strony technicznej?",
-      a: "Nie. Twoją rolą jest opowiedzieć o procesach biznesowych, wąskich gardłach i miejscach, w których zespół traci czas na powtarzalną robotę. Ja biorę na siebie 100% prac inżynierskich: dobór architektury, logikę bazodanową i integracje. Rozmawiamy w języku zysków, wygody pracowników i płynności operacji, bez technicznego żargonu."
+      a: "Nie. Twoim jedynym zadaniem jest pokazanie mi, jak dzisiaj przepływają dokumenty i zamówienia w Twojej firmie. Ja przekładam Twoją logikę biznesową na stabilne rozwiązanie cyfrowe. Podczas wdrożenia rozmawiamy wyłącznie o procesach, czasie pracy i wygodzie pracowników — zero technicznego żargonu."
     },
     {
       q: "Kiedy zobaczę pierwsze realne efekty i odciążenie w firmie?",
-      a: "Zamiast czekać 6 do 12 miesięcy na cały kombajn w ciemno, wdrażamy szybką wersję startową w dokładnie 30 dni od zatwierdzenia planu. Kluczowy moduł transakcyjny trafia w ręce Twojego zespołu w pierwszym miesiącu, generując oszczędności czasu, a dalszy rozwój realizujemy w zamkniętych, 2-tygodniowych sprintach."
-    },
-    {
-      q: "Czy podpisujemy umowę o zachowaniu poufności (NDA) przed wejściem w dane firmy?",
-      a: "Tak, bezwzględnie. Zanim przeanalizujemy logikę arkuszy, obieg zamówień i strukturę baz danych, podpisujemy twardą umowę o poufności (NDA). Standardy ochrony informacji opieram na regułach przetestowanych w instytucjach finansowych (Citibank, BNP Paribas) – Twoje dane biznesowe są w pełni chronione przed wyciekiem."
-    },
-    {
-      q: "Czy po zakończeniu prac będę uzależniony od Twojej osoby (vendor lock-in)?",
-      a: "Absolutnie nie. Wraz z gotowym systemem otrzymujesz 100% praw autorskich do kodu oraz Paszport Techniczny – pełną dokumentację inżynierską i instrukcję uruchomienia. Kod powstaje w oparciu o czyste, powszechne standardy bankowe, co oznacza, że każdy inny programista na rynku może przejąć i rozwijać projekt w 24 godziny."
+      a: "Pierwsze odciążenie następuje dokładnie w 30. dniu wdrożenia. Wtedy uruchamiamy moduł zdejmujący najbardziej czasochłonne zadanie (np. ręczne wystawianie dokumentów i sprawdzanie magazynu). Twój zespół odczuwa redukcję czasu pracy z dnia na dzień, a Ty widzisz spadek liczby błędów już w pierwszym miesiącu."
     },
     {
       q: "Co w sytuacji, gdy pracownicy będą bali się nowego narzędzia i spróbują wrócić do Excela?",
-      a: "Wdrożenie technologii to przede wszystkim adaptacja ludzi. Dlatego projekt nie kończy się na oddaniu plików – otrzymujesz 3 miesiące bezpłatnej opieki powdrożeniowej, podczas której osobiście asystuję zespołowi, eliminuję wątpliwości i dbam o to, by automatyzacja jednym kliknięciem stała się ich naturalnym, codziennym nawykiem."
+      a: "To najczęstsza obawa właścicieli firm — i właśnie dlatego w pakiecie otrzymujesz 3 miesiące mojej osobistej asysty powdrożeniowej. System projektuję tak, aby był prostszy w obsłudze niż Excel (duże, czytelne przyciski, zero zbędnych pól). Osobiście asystuję zespołowi w pierwszych tygodniach, dzięki czemu pracownicy szybko zauważają, że system oszczędza ich czas i zdejmuje z nich stres związany z pomyłkami. Zamiast oporu pojawia się ulga."
+    },
+    {
+      q: "Czy podpisujemy umowę o zachowaniu poufności (NDA) przed wglądem w dane firmy?",
+      a: "Bezwzględnie tak. Zanim udostępnisz mi jakiekolwiek arkusze, procedury czy bazy klientów, podpisujemy restrykcyjną umowę NDA. Posiadam wieloletnie doświadczenie w pracy z danymi objętymi tajemnicą bankową, dlatego kwestie bezpieczeństwa informacji i ochrony tajemnicy przedsiębiorstwa są u mnie na pierwszym miejscu."
+    },
+    {
+      q: "Czy po zakończeniu wdrożenia będę uzależniony od Twojej osoby?",
+      a: "Nie. Nie buduję wokół Twojej firmy „złotej klatki” ani nie pobieram przymusowych abonamentów za to, że system w ogóle działa. Otrzymujesz 100% praw autorskich, czyste repozytorium oraz pełną dokumentację techniczną i stanowiskową. Każdy wykwalifikowany programista jest w stanie przejąć ten kod bez konieczności pisania czegokolwiek od nowa."
     }
   ]
 }
 
 export const offer = {
-  badge: "Program Partnerski: Dedykowane Systemy dla Firm (Tylko 2 miejsca)",
-  title: "Koniec z ręczną pracą w Excelu. Zaplanujmy Twój dedykowany system w 4 oczy.",
+  badge: "Twój pierwszy krok",
+  title: "30-minutowa Diagnoza Wąskich Gardeł",
   description:
-    "Ponieważ osobiście odpowiadam za architekturę każdego wdrożenia i nie deleguję zadań podwykonawcom, w każdym kwartale obejmuję opieką maksymalnie 2 firmy. Zostań Partnerem Założycielem – zabezpiecz preferencyjne warunki wdrożenia i odbierz 3 miesiące dedykowanej asysty powdrożeniowej w cenie projektu.",
-  package_title:
-    "Przebieg 30-minutowej Diagnozy Architektonicznej i Indywidualnego Pakietu (Wartość: 5 000 zł za 0 zł):",
+    "Pracuję osobiście, dlatego przyjmuję maksymalnie 2 wdrożenia w kwartale. Na bezpłatnej rozmowie powiem Ci wprost: czy arkusze da się zamienić na dedykowany system w 30 dni, czy wystarczą prostsze narzędzia.",
+  package_title: "Co otrzymujesz:",
   offer_items: [
     {
-      title: "Krok 1: W trakcie rozmowy wideo 1-na-1 (Diagnoza Wąskich Gardeł):",
-      desc: "Bierzemy pod lupę procesy w Twojej firmie i wskazujemy miejsca, w których ręczne przeklikiwanie arkuszy najbardziej blokuje wzrost i generuje błędy.",
+      title: "Diagnoza 1-na-1 (30 min):",
+      desc: "Wskazujemy miejsca, w których ręczne przepisywanie danych generuje największe straty i pomyłki.",
     },
     {
-      title: "Krok 2: Po spotkaniu – Bankowy Test Bezpieczeństwa Informacji:",
-      desc: "W oparciu o zebrane dane przygotowuję analizę ryzyka: weryfikację stabilności przepływu danych, podatności na błędy ludzkie oraz standardów ochrony informacji w Twojej firmie.",
+      title: "Weryfikacja Ryzyka (po spotkaniu):",
+      desc: "Chłodna ocena podatności Twoich obecnych procesów na błędy ludzkie.",
     },
     {
-      title: "Krok 3: Po spotkaniu – Osobista Mapa Drogowa Wdrożenia IT (Dokument PDF):",
-      desc: "Otrzymujesz gotowy plan działania: podział prac na 2-tygodniowe sprinty inżynierskie, specyfikację pierwszego modułu w 30 dni oraz transparentną wycenę bez ukrytych kosztów.",
+      title: "Mapa Wdrożenia (PDF):",
+      desc: "Plan 30-dniowego startu ze stałą ceną (40 000 zł netto w 50/50) — bez ukrytych kosztów.",
     },
   ],
-  button: "Wypełnij ankietę i sprawdź dostępność terminu →",
+  button: "Przejdź do formularza i zarezerwuj rozmowę →",
   format:
-    "100% bezpłatnie • Wideorozmowa w 4 oczy z architektem • Kompletny plan wdrożenia przesłany po spotkaniu",
+    "100% bezpłatnie • Wideorozmowa 1-na-1 z głównym inżynierem • Zero sprzedaży i zero technicznego żargonu",
   note:
     "🔒 Po pozytywnej weryfikacji danych w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.",
   availability:
@@ -213,35 +268,19 @@ export const offer = {
     "Odkładanie automatyzacji na bliżej nieokreślone „kiedyś” to zgoda na dalsze błędy w zamówieniach, przepalanie setek roboczogodzin i oglądanie pleców konkurencji.",
 }
 
-export const bankingStability = {
-  badge: "Doświadczenie bankowe",
-  title:
-    "Standardy bezpieczeństwa z globalnych banków, wdrożone bez korporacyjnego zadęcia.",
-  intro:
-    "Moje doświadczenie w projektowaniu systemów dla instytucji takich jak Citibank czy BNP Paribas przenoszę bezpośrednio do elastycznego świata MŚP. Odcinam korporacyjną biurokrację, zostawiając to, co kluczowe: inżynieryjną precyzję i bezwzględne bezpieczeństwo.",
-  subtitle: "Co „stabilność klasy bankowej” oznacza dla Twojego biznesu w praktyce?",
-  text:
-    "To nie oznacza, że będziemy budować ociężały system przez pół roku, tonąc w procedurach. To oznacza, że Twój system nie wyłoży się w piątek o godzinie 16:00, kiedy masz w firmie największy ruch, najwięcej zamówień i musisz dowieźć wyniki. Otrzymujesz czysty, uniwersalny i w pełni udokumentowany kod – Twój system działa stabilnie i nigdy nie jest uzależniony od kaprysu agencji czy jednego programisty.",
-}
-
 export const guarantee = {
-  badge: "Gwarancje Wykonawcze",
-  title:
-    "Zdejmuję z Twoich barków 100% ryzyka finansowego i technologicznego",
+  badge: "Gwarancja Wykonawcza",
+  title: "Gwarancja Działania w 30 Dni albo Darmowe Wdrożenie",
   subtitle: "",
-  steps: [
-    "30-minutowa diagnoza i zamrożenie zakresu",
-    "Wdrożenie modułu transakcyjnego w 30 dni",
-    "Rozbudowa w 2-tygodniowych sprintach 50/50 + 3 miesiące asysty w zespole",
-  ],
   items: [
     {
-      title: "Pisemna Gwarancja Odbioru Sprintu",
-      desc: "Jeśli po 2 tygodniach moduł nie realizuje uzgodnionej specyfikacji na środowisku testowym – pracuję nad poprawkami na własny koszt, a Ty nie płacisz drugiej transzy (50%) ani złotówki, dopóki osobiście nie zatwierdzisz działania na żywym procesie."
-    },
-    {
-      title: "Standard Bezpieczeństwa Klasy Bankowej",
-      desc: "Architektura budowana w rygorze Citibanku i BNP Paribas. Twój system jest projektowany tak, aby wytrzymać nagłe spiętrzenie zamówień i nigdy nie wyłożyć się w piątek o godzinie 16:00, paraliżując firmę."
+      title: "Jeśli w Dniu 30 system nie ruszy lub Twój zespół nie będzie w stanie przetworzyć w nim prawdziwego zamówienia:",
+      desc: "",
+      bullets: [
+        "Zwracam 100% wpłaconej zaliczki (20 000 zł) co do grosza.",
+        "Cały zbudowany kod, serwery i konfiguracje zostają w Twojej firmie za 0 zł.",
+      ],
+      note: "Standardy bankowe przeniesione do MŚP: ryzyko opóźnienia biorę na siebie, nie na Twój budżet.",
     }
   ]
 }

@@ -1,9 +1,11 @@
+import { Badge } from "@/components/ui/badge"
 import { cn } from "@/lib/utils"
 
 const variants = {
-  blue: "border-blue-500/20 bg-blue-500/5 text-blue-400",
-  red: "border-red-500/20 bg-red-500/10 text-red-400",
-  emerald: "border-emerald-500/20 bg-emerald-500/10 text-emerald-400",
+  blue: "border-primary/20 bg-primary/5 text-primary",
+  neutral: "border-border bg-muted text-muted-foreground",
+  red: "border-destructive/20 bg-destructive/10 text-destructive",
+  emerald: "border-success/20 bg-success/10 text-success",
 }
 
 export function SectionBadge({
@@ -18,16 +20,18 @@ export function SectionBadge({
   children: React.ReactNode
 }) {
   return (
-    <span
+    <Badge
+      variant="outline"
       className={cn(
-        "inline-flex items-center gap-2 border font-bold uppercase tracking-wider",
-        rounded === "full" && "rounded-full px-3.5 sm:px-4 py-1.5 text-xs",
-        rounded === "md" && "rounded-md px-2 sm:px-3 py-0.5 sm:py-1 text-[11px] sm:text-sm font-medium",
+        "gap-2 border font-bold tracking-wider whitespace-normal overflow-visible uppercase [&>svg]:size-4!",
+        rounded === "full" && "h-auto rounded-full px-3.5 py-1.5 text-xs sm:px-4",
+        rounded === "md" &&
+          "h-auto rounded-md px-2 py-0.5 text-[11px] font-medium sm:px-3 sm:py-1 sm:text-sm",
         variants[variant],
         className
       )}
     >
       {children}
-    </span>
+    </Badge>
   )
 }

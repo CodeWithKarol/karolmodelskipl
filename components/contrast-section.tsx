@@ -56,11 +56,11 @@ export function ContrastSection({ contrast: customContrast, className }: Contras
     <section
       id="porownanie"
       className={cn(
-        "relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-20 text-slate-300 md:py-32",
+        "relative overflow-hidden border-t border-border bg-background py-20 text-muted-foreground md:py-32",
         className
       )}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
 
       <div className="relative z-10 container mx-auto max-w-5xl px-4">
         {/* Nagłówek */}
@@ -71,7 +71,7 @@ export function ContrastSection({ contrast: customContrast, className }: Contras
               <span>{badge}</span>
             </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-6 leading-tight max-w-3xl mx-auto">
             {title}
           </h2>
         </Reveal>
@@ -82,10 +82,10 @@ export function ContrastSection({ contrast: customContrast, className }: Contras
             <Reveal
               key={i}
               delay={i * 0.05}
-              className="border-t border-slate-800 first:border-t-0 py-6 sm:py-8"
+              className="border-t border-border first:border-t-0 py-6 sm:py-8"
             >
               {row.area && (
-                <h3 className="text-base sm:text-lg font-bold text-white leading-snug mb-4 sm:mb-5">
+                <h3 className="text-base sm:text-lg font-bold text-foreground leading-snug mb-4 sm:mb-5">
                   {row.area}
                 </h3>
               )}
@@ -93,39 +93,39 @@ export function ContrastSection({ contrast: customContrast, className }: Contras
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 {/* BEZPOŚREDNIA WSPÓŁPRACA (Rozwiązanie) */}
                 <div className="flex flex-col gap-2 md:flex-row md:items-start md:gap-3">
-                  <CheckCircle2 className="h-5 w-5 text-blue-400 shrink-0 md:mt-0.5" />
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 md:mt-0.5" />
                   <div className="min-w-0">
                     {blueLabel && (
-                      <div className="text-blue-400 mb-1 font-bold text-[10px] uppercase tracking-widest">
+                      <div className="text-primary mb-1 font-bold text-[10px] uppercase tracking-widest">
                         {blueLabel}
                       </div>
                     )}
                     {row.blueTitle && (
-                      <div className="text-sm sm:text-base font-bold text-white mb-1 leading-snug">
+                      <div className="text-sm sm:text-base font-bold text-foreground mb-1 leading-snug">
                         {row.blueTitle}
                       </div>
                     )}
-                    <p className="text-slate-300 leading-relaxed text-xs sm:text-sm">
+                    <p className="text-muted-foreground leading-relaxed text-xs sm:text-sm">
                       {row.blue}
                     </p>
                   </div>
                 </div>
 
                 {/* TRADYCYJNA AGENCJA (Problem) */}
-                <div className="flex flex-col gap-2 md:flex-row md:items-start md:gap-3 md:border-l md:border-slate-800 md:pl-6">
-                  <XCircle className="h-5 w-5 text-red-400 shrink-0 md:mt-0.5" />
+                <div className="flex flex-col gap-2 md:flex-row md:items-start md:gap-3 md:border-l md:border-border md:pl-6">
+                  <XCircle className="h-5 w-5 text-destructive shrink-0 md:mt-0.5" />
                   <div className="min-w-0">
                     {redLabel && (
-                      <div className="text-red-400 mb-1 font-bold text-[10px] uppercase tracking-widest">
+                      <div className="text-destructive mb-1 font-bold text-[10px] uppercase tracking-widest">
                         {redLabel}
                       </div>
                     )}
                     {row.redTitle && (
-                      <div className="text-sm sm:text-base font-bold text-slate-200 mb-1 leading-snug">
+                      <div className="text-sm sm:text-base font-bold text-foreground mb-1 leading-snug">
                         {row.redTitle}
                       </div>
                     )}
-                    <p className="text-slate-400 leading-relaxed text-xs sm:text-sm">
+                    <p className="text-muted-foreground leading-relaxed text-xs sm:text-sm">
                       {row.red}
                     </p>
                   </div>

@@ -17,9 +17,9 @@ export function Breadcrumbs() {
 
   return (
     <Breadcrumb>
-      <BreadcrumbList className="text-slate-400">
+      <BreadcrumbList className="text-muted-foreground">
         <BreadcrumbItem>
-          <BreadcrumbLink href="/" className="hover:text-blue-400">
+          <BreadcrumbLink href="/" className="hover:text-primary">
             Home
           </BreadcrumbLink>
         </BreadcrumbItem>
@@ -35,11 +35,11 @@ export function Breadcrumbs() {
               <BreadcrumbSeparator />
               <BreadcrumbItem>
                 {isLast ? (
-                  <BreadcrumbPage className="text-blue-400">
+                  <BreadcrumbPage className="text-primary">
                     {label}
                   </BreadcrumbPage>
                 ) : (
-                  <BreadcrumbLink href={href} className="hover:text-blue-400">
+                  <BreadcrumbLink href={href} className="hover:text-primary">
                     {label}
                   </BreadcrumbLink>
                 )}
