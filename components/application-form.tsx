@@ -2,6 +2,10 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { Label } from "@/components/ui/label"
+import { Progress } from "@/components/ui/progress"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { SectionBadge } from "@/components/section-badge"
 import { siteConfig } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
 import { ArrowLeft, ArrowRight, Check } from "lucide-react"
@@ -57,66 +61,69 @@ export function ApplicationForm({
         <div className="mx-auto w-full max-w-3xl">
           {!submitted ? (
             <div className="text-center">
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-400 sm:px-4 sm:text-xs">
+              <SectionBadge variant="neutral" className="text-[10px] sm:text-xs">
                 {application.badge}
-              </span>
-              <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-balance text-white sm:text-4xl">
+              </SectionBadge>
+              <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-balance text-foreground sm:text-4xl">
                 {application.title}
               </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-400 sm:text-lg">
+              <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
                 {application.intro}
               </p>
 
               <div className="mt-9 sm:mt-12">
-                <div className="flex items-center justify-between text-xs font-medium text-slate-400">
+                <div className="flex items-center justify-between text-xs font-medium text-muted-foreground">
                   <span>
                     Krok {step + 1} z {total}
                   </span>
                   <span>{Math.round(progress)}%</span>
                 </div>
-                <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-white/10">
-                  <div
-                    className="h-full rounded-full bg-blue-500 transition-all duration-300"
-                    style={{ width: `${progress}%` }}
-                  />
-                </div>
+                <Progress value={progress} className="mt-2 h-1.5" />
               </div>
 
               <fieldset className="mt-8 text-left sm:mt-10">
-                <legend className="mb-3.5 text-sm font-semibold leading-snug text-white sm:text-base">
+                <legend className="mb-3.5 text-sm font-semibold leading-snug text-foreground sm:text-base">
                   {current.label}
                 </legend>
-                <div className="space-y-2.5">
+                <RadioGroup
+                  value={answers[current.key] ?? ""}
+                  onValueChange={(value) => select(value)}
+                  className="grid w-full gap-2.5"
+                >
                   {current.options.map((option) => {
+                    const id = `${current.key}-${option.value}`
                     const active = answers[current.key] === option.value
                     return (
-                      <button
+                      <Label
                         key={option.value}
-                        type="button"
-                        aria-pressed={active}
-                        onClick={() => select(option.value)}
+                        htmlFor={id}
                         className={cn(
-                          "flex w-full items-start justify-between gap-3 rounded-xl border px-4 py-4 text-left text-sm font-medium leading-snug transition-colors sm:py-3.5 sm:text-[15px]",
+                          "flex w-full cursor-pointer items-start justify-between gap-3 rounded-xl border px-4 py-4 text-left text-sm font-medium leading-snug transition-colors sm:py-3.5 sm:text-[15px]",
                           active
-                            ? "border-blue-500/60 bg-blue-500/10 text-white"
-                            : "border-white/10 bg-white/[0.02] text-slate-300 hover:border-white/20 hover:bg-white/5"
+                            ? "border-primary/60 bg-primary/10 text-foreground"
+                            : "border-border bg-card text-muted-foreground hover:border-input hover:bg-muted"
                         )}
                       >
                         <span className="min-w-0">
                           <span className="block">{option.label}</span>
                           {option.hint && (
-                            <span className="mt-0.5 block text-xs font-normal leading-snug text-slate-500">
+                            <span className="mt-0.5 block text-xs font-normal leading-snug text-muted-foreground">
                               {option.hint}
                             </span>
                           )}
                         </span>
                         {active && (
-                          <Check className="mt-0.5 h-4 w-4 shrink-0 text-blue-400" />
+                          <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                         )}
-                      </button>
+                        <RadioGroupItem
+                          id={id}
+                          value={option.value}
+                          className="sr-only"
+                        />
+                      </Label>
                     )
                   })}
-                </div>
+                </RadioGroup>
               </fieldset>
 
               <div className="mt-8 flex items-center justify-between gap-3 sm:mt-10">
@@ -125,7 +132,7 @@ export function ApplicationForm({
                   variant="ghost"
                   onClick={() => setStep((s) => Math.max(0, s - 1))}
                   disabled={step === 0}
-                  className="text-slate-400 hover:bg-white/5 hover:text-white disabled:opacity-30"
+                  className="text-muted-foreground hover:bg-accent hover:text-accent-foreground disabled:opacity-30"
                 >
                   <ArrowLeft className="h-4 w-4" />
                   Wstecz
@@ -137,7 +144,7 @@ export function ApplicationForm({
                     size="lg"
                     onClick={() => setSubmitted(true)}
                     disabled={!allAnswered}
-                    className="bg-blue-600 text-sm font-bold text-white hover:bg-blue-700 disabled:opacity-40"
+                    className="text-sm font-bold disabled:opacity-40"
                   >
                     Sprawdź dostępność
                     <ArrowRight className="h-4 w-4" />
@@ -148,7 +155,7 @@ export function ApplicationForm({
                     size="lg"
                     onClick={() => setStep((s) => Math.min(total - 1, s + 1))}
                     disabled={!answered}
-                    className="bg-blue-600 text-sm font-bold text-white hover:bg-blue-700 disabled:opacity-40"
+                    className="text-sm font-bold disabled:opacity-40"
                   >
                     Dalej
                     <ArrowRight className="h-4 w-4" />
@@ -159,17 +166,17 @@ export function ApplicationForm({
           ) : (
             <div className="text-center">
               {qualified ? (
-                <div className="rounded-2xl border border-blue-500/20 bg-blue-500/5 p-6 sm:p-8">
-                  <p className="text-lg font-semibold text-white">
+                <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 sm:p-8">
+                  <p className="text-lg font-semibold text-foreground">
                     {application.qualified.title}
                   </p>
-                  <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-slate-400">
+                  <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
                     {application.qualified.body}
                   </p>
                   <Button
                     asChild
                     size="lg"
-                    className="mt-6 w-full max-w-md whitespace-normal rounded-xl bg-blue-600 px-6 py-5 text-sm font-bold leading-tight text-white shadow-lg hover:bg-blue-700"
+                    className="mt-6 w-full max-w-md whitespace-normal rounded-xl px-6 py-5 text-sm font-bold leading-tight shadow-lg"
                   >
                     <a
                       href={siteConfig.calendlyLink}
@@ -179,23 +186,19 @@ export function ApplicationForm({
                       {application.qualified.button}
                     </a>
                   </Button>
-                  <p className="mt-3 text-[11px] font-medium text-slate-400">
+                  <p className="mt-3 text-[11px] font-medium text-muted-foreground">
                     {application.qualified.footer}
                   </p>
                 </div>
               ) : (
-                <div className="rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8">
-                  <p className="text-lg font-semibold text-white">
+                <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">
+                  <p className="text-lg font-semibold text-foreground">
                     {application.messages.rejected.title}
                   </p>
-                  <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-slate-400">
+                  <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
                     {application.messages.rejected.body}
                   </p>
-                  <Button
-                    asChild
-                    variant="outline"
-                    className="mt-6 border-white/15 bg-white/5 text-slate-200 hover:bg-white/10 hover:text-white"
-                  >
+                  <Button asChild variant="outline" className="mt-6">
                     <a href={application.messages.rejected.href}>
                       {application.messages.rejected.button}
                     </a>

@@ -34,11 +34,11 @@ export function StorySection({
     <section
       id="problem"
       className={cn(
-        "relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-20 text-slate-300 md:py-32",
+        "relative overflow-hidden border-t border-border bg-background py-20 text-muted-foreground md:py-32",
         className
       )}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
 
       <div className="relative z-10 container mx-auto px-4 max-w-5xl">
         {/* Header - Mobile First */}
@@ -49,18 +49,18 @@ export function StorySection({
             <span>{badge}</span>
           </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white mb-6 leading-tight max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-6 leading-tight max-w-3xl mx-auto">
             {title ?? story.title}
           </h2>
           {(intro ?? story.intro) && (
             <p
-              className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg mb-4 [&_em]:text-slate-200 [&_em]:not-italic [&_em]:font-medium [&_strong]:text-white [&_strong]:font-semibold"
+              className="max-w-2xl mx-auto text-muted-foreground font-light leading-relaxed text-base sm:text-lg mb-4 [&_em]:text-foreground [&_em]:not-italic [&_em]:font-medium [&_strong]:text-foreground [&_strong]:font-semibold"
               dangerouslySetInnerHTML={{ __html: intro ?? story.intro }}
             />
           )}
           {(context ?? story.context) && (
             <p
-              className="max-w-2xl mx-auto text-slate-400 font-light leading-relaxed text-base sm:text-lg [&_em]:italic [&_em]:text-slate-200 [&_strong]:text-white [&_strong]:font-semibold"
+              className="max-w-2xl mx-auto text-muted-foreground font-light leading-relaxed text-base sm:text-lg [&_em]:italic [&_em]:text-foreground [&_strong]:text-foreground [&_strong]:font-semibold"
               dangerouslySetInnerHTML={{ __html: context ?? story.context }}
             />
           )}
@@ -77,21 +77,21 @@ export function StorySection({
               <Reveal
                 key={idx}
                 delay={idx * 0.05}
-                className="group flex flex-col gap-3 sm:gap-4 border-t border-slate-800 pt-6 pb-8 sm:pt-7 sm:pb-10 md:flex-row md:items-start md:gap-6"
+                className="group flex flex-col gap-3 sm:gap-4 border-t border-border pt-6 pb-8 sm:pt-7 sm:pb-10 md:flex-row md:items-start md:gap-6"
               >
                 <div
-                  className="text-red-400 font-black text-2xl leading-none shrink-0 group-hover:text-blue-400 transition-colors sm:text-4xl"
+                  className="text-destructive font-black text-2xl leading-none shrink-0 group-hover:text-primary transition-colors sm:text-4xl"
                   aria-hidden="true"
                 >
                   0{idx + 1}
                 </div>
                 <div className="min-w-0">
                   <h3
-                    className="text-base sm:text-lg font-bold text-white mb-2 [&_strong]:text-white"
+                    className="text-base sm:text-lg font-bold text-foreground mb-2 [&_strong]:text-foreground"
                     dangerouslySetInnerHTML={{ __html: cleanTitle }}
                   />
                   <p
-                    className="text-slate-400 leading-relaxed text-xs sm:text-sm [&_em]:text-slate-300 [&_em]:not-italic [&_em]:font-medium"
+                    className="text-muted-foreground leading-relaxed text-xs sm:text-sm [&_em]:text-muted-foreground [&_em]:not-italic [&_em]:font-medium"
                     dangerouslySetInnerHTML={{ __html: point.desc }}
                   />
                 </div>

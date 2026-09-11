@@ -19,8 +19,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default function KwalifikacjaModernizacjaPage() {
   return (
-    <main className="flex-1 bg-slate-950 text-slate-50">
-      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
+    <main className="flex-1 bg-background text-foreground">
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
 
       <ModernizacjaQualificationForm qualification={qualification} />
     </main>

@@ -5,7 +5,7 @@ import { SectionBadge } from "@/components/section-badge"
 import { StorySection } from "@/components/story-section"
 import { ContrastSection } from "@/components/contrast-section"
 import { FaqSection } from "@/components/faq-section"
-import { ArrowRight, Check, ShieldCheck } from "lucide-react"
+import { Banknote, CalendarCheck, KeyRound } from "lucide-react"
 import {
   hero,
   story,
@@ -13,12 +13,27 @@ import {
   faq,
   metadata,
   guarantee,
-  bankingStability,
   comparison,
+  process,
   offer,
 } from "@/lib/content/aplikacje-internetowe/page"
 import { GuaranteeSection } from "@/components/guarantee-section"
 import { PackageSpecSection } from "@/components/package-spec-section"
+import { OfferSection } from "@/components/offer-section"
+
+function TrustLogos({ label, logos }: { label: string; logos: string[] }) {
+  return (
+    <p className="mt-3 flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-[10px] font-medium text-muted-foreground">
+      <span>{label}</span>
+      {logos.map((logo, i) => (
+        <span key={logo} className="flex items-center gap-x-1.5">
+          {i > 0 && <span className="text-muted-foreground">•</span>}
+          <span className="font-semibold text-muted-foreground">{logo}</span>
+        </span>
+      ))}
+    </p>
+  )
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -98,7 +113,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
   }
 
   return (
-    <main className="flex-1 overflow-hidden bg-slate-950 text-slate-50">
+    <main className="flex-1 overflow-hidden bg-background text-foreground">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -106,58 +121,63 @@ export default function AplikacjeInternetoweDlaFirmPage() {
 
 
       {/* Sekcja 1: HERO */}
-      <section className="relative w-full flex flex-col bg-slate-950 text-slate-50 pt-20 pb-16 sm:pt-24 lg:pb-12 lg:min-h-screen">
-        <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/15 via-slate-950 to-slate-950"></div>
-        <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-blue-600/10 opacity-50 mix-blend-screen blur-[120px]"></div>
+      <section className="relative w-full flex flex-col bg-background text-foreground pt-20 pb-16 sm:pt-24 lg:pb-12 lg:min-h-screen">
+        <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
 
         <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col items-center justify-center text-center pt-4 sm:pt-8">
 
           <div className="w-full max-w-3xl mx-auto pt-4 sm:pt-8">
-            {/* Callout — badge jak w /projektowanie-mvp */}
             <div className="mb-5 sm:mb-7 flex justify-center animate-[fade-up_0.7s_ease-out_both]">
-              <SectionBadge className="border-white/10 bg-white/5 text-slate-400 text-[10px] sm:text-xs text-center max-w-md sm:max-w-lg">
-                {hero.callout}
-              </SectionBadge>
+              <SectionBadge variant="neutral" className="text-[10px] sm:text-xs text-center">{hero.badge}</SectionBadge>
             </div>
-
-            <h1 className="text-4xl leading-[1.12] tracking-tight text-balance text-white mb-4 sm:mb-5 animate-[fade-up_0.7s_ease-out_0.1s_both] sm:text-5xl sm:leading-[1.1] lg:text-6xl">
-              <span className="block">
-                {hero.h1Lead}{" "}
-                <span className="text-blue-500">{hero.h1Highlight}</span>{" "}
-                {hero.h1Tail}
-              </span>
-              <span className="block mt-3 sm:mt-4 text-lg font-semibold leading-relaxed text-slate-300 sm:text-xl lg:text-2xl lg:leading-snug">
-                {hero.h1Second}
-              </span>
+            <h1 className="text-4xl leading-[1.12] tracking-tight text-balance text-foreground mb-4 sm:mb-5 animate-[fade-up_0.7s_ease-out_0.1s_both] sm:text-5xl sm:leading-[1.1] lg:text-6xl">
+              {hero.title}
+              {hero.title_highlight && (
+                <span className="block mt-3 sm:mt-4 text-lg font-semibold leading-relaxed text-muted-foreground sm:text-xl lg:text-2xl lg:leading-snug">
+                  {hero.title_highlight}
+                </span>
+              )}
             </h1>
 
-            <p className="text-base sm:text-lg text-slate-400 mb-7 sm:mb-9 leading-relaxed max-w-2xl mx-auto animate-[fade-up_0.7s_ease-out_0.2s_both]">
-              {hero.subheading}
+            <p className="text-base sm:text-lg text-muted-foreground mb-7 sm:mb-9 leading-relaxed max-w-2xl mx-auto animate-[fade-up_0.7s_ease-out_0.2s_both]">
+              {hero.subtitle}
             </p>
 
-            {/* CTA */}
-            <div className="animate-[fade-up_0.7s_ease-out_0.3s_both]">
-              <Button asChild size="lg" className="w-full max-w-md mx-auto bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 text-xs font-bold rounded-xl shadow-lg whitespace-normal h-auto leading-snug sm:py-4 sm:text-sm">
-                <a href={hero.cta.href} role="button">
-                  <span className="block">{hero.cta.label}</span>
-                  <ArrowRight className="h-4 w-4 shrink-0" />
+            <div className="mb-6 sm:mb-8 animate-[fade-up_0.7s_ease-out_0.25s_both]">
+              <Button
+                asChild
+                size="lg"
+                className="w-full max-w-md mx-auto h-auto py-3 px-6 text-xs font-bold rounded-xl shadow-lg whitespace-normal text-center leading-snug sm:py-4 sm:text-sm"
+              >
+                <a href="/kwalifikacja-aplikacje" role="button">
+                  {hero.qualification.cta_line1}
                 </a>
               </Button>
+              <p className="text-[11px] sm:text-xs text-muted-foreground text-center mt-2.5 font-medium leading-relaxed">{hero.cta_sub}</p>
+              <TrustLogos label={hero.qualification.trust_label} logos={hero.qualification.trust_logos} />
+            </div>
+          </div>
 
-              {/* Micro-copy pod CTA */}
-              <ul className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-2.5">
-                {hero.microcopy.map((item, i) => (
-                  <li
-                    key={i}
-                    className={`inline-flex items-center gap-2 text-left text-xs sm:text-sm leading-snug ${
-                      item.urgent ? "text-amber-300 font-semibold" : "text-slate-400 font-medium"
-                    }`}
-                  >
-                    <Check className={`h-4 w-4 shrink-0 ${item.urgent ? "text-amber-400" : "text-blue-500"}`} />
-                    <span>{item.title}</span>
-                  </li>
-                ))}
-              </ul>
+          <div className="w-full max-w-4xl mx-auto mt-10 sm:mt-14 text-left animate-[fade-up_0.7s_ease-out_0.35s_both]">
+            <div className="grid gap-y-6 sm:grid-cols-3 sm:gap-y-0">
+              {hero.pegs.map((peg, i) => {
+                const Icon = [Banknote, CalendarCheck, KeyRound][i % 3]
+                const isLast = i === hero.pegs.length - 1
+                const cellClass = [
+                  i > 0 ? "border-t border-border pt-5 sm:mt-0 sm:border-t-0 sm:pt-0 sm:border-l" : "",
+                  !isLast ? "sm:pr-8" : "",
+                  i > 0 ? "sm:pl-8" : "",
+                ]
+                  .filter(Boolean)
+                  .join(" ")
+                return (
+                  <div key={peg.title} className={cellClass}>
+                    <Icon className="mb-3 h-5 w-5 sm:h-6 sm:w-6 text-primary" />
+                    <p className="text-sm font-semibold text-foreground leading-snug mb-1.5">{peg.title}</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{peg.desc}</p>
+                  </div>
+                )
+              })}
             </div>
           </div>
         </div>
@@ -171,9 +191,6 @@ export default function AplikacjeInternetoweDlaFirmPage() {
         points={story.points}
         className="py-16 sm:py-20"
       />
-
-      {/* Sekcja 3: STOS WARTOŚCI (Fundament + Bonusy) */}
-      <PackageSpecSection spec={valueStack} className="py-16 sm:py-20" />
 
       {/* Sekcja: PORÓWNANIE – tabela */}
       <ContrastSection
@@ -191,36 +208,26 @@ export default function AplikacjeInternetoweDlaFirmPage() {
         className="py-16 sm:py-20"
       />
 
-      {/* Sekcja: Bankowa stabilność w realiach MŚP */}
-      <section className="relative overflow-hidden border-t border-slate-900/50 bg-slate-950 py-12 sm:py-20 text-slate-300 md:py-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/10 via-slate-950 to-slate-950"></div>
-        <div className="relative z-10 container mx-auto px-4 max-w-3xl">
-          <div className="mb-8 sm:mb-12 text-center">
-            <div className="mb-3 sm:mb-4">
-              <SectionBadge>
-                <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                <span>{bankingStability.badge}</span>
-              </SectionBadge>
-            </div>
-            <h2 className="text-xl sm:text-3xl md:text-5xl font-extrabold tracking-tight text-white mb-3 sm:mb-6 leading-snug sm:leading-tight">
-              {bankingStability.title}
-            </h2>
-          </div>
+      {/* Sekcja: PROCES WDROŻENIA – 3 etapy */}
+      <OfferSection
+        badge={process.badge}
+        mdColumns="3"
+        sectionId="proces"
+        offer={{
+          title: process.title,
+          subheading: process.subheading,
+          paths: process.paths.map((path) => ({
+            title: path.title,
+            situation: path.situation,
+            desc: path.desc,
+            result: path.result,
+          })),
+        }}
+        className="py-16 sm:py-20"
+      />
 
-          <blockquote className="mb-8 sm:mb-12 border-l-2 border-blue-500/60 pl-4 sm:pl-6">
-            <p className="text-slate-300 font-light leading-relaxed text-sm sm:text-base md:text-lg">
-              {bankingStability.intro}
-            </p>
-          </blockquote>
-
-          <h3 className="mb-2 sm:mb-4 text-base sm:text-2xl font-bold text-white leading-snug sm:leading-tight">
-            {bankingStability.subtitle}
-          </h3>
-          <p className="text-slate-400 font-light leading-relaxed text-sm sm:text-base md:text-lg">
-            {bankingStability.text}
-          </p>
-        </div>
-      </section>
+      {/* Sekcja: STOS WARTOŚCI (Fundament + Bonusy) */}
+      <PackageSpecSection spec={valueStack} className="py-16 sm:py-20" />
 
       {/* Sekcja 6: Gwarancje i Bezpieczeństwo */}
       <GuaranteeSection guarantee={guarantee} />
