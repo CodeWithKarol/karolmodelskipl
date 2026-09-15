@@ -1,11 +1,13 @@
 import { Metadata } from "next"
 import Link from "next/link"
 import { getAllPosts } from "@/lib/blog"
+import { siloLabel } from "@/lib/blog-silos"
 import { CtaSection } from "@/components/cta-section"
 import { OfferSection } from "@/components/offer-section"
-import { FileText, Lightbulb, ShieldCheck, TrendingUp, BookOpen } from "lucide-react"
+import { Lightbulb, ShieldCheck, TrendingUp, BookOpen } from "lucide-react"
 import { SectionBadge } from "@/components/section-badge"
 import { FeaturedPosts, type FeaturedPostItem } from "@/components/featured-posts"
+import { BlogArticles } from "@/components/blog-articles"
 import { content } from "@/lib/content"
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -23,10 +25,6 @@ export default function BlogHubPage() {
   const posts = getAllPosts()
   const { blog } = content
 
-  const silo1 = posts.filter((p) => p.silo === "Fundamenty & Strategia")
-  const silo2 = posts.filter((p) => p.silo === "Technologia w Praktyce")
-  const silo3 = posts.filter((p) => p.silo === "Case Studies")
-
   const postsBySlug = new Map(posts.map((post) => [post.slug, post]))
   const featuredItems: FeaturedPostItem[] = blog.featured.items.map((art) => {
     const post = postsBySlug.get(art.slug)
@@ -39,6 +37,10 @@ export default function BlogHubPage() {
       date: post?.date,
     }
   })
+
+  const featuredShown = featuredItems.slice(0, 3)
+  const featuredSlugs = new Set(featuredShown.map((item) => item.slug))
+  const remainingPosts = posts.filter((post) => !featuredSlugs.has(post.slug))
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -156,56 +158,25 @@ export default function BlogHubPage() {
             </p>
           </div>
 
-          <FeaturedPosts posts={featuredItems} />
+          <FeaturedPosts
+            posts={featuredShown}
+            className={remainingPosts.length > 0 ? "mb-10 sm:mb-16" : "mb-20"}
+          />
         </div>
-        <section
-          className="flex flex-1 flex-col gap-16"
-          aria-label="Lista artykułów"
-        >
-          {[
-            { title: "Fundamenty & Strategia", posts: silo1 },
-            { title: "Technologia w Praktyce", posts: silo2 },
-            { title: "Case Studies", posts: silo3 },
-          ].map(
-            (silo, idx) =>
-              silo.posts.length > 0 && (
-                <div key={idx}>
-                  <div className="mb-8 flex items-center gap-3 border-b border-border pb-4">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-primary/20 bg-primary/10">
-                      <FileText className="h-5 w-5 text-primary" />
-                    </div>
-                    <h2 className="text-2xl font-semibold tracking-tight text-foreground">
-                      {silo.title}
-                    </h2>
-                  </div>
-                  <div className="grid gap-5 sm:grid-cols-2">
-                    {silo.posts.map((post) => (
-                      <Link
-                        key={post.slug}
-                        href={`/blog/${post.slug}`}
-                        className="group block"
-                      >
-                        <article className="relative h-full overflow-hidden rounded-2xl border border-border/60 bg-muted/50 p-6 backdrop-blur-sm transition-all hover:border-primary/30 hover:bg-accent hover:shadow-[0_0_30px_-10px_rgba(59,130,246,0.15)]">
-                          <div className="absolute top-0 left-0 h-1 w-full bg-border transition-colors group-hover:bg-primary"></div>
-                          <h3 className="text-lg leading-tight font-semibold text-foreground transition-colors group-hover:text-primary">
-                            {post.title}
-                          </h3>
-                          <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
-                            {post.excerpt}
-                          </p>
-                          <div className="mt-6 flex flex-wrap items-center gap-3 text-[13px] font-medium text-muted-foreground">
-                            <span>{post.readingTime} czytania</span>
-                            <span>•</span>
-                            <span>{post.date}</span>
-                          </div>
-                        </article>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )
-          )}
-        </section>
+        {remainingPosts.length > 0 && (
+          <section aria-label="Lista artykułów" className="mb-20">
+            <BlogArticles
+              posts={remainingPosts.map((post) => ({
+                slug: post.slug,
+                title: post.title,
+                excerpt: post.excerpt,
+                date: post.date,
+                silo: siloLabel(post.silo),
+                readingTime: post.readingTime,
+              }))}
+            />
+          </section>
+        )}
 
         <aside className="hidden">
           <div className="rounded-xl border border-border/50 bg-background/80 p-6 sm:p-8">

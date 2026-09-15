@@ -16,6 +16,11 @@ export interface BlogPost {
   content: string // Markdown content
 }
 
+export type BlogPostSummary = Pick<
+  BlogPost,
+  "slug" | "title" | "excerpt" | "date" | "silo" | "readingTime"
+>
+
 export function getPostSlugs() {
   if (!fs.existsSync(postsDirectory)) return []
   return fs.readdirSync(postsDirectory)

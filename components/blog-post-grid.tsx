@@ -1,9 +1,9 @@
 import { BlogPostCard } from "@/components/blog-post-card"
-import type { BlogPost } from "@/lib/blog"
+import type { BlogPostSummary } from "@/lib/blog"
 import { cn } from "@/lib/utils"
 
 interface BlogPostGridProps {
-  posts: BlogPost[]
+  posts: BlogPostSummary[]
   showBadge?: boolean
   className?: string
 }
