@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button"
+import { CtaButton } from "@/components/cta-button"
 import { ShieldCheck, UserCheck, FileCode, Gem } from "lucide-react"
 import { content } from "@/lib/content"
 import { SectionBadge } from "@/components/section-badge"
@@ -48,9 +48,9 @@ export function HeroSection() {
           {/* Main CTA — below the value props */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mt-6 sm:mt-8 animate-[fade-up_0.7s_ease-out_0.35s_both]">
             <a href="#zwrotnica" className="w-full sm:w-auto">
-              <Button className="w-full sm:w-auto px-8 py-4 text-sm font-semibold rounded-xl shadow-lg transition-all whitespace-normal h-auto leading-tight">
+              <CtaButton className="w-full sm:w-auto">
                 Wybierz wyzwanie w Twojej firmie ↓
-              </Button>
+              </CtaButton>
             </a>
             <span className="text-xs text-muted-foreground text-center sm:text-left">lub sprawdź doświadczenie poniżej</span>
           </div>

@@ -3,6 +3,7 @@
 import * as React from "react"
 import { Search, X } from "lucide-react"
 import { BlogPostGrid } from "@/components/blog-post-grid"
+import { Button } from "@/components/ui/button"
 import {
   InputGroup,
   InputGroupAddon,
@@ -106,16 +107,18 @@ export function BlogArticles({ posts }: { posts: BlogPostSummary[] }) {
         <p aria-live="polite" className="text-sm text-muted-foreground">
           {filtered.length} z {posts.length} artykułów
           {isFiltering && (
-            <button
+            <Button
               type="button"
+              variant="link"
+              size="sm"
               onClick={() => {
                 setQuery("")
                 setSilo("all")
               }}
-              className="ml-3 font-medium text-primary transition-colors hover:underline"
+              className="ml-1 h-auto p-0"
             >
               Wyczyść filtry
-            </button>
+            </Button>
           )}
         </p>
       </div>

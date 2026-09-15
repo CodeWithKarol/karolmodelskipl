@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import { GuaranteeSection } from "@/components/guarantee-section"
-import { Button } from "@/components/ui/button"
+import { CtaButton } from "@/components/cta-button"
 import { Banknote, CalendarCheck, KeyRound } from "lucide-react"
 import { CtaSection } from "@/components/cta-section"
 import { SectionBadge } from "@/components/section-badge"
@@ -138,15 +138,11 @@ export default function ProjektowanieMvpPage() {
             </p>
 
             <div className="mb-6 sm:mb-8 animate-[fade-up_0.7s_ease-out_0.25s_both]">
-              <Button
-                asChild
-                size="lg"
-                className="w-full max-w-md mx-auto py-3 px-6 text-sm font-semibold rounded-xl shadow-lg sm:py-4"
-              >
-                <a href="/kwalifikacja-saas" role="button">
+              <CtaButton asChild className="w-full max-w-md mx-auto">
+                <a href="/kwalifikacja-saas">
                   {mvp.hero.qualification.cta_line1}
                 </a>
-              </Button>
+              </CtaButton>
               <p className="text-[11px] sm:text-xs text-muted-foreground text-center mt-2.5 font-medium leading-relaxed">{mvp.hero.cta_sub}</p>
               <TrustLogos label={mvp.hero.qualification.trust_label} logos={mvp.hero.qualification.trust_logos} />
             </div>

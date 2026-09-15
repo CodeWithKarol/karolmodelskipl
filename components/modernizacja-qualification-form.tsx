@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { CtaButton } from "@/components/cta-button"
 import { Label } from "@/components/ui/label"
 import { Progress } from "@/components/ui/progress"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
@@ -176,11 +177,7 @@ export function ModernizacjaQualificationForm({
                   <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
                     {qualification.qualified.body}
                   </p>
-                  <Button
-                    asChild
-                    size="lg"
-                    className="mt-6 w-full max-w-md whitespace-normal rounded-xl px-6 py-5 text-sm font-semibold leading-tight shadow-lg"
-                  >
+                  <CtaButton asChild className="mt-6 w-full max-w-md">
                     <a
                       href={siteConfig.calendlyLink}
                       target="_blank"
@@ -188,7 +185,7 @@ export function ModernizacjaQualificationForm({
                     >
                       {qualification.qualified.button}
                     </a>
-                  </Button>
+                  </CtaButton>
                   <p className="mt-3 text-[11px] font-medium text-muted-foreground">
                     {qualification.qualified.footer}
                   </p>
