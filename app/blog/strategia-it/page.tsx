@@ -88,7 +88,7 @@ export default function StrategiaItCategoryPage() {
               Doradztwo i architektura IT dla firm
             </SectionBadge>
           </div>
-          <h1 className="mb-5 max-w-4xl text-3xl leading-[1.1] font-extrabold tracking-tighter text-balance text-foreground sm:mx-auto sm:mb-6 sm:text-4xl lg:text-6xl">
+          <h1 className="mb-5 max-w-4xl text-3xl leading-[1.1] font-semibold tracking-tighter text-balance text-foreground sm:mx-auto sm:mb-6 sm:text-4xl lg:text-6xl">
             Strategia IT i Niezależne Partnerstwo Technologiczne – Poradniki
             i Praktyka
           </h1>
@@ -111,7 +111,7 @@ export default function StrategiaItCategoryPage() {
             </span>
             <Link
               href="/doradztwo-techniczne-dla-firm"
-              className="group inline-flex items-center gap-1.5 font-bold text-primary transition-colors hover:text-primary"
+              className="group inline-flex items-center gap-1.5 font-semibold text-primary transition-colors hover:text-primary"
             >
               Przejdź do oferty: Doradztwo techniczne i partnerstwo
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -149,7 +149,7 @@ export default function StrategiaItCategoryPage() {
 
       <main className="container mx-auto max-w-7xl px-4 py-12 sm:py-24">
         <div className="mb-8 text-center sm:mb-12">
-          <h2 className="mb-2.5 text-xl leading-snug font-extrabold tracking-tight text-foreground sm:mb-4 sm:text-3xl md:text-4xl">
+          <h2 className="mb-2.5 text-xl leading-snug font-semibold tracking-tight text-foreground sm:mb-4 sm:text-3xl md:text-4xl">
             Poradniki i analizy dotyczące strategii oraz architektury IT:
           </h2>
         </div>

@@ -130,10 +130,10 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             <div className="mb-5 sm:mb-7 flex justify-center animate-[fade-up_0.7s_ease-out_both]">
               <SectionBadge variant="neutral" className="text-[10px] sm:text-xs text-center">{hero.badge}</SectionBadge>
             </div>
-            <h1 className="text-4xl leading-[1.12] tracking-tight text-balance text-foreground mb-4 sm:mb-5 animate-[fade-up_0.7s_ease-out_0.1s_both] sm:text-5xl sm:leading-[1.1] lg:text-6xl">
+            <h1 className="text-4xl leading-[1.12] tracking-tight text-balance text-foreground mb-4 sm:mb-5 animate-[fade-up_0.7s_ease-out_0.1s_both] sm:text-5xl sm:leading-[1.1] lg:text-6xl font-semibold">
               {hero.title}
               {hero.title_highlight && (
-                <span className="block mt-3 sm:mt-4 text-lg font-semibold leading-relaxed text-muted-foreground sm:text-xl lg:text-2xl lg:leading-snug">
+                <span className="block mt-3 sm:mt-4 text-lg font-medium leading-relaxed text-muted-foreground sm:text-xl lg:text-2xl lg:leading-snug">
                   {hero.title_highlight}
                 </span>
               )}
@@ -147,7 +147,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
               <Button
                 asChild
                 size="lg"
-                className="w-full max-w-md mx-auto h-auto py-3 px-6 text-xs font-bold rounded-xl shadow-lg whitespace-normal text-center leading-snug sm:py-4 sm:text-sm"
+                className="w-full max-w-md mx-auto h-auto py-3 px-6 text-xs font-semibold rounded-xl shadow-lg whitespace-normal text-center leading-snug sm:py-4 sm:text-sm"
               >
                 <a href="/kwalifikacja-aplikacje" role="button">
                   {hero.qualification.cta_line1}

@@ -49,11 +49,11 @@ export function FaqSection({ faq: customFaq, className }: FaqSectionProps = {}) 
             <span>FAQ</span>
           </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6 leading-tight">
             {title}
           </h2>
           {faq.subtitle && (
-            <p className="text-muted-foreground font-light leading-relaxed text-base sm:text-lg">
+            <p className="text-muted-foreground font-normal leading-relaxed text-base sm:text-lg">
               {faq.subtitle}
             </p>
           )}
@@ -68,7 +68,7 @@ export function FaqSection({ faq: customFaq, className }: FaqSectionProps = {}) 
                 value={`item-${index}`}
                 className="group/faq border-border transition-colors data-[state=open]:border-primary/40"
               >
-                <AccordionTrigger className="py-4 sm:py-6 text-left text-sm sm:text-base font-bold text-foreground hover:text-foreground hover:no-underline transition-colors">
+                <AccordionTrigger className="py-4 sm:py-6 text-left text-sm sm:text-base font-semibold text-foreground hover:text-foreground hover:no-underline transition-colors">
                   <span className="group-hover/faq:text-foreground group-hover/faq:translate-x-0.5 transition-transform duration-300">
                     {item.question}
                   </span>

@@ -13,7 +13,7 @@ function FunnelHeader() {
     <div className="fixed top-0 z-50 w-full border-b border-border bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center px-4 sm:px-6">
         <Link href="/" className="group flex shrink-0 items-center">
-          <span className="text-[15px] font-bold tracking-tight text-foreground transition-colors group-hover:text-foreground">
+          <span className="text-[15px] font-semibold tracking-tight text-foreground transition-colors group-hover:text-foreground">
             Karol Modelski
           </span>
         </Link>
@@ -80,7 +80,7 @@ function FunnelFooter({ variant }: { variant: FunnelVariant }) {
       <div className="container mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr] md:gap-12">
           <div>
-            <p className="text-base font-bold text-foreground sm:text-lg">
+            <p className="text-base font-semibold text-foreground sm:text-lg">
               {title}
             </p>
             <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
@@ -89,7 +89,7 @@ function FunnelFooter({ variant }: { variant: FunnelVariant }) {
           </div>
 
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-wider text-muted-foreground sm:text-xs">Kontakt</p>
+            <p className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground sm:text-xs">Kontakt</p>
             <ul className="mt-4 space-y-2.5 text-sm">
               <li>
                 <a href="mailto:kontakt@karolmodelski.pl" className="text-muted-foreground transition-colors hover:text-foreground hover:underline underline-offset-4">

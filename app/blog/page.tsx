@@ -104,7 +104,7 @@ export default function BlogHubPage() {
           <div className="mb-4 sm:mb-6 flex justify-start sm:justify-center">
             <SectionBadge><BookOpen className="h-3.5 w-3.5 shrink-0" />{blog.header.badge}</SectionBadge>
           </div>
-          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tighter text-foreground mb-5 sm:mb-6 leading-[1.1] max-w-4xl sm:mx-auto text-balance">
+          <h1 className="text-3xl sm:text-4xl lg:text-6xl font-semibold tracking-tighter text-foreground mb-5 sm:mb-6 leading-[1.1] max-w-4xl sm:mx-auto text-balance">
             {blog.header.title}
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground mb-8 sm:mb-10 leading-relaxed max-w-2xl sm:mx-auto text-pretty">
@@ -148,10 +148,10 @@ export default function BlogHubPage() {
               <span>{blog.featured.badge}</span>
             </SectionBadge>
           </div>
-            <h2 className="text-xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-foreground mb-2.5 sm:mb-4 leading-snug">
+            <h2 className="text-xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-2.5 sm:mb-4 leading-snug">
               {blog.featured.title}
             </h2>
-            <p className="max-w-2xl mx-auto text-muted-foreground font-light leading-relaxed text-xs sm:text-base">
+            <p className="max-w-2xl mx-auto text-muted-foreground font-normal leading-relaxed text-xs sm:text-base">
               {blog.featured.subtitle}
             </p>
           </div>
@@ -174,7 +174,7 @@ export default function BlogHubPage() {
                     <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-primary/20 bg-primary/10">
                       <FileText className="h-5 w-5 text-primary" />
                     </div>
-                    <h2 className="text-2xl font-bold tracking-tight text-foreground">
+                    <h2 className="text-2xl font-semibold tracking-tight text-foreground">
                       {silo.title}
                     </h2>
                   </div>
@@ -187,7 +187,7 @@ export default function BlogHubPage() {
                       >
                         <article className="relative h-full overflow-hidden rounded-2xl border border-border/60 bg-muted/50 p-6 backdrop-blur-sm transition-all hover:border-primary/30 hover:bg-accent hover:shadow-[0_0_30px_-10px_rgba(59,130,246,0.15)]">
                           <div className="absolute top-0 left-0 h-1 w-full bg-border transition-colors group-hover:bg-primary"></div>
-                          <h3 className="text-lg leading-tight font-bold text-foreground transition-colors group-hover:text-primary">
+                          <h3 className="text-lg leading-tight font-semibold text-foreground transition-colors group-hover:text-primary">
                             {post.title}
                           </h3>
                           <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
@@ -209,15 +209,15 @@ export default function BlogHubPage() {
 
         <aside className="hidden">
           <div className="rounded-xl border border-border/50 bg-background/80 p-6 sm:p-8">
-            <h3 className="mb-3 text-xl font-bold tracking-tight text-foreground">
+            <h3 className="mb-3 text-xl font-semibold tracking-tight text-foreground">
               {blog.offer.title}
             </h3>
-            <p className="mb-6 text-sm leading-relaxed font-light text-muted-foreground">
+            <p className="mb-6 text-sm leading-relaxed font-normal text-muted-foreground">
               {blog.offer.description}
             </p>
             <Link
               href="https://www.karolmodelski.pl/#kontakt"
-              className="mt-4 flex h-auto min-h-[3rem] w-full items-center justify-center rounded-lg px-4 py-3 text-center text-sm leading-tight font-bold text-balance transition-colors"
+              className="mt-4 flex h-auto min-h-[3rem] w-full items-center justify-center rounded-lg px-4 py-3 text-center text-sm leading-tight font-semibold text-balance transition-colors"
             >
               {blog.offer.cta}
             </Link>

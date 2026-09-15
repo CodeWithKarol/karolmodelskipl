@@ -15,14 +15,14 @@ export function Footer() {
               <div className="relative h-10 w-10 shrink-0 rounded-full overflow-hidden ring-1 ring-primary/20 shadow-[0_8px_30px_-10px_color-mix(in_oklch,var(--primary)_40%,transparent)]">
                 <Image src="/karol.webp" alt="Karol Modelski" fill sizes="40px" className="object-cover" />
               </div>
-              <h3 className="text-lg font-bold text-foreground">{footer.brand.name}</h3>
+              <h3 className="text-lg font-semibold text-foreground">{footer.brand.name}</h3>
             </div>
-            <p className="text-xs text-primary font-bold uppercase tracking-wider">{footer.brand.title}</p>
+            <p className="text-xs text-primary font-medium uppercase tracking-wider">{footer.brand.title}</p>
             <p className="text-sm leading-relaxed text-muted-foreground max-w-xs">{footer.brand.description}</p>
           </div>
 
           <div className="text-center lg:text-left space-y-4">
-            <h3 className="text-sm font-bold text-foreground flex items-start justify-center lg:justify-start gap-2"><Briefcase className="mt-0.5 h-4 w-4 text-primary shrink-0" />{footer.solutions.title}</h3>
+            <h3 className="text-sm font-semibold text-foreground flex items-start justify-center lg:justify-start gap-2"><Briefcase className="mt-0.5 h-4 w-4 text-primary shrink-0" />{footer.solutions.title}</h3>
             <ul className="space-y-2.5">
               {footer.solutions.items.map((item, i) => (
                 <li key={i}>
@@ -33,7 +33,7 @@ export function Footer() {
           </div>
 
           <div className="text-center lg:text-left space-y-4">
-            <h3 className="text-sm font-bold text-foreground flex items-start justify-center lg:justify-start gap-2"><MessageCircle className="mt-0.5 h-4 w-4 text-primary shrink-0" />{footer.contact.title}</h3>
+            <h3 className="text-sm font-semibold text-foreground flex items-start justify-center lg:justify-start gap-2"><MessageCircle className="mt-0.5 h-4 w-4 text-primary shrink-0" />{footer.contact.title}</h3>
 
             <div className="space-y-1 text-sm">
               <p>

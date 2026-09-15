@@ -20,13 +20,13 @@ export function BusinessImpactSection() {
       <div className="relative z-10 container mx-auto max-w-7xl px-4">
         {/* Nagłówek Sekcji dopasowany do reszty strony */}
         <div className="mx-auto mb-16 max-w-3xl text-center md:mb-20">
-          <h2 className="mb-6 text-[2rem] leading-[1.15] font-extrabold tracking-tight text-balance text-foreground sm:text-4xl md:text-5xl lg:text-[3.5rem]">
+          <h2 className="mb-6 text-[2rem] leading-[1.15] font-semibold tracking-tight text-balance text-foreground sm:text-4xl md:text-5xl lg:text-[3.5rem]">
             {impact.title.split("?")[0]}? <br className="hidden sm:block" />
             <span className="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent">
               {impact.title.split("?")[1] ? impact.title.split("?")[1].trim() : ""}
             </span>
           </h2>
-          <p className="mx-auto max-w-2xl px-2 text-[15px] leading-relaxed font-light text-balance text-muted-foreground sm:px-0 sm:text-lg md:text-xl">
+          <p className="mx-auto max-w-2xl px-2 text-[15px] leading-relaxed font-normal text-balance text-muted-foreground sm:px-0 sm:text-lg md:text-xl">
             {impact.description}
           </p>
         </div>
@@ -49,11 +49,11 @@ export function BusinessImpactSection() {
                   <item.icon className="h-7 w-7 text-primary transition-colors group-hover:text-info sm:h-8 sm:w-8" />
                 </div>
 
-                <h3 className="mb-3 text-xl leading-snug font-bold text-foreground sm:text-2xl">
+                <h3 className="mb-3 text-xl leading-snug font-semibold text-foreground sm:text-2xl">
                   {item.title}
                 </h3>
 
-                <p className="mt-auto text-[15px] leading-relaxed font-light text-muted-foreground sm:text-[17px]">
+                <p className="mt-auto text-[15px] leading-relaxed font-normal text-muted-foreground sm:text-[17px]">
                   {item.description}
                 </p>
               </div>

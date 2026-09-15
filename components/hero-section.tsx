@@ -24,7 +24,7 @@ export function HeroSection() {
               {hero.badge}
             </SectionBadge>
           </div>
-          <h1 className="text-4xl leading-[1.12] tracking-tight text-balance text-foreground mb-4 sm:mb-5 animate-[fade-up_0.7s_ease-out_0.1s_both] sm:text-5xl sm:leading-[1.1] lg:text-6xl">
+          <h1 className="text-4xl leading-[1.12] tracking-tight text-balance text-foreground mb-4 sm:mb-5 animate-[fade-up_0.7s_ease-out_0.1s_both] sm:text-5xl sm:leading-[1.1] lg:text-6xl font-semibold">
             {hero.h1}
           </h1>
           <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed max-w-xl animate-[fade-up_0.7s_ease-out_0.2s_both]">
@@ -48,7 +48,7 @@ export function HeroSection() {
           {/* Main CTA — below the value props */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 mt-6 sm:mt-8 animate-[fade-up_0.7s_ease-out_0.35s_both]">
             <a href="#zwrotnica" className="w-full sm:w-auto">
-              <Button className="w-full sm:w-auto px-8 py-4 text-sm font-bold rounded-xl shadow-lg transition-all whitespace-normal h-auto leading-tight">
+              <Button className="w-full sm:w-auto px-8 py-4 text-sm font-semibold rounded-xl shadow-lg transition-all whitespace-normal h-auto leading-tight">
                 Wybierz wyzwanie w Twojej firmie ↓
               </Button>
             </a>
@@ -70,12 +70,12 @@ export function HeroSection() {
 
             {/* Elegancka, minimalistyczna belka na zdjęciu */}
             <div className="absolute bottom-0 left-0 right-0 z-20 p-5 sm:p-6">
-              <p className="text-sm sm:text-base font-bold text-foreground">Karol Modelski</p>
+              <p className="text-sm sm:text-base font-semibold text-foreground">Karol Modelski</p>
               <p className="text-[11px] sm:text-xs text-primary font-medium mb-3">Architekt Oprogramowania &amp; Niezależny Partner Technologiczny</p>
 
               <div className="pt-3 border-t border-border flex items-center justify-between gap-3 text-[10px] sm:text-[11px] text-muted-foreground">
                 <span className="shrink-0">Standardy bankowe:</span>
-                <span className="font-semibold text-foreground text-right">Citibank • BNP Paribas</span>
+                <span className="font-medium text-foreground text-right">Citibank • BNP Paribas</span>
               </div>
             </div>
           </div>

@@ -17,7 +17,7 @@ export function ContactHubSection() {
               Inżynieria IT • Bezpieczeństwo Bankowe • Bez Pośredników
             </SectionBadge>
           </div>
-          <h2 className="mx-auto mb-4 max-w-3xl text-2xl font-bold leading-tight tracking-tight text-balance text-foreground sm:text-3xl md:text-4xl">
+          <h2 className="mx-auto mb-4 max-w-3xl text-2xl font-semibold leading-tight tracking-tight text-balance text-foreground sm:text-3xl md:text-4xl">
             Nie wiesz, która ścieżka rozwiąże problem w Twojej firmie?
           </h2>
           <p className="mx-auto max-w-2xl text-sm leading-relaxed text-pretty text-muted-foreground sm:text-base md:text-lg">
@@ -66,7 +66,7 @@ export function ContactHubSection() {
           </p>
           <a
             href="#zwrotnica"
-            className="inline-flex items-center gap-1.5 text-xs font-bold text-primary transition-colors hover:text-primary"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-primary"
           >
             Wróć do wyboru obszarów współpracy ↑
           </a>

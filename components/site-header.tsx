@@ -30,7 +30,7 @@ function MobileNavGroup({
         type="button"
         onClick={onToggle}
         aria-expanded={open}
-        className="flex min-h-[56px] w-full items-center justify-between gap-4 py-4 text-left text-base font-bold text-foreground transition-colors active:text-primary"
+        className="flex min-h-[56px] w-full items-center justify-between gap-4 py-4 text-left text-base font-semibold text-foreground transition-colors active:text-primary"
       >
         <span>{title}</span>
         <ChevronDown
@@ -82,7 +82,7 @@ export function SiteHeader() {
           {/* Logo / Brand */}
           <div className="flex items-center gap-4 sm:gap-6">
             <Link href="/" className="group flex shrink-0 items-center space-x-2">
-              <span className="text-[14px] font-bold tracking-tight text-foreground transition-colors group-hover:text-foreground sm:text-[15px]">
+              <span className="text-[14px] font-semibold tracking-tight text-foreground transition-colors group-hover:text-foreground sm:text-[15px]">
                 {header.brand.name}
               </span>
             </Link>
@@ -108,7 +108,7 @@ export function SiteHeader() {
                                 <span className="text-[14px] font-semibold text-foreground group-hover/item:text-foreground transition-colors">
                                   {item.title}
                                 </span>
-                                <span className="text-[12px] leading-relaxed text-muted-foreground font-light">
+                                <span className="text-[12px] leading-relaxed text-muted-foreground font-normal">
                                   {item.description}
                                 </span>
                               </Link>
@@ -136,7 +136,7 @@ export function SiteHeader() {
                                 <span className="text-[14px] font-semibold text-foreground group-hover/item:text-foreground transition-colors">
                                   {item.title}
                                 </span>
-                                <span className="text-[12px] leading-relaxed text-muted-foreground font-light">
+                                <span className="text-[12px] leading-relaxed text-muted-foreground font-normal">
                                   {item.description}
                                 </span>
                               </Link>

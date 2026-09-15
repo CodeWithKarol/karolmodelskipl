@@ -94,7 +94,7 @@ export default function SzybkaWersjaStartowaCategoryPage() {
                 Szybka wersja startowa aplikacji (MVP)
               </SectionBadge>
             </div>
-            <h1 className="mb-6 max-w-4xl text-3xl leading-tight font-extrabold tracking-tighter text-balance text-foreground sm:mx-auto sm:mb-8 sm:text-5xl sm:leading-[1.05] lg:text-6xl">
+            <h1 className="mb-6 max-w-4xl text-3xl leading-tight font-semibold tracking-tighter text-balance text-foreground sm:mx-auto sm:mb-8 sm:text-5xl sm:leading-[1.05] lg:text-6xl">
               Szybka Wersja Startowa (MVP) – Poradniki i Praktyka
             </h1>
             <p className="mb-8 max-w-2xl text-base leading-relaxed text-pretty text-muted-foreground sm:mx-auto sm:mb-10 sm:text-lg lg:text-xl">
@@ -114,7 +114,7 @@ export default function SzybkaWersjaStartowaCategoryPage() {
               </span>
               <Link
                 href="/projektowanie-mvp"
-                className="group inline-flex items-center gap-1.5 font-bold text-primary transition-colors hover:text-primary"
+                className="group inline-flex items-center gap-1.5 font-semibold text-primary transition-colors hover:text-primary"
               >
                 Przejdź do oferty: Wdrożenie MVP w 30 dni
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -153,7 +153,7 @@ export default function SzybkaWersjaStartowaCategoryPage() {
 
       <main className="container mx-auto max-w-7xl px-4 py-12 sm:py-24">
         <div className="mb-8 text-center sm:mb-12">
-          <h2 className="mb-2.5 text-xl leading-snug font-extrabold tracking-tight text-foreground sm:mb-4 sm:text-3xl md:text-4xl">
+          <h2 className="mb-2.5 text-xl leading-snug font-semibold tracking-tight text-foreground sm:mb-4 sm:text-3xl md:text-4xl">
             Poradniki i analizy dotyczące budowy MVP:
           </h2>
         </div>

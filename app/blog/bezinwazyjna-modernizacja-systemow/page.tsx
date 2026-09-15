@@ -84,7 +84,7 @@ export default function ModernizacjaCategoryPage() {
               Poradniki i praktyka IT
             </SectionBadge>
           </div>
-          <h1 className="mb-5 max-w-4xl text-3xl leading-[1.1] font-extrabold tracking-tighter text-balance text-foreground sm:mx-auto sm:mb-6 sm:text-4xl lg:text-6xl">
+          <h1 className="mb-5 max-w-4xl text-3xl leading-[1.1] font-semibold tracking-tighter text-balance text-foreground sm:mx-auto sm:mb-6 sm:text-4xl lg:text-6xl">
             Bezinwazyjna Modernizacja i Przyspieszanie Systemów – Poradniki i
             Praktyka IT
           </h1>
@@ -105,7 +105,7 @@ export default function ModernizacjaCategoryPage() {
             </span>
             <Link
               href="/naprawa-i-modernizacja-aplikacji"
-              className="group inline-flex items-center gap-1.5 font-bold text-primary transition-colors hover:text-primary"
+              className="group inline-flex items-center gap-1.5 font-semibold text-primary transition-colors hover:text-primary"
             >
               Przejdź do oferty: Bezinwazyjna modernizacja aplikacji
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -143,7 +143,7 @@ export default function ModernizacjaCategoryPage() {
 
       <main className="container mx-auto max-w-7xl px-4 py-12 sm:py-24">
         <div className="mb-8 text-center sm:mb-12">
-          <h2 className="mb-2.5 text-xl leading-snug font-extrabold tracking-tight text-foreground sm:mb-4 sm:text-3xl md:text-4xl">
+          <h2 className="mb-2.5 text-xl leading-snug font-semibold tracking-tight text-foreground sm:mb-4 sm:text-3xl md:text-4xl">
             Poradniki i analizy dotyczące modernizacji oprogramowania:
           </h2>
         </div>

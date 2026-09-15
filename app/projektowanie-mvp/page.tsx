@@ -124,10 +124,10 @@ export default function ProjektowanieMvpPage() {
             <div className="mb-5 sm:mb-7 flex justify-center animate-[fade-up_0.7s_ease-out_both]">
               <SectionBadge variant="neutral" className="text-[10px] sm:text-xs text-center">{mvp.hero.badge}</SectionBadge>
             </div>
-            <h1 className="text-4xl leading-[1.12] tracking-tight text-balance text-foreground mb-4 sm:mb-5 animate-[fade-up_0.7s_ease-out_0.1s_both] sm:text-5xl sm:leading-[1.1] lg:text-6xl">
+            <h1 className="text-4xl leading-[1.12] tracking-tight text-balance text-foreground mb-4 sm:mb-5 animate-[fade-up_0.7s_ease-out_0.1s_both] sm:text-5xl sm:leading-[1.1] lg:text-6xl font-semibold">
               {mvp.hero.title}
               {mvp.hero.title_highlight && (
-                <span className="block mt-3 sm:mt-4 text-lg font-semibold leading-relaxed text-muted-foreground sm:text-xl lg:text-2xl lg:leading-snug">
+                <span className="block mt-3 sm:mt-4 text-lg font-medium leading-relaxed text-muted-foreground sm:text-xl lg:text-2xl lg:leading-snug">
                   {mvp.hero.title_highlight}
                 </span>
               )}
@@ -141,7 +141,7 @@ export default function ProjektowanieMvpPage() {
               <Button
                 asChild
                 size="lg"
-                className="w-full max-w-md mx-auto py-3 px-6 text-sm font-bold rounded-xl shadow-lg sm:py-4"
+                className="w-full max-w-md mx-auto py-3 px-6 text-sm font-semibold rounded-xl shadow-lg sm:py-4"
               >
                 <a href="/kwalifikacja-saas" role="button">
                   {mvp.hero.qualification.cta_line1}

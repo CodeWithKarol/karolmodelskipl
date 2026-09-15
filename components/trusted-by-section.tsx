@@ -14,12 +14,12 @@ export function TrustedBySection() {
         {/* Header - Mobile First */}
         <Reveal as="header" className="mb-10 sm:mb-14 text-center">
           <div className="mb-4">
-            <SectionBadge variant="emerald">
+            <SectionBadge>
             <ShieldCheck className="h-4 w-4" />
             <span>{trustedBy.badge}</span>
           </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-6 leading-tight max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6 leading-tight max-w-3xl mx-auto">
             {trustedBy.title}
           </h2>
         </Reveal>
@@ -31,7 +31,7 @@ export function TrustedBySection() {
           </span>
           <div className="space-y-4 sm:space-y-5">
             {trustedBy.quote.map((paragraph, i) => (
-              <p key={i} className="text-base sm:text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
+              <p key={i} className="text-base sm:text-lg md:text-xl text-muted-foreground font-normal leading-relaxed">
                 {paragraph}
               </p>
             ))}
@@ -54,10 +54,10 @@ export function TrustedBySection() {
                 key={company.name}
                 className="flex flex-col items-center px-2 text-center min-w-0 md:flex-1 md:justify-center"
               >
-                <p className="text-base sm:text-lg md:text-xl font-bold tracking-tight text-foreground">
+                <p className="text-base sm:text-lg md:text-xl font-semibold tracking-tight text-foreground">
                   {company.name}
                 </p>
-                <p className="mt-1 text-[10px] sm:text-[11px] uppercase tracking-widest text-muted-foreground leading-snug">
+                <p className="mt-1 text-[10px] sm:text-[11px] text-muted-foreground leading-snug">
                   {company.category}
                 </p>
               </div>

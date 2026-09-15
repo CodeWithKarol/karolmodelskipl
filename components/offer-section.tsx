@@ -53,11 +53,11 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
             <span>{badge}</span>
           </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-6 leading-tight max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6 leading-tight max-w-3xl mx-auto">
             {offer.title}
           </h2>
           {offer.subheading && (
-            <p className="max-w-2xl mx-auto text-muted-foreground font-light leading-relaxed text-base sm:text-lg">
+            <p className="max-w-2xl mx-auto text-muted-foreground font-normal leading-relaxed text-base sm:text-lg">
               {offer.subheading}
             </p>
           )}
@@ -82,9 +82,9 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
                         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
                           <Icon className="h-5 w-5" />
                         </span>
-                        <p className="text-xs font-bold uppercase tracking-widest text-primary">{path.title}</p>
+                        <p className="text-xs font-medium text-primary">{path.title}</p>
                       </div>
-                      <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug">
+                      <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug">
                         {path.situation}
                       </h3>
                       {path.subtitle && (
@@ -97,7 +97,7 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
                       )}
                     </div>
                     {path.result && (
-                      <div className="mt-6 border-t border-border pt-4 text-[11px] font-semibold text-muted-foreground md:min-h-[4.25rem]">
+                      <div className="mt-6 border-t border-border pt-4 text-[11px] font-medium text-muted-foreground md:min-h-[4.25rem]">
                         {path.result}
                       </div>
                     )}
@@ -118,8 +118,8 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
                     <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                   </span>
                   <div className="min-w-0 flex-1">
-                    <p className="mb-1.5 text-[11px] font-bold uppercase tracking-widest text-primary sm:text-xs">{path.title}</p>
-                    <h3 className="text-base font-bold text-foreground mb-2 leading-snug sm:text-xl">{path.situation}</h3>
+                    <p className="mb-1.5 text-[11px] font-medium text-primary sm:text-xs">{path.title}</p>
+                    <h3 className="text-base font-semibold text-foreground mb-2 leading-snug sm:text-xl">{path.situation}</h3>
                     {path.subtitle && (
                       <p className="mb-2 text-sm font-medium leading-snug text-muted-foreground sm:text-base">
                         {path.subtitle}
@@ -129,12 +129,12 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
                       <p className="max-w-prose text-muted-foreground leading-relaxed text-xs sm:text-sm">{path.desc}</p>
                     )}
                     {path.result && (
-                      <div className="mt-4 pt-3 sm:mt-5 sm:pt-4 border-t border-border text-[11px] font-semibold text-muted-foreground">
+                      <div className="mt-4 pt-3 sm:mt-5 sm:pt-4 border-t border-border text-[11px] font-medium text-muted-foreground">
                         {path.result}
                       </div>
                     )}
                     {path.href && (
-                      <span className="mt-4 inline-block text-sm font-bold text-primary transition-colors group-hover:text-primary sm:mt-5">
+                      <span className="mt-4 inline-block text-sm font-semibold text-primary transition-colors group-hover:text-primary sm:mt-5">
                         {path.link}
                         <ArrowRight className="ml-1 inline h-4 w-4 align-middle transition-transform group-hover:translate-x-1" />
                       </span>

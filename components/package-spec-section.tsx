@@ -41,7 +41,7 @@ function TierGrid({ tiers }: { tiers: { label: string; text: string }[] }) {
             className="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full bg-primary"
           />
           <p className="text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
-            <span className="font-semibold text-foreground">{tier.label}:</span>{" "}
+            <span className="font-medium text-foreground">{tier.label}:</span>{" "}
             {tier.text}
           </p>
         </li>
@@ -92,7 +92,7 @@ export function PackageSpecSection({
           <div className="mb-4 flex justify-center">
             <SectionBadge>{spec.badge}</SectionBadge>
           </div>
-          <h2 className="mx-auto max-w-3xl text-2xl font-bold tracking-tight text-balance text-foreground leading-tight sm:text-3xl md:text-4xl">
+          <h2 className="mx-auto max-w-3xl text-2xl font-semibold tracking-tight text-balance text-foreground leading-tight sm:text-3xl md:text-4xl">
             {spec.title}
           </h2>
           {spec.intro && (
@@ -111,7 +111,7 @@ export function PackageSpecSection({
                   <span className="flex items-center gap-2">
                     <Package className="h-5 w-5 shrink-0 text-primary" />
                     {spec.core.tag && (
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-primary sm:text-xs">
+                      <span className="text-[11px] font-medium text-primary sm:text-xs">
                         {spec.core.tag}
                       </span>
                     )}
@@ -123,7 +123,7 @@ export function PackageSpecSection({
                   )}
                 </div>
               )}
-              <h3 className="text-lg font-bold text-foreground leading-snug sm:text-xl">{spec.core.title}</h3>
+              <h3 className="text-lg font-semibold text-foreground leading-snug sm:text-xl">{spec.core.title}</h3>
               {spec.core.desc && (
                 <p className="mt-3 max-w-prose text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
                   {spec.core.desc}
@@ -149,7 +149,7 @@ export function PackageSpecSection({
                   <div className="mb-3 flex flex-col items-start gap-1.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-3">
                     <span className="flex items-center gap-2">
                       <BonusIcon className="h-5 w-5 shrink-0 text-primary" />
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-primary sm:text-xs">
+                      <span className="text-[11px] font-medium text-primary sm:text-xs">
                         {bonus.tag}
                       </span>
                     </span>
@@ -157,7 +157,7 @@ export function PackageSpecSection({
                       <span className="text-[11px] font-medium text-muted-foreground sm:text-xs">{bonus.value}</span>
                     )}
                   </div>
-                  <h3 className="text-lg font-bold text-foreground leading-snug sm:text-xl">{bonus.title}</h3>
+                  <h3 className="text-lg font-semibold text-foreground leading-snug sm:text-xl">{bonus.title}</h3>
                   {bonus.desc && (
                 <p className="mt-3 max-w-prose text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
                       {bonus.desc}
@@ -180,22 +180,22 @@ export function PackageSpecSection({
               <div className="border-t border-border pt-10 text-center sm:pt-14">
                 {spec.summary_label && spec.summary_value && (
                   <>
-                    <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground sm:text-xs">
+                    <p className="text-[11px] font-medium text-muted-foreground sm:text-xs">
                       {spec.summary_label}
                     </p>
-                    <p className="mx-auto mt-2 max-w-2xl text-sm font-semibold text-foreground sm:text-base md:text-lg">
+                    <p className="mx-auto mt-2 max-w-2xl text-sm font-medium text-foreground sm:text-base md:text-lg">
                       {spec.summary_value}
                     </p>
                   </>
                 )}
 
                 <div className="mx-auto mt-10 max-w-xl border-t border-border pt-9 sm:mt-12">
-                  <p className="text-[11px] font-semibold uppercase tracking-widest text-muted-foreground sm:text-xs">
+                  <p className="text-[11px] font-medium text-muted-foreground sm:text-xs">
                     {spec.price_label}
                   </p>
                   <p
                     className={cn(
-                      "mt-2 font-extrabold tracking-tight text-foreground",
+                      "mt-2 font-semibold tracking-tight text-foreground",
                       (spec.price_amount ?? "").length <= 18
                         ? "text-3xl sm:text-4xl"
                         : "text-xl leading-snug sm:text-2xl sm:leading-snug"

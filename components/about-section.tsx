@@ -26,11 +26,11 @@ export function AboutSection() {
             </SectionBadge>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold tracking-tight text-foreground mb-8 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl font-semibold tracking-tight text-foreground mb-8 leading-tight">
               {about.title}
             </h2>
 
-            <div className="space-y-6 text-sm sm:text-base text-muted-foreground font-light leading-relaxed">
+            <div className="space-y-6 text-sm sm:text-base text-muted-foreground font-normal leading-relaxed">
               {about.body.map((paragraph, idx) => (
                 <p
                   key={idx}
@@ -63,7 +63,7 @@ export function AboutSection() {
                 <Landmark className="h-5 w-5 sm:h-6 sm:w-6" />
               </span>
               <div className="min-w-0">
-                <p className="text-sm sm:text-base font-bold text-foreground leading-tight">7+ lat</p>
+                <p className="text-sm sm:text-base font-semibold text-foreground leading-tight">7+ lat</p>
                 <p className="text-[10px] sm:text-[11px] uppercase tracking-wider text-muted-foreground">
                   Doświadczenia bankowego
                 </p>

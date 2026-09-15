@@ -45,14 +45,14 @@ export function FeaturedPosts({
       <Link href={`/blog/${hero.slug}`} className="group block lg:col-span-3">
         <article className="relative flex h-full min-h-[240px] sm:min-h-[320px] flex-col justify-end overflow-hidden rounded-3xl bg-muted/40 p-5 sm:p-8 ring-1 ring-border transition-all duration-300 hover:ring-primary/30 group-hover:shadow-[0_0_60px_-25px_rgba(59,130,246,0.45)]">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(37,99,235,0.2),transparent_60%)]"></div>
-          <div className="pointer-events-none absolute top-4 right-5 sm:top-6 sm:right-8 select-none text-5xl sm:text-8xl font-extrabold tracking-tighter text-foreground/5 transition-colors group-hover:text-primary/10">
+          <div className="pointer-events-none absolute top-4 right-5 sm:top-6 sm:right-8 select-none text-5xl sm:text-8xl font-semibold tracking-tighter text-foreground/5 transition-colors group-hover:text-primary/10">
             01
           </div>
           <div className="relative z-10">
-            <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-primary">
+            <span className="text-[10px] sm:text-xs font-medium text-primary">
               {badge}
             </span>
-            <h3 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-extrabold text-foreground leading-snug group-hover:text-primary transition-colors text-balance break-words">
+            <h3 className="mt-3 text-xl sm:text-2xl lg:text-3xl font-semibold text-foreground leading-snug group-hover:text-primary transition-colors text-balance break-words">
               {hero.title}
             </h3>
             <p className="mt-3 max-w-xl text-sm sm:text-base text-muted-foreground leading-relaxed text-pretty break-words">
@@ -61,7 +61,7 @@ export function FeaturedPosts({
             {metaOf(hero) && (
               <div className="mt-5 text-xs sm:text-sm text-muted-foreground">{metaOf(hero)}</div>
             )}
-            <div className="mt-6 inline-flex items-center gap-2 text-sm sm:text-base font-bold text-primary group-hover:text-primary transition-colors">
+            <div className="mt-6 inline-flex items-center gap-2 text-sm sm:text-base font-semibold text-primary group-hover:text-primary transition-colors">
               <span>{hero.cta ?? "Przeczytaj artykuł"}</span>
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </div>
@@ -78,20 +78,20 @@ export function FeaturedPosts({
               <Link key={item.slug} href={`/blog/${item.slug}`} className="group block flex-1">
                 <article className="flex h-full flex-col justify-center py-5 sm:py-6">
                   <div className="flex items-baseline justify-between gap-4">
-                    <span className="text-3xl sm:text-4xl font-extrabold tracking-tighter text-foreground/5 transition-colors group-hover:text-primary/15">
+                    <span className="text-3xl sm:text-4xl font-semibold tracking-tighter text-foreground/5 transition-colors group-hover:text-primary/15">
                       {num}
                     </span>
                     {meta && (
                       <span className="text-[10px] sm:text-xs text-muted-foreground">{meta}</span>
                     )}
                   </div>
-                  <h3 className="mt-2 text-lg sm:text-xl font-bold text-foreground leading-snug group-hover:text-primary transition-colors break-words">
+                  <h3 className="mt-2 text-lg sm:text-xl font-semibold text-foreground leading-snug group-hover:text-primary transition-colors break-words">
                     {item.title}
                   </h3>
                   <p className="mt-2 line-clamp-2 text-sm text-muted-foreground leading-relaxed break-words">
                     {item.desc}
                   </p>
-                  <div className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:text-primary transition-colors">
+                  <div className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-primary group-hover:text-primary transition-colors">
                     <span>{item.cta ?? "Przeczytaj artykuł"}</span>
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </div>
