@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { Button } from "@/components/ui/button"
+import { CtaButton } from "@/components/cta-button"
 import { CtaSection } from "@/components/cta-section"
 import { SectionBadge } from "@/components/section-badge"
 import { StorySection } from "@/components/story-section"
@@ -144,15 +144,11 @@ export default function AplikacjeInternetoweDlaFirmPage() {
             </p>
 
             <div className="mb-6 sm:mb-8 animate-[fade-up_0.7s_ease-out_0.25s_both]">
-              <Button
-                asChild
-                size="lg"
-                className="w-full max-w-md mx-auto h-auto py-3 px-6 text-xs font-semibold rounded-xl shadow-lg whitespace-normal text-center leading-snug sm:py-4 sm:text-sm"
-              >
-                <a href="/kwalifikacja-aplikacje" role="button">
+              <CtaButton asChild className="w-full max-w-md mx-auto">
+                <a href="/kwalifikacja-aplikacje">
                   {hero.qualification.cta_line1}
                 </a>
-              </Button>
+              </CtaButton>
               <p className="text-[11px] sm:text-xs text-muted-foreground text-center mt-2.5 font-medium leading-relaxed">{hero.cta_sub}</p>
               <TrustLogos label={hero.qualification.trust_label} logos={hero.qualification.trust_logos} />
             </div>

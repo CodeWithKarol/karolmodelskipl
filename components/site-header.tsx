@@ -4,6 +4,7 @@ import * as React from "react"
 import Link from "next/link"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { header } from "@/lib/content/header"
+import { Button } from "@/components/ui/button"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -26,11 +27,12 @@ function MobileNavGroup({
 }) {
   return (
     <div className="border-b border-border last:border-b-0">
-      <button
+      <Button
         type="button"
+        variant="ghost"
         onClick={onToggle}
         aria-expanded={open}
-        className="flex min-h-[56px] w-full items-center justify-between gap-4 py-4 text-left text-base font-semibold text-foreground transition-colors active:text-primary"
+        className="h-auto min-h-[56px] w-full justify-between gap-4 rounded-none px-0 py-4 text-left text-base font-semibold text-foreground hover:bg-transparent hover:text-foreground active:text-primary"
       >
         <span>{title}</span>
         <ChevronDown
@@ -38,7 +40,7 @@ function MobileNavGroup({
             open ? "rotate-180" : ""
           }`}
         />
-      </button>
+      </Button>
       <div
         aria-hidden={!open}
         inert={!open}
@@ -154,16 +156,19 @@ export function SiteHeader() {
           {/* Right Action */}
           <div className="flex items-center gap-2 md:hidden">
             {/* Mobile Hamburger Button */}
-            <button
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon-lg"
               onClick={() => {
                 if (isOpen) setOpenSection(null)
                 setIsOpen(!isOpen)
               }}
-              className="flex h-9 w-9 items-center justify-center rounded-full text-muted-foreground hover:bg-accent hover:text-foreground md:hidden transition-colors"
+              className="rounded-full text-muted-foreground md:hidden"
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
-            </button>
+            </Button>
           </div>
         </header>
       </div>

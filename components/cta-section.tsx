@@ -1,6 +1,6 @@
 import { content } from "@/lib/content"
 import { siteConfig } from "@/lib/site-config"
-import { Button } from "./ui/button"
+import { CtaButton } from "@/components/cta-button"
 import { Sparkles, Target, ShieldCheck, Map } from "lucide-react"
 import { SectionBadge } from "@/components/section-badge"
 import { Reveal } from "@/components/reveal"
@@ -85,9 +85,9 @@ export function CtaSection({ content: pageContent, ctaHref }: CtaSectionProps = 
                 {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : { role: "button" })}
                 className="w-full max-w-md"
               >
-                <Button size="lg" className="w-full py-5 text-sm font-semibold rounded-xl shadow-lg transition-all whitespace-normal h-auto leading-tight">
+                <CtaButton className="w-full">
                   {cta.button}
-                </Button>
+                </CtaButton>
               </a>
               {cta.note ? (
                 <p className="text-xs sm:text-sm text-muted-foreground mt-3 font-medium text-center leading-relaxed text-pretty">{cta.note}</p>
