@@ -40,7 +40,8 @@ export async function generateMetadata(): Promise<Metadata> {
     title: metadata.title,
     description: metadata.description,
     alternates: {
-      canonical: "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji",
+      canonical:
+        "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji",
     },
   }
 }
@@ -67,7 +68,8 @@ export default function ModernizacjaOprogramowaniaPage() {
             "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji#service",
         },
         hasPart: {
-          "@id": "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji#faq",
+          "@id":
+            "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji#faq",
         },
       },
       {
@@ -102,7 +104,8 @@ export default function ModernizacjaOprogramowaniaPage() {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji#faq",
+        "@id":
+          "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji#faq",
         mainEntity: faq.items.map((item) => ({
           "@type": "Question",
           name: item.q,
@@ -120,46 +123,57 @@ export default function ModernizacjaOprogramowaniaPage() {
       />
 
       {/* Sekcja 1: HERO SECTION */}
-      <section className="relative w-full flex flex-col bg-background text-foreground pt-20 pb-16 sm:pt-24 lg:pb-12 lg:min-h-screen">
+      <section className="relative flex w-full flex-col bg-background pt-20 pb-16 text-foreground sm:pt-24 lg:min-h-screen lg:pb-12">
         <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
 
-        <div className="relative z-10 flex-1 container mx-auto px-4 flex flex-col items-center justify-center text-center pt-4 sm:pt-8">
-
-          <div className="w-full max-w-3xl mx-auto pt-4 sm:pt-8">
-            <div className="mb-5 sm:mb-7 flex justify-center animate-[fade-up_0.7s_ease-out_both]">
-              <SectionBadge variant="neutral" className="text-[10px] sm:text-xs text-center">{hero.badge}</SectionBadge>
+        <div className="relative z-10 container mx-auto flex flex-1 flex-col items-center justify-center px-4 pt-4 text-center sm:pt-8">
+          <div className="mx-auto w-full max-w-3xl pt-4 sm:pt-8">
+            <div className="mb-5 flex animate-[fade-up_0.7s_ease-out_both] justify-center sm:mb-7">
+              <SectionBadge
+                variant="neutral"
+                className="text-center text-[10px] sm:text-xs"
+              >
+                {hero.badge}
+              </SectionBadge>
             </div>
-            <h1 className="text-4xl leading-[1.12] tracking-tight text-balance text-foreground mb-4 sm:mb-5 animate-[fade-up_0.7s_ease-out_0.1s_both] sm:text-5xl sm:leading-[1.1] lg:text-6xl font-semibold">
+            <h1 className="mb-4 animate-[fade-up_0.7s_ease-out_0.1s_both] text-4xl leading-[1.12] font-semibold tracking-tight text-balance text-foreground sm:mb-5 sm:text-5xl sm:leading-[1.1] lg:text-6xl">
               {hero.title}
               {hero.title_highlight && (
-                <span className="block mt-3 sm:mt-4 text-lg font-medium leading-relaxed text-muted-foreground sm:text-xl lg:text-2xl lg:leading-snug">
+                <span className="mt-3 block text-lg leading-relaxed font-medium text-muted-foreground sm:mt-4 sm:text-xl lg:text-2xl lg:leading-snug">
                   {hero.title_highlight}
                 </span>
               )}
             </h1>
 
-            <p className="text-base sm:text-lg text-muted-foreground mb-7 sm:mb-9 leading-relaxed max-w-2xl mx-auto animate-[fade-up_0.7s_ease-out_0.2s_both]">
+            <p className="mx-auto mb-7 max-w-2xl animate-[fade-up_0.7s_ease-out_0.2s_both] text-base leading-relaxed text-muted-foreground sm:mb-9 sm:text-lg">
               {hero.subtitle}
             </p>
 
-            <div className="mb-6 sm:mb-8 animate-[fade-up_0.7s_ease-out_0.25s_both]">
-              <CtaButton asChild className="w-full max-w-md mx-auto">
+            <div className="mb-6 animate-[fade-up_0.7s_ease-out_0.25s_both] sm:mb-8">
+              <CtaButton asChild className="mx-auto w-full max-w-md">
                 <a href="/kwalifikacja-modernizacja">
                   {hero.qualification.cta_line1}
                 </a>
               </CtaButton>
-              <p className="text-[11px] sm:text-xs text-muted-foreground text-center mt-2.5 font-medium leading-relaxed">{hero.cta_sub}</p>
-              <TrustLogos label={hero.qualification.trust_label} logos={hero.qualification.trust_logos} />
+              <p className="mt-2.5 text-center text-[11px] leading-relaxed font-medium text-muted-foreground sm:text-xs">
+                {hero.cta_sub}
+              </p>
+              <TrustLogos
+                label={hero.qualification.trust_label}
+                logos={hero.qualification.trust_logos}
+              />
             </div>
           </div>
 
-          <div className="w-full max-w-4xl mx-auto mt-10 sm:mt-14 text-left animate-[fade-up_0.7s_ease-out_0.35s_both]">
+          <div className="mx-auto mt-10 w-full max-w-4xl animate-[fade-up_0.7s_ease-out_0.35s_both] text-left sm:mt-14">
             <div className="grid gap-y-6 sm:grid-cols-3 sm:gap-y-0">
               {hero.pegs.map((peg, i) => {
                 const Icon = [Banknote, CalendarCheck, KeyRound][i % 3]
                 const isLast = i === hero.pegs.length - 1
                 const cellClass = [
-                  i > 0 ? "border-t border-border pt-5 sm:mt-0 sm:border-t-0 sm:pt-0 sm:border-l" : "",
+                  i > 0
+                    ? "border-t border-border pt-5 sm:mt-0 sm:border-t-0 sm:pt-0 sm:border-l"
+                    : "",
                   !isLast ? "sm:pr-8" : "",
                   i > 0 ? "sm:pl-8" : "",
                 ]
@@ -167,9 +181,13 @@ export default function ModernizacjaOprogramowaniaPage() {
                   .join(" ")
                 return (
                   <div key={peg.title} className={cellClass}>
-                    <Icon className="mb-3 h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-                    <p className="text-sm font-semibold text-foreground leading-snug mb-1.5">{peg.title}</p>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{peg.desc}</p>
+                    <Icon className="mb-3 h-5 w-5 text-primary sm:h-6 sm:w-6" />
+                    <p className="mb-1.5 text-sm leading-snug font-semibold text-foreground">
+                      {peg.title}
+                    </p>
+                    <p className="text-xs leading-relaxed text-muted-foreground">
+                      {peg.desc}
+                    </p>
                   </div>
                 )
               })}
@@ -226,7 +244,6 @@ export default function ModernizacjaOprogramowaniaPage() {
         }}
         className="py-16 sm:py-24"
       />
-
 
       <CtaSection content={offer} ctaHref="/kwalifikacja-modernizacja" />
     </main>

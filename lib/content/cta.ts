@@ -1,6 +1,7 @@
 export const cta = {
   badge: "Status: 2 sloty wdrożeniowe w kwartale",
-  title: "Bezpośrednia współpraca inżynierska (Maksymalnie 2 projekty w kwartale)",
+  title:
+    "Bezpośrednia współpraca inżynierska (Maksymalnie 2 projekty w kwartale)",
   description:
     "Zamiast masowej obsługi kilkunastu projektów naraz, w każdym kwartale realizuję <strong class='text-white font-semibold'>maksymalnie 2 projekty</strong>. Zyskujesz 100% mojego skupienia inżynierskiego – bez delegowania zadań podwykonawcom i bez ukrytych kosztów. Po uruchomieniu systemu otrzymujesz <strong class='text-white font-semibold'>60 dni dedykowanej opieki inżynierskiej</strong>.",
   package_title:

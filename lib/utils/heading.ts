@@ -48,7 +48,9 @@ export function extractTextContent(node: ReactNode): string {
     node.props !== null &&
     typeof node.props === "object"
   ) {
-    return extractTextContent((node as ReactElement<{ children: ReactNode }>).props.children)
+    return extractTextContent(
+      (node as ReactElement<{ children: ReactNode }>).props.children
+    )
   }
   return ""
 }

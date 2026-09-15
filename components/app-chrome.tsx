@@ -5,18 +5,29 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { SiteHeader } from "@/components/site-header"
 import { Footer } from "@/components/footer"
+import { ThemeToggle } from "@/components/theme-toggle"
 
-const FUNNEL_PATHS = ["/projektowanie-mvp", "/aplikacje-internetowe-dla-firm", "/naprawa-i-modernizacja-aplikacji", "/doradztwo-techniczne-dla-firm", "/kwalifikacja-aplikacje", "/kwalifikacja-modernizacja", "/kwalifikacja-saas", "/kwalifikacja-doradztwo"]
+const FUNNEL_PATHS = [
+  "/projektowanie-mvp",
+  "/aplikacje-internetowe-dla-firm",
+  "/naprawa-i-modernizacja-aplikacji",
+  "/doradztwo-techniczne-dla-firm",
+  "/kwalifikacja-aplikacje",
+  "/kwalifikacja-modernizacja",
+  "/kwalifikacja-saas",
+  "/kwalifikacja-doradztwo",
+]
 
 function FunnelHeader() {
   return (
     <div className="fixed top-0 z-50 w-full border-b border-border bg-background/70 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 w-full max-w-6xl items-center px-4 sm:px-6">
+      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6">
         <Link href="/" className="group flex shrink-0 items-center">
           <span className="text-[15px] font-semibold tracking-tight text-foreground transition-colors group-hover:text-foreground">
             Karol Modelski
           </span>
         </Link>
+        <ThemeToggle />
       </div>
     </div>
   )
@@ -33,7 +44,8 @@ const FOOTER_VARIANTS = {
     title: "Karol Modelski – Niezależny Partner Technologiczny dla Biznesu",
     description:
       "Uzdrawiam architekturę systemów transakcyjnych i platform B2B — odblokowując sprzedaż bez pisania kodu od zera.",
-    tagline: "E-commerce & B2B • Klasa bankowa • Uzdrowienie w 2–4 tygodnie • Zero przestoju",
+    tagline:
+      "E-commerce & B2B • Klasa bankowa • Uzdrowienie w 2–4 tygodnie • Zero przestoju",
   },
   doradztwo: {
     title:
@@ -89,27 +101,39 @@ function FunnelFooter({ variant }: { variant: FunnelVariant }) {
           </div>
 
           <div>
-            <p className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground sm:text-xs">Kontakt</p>
+            <p className="text-[11px] font-medium tracking-wider text-muted-foreground uppercase sm:text-xs">
+              Kontakt
+            </p>
             <ul className="mt-4 space-y-2.5 text-sm">
               <li>
-                <a href="mailto:kontakt@karolmodelski.pl" className="text-muted-foreground transition-colors hover:text-foreground hover:underline underline-offset-4">
+                <a
+                  href="mailto:kontakt@karolmodelski.pl"
+                  className="text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
+                >
                   kontakt@karolmodelski.pl
                 </a>
               </li>
               <li>
-                <a href="tel:+48664598563" className="text-muted-foreground transition-colors hover:text-foreground hover:underline underline-offset-4">
+                <a
+                  href="tel:+48664598563"
+                  className="text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
+                >
                   +48 664 598 563
                 </a>
               </li>
-              <li className="text-muted-foreground">Warszawa / współpraca zdalna w całej Polsce</li>
+              <li className="text-muted-foreground">
+                Warszawa / współpraca zdalna w całej Polsce
+              </li>
               <li className="text-muted-foreground">NIP: 6112800950</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-10 flex flex-col gap-2 border-t border-border pt-6 pb-8 text-center sm:mt-12 sm:flex-row sm:items-center sm:justify-center sm:gap-8 sm:pt-8 sm:pb-6">
-          <p className="text-xs text-muted-foreground sm:text-sm">© 2026 Karol Modelski. Wszelkie prawa zastrzeżone.</p>
-          <p className="text-[11px] uppercase tracking-wider text-muted-foreground sm:text-xs">
+          <p className="text-xs text-muted-foreground sm:text-sm">
+            © 2026 Karol Modelski. Wszelkie prawa zastrzeżone.
+          </p>
+          <p className="text-[11px] tracking-wider text-muted-foreground uppercase sm:text-xs">
             {tagline}
           </p>
         </div>

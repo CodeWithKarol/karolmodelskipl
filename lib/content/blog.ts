@@ -13,106 +13,137 @@ export const blogContent = {
     indicators: [
       {
         title: "Proste odpowiedzi na trudne pytania",
-        desc: "Wyjaśniam zawiłości technologiczne językiem czystego biznesu i zysków."
+        desc: "Wyjaśniam zawiłości technologiczne językiem czystego biznesu i zysków.",
       },
       {
         title: "Ochrona przed przepalaniem budżetów",
-        desc: "Dowiedz się, jak weryfikować wyceny i unikać błędów, które kosztują firmy setki tysięcy złotych."
+        desc: "Dowiedz się, jak weryfikować wyceny i unikać błędów, które kosztują firmy setki tysięcy złotych.",
       },
       {
         title: "Praktyczne strategie",
-        desc: "Sprawdzone metody na ewolucyjny rozwój oprogramowania bez przerw w sprzedaży."
-      }
+        desc: "Sprawdzone metody na ewolucyjny rozwój oprogramowania bez przerw w sprzedaży.",
+      },
     ],
     pilot_program: {
       title: "Program Wdrożeniowy: Rozwój Cyfrowy MŚP (Tylko 2 firmy)",
-      description: "Nie chcesz czytać dziesiątek artykułów i wolisz skonsultować swój projekt bezpośrednio ze mną? Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> w bieżącym kwartale i przetestuj proces doradztwa strategicznego w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> nad systemem.",
+      description:
+        "Nie chcesz czytać dziesiątek artykułów i wolisz skonsultować swój projekt bezpośrednio ze mną? Zostań <strong class='text-white font-semibold'>Partnerem Założycielem</strong> w bieżącym kwartale i przetestuj proces doradztwa strategicznego w zamian za opinię po projekcie. Zyskujesz mój wyłączny czas, preferencyjne warunki oraz <strong class='text-white font-semibold'>3 miesiące bezpłatnej opieki</strong> nad systemem.",
       cta: "Porozmawiajmy o Twoim projekcie",
-      package_title: "Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):"
+      package_title:
+        "Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):",
     },
     cta_sub: "Zostało tylko 1 z 2 wolnych miejsc w tym kwartale",
     offer_items: [
-      { title: "Proste odpowiedzi na trudne pytania: wyjaśniam zawiłości technologiczne językiem czystego biznesu i zysków.", desc: "", val: "" },
-      { title: "Ochrona przed przepalaniem budżetów: dowiedz się, jak weryfikować wyceny agencji i unikać błędów kosztujących setki tysięcy złotych.", desc: "", val: "" },
-      { title: "Praktyczne strategie rozwoju: sprawdzone metody na ewolucyjny rozwój oprogramowania dla firm bez przerw w sprzedaży.", desc: "", val: "" },
-      { title: "Osobista Mapa Drogowa IT: indywidualny plan wdrożenia lub modernizacji dobrany pod cele Twojego biznesu.", desc: "", val: "" },
+      {
+        title:
+          "Proste odpowiedzi na trudne pytania: wyjaśniam zawiłości technologiczne językiem czystego biznesu i zysków.",
+        desc: "",
+        val: "",
+      },
+      {
+        title:
+          "Ochrona przed przepalaniem budżetów: dowiedz się, jak weryfikować wyceny agencji i unikać błędów kosztujących setki tysięcy złotych.",
+        desc: "",
+        val: "",
+      },
+      {
+        title:
+          "Praktyczne strategie rozwoju: sprawdzone metody na ewolucyjny rozwój oprogramowania dla firm bez przerw w sprzedaży.",
+        desc: "",
+        val: "",
+      },
+      {
+        title:
+          "Osobista Mapa Drogowa IT: indywidualny plan wdrożenia lub modernizacji dobrany pod cele Twojego biznesu.",
+        desc: "",
+        val: "",
+      },
     ],
     cta: "Porozmawiajmy o Twoim projekcie",
-    footnote: "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT"
+    footnote:
+      "100% bezpłatnie • Rozmowa wideo • Odbierz Osobistą Mapę Drogową IT",
   },
   categories: {
     badge: "Nawigacja po bazie wiedzy",
     title: "Wybierz obszar, który chcesz uporządkować w swojej firmie:",
-    subtitle: "Możesz przeglądać artykuły podzielone na cztery kluczowe kategorie dopasowane do aktualnych potrzeb Twojego biznesu:",
+    subtitle:
+      "Możesz przeglądać artykuły podzielone na cztery kluczowe kategorie dopasowane do aktualnych potrzeb Twojego biznesu:",
     items: [
       {
         title: "Automatyzacja i Aplikacje Dedykowane",
         desc: "Jak liczyć ROI z inwestycji w oprogramowanie, jak unikać pułapek w umowach typu fixed-price i jak układać logikę biznesową, by uwolnić czas zespołu z arkuszy Excela.",
         href: "/blog/aplikacje-dla-firm",
-        cta: "Przejdź do artykułów: Aplikacje dla Firm"
+        cta: "Przejdź do artykułów: Aplikacje dla Firm",
       },
       {
         title: "Walidacja Rynku i MVP w 30 dni",
         desc: "Instrukcje dla przedsiębiorców z nowymi pomysłami. Jak okroić specyfikację do absolutnego serca biznesu, jak przetestować popyt przy minimalnym budżecie i uruchomić wersję startową w miesiąc.",
         href: "/blog/szybka-wersja-startowa",
-        cta: "Przejdź do artykułów: Szybki Start & MVP"
+        cta: "Przejdź do artykułów: Szybki Start & MVP",
       },
       {
         title: "Modernizacja i Ratowanie Kodu",
         desc: "Co robić, gdy system działa jak muł, bazy danych się dławią, a programiści mówią, że „trzeba napisać od nowa”. Przewodniki o bezpiecznej refaktoryzacji ewolucyjnej bez wyłączania sprzedaży.",
         href: "/blog/bezinwazyjna-modernizacja-systemow",
-        cta: "Przejdź do artykułów: Naprawa i Przyspieszanie"
+        cta: "Przejdź do artykułów: Naprawa i Przyspieszanie",
       },
       {
         title: "Architektura IT i Nadzór nad Agencjami",
         desc: "Jak bezpiecznie czytać wyceny od software house'ów, jak rozmawiać z programistami bez znajomości kodu i kiedy warto zaangażować Fractional CTO jako pancerną tarczę dla budżetu firmy.",
         href: "/blog/strategia-it",
-        cta: "Przejdź do artykułów: Doradztwo Strategiczne"
-      }
-    ]
+        cta: "Przejdź do artykułów: Doradztwo Strategiczne",
+      },
+    ],
   },
   featured: {
     badge: "Wyróżnione wpisy",
     title: "Najczęściej czytane artykuły przez właścicieli firm",
-    subtitle: "Poznaj najpopularniejsze analizy i poradniki oparte na wieloletnim doświadczeniu inżynieryjnym.",
+    subtitle:
+      "Poznaj najpopularniejsze analizy i poradniki oparte na wieloletnim doświadczeniu inżynieryjnym.",
     items: [
       {
-        title: "Ile można zarobić na własnej aplikacji? Brutalna prawda, realne liczby i mechanizmy zysku",
+        title:
+          "Ile można zarobić na własnej aplikacji? Brutalna prawda, realne liczby i mechanizmy zysku",
         desc: "Jakie pieniądze naprawdę generuje aplikacja mobilna czy system dla firm? Realne statystyki, porównanie modeli monetyzacji i ukryte koszty, które decydują o tym, czy inwestycja się zwraca.",
         badge: "Wyróżniony artykuł",
         slug: "ile-pieniedzy-mozna-zarobic-na-stworzeniu-aplikacji",
-        cta: "Przeczytaj artykuł"
+        cta: "Przeczytaj artykuł",
       },
       {
-        title: "Jak zrobić aplikację ze strony internetowej? To nie jest kopiuj-wklej",
+        title:
+          "Jak zrobić aplikację ze strony internetowej? To nie jest kopiuj-wklej",
         desc: "Wiele firm chce przekształcić swoją stronę w aplikację mobilną. Sprawdź, kiedy to się opłaca i jak zrobić to dobrze, by zyskać, a nie stracić.",
         slug: "jak-zrobic-aplikacje-ze-strony-internetowej",
-        cta: "Przeczytaj artykuł"
+        cta: "Przeczytaj artykuł",
       },
       {
-        title: "Czy ChatGPT zrobi aplikację dla Twojej firmy? Prawda bez ściemniania",
+        title:
+          "Czy ChatGPT zrobi aplikację dla Twojej firmy? Prawda bez ściemniania",
         desc: "W czym ChatGPT realnie wyręczy Cię przy budowie aplikacji, gdzie kończą się jego możliwości (płatności, bezpieczeństwo, utrzymanie) i dlaczego ślepe zaufanie automatowi bywa kosztowną pułapką.",
         slug: "czy-chatgpt-zrobi-aplikacje",
-        cta: "Przeczytaj artykuł"
+        cta: "Przeczytaj artykuł",
       },
       {
-        title: "Ile kosztuje stworzenie aplikacji webowej? Realny przewodnik po cenach",
+        title:
+          "Ile kosztuje stworzenie aplikacji webowej? Realny przewodnik po cenach",
         desc: "Konkretne widełki rynkowe, prawda o agencyjnych marżach, ukryte koszty utrzymania oraz 4 zasady, które obniżają koszt budowy aplikacji o 40–50%.",
         slug: "ile-kosztuje-stworzenie-aplikacji-webowej",
-        cta: "Przeczytaj artykuł"
+        cta: "Przeczytaj artykuł",
       },
       {
-        title: "W czym pisać aplikacje webowe? Przewodnik bez technicznego żargonu",
+        title:
+          "W czym pisać aplikacje webowe? Przewodnik bez technicznego żargonu",
         desc: "Jak wybrać frontend, backend i bazę danych z perspektywy biznesowej, aby obniżyć koszty, uniknąć przepłacania i nie utknąć w ślepym zaułku technologicznym.",
         slug: "w-czym-pisac-aplikacje-webowe",
-        cta: "Przeczytaj artykuł"
-      }
-    ]
+        cta: "Przeczytaj artykuł",
+      },
+    ],
   },
   offer: {
     badge: "Bez zobowiązań",
     title: "Masz dość teorii? Porozmawiajmy o praktyce w Twojej firmie.",
-    description: "Artykuły i poradniki to świetny początek, ale każdy biznes ma swoją unikalną specyfikację, procesy i cele. Jeśli chcesz dowiedzieć się, jak konkretnie możemy usprawnić działanie i zyski Twojej firmy, porozmawiajmy bez zobowiązań.",
+    description:
+      "Artykuły i poradniki to świetny początek, ale każdy biznes ma swoją unikalną specyfikację, procesy i cele. Jeśli chcesz dowiedzieć się, jak konkretnie możemy usprawnić działanie i zyski Twojej firmy, porozmawiajmy bez zobowiązań.",
     packetTitle: "Zarezerwuj darmowy audyt i odbierz Pakiet Mapy Drogowej",
     packetVal: "(Wartość 600 zł za 0 zł)",
     benefits: [
@@ -134,13 +165,21 @@ export const blogContent = {
   },
   cta: {
     badge: "Bezpłatny audyt w 4 oczy",
-    title: "Nie chcesz czytać dziesiątek artykułów? Zróbmy bezpłatny audyt w 4 oczy.",
+    title:
+      "Nie chcesz czytać dziesiątek artykułów? Zróbmy bezpłatny audyt w 4 oczy.",
     description:
       "Zamiast tracić czas na samodzielną analizę techniczną, przenieś problem na moje barki. W każdym kwartale obejmuję opieką strategiczną i technologiczną <strong class='text-white font-semibold'>maksymalnie 2 firmy</strong>. W zamian za opinię po zakończeniu analizy, możesz odebrać kompletny Pakiet Strategiczny całkowicie bezpłatnie.",
-    package_title: "Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):",
+    package_title:
+      "Indywidualny Pakiet Strategiczny po rozmowie 1:1 (Wartość 600 zł za 0 zł):",
     offer_items: [
-      { title: "30-minutowa diagnoza podczas rozmowy wideo w 4 oczy", desc: "" },
-      { title: "Indywidualny Plan Wdrożenia lub Modernizacji w 30 dni", desc: "" },
+      {
+        title: "30-minutowa diagnoza podczas rozmowy wideo w 4 oczy",
+        desc: "",
+      },
+      {
+        title: "Indywidualny Plan Wdrożenia lub Modernizacji w 30 dni",
+        desc: "",
+      },
       { title: "Bankowy Test Bezpieczeństwa Informacji", desc: "" },
     ],
     button: "Zarezerwuj bezpłatny audyt w 4 oczy",

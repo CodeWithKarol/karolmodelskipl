@@ -17,7 +17,7 @@ export function ContactHubSection() {
               Inżynieria IT • Bezpieczeństwo Bankowe • Bez Pośredników
             </SectionBadge>
           </div>
-          <h2 className="mx-auto mb-4 max-w-3xl text-2xl font-semibold leading-tight tracking-tight text-balance text-foreground sm:text-3xl md:text-4xl">
+          <h2 className="mx-auto mb-4 max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-balance text-foreground sm:text-3xl md:text-4xl">
             Nie wiesz, która ścieżka rozwiąże problem w Twojej firmie?
           </h2>
           <p className="mx-auto max-w-2xl text-sm leading-relaxed text-pretty text-muted-foreground sm:text-base md:text-lg">
@@ -34,14 +34,14 @@ export function ContactHubSection() {
             className="group flex items-center gap-4 px-2 py-5 text-left transition-colors hover:bg-muted"
           >
             <Mail className="h-5 w-5 shrink-0 text-primary" />
-              <div className="min-w-0">
-                <div className="text-xs text-muted-foreground">
-                  Napisz bezpośrednio do architekta
-                </div>
-                <div className="font-semibold break-words text-foreground transition-colors group-hover:text-primary">
-                  kontakt@karolmodelski.pl
-                </div>
+            <div className="min-w-0">
+              <div className="text-xs text-muted-foreground">
+                Napisz bezpośrednio do architekta
               </div>
+              <div className="font-semibold break-words text-foreground transition-colors group-hover:text-primary">
+                kontakt@karolmodelski.pl
+              </div>
+            </div>
           </a>
           <a
             href="tel:+48664598563"
@@ -66,7 +66,7 @@ export function ContactHubSection() {
           </p>
           <a
             href="#zwrotnica"
-            className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary transition-colors hover:text-primary"
+            className="inline-flex items-center gap-1.5 text-xs font-semibold text-[oklch(48%_0.245_262.881)] transition-colors hover:text-[oklch(42%_0.245_262.881)]"
           >
             Wróć do wyboru obszarów współpracy ↑
           </a>

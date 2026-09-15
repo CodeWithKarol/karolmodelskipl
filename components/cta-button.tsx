@@ -9,7 +9,7 @@ export function CtaButton({
   return (
     <Button
       className={cn(
-        "h-auto min-h-11 gap-2 whitespace-normal rounded-xl px-6 py-3 text-center text-sm font-semibold leading-tight shadow-lg transition-all",
+        "h-auto min-h-11 gap-2 rounded-xl px-6 py-3 text-center text-sm leading-tight font-semibold whitespace-normal shadow-lg transition-all",
         className
       )}
       {...props}

@@ -4,7 +4,8 @@ import { qualification } from "@/lib/content/naprawa-i-modernizacja-aplikacji/pa
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Weryfikacja kwalifikacyjna | Bezinwazyjna modernizacja oprogramowania",
+    title:
+      "Weryfikacja kwalifikacyjna | Bezinwazyjna modernizacja oprogramowania",
     description:
       "3 szybkie pytania. Sprawdź, czy Twoja platforma kwalifikuje się do modernizacji w tym kwartale.",
     robots: {

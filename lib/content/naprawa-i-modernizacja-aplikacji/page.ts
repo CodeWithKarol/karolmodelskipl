@@ -19,8 +19,8 @@ export const guarantee = {
         "Prace wywołają jakikolwiek przestój w przyjmowaniu zamówień,",
       ],
       note: "Zwracam Ci 15 000 zł zaliczki co do grosza. Ryzyko wykonawcze biorę w 100% na siebie.",
-    }
-  ]
+    },
+  ],
 }
 
 export const hero = {
@@ -61,21 +61,21 @@ export const story = {
   points: [
     {
       title: "Porzucone koszyki dokładnie w szczycie sprzedaży",
-      desc: "Każda dodatkowa sekunda oczekiwania na załadowanie koszyka to bezpośredni spadek konwersji i strata czystego zysku. System dławi się dokładnie w tych momentach, kiedy wydajesz najwięcej na reklamy lub organizujesz akcję promocyjną."
+      desc: "Każda dodatkowa sekunda oczekiwania na załadowanie koszyka to bezpośredni spadek konwersji i strata czystego zysku. System dławi się dokładnie w tych momentach, kiedy wydajesz najwięcej na reklamy lub organizujesz akcję promocyjną.",
     },
     {
       title: "Paraliż wprowadzania nowych funkcji",
-      desc: "Dodanie prostej integracji z nowym kurierem, płatnością czy generowaniem raportu zajmuje tygodnie. Zespół boi się dotknąć jakiegokolwiek modułu, bo każda drobna zmiana grozi wysypaniem całego sklepu."
+      desc: "Dodanie prostej integracji z nowym kurierem, płatnością czy generowaniem raportu zajmuje tygodnie. Zespół boi się dotknąć jakiegokolwiek modułu, bo każda drobna zmiana grozi wysypaniem całego sklepu.",
     },
     {
       title: "Przepalanie tysięcy złotych na za duże serwery",
-      desc: "Zamiast usunąć przyczynę powolnego działania w samym kodzie, agencja każe Ci dokupować coraz mocniejsze serwery. Płacisz co miesiąc gigantyczne rachunki za leczenie objawów, podczas gdy system wciąż zwalnia."
+      desc: "Zamiast usunąć przyczynę powolnego działania w samym kodzie, agencja każe Ci dokupować coraz mocniejsze serwery. Płacisz co miesiąc gigantyczne rachunki za leczenie objawów, podczas gdy system wciąż zwalnia.",
     },
     {
       title: "Agencyjne kłamstwo: „Tego się nie da naprawić, piszemy od nowa”",
-      desc: "Software house proponuje zburzenie platformy, 150 000 zł budżetu i 9 miesięcy prac. Dlaczego? Bo na wielkich, nowych projektach zarabiają najwięcej, a ich pracownicy boją się czytać cudzy kod. Prawda jest taka: 90% systemów da się skutecznie uzdrowić w kilka tygodni."
-    }
-  ]
+      desc: "Software house proponuje zburzenie platformy, 150 000 zł budżetu i 9 miesięcy prac. Dlaczego? Bo na wielkich, nowych projektach zarabiają najwięcej, a ich pracownicy boją się czytać cudzy kod. Prawda jest taka: 90% systemów da się skutecznie uzdrowić w kilka tygodni.",
+    },
+  ],
 }
 
 export const valueStack = {
@@ -179,19 +179,22 @@ export const process = {
       title: "Tydzień 1",
       situation: "Bezinwazyjna diagnoza i odizolowanie środowiska",
       desc: "Bez dotykania działającego sklepu tworzę kopię testową Twojej platformy. Namierzam 2–3 krytyczne zatory w kodzie i bazie danych, które odpowiadają za 80% spowolnień i paraliż koszyka.",
-      result: "Rezultat: Twarde pomiary czasu ładowania i ustalenie mierzalnego celu na stoperze.",
+      result:
+        "Rezultat: Twarde pomiary czasu ładowania i ustalenie mierzalnego celu na stoperze.",
     },
     {
       title: "Tydzień 2–3",
       situation: "Usunięcie zatorów i wzmocnienie fundamentów",
       desc: "Przebudowuję newralgiczne moduły na kopii testowej: odblokowuję zapytania do bazy, usuwam zbędne obciążenia i optymalizuję przetwarzanie zamówień. Twoi klienci w tym czasie normalnie robią zakupy na działającej platformie.",
-      result: "Rezultat: Przetestowany, przyspieszony kod gotowy do bezpiecznego wdrożenia.",
+      result:
+        "Rezultat: Przetestowany, przyspieszony kod gotowy do bezpiecznego wdrożenia.",
     },
     {
       title: "Tydzień 4",
       situation: "Nocna podmiana bez przestoju i test stoperem",
       desc: "W godzinach najmniejszego ruchu (w nocy) podmieniam zoptymalizowane moduły na serwerze produkcyjnym — bez ani jednej sekundy przerwy w działaniu koszyka. Rano wspólnie mierzymy czas ładowania pod realnym ruchem.",
-      result: "Rezultat: Błyskawicznie ładujący się system, zadowoleni klienci i natychmiastowy wzrost zrealizowanych koszyków.",
+      result:
+        "Rezultat: Błyskawicznie ładujący się system, zadowoleni klienci i natychmiastowy wzrost zrealizowanych koszyków.",
     },
   ],
 }
@@ -202,25 +205,25 @@ export const faq = {
   items: [
     {
       q: "Co w sytuacji, gdy mój obecny system nie ma żadnej dokumentacji, a programista zniknął?",
-      a: "To standardowa sytuacja w niemal 90% projektów, które naprawiam. Nie potrzebuję kontaktu z Twoim poprzednim wykonawcą ani setek stron dokumentacji. Jako inżynier z doświadczeniem bankowym pracuję bezpośrednio na surowym kodzie i strukturze bazy danych. Samodzielnie odtwarzam kluczowe powiązania i natychmiast lokalizuję miejsca, w których system traci najwięcej energii."
+      a: "To standardowa sytuacja w niemal 90% projektów, które naprawiam. Nie potrzebuję kontaktu z Twoim poprzednim wykonawcą ani setek stron dokumentacji. Jako inżynier z doświadczeniem bankowym pracuję bezpośrednio na surowym kodzie i strukturze bazy danych. Samodzielnie odtwarzam kluczowe powiązania i natychmiast lokalizuję miejsca, w których system traci najwięcej energii.",
     },
     {
       q: "Czy w trakcie prac moja platforma lub sklep przestaną działać dla kupujących?",
-      a: "Ani na jedną sekundę. Wszystkie testy obciążeniowe, modyfikacje i próby wydajnościowe wykonuję na całkowicie odizolowanym środowisku testowym (wiernej kopii Twojego systemu). Na żywy serwer trafia wyłącznie sprawdzony, przetestowany kod — podmieniany w nocy, w godzinach minimalnego ruchu."
+      a: "Ani na jedną sekundę. Wszystkie testy obciążeniowe, modyfikacje i próby wydajnościowe wykonuję na całkowicie odizolowanym środowisku testowym (wiernej kopii Twojego systemu). Na żywy serwer trafia wyłącznie sprawdzony, przetestowany kod — podmieniany w nocy, w godzinach minimalnego ruchu.",
     },
     {
       q: "Kiedy zobaczę pierwsze realne efekty przyspieszenia?",
-      a: "Pierwsze efekty widzisz już po 14 dniach na środowisku testowym, gdzie wspólnie porównujemy stary i nowy czas reakcji na tych samych danych. Całkowite przyspieszenie dla Twoich klientów na żywej stronie staje się faktem najpóźniej w 4. tygodniu (Dniu 28), natychmiast przekładając się na szybsze składanie zamówień."
+      a: "Pierwsze efekty widzisz już po 14 dniach na środowisku testowym, gdzie wspólnie porównujemy stary i nowy czas reakcji na tych samych danych. Całkowite przyspieszenie dla Twoich klientów na żywej stronie staje się faktem najpóźniej w 4. tygodniu (Dniu 28), natychmiast przekładając się na szybsze składanie zamówień.",
     },
     {
       q: "Czy po zakończeniu modernizacji będę uzależniony od Twojej osoby?",
-      a: "Absolutnie nie. Nie wprowadzam autorskich, zamkniętych narzędzi ani nie tworzę „złotej klatki”. W ramach Bonusu 1 otrzymujesz przejrzysty zestaw wytycznych technicznych. Każdy kompetentny programista bez trudu zrozumie wprowadzone zmiany i będzie mógł swobodnie rozwijać system."
+      a: "Absolutnie nie. Nie wprowadzam autorskich, zamkniętych narzędzi ani nie tworzę „złotej klatki”. W ramach Bonusu 1 otrzymujesz przejrzysty zestaw wytycznych technicznych. Każdy kompetentny programista bez trudu zrozumie wprowadzone zmiany i będzie mógł swobodnie rozwijać system.",
     },
     {
       q: "Czy podpisujemy umowę o poufności (NDA) przed wejściem w kod i bazę danych?",
-      a: "Bezwzględnie tak. Zanim otrzymam dostęp do jakichkolwiek repozytoriów, baz klientów czy danych finansowych, podpisujemy restrykcyjną umowę NDA. Jako inżynier pracujący przy systemach Citibanku i BNP Paribas na co dzień stosuję procedury ochrony informacji zgodne z rygorami tajemnicy bankowej."
-    }
-  ]
+      a: "Bezwzględnie tak. Zanim otrzymam dostęp do jakichkolwiek repozytoriów, baz klientów czy danych finansowych, podpisujemy restrykcyjną umowę NDA. Jako inżynier pracujący przy systemach Citibanku i BNP Paribas na co dzień stosuję procedury ochrony informacji zgodne z rygorami tajemnicy bankowej.",
+    },
+  ],
 }
 
 export const offer = {
@@ -246,8 +249,7 @@ export const offer = {
   button: "Przejdź do formularza i zarezerwuj rozmowę →",
   format:
     "100% bezpłatnie • Wideorozmowa 1-na-1 z głównym inżynierem • Zero sprzedaży i zero technicznego żargonu",
-  note:
-    "🔒 Po pozytywnej weryfikacji danych w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.",
+  note: "🔒 Po pozytywnej weryfikacji danych w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.",
   availability:
     "Dostępność: Maksymalnie 2 modernizacje w kwartale (Zostało 1 wolne miejsce).",
   footer:
@@ -286,7 +288,10 @@ export const qualification = {
           value: "head",
           label: "Head of E-commerce / Dyrektor Operacyjny / CTO",
         },
-        { value: "pracownik", label: "Pracownik zbierający wstępne informacje" },
+        {
+          value: "pracownik",
+          label: "Pracownik zbierający wstępne informacje",
+        },
       ],
     },
     {
@@ -296,7 +301,8 @@ export const qualification = {
       options: [
         {
           value: "tak",
-          label: "Tak, zależy nam na szybkiej likwidacji problemu w tym kwartale",
+          label:
+            "Tak, zależy nam na szybkiej likwidacji problemu w tym kwartale",
         },
         {
           value: "przyszly",

@@ -23,86 +23,120 @@ type CtaSectionProps = {
   ctaHref?: string
 }
 
-export function CtaSection({ content: pageContent, ctaHref }: CtaSectionProps = {}) {
+export function CtaSection({
+  content: pageContent,
+  ctaHref,
+}: CtaSectionProps = {}) {
   const cta = pageContent ?? content.cta
   const href = ctaHref ?? siteConfig.calendlyLink
   const isExternal = href.startsWith("http")
 
   return (
-      <section
-        id="kontakt"
-        className="relative overflow-hidden border-t border-border bg-background py-14 text-muted-foreground sm:py-20 md:py-32"
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-primary/20 via-background to-background"></div>
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-72 w-72 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+    <section
+      id="kontakt"
+      className="relative overflow-hidden border-t border-border bg-background py-14 text-muted-foreground sm:py-20 md:py-32"
+    >
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-primary/20 via-background to-background"></div>
+      <div className="pointer-events-none absolute bottom-0 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl"></div>
 
-        <div className="relative z-10 container mx-auto px-4 max-w-5xl">
-          <Reveal as="header" className="text-center mb-8 sm:mb-16">
-            <div className="mb-4">
-              <SectionBadge><Sparkles className="h-3.5 w-3.5 shrink-0" />{cta.badge}</SectionBadge>
+      <div className="relative z-10 container mx-auto max-w-5xl px-4">
+        <Reveal as="header" className="mb-8 text-center sm:mb-16">
+          <div className="mb-4">
+            <SectionBadge>
+              <Sparkles className="h-3.5 w-3.5 shrink-0" />
+              {cta.badge}
+            </SectionBadge>
+          </div>
+          <h2 className="mx-auto mb-3 max-w-3xl text-2xl leading-snug font-semibold tracking-tight text-balance text-foreground sm:mb-6 sm:text-3xl sm:leading-tight md:text-4xl">
+            {cta.title}
+          </h2>
+          <p
+            className="mx-auto max-w-2xl text-sm leading-relaxed font-normal text-pretty text-muted-foreground sm:text-base md:text-lg"
+            dangerouslySetInnerHTML={{ __html: cta.description }}
+          />
+        </Reveal>
+
+        <Reveal className="mx-auto max-w-2xl">
+          <div className="mb-6 sm:mb-8">
+            <p className="mb-4 text-center text-xs font-medium text-foreground sm:mb-5 sm:text-sm">
+              {cta.package_title}
+            </p>
+            <div className="divide-y divide-border border-y border-border">
+              {cta.offer_items.map((item, i) => (
+                <div
+                  key={i}
+                  className="flex flex-col gap-2 py-3.5 text-left sm:flex-row sm:items-start sm:gap-3 sm:py-4"
+                >
+                  <span className="flex h-[1.625em] shrink-0 items-center text-xs text-primary sm:text-sm">
+                    {i === 0 && (
+                      <Target className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                    )}
+                    {i === 1 && (
+                      <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+                    )}
+                    {i === 2 && <Map className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
+                  </span>
+                  <span className="min-w-0 text-xs leading-relaxed text-pretty text-muted-foreground sm:text-sm">
+                    {item.desc ? (
+                      <>
+                        <strong className="font-medium text-foreground">
+                          {item.title}
+                        </strong>{" "}
+                        {item.desc}
+                      </>
+                    ) : (
+                      item.title
+                    )}
+                  </span>
+                </div>
+              ))}
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto text-balance">
-              {cta.title}
-            </h2>
-            <p className="max-w-2xl mx-auto text-muted-foreground font-normal leading-relaxed text-sm sm:text-base md:text-lg text-pretty" dangerouslySetInnerHTML={{ __html: cta.description }} />
-          </Reveal>
+          </div>
 
-          <Reveal className="max-w-2xl mx-auto">
-            <div className="mb-6 sm:mb-8">
-              <p className="text-xs sm:text-sm font-medium text-foreground mb-4 sm:mb-5 text-center">{cta.package_title}</p>
-              <div className="divide-y divide-border border-y border-border">
-                {cta.offer_items.map((item, i) => (
-                  <div key={i} className="flex flex-col gap-2 text-left py-3.5 sm:flex-row sm:items-start sm:gap-3 sm:py-4">
-                    <span className="flex h-[1.625em] shrink-0 items-center text-primary text-xs sm:text-sm">
-                      {i === 0 && <Target className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
-                      {i === 1 && <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
-                      {i === 2 && <Map className="h-3.5 w-3.5 sm:h-4 sm:w-4" />}
-                    </span>
-                    <span className="min-w-0 text-xs sm:text-sm text-muted-foreground leading-relaxed text-pretty">
-                      {item.desc ? (
-                        <>
-                          <strong className="font-medium text-foreground">{item.title}</strong>{" "}
-                          {item.desc}
-                        </>
-                      ) : (
-                        item.title
-                      )}
-                    </span>
-                  </div>
-                ))}
-              </div>
+          {cta.format ? (
+            <div className="mb-5 text-center text-xs leading-relaxed whitespace-pre-line text-muted-foreground sm:mb-6 sm:text-sm">
+              {cta.format}
             </div>
+          ) : (
+            <div className="mb-5 text-center text-xs leading-relaxed text-muted-foreground sm:mb-6 sm:text-sm">
+              100% bezpłatnie • Rozmowa wideo 1-na-1 • Zero sprzedaży i zero
+              technicznego żargonu
+            </div>
+          )}
 
-            {cta.format ? (
-              <div className="text-xs sm:text-sm text-muted-foreground text-center mb-5 sm:mb-6 leading-relaxed whitespace-pre-line">{cta.format}</div>
+          <div className="flex flex-col items-center">
+            <a
+              href={href}
+              {...(isExternal
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : { role: "button" })}
+              className="w-full max-w-md"
+            >
+              <CtaButton className="w-full">{cta.button}</CtaButton>
+            </a>
+            {cta.note ? (
+              <p className="mt-3 text-center text-xs leading-relaxed font-medium text-pretty text-muted-foreground sm:text-sm">
+                {cta.note}
+              </p>
             ) : (
-              <div className="text-xs sm:text-sm text-muted-foreground text-center mb-5 sm:mb-6 leading-relaxed">100% bezpłatnie • Rozmowa wideo 1-na-1 • Zero sprzedaży i zero technicznego żargonu</div>
+              <p className="mt-3 text-center text-xs leading-relaxed font-medium text-pretty text-muted-foreground sm:text-sm">
+                🔒 Po pozytywnej weryfikacji danych w ankiecie otrzymasz
+                natychmiastowy dostęp do kalendarza rezerwacji.
+              </p>
             )}
-
-            <div className="flex flex-col items-center">
-              <a
-                href={href}
-                {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : { role: "button" })}
-                className="w-full max-w-md"
-              >
-                <CtaButton className="w-full">
-                  {cta.button}
-                </CtaButton>
-              </a>
-              {cta.note ? (
-                <p className="text-xs sm:text-sm text-muted-foreground mt-3 font-medium text-center leading-relaxed text-pretty">{cta.note}</p>
-              ) : (
-                <p className="text-xs sm:text-sm text-muted-foreground mt-3 font-medium text-center leading-relaxed text-pretty">🔒 Po pozytywnej weryfikacji danych w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.</p>
-              )}
-              {cta.availability && (
-                <p className="text-xs text-primary text-center mt-2 font-medium tracking-wide uppercase">{cta.availability}</p>
-              )}
-              {cta.footer && (
-                <p className="text-xs sm:text-sm text-muted-foreground mt-2 font-medium text-center leading-relaxed text-pretty">{cta.footer}</p>
-              )}
-            </div>
-          </Reveal>
-        </div>
-      </section>
+            {cta.availability && (
+              <p className="mt-2 text-center text-xs font-medium tracking-wide text-primary uppercase">
+                {cta.availability}
+              </p>
+            )}
+            {cta.footer && (
+              <p className="mt-2 text-center text-xs leading-relaxed font-medium text-pretty text-muted-foreground sm:text-sm">
+                {cta.footer}
+              </p>
+            )}
+          </div>
+        </Reveal>
+      </div>
+    </section>
   )
 }

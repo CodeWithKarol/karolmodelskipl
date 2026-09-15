@@ -8,11 +8,12 @@ import { CtaSection, type CtaContent } from "@/components/cta-section"
 import { SectionBadge } from "@/components/section-badge"
 
 const ctaContent: CtaContent = {
-  badge: "Program Wdrożeniowy: Audyt Wydajności i Architektury (Tylko 2 firmy w kwartale)",
+  badge:
+    "Program Wdrożeniowy: Audyt Wydajności i Architektury (Tylko 2 firmy w kwartale)",
   title:
     "Twój system działa wolno, generuje błędy przy obciążeniu i wolisz zdiagnozować wąskie gardła od razu w 4 oczy?",
   description:
-    "Zamiast tracić tygodnie na domysły i kolejne bezowocne dyskusje z programistami, przenieś analizę na moje barki. Jako Niezależny Partner Technologiczny w każdym kwartale biorę na warsztat <strong class='text-white font-semibold'>maksymalnie dwa systemy</strong>. W zamian za opinię po zakończeniu analizy, możesz odebrać dedykowany Pakiet Strategiczny całkowicie <strong class='text-white font-semibold'>za 0 zł</strong>.",
+    "Zamiast tracić tygodnie na domysły i kolejne bezowocne dyskusje z programistami, przenieś analizę na moje barki. Jako Niezależny Partner Technologiczny w każdym kwartale biorę na warsztat <strong class='text-highlight font-semibold'>maksymalnie dwa systemy</strong>. W zamian za opinię po zakończeniu analizy, możesz odebrać dedykowany Pakiet Strategiczny całkowicie <strong class='text-highlight font-semibold'>za 0 zł</strong>.",
   package_title:
     "Co namacalnie otrzymujesz w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
   offer_items: [
@@ -159,7 +160,9 @@ export default function ModernizacjaCategoryPage() {
           }))}
           className={posts.length > 3 ? "mb-10 sm:mb-16" : "mb-20"}
         />
-        {posts.length > 3 && <BlogPostGrid posts={posts.slice(3)} className="mb-20" />}
+        {posts.length > 3 && (
+          <BlogPostGrid posts={posts.slice(3)} className="mb-20" />
+        )}
       </main>
 
       <CtaSection content={ctaContent} />

@@ -44,12 +44,14 @@ export const header = {
         {
           title: "Wszystkie artykuły (Blog główny)",
           href: "/blog",
-          description: "Przeglądaj pełną bazę wiedzy o oprogramowaniu dla firm.",
+          description:
+            "Przeglądaj pełną bazę wiedzy o oprogramowaniu dla firm.",
         },
         {
           title: "Bezinwazyjna modernizacja systemów",
           href: "/blog/bezinwazyjna-modernizacja-systemow",
-          description: "Jak przyspieszać oprogramowanie bez przestojów w firmie.",
+          description:
+            "Jak przyspieszać oprogramowanie bez przestojów w firmie.",
         },
         {
           title: "Szybka wersja startowa aplikacji",
@@ -64,7 +66,8 @@ export const header = {
         {
           title: "Strategia i partnerstwo IT",
           href: "/blog/strategia-it",
-          description: "Zarządzanie technologią i ochrona przed pułapkami agencji.",
+          description:
+            "Zarządzanie technologią i ochrona przed pułapkami agencji.",
         },
       ],
     },

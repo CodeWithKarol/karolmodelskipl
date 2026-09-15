@@ -37,14 +37,12 @@ export function ComparisonTableSection({
         className
       )}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
-
       <div className="relative z-10 container mx-auto max-w-5xl px-4">
         <Reveal as="header" className="mb-12 text-center sm:mb-16">
           <div className="mb-4 flex justify-center">
             <SectionBadge>{badge}</SectionBadge>
           </div>
-          <h2 className="mx-auto max-w-3xl text-2xl font-semibold leading-tight tracking-tight text-foreground sm:text-3xl md:text-4xl">
+          <h2 className="mx-auto max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             {comparison.title}
           </h2>
         </Reveal>
@@ -54,14 +52,14 @@ export function ComparisonTableSection({
           <Table>
             <TableHeader>
               <TableRow className="border-border hover:bg-transparent">
-                <TableHead className="h-auto px-0 pb-4 pr-6 align-top text-xs font-medium uppercase tracking-wider whitespace-normal text-muted-foreground last:pr-0">
+                <TableHead className="h-auto px-0 pr-6 pb-4 align-top text-xs font-medium tracking-wider whitespace-normal text-muted-foreground uppercase last:pr-0">
                   Kryterium
                 </TableHead>
                 {comparison.columns.map((col, i) => (
                   <TableHead
                     key={i}
                     className={cn(
-                      "h-auto px-0 pb-4 pr-6 align-top text-sm font-semibold leading-snug whitespace-normal last:pr-0",
+                      "h-auto px-0 pr-6 pb-4 align-top text-sm leading-snug font-semibold whitespace-normal last:pr-0",
                       i === 0 ? "text-primary" : "text-foreground"
                     )}
                   >
@@ -72,7 +70,10 @@ export function ComparisonTableSection({
             </TableHeader>
             <TableBody>
               {comparison.rows.map((row, ri) => (
-                <TableRow key={ri} className="border-border hover:bg-transparent">
+                <TableRow
+                  key={ri}
+                  className="border-border hover:bg-transparent"
+                >
                   <TableCell className="px-0 py-5 pr-6 align-top text-sm font-semibold whitespace-normal text-foreground last:pr-0">
                     {row.criterion}
                   </TableCell>
@@ -93,7 +94,9 @@ export function ComparisonTableSection({
                           <span
                             className={cn(
                               "text-sm leading-relaxed",
-                              vi === 0 ? "text-foreground" : "text-muted-foreground"
+                              vi === 0
+                                ? "text-foreground"
+                                : "text-muted-foreground"
                             )}
                           >
                             {value}
@@ -132,7 +135,7 @@ export function ComparisonTableSection({
                       <div className="min-w-0">
                         <div
                           className={cn(
-                            "text-[10px] font-medium uppercase tracking-wider",
+                            "text-[10px] font-medium tracking-wider uppercase",
                             ci === 0 ? "text-primary" : "text-muted-foreground"
                           )}
                         >
@@ -141,7 +144,9 @@ export function ComparisonTableSection({
                         <p
                           className={cn(
                             "text-sm leading-relaxed",
-                            ci === 0 ? "text-foreground" : "text-muted-foreground"
+                            ci === 0
+                              ? "text-foreground"
+                              : "text-muted-foreground"
                           )}
                         >
                           {row.values[ci]}

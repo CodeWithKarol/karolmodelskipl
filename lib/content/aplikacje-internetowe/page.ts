@@ -48,21 +48,21 @@ export const story = {
   points: [
     {
       title: "Więzienie w 5 plikach Excela i kosztowny błąd ludzki",
-      desc: "Jeden przypadkowo usunięty wiersz, zły numer NIP lub pomyłka w adresie dostawy potrafi zablokować realizację, wstrzymać wysyłkę i zniszczyć relację z kluczowym klientem. Twój zespół żyje w permanentnym stresie, sprawdzając te same komórki po trzy razy."
+      desc: "Jeden przypadkowo usunięty wiersz, zły numer NIP lub pomyłka w adresie dostawy potrafi zablokować realizację, wstrzymać wysyłkę i zniszczyć relację z kluczowym klientem. Twój zespół żyje w permanentnym stresie, sprawdzając te same komórki po trzy razy.",
     },
     {
       title: "Płacenie pensji za bycie „ludzkim taśmociągiem”",
-      desc: "Płacisz pensje specjalistom, a oni marnują 70% dnia na ręczne wystawianie faktur, sprawdzanie stanów magazynowych na kartkach i przeklepywanie maili. Żeby obsłużyć więcej zleceń, musisz zatrudniać kolejne osoby do klikania — zamiast do sprzedaży."
+      desc: "Płacisz pensje specjalistom, a oni marnują 70% dnia na ręczne wystawianie faktur, sprawdzanie stanów magazynowych na kartkach i przeklepywanie maili. Żeby obsłużyć więcej zleceń, musisz zatrudniać kolejne osoby do klikania — zamiast do sprzedaży.",
     },
     {
       title: "Pudełkowe programy (SaaS), które uwierają zamiast pomagać",
-      desc: "Płacisz co miesiąc abonamenty za gotowe systemy, ale one narzucają sztywne schematy i nie pasują do tego, jak naprawdę działa Twój biznes. Kończy się tym, że pracownicy i tak tworzą „pomocnicze” arkusze Excela na boku."
+      desc: "Płacisz co miesiąc abonamenty za gotowe systemy, ale one narzucają sztywne schematy i nie pasują do tego, jak naprawdę działa Twój biznes. Kończy się tym, że pracownicy i tak tworzą „pomocnicze” arkusze Excela na boku.",
     },
     {
       title: "Software house'y, które uczą się branży za Twoje pieniądze",
-      desc: "Tradycyjna agencja każe płacić 150 000 zł z góry za roboczogodziny, przydziela junior project managera i buduje kombajn przez 9 miesięcy. Na koniec dostajesz system tak skomplikowany, że pracownicy boją się go dotknąć."
-    }
-  ]
+      desc: "Tradycyjna agencja każe płacić 150 000 zł z góry za roboczogodziny, przydziela junior project managera i buduje kombajn przez 9 miesięcy. Na koniec dostajesz system tak skomplikowany, że pracownicy boją się go dotknąć.",
+    },
+  ],
 }
 
 export const valueStack = {
@@ -158,27 +158,32 @@ export const comparison = {
     {
       feature: "Czas do pierwszego odciążenia",
       me: "Dokładnie 30 dni do uruchomienia Rdzenia Systemu i pierwszych oszczędności czasu.",
-      agency: "Od 6 do 12 miesięcy niekończącego się planowania i ciągłych aneksów terminowych.",
+      agency:
+        "Od 6 do 12 miesięcy niekończącego się planowania i ciągłych aneksów terminowych.",
     },
     {
       feature: "Budżet i rozliczenie",
       me: "Jedna, stała kwota pakietowa (model 50/50). Płacisz drugą część dopiero, gdy system działa.",
-      agency: "Płatność za roboczogodziny: rachunki rosną co miesiąc, brak ostatecznej ceny.",
+      agency:
+        "Płatność za roboczogodziny: rachunki rosną co miesiąc, brak ostatecznej ceny.",
     },
     {
       feature: "Kontakt i odpowiedzialność",
       me: "Rozmawiasz bezpośrednio z doświadczonym inżynierem (zero pośredników).",
-      agency: "„Głuchy telefon”: handlowcy, project managerowie i rotujący juniorzy.",
+      agency:
+        "„Głuchy telefon”: handlowcy, project managerowie i rotujący juniorzy.",
     },
     {
       feature: "Adaptacja pracowników",
       me: "3 miesiące mojej osobistej asysty we wdrażaniu nawyków w zespole.",
-      agency: "Szkolenie z prezentacji PDF, zostawienie zespołu samemu sobie i ucieczka do kolejnego klienta.",
+      agency:
+        "Szkolenie z prezentacji PDF, zostawienie zespołu samemu sobie i ucieczka do kolejnego klienta.",
     },
     {
       feature: "Niezależność",
       me: "100% praw autorskich, otwarte technologie, zero obowiązkowych abonamentów.",
-      agency: "Uzależnienie od jednej agencji i płacenie za każdą drobną zmianę w procedurach.",
+      agency:
+        "Uzależnienie od jednej agencji i płacenie za każdą drobną zmianę w procedurach.",
     },
   ],
 }
@@ -192,19 +197,22 @@ export const process = {
       title: "Dni 1–5",
       situation: "Inżynierskie cięcie chaosu i zamrożenie zakresu",
       desc: "Siadamy z Twoim zespołem i bierzemy pod lupę obecny obieg dokumentów. Wycinamy 80% zbędnych czynności i niepotrzebnych pól. Projektujemy jedną, prostą ścieżkę: od przyjęcia zamówienia, przez magazyn, po automatyczną fakturę i wysyłkę.",
-      result: "Rezultat: Podpisana, niezmienna specyfikacja procesu ze stałą ceną w umowie.",
+      result:
+        "Rezultat: Podpisana, niezmienna specyfikacja procesu ze stałą ceną w umowie.",
     },
     {
       title: "Dni 6–24",
       situation: "Budowa pancernego silnika operacyjnego",
       desc: "Biorę na siebie 100% prac programistycznych. Buduję system skrojony pod Twoją firmę: z automatycznym fakturowaniem, spięciem statusów zamówień i bazą danych odporną na błędy ludzkie. Twój zespół pracuje normalnie — bez paraliżowania bieżącej działalności.",
-      result: "Rezultat: Kompletny, przetestowany system przygotowany do wdrożenia na Twoich danych.",
+      result:
+        "Rezultat: Kompletny, przetestowany system przygotowany do wdrożenia na Twoich danych.",
     },
     {
       title: "Dni 25–30",
       situation: "Bezpieczna migracja i test pierwszego zamówienia",
       desc: "Przenosimy dane z dotychczasowych arkuszy. Przeprowadzamy zespół przez interfejs i wspólnie przetwarzamy pierwsze prawdziwe zamówienie jednym kliknięciem. Od Dnia 30 firma oficjalnie pracuje na nowym rozwiązaniu.",
-      result: "Rezultat: Działający system, odciążony zespół i natychmiastowe oszczędności roboczogodzin.",
+      result:
+        "Rezultat: Działający system, odciążony zespół i natychmiastowe oszczędności roboczogodzin.",
     },
   ],
 }
@@ -216,25 +224,25 @@ export const faq = {
   items: [
     {
       q: "Czy muszę dokładnie wiedzieć, jak ma wyglądać system od strony technicznej?",
-      a: "Nie. Twoim jedynym zadaniem jest pokazanie mi, jak dzisiaj przepływają dokumenty i zamówienia w Twojej firmie. Ja przekładam Twoją logikę biznesową na stabilne rozwiązanie cyfrowe. Podczas wdrożenia rozmawiamy wyłącznie o procesach, czasie pracy i wygodzie pracowników — zero technicznego żargonu."
+      a: "Nie. Twoim jedynym zadaniem jest pokazanie mi, jak dzisiaj przepływają dokumenty i zamówienia w Twojej firmie. Ja przekładam Twoją logikę biznesową na stabilne rozwiązanie cyfrowe. Podczas wdrożenia rozmawiamy wyłącznie o procesach, czasie pracy i wygodzie pracowników — zero technicznego żargonu.",
     },
     {
       q: "Kiedy zobaczę pierwsze realne efekty i odciążenie w firmie?",
-      a: "Pierwsze odciążenie następuje dokładnie w 30. dniu wdrożenia. Wtedy uruchamiamy moduł zdejmujący najbardziej czasochłonne zadanie (np. ręczne wystawianie dokumentów i sprawdzanie magazynu). Twój zespół odczuwa redukcję czasu pracy z dnia na dzień, a Ty widzisz spadek liczby błędów już w pierwszym miesiącu."
+      a: "Pierwsze odciążenie następuje dokładnie w 30. dniu wdrożenia. Wtedy uruchamiamy moduł zdejmujący najbardziej czasochłonne zadanie (np. ręczne wystawianie dokumentów i sprawdzanie magazynu). Twój zespół odczuwa redukcję czasu pracy z dnia na dzień, a Ty widzisz spadek liczby błędów już w pierwszym miesiącu.",
     },
     {
       q: "Co w sytuacji, gdy pracownicy będą bali się nowego narzędzia i spróbują wrócić do Excela?",
-      a: "To najczęstsza obawa właścicieli firm — i właśnie dlatego w pakiecie otrzymujesz 3 miesiące mojej osobistej asysty powdrożeniowej. System projektuję tak, aby był prostszy w obsłudze niż Excel (duże, czytelne przyciski, zero zbędnych pól). Osobiście asystuję zespołowi w pierwszych tygodniach, dzięki czemu pracownicy szybko zauważają, że system oszczędza ich czas i zdejmuje z nich stres związany z pomyłkami. Zamiast oporu pojawia się ulga."
+      a: "To najczęstsza obawa właścicieli firm — i właśnie dlatego w pakiecie otrzymujesz 3 miesiące mojej osobistej asysty powdrożeniowej. System projektuję tak, aby był prostszy w obsłudze niż Excel (duże, czytelne przyciski, zero zbędnych pól). Osobiście asystuję zespołowi w pierwszych tygodniach, dzięki czemu pracownicy szybko zauważają, że system oszczędza ich czas i zdejmuje z nich stres związany z pomyłkami. Zamiast oporu pojawia się ulga.",
     },
     {
       q: "Czy podpisujemy umowę o zachowaniu poufności (NDA) przed wglądem w dane firmy?",
-      a: "Bezwzględnie tak. Zanim udostępnisz mi jakiekolwiek arkusze, procedury czy bazy klientów, podpisujemy restrykcyjną umowę NDA. Posiadam wieloletnie doświadczenie w pracy z danymi objętymi tajemnicą bankową, dlatego kwestie bezpieczeństwa informacji i ochrony tajemnicy przedsiębiorstwa są u mnie na pierwszym miejscu."
+      a: "Bezwzględnie tak. Zanim udostępnisz mi jakiekolwiek arkusze, procedury czy bazy klientów, podpisujemy restrykcyjną umowę NDA. Posiadam wieloletnie doświadczenie w pracy z danymi objętymi tajemnicą bankową, dlatego kwestie bezpieczeństwa informacji i ochrony tajemnicy przedsiębiorstwa są u mnie na pierwszym miejscu.",
     },
     {
       q: "Czy po zakończeniu wdrożenia będę uzależniony od Twojej osoby?",
-      a: "Nie. Nie buduję wokół Twojej firmy „złotej klatki” ani nie pobieram przymusowych abonamentów za to, że system w ogóle działa. Otrzymujesz 100% praw autorskich, czyste repozytorium oraz pełną dokumentację techniczną i stanowiskową. Każdy wykwalifikowany programista jest w stanie przejąć ten kod bez konieczności pisania czegokolwiek od nowa."
-    }
-  ]
+      a: "Nie. Nie buduję wokół Twojej firmy „złotej klatki” ani nie pobieram przymusowych abonamentów za to, że system w ogóle działa. Otrzymujesz 100% praw autorskich, czyste repozytorium oraz pełną dokumentację techniczną i stanowiskową. Każdy wykwalifikowany programista jest w stanie przejąć ten kod bez konieczności pisania czegokolwiek od nowa.",
+    },
+  ],
 }
 
 export const offer = {
@@ -260,8 +268,7 @@ export const offer = {
   button: "Przejdź do formularza i zarezerwuj rozmowę →",
   format:
     "100% bezpłatnie • Wideorozmowa 1-na-1 z głównym inżynierem • Zero sprzedaży i zero technicznego żargonu",
-  note:
-    "🔒 Po pozytywnej weryfikacji danych w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.",
+  note: "🔒 Po pozytywnej weryfikacji danych w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.",
   availability:
     "Dostępność: Maksymalnie 2 wdrożenia w kwartale (Zostało 1 wolne miejsce).",
   footer:
@@ -274,15 +281,16 @@ export const guarantee = {
   subtitle: "",
   items: [
     {
-      title: "Jeśli w Dniu 30 system nie ruszy lub Twój zespół nie będzie w stanie przetworzyć w nim prawdziwego zamówienia:",
+      title:
+        "Jeśli w Dniu 30 system nie ruszy lub Twój zespół nie będzie w stanie przetworzyć w nim prawdziwego zamówienia:",
       desc: "",
       bullets: [
         "Zwracam 100% wpłaconej zaliczki (20 000 zł) co do grosza.",
         "Cały zbudowany kod, serwery i konfiguracje zostają w Twojej firmie za 0 zł.",
       ],
       note: "Standardy bankowe przeniesione do MŚP: ryzyko opóźnienia biorę na siebie, nie na Twój budżet.",
-    }
-  ]
+    },
+  ],
 }
 
 export const qualification = {
@@ -328,7 +336,10 @@ export const qualification = {
           label:
             "Tak, mamy zabezpieczone środki i chcemy rozwiązać problem w tym kwartale",
         },
-        { value: "pozniej", label: "Budżet będzie dostępny w kolejnych kwartałach" },
+        {
+          value: "pozniej",
+          label: "Budżet będzie dostępny w kolejnych kwartałach",
+        },
         {
           value: "darmowe",
           label: "Szukamy bezpłatnych porad / nie planujemy inwestycji",

@@ -47,24 +47,22 @@ export function GuaranteeSection({
   return (
     <section
       id={id}
-      className="relative overflow-hidden border-t border-border bg-background py-12 sm:py-20 text-muted-foreground md:py-32"
+      className="relative overflow-hidden border-t border-border bg-background py-12 text-muted-foreground sm:py-20 md:py-32"
     >
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
-
-      <div className="relative z-10 container mx-auto px-4 max-w-5xl">
+      <div className="relative z-10 container mx-auto max-w-5xl px-4">
         {/* Header - Mobile First */}
-        <Reveal as="header" className="mb-8 sm:mb-16 text-center">
+        <Reveal as="header" className="mb-8 text-center sm:mb-16">
           <div className="mb-3 sm:mb-4">
             <SectionBadge variant={variant}>
-            <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-            <span>{guarantee.badge}</span>
-          </SectionBadge>
+              <ShieldCheck className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              <span>{guarantee.badge}</span>
+            </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
+          <h2 className="mx-auto mb-3 max-w-3xl text-2xl leading-snug font-semibold tracking-tight text-foreground sm:mb-6 sm:text-3xl sm:leading-tight md:text-4xl">
             {guarantee.title}
           </h2>
           {guarantee.subtitle && (
-            <p className="max-w-2xl mx-auto text-muted-foreground font-normal leading-relaxed text-xs sm:text-base md:text-lg">
+            <p className="mx-auto max-w-2xl text-xs leading-relaxed font-normal text-muted-foreground sm:text-base md:text-lg">
               {guarantee.subtitle}
             </p>
           )}
@@ -80,7 +78,9 @@ export function GuaranteeSection({
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-primary/10 text-xs font-semibold text-primary">
                   {i + 1}
                 </span>
-                <p className="text-sm leading-snug text-muted-foreground">{step}</p>
+                <p className="text-sm leading-snug text-muted-foreground">
+                  {step}
+                </p>
               </div>
             ))}
           </div>
@@ -93,16 +93,25 @@ export function GuaranteeSection({
             return (
               <Reveal key={i} delay={i * 0.05}>
                 <div className="flex flex-col gap-2.5 border-t border-border py-6 sm:flex-row sm:items-start sm:gap-5 sm:py-8">
-                  <Icon className={`h-5 w-5 shrink-0 sm:mt-1 ${iconColors[variant]}`} />
+                  <Icon
+                    className={`h-5 w-5 shrink-0 sm:mt-1 ${iconColors[variant]}`}
+                  />
                   <div className="min-w-0">
-                    <h3 className="text-base font-semibold text-foreground leading-snug sm:text-xl">{item.title}</h3>
+                    <h3 className="text-base leading-snug font-semibold text-foreground sm:text-xl">
+                      {item.title}
+                    </h3>
                     {item.desc && (
-                      <p className="mt-2 max-w-prose text-sm leading-relaxed text-muted-foreground whitespace-pre-line sm:text-[15px]">{item.desc}</p>
+                      <p className="mt-2 max-w-prose text-sm leading-relaxed whitespace-pre-line text-muted-foreground sm:text-[15px]">
+                        {item.desc}
+                      </p>
                     )}
                     {item.bullets && item.bullets.length > 0 && (
                       <ul className="mt-3 space-y-2.5">
                         {item.bullets.map((bullet, j) => (
-                          <li key={j} className="flex items-start gap-2.5 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
+                          <li
+                            key={j}
+                            className="flex items-start gap-2.5 text-sm leading-relaxed text-muted-foreground sm:text-[15px]"
+                          >
                             <span
                               aria-hidden="true"
                               className={`mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full ${bulletColors[variant]}`}
@@ -113,7 +122,9 @@ export function GuaranteeSection({
                       </ul>
                     )}
                     {item.note && (
-                      <p className="mt-3 text-sm font-medium text-foreground sm:text-[15px]">{item.note}</p>
+                      <p className="mt-3 text-sm font-medium text-foreground sm:text-[15px]">
+                        {item.note}
+                      </p>
                     )}
                   </div>
                 </div>

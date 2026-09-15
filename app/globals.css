@@ -28,6 +28,7 @@
     --color-success: var(--success);
     --color-warning: var(--warning);
     --color-info: var(--info);
+    --color-highlight: var(--highlight);
     --color-accent-foreground: var(--accent-foreground);
     --color-accent: var(--accent);
     --color-muted-foreground: var(--muted-foreground);
@@ -52,43 +53,47 @@
 }
 
 :root {
-    color-scheme: dark;
-    --background: oklch(26% 0.034 264.695);
-    --foreground: oklch(89% 0.003 247.858);
-    --card: color-mix(in oklch, var(--background) 88%, white 12%);
-    --card-foreground: oklch(89% 0.003 247.858);
-    --popover: oklch(29% 0.034 265.755);
-    --popover-foreground: oklch(89% 0.003 247.858);
-    --primary: oklch(62.3% 0.214 259.815);
+    color-scheme: light;
+    --background: oklch(98.4% 0.003 247.858);
+    --foreground: oklch(20.8% 0.042 265.755);
+    --card: oklch(100% 0 0);
+    --card-foreground: oklch(20.8% 0.042 265.755);
+    --popover: oklch(100% 0 0);
+    --popover-foreground: oklch(20.8% 0.042 265.755);
+    --primary: oklch(54.6% 0.245 262.881);
     --primary-foreground: oklch(100% 0 0);
-    --secondary: oklch(36% 0.034 260.031);
-    --secondary-foreground: oklch(89% 0.003 247.858);
-    --muted: color-mix(in oklch, var(--background) 82%, white 18%);
-    --muted-foreground: oklch(75% 0.03 256.788);
-    --accent: oklch(36% 0.034 260.031);
-    --accent-foreground: oklch(89% 0.003 247.858);
-    --destructive: oklch(63.7% 0.237 25.331);
+    --secondary: oklch(96.8% 0.007 247.896);
+    --secondary-foreground: oklch(20.8% 0.042 265.755);
+    --muted: oklch(96.8% 0.007 247.896);
+    --muted-foreground: oklch(44.6% 0.043 257.281);
+    --accent: oklch(96.8% 0.007 247.896);
+    --accent-foreground: oklch(20.8% 0.042 265.755);
+    --destructive: oklch(57.7% 0.245 27.325);
     --destructive-foreground: oklch(100% 0 0);
-    --success: oklch(69.6% 0.17 162.48);
-    --warning: oklch(82.8% 0.189 84.429);
-    --info: oklch(86.5% 0.127 207.078);
-    --border: oklch(36% 0.034 260.031);
-    --input: oklch(43% 0.034 257.287);
-    --ring: oklch(62.3% 0.214 259.815);
-    --chart-1: oklch(62.3% 0.214 259.815);
+    --success: oklch(59.6% 0.145 163.225);
+    --warning: oklch(66.6% 0.179 58.318);
+    --info: oklch(58.8% 0.158 241.966);
+    --border: oklch(92.9% 0.013 255.508);
+    --input: oklch(86.9% 0.022 252.894);
+    --ring: oklch(54.6% 0.245 262.881);
+    --chart-1: oklch(54.6% 0.245 262.881);
     --chart-2: oklch(70.4% 0.04 256.788);
     --chart-3: oklch(55.4% 0.046 257.417);
-    --chart-4: oklch(36% 0.034 260.031);
-    --chart-5: oklch(29% 0.034 265.755);
+    --chart-4: oklch(92.9% 0.013 255.508);
+    --chart-5: oklch(96.8% 0.007 247.896);
     --radius: 0.625rem;
-    --sidebar: oklch(26% 0.034 264.695);
-    --sidebar-foreground: oklch(89% 0.003 247.858);
-    --sidebar-primary: oklch(62.3% 0.214 259.815);
+    --sidebar: oklch(98.4% 0.003 247.858);
+    --sidebar-foreground: oklch(20.8% 0.042 265.755);
+    --sidebar-primary: oklch(54.6% 0.245 262.881);
     --sidebar-primary-foreground: oklch(100% 0 0);
-    --sidebar-accent: oklch(36% 0.034 260.031);
-    --sidebar-accent-foreground: oklch(89% 0.003 247.858);
-    --sidebar-border: oklch(36% 0.034 260.031);
-    --sidebar-ring: oklch(62.3% 0.214 259.815);
+    --sidebar-accent: oklch(96.8% 0.007 247.896);
+    --sidebar-accent-foreground: oklch(20.8% 0.042 265.755);
+    --sidebar-border: oklch(92.9% 0.013 255.508);
+    --sidebar-ring: oklch(54.6% 0.245 262.881);
+    --glow: var(--primary);
+    --glow-accent: var(--primary);
+    --ambient: var(--primary);
+    --highlight: var(--foreground);
 }
 
 .dark {
@@ -129,6 +134,10 @@
     --sidebar-accent-foreground: oklch(89% 0.003 247.858);
     --sidebar-border: oklch(36% 0.034 260.031);
     --sidebar-ring: oklch(62.3% 0.214 259.815);
+    --glow: rgb(37 99 235);
+    --glow-accent: rgb(59 130 246);
+    --ambient: rgb(30 58 138);
+    --highlight: rgb(255 255 255);
 }
 
 @keyframes fade-up {
@@ -148,6 +157,15 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(24px);
+  }
+  to {
+    transform: translateY(0);
   }
 }
 

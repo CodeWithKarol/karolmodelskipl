@@ -1,11 +1,13 @@
 export const mvp = {
   metadata: {
-    title: "Kompletny Fundament Technologiczny SaaS/B2B w 30 Dni (Pancerna Stabilność)",
+    title:
+      "Kompletny Fundament Technologiczny SaaS/B2B w 30 Dni (Pancerna Stabilność)",
     description:
       "W 30 dni buduję kompletny fundament technologiczny Twojego SaaS/B2B: produkcyjna platforma pod Twoją domeną, pancernie stabilna i bezpieczna dla pieniędzy Twoich klientów, gotowa na realne wpłaty. Stała cena 50 000 zł, gwarancja terminu i zwrotu.",
   },
   service: {
-    title: "Kompletny Fundament Technologiczny SaaS/B2B w 30 Dni (Pancerna Stabilność)",
+    title:
+      "Kompletny Fundament Technologiczny SaaS/B2B w 30 Dni (Pancerna Stabilność)",
     description:
       "Produkcyjna platforma SaaS/B2B pod Twoją domeną, zbudowana w 30 dni z myślą o pancernej stabilności i bezpieczeństwie pieniędzy Twoich klientów — rejestracja użytkowników, bezpieczna baza danych, panel zarządzania i moduł płatności subskrypcyjnych. 100% praw autorskich do kodu w Twoich rękach.",
     type: "Tworzenie wersji pilotażowych oprogramowania",
@@ -17,8 +19,10 @@ export const mvp = {
   },
   hero: {
     badge: "Dla założycieli B2B & SaaS bez zaplecza technicznego",
-    title: "Od pomysłu do gotowej do sprzedaży platformy B2B w dokładnie 30 dni.",
-    title_highlight: "Zamiast 9 miesięcy czekania na agencję — kompletny system pod Twoją domeną z działającymi płatnościami.",
+    title:
+      "Od pomysłu do gotowej do sprzedaży platformy B2B w dokładnie 30 dni.",
+    title_highlight:
+      "Zamiast 9 miesięcy czekania na agencję — kompletny system pod Twoją domeną z działającymi płatnościami.",
     subtitle:
       "Działająca platforma w Dniu 30 albo zwracam 25 000 zł zaliczki, a kod zostaje u Ciebie.",
     qualification: {
@@ -29,7 +33,8 @@ export const mvp = {
         "Osobiste przejęcie 100% technologii i dowiezienie pod Twoją marką działającego produktu o pancernej stabilności i bezpieczeństwie.",
       cta: "Sprawdź kwalifikację projektu",
       cta_line1: "Sprawdź kwalifikację projektu →",
-      trust_label: "Standardy architektury i bezpieczeństwa sprawdzone w systemach dla:",
+      trust_label:
+        "Standardy architektury i bezpieczeństwa sprawdzone w systemach dla:",
       trust_logos: ["Citibank", "BNP Paribas", "Silent Eight", "Amway"],
     },
     cta_sub:
@@ -50,7 +55,8 @@ export const mvp = {
     ],
   },
   trap: {
-    title: "Dlaczego tradycyjny model tworzenia oprogramowania niszczy budżety założycieli?",
+    title:
+      "Dlaczego tradycyjny model tworzenia oprogramowania niszczy budżety założycieli?",
     title_highlight: "",
     text1:
       "Firmy programistyczne i software house'y zarabiają na <strong>długości trwania prac</strong>, a nie na tym, czy Twoja platforma zarobi chociaż jedną złotówkę. To fundamentalny konflikt interesów.",
@@ -58,20 +64,20 @@ export const mvp = {
     negative_points: [
       {
         title: "Płacenie za czas, a nie za gotowy efekt",
-        desc: "Model „roboczogodzin” premiuje powolną pracę. Zamiast działającej platformy co miesiąc dostajesz faktury za „nieprzewidziane trudności”, a data uruchomienia systemu stale się oddala."
+        desc: "Model „roboczogodzin” premiuje powolną pracę. Zamiast działającej platformy co miesiąc dostajesz faktury za „nieprzewidziane trudności”, a data uruchomienia systemu stale się oddala.",
       },
       {
         title: "Zasłona dymna technicznego żargonu",
-        desc: "Zamiast rozmawiać o sprzedaży i klientach, tracisz energię na próby zrozumienia skrótów i pojęć architektonicznych. Niejasna komunikacja odbiera Ci kontrolę nad własnym budżetem."
+        desc: "Zamiast rozmawiać o sprzedaży i klientach, tracisz energię na próby zrozumienia skrótów i pojęć architektonicznych. Niejasna komunikacja odbiera Ci kontrolę nad własnym budżetem.",
       },
       {
         title: "Przeładowanie systemu zbędnym kodem",
-        desc: "Programiści chętnie zbudują 30 podstron i skomplikowane panele — bo na tym zarabiają. Po pół roku zostajesz z gigantycznym kombajnem, którego żaden klient nie potrzebuje do podjęcia decyzji o zakupie."
+        desc: "Programiści chętnie zbudują 30 podstron i skomplikowane panele — bo na tym zarabiają. Po pół roku zostajesz z gigantycznym kombajnem, którego żaden klient nie potrzebuje do podjęcia decyzji o zakupie.",
       },
       {
         title: "Paraliż przed inwestorskim audytem technologicznym",
-        desc: "Platforma sklejona prowizorycznie przez przypadkowych wykonawców rozsypie się przy pierwszym audycie technicznym. Inwestor powie wprost: „kod do kosza, zaczynamy od nowa”. Tracisz kapitał i wiarygodność."
-      }
+        desc: "Platforma sklejona prowizorycznie przez przypadkowych wykonawców rozsypie się przy pierwszym audycie technicznym. Inwestor powie wprost: „kod do kosza, zaczynamy od nowa”. Tracisz kapitał i wiarygodność.",
+      },
     ],
     positive_point:
       "Zamiast miesiącami czekać na idealny produkt, buduję kompletny fundament technologiczny Twojego SaaS/B2B w 30 dni, skupiając się wyłącznie na tym, co generuje zysk.",
@@ -103,65 +109,69 @@ export const mvp = {
       {
         red: {
           title: "Czas oczekiwania",
-          desc: "Od 6 do 12 miesięcy planowania, analiz i ciągłych przesunięć terminu wdrożenia."
+          desc: "Od 6 do 12 miesięcy planowania, analiz i ciągłych przesunięć terminu wdrożenia.",
         },
         blue: {
           title: "Czas do gotowości do sprzedaży",
-          desc: "Dokładnie 30 dni od zatwierdzenia planu. Działający system gotowy na rynek w 1 miesiąc."
-        }
+          desc: "Dokładnie 30 dni od zatwierdzenia planu. Działający system gotowy na rynek w 1 miesiąc.",
+        },
       },
       {
         red: {
           title: "Model rozliczenia i budżet",
-          desc: "Płatność za roboczogodziny: budżet rośnie z każdym miesiącem, brak ostatecznej ceny."
+          desc: "Płatność za roboczogodziny: budżet rośnie z każdym miesiącem, brak ostatecznej ceny.",
         },
         blue: {
           title: "Model rozliczenia i budżet",
-          desc: "Jedna, stała cena za dowieziony efekt biznesowy. Zero dopłat za „nieprzewidziane trudności”."
-        }
+          desc: "Jedna, stała cena za dowieziony efekt biznesowy. Zero dopłat za „nieprzewidziane trudności”.",
+        },
       },
       {
         red: {
           title: "Język i komunikacja",
-          desc: "Niezrozumiały żargon techniczny, głuche telefony przez project managerów i praca z rotującymi juniorami."
+          desc: "Niezrozumiały żargon techniczny, głuche telefony przez project managerów i praca z rotującymi juniorami.",
         },
         blue: {
           title: "Język i komunikacja",
-          desc: "Rozmawiasz bezpośrednio z doświadczonym inżynierem. Prosty język biznesu, zysków i wygody Twoich klientów."
-        }
+          desc: "Rozmawiasz bezpośrednio z doświadczonym inżynierem. Prosty język biznesu, zysków i wygody Twoich klientów.",
+        },
       },
       {
         red: {
           title: "Końcowy efekt i niezależność",
-          desc: "Paczka plików z kodem, której nie potrafisz zweryfikować. Uzależnienie technologiczne i opłaty za każdą drobną zmianę."
+          desc: "Paczka plików z kodem, której nie potrafisz zweryfikować. Uzależnienie technologiczne i opłaty za każdą drobną zmianę.",
         },
         blue: {
           title: "Końcowy efekt i niezależność",
-          desc: "Gotowa do zarabiania platforma: pancerna stabilność i bezpieczeństwo pieniędzy Twoich klientów (doświadczenie z Citibank, BNP Paribas), pełna własność i dokumentacja kodu — każdy kolejny inżynier przejmie projekt z marszu."
-        }
-      }
-    ]
+          desc: "Gotowa do zarabiania platforma: pancerna stabilność i bezpieczeństwo pieniędzy Twoich klientów (doświadczenie z Citibank, BNP Paribas), pełna własność i dokumentacja kodu — każdy kolejny inżynier przejmie projekt z marszu.",
+        },
+      },
+    ],
   },
   mechanism: {
     title: "Jak to możliwe w 30 dni? Dokładnie, a nie na oko.",
-    subtitle: "Pancerną stabilność i bezpieczeństwo wypracowane w globalnych instytucjach finansowych przeniosłem do projektów technologicznych — bez korporacyjnej biurokracji i opóźnień. 30 dni rozbite na 3 bezlitosne etapy:",
+    subtitle:
+      "Pancerną stabilność i bezpieczeństwo wypracowane w globalnych instytucjach finansowych przeniosłem do projektów technologicznych — bez korporacyjnej biurokracji i opóźnień. 30 dni rozbite na 3 bezlitosne etapy:",
     cards: [
       {
         label: "Dni 1–3",
         title: "Odcięcie zbędnych kosztów",
-        content: "Wspólnie prześwietlamy Twój pomysł. Wyrzucamy 80% funkcji, które tylko spalą budżet, a nie przyniosą pierwszych zysków. Ustalamy prostą, niezmienną ścieżkę: od wejścia klienta na stronę do zakupu.",
+        content:
+          "Wspólnie prześwietlamy Twój pomysł. Wyrzucamy 80% funkcji, które tylko spalą budżet, a nie przyniosą pierwszych zysków. Ustalamy prostą, niezmienną ścieżkę: od wejścia klienta na stronę do zakupu.",
       },
       {
         label: "Dni 4–24",
         title: "Budowa maszyny sprzedażowej",
-        content: "Przejmuję 100% technologii. Stawiam pancerne zaplecze, system kont i bezpieczne bramki płatności. Ty w tym czasie skupiasz się na tym, co najważniejsze — rozmowach z pierwszymi klientami.",
+        content:
+          "Przejmuję 100% technologii. Stawiam pancerne zaplecze, system kont i bezpieczne bramki płatności. Ty w tym czasie skupiasz się na tym, co najważniejsze — rozmowach z pierwszymi klientami.",
       },
       {
         label: "Dni 25–30",
         title: "Test ogniowy i start wpłat",
-        content: "Podpinamy Twoją domenę. Razem wykonujemy testowy zakup prawdziwą kartą. W 30. dniu Twój system jest gotowy przyjmować oficjalne zamówienia.",
+        content:
+          "Podpinamy Twoją domenę. Razem wykonujemy testowy zakup prawdziwą kartą. W 30. dniu Twój system jest gotowy przyjmować oficjalne zamówienia.",
       },
-    ]
+    ],
   },
   spec: {
     badge: "Specyfikacja Pakietu & Warunki Rozliczenia",
@@ -208,10 +218,12 @@ export const mvp = {
       },
     ],
     summary_label: "Kotwica rynkowa (koszt alternatywny):",
-    summary_value: "Klasyczny software house: 120 000 – 180 000 zł, 6–12 miesięcy niepewności i niekończące się faktury za roboczogodziny.",
+    summary_value:
+      "Klasyczny software house: 120 000 – 180 000 zł, 6–12 miesięcy niepewności i niekończące się faktury za roboczogodziny.",
     price_label: "Twoja inwestycja:",
     price_amount: "50 000 zł netto",
-    payment: "Stała kwota, jedna umowa, zero ukrytych kosztów. Bezpieczna płatność 50/50: 25 000 zł przy rezerwacji terminu (blokada mojego czasu w kwartale), a 25 000 zł dopiero w 30. dniu — gdy system działa, a na ekranie widzisz potwierdzenie udanej płatności.",
+    payment:
+      "Stała kwota, jedna umowa, zero ukrytych kosztów. Bezpieczna płatność 50/50: 25 000 zł przy rezerwacji terminu (blokada mojego czasu w kwartale), a 25 000 zł dopiero w 30. dniu — gdy system działa, a na ekranie widzisz potwierdzenie udanej płatności.",
     bullets: [
       "Pełna faktura VAT",
       "Jedna umowa — zero aneksów i ukrytych kosztów",
@@ -236,30 +248,37 @@ export const mvp = {
       },
       {
         title: "Koniec ze złotą klatką: pełna własność i dokumentacja",
-        desc: "Nie buduję wokół Ciebie „złotej klatki”. Otrzymujesz 100% praw autorskich i pełną dokumentację. Każdy kolejny inżynier przejmie projekt z marszu, bez narzekania, że trzeba pisać od nowa."
-      }
-    ]
+        desc: "Nie buduję wokół Ciebie „złotej klatki”. Otrzymujesz 100% praw autorskich i pełną dokumentację. Każdy kolejny inżynier przejmie projekt z marszu, bez narzekania, że trzeba pisać od nowa.",
+      },
+    ],
   },
   faq: {
     title: "Najczęściej zadawane pytania",
-    subtitle: "Decyzja o szybkim starcie nowej aplikacji rodzi naturalne pytania. Oto odpowiedzi na kwestie, które najczęściej poruszają przedsiębiorcy:",
+    subtitle:
+      "Decyzja o szybkim starcie nowej aplikacji rodzi naturalne pytania. Oto odpowiedzi na kwestie, które najczęściej poruszają przedsiębiorcy:",
     items: [
       {
-        question: "Czy fundament technologiczny w 30 dni to pełnoprawna aplikacja?",
-        answer: "Tak. Otrzymujesz w 100% działający, komercyjny system gotowy na rynek, a nie „makietę” czy prototyp. System posiada bezpieczną rejestrację użytkowników, panel klienta, jeden kluczowy silnik biznesowy Twojego pomysłu (główna funkcja, za którą płaci użytkownik) oraz zintegrowane bramki płatności z w pełni skonfigurowanym fakturowaniem (m.in. KSeF), automatycznymi mailami powitalnymi i dostępem do usługi od razu po autoryzacji karty. Twoi klienci wchodzą, płacą i korzystają z usługi, a pieniądze trafiają na Twoje konto firmowe. Różnica między nami a agencją polega na tym, że zamiast budować przez 9 miesięcy 40 podstron, których nikt nie odwiedzi, skupiamy się na jednej, kluczowej ścieżce: od wejścia na stronę do legalnej, bezobsługowej sprzedaży."
+        question:
+          "Czy fundament technologiczny w 30 dni to pełnoprawna aplikacja?",
+        answer:
+          "Tak. Otrzymujesz w 100% działający, komercyjny system gotowy na rynek, a nie „makietę” czy prototyp. System posiada bezpieczną rejestrację użytkowników, panel klienta, jeden kluczowy silnik biznesowy Twojego pomysłu (główna funkcja, za którą płaci użytkownik) oraz zintegrowane bramki płatności z w pełni skonfigurowanym fakturowaniem (m.in. KSeF), automatycznymi mailami powitalnymi i dostępem do usługi od razu po autoryzacji karty. Twoi klienci wchodzą, płacą i korzystają z usługi, a pieniądze trafiają na Twoje konto firmowe. Różnica między nami a agencją polega na tym, że zamiast budować przez 9 miesięcy 40 podstron, których nikt nie odwiedzi, skupiamy się na jednej, kluczowej ścieżce: od wejścia na stronę do legalnej, bezobsługowej sprzedaży.",
       },
       {
         question: "Co dzieje się z aplikacją po tych 30 dniach?",
-        answer: "Aplikacja działa pod Twoją domeną i jest gotowa zarabiać, a Ty nie zostajesz z tym sam. Przez kolejne 60 dni obejmuje Cię Ochrona Startowa — masz mój prywatny kontakt i gwarancję reakcji w przypadku problemów uniemożliwiających zakupy. Po tym czasie nie jesteś od nikogo uzależniony: nie płacisz mi żadnego obowiązkowego abonamentu za „utrzymanie”, nie ma tu ukrytych licencji ani zamkniętego oprogramowania. Kod, baza i serwery należą w 100% do Ciebie. Możesz rozwijać system ze mną, zatrudnić własnego inżyniera albo po prostu pozwolić platformie zarabiać."
+        answer:
+          "Aplikacja działa pod Twoją domeną i jest gotowa zarabiać, a Ty nie zostajesz z tym sam. Przez kolejne 60 dni obejmuje Cię Ochrona Startowa — masz mój prywatny kontakt i gwarancję reakcji w przypadku problemów uniemożliwiających zakupy. Po tym czasie nie jesteś od nikogo uzależniony: nie płacisz mi żadnego obowiązkowego abonamentu za „utrzymanie”, nie ma tu ukrytych licencji ani zamkniętego oprogramowania. Kod, baza i serwery należą w 100% do Ciebie. Możesz rozwijać system ze mną, zatrudnić własnego inżyniera albo po prostu pozwolić platformie zarabiać.",
       },
       {
         question: "Czy mój pomysł jest bezpieczny i poufny?",
-        answer: "Zanim zdradzisz mi choćby jedno słowo na temat swojej koncepcji, podpisujemy przejrzystą umowę o zachowaniu poufności (NDA). Jako inżynier z doświadczeniem w globalnych instytucjach finansowych (Citibank, BNP Paribas) na co dzień operuję w rygorach tajemnicy bankowej i najwyższych standardów ochrony własności intelektualnej. Twój pomysł, Twoja baza klientów i cała stworzona własność intelektualna należą prawnie wyłącznie do Ciebie."
+        answer:
+          "Zanim zdradzisz mi choćby jedno słowo na temat swojej koncepcji, podpisujemy przejrzystą umowę o zachowaniu poufności (NDA). Jako inżynier z doświadczeniem w globalnych instytucjach finansowych (Citibank, BNP Paribas) na co dzień operuję w rygorach tajemnicy bankowej i najwyższych standardów ochrony własności intelektualnej. Twój pomysł, Twoja baza klientów i cała stworzona własność intelektualna należą prawnie wyłącznie do Ciebie.",
       },
       {
-        question: "Dlaczego warto wybrać Ciebie zamiast dużej agencji programistycznej?",
-        answer: "Duże software house'y sprzedają roboczogodziny — im dłużej budują Twój system, tym więcej zarabiają. Projekt, który u mnie trwa 30 dni, w agencji przechodzi przez handlowców, project managerów i rotujących juniorów, co wydłuża start do 6–12 miesięcy i generuje rachunki rzędu 120 000 – 180 000 zł. U mnie rozmawiasz bezpośrednio z głównym inżynierem. Płacisz jedną, stałą kwotę za dowieziony rezultat biznesowy. Przede wszystkim: agencja nie bierze żadnej odpowiedzialności za terminy — ja daję twardą gwarancję zwrotu 100% zaliczki, jeśli system nie ruszy w 30. dniu."
-      }
+        question:
+          "Dlaczego warto wybrać Ciebie zamiast dużej agencji programistycznej?",
+        answer:
+          "Duże software house'y sprzedają roboczogodziny — im dłużej budują Twój system, tym więcej zarabiają. Projekt, który u mnie trwa 30 dni, w agencji przechodzi przez handlowców, project managerów i rotujących juniorów, co wydłuża start do 6–12 miesięcy i generuje rachunki rzędu 120 000 – 180 000 zł. U mnie rozmawiasz bezpośrednio z głównym inżynierem. Płacisz jedną, stałą kwotę za dowieziony rezultat biznesowy. Przede wszystkim: agencja nie bierze żadnej odpowiedzialności za terminy — ja daję twardą gwarancję zwrotu 100% zaliczki, jeśli system nie ruszy w 30. dniu.",
+      },
     ],
   },
   cta: {
@@ -297,8 +316,16 @@ export const mvp = {
         key: "stage",
         label: "Na jakim etapie jest Twój projekt?",
         options: [
-          { value: "spec", label: "Mam gotową specyfikację / makietę i chcę ruszać natychmiast" },
-          { value: "pomysl", label: "Mam zweryfikowany pomysł i model biznesowy — szukam wykonawcy" },
+          {
+            value: "spec",
+            label:
+              "Mam gotową specyfikację / makietę i chcę ruszać natychmiast",
+          },
+          {
+            value: "pomysl",
+            label:
+              "Mam zweryfikowany pomysł i model biznesowy — szukam wykonawcy",
+          },
           { value: "poczatek", label: "Dopiero zaczynam myśleć nad pomysłem" },
         ],
       },
@@ -312,7 +339,10 @@ export const mvp = {
             label:
               "Tak, mam zabezpieczone 50 000 zł netto i chcę wystartować w tym kwartale",
           },
-          { value: "pozniej", label: "Budżet będzie dostępny w kolejnych kwartałach" },
+          {
+            value: "pozniej",
+            label: "Budżet będzie dostępny w kolejnych kwartałach",
+          },
           {
             value: "ponizej",
             label: "Szukam tańszych rozwiązań / budżet poniżej 50 000 zł",
@@ -326,7 +356,10 @@ export const mvp = {
           { value: "30dni", label: "Natychmiast (najbliższe 30 dni)" },
           { value: "1-2mies", label: "W ciągu 1–2 miesięcy" },
           { value: "3-6mies", label: "Za 3–6 miesięcy" },
-          { value: "rozeznanie", label: "Jeszcze nie wiem, robię rozeznanie rynku" },
+          {
+            value: "rozeznanie",
+            label: "Jeszcze nie wiem, robię rozeznanie rynku",
+          },
         ],
       },
     ],

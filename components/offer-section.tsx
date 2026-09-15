@@ -1,4 +1,11 @@
-import { Workflow, Rocket, RefreshCw, Gauge, Layers, ArrowRight } from "lucide-react"
+import {
+  Workflow,
+  Rocket,
+  RefreshCw,
+  Gauge,
+  Layers,
+  ArrowRight,
+} from "lucide-react"
 import { content } from "@/lib/content"
 import { SectionBadge } from "@/components/section-badge"
 import Link from "next/link"
@@ -29,7 +36,13 @@ interface OfferSectionProps {
   className?: string
 }
 
-export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów", mdColumns = "2", sectionId = "oferta", className }: OfferSectionProps = {}) {
+export function OfferSection({
+  offer: customOffer,
+  badge = "Zwrotnica problemów",
+  mdColumns = "2",
+  sectionId = "oferta",
+  className,
+}: OfferSectionProps = {}) {
   const offer = (customOffer ?? content.offer) as OfferData
   const icons = [Workflow, Rocket, RefreshCw, Gauge]
   const threeColumns = mdColumns === "3"
@@ -42,22 +55,20 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
         className
       )}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
-
-      <div className="relative z-10 container mx-auto px-4 max-w-5xl">
+      <div className="relative z-10 container mx-auto max-w-5xl px-4">
         {/* Header - Mobile First */}
-        <Reveal as="header" className="mb-12 sm:mb-16 text-center">
+        <Reveal as="header" className="mb-12 text-center sm:mb-16">
           <div className="mb-4">
             <SectionBadge>
-            <Layers className="h-4 w-4" />
-            <span>{badge}</span>
-          </SectionBadge>
+              <Layers className="h-4 w-4" />
+              <span>{badge}</span>
+            </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6 leading-tight max-w-3xl mx-auto">
+          <h2 className="mx-auto mb-6 max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             {offer.title}
           </h2>
           {offer.subheading && (
-            <p className="max-w-2xl mx-auto text-muted-foreground font-normal leading-relaxed text-base sm:text-lg">
+            <p className="mx-auto max-w-2xl text-base leading-relaxed font-normal text-muted-foreground sm:text-lg">
               {offer.subheading}
             </p>
           )}
@@ -72,7 +83,7 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
                   key={i}
                   delay={i * 0.05}
                   className={cn(
-                    "h-full border-t border-border pt-6 pb-2 sm:pt-7 sm:pb-3 md:border-t-0 md:px-8 md:pb-0 md:pt-0",
+                    "h-full border-t border-border pt-6 pb-2 sm:pt-7 sm:pb-3 md:border-t-0 md:px-8 md:pt-0 md:pb-0",
                     i > 0 && "md:border-l"
                   )}
                 >
@@ -82,18 +93,22 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
                         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
                           <Icon className="h-5 w-5" />
                         </span>
-                        <p className="text-xs font-medium text-primary">{path.title}</p>
+                        <p className="text-xs font-medium text-primary">
+                          {path.title}
+                        </p>
                       </div>
-                      <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors leading-snug">
+                      <h3 className="mb-3 text-lg leading-snug font-semibold text-foreground transition-colors group-hover:text-primary sm:text-xl">
                         {path.situation}
                       </h3>
                       {path.subtitle && (
-                        <p className="mb-3 text-sm font-medium leading-snug text-muted-foreground sm:text-base">
+                        <p className="mb-3 text-sm leading-snug font-medium text-muted-foreground sm:text-base">
                           {path.subtitle}
                         </p>
                       )}
                       {path.desc && (
-                        <p className="text-muted-foreground leading-relaxed text-sm">{path.desc}</p>
+                        <p className="text-sm leading-relaxed text-muted-foreground">
+                          {path.desc}
+                        </p>
                       )}
                     </div>
                     {path.result && (
@@ -118,18 +133,24 @@ export function OfferSection({ offer: customOffer, badge = "Zwrotnica problemów
                     <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                   </span>
                   <div className="min-w-0 flex-1">
-                    <p className="mb-1.5 text-[11px] font-medium text-primary sm:text-xs">{path.title}</p>
-                    <h3 className="text-base font-semibold text-foreground mb-2 leading-snug sm:text-xl">{path.situation}</h3>
+                    <p className="mb-1.5 text-[11px] font-medium text-primary sm:text-xs">
+                      {path.title}
+                    </p>
+                    <h3 className="mb-2 text-base leading-snug font-semibold text-foreground sm:text-xl">
+                      {path.situation}
+                    </h3>
                     {path.subtitle && (
-                      <p className="mb-2 text-sm font-medium leading-snug text-muted-foreground sm:text-base">
+                      <p className="mb-2 text-sm leading-snug font-medium text-muted-foreground sm:text-base">
                         {path.subtitle}
                       </p>
                     )}
                     {path.desc && (
-                      <p className="max-w-prose text-muted-foreground leading-relaxed text-xs sm:text-sm">{path.desc}</p>
+                      <p className="max-w-prose text-xs leading-relaxed text-muted-foreground sm:text-sm">
+                        {path.desc}
+                      </p>
                     )}
                     {path.result && (
-                      <div className="mt-4 pt-3 sm:mt-5 sm:pt-4 border-t border-border text-[11px] font-medium text-muted-foreground">
+                      <div className="mt-4 border-t border-border pt-3 text-[11px] font-medium text-muted-foreground sm:mt-5 sm:pt-4">
                         {path.result}
                       </div>
                     )}

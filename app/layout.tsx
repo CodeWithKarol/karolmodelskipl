@@ -64,10 +64,7 @@ export default function RootLayout({
       lang="pl"
       suppressHydrationWarning
       data-scroll-behavior="smooth"
-      className={cn(
-        "scroll-smooth antialiased",
-        inter.variable
-      )}
+      className={cn("scroll-smooth antialiased", inter.variable)}
     >
       <head>
         <script

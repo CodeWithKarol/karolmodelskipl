@@ -62,7 +62,10 @@ export function ApplicationForm({
         <div className="mx-auto w-full max-w-3xl">
           {!submitted ? (
             <div className="text-center">
-              <SectionBadge variant="neutral" className="text-[10px] sm:text-xs">
+              <SectionBadge
+                variant="neutral"
+                className="text-[10px] sm:text-xs"
+              >
                 {application.badge}
               </SectionBadge>
               <h2 className="mt-5 text-3xl font-semibold tracking-tight text-balance text-foreground sm:text-4xl">
@@ -83,7 +86,7 @@ export function ApplicationForm({
               </div>
 
               <fieldset className="mt-8 text-left sm:mt-10">
-                <legend className="mb-3.5 text-sm font-semibold leading-snug text-foreground sm:text-base">
+                <legend className="mb-3.5 text-sm leading-snug font-semibold text-foreground sm:text-base">
                   {current.label}
                 </legend>
                 <RadioGroup
@@ -99,7 +102,7 @@ export function ApplicationForm({
                         key={option.value}
                         htmlFor={id}
                         className={cn(
-                          "flex w-full cursor-pointer items-start justify-between gap-3 rounded-xl border px-4 py-4 text-left text-sm font-medium leading-snug transition-colors sm:py-3.5 sm:text-[15px]",
+                          "flex w-full cursor-pointer items-start justify-between gap-3 rounded-xl border px-4 py-4 text-left text-sm leading-snug font-medium transition-colors sm:py-3.5 sm:text-[15px]",
                           active
                             ? "border-primary/60 bg-primary/10 text-foreground"
                             : "border-border bg-card text-muted-foreground hover:border-input hover:bg-muted"
@@ -108,7 +111,7 @@ export function ApplicationForm({
                         <span className="min-w-0">
                           <span className="block">{option.label}</span>
                           {option.hint && (
-                            <span className="mt-0.5 block text-xs font-normal leading-snug text-muted-foreground">
+                            <span className="mt-0.5 block text-xs leading-snug font-normal text-muted-foreground">
                               {option.hint}
                             </span>
                           )}

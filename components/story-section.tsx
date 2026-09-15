@@ -38,29 +38,27 @@ export function StorySection({
         className
       )}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
-
-      <div className="relative z-10 container mx-auto px-4 max-w-5xl">
+      <div className="relative z-10 container mx-auto max-w-5xl px-4">
         {/* Header - Mobile First */}
         <Reveal as="header" className="mb-16 text-center">
           <div className="mb-4">
-            <SectionBadge variant="red">
-            <Flame className="h-4 w-4" />
-            <span>{badge}</span>
-          </SectionBadge>
+            <SectionBadge variant="neutral">
+              <Flame className="h-4 w-4" />
+              <span>{badge}</span>
+            </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6 leading-tight max-w-3xl mx-auto">
+          <h2 className="mx-auto mb-6 max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             {title ?? story.title}
           </h2>
           {(intro ?? story.intro) && (
             <p
-              className="max-w-2xl mx-auto text-muted-foreground font-normal leading-relaxed text-base sm:text-lg mb-4 [&_em]:text-foreground [&_em]:not-italic [&_em]:font-medium [&_strong]:text-foreground [&_strong]:font-medium"
+              className="mx-auto mb-4 max-w-2xl text-base leading-relaxed font-normal text-muted-foreground sm:text-lg [&_em]:font-medium [&_em]:text-foreground [&_em]:not-italic [&_strong]:font-medium [&_strong]:text-foreground"
               dangerouslySetInnerHTML={{ __html: intro ?? story.intro }}
             />
           )}
           {(context ?? story.context) && (
             <p
-              className="max-w-2xl mx-auto text-muted-foreground font-normal leading-relaxed text-base sm:text-lg [&_em]:italic [&_em]:text-foreground [&_em]:font-medium [&_strong]:text-foreground [&_strong]:font-medium"
+              className="mx-auto max-w-2xl text-base leading-relaxed font-normal text-muted-foreground sm:text-lg [&_em]:font-medium [&_em]:text-foreground [&_em]:italic [&_strong]:font-medium [&_strong]:text-foreground"
               dangerouslySetInnerHTML={{ __html: context ?? story.context }}
             />
           )}
@@ -77,21 +75,21 @@ export function StorySection({
               <Reveal
                 key={idx}
                 delay={idx * 0.05}
-                className="group flex flex-col gap-3 sm:gap-4 border-t border-border pt-6 pb-8 sm:pt-7 sm:pb-10 md:flex-row md:items-start md:gap-6"
+                className="group flex flex-col gap-3 border-t border-border pt-6 pb-8 sm:gap-4 sm:pt-7 sm:pb-10 md:flex-row md:items-start md:gap-6"
               >
                 <div
-                  className="text-destructive font-semibold text-2xl leading-none shrink-0 group-hover:text-primary transition-colors sm:text-4xl"
+                  className="shrink-0 text-2xl leading-none font-semibold text-muted-foreground/40 transition-colors group-hover:text-primary sm:text-4xl"
                   aria-hidden="true"
                 >
                   0{idx + 1}
                 </div>
                 <div className="min-w-0">
                   <h3
-                    className="text-base sm:text-lg font-semibold text-foreground mb-2 [&_strong]:font-semibold [&_strong]:text-foreground"
+                    className="mb-2 text-base font-semibold text-foreground sm:text-lg [&_strong]:font-semibold [&_strong]:text-foreground"
                     dangerouslySetInnerHTML={{ __html: cleanTitle }}
                   />
                   <p
-                    className="text-muted-foreground leading-relaxed text-xs sm:text-sm [&_em]:text-muted-foreground [&_em]:not-italic [&_em]:font-normal [&_strong]:text-muted-foreground [&_strong]:font-normal"
+                    className="text-xs leading-relaxed text-muted-foreground sm:text-sm [&_em]:font-normal [&_em]:text-muted-foreground [&_em]:not-italic [&_strong]:font-normal [&_strong]:text-muted-foreground"
                     dangerouslySetInnerHTML={{ __html: point.desc }}
                   />
                 </div>
