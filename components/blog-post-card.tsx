@@ -1,11 +1,11 @@
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import type { BlogPost } from "@/lib/blog"
+import type { BlogPostSummary } from "@/lib/blog"
 import { SectionBadge } from "@/components/section-badge"
 import { cn } from "@/lib/utils"
 
 interface BlogPostCardProps {
-  post: BlogPost
+  post: BlogPostSummary
   index?: number
   showBadge?: boolean
   className?: string
