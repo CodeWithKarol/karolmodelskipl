@@ -85,14 +85,12 @@ export function PackageSpecSection({
         className
       )}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
-
-      <div className="relative z-10 container mx-auto px-4 max-w-4xl">
-        <Reveal as="header" className="mb-12 sm:mb-16 text-center">
+      <div className="relative z-10 container mx-auto max-w-4xl px-4">
+        <Reveal as="header" className="mb-12 text-center sm:mb-16">
           <div className="mb-4 flex justify-center">
             <SectionBadge>{spec.badge}</SectionBadge>
           </div>
-          <h2 className="mx-auto max-w-3xl text-2xl font-semibold tracking-tight text-balance text-foreground leading-tight sm:text-3xl md:text-4xl">
+          <h2 className="mx-auto max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-balance text-foreground sm:text-3xl md:text-4xl">
             {spec.title}
           </h2>
           {spec.intro && (
@@ -105,7 +103,7 @@ export function PackageSpecSection({
         <div className="space-y-0">
           {/* Rdzeń */}
           <Reveal>
-                <div className="border-t border-border py-7 sm:py-9">
+            <div className="border-t border-border py-7 sm:py-9">
               {(spec.core.value || spec.core.tag) && (
                 <div className="mb-4 flex flex-col items-start gap-1.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-3">
                   <span className="flex items-center gap-2">
@@ -123,7 +121,9 @@ export function PackageSpecSection({
                   )}
                 </div>
               )}
-              <h3 className="text-lg font-semibold text-foreground leading-snug sm:text-xl">{spec.core.title}</h3>
+              <h3 className="text-lg leading-snug font-semibold text-foreground sm:text-xl">
+                {spec.core.title}
+              </h3>
               {spec.core.desc && (
                 <p className="mt-3 max-w-prose text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
                   {spec.core.desc}
@@ -145,7 +145,7 @@ export function PackageSpecSection({
             const BonusIcon = bonusIcons[i % bonusIcons.length]
             return (
               <Reveal key={bonus.tag} delay={0.05 * i}>
-            <div className="border-t border-border py-7 sm:py-9">
+                <div className="border-t border-border py-7 sm:py-9">
                   <div className="mb-3 flex flex-col items-start gap-1.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-3">
                     <span className="flex items-center gap-2">
                       <BonusIcon className="h-5 w-5 shrink-0 text-primary" />
@@ -154,12 +154,16 @@ export function PackageSpecSection({
                       </span>
                     </span>
                     {bonus.value && (
-                      <span className="text-[11px] font-medium text-muted-foreground sm:text-xs">{bonus.value}</span>
+                      <span className="text-[11px] font-medium text-muted-foreground sm:text-xs">
+                        {bonus.value}
+                      </span>
                     )}
                   </div>
-                  <h3 className="text-lg font-semibold text-foreground leading-snug sm:text-xl">{bonus.title}</h3>
+                  <h3 className="text-lg leading-snug font-semibold text-foreground sm:text-xl">
+                    {bonus.title}
+                  </h3>
                   {bonus.desc && (
-                <p className="mt-3 max-w-prose text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
+                    <p className="mt-3 max-w-prose text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
                       {bonus.desc}
                     </p>
                   )}
@@ -212,7 +216,10 @@ export function PackageSpecSection({
                   {spec.bullets && spec.bullets.length > 0 && (
                     <ul className="mx-auto mt-6 max-w-md space-y-2.5 text-left">
                       {spec.bullets.map((bullet) => (
-                        <li key={bullet} className="flex items-start gap-2.5 text-xs text-muted-foreground sm:text-sm">
+                        <li
+                          key={bullet}
+                          className="flex items-start gap-2.5 text-xs text-muted-foreground sm:text-sm"
+                        >
                           <span
                             aria-hidden="true"
                             className="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full bg-primary"

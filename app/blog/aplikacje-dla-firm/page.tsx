@@ -18,7 +18,7 @@ const ctaContent: CtaContent = {
   title:
     "Masz na stole wycenę od agencji lub chcesz precyzyjnie oszacować budżet systemu w 4 oczy?",
   description:
-    "Zamiast zgadywać, czy kwota w specyfikacji od software house'u jest uczciwa, przenieś tę analizę na moje barki. Jako Niezależny Partner Technologiczny w każdym kwartale obejmuję opieką strategiczną i wykonawczą <strong class='text-white font-semibold'>maksymalnie dwie firmy</strong>. W zamian za feedback po zakończeniu audytu, możesz odebrać pełny Pakiet Strategiczny całkowicie <strong class='text-white font-semibold'>za 0 zł</strong>.",
+    "Zamiast zgadywać, czy kwota w specyfikacji od software house'u jest uczciwa, przenieś tę analizę na moje barki. Jako Niezależny Partner Technologiczny w każdym kwartale obejmuję opieką strategiczną i wykonawczą <strong class='text-highlight font-semibold'>maksymalnie dwie firmy</strong>. W zamian za feedback po zakończeniu audytu, możesz odebrać pełny Pakiet Strategiczny całkowicie <strong class='text-highlight font-semibold'>za 0 zł</strong>.",
   package_title:
     "Co namacalnie otrzymujesz w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
   offer_items: [
@@ -164,7 +164,9 @@ export default function AplikacjeDlaFirmCategoryPage() {
           }))}
           className={posts.length > 3 ? "mb-10 sm:mb-16" : "mb-20"}
         />
-        {posts.length > 3 && <BlogPostGrid posts={posts.slice(3)} className="mb-20" />}
+        {posts.length > 3 && (
+          <BlogPostGrid posts={posts.slice(3)} className="mb-20" />
+        )}
       </main>
 
       <CtaSection content={ctaContent} />

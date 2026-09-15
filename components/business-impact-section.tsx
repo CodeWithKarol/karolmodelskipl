@@ -12,7 +12,6 @@ export function BusinessImpactSection() {
     <section className="relative overflow-hidden bg-background py-16 text-muted-foreground sm:py-24">
       {/* Świetlne akcenty w tle dopasowane do Hero */}
       <div className="pointer-events-none absolute top-0 left-0 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-[120px]"></div>
-      <div className="pointer-events-none absolute right-0 bottom-0 h-[500px] w-[500px] translate-x-1/2 translate-y-1/2 rounded-full bg-info/5 blur-[120px]"></div>
 
       {/* Delikatny grid technologiczny */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] bg-[size:3rem_3rem] opacity-20"></div>
@@ -22,8 +21,10 @@ export function BusinessImpactSection() {
         <div className="mx-auto mb-16 max-w-3xl text-center md:mb-20">
           <h2 className="mb-6 text-[2rem] leading-[1.15] font-semibold tracking-tight text-balance text-foreground sm:text-4xl md:text-5xl lg:text-[3.5rem]">
             {impact.title.split("?")[0]}? <br className="hidden sm:block" />
-            <span className="bg-gradient-to-r from-primary to-info bg-clip-text text-transparent">
-              {impact.title.split("?")[1] ? impact.title.split("?")[1].trim() : ""}
+            <span className="text-primary">
+              {impact.title.split("?")[1]
+                ? impact.title.split("?")[1].trim()
+                : ""}
             </span>
           </h2>
           <p className="mx-auto max-w-2xl px-2 text-[15px] leading-relaxed font-normal text-balance text-muted-foreground sm:px-0 sm:text-lg md:text-xl">
@@ -46,7 +47,7 @@ export function BusinessImpactSection() {
 
               <div className="relative z-10 flex h-full flex-col">
                 <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-border bg-gradient-to-br from-secondary to-background shadow-inner transition-transform duration-500 group-hover:scale-105 sm:h-16 sm:w-16">
-                  <item.icon className="h-7 w-7 text-primary transition-colors group-hover:text-info sm:h-8 sm:w-8" />
+                  <item.icon className="h-7 w-7 text-primary sm:h-8 sm:w-8" />
                 </div>
 
                 <h3 className="mb-3 text-xl leading-snug font-semibold text-foreground sm:text-2xl">

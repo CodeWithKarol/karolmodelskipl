@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { header } from "@/lib/content/header"
 import { Button } from "@/components/ui/button"
+import { ThemeToggle } from "@/components/theme-toggle"
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -58,9 +59,9 @@ function MobileNavGroup({
 
 export function SiteHeader() {
   const [isOpen, setIsOpen] = React.useState(false)
-  const [openSection, setOpenSection] = React.useState<"oferta" | "baza" | null>(
-    null
-  )
+  const [openSection, setOpenSection] = React.useState<
+    "oferta" | "baza" | null
+  >(null)
 
   const toggleSection = (key: "oferta" | "baza") =>
     setOpenSection((prev) => (prev === key ? null : key))
@@ -80,10 +81,13 @@ export function SiteHeader() {
   return (
     <>
       <div className="pointer-events-none fixed top-0 z-50 flex w-full justify-center sm:top-4 sm:px-4">
-        <header className="pointer-events-auto flex h-16 w-full min-w-[280px] items-center justify-between gap-2 border-b border-border bg-background/80 px-4 shadow-2xl backdrop-blur-xl supports-[backdrop-filter]:bg-background/60 md:justify-center sm:h-14 sm:w-auto sm:max-w-4xl sm:min-w-[300px] sm:rounded-full sm:border sm:px-6">
+        <header className="pointer-events-auto flex h-16 w-full min-w-[280px] items-center justify-between gap-2 border-b border-border bg-background/80 px-4 shadow-2xl backdrop-blur-xl supports-[backdrop-filter]:bg-background/60 sm:h-14 sm:w-auto sm:max-w-4xl sm:min-w-[300px] sm:rounded-full sm:border sm:px-6 md:justify-center">
           {/* Logo / Brand */}
           <div className="flex items-center gap-4 sm:gap-6">
-            <Link href="/" className="group flex shrink-0 items-center space-x-2">
+            <Link
+              href="/"
+              className="group flex shrink-0 items-center space-x-2"
+            >
               <span className="text-[14px] font-semibold tracking-tight text-foreground transition-colors group-hover:text-foreground sm:text-[15px]">
                 {header.brand.name}
               </span>
@@ -94,7 +98,7 @@ export function SiteHeader() {
               <NavigationMenu>
                 <NavigationMenuList className="gap-1">
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="h-8 rounded-full px-3 text-[13px] font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground data-open:bg-accent data-open:text-accent-foreground data-popup-open:bg-accent data-popup-open:text-accent-foreground bg-transparent">
+                    <NavigationMenuTrigger className="h-8 rounded-full bg-transparent px-3 text-[13px] font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground data-popup-open:bg-accent data-popup-open:text-accent-foreground data-open:bg-accent data-open:text-accent-foreground">
                       {header.menu.oferta.title}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent className="p-1">
@@ -107,10 +111,10 @@ export function SiteHeader() {
                                 href={item.href}
                                 className="group/item flex flex-col items-start gap-1 rounded-xl p-3 text-left transition-colors hover:bg-accent focus:bg-accent"
                               >
-                                <span className="text-[14px] font-semibold text-foreground group-hover/item:text-foreground transition-colors">
+                                <span className="text-[14px] font-semibold text-foreground transition-colors group-hover/item:text-foreground">
                                   {item.title}
                                 </span>
-                                <span className="text-[12px] leading-relaxed text-muted-foreground font-normal">
+                                <span className="text-[12px] leading-relaxed font-normal text-muted-foreground">
                                   {item.description}
                                 </span>
                               </Link>
@@ -122,7 +126,7 @@ export function SiteHeader() {
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="h-8 rounded-full px-3 text-[13px] font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground data-open:bg-accent data-open:text-accent-foreground data-popup-open:bg-accent data-popup-open:text-accent-foreground bg-transparent">
+                    <NavigationMenuTrigger className="h-8 rounded-full bg-transparent px-3 text-[13px] font-medium text-muted-foreground hover:bg-accent hover:text-accent-foreground data-popup-open:bg-accent data-popup-open:text-accent-foreground data-open:bg-accent data-open:text-accent-foreground">
                       {header.menu.bazaWiedzy.title}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent className="p-1">
@@ -135,10 +139,10 @@ export function SiteHeader() {
                                 href={item.href}
                                 className="group/item flex flex-col items-start gap-1 rounded-xl p-3 text-left transition-colors hover:bg-accent focus:bg-accent"
                               >
-                                <span className="text-[14px] font-semibold text-foreground group-hover/item:text-foreground transition-colors">
+                                <span className="text-[14px] font-semibold text-foreground transition-colors group-hover/item:text-foreground">
                                   {item.title}
                                 </span>
-                                <span className="text-[12px] leading-relaxed text-muted-foreground font-normal">
+                                <span className="text-[12px] leading-relaxed font-normal text-muted-foreground">
                                   {item.description}
                                 </span>
                               </Link>
@@ -151,6 +155,7 @@ export function SiteHeader() {
                 </NavigationMenuList>
               </NavigationMenu>
             </div>
+            <ThemeToggle className="hidden md:inline-flex" />
           </div>
 
           {/* Right Action */}
@@ -167,7 +172,11 @@ export function SiteHeader() {
               className="rounded-full text-muted-foreground md:hidden"
               aria-label="Toggle menu"
             >
-              {isOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+              {isOpen ? (
+                <X className="h-4 w-4" />
+              ) : (
+                <Menu className="h-4 w-4" />
+              )}
             </Button>
           </div>
         </header>
@@ -179,7 +188,7 @@ export function SiteHeader() {
           role="dialog"
           aria-modal="true"
           aria-label="Nawigacja mobilna"
-          className="fixed inset-0 z-40 flex flex-col overflow-y-auto bg-background/95 px-5 pb-[calc(2rem+env(safe-area-inset-bottom))] pt-20 backdrop-blur-2xl md:hidden"
+          className="fixed inset-0 z-40 flex flex-col overflow-y-auto bg-background/95 px-5 pt-20 pb-[calc(2rem+env(safe-area-inset-bottom))] backdrop-blur-2xl md:hidden"
         >
           <nav className="mx-auto flex w-full max-w-sm flex-col">
             <MobileNavGroup
@@ -225,6 +234,13 @@ export function SiteHeader() {
                 </Link>
               ))}
             </MobileNavGroup>
+
+            <div className="mt-4 flex items-center justify-between rounded-xl border border-border px-3 py-3">
+              <span className="text-[15px] font-semibold text-foreground">
+                Motyw
+              </span>
+              <ThemeToggle />
+            </div>
           </nav>
         </div>
       )}

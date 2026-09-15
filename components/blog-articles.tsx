@@ -49,7 +49,9 @@ export function BlogArticles({ posts }: { posts: BlogPostSummary[] }) {
     return posts.filter((post) => {
       if (silo !== "all" && post.silo !== silo) return false
       if (!q) return true
-      return normalize(post.title).includes(q) || normalize(post.excerpt).includes(q)
+      return (
+        normalize(post.title).includes(q) || normalize(post.excerpt).includes(q)
+      )
     })
   }, [posts, deferredQuery, silo])
 
@@ -127,7 +129,9 @@ export function BlogArticles({ posts }: { posts: BlogPostSummary[] }) {
         <BlogPostGrid posts={filtered} showBadge />
       ) : (
         <div className="rounded-2xl border border-dashed border-border py-16 text-center">
-          <p className="text-base font-medium text-foreground">Brak artykułów</p>
+          <p className="text-base font-medium text-foreground">
+            Brak artykułów
+          </p>
           <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
             {query.trim()
               ? `Nie znaleźliśmy nic dla „${query.trim()}”. Spróbuj innej frazy lub wyczyść filtry.`

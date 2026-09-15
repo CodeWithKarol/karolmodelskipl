@@ -18,21 +18,18 @@ export function BlogPostCard({
   className,
 }: BlogPostCardProps) {
   return (
-    <Link
-      href={`/blog/${post.slug}`}
-      className={cn("group block", className)}
-    >
+    <Link href={`/blog/${post.slug}`} className={cn("group block", className)}>
       <article className="relative flex h-full flex-col justify-between pt-6 sm:pt-7">
         <div className="absolute top-0 left-0 h-px w-full bg-border transition-colors group-hover:bg-primary"></div>
 
         <div>
           <div className="flex items-baseline justify-between gap-4">
             {typeof index === "number" && (
-              <span className="pointer-events-none select-none text-3xl sm:text-4xl font-semibold tracking-tighter text-foreground/5 transition-colors group-hover:text-primary/15">
+              <span className="pointer-events-none text-3xl font-semibold tracking-tighter text-foreground/5 transition-colors select-none group-hover:text-primary/15 sm:text-4xl">
                 {String(index + 1).padStart(2, "0")}
               </span>
             )}
-            <span className="text-[10px] sm:text-xs text-muted-foreground">
+            <span className="text-[10px] text-muted-foreground sm:text-xs">
               {post.readingTime} czytania
             </span>
           </div>

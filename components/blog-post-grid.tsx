@@ -8,7 +8,11 @@ interface BlogPostGridProps {
   className?: string
 }
 
-export function BlogPostGrid({ posts, showBadge = false, className }: BlogPostGridProps) {
+export function BlogPostGrid({
+  posts,
+  showBadge = false,
+  className,
+}: BlogPostGridProps) {
   return (
     <div
       className={cn(

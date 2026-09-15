@@ -6,13 +6,15 @@ export const metadata = {
 
 export const hero = {
   badge: "Dla zarządów i firm MŚP zlecających projekty IT",
-  title: "Zablokuj przepłacanie za agencję IT, zanim podpiszesz kosztowny aneks.",
+  title:
+    "Zablokuj przepłacanie za agencję IT, zanim podpiszesz kosztowny aneks.",
   title_highlight: "Niezależny Inżynierski Audyt Wyceny i Umowy IT.",
   subtitle:
     "Wykazuję min. 10 000 zł oszczędności w ofercie Twojego software house'u albo audyt masz za 0 zł. Raport z argumentami do renegocjacji w 5 dni roboczych.",
   qualification: {
     cta_line1: "Sprawdź kwalifikację wyceny →",
-    trust_label: "Architektura i standardy inżynierskie sprawdzone w systemach dla:",
+    trust_label:
+      "Architektura i standardy inżynierskie sprawdzone w systemach dla:",
     trust_logos: ["Citibank", "BNP Paribas", "Silent Eight", "Amway"],
   },
   cta_sub:
@@ -42,21 +44,21 @@ export const story = {
   points: [
     {
       title: "Zawyżone estymacje i „wymyślanie koła na nowo”",
-      desc: "Agencja wycenia prosty moduł na 60 000 zł i 6 tygodni prac, bo jej pracownicy piszą wszystko od zera lub uczą się bibliotek na Twoim projekcie. Doświadczony inżynier wie, które elementy stawia się w 3 dni na gotowych, bezpiecznych rozwiązaniach."
+      desc: "Agencja wycenia prosty moduł na 60 000 zł i 6 tygodni prac, bo jej pracownicy piszą wszystko od zera lub uczą się bibliotek na Twoim projekcie. Doświadczony inżynier wie, które elementy stawia się w 3 dni na gotowych, bezpiecznych rozwiązaniach.",
     },
     {
       title: "Pułapka aneksu do umowy (Scope Creep)",
-      desc: "Podpisujesz kontrakt na 120 000 zł, a w połowie prac słyszysz: „Tego nie było w specyfikacji, to wymaga dodatkowego modułu za 50 000 zł”. Ponieważ kod jest rozgrzebany, a agencja trzyma klucze do systemu, płacisz jak zakładnik."
+      desc: "Podpisujesz kontrakt na 120 000 zł, a w połowie prac słyszysz: „Tego nie było w specyfikacji, to wymaga dodatkowego modułu za 50 000 zł”. Ponieważ kod jest rozgrzebany, a agencja trzyma klucze do systemu, płacisz jak zakładnik.",
     },
     {
       title: "Złota klatka (Vendor Lock-in)",
-      desc: "Niejasne zapisy licencyjne i brak dokumentacji sprawiają, że żaden inny programista nie podejmie się dokończenia prac. Zostajesz trwale uzależniony od jednej firmy i jej stawek godzinowych."
+      desc: "Niejasne zapisy licencyjne i brak dokumentacji sprawiają, że żaden inny programista nie podejmie się dokończenia prac. Zostajesz trwale uzależniony od jednej firmy i jej stawek godzinowych.",
     },
     {
       title: "Zasłona dymna technicznego żargonu",
-      desc: "Zamiast twardych liczb i harmonogramów dostajesz nazwy frameworków, skróty architektoniczne i opowieści o „nieprzewidzianych trudnościach integracyjnych”. Niejasny język służy jednemu: odebraniu Ci kontroli nad budżetem."
-    }
-  ]
+      desc: "Zamiast twardych liczb i harmonogramów dostajesz nazwy frameworków, skróty architektoniczne i opowieści o „nieprzewidzianych trudnościach integracyjnych”. Niejasny język służy jednemu: odebraniu Ci kontroli nad budżetem.",
+    },
+  ],
 }
 
 export const valueStack = {
@@ -198,8 +200,8 @@ export const guarantee = {
         "Cały raport, analiza i klauzule prawne zostają u Ciebie za 0 zł.",
       ],
       note: "Dotyczy wycen od 50 000 zł netto w górę (dla mniejszych projektów próg ustalamy proporcjonalnie przed startem).",
-    }
-  ]
+    },
+  ],
 }
 
 export const continuation = {
@@ -214,11 +216,13 @@ export const continuation = {
     },
     {
       title: "Odbiory etapów",
-      situation: "Odbieram etapy prac przed wykonaniem przelewu przez Twoją księgowość.",
+      situation:
+        "Odbieram etapy prac przed wykonaniem przelewu przez Twoją księgowość.",
     },
     {
       title: "Kontrola budżetu",
-      situation: "Pilnuję, by projekt nie przekroczył ustalonego budżetu i harmonogramu.",
+      situation:
+        "Pilnuję, by projekt nie przekroczył ustalonego budżetu i harmonogramu.",
     },
   ],
 }
@@ -229,21 +233,21 @@ export const faq = {
   items: [
     {
       q: "Czy agencja nie obrazi się, że wprowadzam niezależnego inżyniera do weryfikacji?",
-      a: "Profesjonalne agencje w rzeczywistości wolą rozmawiać z doświadczonym architektem niż z klientem, który czuje niepokój, ale nie potrafi sprecyzować swoich wątpliwości. Rozmawiamy językiem faktów, procedur i standardów rynkowych. Jeśli agencja reaguje agresją lub obrażaniem się na samą zapowiedź niezależnej weryfikacji wyceny, to najlepszy dowód na to, że w ofercie ukryto rażące zawyżenia kosztów."
+      a: "Profesjonalne agencje w rzeczywistości wolą rozmawiać z doświadczonym architektem niż z klientem, który czuje niepokój, ale nie potrafi sprecyzować swoich wątpliwości. Rozmawiamy językiem faktów, procedur i standardów rynkowych. Jeśli agencja reaguje agresją lub obrażaniem się na samą zapowiedź niezależnej weryfikacji wyceny, to najlepszy dowód na to, że w ofercie ukryto rażące zawyżenia kosztów.",
     },
     {
       q: "Co w sytuacji, gdy umowa z agencją jest już podpisana, a projekt jest w trakcie?",
-      a: "Audyt w trakcie projektu jest równie skuteczny. Prześwietlam wtedy dotychczasowe tempo prac, zasadność wystawianych aneksów oraz jakość dotychczas dowiezionego kodu. Wskazuję, za co agencja zażądała nienależnych dopłat i jak zablokować dalszy wyciek budżetu przed kolejnymi etapami."
+      a: "Audyt w trakcie projektu jest równie skuteczny. Prześwietlam wtedy dotychczasowe tempo prac, zasadność wystawianych aneksów oraz jakość dotychczas dowiezionego kodu. Wskazuję, za co agencja zażądała nienależnych dopłat i jak zablokować dalszy wyciek budżetu przed kolejnymi etapami.",
     },
     {
       q: "Czy podpisujemy umowę o poufności (NDA)?",
-      a: "Bezwzględnie tak. Zanim prześlesz mi jakąkolwiek wycenę, specyfikację, umowę czy dokumentację biznesową, podpisujemy restrykcyjną umowę NDA. Wszystkie materiały i dane Twojej firmy są w 100% bezpieczne."
+      a: "Bezwzględnie tak. Zanim prześlesz mi jakąkolwiek wycenę, specyfikację, umowę czy dokumentację biznesową, podpisujemy restrykcyjną umowę NDA. Wszystkie materiały i dane Twojej firmy są w 100% bezpieczne.",
     },
     {
       q: "Jak szybko otrzymam wyniki audytu?",
-      a: "Kompletny Raport PDF wraz z wyliczeniem oszczędności i planem negocjacyjnym otrzymujesz w ciągu maksymalnie 5 dni roboczych od momentu dostarczenia kompletu dokumentów od agencji."
-    }
-  ]
+      a: "Kompletny Raport PDF wraz z wyliczeniem oszczędności i planem negocjacyjnym otrzymujesz w ciągu maksymalnie 5 dni roboczych od momentu dostarczenia kompletu dokumentów od agencji.",
+    },
+  ],
 }
 
 export const cta = {
@@ -269,8 +273,7 @@ export const cta = {
   button: "Przejdź do formularza i zarezerwuj rozmowę →",
   format:
     "100% bezpłatnie • Wideorozmowa 1-na-1 z głównym inżynierem • Zero sprzedaży i zero technicznego żargonu",
-  note:
-    "🔒 Po pozytywnej weryfikacji profilu w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.",
+  note: "🔒 Po pozytywnej weryfikacji profilu w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.",
   availability:
     "Dostępność: Maksymalnie 4 audyty w miesiącu (Zostały 2 wolne miejsca).",
   footer:
@@ -279,7 +282,8 @@ export const cta = {
 
 export const qualification = {
   badge: "Weryfikacja kwalifikacyjna",
-  title: "Sprawdź, czy Twój projekt kwalifikuje się do współpracy w tym kwartale",
+  title:
+    "Sprawdź, czy Twój projekt kwalifikuje się do współpracy w tym kwartale",
   intro:
     "4 szybkie pytania. Jeśli spełniasz kryteria, od razu otwieram dostęp do prywatnego kalendarza na 30-minutową rozmowę 1-na-1 z architektem.",
   steps: [
@@ -318,7 +322,10 @@ export const qualification = {
         { value: "ponizej20", label: "Poniżej 20 000 zł" },
         { value: "20-50", label: "20 000 zł – 50 000 zł" },
         { value: "50-120", label: "50 000 zł – 120 000 zł" },
-        { value: "powyzej120", label: "Powyżej 120 000 zł / Stały retainer CTO" },
+        {
+          value: "powyzej120",
+          label: "Powyżej 120 000 zł / Stały retainer CTO",
+        },
       ],
     },
     {
@@ -342,7 +349,10 @@ export const qualification = {
       options: [
         { value: "natychmiast", label: "Natychmiast (w ciągu 14–30 dni)" },
         { value: "kwartal", label: "W tym kwartale" },
-        { value: "kilka-miesiecy", label: "Za kilka miesięcy / rozpoznaję rynek" },
+        {
+          value: "kilka-miesiecy",
+          label: "Za kilka miesięcy / rozpoznaję rynek",
+        },
       ],
     },
   ],

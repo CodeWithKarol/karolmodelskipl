@@ -4,18 +4,23 @@ import Link from "next/link"
 import type { Metadata } from "next"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import remarkGfm from "remark-gfm"
-import {
-  ArrowLeft,
-  Clock,
-  List,
-  ChevronDown,
-} from "lucide-react"
+import { ArrowLeft, Clock, List, ChevronDown } from "lucide-react"
 import { ReadingProgress } from "@/components/reading-progress"
 import { BlogPostGrid } from "@/components/blog-post-grid"
 import { CtaSection } from "@/components/cta-section"
-import { extractHeadings, slugify, extractTextContent } from "@/lib/utils/heading"
+import {
+  extractHeadings,
+  slugify,
+  extractTextContent,
+} from "@/lib/utils/heading"
 import { ctaCalloutPlugin } from "@/lib/utils/mdx-cta"
-import { Children, cloneElement, isValidElement, type ReactElement, type ReactNode } from "react"
+import {
+  Children,
+  cloneElement,
+  isValidElement,
+  type ReactElement,
+  type ReactNode,
+} from "react"
 
 const headingTags = { 2: "h2", 3: "h3" } as const
 
@@ -30,9 +35,7 @@ function getTableHeaderLabels(children: ReactNode): string[] {
   )
   const firstRow = rows.find((row) => isValidElement(row))
   if (!isValidElement(firstRow)) return []
-  return Children.toArray(
-    (firstRow.props as { children?: ReactNode }).children
-  )
+  return Children.toArray((firstRow.props as { children?: ReactNode }).children)
     .filter((cell): cell is ReactElement => isValidElement(cell))
     .map((cell) =>
       extractTextContent((cell.props as { children?: ReactNode }).children)
@@ -116,7 +119,7 @@ function HeadingAnchor({
       {children}
       <a
         href={`#${id}`}
-        className="absolute -left-4 top-1/2 -translate-y-1/2 text-primary opacity-0 group-hover:opacity-100 no-underline !text-sm font-normal transition-opacity hover:!text-primary hidden sm:block"
+        className="absolute top-1/2 -left-4 hidden -translate-y-1/2 !text-sm font-normal text-primary no-underline opacity-0 transition-opacity group-hover:opacity-100 hover:!text-primary sm:block"
         aria-label={`Link do sekcji: ${extractTextContent(children)}`}
       >
         #
@@ -132,10 +135,10 @@ function TableOfContents({
 }) {
   return (
     <details className="group mb-6 lg:hidden">
-      <summary className="flex cursor-pointer items-center gap-2 py-2 text-[11px] font-semibold uppercase tracking-widest text-muted-foreground transition-colors hover:text-muted-foreground select-none">
+      <summary className="flex cursor-pointer items-center gap-2 py-2 text-[11px] font-semibold tracking-widest text-muted-foreground uppercase transition-colors select-none hover:text-muted-foreground">
         <List className="h-3.5 w-3.5 shrink-0 text-primary" />
         <span className="flex-1">Spis treści</span>
-        <span className="text-muted-foreground font-normal normal-case">
+        <span className="font-normal text-muted-foreground normal-case">
           {headings.length} {headings.length === 1 ? "sekcja" : "sekcji"}
         </span>
         <ChevronDown className="h-3.5 w-3.5 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
@@ -279,14 +282,14 @@ export default async function BlogPostPage(props: {
         />
 
         <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/15 via-background to-background"></div>
-        <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[300px] w-[600px] -translate-x-1/2 rounded-full bg-primary/10 opacity-30 mix-blend-screen blur-[100px] sm:opacity-50 sm:h-[400px] sm:w-[800px] sm:blur-[120px]"></div>
+        <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[300px] w-[600px] -translate-x-1/2 rounded-full bg-primary/10 opacity-30 mix-blend-screen blur-[100px] sm:h-[400px] sm:w-[800px] sm:opacity-50 sm:blur-[120px]"></div>
 
         <div className="mx-auto w-full max-w-6xl flex-1 px-4 pt-24 pb-16 sm:pt-28 sm:pb-24 lg:pt-32">
           <div className="lg:grid lg:grid-cols-[280px_1fr] lg:gap-12">
             {headings.length > 0 && (
               <aside className="hidden lg:block">
                 <div className="sticky top-24">
-                  <h2 className="mb-3 flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-muted-foreground">
+                  <h2 className="mb-3 flex items-center gap-2 text-[11px] font-semibold tracking-widest text-muted-foreground uppercase">
                     <List className="h-3.5 w-3.5 text-primary" />
                     Spis treści
                   </h2>
@@ -329,7 +332,7 @@ export default async function BlogPostPage(props: {
                 <div>
                   <header className="mb-6 border-b border-border/60 pb-5 sm:mb-8 sm:pb-8">
                     <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground sm:mb-5 sm:text-sm">
-                      <span className="font-semibold uppercase tracking-wider text-primary">
+                      <span className="font-semibold tracking-wider text-primary uppercase">
                         {post.silo}
                       </span>
                       <span className="h-0.5 w-0.5 rounded-full bg-border"></span>
@@ -342,9 +345,11 @@ export default async function BlogPostPage(props: {
                     </h1>
                   </header>
 
-                  {headings.length > 0 && <TableOfContents headings={headings} />}
+                  {headings.length > 0 && (
+                    <TableOfContents headings={headings} />
+                  )}
 
-                  <div className="prose prose-sm max-w-none prose-invert md:prose-base prose-p:max-w-prose prose-li:max-w-prose prose-blockquote:max-w-prose prose-headings:font-semibold prose-headings:text-foreground prose-headings:scroll-mt-24 prose-p:leading-[1.7] prose-p:text-muted-foreground prose-p:my-3 prose-a:text-primary hover:prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-a:font-medium prose-blockquote:rounded-r-lg prose-blockquote:border-l-primary prose-blockquote:bg-muted/80 prose-blockquote:px-4 prose-blockquote:py-2.5 prose-blockquote:font-normal prose-blockquote:text-muted-foreground sm:prose-blockquote:px-6 prose-strong:font-bold prose-strong:text-foreground prose-li:text-muted-foreground prose-li:my-1 prose-hr:border-border prose-img:rounded-xl prose-img:border prose-img:border-border">
+                  <div className="prose prose-sm max-w-none prose-invert md:prose-base prose-headings:scroll-mt-24 prose-headings:font-semibold prose-headings:text-foreground prose-p:my-3 prose-p:max-w-prose prose-p:leading-[1.7] prose-p:text-muted-foreground prose-a:font-medium prose-a:text-primary prose-a:no-underline hover:prose-a:text-primary hover:prose-a:underline prose-blockquote:max-w-prose prose-blockquote:rounded-r-lg prose-blockquote:border-l-primary prose-blockquote:bg-muted/80 prose-blockquote:px-4 prose-blockquote:py-2.5 prose-blockquote:font-normal prose-blockquote:text-muted-foreground sm:prose-blockquote:px-6 prose-strong:font-bold prose-strong:text-foreground prose-li:my-1 prose-li:max-w-prose prose-li:text-muted-foreground prose-img:rounded-xl prose-img:border prose-img:border-border prose-hr:border-border">
                     <MDXRemote
                       source={post.content}
                       options={{
@@ -359,7 +364,7 @@ export default async function BlogPostPage(props: {
                           <img
                             {...props}
                             alt={props.alt || "Ilustracja w artykule blogowym"}
-                            className="rounded-xl border border-border my-6 max-w-full h-auto"
+                            className="my-6 h-auto max-w-full rounded-xl border border-border"
                           />
                         ),
                         table: (props) => (

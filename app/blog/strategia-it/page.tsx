@@ -18,7 +18,7 @@ const ctaContent: CtaContent = {
   title:
     "Masz na stole wyceny od software house'ów lub chcesz skonsultować kierunek cyfryzacji firmy w 4 oczy?",
   description:
-    "Zamiast podejmować wielotysięczne decyzje technologiczne „na wyczucie”, przenieś odpowiedzialność analityczną na moje barki. Jako Niezależny Partner Technologiczny w każdym kwartale obejmuję opieką strategiczną <strong class='text-white font-semibold'>maksymalnie dwie firmy</strong>. W zamian za feedback po zakończeniu analizy, możesz odebrać dedykowany Pakiet Strategiczny całkowicie <strong class='text-white font-semibold'>za 0 zł</strong>.",
+    "Zamiast podejmować wielotysięczne decyzje technologiczne „na wyczucie”, przenieś odpowiedzialność analityczną na moje barki. Jako Niezależny Partner Technologiczny w każdym kwartale obejmuję opieką strategiczną <strong class='text-highlight font-semibold'>maksymalnie dwie firmy</strong>. W zamian za feedback po zakończeniu analizy, możesz odebrać dedykowany Pakiet Strategiczny całkowicie <strong class='text-highlight font-semibold'>za 0 zł</strong>.",
   package_title:
     "Co namacalnie otrzymujesz w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
   offer_items: [
@@ -89,8 +89,8 @@ export default function StrategiaItCategoryPage() {
             </SectionBadge>
           </div>
           <h1 className="mb-5 max-w-4xl text-3xl leading-[1.1] font-semibold tracking-tighter text-balance text-foreground sm:mx-auto sm:mb-6 sm:text-4xl lg:text-6xl">
-            Strategia IT i Niezależne Partnerstwo Technologiczne – Poradniki
-            i Praktyka
+            Strategia IT i Niezależne Partnerstwo Technologiczne – Poradniki i
+            Praktyka
           </h1>
           <p className="mb-6 max-w-2xl text-base leading-relaxed text-pretty text-muted-foreground sm:mx-auto sm:mb-8 sm:text-lg">
             Jak mądrze planować rozwój cyfrowy firmy, weryfikować wyceny
@@ -165,7 +165,9 @@ export default function StrategiaItCategoryPage() {
           }))}
           className={posts.length > 3 ? "mb-10 sm:mb-16" : "mb-20"}
         />
-        {posts.length > 3 && <BlogPostGrid posts={posts.slice(3)} className="mb-20" />}
+        {posts.length > 3 && (
+          <BlogPostGrid posts={posts.slice(3)} className="mb-20" />
+        )}
       </main>
 
       <CtaSection content={ctaContent} />

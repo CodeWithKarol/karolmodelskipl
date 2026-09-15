@@ -18,7 +18,7 @@ const ctaContent: CtaContent = {
   title:
     "Masz gotowy pomysł na aplikację i wolisz omówić architekturę MVP od razu w 4 oczy?",
   description:
-    "Zamiast tracić godziny na analizowanie artykułów i domysły, przenieś wyzwanie na moje barki. Jako Niezależny Partner Technologiczny w każdym kwartale prowadzę <strong class='text-white font-semibold'>maksymalnie dwa wdrożenia</strong>, dając projektom 100% mojego skupienia. W zamian za opinię po zakończeniu analizy, możesz odebrać kompletny Pakiet Strategiczny na start za 0 zł.",
+    "Zamiast tracić godziny na analizowanie artykułów i domysły, przenieś wyzwanie na moje barki. Jako Niezależny Partner Technologiczny w każdym kwartale prowadzę <strong class='text-highlight font-semibold'>maksymalnie dwa wdrożenia</strong>, dając projektom 100% mojego skupienia. W zamian za opinię po zakończeniu analizy, możesz odebrać kompletny Pakiet Strategiczny na start za 0 zł.",
   package_title:
     "Co namacalnie otrzymujesz w Pakiecie Strategicznym (Wartość 600 zł za 0 zł):",
   offer_items: [
@@ -169,7 +169,9 @@ export default function SzybkaWersjaStartowaCategoryPage() {
           }))}
           className={posts.length > 3 ? "mb-10 sm:mb-16" : "mb-20"}
         />
-        {posts.length > 3 && <BlogPostGrid posts={posts.slice(3)} className="mb-20" />}
+        {posts.length > 3 && (
+          <BlogPostGrid posts={posts.slice(3)} className="mb-20" />
+        )}
       </main>
 
       <CtaSection content={ctaContent} />

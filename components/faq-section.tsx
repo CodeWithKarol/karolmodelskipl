@@ -26,7 +26,10 @@ interface FaqSectionProps {
   className?: string
 }
 
-export function FaqSection({ faq: customFaq, className }: FaqSectionProps = {}) {
+export function FaqSection({
+  faq: customFaq,
+  className,
+}: FaqSectionProps = {}) {
   const faq = (customFaq ?? content.faq) as FaqData
   const title = faq.title ?? "Najczęściej zadawane pytania"
 
@@ -34,26 +37,24 @@ export function FaqSection({ faq: customFaq, className }: FaqSectionProps = {}) 
     <section
       id="faq"
       className={cn(
-        "relative overflow-hidden border-t border-border bg-background py-16 sm:py-20 text-muted-foreground md:py-32",
+        "relative overflow-hidden border-t border-border bg-background py-16 text-muted-foreground sm:py-20 md:py-32",
         className
       )}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
-
-      <div className="relative z-10 container mx-auto px-4 max-w-3xl">
+      <div className="relative z-10 container mx-auto max-w-3xl px-4">
         {/* Header - Mobile First */}
         <Reveal as="header" className="mb-12 text-center">
           <div className="mb-6">
             <SectionBadge>
-            <HelpCircle className="h-4 w-4" />
-            <span>FAQ</span>
-          </SectionBadge>
+              <HelpCircle className="h-4 w-4" />
+              <span>FAQ</span>
+            </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6 leading-tight">
+          <h2 className="mb-6 text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             {title}
           </h2>
           {faq.subtitle && (
-            <p className="text-muted-foreground font-normal leading-relaxed text-base sm:text-lg">
+            <p className="text-base leading-relaxed font-normal text-muted-foreground sm:text-lg">
               {faq.subtitle}
             </p>
           )}
@@ -68,13 +69,13 @@ export function FaqSection({ faq: customFaq, className }: FaqSectionProps = {}) 
                 value={`item-${index}`}
                 className="group/faq border-border transition-colors data-[state=open]:border-primary/40"
               >
-                <AccordionTrigger className="py-4 sm:py-6 text-left text-sm sm:text-base font-semibold text-foreground hover:text-foreground hover:no-underline transition-colors">
-                  <span className="group-hover/faq:text-foreground group-hover/faq:translate-x-0.5 transition-transform duration-300">
+                <AccordionTrigger className="py-4 text-left text-sm font-semibold text-foreground transition-colors hover:text-foreground hover:no-underline sm:py-6 sm:text-base">
+                  <span className="transition-transform duration-300 group-hover/faq:translate-x-0.5 group-hover/faq:text-foreground">
                     {item.question}
                   </span>
                 </AccordionTrigger>
                 <AccordionContent
-                  className="max-w-prose pb-5 sm:pb-6 text-xs sm:text-sm leading-relaxed text-muted-foreground [&_a]:font-medium [&_a]:text-primary [&_a]:transition-colors [&_a:hover]:text-primary [&_a:hover]:underline"
+                  className="max-w-prose pb-5 text-xs leading-relaxed text-muted-foreground sm:pb-6 sm:text-sm [&_a]:font-medium [&_a]:text-primary [&_a]:transition-colors [&_a:hover]:text-primary [&_a:hover]:underline"
                   dangerouslySetInnerHTML={{ __html: item.answer }}
                 />
               </AccordionItem>
