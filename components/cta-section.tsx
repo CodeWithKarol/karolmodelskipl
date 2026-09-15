@@ -41,15 +41,15 @@ export function CtaSection({ content: pageContent, ctaHref }: CtaSectionProps = 
             <div className="mb-4">
               <SectionBadge><Sparkles className="h-3.5 w-3.5 shrink-0" />{cta.badge}</SectionBadge>
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto text-balance">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto text-balance">
               {cta.title}
             </h2>
-            <p className="max-w-2xl mx-auto text-muted-foreground font-light leading-relaxed text-sm sm:text-base md:text-lg text-pretty" dangerouslySetInnerHTML={{ __html: cta.description }} />
+            <p className="max-w-2xl mx-auto text-muted-foreground font-normal leading-relaxed text-sm sm:text-base md:text-lg text-pretty" dangerouslySetInnerHTML={{ __html: cta.description }} />
           </Reveal>
 
           <Reveal className="max-w-2xl mx-auto">
             <div className="mb-6 sm:mb-8">
-              <p className="text-xs sm:text-sm font-semibold text-foreground mb-4 sm:mb-5 text-center">{cta.package_title}</p>
+              <p className="text-xs sm:text-sm font-medium text-foreground mb-4 sm:mb-5 text-center">{cta.package_title}</p>
               <div className="divide-y divide-border border-y border-border">
                 {cta.offer_items.map((item, i) => (
                   <div key={i} className="flex flex-col gap-2 text-left py-3.5 sm:flex-row sm:items-start sm:gap-3 sm:py-4">
@@ -61,7 +61,7 @@ export function CtaSection({ content: pageContent, ctaHref }: CtaSectionProps = 
                     <span className="min-w-0 text-xs sm:text-sm text-muted-foreground leading-relaxed text-pretty">
                       {item.desc ? (
                         <>
-                          <strong className="font-semibold text-foreground">{item.title}</strong>{" "}
+                          <strong className="font-medium text-foreground">{item.title}</strong>{" "}
                           {item.desc}
                         </>
                       ) : (
@@ -85,7 +85,7 @@ export function CtaSection({ content: pageContent, ctaHref }: CtaSectionProps = 
                 {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : { role: "button" })}
                 className="w-full max-w-md"
               >
-                <Button size="lg" className="w-full py-5 text-sm font-bold rounded-xl shadow-lg transition-all whitespace-normal h-auto leading-tight">
+                <Button size="lg" className="w-full py-5 text-sm font-semibold rounded-xl shadow-lg transition-all whitespace-normal h-auto leading-tight">
                   {cta.button}
                 </Button>
               </a>
@@ -95,7 +95,7 @@ export function CtaSection({ content: pageContent, ctaHref }: CtaSectionProps = 
                 <p className="text-xs sm:text-sm text-muted-foreground mt-3 font-medium text-center leading-relaxed text-pretty">🔒 Po pozytywnej weryfikacji danych w ankiecie otrzymasz natychmiastowy dostęp do kalendarza rezerwacji.</p>
               )}
               {cta.availability && (
-                <p className="text-xs text-warning/90 text-center mt-2 font-semibold tracking-wide uppercase">{cta.availability}</p>
+                <p className="text-xs text-primary text-center mt-2 font-medium tracking-wide uppercase">{cta.availability}</p>
               )}
               {cta.footer && (
                 <p className="text-xs sm:text-sm text-muted-foreground mt-2 font-medium text-center leading-relaxed text-pretty">{cta.footer}</p>

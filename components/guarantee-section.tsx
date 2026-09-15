@@ -21,7 +21,7 @@ interface GuaranteeData {
 interface GuaranteeSectionProps {
   guarantee?: GuaranteeData
   id?: string
-  variant?: "blue" | "red" | "emerald"
+  variant?: "blue" | "red"
 }
 
 const icons = [ShieldCheck, Shield, FileCode, Headphones]
@@ -29,13 +29,17 @@ const icons = [ShieldCheck, Shield, FileCode, Headphones]
 const iconColors = {
   blue: "text-primary",
   red: "text-destructive",
-  emerald: "text-success",
+}
+
+const bulletColors = {
+  blue: "bg-primary",
+  red: "bg-destructive",
 }
 
 export function GuaranteeSection({
   guarantee: customGuarantee,
   id = "gwarancje",
-  variant = "emerald",
+  variant = "blue",
 }: GuaranteeSectionProps = {}) {
   const { guarantee: defaultGuarantee } = content
   const guarantee: GuaranteeData = customGuarantee || defaultGuarantee
@@ -56,11 +60,11 @@ export function GuaranteeSection({
             <span>{guarantee.badge}</span>
           </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-3 sm:mb-6 leading-snug sm:leading-tight max-w-3xl mx-auto">
             {guarantee.title}
           </h2>
           {guarantee.subtitle && (
-            <p className="max-w-2xl mx-auto text-muted-foreground font-light leading-relaxed text-xs sm:text-base md:text-lg">
+            <p className="max-w-2xl mx-auto text-muted-foreground font-normal leading-relaxed text-xs sm:text-base md:text-lg">
               {guarantee.subtitle}
             </p>
           )}
@@ -73,7 +77,7 @@ export function GuaranteeSection({
                 key={i}
                 className="flex items-start gap-3 border-t border-border pt-4 sm:flex-col sm:gap-2"
               >
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-primary/10 text-xs font-bold text-primary">
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-primary/10 text-xs font-semibold text-primary">
                   {i + 1}
                 </span>
                 <p className="text-sm leading-snug text-muted-foreground">{step}</p>
@@ -91,7 +95,7 @@ export function GuaranteeSection({
                 <div className="flex flex-col gap-2.5 border-t border-border py-6 sm:flex-row sm:items-start sm:gap-5 sm:py-8">
                   <Icon className={`h-5 w-5 shrink-0 sm:mt-1 ${iconColors[variant]}`} />
                   <div className="min-w-0">
-                    <h3 className="text-base font-bold text-foreground leading-snug sm:text-xl">{item.title}</h3>
+                    <h3 className="text-base font-semibold text-foreground leading-snug sm:text-xl">{item.title}</h3>
                     {item.desc && (
                       <p className="mt-2 max-w-prose text-sm leading-relaxed text-muted-foreground whitespace-pre-line sm:text-[15px]">{item.desc}</p>
                     )}
@@ -101,7 +105,7 @@ export function GuaranteeSection({
                           <li key={j} className="flex items-start gap-2.5 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">
                             <span
                               aria-hidden="true"
-                              className="mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full bg-success"
+                              className={`mt-[0.5em] h-1.5 w-1.5 shrink-0 rounded-full ${bulletColors[variant]}`}
                             />
                             <span>{bullet}</span>
                           </li>
@@ -109,7 +113,7 @@ export function GuaranteeSection({
                       </ul>
                     )}
                     {item.note && (
-                      <p className="mt-3 text-sm font-semibold text-foreground sm:text-[15px]">{item.note}</p>
+                      <p className="mt-3 text-sm font-medium text-foreground sm:text-[15px]">{item.note}</p>
                     )}
                   </div>
                 </div>

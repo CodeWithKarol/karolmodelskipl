@@ -337,14 +337,14 @@ export default async function BlogPostPage(props: {
                       <span className="h-0.5 w-0.5 rounded-full bg-border"></span>
                       <span>{post.date}</span>
                     </div>
-                    <h1 className="text-xl leading-snug font-bold tracking-tight text-balance text-foreground sm:text-2xl lg:text-3xl xl:text-4xl">
+                    <h1 className="text-xl leading-snug font-semibold tracking-tight text-balance text-foreground sm:text-2xl lg:text-3xl xl:text-4xl">
                       {post.title}
                     </h1>
                   </header>
 
                   {headings.length > 0 && <TableOfContents headings={headings} />}
 
-                  <div className="prose prose-sm max-w-none prose-invert md:prose-base prose-p:max-w-prose prose-li:max-w-prose prose-blockquote:max-w-prose prose-headings:font-bold prose-headings:text-foreground prose-headings:scroll-mt-24 prose-p:leading-[1.7] prose-p:text-muted-foreground prose-p:my-3 prose-a:text-primary hover:prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-a:font-medium prose-blockquote:rounded-r-lg prose-blockquote:border-l-primary prose-blockquote:bg-muted/80 prose-blockquote:px-4 prose-blockquote:py-2.5 prose-blockquote:font-normal prose-blockquote:text-muted-foreground sm:prose-blockquote:px-6 prose-strong:font-bold prose-strong:text-foreground prose-li:text-muted-foreground prose-li:my-1 prose-hr:border-border prose-img:rounded-xl prose-img:border prose-img:border-border">
+                  <div className="prose prose-sm max-w-none prose-invert md:prose-base prose-p:max-w-prose prose-li:max-w-prose prose-blockquote:max-w-prose prose-headings:font-semibold prose-headings:text-foreground prose-headings:scroll-mt-24 prose-p:leading-[1.7] prose-p:text-muted-foreground prose-p:my-3 prose-a:text-primary hover:prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-a:font-medium prose-blockquote:rounded-r-lg prose-blockquote:border-l-primary prose-blockquote:bg-muted/80 prose-blockquote:px-4 prose-blockquote:py-2.5 prose-blockquote:font-normal prose-blockquote:text-muted-foreground sm:prose-blockquote:px-6 prose-strong:font-bold prose-strong:text-foreground prose-li:text-muted-foreground prose-li:my-1 prose-hr:border-border prose-img:rounded-xl prose-img:border prose-img:border-border">
                     <MDXRemote
                       source={post.content}
                       options={{
@@ -389,7 +389,7 @@ export default async function BlogPostPage(props: {
 
               {relatedPosts.length > 0 && (
                 <section className="mt-10 sm:mt-12">
-                  <h2 className="mb-5 text-base font-bold text-foreground sm:mb-6 sm:text-lg">
+                  <h2 className="mb-5 text-base font-semibold text-foreground sm:mb-6 sm:text-lg">
                     Powiązane artykuły
                   </h2>
                   <BlogPostGrid posts={relatedPosts} />

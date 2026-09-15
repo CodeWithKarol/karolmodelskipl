@@ -71,7 +71,7 @@ export function ContrastSection({ contrast: customContrast, className }: Contras
               <span>{badge}</span>
             </SectionBadge>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-6 leading-tight max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-foreground mb-6 leading-tight max-w-3xl mx-auto">
             {title}
           </h2>
         </Reveal>
@@ -85,7 +85,7 @@ export function ContrastSection({ contrast: customContrast, className }: Contras
               className="border-t border-border first:border-t-0 py-6 sm:py-8"
             >
               {row.area && (
-                <h3 className="text-base sm:text-lg font-bold text-foreground leading-snug mb-4 sm:mb-5">
+                <h3 className="text-base sm:text-lg font-semibold text-foreground leading-snug mb-4 sm:mb-5">
                   {row.area}
                 </h3>
               )}
@@ -96,12 +96,12 @@ export function ContrastSection({ contrast: customContrast, className }: Contras
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 md:mt-0.5" />
                   <div className="min-w-0">
                     {blueLabel && (
-                      <div className="text-primary mb-1 font-bold text-[10px] uppercase tracking-widest">
+                      <div className="text-primary mb-1 font-medium text-[11px]">
                         {blueLabel}
                       </div>
                     )}
                     {row.blueTitle && (
-                      <div className="text-sm sm:text-base font-bold text-foreground mb-1 leading-snug">
+                      <div className="text-sm sm:text-base font-semibold text-foreground mb-1 leading-snug">
                         {row.blueTitle}
                       </div>
                     )}
@@ -116,12 +116,12 @@ export function ContrastSection({ contrast: customContrast, className }: Contras
                   <XCircle className="h-5 w-5 text-destructive shrink-0 md:mt-0.5" />
                   <div className="min-w-0">
                     {redLabel && (
-                      <div className="text-destructive mb-1 font-bold text-[10px] uppercase tracking-widest">
+                      <div className="text-destructive mb-1 font-medium text-[11px]">
                         {redLabel}
                       </div>
                     )}
                     {row.redTitle && (
-                      <div className="text-sm sm:text-base font-bold text-foreground mb-1 leading-snug">
+                      <div className="text-sm sm:text-base font-semibold text-foreground mb-1 leading-snug">
                         {row.redTitle}
                       </div>
                     )}

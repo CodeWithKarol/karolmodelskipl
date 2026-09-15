@@ -28,7 +28,7 @@ export function BlogPostCard({
         <div>
           <div className="flex items-baseline justify-between gap-4">
             {typeof index === "number" && (
-              <span className="pointer-events-none select-none text-3xl sm:text-4xl font-extrabold tracking-tighter text-foreground/5 transition-colors group-hover:text-primary/15">
+              <span className="pointer-events-none select-none text-3xl sm:text-4xl font-semibold tracking-tighter text-foreground/5 transition-colors group-hover:text-primary/15">
                 {String(index + 1).padStart(2, "0")}
               </span>
             )}
@@ -43,7 +43,7 @@ export function BlogPostCard({
             </SectionBadge>
           )}
 
-          <h3 className="mt-2.5 text-sm leading-snug font-bold text-foreground transition-colors group-hover:text-primary sm:text-lg">
+          <h3 className="mt-2.5 text-sm leading-snug font-semibold text-foreground transition-colors group-hover:text-primary sm:text-lg">
             {post.title}
           </h3>
           <p className="mt-2 line-clamp-3 text-[11px] leading-relaxed text-muted-foreground sm:text-sm">
@@ -51,7 +51,7 @@ export function BlogPostCard({
           </p>
         </div>
 
-        <div className="mt-5 inline-flex items-center gap-1.5 text-[11px] font-bold text-primary transition-colors group-hover:text-primary sm:text-sm">
+        <div className="mt-5 inline-flex items-center gap-1.5 text-[11px] font-semibold text-primary transition-colors group-hover:text-primary sm:text-sm">
           <span>Przeczytaj artykuł</span>
           <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
         </div>

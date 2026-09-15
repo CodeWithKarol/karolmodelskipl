@@ -67,7 +67,7 @@ export function ModernizacjaQualificationForm({
               <SectionBadge variant="neutral" className="text-[10px] sm:text-xs">
                 {qualification.badge}
               </SectionBadge>
-              <h2 className="mt-5 text-3xl font-extrabold tracking-tight text-balance text-foreground sm:text-4xl">
+              <h2 className="mt-5 text-3xl font-semibold tracking-tight text-balance text-foreground sm:text-4xl">
                 {qualification.title}
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
@@ -147,7 +147,7 @@ export function ModernizacjaQualificationForm({
                     size="lg"
                     onClick={() => setSubmitted(true)}
                     disabled={!allAnswered}
-                    className="text-sm font-bold disabled:opacity-40"
+                    className="text-sm font-semibold disabled:opacity-40"
                   >
                     Sprawdź dostępność
                     <ArrowRight className="h-4 w-4" />
@@ -158,7 +158,7 @@ export function ModernizacjaQualificationForm({
                     size="lg"
                     onClick={() => setStep((s) => Math.min(total - 1, s + 1))}
                     disabled={!answered}
-                    className="text-sm font-bold disabled:opacity-40"
+                    className="text-sm font-semibold disabled:opacity-40"
                   >
                     Dalej
                     <ArrowRight className="h-4 w-4" />
@@ -179,7 +179,7 @@ export function ModernizacjaQualificationForm({
                   <Button
                     asChild
                     size="lg"
-                    className="mt-6 w-full max-w-md whitespace-normal rounded-xl px-6 py-5 text-sm font-bold leading-tight shadow-lg"
+                    className="mt-6 w-full max-w-md whitespace-normal rounded-xl px-6 py-5 text-sm font-semibold leading-tight shadow-lg"
                   >
                     <a
                       href={siteConfig.calendlyLink}
