@@ -1,49 +1,61 @@
 "use client"
 
-import { useState } from "react"
+import { useState, type FormEvent } from "react"
 import { Button } from "@/components/ui/button"
 import { CtaButton } from "@/components/cta-button"
-import { Label } from "@/components/ui/label"
-import { Progress } from "@/components/ui/progress"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import {
+  Questionnaire,
+  QuestionnaireActions,
+  QuestionnaireChoice,
+  QuestionnaireChoiceDescription,
+  QuestionnaireChoices,
+  QuestionnaireError,
+  QuestionnaireItem,
+  QuestionnaireNext,
+  QuestionnairePrevious,
+  QuestionnaireProgress,
+  QuestionnaireSubmit,
+  QuestionnaireTitle,
+} from "@/components/ui/questionnaire"
 import { SectionBadge } from "@/components/section-badge"
 import { siteConfig } from "@/lib/site-config"
-import { cn } from "@/lib/utils"
-import { ArrowLeft, ArrowRight, Check } from "lucide-react"
 import type { QualificationContent } from "@/lib/content/types"
+
+type QualificationResult = "qualified" | "rejected"
+
+function stripStepNumber(label: string) {
+  return label.replace(/^\s*\d+\.\s*/, "")
+}
 
 export function QualificationForm({
   qualification,
 }: {
   qualification: QualificationContent
 }) {
-  const [step, setStep] = useState(0)
-  const [answers, setAnswers] = useState<Record<string, string>>({})
-  const [submitted, setSubmitted] = useState(false)
+  const [result, setResult] = useState<QualificationResult | null>(null)
 
-  const total = qualification.steps.length
-  const current = qualification.steps[step]
-  const answered = Boolean(answers[current.key])
-  const allAnswered = qualification.steps.every((s) => answers[s.key])
-  const isLast = step === total - 1
+  const items = qualification.steps.map((step) => ({
+    name: step.key,
+    required: true,
+    choices: step.options.map((option) => ({ value: option.value })),
+  }))
 
-  const select = (value: string) =>
-    setAnswers((prev) => ({ ...prev, [current.key]: value }))
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
 
-  const rejected =
-    allAnswered &&
-    qualification.disqualify.some((rule) =>
-      rule.values.includes(answers[rule.key])
+    const formData = new FormData(event.currentTarget)
+    const rejected = qualification.disqualify.some((rule) =>
+      rule.values.includes(String(formData.get(rule.key) ?? ""))
     )
-  const qualified = allAnswered && !rejected
 
-  const progress = ((step + (answered ? 1 : 0)) / total) * 100
+    setResult(rejected ? "rejected" : "qualified")
+  }
 
   return (
     <section className="pt-28 pb-16 sm:pt-36 sm:pb-28">
       <div className="container mx-auto px-4">
         <div className="mx-auto w-full max-w-3xl">
-          {!submitted ? (
+          {result === null ? (
             <div className="text-center">
               <SectionBadge
                 variant="neutral"
@@ -58,104 +70,74 @@ export function QualificationForm({
                 {qualification.intro}
               </p>
 
-              <div className="mt-9 sm:mt-12">
-                <div className="flex items-center justify-between text-xs font-medium text-muted-foreground">
-                  <span>
-                    Krok {step + 1} z {total}
-                  </span>
-                  <span>{Math.round(progress)}%</span>
-                </div>
-                <Progress
-                  value={progress}
-                  className="mt-2 [&_[data-slot=progress-track]]:h-1.5"
-                />
-              </div>
-
-              <fieldset className="mt-8 text-left sm:mt-10">
-                <legend className="mb-3.5 text-sm leading-snug font-semibold text-foreground sm:text-base">
-                  {current.label}
-                </legend>
-                <RadioGroup
-                  value={answers[current.key] ?? ""}
-                  onValueChange={(value) => select(value)}
-                  className="grid w-full gap-2.5"
-                >
-                  {current.options.map((option) => {
-                    const id = `${current.key}-${option.value}`
-                    const active = answers[current.key] === option.value
-                    return (
-                      <Label
-                        key={option.value}
-                        htmlFor={id}
-                        className={cn(
-                          "flex w-full cursor-pointer items-start justify-between gap-3 rounded-xl border px-4 py-4 text-left text-sm leading-snug font-medium transition-colors sm:py-3.5 sm:text-[15px]",
-                          active
-                            ? "border-primary/60 bg-primary/10 text-foreground"
-                            : "border-border bg-card text-muted-foreground hover:border-input hover:bg-muted"
-                        )}
-                      >
-                        <span className="min-w-0">
-                          <span className="block">{option.label}</span>
-                          {option.hint && (
-                            <span className="mt-0.5 block text-xs leading-snug font-normal text-muted-foreground">
-                              {option.hint}
-                            </span>
-                          )}
+              <Questionnaire
+                items={items}
+                onSubmit={handleSubmit}
+                className="mt-9 gap-6 text-left sm:mt-12"
+              >
+                <QuestionnaireProgress
+                  className="w-full"
+                  render={(props, state) => (
+                    <div
+                      {...props}
+                      aria-valuetext={`Krok ${state.current} z ${state.total}`}
+                    >
+                      <div className="flex items-center justify-between text-xs font-medium text-muted-foreground">
+                        <span>
+                          Krok {state.current} z {state.total}
                         </span>
-                        {active && (
-                          <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                        )}
-                        <RadioGroupItem
-                          id={id}
-                          value={option.value}
-                          className="sr-only"
+                        <span>
+                          {Math.round((state.current / state.total) * 100)}%
+                        </span>
+                      </div>
+                      <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-muted">
+                        <div
+                          className="h-full rounded-full bg-primary transition-[width] duration-300"
+                          style={{
+                            width: `${(state.current / state.total) * 100}%`,
+                          }}
                         />
-                      </Label>
-                    )
-                  })}
-                </RadioGroup>
-              </fieldset>
+                      </div>
+                    </div>
+                  )}
+                />
 
-              <div className="mt-8 flex items-center justify-between gap-3 sm:mt-10">
-                <Button
-                  type="button"
-                  variant="ghost"
-                  onClick={() => setStep((s) => Math.max(0, s - 1))}
-                  disabled={step === 0}
-                  className="text-muted-foreground hover:bg-accent hover:text-accent-foreground disabled:opacity-30"
-                >
-                  <ArrowLeft className="h-4 w-4" />
-                  Wstecz
-                </Button>
+                {qualification.steps.map((step) => (
+                  <QuestionnaireItem key={step.key} name={step.key} required>
+                    <QuestionnaireTitle>
+                      {stripStepNumber(step.label)}
+                    </QuestionnaireTitle>
+                    <QuestionnaireChoices>
+                      {step.options.map((option) => (
+                        <QuestionnaireChoice
+                          key={option.value}
+                          value={option.value}
+                        >
+                          <span className="font-medium">{option.label}</span>
+                          {option.hint ? (
+                            <QuestionnaireChoiceDescription>
+                              {option.hint}
+                            </QuestionnaireChoiceDescription>
+                          ) : null}
+                        </QuestionnaireChoice>
+                      ))}
+                    </QuestionnaireChoices>
+                    <QuestionnaireError>
+                      Wybierz jedną z odpowiedzi, aby przejść dalej.
+                    </QuestionnaireError>
+                  </QuestionnaireItem>
+                ))}
 
-                {isLast ? (
-                  <Button
-                    type="button"
-                    size="lg"
-                    onClick={() => setSubmitted(true)}
-                    disabled={!allAnswered}
-                    className="text-sm font-semibold disabled:opacity-40"
-                  >
-                    Sprawdź dostępność
-                    <ArrowRight className="h-4 w-4" />
-                  </Button>
-                ) : (
-                  <Button
-                    type="button"
-                    size="lg"
-                    onClick={() => setStep((s) => Math.min(total - 1, s + 1))}
-                    disabled={!answered}
-                    className="text-sm font-semibold disabled:opacity-40"
-                  >
-                    Dalej
-                    <ArrowRight className="h-4 w-4" />
-                  </Button>
-                )}
-              </div>
+                <QuestionnaireActions className="mt-2">
+                  <QuestionnairePrevious>Wstecz</QuestionnairePrevious>
+                  <QuestionnaireNext>Dalej</QuestionnaireNext>
+                  <QuestionnaireSubmit>Sprawdź dostępność</QuestionnaireSubmit>
+                </QuestionnaireActions>
+              </Questionnaire>
             </div>
           ) : (
             <div className="text-center">
-              {qualified ? (
+              {result === "qualified" ? (
                 <div className="rounded-2xl border border-primary/20 bg-primary/5 p-6 sm:p-8">
                   <p className="text-lg font-semibold text-foreground">
                     {qualification.qualified.title}
