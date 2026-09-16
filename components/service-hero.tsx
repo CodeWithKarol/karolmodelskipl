@@ -41,8 +41,12 @@ export function ServiceHero({
           </p>
 
           <div className="mb-6 animate-[fade-up_0.7s_ease-out_0.25s_both] sm:mb-8">
-            <CtaButton asChild className="mx-auto w-full max-w-md">
-              <a href={ctaHref}>{hero.qualification.cta_line1}</a>
+            <CtaButton
+              render={<a href={ctaHref} />}
+              nativeButton={false}
+              className="mx-auto w-full max-w-md"
+            >
+              {hero.qualification.cta_line1}
             </CtaButton>
             <p className="mt-2.5 text-center text-[11px] leading-relaxed font-medium text-muted-foreground sm:text-xs">
               {hero.cta_sub}

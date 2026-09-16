@@ -44,6 +44,14 @@ export function BlogArticles({ posts }: { posts: BlogPostSummary[] }) {
     )
   }, [posts])
 
+  const siloItems = React.useMemo(
+    () => ({
+      all: "Wszystkie kategorie",
+      ...Object.fromEntries(silos.map((silo) => [silo, siloLabel(silo)])),
+    }),
+    [silos]
+  )
+
   const filtered = React.useMemo(() => {
     const q = normalize(deferredQuery.trim())
     return posts.filter((post) => {
@@ -86,7 +94,11 @@ export function BlogArticles({ posts }: { posts: BlogPostSummary[] }) {
             </InputGroup>
           </div>
 
-          <Select value={silo} onValueChange={setSilo}>
+          <Select
+            value={silo}
+            items={siloItems}
+            onValueChange={(value) => setSilo(value ?? "all")}
+          >
             <SelectTrigger
               aria-label="Filtruj według kategorii"
               className="w-full sm:w-56"
