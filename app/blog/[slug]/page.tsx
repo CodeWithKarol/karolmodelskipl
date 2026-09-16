@@ -4,10 +4,12 @@ import Link from "next/link"
 import type { Metadata } from "next"
 import { MDXRemote } from "next-mdx-remote/rsc"
 import remarkGfm from "remark-gfm"
-import { ArrowLeft, Clock, List } from "lucide-react"
+import { ArrowLeft, CalendarDays, Clock, List } from "lucide-react"
 import { ReadingProgress } from "@/components/reading-progress"
-import { BlogPostGrid } from "@/components/blog-post-grid"
+import { RelatedPosts } from "@/components/related-posts"
 import { CtaSection } from "@/components/cta-section"
+import { ArticleToc } from "@/components/article-toc"
+import { SectionBadge } from "@/components/section-badge"
 import {
   extractHeadings,
   slugify,
@@ -91,7 +93,7 @@ export default async function BlogPostPage(props: {
         <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/15 via-background to-background"></div>
         <div className="pointer-events-none fixed top-0 left-1/2 -z-10 h-[300px] w-[600px] -translate-x-1/2 rounded-full bg-primary/10 opacity-30 mix-blend-screen blur-[100px] sm:h-[400px] sm:w-[800px] sm:opacity-50 sm:blur-[120px]"></div>
 
-        <div className="mx-auto w-full max-w-6xl flex-1 px-4 pt-24 pb-16 sm:pt-28 sm:pb-24 lg:pt-32">
+        <div className="mx-auto w-full max-w-6xl flex-1 px-4 pt-20 pb-16 sm:pt-28 sm:pb-24 lg:pt-32">
           <div className="lg:grid lg:grid-cols-[280px_1fr] lg:gap-12">
             {headings.length > 0 && (
               <aside className="hidden lg:block">
@@ -100,23 +102,7 @@ export default async function BlogPostPage(props: {
                     <List className="h-3.5 w-3.5 text-primary" />
                     Spis treści
                   </h2>
-                  <nav>
-                    <ul className="space-y-1.5">
-                      {headings.map((h, i) => (
-                        <li key={i}>
-                          <a
-                            href={`#${h.id}`}
-                            className="block text-[13px] leading-snug text-muted-foreground transition-colors hover:text-primary"
-                            style={{
-                              paddingLeft: `${(h.level - 2) * 14 + 12}px`,
-                            }}
-                          >
-                            {h.text}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </nav>
+                  <ArticleToc headings={headings} />
 
                   <div className="mt-6 flex items-center gap-2 text-[11px] text-muted-foreground">
                     <Clock className="h-3 w-3" />
@@ -126,7 +112,7 @@ export default async function BlogPostPage(props: {
               </aside>
             )}
 
-            <div className="min-w-0">
+            <div className="max-w-3xl min-w-0">
               <Link
                 href="/blog"
                 className="group mb-5 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground sm:mb-6"
@@ -137,26 +123,32 @@ export default async function BlogPostPage(props: {
 
               <article>
                 <div>
-                  <header className="mb-6 border-b border-border/60 pb-5 sm:mb-8 sm:pb-8">
-                    <div className="mb-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground sm:mb-5 sm:text-sm">
-                      <span className="font-semibold tracking-wider text-primary uppercase">
+                  <header className="mb-8 border-b border-border/60 pb-6 sm:mb-10 sm:pb-8">
+                    <div className="mb-4 sm:mb-5">
+                      <SectionBadge className="text-[10px] sm:text-xs">
                         {post.silo}
-                      </span>
-                      <span className="h-0.5 w-0.5 rounded-full bg-border"></span>
-                      <span>{post.readingTime} czytania</span>
-                      <span className="h-0.5 w-0.5 rounded-full bg-border"></span>
-                      <span>{post.date}</span>
+                      </SectionBadge>
                     </div>
-                    <h1 className="text-xl leading-snug font-semibold tracking-tight text-balance text-foreground sm:text-2xl lg:text-3xl xl:text-4xl">
+                    <h1 className="mb-4 text-[1.75rem] leading-[1.15] font-semibold tracking-tight text-balance text-foreground sm:mb-5 sm:text-3xl lg:text-4xl xl:text-[2.75rem]">
                       {post.title}
                     </h1>
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted-foreground sm:text-sm">
+                      <span className="flex items-center gap-1.5">
+                        <Clock className="h-3.5 w-3.5" />
+                        {post.readingTime} czytania
+                      </span>
+                      <span className="flex items-center gap-1.5">
+                        <CalendarDays className="h-3.5 w-3.5" />
+                        {post.date}
+                      </span>
+                    </div>
                   </header>
 
                   {headings.length > 0 && (
                     <TableOfContents headings={headings} />
                   )}
 
-                  <div className="prose prose-sm max-w-none prose-invert md:prose-base prose-headings:scroll-mt-24 prose-headings:font-semibold prose-headings:text-foreground prose-p:my-3 prose-p:max-w-prose prose-p:leading-[1.7] prose-p:text-muted-foreground prose-a:font-medium prose-a:text-primary prose-a:no-underline hover:prose-a:text-primary hover:prose-a:underline prose-blockquote:max-w-prose prose-blockquote:rounded-r-lg prose-blockquote:border-l-primary prose-blockquote:bg-muted/80 prose-blockquote:px-4 prose-blockquote:py-2.5 prose-blockquote:font-normal prose-blockquote:text-muted-foreground sm:prose-blockquote:px-6 prose-strong:font-bold prose-strong:text-foreground prose-li:my-1 prose-li:max-w-prose prose-li:text-muted-foreground prose-img:rounded-xl prose-img:border prose-img:border-border prose-hr:border-border">
+                  <div className="prose max-w-none text-[1.125rem] leading-[1.8] prose-headings:scroll-mt-24 prose-headings:font-semibold prose-h2:mt-14 prose-h2:mb-4 md:prose-h2:mt-12 prose-h3:mt-10 prose-h3:mb-3 md:prose-h3:mt-9 prose-p:my-6 md:prose-p:my-5 prose-a:font-medium prose-a:no-underline hover:prose-a:underline prose-blockquote:rounded-r-lg prose-blockquote:border-l-primary prose-blockquote:bg-muted/60 prose-blockquote:px-4 prose-blockquote:py-3 prose-blockquote:font-normal prose-blockquote:not-italic prose-code:rounded prose-code:bg-muted prose-code:px-1.5 prose-code:py-0.5 prose-code:font-normal prose-code:before:content-none prose-code:after:content-none prose-ol:my-5 prose-ul:my-5 prose-li:my-1.5 prose-hr:my-10 prose-hr:border-border">
                     <MDXRemote
                       source={post.content}
                       options={{
@@ -171,7 +163,7 @@ export default async function BlogPostPage(props: {
                           <img
                             {...props}
                             alt={props.alt || "Ilustracja w artykule blogowym"}
-                            className="my-6 h-auto max-w-full rounded-xl border border-border"
+                            className="-mx-4 my-6 h-auto w-[calc(100%+2rem)] max-w-none rounded-none border-y border-border sm:mx-0 sm:w-auto sm:max-w-full sm:rounded-xl sm:border"
                           />
                         ),
                         table: (props) => (
@@ -200,11 +192,11 @@ export default async function BlogPostPage(props: {
               </article>
 
               {relatedPosts.length > 0 && (
-                <section className="mt-10 sm:mt-12">
-                  <h2 className="mb-5 text-base font-semibold text-foreground sm:mb-6 sm:text-lg">
+                <section className="mt-12 sm:mt-14">
+                  <h2 className="mb-4 text-base font-semibold text-foreground sm:mb-5 sm:text-lg">
                     Powiązane artykuły
                   </h2>
-                  <BlogPostGrid posts={relatedPosts} />
+                  <RelatedPosts posts={relatedPosts} />
                 </section>
               )}
             </div>

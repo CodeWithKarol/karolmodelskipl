@@ -7,6 +7,7 @@ import {
   type ReactNode,
 } from "react"
 import { extractTextContent } from "@/lib/utils/heading"
+import { ArticleToc } from "@/components/article-toc"
 
 const headingTags = { 2: "h2", 3: "h3" } as const
 
@@ -120,30 +121,18 @@ export function TableOfContents({
   headings: { level: number; text: string; id: string }[]
 }) {
   return (
-    <details className="group mb-6 lg:hidden">
-      <summary className="flex cursor-pointer items-center gap-2 py-2 text-[11px] font-semibold tracking-widest text-muted-foreground uppercase transition-colors select-none hover:text-muted-foreground">
+    <details className="group mb-8 rounded-xl border border-border bg-muted/30 lg:hidden">
+      <summary className="flex min-h-12 cursor-pointer list-none items-center gap-2.5 px-4 py-3.5 text-xs font-semibold tracking-widest text-muted-foreground uppercase select-none [&::-webkit-details-marker]:hidden">
         <List className="h-3.5 w-3.5 shrink-0 text-primary" />
         <span className="flex-1">Spis treści</span>
-        <span className="font-normal text-muted-foreground normal-case">
+        <span className="text-[11px] font-normal text-muted-foreground normal-case">
           {headings.length} {headings.length === 1 ? "sekcja" : "sekcji"}
         </span>
-        <ChevronDown className="h-3.5 w-3.5 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
+        <ChevronDown className="h-4 w-4 shrink-0 text-muted-foreground transition-transform group-open:rotate-180" />
       </summary>
-      <nav className="border-t border-border/60 py-2">
-        <ul className="space-y-0.5">
-          {headings.map((h, i) => (
-            <li key={i}>
-              <a
-                href={`#${h.id}`}
-                className="block py-1.5 text-[13px] leading-snug text-muted-foreground transition-colors hover:text-primary"
-                style={{ paddingLeft: `${(h.level - 2) * 14}px` }}
-              >
-                {h.text}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <div className="border-t border-border px-4 py-3">
+        <ArticleToc headings={headings} />
+      </div>
     </details>
   )
 }
