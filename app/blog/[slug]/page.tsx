@@ -173,6 +173,7 @@ export default async function BlogPostPage(props: {
                           <HeadingAnchor
                             level={2}
                             id={slugify(extractTextContent(props.children))}
+                            className={props.className}
                           >
                             {props.children}
                           </HeadingAnchor>
@@ -181,6 +182,7 @@ export default async function BlogPostPage(props: {
                           <HeadingAnchor
                             level={3}
                             id={slugify(extractTextContent(props.children))}
+                            className={props.className}
                           >
                             {props.children}
                           </HeadingAnchor>
