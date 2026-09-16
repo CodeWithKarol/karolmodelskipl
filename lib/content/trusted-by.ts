@@ -1,3 +1,5 @@
+import type { TrustedByContent } from "./types"
+
 export const trustedBy = {
   badge: "Doświadczenie Korporacyjne",
   title:
@@ -13,4 +15,4 @@ export const trustedBy = {
     { name: "Silent Eight", category: "Ochrona Danych i AI" },
     { name: "Amway", category: "Globalny E-commerce" },
   ],
-}
+} satisfies TrustedByContent

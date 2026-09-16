@@ -2,34 +2,7 @@ import { Package, BadgeCheck, Lock, FileCode2 } from "lucide-react"
 import { SectionBadge } from "@/components/section-badge"
 import { Reveal } from "@/components/reveal"
 import { cn } from "@/lib/utils"
-
-interface PackageSpecContent {
-  badge: string
-  title: string
-  intro: string
-  core: {
-    tag?: string
-    value?: string
-    title: string
-    desc?: string
-    bullets?: string[]
-    tiers?: { label: string; text: string }[]
-  }
-  bonuses: {
-    tag: string
-    title: string
-    value?: string
-    desc?: string
-    bullets?: string[]
-    tiers?: { label: string; text: string }[]
-  }[]
-  summary_label?: string
-  summary_value?: string
-  price_label?: string
-  price_amount?: string
-  payment?: string
-  bullets?: string[]
-}
+import type { ValueStackContent } from "@/lib/content/types"
 
 function TierGrid({ tiers }: { tiers: { label: string; text: string }[] }) {
   return (
@@ -73,7 +46,7 @@ export function PackageSpecSection({
   spec,
   className,
 }: {
-  spec: PackageSpecContent
+  spec: ValueStackContent
   className?: string
 }) {
   const bonusIcons = [BadgeCheck, Lock, FileCode2]

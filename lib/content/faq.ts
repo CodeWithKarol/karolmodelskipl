@@ -1,3 +1,5 @@
+import type { FaqContent } from "./types"
+
 export const faq = {
   title: "Najczęściej Zadawane Pytania",
   subtitle:
@@ -28,4 +30,4 @@ export const faq = {
         "Stawiam na sprawdzone, szeroko wspierane technologie zamiast modnych eksperymentów. Kod prowadzę w sposób udokumentowany i przejrzysty, zgodny ze standardami bankowymi, dzięki czemu Twój system nigdy nie jest uzależniony ode mnie jako jednej osoby. Jeśli zdecydujesz się na zmianę zespołu lub wewnętrznego programistę, przejęcie kodu i dalszy rozwój nie będą wymagać przebudowy od zera.",
     },
   ],
-}
+} satisfies FaqContent

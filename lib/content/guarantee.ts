@@ -1,3 +1,5 @@
+import type { GuaranteeContent } from "./types"
+
 export const guarantee = {
   badge: "Gwarancja i bezpieczeństwo",
   title: "Zdejmuję z Twoich barków 100% ryzyka finansowego i wykonawczego",
@@ -21,4 +23,4 @@ export const guarantee = {
       desc: "Po uruchomieniu aplikacji nie zostawiam Cię samego. Przez pierwsze 60 dni bezpłatnie czuwam nad stabilnością systemu i dbam o to, by idealnie wpasował się w pracę Twojego zespołu.",
     },
   ],
-}
+} satisfies GuaranteeContent

@@ -9,20 +9,10 @@ import {
 } from "@/components/ui/accordion"
 import { cn } from "@/lib/utils"
 import { Reveal } from "@/components/reveal"
-
-export interface FaqItem {
-  question: string
-  answer: string
-}
-
-interface FaqData {
-  title?: string
-  subtitle?: string
-  items: FaqItem[]
-}
+import type { FaqContent } from "@/lib/content/types"
 
 interface FaqSectionProps {
-  faq?: FaqData
+  faq?: FaqContent
   className?: string
 }
 
@@ -30,7 +20,7 @@ export function FaqSection({
   faq: customFaq,
   className,
 }: FaqSectionProps = {}) {
-  const faq = (customFaq ?? content.faq) as FaqData
+  const faq = customFaq ?? content.faq
   const title = faq.title ?? "Najczęściej zadawane pytania"
 
   return (

@@ -10,13 +10,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-
-export interface ComparisonTableData {
-  badge?: string
-  title?: string
-  columns: string[]
-  rows: { criterion: string; values: string[] }[]
-}
+import type { ComparisonTableContent } from "@/lib/content/types"
 
 const icons = [CheckCircle2, MinusCircle, XCircle]
 const iconColors = ["text-primary", "text-muted-foreground", "text-destructive"]
@@ -25,7 +19,7 @@ export function ComparisonTableSection({
   comparison,
   className,
 }: {
-  comparison: ComparisonTableData
+  comparison: ComparisonTableContent
   className?: string
 }) {
   const badge = comparison.badge ?? "Porównanie"

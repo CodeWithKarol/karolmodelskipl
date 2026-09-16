@@ -108,8 +108,8 @@ export default function ModernizacjaOprogramowaniaPage() {
           "https://www.karolmodelski.pl/naprawa-i-modernizacja-aplikacji#faq",
         mainEntity: faq.items.map((item) => ({
           "@type": "Question",
-          name: item.q,
-          acceptedAnswer: { "@type": "Answer", text: item.a },
+          name: item.question,
+          acceptedAnswer: { "@type": "Answer", text: item.answer },
         })),
       },
     ],
@@ -233,17 +233,7 @@ export default function ModernizacjaOprogramowaniaPage() {
       <GuaranteeSection guarantee={guarantee} />
 
       {/* Sekcja 6: FAQ */}
-      <FaqSection
-        faq={{
-          title: "Najczęściej zadawane pytania",
-          subtitle: faq.subtitle,
-          items: faq.items.map((item) => ({
-            question: item.q,
-            answer: item.a,
-          })),
-        }}
-        className="py-16 sm:py-24"
-      />
+      <FaqSection faq={faq} className="py-16 sm:py-24" />
 
       <CtaSection content={offer} ctaHref="/kwalifikacja-modernizacja" />
     </main>

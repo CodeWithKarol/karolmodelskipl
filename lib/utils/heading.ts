@@ -1,6 +1,6 @@
 import type { ReactNode, ReactElement } from "react"
 
-export interface Heading {
+interface Heading {
   level: number
   text: string
   id: string

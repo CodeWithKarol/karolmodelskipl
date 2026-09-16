@@ -1,8 +1,22 @@
+import type {
+  ComparisonTableContent,
+  ContentMetadata,
+  CtaContent,
+  FaqContent,
+  GuaranteeContent,
+  HeroContent,
+  OfferContent,
+  ProcessContent,
+  QualificationContent,
+  StoryContent,
+  ValueStackContent,
+} from "../types"
+
 export const metadata = {
   title: "Inżynierski Audyt Wyceny i Umowy IT",
   description:
     "Niezależny audyt wyceny i umowy IT. Wykazuję zawyżone koszty i luki aneksowe. Gwarancja min. 10 000 zł oszczędności albo zwrot 100% kosztu audytu — raport w 5 dni.",
-}
+} satisfies ContentMetadata
 
 export const hero = {
   badge: "Dla zarządów i firm MŚP zlecających projekty IT",
@@ -33,7 +47,7 @@ export const hero = {
       desc: "Min. 10 000 zł wykazanych oszczędności albo zwrot 100% kwoty.",
     },
   ],
-}
+} satisfies HeroContent
 
 export const story = {
   title:
@@ -59,7 +73,7 @@ export const story = {
       desc: "Zamiast twardych liczb i harmonogramów dostajesz nazwy frameworków, skróty architektoniczne i opowieści o „nieprzewidzianych trudnościach integracyjnych”. Niejasny język służy jednemu: odebraniu Ci kontroli nad budżetem.",
     },
   ],
-}
+} satisfies StoryContent
 
 export const valueStack = {
   badge: "Stos Wartości",
@@ -117,7 +131,7 @@ export const valueStack = {
   price_amount: "6 000 zł netto (pełna faktura VAT)",
   payment:
     "Płatność jednorazowa na podstawie pełnej faktury VAT. Kompletny Raport PDF wraz z planem negocjacyjnym dostarczam w ciągu maksymalnie 5 dni roboczych od otrzymania dokumentów.",
-}
+} satisfies ValueStackContent
 
 export const comparison = {
   badge: "Porównanie modeli",
@@ -161,7 +175,7 @@ export const comparison = {
       ],
     },
   ],
-}
+} satisfies ComparisonTableContent
 
 export const process = {
   badge: "Proces audytu",
@@ -184,7 +198,7 @@ export const process = {
       desc: "Otrzymujesz przejrzysty Raport PDF bez żargonu. Dostajesz listę pozycji do natychmiastowego ścięcia z wyceny oraz gotowe kontrargumenty inżynierskie na spotkanie z agencją.",
     },
   ],
-}
+} satisfies ProcessContent
 
 export const guarantee = {
   badge: "Gwarancja Wykonawcza",
@@ -202,7 +216,7 @@ export const guarantee = {
       note: "Dotyczy wycen od 50 000 zł netto w górę (dla mniejszych projektów próg ustalamy proporcjonalnie przed startem).",
     },
   ],
-}
+} satisfies GuaranteeContent
 
 export const continuation = {
   badge: "Naturalna kontynuacja",
@@ -225,30 +239,36 @@ export const continuation = {
         "Pilnuję, by projekt nie przekroczył ustalonego budżetu i harmonogramu.",
     },
   ],
-}
+} satisfies OfferContent
 
 export const faq = {
   title: "Najczęściej zadawane pytania",
   subtitle: "",
   items: [
     {
-      q: "Czy agencja nie obrazi się, że wprowadzam niezależnego inżyniera do weryfikacji?",
-      a: "Profesjonalne agencje w rzeczywistości wolą rozmawiać z doświadczonym architektem niż z klientem, który czuje niepokój, ale nie potrafi sprecyzować swoich wątpliwości. Rozmawiamy językiem faktów, procedur i standardów rynkowych. Jeśli agencja reaguje agresją lub obrażaniem się na samą zapowiedź niezależnej weryfikacji wyceny, to najlepszy dowód na to, że w ofercie ukryto rażące zawyżenia kosztów.",
+      question:
+        "Czy agencja nie obrazi się, że wprowadzam niezależnego inżyniera do weryfikacji?",
+      answer:
+        "Profesjonalne agencje w rzeczywistości wolą rozmawiać z doświadczonym architektem niż z klientem, który czuje niepokój, ale nie potrafi sprecyzować swoich wątpliwości. Rozmawiamy językiem faktów, procedur i standardów rynkowych. Jeśli agencja reaguje agresją lub obrażaniem się na samą zapowiedź niezależnej weryfikacji wyceny, to najlepszy dowód na to, że w ofercie ukryto rażące zawyżenia kosztów.",
     },
     {
-      q: "Co w sytuacji, gdy umowa z agencją jest już podpisana, a projekt jest w trakcie?",
-      a: "Audyt w trakcie projektu jest równie skuteczny. Prześwietlam wtedy dotychczasowe tempo prac, zasadność wystawianych aneksów oraz jakość dotychczas dowiezionego kodu. Wskazuję, za co agencja zażądała nienależnych dopłat i jak zablokować dalszy wyciek budżetu przed kolejnymi etapami.",
+      question:
+        "Co w sytuacji, gdy umowa z agencją jest już podpisana, a projekt jest w trakcie?",
+      answer:
+        "Audyt w trakcie projektu jest równie skuteczny. Prześwietlam wtedy dotychczasowe tempo prac, zasadność wystawianych aneksów oraz jakość dotychczas dowiezionego kodu. Wskazuję, za co agencja zażądała nienależnych dopłat i jak zablokować dalszy wyciek budżetu przed kolejnymi etapami.",
     },
     {
-      q: "Czy podpisujemy umowę o poufności (NDA)?",
-      a: "Bezwzględnie tak. Zanim prześlesz mi jakąkolwiek wycenę, specyfikację, umowę czy dokumentację biznesową, podpisujemy restrykcyjną umowę NDA. Wszystkie materiały i dane Twojej firmy są w 100% bezpieczne.",
+      question: "Czy podpisujemy umowę o poufności (NDA)?",
+      answer:
+        "Bezwzględnie tak. Zanim prześlesz mi jakąkolwiek wycenę, specyfikację, umowę czy dokumentację biznesową, podpisujemy restrykcyjną umowę NDA. Wszystkie materiały i dane Twojej firmy są w 100% bezpieczne.",
     },
     {
-      q: "Jak szybko otrzymam wyniki audytu?",
-      a: "Kompletny Raport PDF wraz z wyliczeniem oszczędności i planem negocjacyjnym otrzymujesz w ciągu maksymalnie 5 dni roboczych od momentu dostarczenia kompletu dokumentów od agencji.",
+      question: "Jak szybko otrzymam wyniki audytu?",
+      answer:
+        "Kompletny Raport PDF wraz z wyliczeniem oszczędności i planem negocjacyjnym otrzymujesz w ciągu maksymalnie 5 dni roboczych od momentu dostarczenia kompletu dokumentów od agencji.",
     },
   ],
-}
+} satisfies FaqContent
 
 export const cta = {
   badge: "Twój pierwszy krok",
@@ -278,7 +298,7 @@ export const cta = {
     "Dostępność: Maksymalnie 4 audyty w miesiącu (Zostały 2 wolne miejsca).",
   footer:
     "Podpisanie umowy z agencją bez inżynierskiej weryfikacji to otwarcie czeku in blanco na kolejne aneksy i miesiące opóźnień.",
-}
+} satisfies CtaContent
 
 export const qualification = {
   badge: "Weryfikacja kwalifikacyjna",
@@ -371,4 +391,4 @@ export const qualification = {
     footer:
       "Rozmowa wideo 1-na-1 • Zero technicznego żargonu • Plan działania po spotkaniu",
   },
-}
+} satisfies QualificationContent

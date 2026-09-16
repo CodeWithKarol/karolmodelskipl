@@ -1,3 +1,5 @@
+import type { OfferContent } from "./types"
+
 export const offer = {
   title: "Z jakim wyzwaniem technologicznym mierzysz się dzisiaj w firmie?",
   subheading:
@@ -37,4 +39,4 @@ export const offer = {
       href: "/doradztwo-techniczne-dla-firm",
     },
   ],
-}
+} satisfies OfferContent

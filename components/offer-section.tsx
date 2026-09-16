@@ -11,25 +11,10 @@ import { SectionBadge } from "@/components/section-badge"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { Reveal } from "@/components/reveal"
-
-export interface OfferPath {
-  title: string
-  situation: string
-  subtitle?: string
-  desc: string
-  result?: string
-  link?: string
-  href?: string
-}
-
-interface OfferData {
-  title?: string
-  subheading?: string
-  paths: OfferPath[]
-}
+import type { OfferContent } from "@/lib/content/types"
 
 interface OfferSectionProps {
-  offer?: OfferData
+  offer?: OfferContent
   badge?: string
   mdColumns?: "2" | "3"
   sectionId?: string
@@ -43,7 +28,7 @@ export function OfferSection({
   sectionId = "oferta",
   className,
 }: OfferSectionProps = {}) {
-  const offer = (customOffer ?? content.offer) as OfferData
+  const offer = (customOffer ?? content.offer) as OfferContent
   const icons = [Workflow, Rocket, RefreshCw, Gauge]
   const threeColumns = mdColumns === "3"
 

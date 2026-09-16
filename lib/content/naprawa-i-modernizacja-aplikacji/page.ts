@@ -1,8 +1,21 @@
+import type {
+  ContentMetadata,
+  ContrastContent,
+  CtaContent,
+  FaqContent,
+  GuaranteeContent,
+  HeroContent,
+  ProcessContent,
+  QualificationContent,
+  StoryContent,
+  ValueStackContent,
+} from "../types"
+
 export const metadata = {
   title: "Bezinwazyjna modernizacja oprogramowania | Niezależny Partner IT",
   description:
     "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży. Odbierz darmową diagnozę!",
-}
+} satisfies ContentMetadata
 
 export const guarantee = {
   badge: "Gwarancja Wykonawcza",
@@ -21,7 +34,7 @@ export const guarantee = {
       note: "Zwracam Ci 15 000 zł zaliczki co do grosza. Ryzyko wykonawcze biorę w 100% na siebie.",
     },
   ],
-}
+} satisfies GuaranteeContent
 
 export const hero = {
   badge: "Dla właścicieli e-commerce i B2B ze zwalniającym systemem",
@@ -51,7 +64,7 @@ export const hero = {
       desc: "Dokładnie wiesz, ile zapłacisz — zero dopłacania za roboczogodziny.",
     },
   ],
-}
+} satisfies HeroContent
 
 export const story = {
   title: "Ile zysków traci Twój biznes w każdej sekundzie opóźnienia koszyka?",
@@ -76,7 +89,7 @@ export const story = {
       desc: "Software house proponuje zburzenie platformy, 150 000 zł budżetu i 9 miesięcy prac. Dlaczego? Bo na wielkich, nowych projektach zarabiają najwięcej, a ich pracownicy boją się czytać cudzy kod. Prawda jest taka: 90% systemów da się skutecznie uzdrowić w kilka tygodni.",
     },
   ],
-}
+} satisfies StoryContent
 
 export const valueStack = {
   badge: "Stos Wartości",
@@ -134,7 +147,7 @@ export const valueStack = {
   price_amount: "30 000 zł netto",
   payment:
     "Bezpieczny model 50/50: 15 000 zł przy rezerwacji terminu i rozpoczęciu prac diagnostycznych na kopii testowej, a 15 000 zł dopiero po wdrożeniu na produkcję — gdy wspólnie zweryfikujemy stoperem osiągnięcie uzgodnionej szybkości działania.",
-}
+} satisfies ValueStackContent
 
 export const contrast = {
   badge: "Porównanie modeli",
@@ -168,7 +181,7 @@ export const contrast = {
       red: "Zero gwarancji na termin i wydajność — płacisz za czas pracy programistów.",
     },
   ],
-}
+} satisfies ContrastContent
 
 export const process = {
   badge: "Proces ratunkowy",
@@ -197,34 +210,43 @@ export const process = {
         "Rezultat: Błyskawicznie ładujący się system, zadowoleni klienci i natychmiastowy wzrost zrealizowanych koszyków.",
     },
   ],
-}
+} satisfies ProcessContent
 
 export const faq = {
   title: "Najczęściej zadawane pytania",
   subtitle: "",
   items: [
     {
-      q: "Co w sytuacji, gdy mój obecny system nie ma żadnej dokumentacji, a programista zniknął?",
-      a: "To standardowa sytuacja w niemal 90% projektów, które naprawiam. Nie potrzebuję kontaktu z Twoim poprzednim wykonawcą ani setek stron dokumentacji. Jako inżynier z doświadczeniem bankowym pracuję bezpośrednio na surowym kodzie i strukturze bazy danych. Samodzielnie odtwarzam kluczowe powiązania i natychmiast lokalizuję miejsca, w których system traci najwięcej energii.",
+      question:
+        "Co w sytuacji, gdy mój obecny system nie ma żadnej dokumentacji, a programista zniknął?",
+      answer:
+        "To standardowa sytuacja w niemal 90% projektów, które naprawiam. Nie potrzebuję kontaktu z Twoim poprzednim wykonawcą ani setek stron dokumentacji. Jako inżynier z doświadczeniem bankowym pracuję bezpośrednio na surowym kodzie i strukturze bazy danych. Samodzielnie odtwarzam kluczowe powiązania i natychmiast lokalizuję miejsca, w których system traci najwięcej energii.",
     },
     {
-      q: "Czy w trakcie prac moja platforma lub sklep przestaną działać dla kupujących?",
-      a: "Ani na jedną sekundę. Wszystkie testy obciążeniowe, modyfikacje i próby wydajnościowe wykonuję na całkowicie odizolowanym środowisku testowym (wiernej kopii Twojego systemu). Na żywy serwer trafia wyłącznie sprawdzony, przetestowany kod — podmieniany w nocy, w godzinach minimalnego ruchu.",
+      question:
+        "Czy w trakcie prac moja platforma lub sklep przestaną działać dla kupujących?",
+      answer:
+        "Ani na jedną sekundę. Wszystkie testy obciążeniowe, modyfikacje i próby wydajnościowe wykonuję na całkowicie odizolowanym środowisku testowym (wiernej kopii Twojego systemu). Na żywy serwer trafia wyłącznie sprawdzony, przetestowany kod — podmieniany w nocy, w godzinach minimalnego ruchu.",
     },
     {
-      q: "Kiedy zobaczę pierwsze realne efekty przyspieszenia?",
-      a: "Pierwsze efekty widzisz już po 14 dniach na środowisku testowym, gdzie wspólnie porównujemy stary i nowy czas reakcji na tych samych danych. Całkowite przyspieszenie dla Twoich klientów na żywej stronie staje się faktem najpóźniej w 4. tygodniu (Dniu 28), natychmiast przekładając się na szybsze składanie zamówień.",
+      question: "Kiedy zobaczę pierwsze realne efekty przyspieszenia?",
+      answer:
+        "Pierwsze efekty widzisz już po 14 dniach na środowisku testowym, gdzie wspólnie porównujemy stary i nowy czas reakcji na tych samych danych. Całkowite przyspieszenie dla Twoich klientów na żywej stronie staje się faktem najpóźniej w 4. tygodniu (Dniu 28), natychmiast przekładając się na szybsze składanie zamówień.",
     },
     {
-      q: "Czy po zakończeniu modernizacji będę uzależniony od Twojej osoby?",
-      a: "Absolutnie nie. Nie wprowadzam autorskich, zamkniętych narzędzi ani nie tworzę „złotej klatki”. W ramach Bonusu 1 otrzymujesz przejrzysty zestaw wytycznych technicznych. Każdy kompetentny programista bez trudu zrozumie wprowadzone zmiany i będzie mógł swobodnie rozwijać system.",
+      question:
+        "Czy po zakończeniu modernizacji będę uzależniony od Twojej osoby?",
+      answer:
+        "Absolutnie nie. Nie wprowadzam autorskich, zamkniętych narzędzi ani nie tworzę „złotej klatki”. W ramach Bonusu 1 otrzymujesz przejrzysty zestaw wytycznych technicznych. Każdy kompetentny programista bez trudu zrozumie wprowadzone zmiany i będzie mógł swobodnie rozwijać system.",
     },
     {
-      q: "Czy podpisujemy umowę o poufności (NDA) przed wejściem w kod i bazę danych?",
-      a: "Bezwzględnie tak. Zanim otrzymam dostęp do jakichkolwiek repozytoriów, baz klientów czy danych finansowych, podpisujemy restrykcyjną umowę NDA. Jako inżynier pracujący przy systemach Citibanku i BNP Paribas na co dzień stosuję procedury ochrony informacji zgodne z rygorami tajemnicy bankowej.",
+      question:
+        "Czy podpisujemy umowę o poufności (NDA) przed wejściem w kod i bazę danych?",
+      answer:
+        "Bezwzględnie tak. Zanim otrzymam dostęp do jakichkolwiek repozytoriów, baz klientów czy danych finansowych, podpisujemy restrykcyjną umowę NDA. Jako inżynier pracujący przy systemach Citibanku i BNP Paribas na co dzień stosuję procedury ochrony informacji zgodne z rygorami tajemnicy bankowej.",
     },
   ],
-}
+} satisfies FaqContent
 
 export const offer = {
   badge: "Twój pierwszy krok",
@@ -254,7 +276,7 @@ export const offer = {
     "Dostępność: Maksymalnie 2 modernizacje w kwartale (Zostało 1 wolne miejsce).",
   footer:
     "Odkładanie naprawy kodu to ryzyko, że system wyłoży się w najgorszym możliwym momencie – w piątek o 16:00, zostawiając Cię z pustym koszykiem i wściekłymi klientami.",
-}
+} satisfies CtaContent
 
 export const qualification = {
   badge: "Weryfikacja kwalifikacyjna",
@@ -328,4 +350,4 @@ export const qualification = {
     footer:
       "Rozmowa wideo 1-na-1 • Zero technicznego żargonu • Plan naprawy przesłany po spotkaniu",
   },
-}
+} satisfies QualificationContent

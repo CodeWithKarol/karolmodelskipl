@@ -1,10 +1,21 @@
+import type {
+  ContentMetadata,
+  ContrastContent,
+  CtaContent,
+  FaqContent,
+  GuaranteeContent,
+  HeroContent,
+  QualificationContent,
+  ValueStackContent,
+} from "./types"
+
 export const mvp = {
   metadata: {
     title:
       "Kompletny Fundament Technologiczny SaaS/B2B w 30 Dni (Pancerna Stabilność)",
     description:
       "W 30 dni buduję kompletny fundament technologiczny Twojego SaaS/B2B: produkcyjna platforma pod Twoją domeną, pancernie stabilna i bezpieczna dla pieniędzy Twoich klientów, gotowa na realne wpłaty. Stała cena 50 000 zł, gwarancja terminu i zwrotu.",
-  },
+  } satisfies ContentMetadata,
   service: {
     title:
       "Kompletny Fundament Technologiczny SaaS/B2B w 30 Dni (Pancerna Stabilność)",
@@ -53,7 +64,7 @@ export const mvp = {
         desc: "Pełne prawa autorskie, kod, baza i serwery należą wyłącznie do Ciebie.",
       },
     ],
-  },
+  } satisfies HeroContent,
   trap: {
     title:
       "Dlaczego tradycyjny model tworzenia oprogramowania niszczy budżety założycieli?",
@@ -147,7 +158,7 @@ export const mvp = {
         },
       },
     ],
-  },
+  } satisfies ContrastContent,
   mechanism: {
     title: "Jak to możliwe w 30 dni? Dokładnie, a nie na oko.",
     subtitle:
@@ -229,7 +240,7 @@ export const mvp = {
       "Jedna umowa — zero aneksów i ukrytych kosztów",
       "Gwarancja terminu i zwrotu 25 000 zł zaliczki w umowie",
     ],
-  },
+  } satisfies ValueStackContent,
   guarantee: {
     badge: "Gwarancje i Bezpieczeństwo",
     title: "Całe ryzyko opóźnienia biorę na siebie.",
@@ -251,7 +262,7 @@ export const mvp = {
         desc: "Nie buduję wokół Ciebie „złotej klatki”. Otrzymujesz 100% praw autorskich i pełną dokumentację. Każdy kolejny inżynier przejmie projekt z marszu, bez narzekania, że trzeba pisać od nowa.",
       },
     ],
-  },
+  } satisfies GuaranteeContent,
   faq: {
     title: "Najczęściej zadawane pytania",
     subtitle:
@@ -280,7 +291,7 @@ export const mvp = {
           "Duże software house'y sprzedają roboczogodziny — im dłużej budują Twój system, tym więcej zarabiają. Projekt, który u mnie trwa 30 dni, w agencji przechodzi przez handlowców, project managerów i rotujących juniorów, co wydłuża start do 6–12 miesięcy i generuje rachunki rzędu 120 000 – 180 000 zł. U mnie rozmawiasz bezpośrednio z głównym inżynierem. Płacisz jedną, stałą kwotę za dowieziony rezultat biznesowy. Przede wszystkim: agencja nie bierze żadnej odpowiedzialności za terminy — ja daję twardą gwarancję zwrotu 100% zaliczki, jeśli system nie ruszy w 30. dniu.",
       },
     ],
-  },
+  } satisfies FaqContent,
   cta: {
     badge: "Tylko 2 projekty w kwartale",
     title: "Sprawdź, czy Twój pomysł wdrożymy w 30 dni.",
@@ -305,7 +316,7 @@ export const mvp = {
     note: "Podczas bezpłatnej 30-minutowej rozmowy strategicznej powiem Ci wprost: czy ten system da się bezpiecznie postawić i zmonetyzować w 30 dni, czy lepiej odpuścić.",
     footer:
       "Dostępność: Dokładnie 2 projekty w kwartale. Po wyczerpaniu miejsc kolejny nabór rusza dopiero za 3 miesiące.",
-  },
+  } satisfies CtaContent,
   application: {
     badge: "Aplikacja o projekt",
     title: "Zanim otworzę Ci kalendarz — 3 pytania.",
@@ -377,5 +388,5 @@ export const mvp = {
       button: "Zarezerwuj rozmowę kwalifikacyjną (30 min)",
       footer: "Tylko 2 wdrożenia w kwartale • Zostało 1 wolne miejsce",
     },
-  },
+  } satisfies QualificationContent,
 }

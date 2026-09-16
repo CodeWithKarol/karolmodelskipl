@@ -10,26 +10,7 @@ import { SectionBadge } from "@/components/section-badge"
 import { siteConfig } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
 import { ArrowLeft, ArrowRight, Check } from "lucide-react"
-
-type QualificationContent = {
-  badge: string
-  title: string
-  intro: string
-  steps: {
-    key: string
-    label: string
-    options: { value: string; label: string; hint?: string }[]
-  }[]
-  messages: {
-    rejected: { title: string; body: string; button: string; href: string }
-  }
-  qualified: {
-    title: string
-    body: string
-    button: string
-    footer: string
-  }
-}
+import type { QualificationContent } from "@/lib/content/types"
 
 export function QualificationForm({
   qualification,

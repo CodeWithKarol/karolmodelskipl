@@ -110,10 +110,10 @@ export default function DoradztwoTechnicznePage() {
         "@id": "https://www.karolmodelski.pl/doradztwo-techniczne-dla-firm#faq",
         mainEntity: faq.items.map((item) => ({
           "@type": "Question",
-          name: item.q,
+          name: item.question,
           acceptedAnswer: {
             "@type": "Answer",
-            text: item.a,
+            text: item.answer,
           },
         })),
       },
@@ -254,17 +254,7 @@ export default function DoradztwoTechnicznePage() {
       />
 
       {/* Sekcja 6: FAQ */}
-      <FaqSection
-        faq={{
-          title: "Najczęściej zadawane pytania",
-          subtitle: faq.subtitle,
-          items: faq.items.map((item) => ({
-            question: item.q,
-            answer: item.a,
-          })),
-        }}
-        className="py-16 sm:py-24"
-      />
+      <FaqSection faq={faq} className="py-16 sm:py-24" />
 
       <CtaSection content={cta} ctaHref="/kwalifikacja-doradztwo" />
     </main>

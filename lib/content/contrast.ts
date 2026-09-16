@@ -1,3 +1,5 @@
+import type { ContrastContent } from "./types"
+
 export const contrast = {
   title: "Dlaczego bezpośrednia współpraca bije na głowę tradycyjną agencję?",
   blue_title: "Karol Modelski (Niezależny Partner)",
@@ -24,4 +26,4 @@ export const contrast = {
       red: "Częste uzależnianie klienta od własnych, zamkniętych frameworków (vendor lock-in).",
     },
   ],
-}
+} satisfies ContrastContent

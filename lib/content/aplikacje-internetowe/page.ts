@@ -1,8 +1,21 @@
+import type {
+  ComparisonContent,
+  ContentMetadata,
+  CtaContent,
+  FaqContent,
+  GuaranteeContent,
+  HeroContent,
+  ProcessContent,
+  QualificationContent,
+  StoryContent,
+  ValueStackContent,
+} from "../types"
+
 export const metadata = {
   title: "Aplikacje internetowe dla firm | Niezależny Partner IT",
   description:
     "Dedykowane aplikacje internetowe dla firm o niezawodności systemów bankowych. Zyskaj solidne rozwiązania bez marż agencji. Odbierz darmowy plan!",
-}
+} satisfies ContentMetadata
 
 export const hero = {
   badge: "Dla właścicieli firm MŚP, które utknęły w arkuszach Excela",
@@ -37,7 +50,7 @@ export const hero = {
       desc: "Czuwam nad adaptacją zespołu, aby pracownicy bez stresu porzucili arkusze.",
     },
   ],
-}
+} satisfies HeroContent
 
 export const story = {
   title:
@@ -63,7 +76,7 @@ export const story = {
       desc: "Tradycyjna agencja każe płacić 150 000 zł z góry za roboczogodziny, przydziela junior project managera i buduje kombajn przez 9 miesięcy. Na koniec dostajesz system tak skomplikowany, że pracownicy boją się go dotknąć.",
     },
   ],
-}
+} satisfies StoryContent
 
 export const valueStack = {
   badge: "Stos Wartości",
@@ -124,25 +137,7 @@ export const valueStack = {
     "Bezpieczny model 50/50: 20 000 zł przy rezerwacji terminu, a 20 000 zł dopiero w Dniu 30 — po udanym przetworzeniu pierwszego zamówienia.",
     "Gwarancja kompletności: to cena za w 100% zamknięty system — nie musisz dokupować żadnych dodatkowych modułów ani sprintów, by firma działała płynnie.",
   ],
-}
-
-export const funnel = {
-  title: "Nie buduję pustych widoków. Projektuję",
-  titleHighlight: "systemy, które zarabiają.",
-  text: [
-    "Większość agencji programistycznych skupia się wyłącznie na mechanicznym odhaczeniu listy zadań. W ten sposób powstają narzędzia, które technicznie działają, ale są tak skomplikowane dla użytkownika, że ostatecznie porzuca on proces zakupu lub rejestracji.",
-    "Moje podejście to projektowanie zorientowane bezpośrednio na klienta i sprzedaż. Łączę wiedzę inżynieryjną z psychologią zachowań użytkownika w sieci. Każdy krok, każdy formularz i każdy element systemu optymalizuję tak, aby maksymalnie skrócić drogę klienta do zakupu lub wykonania pożądanej akcji.",
-  ],
-  features: [
-    "Łączę wiedzę inżynieryjną z psychologią zachowań użytkownika w sieci.",
-    "Każdy element systemu optymalizuję tak, aby maksymalnie skrócić drogę klienta do zakupu lub rejestracji.",
-    "Kod ma zarabiać i oszczędzać czas Twoich pracowników, a nie tylko ładnie wyglądać na serwerze.",
-  ],
-  boxLeft: "Tradycyjna aplikacja",
-  boxLeftSub: "Koszty, błędy, spowolnienia",
-  boxRight: "Mój system",
-  boxRightSub: "Maszyna ROI i sprzedaży",
-}
+} satisfies ValueStackContent
 
 export const comparison = {
   badge: "Porównanie modeli",
@@ -186,7 +181,7 @@ export const comparison = {
         "Uzależnienie od jednej agencji i płacenie za każdą drobną zmianę w procedurach.",
     },
   ],
-}
+} satisfies ComparisonContent
 
 export const process = {
   badge: "Proces wdrożenia",
@@ -215,7 +210,7 @@ export const process = {
         "Rezultat: Działający system, odciążony zespół i natychmiastowe oszczędności roboczogodzin.",
     },
   ],
-}
+} satisfies ProcessContent
 
 export const faq = {
   title: "Najczęściej zadawane pytania",
@@ -223,27 +218,36 @@ export const faq = {
     "Odpowiedzi na kluczowe pytania dotyczące bezpieczeństwa procesów, czasu wdrożenia i warunków technicznych przed podjęciem współpracy:",
   items: [
     {
-      q: "Czy muszę dokładnie wiedzieć, jak ma wyglądać system od strony technicznej?",
-      a: "Nie. Twoim jedynym zadaniem jest pokazanie mi, jak dzisiaj przepływają dokumenty i zamówienia w Twojej firmie. Ja przekładam Twoją logikę biznesową na stabilne rozwiązanie cyfrowe. Podczas wdrożenia rozmawiamy wyłącznie o procesach, czasie pracy i wygodzie pracowników — zero technicznego żargonu.",
+      question:
+        "Czy muszę dokładnie wiedzieć, jak ma wyglądać system od strony technicznej?",
+      answer:
+        "Nie. Twoim jedynym zadaniem jest pokazanie mi, jak dzisiaj przepływają dokumenty i zamówienia w Twojej firmie. Ja przekładam Twoją logikę biznesową na stabilne rozwiązanie cyfrowe. Podczas wdrożenia rozmawiamy wyłącznie o procesach, czasie pracy i wygodzie pracowników — zero technicznego żargonu.",
     },
     {
-      q: "Kiedy zobaczę pierwsze realne efekty i odciążenie w firmie?",
-      a: "Pierwsze odciążenie następuje dokładnie w 30. dniu wdrożenia. Wtedy uruchamiamy moduł zdejmujący najbardziej czasochłonne zadanie (np. ręczne wystawianie dokumentów i sprawdzanie magazynu). Twój zespół odczuwa redukcję czasu pracy z dnia na dzień, a Ty widzisz spadek liczby błędów już w pierwszym miesiącu.",
+      question: "Kiedy zobaczę pierwsze realne efekty i odciążenie w firmie?",
+      answer:
+        "Pierwsze odciążenie następuje dokładnie w 30. dniu wdrożenia. Wtedy uruchamiamy moduł zdejmujący najbardziej czasochłonne zadanie (np. ręczne wystawianie dokumentów i sprawdzanie magazynu). Twój zespół odczuwa redukcję czasu pracy z dnia na dzień, a Ty widzisz spadek liczby błędów już w pierwszym miesiącu.",
     },
     {
-      q: "Co w sytuacji, gdy pracownicy będą bali się nowego narzędzia i spróbują wrócić do Excela?",
-      a: "To najczęstsza obawa właścicieli firm — i właśnie dlatego w pakiecie otrzymujesz 3 miesiące mojej osobistej asysty powdrożeniowej. System projektuję tak, aby był prostszy w obsłudze niż Excel (duże, czytelne przyciski, zero zbędnych pól). Osobiście asystuję zespołowi w pierwszych tygodniach, dzięki czemu pracownicy szybko zauważają, że system oszczędza ich czas i zdejmuje z nich stres związany z pomyłkami. Zamiast oporu pojawia się ulga.",
+      question:
+        "Co w sytuacji, gdy pracownicy będą bali się nowego narzędzia i spróbują wrócić do Excela?",
+      answer:
+        "To najczęstsza obawa właścicieli firm — i właśnie dlatego w pakiecie otrzymujesz 3 miesiące mojej osobistej asysty powdrożeniowej. System projektuję tak, aby był prostszy w obsłudze niż Excel (duże, czytelne przyciski, zero zbędnych pól). Osobiście asystuję zespołowi w pierwszych tygodniach, dzięki czemu pracownicy szybko zauważają, że system oszczędza ich czas i zdejmuje z nich stres związany z pomyłkami. Zamiast oporu pojawia się ulga.",
     },
     {
-      q: "Czy podpisujemy umowę o zachowaniu poufności (NDA) przed wglądem w dane firmy?",
-      a: "Bezwzględnie tak. Zanim udostępnisz mi jakiekolwiek arkusze, procedury czy bazy klientów, podpisujemy restrykcyjną umowę NDA. Posiadam wieloletnie doświadczenie w pracy z danymi objętymi tajemnicą bankową, dlatego kwestie bezpieczeństwa informacji i ochrony tajemnicy przedsiębiorstwa są u mnie na pierwszym miejscu.",
+      question:
+        "Czy podpisujemy umowę o zachowaniu poufności (NDA) przed wglądem w dane firmy?",
+      answer:
+        "Bezwzględnie tak. Zanim udostępnisz mi jakiekolwiek arkusze, procedury czy bazy klientów, podpisujemy restrykcyjną umowę NDA. Posiadam wieloletnie doświadczenie w pracy z danymi objętymi tajemnicą bankową, dlatego kwestie bezpieczeństwa informacji i ochrony tajemnicy przedsiębiorstwa są u mnie na pierwszym miejscu.",
     },
     {
-      q: "Czy po zakończeniu wdrożenia będę uzależniony od Twojej osoby?",
-      a: "Nie. Nie buduję wokół Twojej firmy „złotej klatki” ani nie pobieram przymusowych abonamentów za to, że system w ogóle działa. Otrzymujesz 100% praw autorskich, czyste repozytorium oraz pełną dokumentację techniczną i stanowiskową. Każdy wykwalifikowany programista jest w stanie przejąć ten kod bez konieczności pisania czegokolwiek od nowa.",
+      question:
+        "Czy po zakończeniu wdrożenia będę uzależniony od Twojej osoby?",
+      answer:
+        "Nie. Nie buduję wokół Twojej firmy „złotej klatki” ani nie pobieram przymusowych abonamentów za to, że system w ogóle działa. Otrzymujesz 100% praw autorskich, czyste repozytorium oraz pełną dokumentację techniczną i stanowiskową. Każdy wykwalifikowany programista jest w stanie przejąć ten kod bez konieczności pisania czegokolwiek od nowa.",
     },
   ],
-}
+} satisfies FaqContent
 
 export const offer = {
   badge: "Twój pierwszy krok",
@@ -273,7 +277,7 @@ export const offer = {
     "Dostępność: Maksymalnie 2 wdrożenia w kwartale (Zostało 1 wolne miejsce).",
   footer:
     "Odkładanie automatyzacji na bliżej nieokreślone „kiedyś” to zgoda na dalsze błędy w zamówieniach, przepalanie setek roboczogodzin i oglądanie pleców konkurencji.",
-}
+} satisfies CtaContent
 
 export const guarantee = {
   badge: "Gwarancja Wykonawcza",
@@ -291,7 +295,7 @@ export const guarantee = {
       note: "Standardy bankowe przeniesione do MŚP: ryzyko opóźnienia biorę na siebie, nie na Twój budżet.",
     },
   ],
-}
+} satisfies GuaranteeContent
 
 export const qualification = {
   badge: "Weryfikacja kwalifikacyjna",
@@ -362,4 +366,4 @@ export const qualification = {
     footer:
       "Rozmowa wideo 1-na-1 z architektem • Zero technicznego żargonu • Raport z rekomendacjami po spotkaniu",
   },
-}
+} satisfies QualificationContent
