@@ -137,38 +137,46 @@
 }
 
 .article-cta {
-  @apply relative my-8 overflow-hidden rounded-2xl border border-primary/20 bg-gradient-to-b from-primary/10 to-card px-5 py-6 sm:px-7 sm:py-7;
-}
-
-.article-cta::before {
-  content: "";
-  @apply pointer-events-none absolute -top-20 left-1/2 h-40 w-3/4 -translate-x-1/2 rounded-full bg-primary/15 blur-3xl;
+  @apply relative my-6 rounded-xl border border-primary/15 bg-primary/[0.04] px-4 py-4 sm:my-8 sm:px-6 sm:py-5;
 }
 
 .article-cta .article-cta-title,
 .article-cta .article-cta-title strong {
-  @apply relative mb-3 mt-0 text-lg font-bold text-primary sm:text-xl;
+  @apply relative mb-2 mt-0 text-base font-bold text-primary sm:text-lg;
 }
 
 .article-cta p {
-  @apply relative mb-3 last:mb-0;
+  @apply relative mb-2.5 text-sm leading-relaxed last:mb-0 sm:text-base;
+}
+
+.article-cta ul,
+.article-cta ol {
+  @apply relative my-3 pl-5 text-sm leading-relaxed sm:text-base;
+}
+
+.article-cta li {
+  @apply my-1.5;
+}
+
+.article-cta li::marker {
+  @apply text-primary;
 }
 
 .article-cta .article-cta-link {
-  @apply relative mt-5 mb-2 last:mb-0;
+  @apply relative mt-4 mb-1 last:mb-0;
 }
 
 .article-cta .article-cta-link a {
-  @apply relative flex min-h-11 w-full items-center justify-center rounded-xl bg-primary px-5 py-3 text-center text-sm font-bold text-white no-underline shadow-[0_0_30px_-10px_rgba(59,130,246,0.8)] transition-colors hover:bg-primary/90 hover:no-underline sm:inline-flex sm:w-auto;
+  @apply relative flex min-h-11 w-full items-center justify-center rounded-lg bg-primary px-4 py-2.5 text-center text-sm font-semibold text-primary-foreground no-underline transition-colors hover:bg-primary/90 hover:no-underline sm:inline-flex sm:w-auto sm:px-5;
 }
 
 .article-cta .article-cta-link em {
-  @apply mt-2 block text-center text-xs font-normal text-muted-foreground not-italic sm:text-left;
+  @apply mt-1.5 block text-xs font-normal text-muted-foreground not-italic;
 }
 
 .article-cta .article-cta-meta,
 .article-cta .article-cta-meta em {
-  @apply relative mt-1 text-center text-xs font-normal text-muted-foreground not-italic sm:text-left;
+  @apply relative mt-1.5 text-xs font-normal text-muted-foreground not-italic;
 }
 
 .prose {

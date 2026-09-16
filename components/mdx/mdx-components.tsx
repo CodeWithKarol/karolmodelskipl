@@ -94,15 +94,22 @@ export function ResponsiveTable({ children }: { children: ReactNode }) {
 export function HeadingAnchor({
   level,
   id,
+  className,
   children,
 }: {
   level: 2 | 3
   id: string
+  className?: string
   children: ReactNode
 }) {
   const Tag = headingTags[level]
   return (
-    <Tag id={id} className="group relative scroll-mt-24">
+    <Tag
+      id={id}
+      className={["group relative scroll-mt-24", className]
+        .filter(Boolean)
+        .join(" ")}
+    >
       {children}
       <a
         href={`#${id}`}
