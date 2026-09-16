@@ -1,6 +1,6 @@
 import { HelpCircle } from "lucide-react"
 import { content } from "@/lib/content"
-import { SectionBadge } from "@/components/section-badge"
+import { SectionHeader } from "@/components/section-header"
 import {
   Accordion,
   AccordionContent,
@@ -33,22 +33,20 @@ export function FaqSection({
     >
       <div className="relative z-10 container mx-auto max-w-3xl px-4">
         {/* Header - Mobile First */}
-        <Reveal as="header" className="mb-12 text-center">
-          <div className="mb-6">
-            <SectionBadge>
+        <SectionHeader
+          revealClassName="mb-12 text-center"
+          badgeWrapperClassName="mb-6"
+          badge={
+            <>
               <HelpCircle className="h-4 w-4" />
               <span>FAQ</span>
-            </SectionBadge>
-          </div>
-          <h2 className="mb-6 text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl">
-            {title}
-          </h2>
-          {faq.subtitle && (
-            <p className="text-base leading-relaxed font-normal text-muted-foreground sm:text-lg">
-              {faq.subtitle}
-            </p>
-          )}
-        </Reveal>
+            </>
+          }
+          title={title}
+          titleClassName="mb-6 text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl"
+          description={faq.subtitle}
+          descriptionClassName="text-base leading-relaxed font-normal text-muted-foreground sm:text-lg"
+        />
 
         {/* Akordeon - borderless, hairline dividers */}
         <Reveal>

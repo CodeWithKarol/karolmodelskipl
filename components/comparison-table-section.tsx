@@ -1,4 +1,4 @@
-import { SectionBadge } from "@/components/section-badge"
+import { SectionHeader } from "@/components/section-header"
 import { CheckCircle2, XCircle, MinusCircle } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Reveal } from "@/components/reveal"
@@ -12,8 +12,27 @@ import {
 } from "@/components/ui/table"
 import type { ComparisonTableContent } from "@/lib/content/types"
 
-const icons = [CheckCircle2, MinusCircle, XCircle]
-const iconColors = ["text-primary", "text-muted-foreground", "text-destructive"]
+function columnTone(index: number, total: number) {
+  if (index === 0) {
+    return {
+      Icon: CheckCircle2,
+      iconClass: "text-primary",
+      valueClass: "text-foreground",
+    }
+  }
+  if (index === total - 1) {
+    return {
+      Icon: XCircle,
+      iconClass: "text-destructive",
+      valueClass: "text-muted-foreground",
+    }
+  }
+  return {
+    Icon: MinusCircle,
+    iconClass: "text-muted-foreground",
+    valueClass: "text-muted-foreground",
+  }
+}
 
 export function ComparisonTableSection({
   comparison,
@@ -22,7 +41,8 @@ export function ComparisonTableSection({
   comparison: ComparisonTableContent
   className?: string
 }) {
-  const badge = comparison.badge ?? "Porównanie"
+  const badge = comparison.badge ?? "Porównanie modeli"
+  const total = comparison.columns.length
 
   return (
     <section
@@ -32,14 +52,12 @@ export function ComparisonTableSection({
       )}
     >
       <div className="relative z-10 container mx-auto max-w-5xl px-4">
-        <Reveal as="header" className="mb-12 text-center sm:mb-16">
-          <div className="mb-4 flex justify-center">
-            <SectionBadge>{badge}</SectionBadge>
-          </div>
-          <h2 className="mx-auto max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl">
-            {comparison.title}
-          </h2>
-        </Reveal>
+        <SectionHeader
+          badgeWrapperClassName="mb-4 flex justify-center"
+          badge={badge}
+          title={comparison.title}
+          titleClassName="mx-auto max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl"
+        />
 
         {/* Desktop: tabela */}
         <Reveal className="hidden border-b border-border md:block">
@@ -72,7 +90,10 @@ export function ComparisonTableSection({
                     {row.criterion}
                   </TableCell>
                   {row.values.map((value, vi) => {
-                    const Icon = icons[vi % icons.length]
+                    const { Icon, iconClass, valueClass } = columnTone(
+                      vi,
+                      total
+                    )
                     return (
                       <TableCell
                         key={vi}
@@ -80,17 +101,12 @@ export function ComparisonTableSection({
                       >
                         <div className="flex items-start gap-2">
                           <Icon
-                            className={cn(
-                              "mt-0.5 h-4 w-4 shrink-0",
-                              iconColors[vi % iconColors.length]
-                            )}
+                            className={cn("mt-0.5 h-4 w-4 shrink-0", iconClass)}
                           />
                           <span
                             className={cn(
                               "text-sm leading-relaxed",
-                              vi === 0
-                                ? "text-foreground"
-                                : "text-muted-foreground"
+                              valueClass
                             )}
                           >
                             {value}
@@ -117,14 +133,11 @@ export function ComparisonTableSection({
               </h3>
               <div className="space-y-4">
                 {comparison.columns.map((col, ci) => {
-                  const Icon = icons[ci % icons.length]
+                  const { Icon, iconClass, valueClass } = columnTone(ci, total)
                   return (
                     <div key={ci} className="flex items-start gap-3">
                       <Icon
-                        className={cn(
-                          "mt-0.5 h-4 w-4 shrink-0",
-                          iconColors[ci % iconColors.length]
-                        )}
+                        className={cn("mt-0.5 h-4 w-4 shrink-0", iconClass)}
                       />
                       <div className="min-w-0">
                         <div
@@ -136,12 +149,7 @@ export function ComparisonTableSection({
                           {col}
                         </div>
                         <p
-                          className={cn(
-                            "text-sm leading-relaxed",
-                            ci === 0
-                              ? "text-foreground"
-                              : "text-muted-foreground"
-                          )}
+                          className={cn("text-sm leading-relaxed", valueClass)}
                         >
                           {row.values[ci]}
                         </p>

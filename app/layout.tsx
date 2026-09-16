@@ -6,50 +6,21 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { AppChrome } from "@/components/app-chrome"
 import { cn } from "@/lib/utils"
+import { siteConfig } from "@/lib/site-config"
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo/json-ld"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "ProfessionalService",
-      "@id": "https://www.karolmodelski.pl/#organization",
-      name: "Karol Modelski - Niezależny Partner Technologiczny",
-      url: "https://www.karolmodelski.pl",
-      telephone: "+48664598563",
-      areaServed: "PL",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Warszawa",
-        addressCountry: "PL",
-      },
-      sameAs: ["https://g.page/r/CZSVfAGtTiIzEBM"],
-      founder: { "@id": "https://www.karolmodelski.pl/#person" },
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.karolmodelski.pl/#person",
-      name: "Karol Modelski",
-      jobTitle: "Niezależny Partner Technologiczny",
-      worksFor: { "@id": "https://www.karolmodelski.pl/#organization" },
-      sameAs: ["https://www.linkedin.com/in/karol-modelski/"],
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://www.karolmodelski.pl/#website",
-      url: "https://www.karolmodelski.pl",
-      name: "Karol Modelski - Niezależny Partner Technologiczny",
-      publisher: { "@id": "https://www.karolmodelski.pl/#organization" },
-    },
-  ],
+  "@graph": [organizationJsonLd, websiteJsonLd],
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.karolmodelski.pl"),
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Karol Modelski - Niezależny Partner Technologiczny",
-    template: "%s | Karol Modelski",
+    default: siteConfig.brand,
+    template: `%s | ${siteConfig.name}`,
   },
   description:
     "Masz dość software house'ów? Tworzę dedykowane aplikacje internetowe dla firm.",

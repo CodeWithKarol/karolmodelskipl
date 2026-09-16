@@ -6,6 +6,11 @@ import { usePathname } from "next/navigation"
 import { SiteHeader } from "@/components/site-header"
 import { Footer } from "@/components/footer"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { siteConfig } from "@/lib/site-config"
+import {
+  funnelFooterVariants,
+  type FunnelFooterVariant,
+} from "@/lib/content/funnel-footer"
 
 const FUNNEL_PATHS = [
   "/projektowanie-mvp",
@@ -33,39 +38,7 @@ function FunnelHeader() {
   )
 }
 
-const FOOTER_VARIANTS = {
-  sme: {
-    title: "Karol Modelski – Niezależny Partner Technologiczny dla MŚP",
-    description:
-      "Projektuję i wdrażam dedykowane systemy operacyjne w standardach bankowych (Citibank, BNP Paribas). Zastępuję agencje programistyczne bezpośrednią współpracą inżynierską – zamieniając paraliż w arkuszach Excela na stabilny zysk i automatyzację procesów.",
-    tagline: "MŚP • Standardy bankowe • 100% własności kodu",
-  },
-  modernizacja: {
-    title: "Karol Modelski – Niezależny Partner Technologiczny dla Biznesu",
-    description:
-      "Uzdrawiam architekturę systemów transakcyjnych i platform B2B — odblokowując sprzedaż bez pisania kodu od zera.",
-    tagline:
-      "E-commerce & B2B • Klasa bankowa • Uzdrowienie w 2–4 tygodnie • Zero przestoju",
-  },
-  doradztwo: {
-    title:
-      "Karol Modelski – Niezależny Partner Technologiczny dla Zarządów & MŚP",
-    description:
-      "Chronię budżety firm przed zawyżonymi wycenami IT i niekorzystnymi umowami agencyjnymi.",
-    tagline:
-      "MŚP • Audyt IT • Gwarancja min. 10 000 zł oszczędności • 0% prowizji od agencji",
-  },
-  b2b: {
-    title: "Karol Modelski – Partner Technologiczny dla Założycieli B2B & SaaS",
-    description:
-      "Buduję dochodowe platformy internetowe dla założycieli firm — od pomysłu do działającego, gotowego do sprzedaży systemu w 30 dni.",
-    tagline: "B2B / SaaS · Start platformy w 30 dni · 100% własności kodu",
-  },
-} as const
-
-type FunnelVariant = keyof typeof FOOTER_VARIANTS
-
-function getFunnelVariant(pathname: string): FunnelVariant {
+function getFunnelVariant(pathname: string): FunnelFooterVariant {
   if (
     pathname === "/naprawa-i-modernizacja-aplikacji" ||
     pathname === "/kwalifikacja-modernizacja"
@@ -84,8 +57,8 @@ function getFunnelVariant(pathname: string): FunnelVariant {
   return "b2b"
 }
 
-function FunnelFooter({ variant }: { variant: FunnelVariant }) {
-  const { title, description, tagline } = FOOTER_VARIANTS[variant]
+function FunnelFooter({ variant }: { variant: FunnelFooterVariant }) {
+  const { title, description, tagline } = funnelFooterVariants[variant]
 
   return (
     <footer className="relative border-t border-border bg-background pt-12 text-muted-foreground sm:pt-16 md:pt-24">
@@ -107,24 +80,24 @@ function FunnelFooter({ variant }: { variant: FunnelVariant }) {
             <ul className="mt-4 space-y-2.5 text-sm">
               <li>
                 <a
-                  href="mailto:kontakt@karolmodelski.pl"
+                  href={`mailto:${siteConfig.email}`}
                   className="text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
                 >
-                  kontakt@karolmodelski.pl
+                  {siteConfig.email}
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+48664598563"
+                  href={`tel:${siteConfig.phone}`}
                   className="text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline"
                 >
-                  +48 664 598 563
+                  {siteConfig.phoneDisplay}
                 </a>
               </li>
               <li className="text-muted-foreground">
                 Warszawa / współpraca zdalna w całej Polsce
               </li>
-              <li className="text-muted-foreground">NIP: 6112800950</li>
+              <li className="text-muted-foreground">NIP: {siteConfig.nip}</li>
             </ul>
           </div>
         </div>

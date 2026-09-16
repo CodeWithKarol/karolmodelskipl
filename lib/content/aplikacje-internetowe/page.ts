@@ -1,23 +1,24 @@
 import type {
-  ComparisonContent,
   ContentMetadata,
   CtaContent,
   FaqContent,
   GuaranteeContent,
+  ComparisonTableContent,
   HeroContent,
+  OfferPageContent,
   ProcessContent,
   QualificationContent,
   StoryContent,
   ValueStackContent,
 } from "../types"
 
-export const metadata = {
+const metadata = {
   title: "Aplikacje internetowe dla firm | Niezależny Partner IT",
   description:
     "Dedykowane aplikacje internetowe dla firm o niezawodności systemów bankowych. Zyskaj solidne rozwiązania bez marż agencji. Odbierz darmowy plan!",
 } satisfies ContentMetadata
 
-export const hero = {
+const hero = {
   badge: "Dla właścicieli firm MŚP, które utknęły w arkuszach Excela",
 
   title: "Zastąp 40-minutowe klepanie zamówień jednym kliknięciem.",
@@ -52,7 +53,7 @@ export const hero = {
   ],
 } satisfies HeroContent
 
-export const story = {
+const story = {
   title:
     "Ile gotówki przepala Twoja firma każdego miesiąca, gdy zwlekasz z automatyzacją?",
   intro:
@@ -78,7 +79,7 @@ export const story = {
   ],
 } satisfies StoryContent
 
-export const valueStack = {
+const valueStack = {
   badge: "Stos Wartości",
   title: "Co dokładnie otrzymujesz w pakiecie?",
   intro:
@@ -139,51 +140,55 @@ export const valueStack = {
   ],
 } satisfies ValueStackContent
 
-export const comparison = {
+const comparison = {
   badge: "Porównanie modeli",
   title: "Tradycyjny Software House vs. Twój Osobisty Partner Technologiczny",
   subtitle:
     "Twarde, tabelaryczne porównanie pokazujące przewagę bezpośredniej współpracy nad agencją.",
-  columns: {
-    feature: "Obszar",
-    me: "Bezpośrednia Współpraca ze Mną",
-    agency: "Tradycyjna Agencja (Software House)",
-  },
+  columns: [
+    "Bezpośrednia Współpraca ze Mną",
+    "Tradycyjna Agencja (Software House)",
+  ],
   rows: [
     {
-      feature: "Czas do pierwszego odciążenia",
-      me: "Dokładnie 30 dni do uruchomienia Rdzenia Systemu i pierwszych oszczędności czasu.",
-      agency:
+      criterion: "Czas do pierwszego odciążenia",
+      values: [
+        "Dokładnie 30 dni do uruchomienia Rdzenia Systemu i pierwszych oszczędności czasu.",
         "Od 6 do 12 miesięcy niekończącego się planowania i ciągłych aneksów terminowych.",
+      ],
     },
     {
-      feature: "Budżet i rozliczenie",
-      me: "Jedna, stała kwota pakietowa (model 50/50). Płacisz drugą część dopiero, gdy system działa.",
-      agency:
+      criterion: "Budżet i rozliczenie",
+      values: [
+        "Jedna, stała kwota pakietowa (model 50/50). Płacisz drugą część dopiero, gdy system działa.",
         "Płatność za roboczogodziny: rachunki rosną co miesiąc, brak ostatecznej ceny.",
+      ],
     },
     {
-      feature: "Kontakt i odpowiedzialność",
-      me: "Rozmawiasz bezpośrednio z doświadczonym inżynierem (zero pośredników).",
-      agency:
+      criterion: "Kontakt i odpowiedzialność",
+      values: [
+        "Rozmawiasz bezpośrednio z doświadczonym inżynierem (zero pośredników).",
         "„Głuchy telefon”: handlowcy, project managerowie i rotujący juniorzy.",
+      ],
     },
     {
-      feature: "Adaptacja pracowników",
-      me: "3 miesiące mojej osobistej asysty we wdrażaniu nawyków w zespole.",
-      agency:
+      criterion: "Adaptacja pracowników",
+      values: [
+        "3 miesiące mojej osobistej asysty we wdrażaniu nawyków w zespole.",
         "Szkolenie z prezentacji PDF, zostawienie zespołu samemu sobie i ucieczka do kolejnego klienta.",
+      ],
     },
     {
-      feature: "Niezależność",
-      me: "100% praw autorskich, otwarte technologie, zero obowiązkowych abonamentów.",
-      agency:
+      criterion: "Niezależność",
+      values: [
+        "100% praw autorskich, otwarte technologie, zero obowiązkowych abonamentów.",
         "Uzależnienie od jednej agencji i płacenie za każdą drobną zmianę w procedurach.",
+      ],
     },
   ],
-} satisfies ComparisonContent
+} satisfies ComparisonTableContent
 
-export const process = {
+const process = {
   badge: "Proces wdrożenia",
   title: "Jak wdrażamy system w 30 dni?",
   subheading: "Sprawdzony, 3-etapowy proces",
@@ -212,7 +217,7 @@ export const process = {
   ],
 } satisfies ProcessContent
 
-export const faq = {
+const faq = {
   title: "Najczęściej zadawane pytania",
   subtitle:
     "Odpowiedzi na kluczowe pytania dotyczące bezpieczeństwa procesów, czasu wdrożenia i warunków technicznych przed podjęciem współpracy:",
@@ -249,7 +254,7 @@ export const faq = {
   ],
 } satisfies FaqContent
 
-export const offer = {
+const offer = {
   badge: "Twój pierwszy krok",
   title: "30-minutowa Diagnoza Wąskich Gardeł",
   description:
@@ -279,7 +284,7 @@ export const offer = {
     "Odkładanie automatyzacji na bliżej nieokreślone „kiedyś” to zgoda na dalsze błędy w zamówieniach, przepalanie setek roboczogodzin i oglądanie pleców konkurencji.",
 } satisfies CtaContent
 
-export const guarantee = {
+const guarantee = {
   badge: "Gwarancja Wykonawcza",
   title: "Gwarancja Działania w 30 Dni albo Darmowe Wdrożenie",
   subtitle: "",
@@ -351,6 +356,11 @@ export const qualification = {
       ],
     },
   ],
+  disqualify: [
+    { key: "scale", values: ["ponizej5"] },
+    { key: "authority", values: ["pracownik"] },
+    { key: "budget", values: ["darmowe"] },
+  ],
   messages: {
     rejected: {
       title: "Dziękujemy za zgłoszenie",
@@ -367,3 +377,17 @@ export const qualification = {
       "Rozmowa wideo 1-na-1 z architektem • Zero technicznego żargonu • Raport z rekomendacjami po spotkaniu",
   },
 } satisfies QualificationContent
+
+export const offerPage: OfferPageContent = {
+  slug: "aplikacje-internetowe-dla-firm",
+  metadata,
+  qualificationHref: "/kwalifikacja-aplikacje",
+  hero,
+  story,
+  comparison,
+  offer: process,
+  spec: valueStack,
+  guarantee,
+  faq,
+  cta: offer,
+}

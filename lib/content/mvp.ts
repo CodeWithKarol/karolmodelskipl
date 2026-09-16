@@ -1,10 +1,11 @@
 import type {
+  ComparisonTableContent,
   ContentMetadata,
-  ContrastContent,
   CtaContent,
   FaqContent,
   GuaranteeContent,
   HeroContent,
+  OfferPageContent,
   QualificationContent,
   ValueStackContent,
 } from "./types"
@@ -112,53 +113,40 @@ export const mvp = {
       },
     ],
   },
-  contrast: {
+  comparison: {
     title: "Tradycyjny Software House vs. Twój Osobisty Partner Technologiczny",
-    red_ocean_title: "Klasyczny Software House",
-    blue_ocean_title: "Współpraca ze Mną",
-    comparisons: [
+    columns: ["Współpraca ze Mną", "Klasyczny Software House"],
+    rows: [
       {
-        red: {
-          title: "Czas oczekiwania",
-          desc: "Od 6 do 12 miesięcy planowania, analiz i ciągłych przesunięć terminu wdrożenia.",
-        },
-        blue: {
-          title: "Czas do gotowości do sprzedaży",
-          desc: "Dokładnie 30 dni od zatwierdzenia planu. Działający system gotowy na rynek w 1 miesiąc.",
-        },
+        criterion: "Czas do efektu",
+        values: [
+          "Dokładnie 30 dni od zatwierdzenia planu. Działający system gotowy na rynek w 1 miesiąc.",
+          "Od 6 do 12 miesięcy planowania, analiz i ciągłych przesunięć terminu wdrożenia.",
+        ],
       },
       {
-        red: {
-          title: "Model rozliczenia i budżet",
-          desc: "Płatność za roboczogodziny: budżet rośnie z każdym miesiącem, brak ostatecznej ceny.",
-        },
-        blue: {
-          title: "Model rozliczenia i budżet",
-          desc: "Jedna, stała cena za dowieziony efekt biznesowy. Zero dopłat za „nieprzewidziane trudności”.",
-        },
+        criterion: "Model rozliczenia i budżet",
+        values: [
+          "Jedna, stała cena za dowieziony efekt biznesowy. Zero dopłat za „nieprzewidziane trudności”.",
+          "Płatność za roboczogodziny: budżet rośnie z każdym miesiącem, brak ostatecznej ceny.",
+        ],
       },
       {
-        red: {
-          title: "Język i komunikacja",
-          desc: "Niezrozumiały żargon techniczny, głuche telefony przez project managerów i praca z rotującymi juniorami.",
-        },
-        blue: {
-          title: "Język i komunikacja",
-          desc: "Rozmawiasz bezpośrednio z doświadczonym inżynierem. Prosty język biznesu, zysków i wygody Twoich klientów.",
-        },
+        criterion: "Język i komunikacja",
+        values: [
+          "Rozmawiasz bezpośrednio z doświadczonym inżynierem. Prosty język biznesu, zysków i wygody Twoich klientów.",
+          "Niezrozumiały żargon techniczny, głuche telefony przez project managerów i praca z rotującymi juniorami.",
+        ],
       },
       {
-        red: {
-          title: "Końcowy efekt i niezależność",
-          desc: "Paczka plików z kodem, której nie potrafisz zweryfikować. Uzależnienie technologiczne i opłaty za każdą drobną zmianę.",
-        },
-        blue: {
-          title: "Końcowy efekt i niezależność",
-          desc: "Gotowa do zarabiania platforma: pancerna stabilność i bezpieczeństwo pieniędzy Twoich klientów (doświadczenie z Citibank, BNP Paribas), pełna własność i dokumentacja kodu — każdy kolejny inżynier przejmie projekt z marszu.",
-        },
+        criterion: "Końcowy efekt i niezależność",
+        values: [
+          "Gotowa do zarabiania platforma: pancerna stabilność i bezpieczeństwo pieniędzy Twoich klientów (doświadczenie z Citibank, BNP Paribas), pełna własność i dokumentacja kodu — każdy kolejny inżynier przejmie projekt z marszu.",
+          "Paczka plików z kodem, której nie potrafisz zweryfikować. Uzależnienie technologiczne i opłaty za każdą drobną zmianę.",
+        ],
       },
     ],
-  } satisfies ContrastContent,
+  } satisfies ComparisonTableContent,
   mechanism: {
     title: "Jak to możliwe w 30 dni? Dokładnie, a nie na oko.",
     subtitle:
@@ -374,6 +362,10 @@ export const mvp = {
         ],
       },
     ],
+    disqualify: [
+      { key: "timeline", values: ["rozeznanie"] },
+      { key: "budget", values: ["ponizej"] },
+    ],
     messages: {
       rejected: {
         title: "Dziękujemy za zgłoszenie",
@@ -389,4 +381,36 @@ export const mvp = {
       footer: "Tylko 2 wdrożenia w kwartale • Zostało 1 wolne miejsce",
     },
   } satisfies QualificationContent,
+}
+
+export const offerPage: OfferPageContent = {
+  slug: "projektowanie-mvp",
+  metadata: mvp.metadata,
+  jsonLd: {
+    serviceName: mvp.service.title,
+    serviceDescription: mvp.service.description,
+  },
+  qualificationHref: "/kwalifikacja-saas",
+  hero: mvp.hero,
+  story: {
+    title: mvp.trap.title,
+    intro: mvp.trap.text1,
+    context: mvp.trap.text2,
+    points: mvp.trap.negative_points,
+  },
+  comparison: mvp.comparison,
+  offer: {
+    badge: "Harmonogram wdrożenia",
+    title: mvp.mechanism.title,
+    subheading: mvp.mechanism.subtitle,
+    paths: mvp.mechanism.cards.map((card) => ({
+      title: card.label,
+      situation: card.title,
+      desc: card.content,
+    })),
+  },
+  spec: mvp.spec,
+  guarantee: mvp.guarantee,
+  faq: mvp.faq,
+  cta: mvp.cta,
 }

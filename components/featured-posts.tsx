@@ -13,9 +13,10 @@ export interface FeaturedPostItem {
 
 interface FeaturedPostsProps {
   posts: FeaturedPostItem[]
-  badge?: string
   className?: string
 }
+
+const BADGE = "Najczęściej czytany"
 
 function formatDate(d?: string) {
   if (!d) return ""
@@ -32,11 +33,7 @@ function metaOf(item: FeaturedPostItem) {
     .join(" • ")
 }
 
-export function FeaturedPosts({
-  posts,
-  badge = "Najczęściej czytany",
-  className,
-}: FeaturedPostsProps) {
+export function FeaturedPosts({ posts, className }: FeaturedPostsProps) {
   const hero = posts[0]
   if (!hero) return null
 
@@ -50,7 +47,7 @@ export function FeaturedPosts({
           </div>
           <div className="relative z-10">
             <span className="text-[10px] font-medium text-primary sm:text-xs">
-              {badge}
+              {BADGE}
             </span>
             <h3 className="mt-3 text-xl leading-snug font-semibold text-balance break-words text-foreground transition-colors group-hover:text-primary sm:text-2xl lg:text-3xl">
               {hero.title}

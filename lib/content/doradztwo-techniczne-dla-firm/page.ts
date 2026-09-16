@@ -6,19 +6,20 @@ import type {
   GuaranteeContent,
   HeroContent,
   OfferContent,
+  OfferPageContent,
   ProcessContent,
   QualificationContent,
   StoryContent,
   ValueStackContent,
 } from "../types"
 
-export const metadata = {
+const metadata = {
   title: "Inżynierski Audyt Wyceny i Umowy IT",
   description:
     "Niezależny audyt wyceny i umowy IT. Wykazuję zawyżone koszty i luki aneksowe. Gwarancja min. 10 000 zł oszczędności albo zwrot 100% kosztu audytu — raport w 5 dni.",
 } satisfies ContentMetadata
 
-export const hero = {
+const hero = {
   badge: "Dla zarządów i firm MŚP zlecających projekty IT",
   title:
     "Zablokuj przepłacanie za agencję IT, zanim podpiszesz kosztowny aneks.",
@@ -49,7 +50,7 @@ export const hero = {
   ],
 } satisfies HeroContent
 
-export const story = {
+const story = {
   title:
     "Jak agencje software'owe drenują budżety firm bez zaplecza technicznego?",
   intro:
@@ -75,7 +76,7 @@ export const story = {
   ],
 } satisfies StoryContent
 
-export const valueStack = {
+const valueStack = {
   badge: "Stos Wartości",
   title: "Co dokładnie otrzymujesz w pakiecie?",
   intro: "",
@@ -133,7 +134,7 @@ export const valueStack = {
     "Płatność jednorazowa na podstawie pełnej faktury VAT. Kompletny Raport PDF wraz z planem negocjacyjnym dostarczam w ciągu maksymalnie 5 dni roboczych od otrzymania dokumentów.",
 } satisfies ValueStackContent
 
-export const comparison = {
+const comparison = {
   badge: "Porównanie modeli",
   title: "Trzy drogi do weryfikacji wydatków IT",
   columns: [
@@ -177,7 +178,7 @@ export const comparison = {
   ],
 } satisfies ComparisonTableContent
 
-export const process = {
+const process = {
   badge: "Proces audytu",
   title: "Jak przebiega Inżynierski Audyt w 5 dni?",
   subheading: "Sprawdzony, 3-etapowy proces",
@@ -200,7 +201,7 @@ export const process = {
   ],
 } satisfies ProcessContent
 
-export const guarantee = {
+const guarantee = {
   badge: "Gwarancja Wykonawcza",
   title: "Min. 10 000 zł oszczędności albo zwrot 100% kwoty",
   subtitle:
@@ -218,7 +219,7 @@ export const guarantee = {
   ],
 } satisfies GuaranteeContent
 
-export const continuation = {
+const continuation = {
   badge: "Naturalna kontynuacja",
   title: "Co dzieje się po audycie?",
   subheading:
@@ -241,7 +242,7 @@ export const continuation = {
   ],
 } satisfies OfferContent
 
-export const faq = {
+const faq = {
   title: "Najczęściej zadawane pytania",
   subtitle: "",
   items: [
@@ -270,7 +271,7 @@ export const faq = {
   ],
 } satisfies FaqContent
 
-export const cta = {
+const cta = {
   badge: "Twój pierwszy krok",
   title: "30-minutowa weryfikacja wyceny",
   description:
@@ -376,6 +377,11 @@ export const qualification = {
       ],
     },
   ],
+  disqualify: [
+    { key: "budget", values: ["ponizej20"] },
+    { key: "role", values: ["pracownik"] },
+    { key: "timeline", values: ["kilka-miesiecy"] },
+  ],
   messages: {
     rejected: {
       title: "Dziękujemy za przesłanie zgłoszenia",
@@ -392,3 +398,21 @@ export const qualification = {
       "Rozmowa wideo 1-na-1 • Zero technicznego żargonu • Plan działania po spotkaniu",
   },
 } satisfies QualificationContent
+
+export const offerPage: OfferPageContent = {
+  slug: "doradztwo-techniczne-dla-firm",
+  metadata,
+  jsonLd: {
+    serviceType: "Konsulting technologiczny i doradztwo IT dla firm",
+  },
+  qualificationHref: "/kwalifikacja-doradztwo",
+  hero,
+  story,
+  comparison,
+  offer: process,
+  spec: valueStack,
+  guarantee,
+  continuation,
+  faq,
+  cta,
+}

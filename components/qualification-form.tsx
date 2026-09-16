@@ -32,9 +32,9 @@ export function QualificationForm({
 
   const rejected =
     allAnswered &&
-    (answers.scale === "ponizej5" ||
-      answers.authority === "pracownik" ||
-      answers.budget === "darmowe")
+    qualification.disqualify.some((rule) =>
+      rule.values.includes(answers[rule.key])
+    )
   const qualified = allAnswered && !rejected
 
   const progress = ((step + (answered ? 1 : 0)) / total) * 100

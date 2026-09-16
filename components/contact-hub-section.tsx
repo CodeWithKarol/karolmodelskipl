@@ -1,5 +1,6 @@
 import { Mail, Phone } from "lucide-react"
 import { SectionBadge } from "@/components/section-badge"
+import { siteConfig } from "@/lib/site-config"
 
 export function ContactHubSection() {
   return (
@@ -30,7 +31,7 @@ export function ContactHubSection() {
 
         <div className="mx-auto max-w-xl divide-y divide-border border-y border-border">
           <a
-            href="mailto:kontakt@karolmodelski.pl"
+            href={`mailto:${siteConfig.email}`}
             className="group flex items-center gap-4 px-2 py-5 text-left transition-colors hover:bg-muted"
           >
             <Mail className="h-5 w-5 shrink-0 text-primary" />
@@ -39,12 +40,12 @@ export function ContactHubSection() {
                 Napisz bezpośrednio do architekta
               </div>
               <div className="font-semibold break-words text-foreground transition-colors group-hover:text-primary">
-                kontakt@karolmodelski.pl
+                {siteConfig.email}
               </div>
             </div>
           </a>
           <a
-            href="tel:+48664598563"
+            href={`tel:${siteConfig.phone}`}
             className="group flex items-center gap-4 px-2 py-5 text-left transition-colors hover:bg-muted"
           >
             <Phone className="h-5 w-5 shrink-0 text-primary" />
@@ -53,7 +54,7 @@ export function ContactHubSection() {
                 Telefon / konsultacja wstępna
               </div>
               <div className="font-semibold text-foreground transition-colors group-hover:text-primary">
-                +48 664 598 563
+                {siteConfig.phoneDisplay}
               </div>
             </div>
           </a>

@@ -1,3 +1,6 @@
+import { siteConfig } from "@/lib/site-config"
+import type { FooterContent } from "./types"
+
 export const footer = {
   brand: {
     name: "Karol Modelski",
@@ -42,13 +45,13 @@ export const footer = {
   },
   contact: {
     title: "Bezpośredni kontakt",
-    linkedin: "https://www.linkedin.com/in/karol-modelski/",
+    linkedin: siteConfig.linkedinUrl,
     linkedinLabel: "Profil na LinkedIn",
     coverage: "Warszawa oraz cała Polska (współpraca zdalna i bezpośrednia)",
-    email: "kontakt@karolmodelski.pl",
-    phone: "+48 664 598 563",
+    email: siteConfig.email,
+    phone: siteConfig.phoneDisplay,
     address: "ul. Mieczysława Karłowicza 1 lok. 40, 58-506 Jelenia Góra",
-    nip: "6112800950",
+    nip: siteConfig.nip,
   },
   legal: {
     title: "Dokumenty i Kwestie Prawne",
@@ -56,4 +59,4 @@ export const footer = {
   },
   copyright:
     "© 2026 Karol Modelski. Wszelkie prawa zastrzeżone. Oprogramowanie tworzone z myślą o stabilności i zysku Twojej firmy.",
-}
+} satisfies FooterContent

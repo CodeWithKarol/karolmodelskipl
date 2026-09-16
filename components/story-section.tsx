@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils"
 import type { StoryPoint } from "@/lib/content/types"
 
 interface StorySectionProps {
-  badge?: string
   title?: string
   intro?: string
   context?: string
@@ -15,8 +14,9 @@ interface StorySectionProps {
   className?: string
 }
 
+const BADGE = "Diagnoza problemu"
+
 export function StorySection({
-  badge = "Diagnoza problemu",
   title,
   intro,
   context,
@@ -40,7 +40,7 @@ export function StorySection({
           <div className="mb-4">
             <SectionBadge variant="neutral">
               <Flame className="h-4 w-4" />
-              <span>{badge}</span>
+              <span>{BADGE}</span>
             </SectionBadge>
           </div>
           <h2 className="mx-auto mb-6 max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl">
