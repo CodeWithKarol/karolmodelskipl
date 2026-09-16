@@ -107,8 +107,8 @@ export default function AplikacjeInternetoweDlaFirmPage() {
           "https://www.karolmodelski.pl/aplikacje-internetowe-dla-firm#faq",
         mainEntity: faq.items.map((item) => ({
           "@type": "Question",
-          name: item.q,
-          acceptedAnswer: { "@type": "Answer", text: item.a },
+          name: item.question,
+          acceptedAnswer: { "@type": "Answer", text: item.answer },
         })),
       },
     ],
@@ -245,17 +245,7 @@ export default function AplikacjeInternetoweDlaFirmPage() {
       <GuaranteeSection guarantee={guarantee} />
 
       {/* Sekcja 7: FAQ */}
-      <FaqSection
-        faq={{
-          title: "Najczęściej zadawane pytania",
-          subtitle: faq.subtitle,
-          items: faq.items.map((item) => ({
-            question: item.q,
-            answer: item.a,
-          })),
-        }}
-        className="py-16 sm:py-20"
-      />
+      <FaqSection faq={faq} className="py-16 sm:py-20" />
 
       <CtaSection content={offer} ctaHref="/kwalifikacja-aplikacje" />
     </main>

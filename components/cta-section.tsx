@@ -4,19 +4,9 @@ import { CtaButton } from "@/components/cta-button"
 import { Sparkles, Target, ShieldCheck, Map } from "lucide-react"
 import { SectionBadge } from "@/components/section-badge"
 import { Reveal } from "@/components/reveal"
+import type { CtaContent } from "@/lib/content/types"
 
-export type CtaContent = {
-  badge: string
-  title: string
-  description: string
-  package_title: string
-  offer_items: { title: string; desc?: string }[]
-  button: string
-  footer: string
-  format?: string
-  note?: string
-  availability?: string
-}
+export type { CtaContent }
 
 type CtaSectionProps = {
   content?: CtaContent

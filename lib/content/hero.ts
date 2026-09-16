@@ -1,3 +1,5 @@
+import type { HomeHeroContent } from "./types"
+
 export const hero = {
   badge: "Niezależny Partner Technologiczny MŚP",
   h1: "Dedykowane systemy i aplikacje internetowe dla firm, które realnie zarabiają – bez agencji i ukrytych kosztów.",
@@ -47,4 +49,4 @@ export const hero = {
       val: "",
     },
   ],
-}
+} satisfies HomeHeroContent

@@ -3,31 +3,10 @@ import { ShieldCheck, CheckCircle2, XCircle } from "lucide-react"
 import { content } from "@/lib/content"
 import { cn } from "@/lib/utils"
 import { Reveal } from "@/components/reveal"
-
-export interface ContrastRow {
-  area?: string
-  blue: string
-  red: string
-  blueTitle?: string
-  redTitle?: string
-}
-
-interface ContrastData {
-  badge?: string
-  title?: string
-  blue_title?: string
-  red_title?: string
-  blue_ocean_title?: string
-  red_ocean_title?: string
-  rows?: ContrastRow[]
-  comparisons?: {
-    red: { title: string; desc: string }
-    blue: { title: string; desc: string }
-  }[]
-}
+import type { ContrastContent, ContrastRow } from "@/lib/content/types"
 
 interface ContrastSectionProps {
-  contrast?: ContrastData
+  contrast?: ContrastContent
   className?: string
 }
 
@@ -35,7 +14,7 @@ export function ContrastSection({
   contrast: customContrast,
   className,
 }: ContrastSectionProps = {}) {
-  const contrast = (customContrast ?? content.contrast) as ContrastData
+  const contrast = (customContrast ?? content.contrast) as ContrastContent
 
   const badge = contrast.badge ?? "Porównanie modeli"
   const title = contrast.title ?? ""

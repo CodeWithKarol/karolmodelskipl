@@ -3,11 +3,7 @@ import { content } from "@/lib/content"
 import { SectionBadge } from "@/components/section-badge"
 import { Reveal } from "@/components/reveal"
 import { cn } from "@/lib/utils"
-
-export interface StoryPoint {
-  title: string
-  desc: string
-}
+import type { StoryPoint } from "@/lib/content/types"
 
 interface StorySectionProps {
   badge?: string

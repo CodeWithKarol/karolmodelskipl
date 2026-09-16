@@ -1,3 +1,5 @@
+import type { StoryContent } from "./types"
+
 export const story = {
   title:
     "Czy wdrożenie oprogramowania w dużej agencji przypomina u Ciebie walkę z wiatrakami?",
@@ -23,4 +25,4 @@ export const story = {
       desc: "Potrzebujesz szybkiej zmiany w aplikacji? W agencji musisz zgłosić wniosek, poczekać na wycenę, akceptację kierownika i wolny termin w harmonogramie za miesiąc. Ta ociężałość zabija Twoją elastyczność na rynku.",
     },
   ],
-}
+} satisfies StoryContent

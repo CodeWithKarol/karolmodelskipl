@@ -1,3 +1,5 @@
+import type { CtaContent } from "./types"
+
 export const cta = {
   badge: "Status: 2 sloty wdrożeniowe w kwartale",
   title:
@@ -26,4 +28,4 @@ export const cta = {
   note: "Wybierz dogodny termin w kalendarzu. Podczas rozmowy przeanalizujemy architekturę i wyzwania w Twojej firmie.",
   availability: "Dostępność: Maksymalnie 2 wdrożenia w kwartale",
   footer: "",
-}
+} satisfies CtaContent

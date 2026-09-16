@@ -2,24 +2,10 @@ import { ShieldCheck, Shield, FileCode, Headphones } from "lucide-react"
 import { content } from "@/lib/content"
 import { SectionBadge } from "@/components/section-badge"
 import { Reveal } from "@/components/reveal"
-
-interface GuaranteeItem {
-  title: string
-  desc: string
-  bullets?: string[]
-  note?: string
-}
-
-interface GuaranteeData {
-  badge: string
-  title: string
-  subtitle: string
-  steps?: string[]
-  items: GuaranteeItem[]
-}
+import type { GuaranteeContent } from "@/lib/content/types"
 
 interface GuaranteeSectionProps {
-  guarantee?: GuaranteeData
+  guarantee?: GuaranteeContent
   id?: string
   variant?: "blue" | "red"
 }
@@ -42,7 +28,7 @@ export function GuaranteeSection({
   variant = "blue",
 }: GuaranteeSectionProps = {}) {
   const { guarantee: defaultGuarantee } = content
-  const guarantee: GuaranteeData = customGuarantee || defaultGuarantee
+  const guarantee: GuaranteeContent = customGuarantee || defaultGuarantee
 
   return (
     <section
