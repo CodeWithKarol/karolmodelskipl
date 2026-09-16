@@ -1,5 +1,5 @@
 import { Package, BadgeCheck, Lock, FileCode2 } from "lucide-react"
-import { SectionBadge } from "@/components/section-badge"
+import { SectionHeader } from "@/components/section-header"
 import { Reveal } from "@/components/reveal"
 import { cn } from "@/lib/utils"
 import type { ValueStackContent } from "@/lib/content/types"
@@ -59,19 +59,14 @@ export function PackageSpecSection({
       )}
     >
       <div className="relative z-10 container mx-auto max-w-4xl px-4">
-        <Reveal as="header" className="mb-12 text-center sm:mb-16">
-          <div className="mb-4 flex justify-center">
-            <SectionBadge>{spec.badge}</SectionBadge>
-          </div>
-          <h2 className="mx-auto max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-balance text-foreground sm:text-3xl md:text-4xl">
-            {spec.title}
-          </h2>
-          {spec.intro && (
-            <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base md:text-lg">
-              {spec.intro}
-            </p>
-          )}
-        </Reveal>
+        <SectionHeader
+          badgeWrapperClassName="mb-4 flex justify-center"
+          badge={spec.badge}
+          title={spec.title}
+          titleClassName="mx-auto max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-balance text-foreground sm:text-3xl md:text-4xl"
+          description={spec.intro}
+          descriptionClassName="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base md:text-lg"
+        />
 
         <div className="space-y-0">
           {/* Rdzeń */}

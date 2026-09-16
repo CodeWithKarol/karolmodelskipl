@@ -5,91 +5,29 @@ import { StorySection } from "@/components/story-section"
 import { AboutSection } from "@/components/about-section"
 import { GuaranteeSection } from "@/components/guarantee-section"
 import { OfferSection } from "@/components/offer-section"
-import { ContrastSection } from "@/components/contrast-section"
+import { ComparisonTableSection } from "@/components/comparison-table-section"
 import { FaqSection } from "@/components/faq-section"
 import { ContactHubSection } from "@/components/contact-hub-section"
 import { content } from "@/lib/content"
+import { siteConfig } from "@/lib/site-config"
+import { buildServicePageJsonLd } from "@/lib/seo/json-ld"
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: content.metadata.title,
     description: content.metadata.description,
     alternates: {
-      canonical: "https://www.karolmodelski.pl",
+      canonical: siteConfig.url,
     },
   }
 }
 
 export default function Page() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebPage",
-        "@id": "https://www.karolmodelski.pl/#webpage",
-        url: "https://www.karolmodelski.pl/",
-        name: content.metadata.title,
-        isPartOf: {
-          "@type": "WebSite",
-          "@id": "https://www.karolmodelski.pl/#website",
-          url: "https://www.karolmodelski.pl/",
-          name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
-        },
-        about: {
-          "@id": "https://www.karolmodelski.pl/#person",
-        },
-        mainEntity: {
-          "@id": "https://www.karolmodelski.pl/#service",
-        },
-        hasPart: {
-          "@id": "https://www.karolmodelski.pl/#faq",
-        },
-      },
-      {
-        "@type": "ProfessionalService",
-        "@id": "https://www.karolmodelski.pl/#organization",
-        name: "Karol Modelski - Aplikacje Internetowe dla Firm | Warszawa",
-        url: "https://www.karolmodelski.pl/",
-        telephone: "+48664598563",
-        priceRange: "$$",
-        areaServed: "PL",
-        sameAs: "https://g.page/r/CZSVfAGtTiIzEBM",
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Warszawa",
-          addressCountry: "PL",
-        },
-        founder: {
-          "@type": "Person",
-          "@id": "https://www.karolmodelski.pl/#person",
-          name: "Karol Modelski",
-          jobTitle: "Niezależny Partner Technologiczny",
-          sameAs: "https://www.linkedin.com/in/karol-modelski/",
-        },
-      },
-      {
-        "@type": "Service",
-        "@id": "https://www.karolmodelski.pl/#service",
-        name: content.metadata.title,
-        description: content.metadata.description,
-        provider: {
-          "@id": "https://www.karolmodelski.pl/#organization",
-        },
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://www.karolmodelski.pl/#faq",
-        mainEntity: content.faq.items.map((item) => ({
-          "@type": "Question",
-          name: item.question,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: item.answer,
-          },
-        })),
-      },
-    ],
-  }
+  const jsonLd = buildServicePageJsonLd({
+    name: content.metadata.title,
+    description: content.metadata.description,
+    faq: content.faq,
+  })
 
   return (
     <main>
@@ -100,7 +38,7 @@ export default function Page() {
       <HeroSection />
       <TrustedBySection />
       <StorySection />
-      <ContrastSection />
+      <ComparisonTableSection comparison={content.comparison} />
       <OfferSection
         sectionId="zwrotnica"
         className="scroll-mt-20 sm:scroll-mt-16"

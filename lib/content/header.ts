@@ -1,3 +1,5 @@
+import type { HeaderContent } from "./types"
+
 export const header = {
   brand: {
     name: "Karol Modelski",
@@ -72,4 +74,4 @@ export const header = {
       ],
     },
   },
-}
+} satisfies HeaderContent

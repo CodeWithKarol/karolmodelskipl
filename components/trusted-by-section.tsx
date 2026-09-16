@@ -1,6 +1,6 @@
 import { ShieldCheck } from "lucide-react"
 import { content } from "@/lib/content"
-import { SectionBadge } from "@/components/section-badge"
+import { SectionHeader } from "@/components/section-header"
 import { Reveal } from "@/components/reveal"
 
 export function TrustedBySection() {
@@ -10,17 +10,16 @@ export function TrustedBySection() {
     <section className="relative overflow-hidden border-t border-border bg-background py-20 text-muted-foreground md:py-32">
       <div className="relative z-10 container mx-auto max-w-5xl px-4">
         {/* Header - Mobile First */}
-        <Reveal as="header" className="mb-10 text-center sm:mb-14">
-          <div className="mb-4">
-            <SectionBadge>
+        <SectionHeader
+          revealClassName="mb-10 text-center sm:mb-14"
+          badge={
+            <>
               <ShieldCheck className="h-4 w-4" />
               <span>{trustedBy.badge}</span>
-            </SectionBadge>
-          </div>
-          <h2 className="mx-auto mb-6 max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl">
-            {trustedBy.title}
-          </h2>
-        </Reveal>
+            </>
+          }
+          title={trustedBy.title}
+        />
 
         {/* Bridge of Trust - First-person quote, Mobile First */}
         <Reveal

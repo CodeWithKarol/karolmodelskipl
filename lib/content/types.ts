@@ -144,24 +144,6 @@ export interface ValueStackContent {
 /* Comparison / contrast                                                      */
 /* -------------------------------------------------------------------------- */
 
-export interface ComparisonRow {
-  feature: string
-  me: string
-  agency: string
-}
-
-export interface ComparisonContent {
-  badge?: string
-  title?: string
-  subtitle?: string
-  columns: {
-    feature: string
-    me: string
-    agency: string
-  }
-  rows: ComparisonRow[]
-}
-
 export interface ComparisonTableContent {
   badge?: string
   title?: string
@@ -170,28 +152,27 @@ export interface ComparisonTableContent {
   rows: { criterion: string; values: string[] }[]
 }
 
-export interface ContrastRow {
-  area?: string
-  blue: string
-  red: string
-  blueTitle?: string
-  redTitle?: string
+export interface OfferJsonLd {
+  serviceName?: string
+  serviceDescription?: string
+  serviceType?: string
 }
 
-export interface ContrastComparison {
-  red: { title: string; desc: string }
-  blue: { title: string; desc: string }
-}
-
-export interface ContrastContent {
-  badge?: string
-  title?: string
-  blue_title?: string
-  red_title?: string
-  blue_ocean_title?: string
-  red_ocean_title?: string
-  rows?: ContrastRow[]
-  comparisons?: ContrastComparison[]
+export interface OfferPageContent {
+  slug: string
+  metadata: ContentMetadata
+  jsonLd?: OfferJsonLd
+  qualificationHref: string
+  hero: HeroContent
+  story: StoryContent
+  storyStripPointPrefix?: boolean
+  comparison: ComparisonTableContent
+  offer: OfferContent
+  spec: ValueStackContent
+  guarantee: GuaranteeContent
+  continuation?: OfferContent
+  faq: FaqContent
+  cta: CtaContent
 }
 
 /* -------------------------------------------------------------------------- */
@@ -269,7 +250,6 @@ export interface GuaranteeContent {
   badge: string
   title: string
   subtitle: string
-  steps?: string[]
   items: GuaranteeItem[]
 }
 
@@ -289,11 +269,17 @@ export interface QualificationStep {
   options: QualificationOption[]
 }
 
+export interface QualificationRule {
+  key: string
+  values: string[]
+}
+
 export interface QualificationContent {
   badge: string
   title: string
   intro: string
   steps: QualificationStep[]
+  disqualify: QualificationRule[]
   messages: {
     rejected: { title: string; body: string; button: string; href: string }
   }
@@ -303,4 +289,51 @@ export interface QualificationContent {
     button: string
     footer: string
   }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Header / Footer                                                            */
+/* -------------------------------------------------------------------------- */
+
+export interface NavItem {
+  title: string
+  href: string
+  description: string
+}
+
+export interface HeaderContent {
+  brand: { name: string }
+  menu: {
+    mobile: { title: string; description: string }
+    oferta: { title: string; items: NavItem[] }
+    bazaWiedzy: {
+      title: string
+      href: string
+      description: string
+      items: NavItem[]
+    }
+  }
+}
+
+export interface FooterLink {
+  label: string
+  href: string
+}
+
+export interface FooterContent {
+  brand: { name: string; title: string; description: string }
+  solutions: { title: string; items: FooterLink[] }
+  guarantees: { title: string; items: { title: string; desc: string }[] }
+  contact: {
+    title: string
+    linkedin: string
+    linkedinLabel: string
+    coverage: string
+    email: string
+    phone: string
+    address: string
+    nip: string
+  }
+  legal: { title: string; items: FooterLink[] }
+  copyright: string
 }

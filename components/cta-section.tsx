@@ -2,11 +2,9 @@ import { content } from "@/lib/content"
 import { siteConfig } from "@/lib/site-config"
 import { CtaButton } from "@/components/cta-button"
 import { Sparkles, Target, ShieldCheck, Map } from "lucide-react"
-import { SectionBadge } from "@/components/section-badge"
+import { SectionHeader } from "@/components/section-header"
 import { Reveal } from "@/components/reveal"
 import type { CtaContent } from "@/lib/content/types"
-
-export type { CtaContent }
 
 type CtaSectionProps = {
   content?: CtaContent
@@ -30,21 +28,19 @@ export function CtaSection({
       <div className="pointer-events-none absolute bottom-0 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl"></div>
 
       <div className="relative z-10 container mx-auto max-w-5xl px-4">
-        <Reveal as="header" className="mb-8 text-center sm:mb-16">
-          <div className="mb-4">
-            <SectionBadge>
+        <SectionHeader
+          revealClassName="mb-8 text-center sm:mb-16"
+          badge={
+            <>
               <Sparkles className="h-3.5 w-3.5 shrink-0" />
               {cta.badge}
-            </SectionBadge>
-          </div>
-          <h2 className="mx-auto mb-3 max-w-3xl text-2xl leading-snug font-semibold tracking-tight text-balance text-foreground sm:mb-6 sm:text-3xl sm:leading-tight md:text-4xl">
-            {cta.title}
-          </h2>
-          <p
-            className="mx-auto max-w-2xl text-sm leading-relaxed font-normal text-pretty text-muted-foreground sm:text-base md:text-lg"
-            dangerouslySetInnerHTML={{ __html: cta.description }}
-          />
-        </Reveal>
+            </>
+          }
+          title={cta.title}
+          titleClassName="mx-auto mb-3 max-w-3xl text-2xl leading-snug font-semibold tracking-tight text-balance text-foreground sm:mb-6 sm:text-3xl sm:leading-tight md:text-4xl"
+          descriptionHtml={cta.description}
+          descriptionClassName="mx-auto max-w-2xl text-sm leading-relaxed font-normal text-pretty text-muted-foreground sm:text-base md:text-lg"
+        />
 
         <Reveal className="mx-auto max-w-2xl">
           <div className="mb-6 sm:mb-8">

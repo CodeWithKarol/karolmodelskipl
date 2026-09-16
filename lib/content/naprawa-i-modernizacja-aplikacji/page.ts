@@ -1,23 +1,24 @@
 import type {
+  ComparisonTableContent,
   ContentMetadata,
-  ContrastContent,
   CtaContent,
   FaqContent,
   GuaranteeContent,
   HeroContent,
+  OfferPageContent,
   ProcessContent,
   QualificationContent,
   StoryContent,
   ValueStackContent,
 } from "../types"
 
-export const metadata = {
+const metadata = {
   title: "Bezinwazyjna modernizacja oprogramowania | Niezależny Partner IT",
   description:
     "Bezpieczna modernizacja oprogramowania IT dla firm „na żywym organizmie”. Eliminuj błędy bez przerywania sprzedaży. Odbierz darmową diagnozę!",
 } satisfies ContentMetadata
 
-export const guarantee = {
+const guarantee = {
   badge: "Gwarancja Wykonawcza",
   title:
     "Gwarancja Mierzalnego Przyspieszenia: Wynik na stoperze albo zwrot 100% zaliczki",
@@ -36,7 +37,7 @@ export const guarantee = {
   ],
 } satisfies GuaranteeContent
 
-export const hero = {
+const hero = {
   badge: "Dla właścicieli e-commerce i B2B ze zwalniającym systemem",
   title: "Uzdrowię i przyspieszę Twój system w 2–4 tygodnie.",
   title_highlight:
@@ -66,7 +67,7 @@ export const hero = {
   ],
 } satisfies HeroContent
 
-export const story = {
+const story = {
   title: "Ile zysków traci Twój biznes w każdej sekundzie opóźnienia koszyka?",
   intro:
     "Wraz ze wzrostem sprzedaży w kodzie powstały zatory. Gdy koszyk kręci kółkiem ładowania zamiast finalizować płatność, klienci nie czekają — po prostu kupują u konkurencji.",
@@ -91,7 +92,7 @@ export const story = {
   ],
 } satisfies StoryContent
 
-export const valueStack = {
+const valueStack = {
   badge: "Stos Wartości",
   title: "Co dokładnie otrzymujesz w pakiecie?",
   intro: "",
@@ -149,41 +150,53 @@ export const valueStack = {
     "Bezpieczny model 50/50: 15 000 zł przy rezerwacji terminu i rozpoczęciu prac diagnostycznych na kopii testowej, a 15 000 zł dopiero po wdrożeniu na produkcję — gdy wspólnie zweryfikujemy stoperem osiągnięcie uzgodnionej szybkości działania.",
 } satisfies ValueStackContent
 
-export const contrast = {
+const comparison = {
   badge: "Porównanie modeli",
   title: "Bezinwazyjna Modernizacja vs. Przepisywanie od Zera",
-  blue_title: "Bezinwazyjna Modernizacja (Karol Modelski)",
-  red_title: "Przepisywanie od Zera (Software House)",
+  columns: [
+    "Bezinwazyjna Modernizacja (Karol Modelski)",
+    "Przepisywanie od Zera (Software House)",
+  ],
   rows: [
     {
-      area: "Ryzyko paraliżu firmy",
-      blue: "Zero ryzyka: Prace toczą się w pełnej izolacji, a klienci kupują bez przerw.",
-      red: "Ekstremalne: Ryzyko utraty danych, błędów i wstrzymania sprzedaży przy przełączaniu.",
+      criterion: "Ryzyko paraliżu firmy",
+      values: [
+        "Zero ryzyka: Prace toczą się w pełnej izolacji, a klienci kupują bez przerw.",
+        "Ekstremalne: Ryzyko utraty danych, błędów i wstrzymania sprzedaży przy przełączaniu.",
+      ],
     },
     {
-      area: "Czas do odczuwalnego efektu",
-      blue: "2 do 4 tygodni do pełnego przyspieszenia i odciążenia bazy danych.",
-      red: "6 do 12 miesięcy oczekiwania na nowy system, podczas gdy stary traci klientów.",
+      criterion: "Czas do odczuwalnego efektu",
+      values: [
+        "2 do 4 tygodni do pełnego przyspieszenia i odciążenia bazy danych.",
+        "6 do 12 miesięcy oczekiwania na nowy system, podczas gdy stary traci klientów.",
+      ],
     },
     {
-      area: "Budżet i koszty",
-      blue: "Jedna, stała kwota pakietowa (30 000 zł netto) w bezpiecznym modelu 50/50.",
-      red: "120 000 – 180 000 zł z góry, stale rosnące rachunki za roboczogodziny i aneksy.",
+      criterion: "Budżet i koszty",
+      values: [
+        "Jedna, stała kwota pakietowa (30 000 zł netto) w bezpiecznym modelu 50/50.",
+        "120 000 – 180 000 zł z góry, stale rosnące rachunki za roboczogodziny i aneksy.",
+      ],
     },
     {
-      area: "Ciągłość sprzedaży",
-      blue: "100% płynności: Cicha podmiana zoptymalizowanych modułów w nocy.",
-      red: "Konieczność zamrożenia rozwoju sprzedaży na czas trwania wielomiesięcznego projektu.",
+      criterion: "Ciągłość sprzedaży",
+      values: [
+        "100% płynności: Cicha podmiana zoptymalizowanych modułów w nocy.",
+        "Konieczność zamrożenia rozwoju sprzedaży na czas trwania wielomiesięcznego projektu.",
+      ],
     },
     {
-      area: "Odpowiedzialność",
-      blue: "Twarda gwarancja rezultatu na stoperze albo zwrot całej zaliczki.",
-      red: "Zero gwarancji na termin i wydajność — płacisz za czas pracy programistów.",
+      criterion: "Odpowiedzialność",
+      values: [
+        "Twarda gwarancja rezultatu na stoperze albo zwrot całej zaliczki.",
+        "Zero gwarancji na termin i wydajność — płacisz za czas pracy programistów.",
+      ],
     },
   ],
-} satisfies ContrastContent
+} satisfies ComparisonTableContent
 
-export const process = {
+const process = {
   badge: "Proces ratunkowy",
   title: "Jak przebiega proces uzdrawiania systemu w 4 tygodnie?",
   subheading: "Sprawdzony, 3-etapowy proces",
@@ -212,7 +225,7 @@ export const process = {
   ],
 } satisfies ProcessContent
 
-export const faq = {
+const faq = {
   title: "Najczęściej zadawane pytania",
   subtitle: "",
   items: [
@@ -248,7 +261,7 @@ export const faq = {
   ],
 } satisfies FaqContent
 
-export const offer = {
+const offer = {
   badge: "Twój pierwszy krok",
   title: "30-minutowa Diagnoza Wydajności",
   description:
@@ -335,6 +348,11 @@ export const qualification = {
       ],
     },
   ],
+  disqualify: [
+    { key: "scale", values: ["ponizej5k"] },
+    { key: "authority", values: ["pracownik"] },
+    { key: "budget", values: ["przyszly", "darmowa"] },
+  ],
   messages: {
     rejected: {
       title: "Dziękujemy za kontakt",
@@ -351,3 +369,18 @@ export const qualification = {
       "Rozmowa wideo 1-na-1 • Zero technicznego żargonu • Plan naprawy przesłany po spotkaniu",
   },
 } satisfies QualificationContent
+
+export const offerPage: OfferPageContent = {
+  slug: "naprawa-i-modernizacja-aplikacji",
+  metadata,
+  qualificationHref: "/kwalifikacja-modernizacja",
+  hero,
+  story,
+  storyStripPointPrefix: true,
+  comparison,
+  offer: process,
+  spec: valueStack,
+  guarantee,
+  faq,
+  cta: offer,
+}
