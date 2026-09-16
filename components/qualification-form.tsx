@@ -65,7 +65,10 @@ export function QualificationForm({
                   </span>
                   <span>{Math.round(progress)}%</span>
                 </div>
-                <Progress value={progress} className="mt-2 h-1.5" />
+                <Progress
+                  value={progress}
+                  className="mt-2 [&_[data-slot=progress-track]]:h-1.5"
+                />
               </div>
 
               <fieldset className="mt-8 text-left sm:mt-10">
@@ -160,14 +163,18 @@ export function QualificationForm({
                   <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
                     {qualification.qualified.body}
                   </p>
-                  <CtaButton asChild className="mt-6 w-full max-w-md">
-                    <a
-                      href={siteConfig.calendlyLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {qualification.qualified.button}
-                    </a>
+                  <CtaButton
+                    render={
+                      <a
+                        href={siteConfig.calendlyLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      />
+                    }
+                    nativeButton={false}
+                    className="mt-6 w-full max-w-md"
+                  >
+                    {qualification.qualified.button}
                   </CtaButton>
                   <p className="mt-3 text-[11px] font-medium text-muted-foreground">
                     {qualification.qualified.footer}
@@ -181,10 +188,13 @@ export function QualificationForm({
                   <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground">
                     {qualification.messages.rejected.body}
                   </p>
-                  <Button asChild variant="outline" className="mt-6">
-                    <a href={qualification.messages.rejected.href}>
-                      {qualification.messages.rejected.button}
-                    </a>
+                  <Button
+                    render={<a href={qualification.messages.rejected.href} />}
+                    nativeButton={false}
+                    variant="outline"
+                    className="mt-6"
+                  >
+                    {qualification.messages.rejected.button}
                   </Button>
                 </div>
               )}

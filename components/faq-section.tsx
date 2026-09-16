@@ -50,22 +50,21 @@ export function FaqSection({
 
         {/* Akordeon - borderless, hairline dividers */}
         <Reveal>
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion className="w-full">
             {faq.items.map((item, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="group/faq border-border transition-colors data-[state=open]:border-primary/40"
+                className="group/faq border-border transition-colors data-open:border-primary/40"
               >
                 <AccordionTrigger className="py-4 text-left text-sm font-semibold text-foreground transition-colors hover:text-foreground hover:no-underline sm:py-6 sm:text-base">
                   <span className="transition-transform duration-300 group-hover/faq:translate-x-0.5 group-hover/faq:text-foreground">
                     {item.question}
                   </span>
                 </AccordionTrigger>
-                <AccordionContent
-                  className="max-w-prose pb-5 text-xs leading-relaxed text-muted-foreground sm:pb-6 sm:text-sm [&_a]:font-medium [&_a]:text-primary [&_a]:transition-colors [&_a:hover]:text-primary [&_a:hover]:underline"
-                  dangerouslySetInnerHTML={{ __html: item.answer }}
-                />
+                <AccordionContent className="max-w-prose pb-5 text-xs leading-relaxed text-muted-foreground sm:pb-6 sm:text-sm [&_a]:font-medium [&_a]:text-primary [&_a]:transition-colors [&_a:hover]:text-primary [&_a:hover]:underline">
+                  <div dangerouslySetInnerHTML={{ __html: item.answer }} />
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
