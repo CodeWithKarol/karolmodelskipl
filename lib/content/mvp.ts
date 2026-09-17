@@ -12,296 +12,299 @@ import type {
 
 export const mvp = {
   metadata: {
-    title:
-      "Kompletny Fundament Technologiczny SaaS/B2B w 30 Dni (Pancerna Stabilność)",
+    title: "Gotowa do sprzedaży platforma dla biznesu w 30 dni | Karol Modelski",
     description:
-      "W 30 dni buduję kompletny fundament technologiczny Twojego SaaS/B2B: produkcyjna platforma pod Twoją domeną, pancernie stabilna i bezpieczna dla pieniędzy Twoich klientów, gotowa na realne wpłaty. Stała cena 50 000 zł, gwarancja terminu i zwrotu.",
+      "Od pomysłu do gotowej do sprzedaży platformy dla biznesu w dokładnie 30 dni. Stała cena, gwarancja terminu i zwrotu 25 000 zł zaliczki. Bezpłatna rozmowa osobista.",
   } satisfies ContentMetadata,
   service: {
-    title:
-      "Kompletny Fundament Technologiczny SaaS/B2B w 30 Dni (Pancerna Stabilność)",
+    title: "Gotowa do sprzedaży platforma dla biznesu w 30 dni",
     description:
-      "Produkcyjna platforma SaaS/B2B pod Twoją domeną, zbudowana w 30 dni z myślą o pancernej stabilności i bezpieczeństwie pieniędzy Twoich klientów — rejestracja użytkowników, bezpieczna baza danych, panel zarządzania i moduł płatności subskrypcyjnych. 100% praw autorskich do kodu w Twoich rękach.",
+      "Kompletna platforma dla biznesu pod Twoim adresem internetowym, zbudowana w 30 dni — bezpieczny panel klienta, jedna kluczowa funkcja biznesowa i w pełni zautomatyzowane przyjmowanie opłat. 100% praw autorskich do kodu w Twoich rękach.",
     type: "Tworzenie wersji pilotażowych oprogramowania",
-    offerName: "Bezpłatna Konsultacja Strategiczna i Plan Działania",
+    offerName: "Bezpłatna rozmowa osobista i osobisty plan działania",
     offerPrice: "0",
     offerCurrency: "PLN",
     offerDescription:
-      "Bezpłatna Sesja Kwalifikacyjna 1-na-1: inżynierskie cięcie kosztów — zostawiamy tylko to, za co klienci realnie zapłacą w pierwszym miesiącu — i prywatna mapa drogowa wdrożenia.",
+      "Bezpłatna rozmowa osobista 1-na-1: odcinamy zbędne koszty — zostawiamy tylko to, za co klienci realnie zapłacą w pierwszym miesiącu — i przygotowujemy osobisty plan wdrożenia.",
   },
   hero: {
-    badge: "Dla założycieli B2B & SaaS bez zaplecza technicznego",
+    badge:
+      "Dla założycieli firm tworzących systemy i usługi dla biznesu bez zaplecza programistycznego",
     title:
-      "Od pomysłu do gotowej do sprzedaży platformy B2B w dokładnie 30 dni.",
+      "Od pomysłu do gotowej do sprzedaży platformy dla biznesu w dokładnie 30 dni.",
     title_highlight:
-      "Zamiast 9 miesięcy czekania na agencję — kompletny system pod Twoją domeną z działającymi płatnościami.",
+      "Zamiast 9 miesięcy czekania na agencję programistyczną — kompletny system pod Twoim adresem internetowym z działającymi płatnościami.",
     subtitle:
-      "Działająca platforma w Dniu 30 albo zwracam 25 000 zł zaliczki, a kod zostaje u Ciebie.",
+      "Działająca platforma w 30. dniu albo zwracam 25 000 zł zaliczki, a kod zostaje u Ciebie.",
     qualification: {
       status_label: "Status na ten kwartał",
       status_value: "Zostało 1 z 2 miejsc",
-      title: "Program Wdrożenia Fundamentu SaaS/B2B w 30 Dni",
+      title: "Program wdrożenia platformy dla biznesu w 30 dni",
       description:
-        "Osobiste przejęcie 100% technologii i dowiezienie pod Twoją marką działającego produktu o pancernej stabilności i bezpieczeństwie.",
+        "Osobiste przejęcie 100% technologii i dowiezienie pod Twoją marką działającego systemu o stabilności i bezpieczeństwie sprawdzonym w bankach.",
       cta: "Sprawdź kwalifikację projektu",
       cta_line1: "Sprawdź kwalifikację projektu →",
       trust_label:
-        "Standardy architektury i bezpieczeństwa sprawdzone w systemach dla:",
+        "Standardy wykonania i bezpieczeństwa sprawdzone w systemach dla:",
       trust_logos: ["Citibank", "BNP Paribas", "Silent Eight", "Amway"],
     },
     cta_sub:
-      "Bezpłatna rozmowa 1-na-1 • 0 zł • Tylko 2 projekty w kwartale (Zostało 1 miejsce)",
+      "Bezpłatna rozmowa osobista • 0 zł • Tylko 2 projekty na kwartał (Zostało 1 wolne miejsce)",
     pegs: [
       {
-        title: "Stała cena (50/50)",
-        desc: "Jedna kwota za dowieziony efekt — zero dopłat za „nieprzewidziane trudności”.",
+        title: "Stała cena (rozliczenie pół na pół)",
+        desc: "Jedna kwota za dowieziony efekt biznesowy — zero dopłat za „nieprzewidziane trudności”.",
       },
       {
         title: "Gwarancja terminu",
-        desc: "W Dniu 30 weryfikujemy działanie płatnością kartą albo oddaję zaliczkę.",
+        desc: "W 30. dniu sprawdzamy działanie wpłatą kartą albo oddaję zaliczkę.",
       },
       {
-        title: "100% niezależności",
-        desc: "Pełne prawa autorskie, kod, baza i serwery należą wyłącznie do Ciebie.",
+        title: "Pełna niezależność",
+        desc: "Prawa autorskie, kod, baza danych i serwery należą w całości do Ciebie.",
       },
     ],
   } satisfies HeroContent,
   trap: {
     title:
-      "Dlaczego tradycyjny model tworzenia oprogramowania niszczy budżety założycieli?",
+      "Dlaczego tradycyjny sposób tworzenia oprogramowania niszczy budżety przedsiębiorców?",
     title_highlight: "",
     text1:
-      "Firmy programistyczne i software house'y zarabiają na <strong>długości trwania prac</strong>, a nie na tym, czy Twoja platforma zarobi chociaż jedną złotówkę. To fundamentalny konflikt interesów.",
+      "Tradycyjne agencje programistyczne zarabiają na <strong>przeciąganiu prac w nieskończoność</strong>, a nie na tym, czy Twój system zarobi chociaż jedną złotówkę. To jawna sprzeczność interesów.",
     text2: "",
     negative_points: [
       {
-        title: "Płacenie za czas, a nie za gotowy efekt",
-        desc: "Model „roboczogodzin” premiuje powolną pracę. Zamiast działającej platformy co miesiąc dostajesz faktury za „nieprzewidziane trudności”, a data uruchomienia systemu stale się oddala.",
+        title: "Płacenie za czas zamiast za gotowy rezultat",
+        desc: "Liczenie każdej godziny premiuje powolne tempo. Zamiast działającej platformy co miesiąc dostajesz kolejne faktury za „nieprzewidziane trudności”, a data uruchomienia ciągle się oddala.",
       },
       {
-        title: "Zasłona dymna technicznego żargonu",
-        desc: "Zamiast rozmawiać o sprzedaży i klientach, tracisz energię na próby zrozumienia skrótów i pojęć architektonicznych. Niejasna komunikacja odbiera Ci kontrolę nad własnym budżetem.",
+        title: "Zasłona dymna branżowego żargonu",
+        desc: "Zamiast rozmawiać o sprzedaży i klientach, tracisz energię na próby rozszyfrowania skrótów i pojęć technicznych. Niejasny język odbiera Ci pełną kontrolę nad budżetem.",
       },
       {
-        title: "Przeładowanie systemu zbędnym kodem",
-        desc: "Programiści chętnie zbudują 30 podstron i skomplikowane panele — bo na tym zarabiają. Po pół roku zostajesz z gigantycznym kombajnem, którego żaden klient nie potrzebuje do podjęcia decyzji o zakupie.",
+        title: "Przeładowanie systemu zbędnymi funkcjami",
+        desc: "Programiści chętnie dopiszą 30 podstron i skomplikowane ekrany, bo na tym zarabiają. Po pół roku zostajesz z gigantycznym narzędziem, którego żaden klient nie potrzebuje do podjęcia decyzji o zakupie.",
       },
       {
-        title: "Paraliż przed inwestorskim audytem technologicznym",
-        desc: "Platforma sklejona prowizorycznie przez przypadkowych wykonawców rozsypie się przy pierwszym audycie technicznym. Inwestor powie wprost: „kod do kosza, zaczynamy od nowa”. Tracisz kapitał i wiarygodność.",
+        title: "Strach przed technicznym prześwietleniem przez inwestora",
+        desc: "Platforma posklejana byle jak przez przypadkowych wykonawców rozsypie się przy pierwszej weryfikacji. Inwestor powie wprost: „kod do kosza, zaczynamy od zera”. Tracisz zaufanie i szansę na kapitał.",
       },
     ],
     positive_point:
-      "Zamiast miesiącami czekać na idealny produkt, buduję kompletny fundament technologiczny Twojego SaaS/B2B w 30 dni, skupiając się wyłącznie na tym, co generuje zysk.",
+      "Zamiast miesiącami czekać na idealny produkt, buduję kompletny system dla biznesu w 30 dni, skupiając się wyłącznie na tym, co generuje zysk.",
   },
   usp: {
-    title: 'Model "Elite": Twoja przewaga technologiczna',
+    title: "Twój Osobisty Partner Technologiczny",
     subtitle:
       "Poznaj fundamenty mojego podejścia, dzięki którym oszczędzasz czas i pieniądze.",
     cards: [
       {
-        title: "Zero waty procesowej",
+        title: "Zero zbędnych ogniw",
         desc: "Płacisz za czystą inżynierię, a nie za spotkania z kierownikami projektów, którzy przekazują Twoje słowa programiście. Rozmawiasz bezpośrednio z autorem Twojego systemu.",
       },
       {
         title: "Projektowanie pod zwrot z inwestycji",
-        desc: "Nie buduję „na zapas”. Projektuję system tak, aby był tani w utrzymaniu, ale gotowy na skalowanie, gdy tylko zaczniesz generować zysk z pierwszych klientów.",
+        desc: "Nie buduję „na zapas”. Projektuję system tak, aby był tani w utrzymaniu, ale gotowy na rozwój, gdy tylko zaczniesz zarabiać na pierwszych klientach.",
       },
       {
         title: "Tempo startowe",
-        desc: "Wykorzystuję nowoczesne, zwinne podejście, które pozwala dowieźć wersję gotową do testów rynkowych w zaledwie 4 tygodnie.",
+        desc: "Wykorzystuję nowoczesne podejście, które pozwala dowieźć wersję gotową do testów rynkowych w zaledwie 4 tygodnie.",
       },
     ],
   },
   comparison: {
-    title: "Tradycyjny Software House vs. Twój Osobisty Partner Technologiczny",
-    columns: ["Współpraca ze Mną", "Klasyczny Software House"],
+    title:
+      "Porównanie modeli: Tradycyjna agencja programistyczna a Twój Osobisty Partner Technologiczny",
+    columns: ["Współpraca ze mną", "Tradycyjna agencja programistyczna"],
     rows: [
       {
-        criterion: "Czas do efektu",
+        criterion: "Czas do uruchomienia",
         values: [
-          "Dokładnie 30 dni od zatwierdzenia planu. Działający system gotowy na rynek w 1 miesiąc.",
-          "Od 6 do 12 miesięcy planowania, analiz i ciągłych przesunięć terminu wdrożenia.",
+          "Dokładnie 30 dni od zatwierdzenia planu. Działający system gotowy do sprzedaży w 1 miesiąc.",
+          "Od 6 do 12 miesięcy analiz, planowania i ciągłych opóźnień.",
         ],
       },
       {
-        criterion: "Model rozliczenia i budżet",
+        criterion: "Rozliczenie i budżet",
         values: [
-          "Jedna, stała cena za dowieziony efekt biznesowy. Zero dopłat za „nieprzewidziane trudności”.",
-          "Płatność za roboczogodziny: budżet rośnie z każdym miesiącem, brak ostatecznej ceny.",
+          "Jedna, z góry ustalona kwota za dowieziony rezultat. Zero dopłat za „nieprzewidziane trudności”.",
+          "Płatność za godziny: rachunek rośnie co miesiąc, brak gwarancji ceny końcowej.",
         ],
       },
       {
-        criterion: "Język i komunikacja",
+        criterion: "Język i kontakt",
         values: [
-          "Rozmawiasz bezpośrednio z doświadczonym inżynierem. Prosty język biznesu, zysków i wygody Twoich klientów.",
-          "Niezrozumiały żargon techniczny, głuche telefony przez project managerów i praca z rotującymi juniorami.",
+          "Rozmawiasz wprost z doświadczonym inżynierem. Prosty język zysków, stabilności i wygody Twoich odbiorców.",
+          "Obce skróty, głuche telefony przez pośredników i praca z początkującymi programistami.",
         ],
       },
       {
-        criterion: "Końcowy efekt i niezależność",
+        criterion: "Efekt końcowy i niezależność",
         values: [
-          "Gotowa do zarabiania platforma: pancerna stabilność i bezpieczeństwo pieniędzy Twoich klientów (doświadczenie z Citibank, BNP Paribas), pełna własność i dokumentacja kodu — każdy kolejny inżynier przejmie projekt z marszu.",
-          "Paczka plików z kodem, której nie potrafisz zweryfikować. Uzależnienie technologiczne i opłaty za każdą drobną zmianę.",
+          "Gotowa platforma zarabiająca pieniądze: bezpieczeństwo i stabilność bankowa, pełna własność i opis działania systemu — każdy programista przejmie pracę od ręki.",
+          "Zbiór plików z kodem, którego nie umiesz ocenić. Pełne uzależnienie i opłaty za każdą drobną poprawkę.",
         ],
       },
     ],
   } satisfies ComparisonTableContent,
   mechanism: {
-    title: "Jak to możliwe w 30 dni? Dokładnie, a nie na oko.",
+    title: "Plan wdrożenia: Jak to robimy w 30 dni? Dokładnie, a nie na oko",
     subtitle:
-      "Pancerną stabilność i bezpieczeństwo wypracowane w globalnych instytucjach finansowych przeniosłem do projektów technologicznych — bez korporacyjnej biurokracji i opóźnień. 30 dni rozbite na 3 bezlitosne etapy:",
+      "Stabilność i bezpieczeństwo wypracowane w bankach przeniosłem do systemów biznesowych — bez zbędnej biurokracji i przeciągania terminów. Całość zamykamy w 3 konkretnych etapach:",
     cards: [
       {
         label: "Dni 1–3",
         title: "Odcięcie zbędnych kosztów",
         content:
-          "Wspólnie prześwietlamy Twój pomysł. Wyrzucamy 80% funkcji, które tylko spalą budżet, a nie przyniosą pierwszych zysków. Ustalamy prostą, niezmienną ścieżkę: od wejścia klienta na stronę do zakupu.",
+          "Wspólnie prześwietlamy Twój pomysł. Wyrzucamy 80% zbędnych funkcji, które tylko przepalają budżet, a nie przynoszą pierwszych wpłat. Wytyczamy prostą, niezmienną ścieżkę: od wejścia klienta na stronę do zakupu.",
       },
       {
         label: "Dni 4–24",
         title: "Budowa maszyny sprzedażowej",
         content:
-          "Przejmuję 100% technologii. Stawiam pancerne zaplecze, system kont i bezpieczne bramki płatności. Ty w tym czasie skupiasz się na tym, co najważniejsze — rozmowach z pierwszymi klientami.",
+          "Przejmuję całą technologię na siebie. Tworzę stabilne zaplecze, bezpieczny panel użytkownika i zautomatyzowane przyjmowanie opłat. Ty w tym czasie skupiasz się na tym, co najważniejsze — rozmowach z pierwszymi klientami.",
       },
       {
         label: "Dni 25–30",
-        title: "Test ogniowy i start wpłat",
+        title: "Test ogniowy i uruchomienie wpłat",
         content:
-          "Podpinamy Twoją domenę. Razem wykonujemy testowy zakup prawdziwą kartą. W 30. dniu Twój system jest gotowy przyjmować oficjalne zamówienia.",
+          "Podpinamy Twój oficjalny adres internetowy. Razem wykonujemy testowy zakup prawdziwą kartą. W 30. dniu Twój system jest gotowy przyjmować oficjalne zamówienia.",
       },
     ],
   },
   spec: {
-    badge: "Specyfikacja Pakietu & Warunki Rozliczenia",
-    title: "Kompletny Fundament Technologiczny Twojej Platformy",
+    badge: "Zawartość pakietu i warunki rozliczenia",
+    title: "Kompletny system gotowy do zarabiania",
     intro:
-      "Nie kupujesz mglistych obietnic ani niesprawdzonych paczek plików. Otrzymujesz działający system gotowy do obsługi klientów i przyjmowania wpłat od pierwszego dnia — z kompletną, zamkniętą ścieżką od wejścia na stronę po legalną, bezobsługową sprzedaż B2B.",
+      "Nie kupujesz mglistych obietnic ani paczek z plikami. Otrzymujesz działający system gotowy do obsługi zamówień i pobierania opłat od pierwszego dnia — z zamkniętą ścieżką od wejścia na stronę po w pełni zautomatyzowaną sprzedaż.",
     core: {
-      title: "Gotowa do Monetyzacji Platforma B2B",
-      value: "Wartość: 110 000 zł",
-      desc: "Kompletny, zarabiający system produkcyjny pod Twoją domeną — bez dotykania kodu i ręcznych rozliczeń:",
+      title: "Gotowa do zarabiania platforma internetowa",
+      value: "Wartość rynkowa: 110 000 zł",
+      desc: "Kompletny, zarabiający system pod Twoim adresem internetowym — bez zaglądania w kod i bez ręcznych rozliczeń:",
       tiers: [
         {
-          label: "Ścieżka sprzedaży B2B",
-          text: "Płatności kartą i BLIK z automatyczną fakturą (KSeF) i dostępem do usługi od ręki.",
+          label: "Ścieżka sprzedaży dla firm",
+          text: "Szybkie płatności kartą i kodem mobilnym z automatycznym wystawianiem faktur w Krajowym Systemie e-Faktur oraz natychmiastowym dostępem do usługi.",
         },
         {
           label: "Serce systemu",
-          text: "Bezpieczny panel klienta i jeden kluczowy silnik biznesowy, za który płaci rynek.",
+          text: "Bezpieczny panel klienta i główna funkcja biznesowa, za którą płaci rynek.",
         },
         {
-          label: "Gotowość w Dniu 30",
-          text: "Środki zasilają Twoje konto firmowe od razu po autoryzacji transakcji.",
+          label: "Gotowość w 30. dniu",
+          text: "Pieniądze ze sprzedaży trafiają na Twoje konto firmowe natychmiast po udanej transakcji.",
         },
       ],
     },
     bonuses: [
       {
-        tag: "Bonus 1",
-        title: "Osobista Tarcza Inwestorska",
+        tag: "Dodatek 1",
+        title: "Osobista tarcza przed inwestorami",
         value: "Wartość: 25 000 zł",
-        desc: "Moja obecność na 30-minutowym audycie z Twoim inwestorem lub aniołem biznesu. Kiedy padną podchwytliwe pytania o bazy danych, bezpieczeństwo transakcji i odporność na awarie, mówisz spokojnie: „Oddaję głos mojemu inżynierowi”. Biorę techniczny ogień na siebie, chroniąc Twoją wiarygodność i wycenę spółki.",
+        desc: "Moja osobista obecność na 30-minutowym sprawdzianie technicznym z Twoim inwestorem. Kiedy padną podchwytliwe pytania o bazy danych, bezpieczeństwo transakcji i odporność na awarie, mówisz spokojnie: „Oddaję głos mojemu inżynierowi”. Biorę techniczny ogień na siebie, chroniąc Twoją wiarygodność i wycenę firmy.",
       },
       {
-        tag: "Bonus 2",
-        title: "60 Dni Ochrony Startowej",
+        tag: "Dodatek 2",
+        title: "60 dni technicznej ochrony na start",
         value: "Wartość: 30 000 zł",
-        desc: "Prywatny numer do mnie i gwarancja interwencji do 4 godzin. Kiedy wpuszczasz na platformę pierwszych płacących klientów, nie drżysz o to, że serwer padnie w trakcie transakcji. Zyskujesz dwa miesiące absolutnego spokoju i asysty inżyniera, który stworzył ten kod.",
+        desc: "Prywatny bezpośredni numer do mnie i gwarancja reakcji do 4 godzin. Kiedy wpuszczasz na platformę pierwszych płacących klientów, nie drżysz o to, że serwer nagle odmówi posłuszeństwa. Zyskujesz dwa miesiące spokoju i asysty inżyniera, który napisał ten kod.",
       },
       {
-        tag: "Bonus 3",
-        title: "Książka Wolności Technologicznej",
+        tag: "Dodatek 3",
+        title: "Księga technicznej niezależności",
         value: "Wartość: 15 000 zł",
-        desc: "Koniec ze „złotą klatką” agencji. Otrzymujesz 100% praw autorskich i czysty folder wdrożeniowy. Gdy za rok zatrudnisz wewnętrznego programistę, wręczasz mu dokumentację, a on podejmuje pracę w 24 godziny — bez marudzenia, że „kod jest do wyrzucenia i trzeba pisać od nowa”.",
+        desc: "Koniec z uzależnieniem od wykonawców. Otrzymujesz 100% majątkowych praw autorskich i czysty przewodnik po systemie. Gdy w przyszłości zatrudnisz własnego programistę, wręczasz mu dokumentację, a on podejmuje pracę w 24 godziny — bez narzekania, że „kod jest do wyrzucenia i trzeba pisać od nowa”.",
       },
     ],
-    summary_label: "Kotwica rynkowa (koszt alternatywny):",
+    summary_label: "Zestawienie kosztów alternatywnych:",
     summary_value:
-      "Klasyczny software house: 120 000 – 180 000 zł, 6–12 miesięcy niepewności i niekończące się faktury za roboczogodziny.",
-    price_label: "Twoja inwestycja:",
+      "Klasyczna agencja programistyczna: 120 000 – 180 000 zł, 6–12 miesięcy niepewności i niekończące się rachunki za roboczogodziny.",
+    price_label: "Twoja inwestycja u mnie:",
     price_amount: "50 000 zł netto",
     payment:
-      "Stała kwota, jedna umowa, zero ukrytych kosztów. Bezpieczna płatność 50/50: 25 000 zł przy rezerwacji terminu (blokada mojego czasu w kwartale), a 25 000 zł dopiero w 30. dniu — gdy system działa, a na ekranie widzisz potwierdzenie udanej płatności.",
+      "Stała kwota, jedna umowa, zero ukrytych kosztów. Bezpieczna płatność w modelu pół na pół: 25 000 zł przy rezerwacji terminu (blokada mojego czasu w kwartale), a drugie 25 000 zł dopiero w 30. dniu — gdy system działa i widzisz potwierdzenie udanej płatności.",
     bullets: [
-      "Pełna faktura VAT",
-      "Jedna umowa — zero aneksów i ukrytych kosztów",
-      "Gwarancja terminu i zwrotu 25 000 zł zaliczki w umowie",
+      "Pełna faktura z podatkiem od towarów i usług",
+      "Jedna umowa — zero dopłat i aneksów",
+      "Gwarancja terminu i zwrotu 25 000 zł zaliczki wpisana wprost do umowy",
     ],
   } satisfies ValueStackContent,
   guarantee: {
-    badge: "Gwarancje i Bezpieczeństwo",
+    badge: "Gwarancje i bezpieczeństwo",
     title: "Całe ryzyko opóźnienia biorę na siebie.",
     subtitle:
-      "Rozliczamy się wyłącznie za dowieziony rezultat w modelu 50/50. Drugą połowę płacisz dopiero w Dniu 30 — gdy platforma działa pod Twoją domeną i wspólnie przeprowadzimy udaną transakcję testową.",
+      "Rozliczamy się wyłącznie za dowieziony rezultat. Drugą połowę płacisz dopiero w 30. dniu — gdy platforma działa pod Twoim adresem i wspólnie przeprowadzimy udaną transakcję testową.",
     items: [
       {
-        title: "Pełna Gotowość Transakcyjna w 30 Dni albo Darmowy Kod",
-        desc: "Jeśli w Dniu 30 platforma nie przejdzie testu płatności lub nie będzie w 100% gotowa na klientów:",
+        title: "Pełna gotowość do sprzedaży w 30 dni albo darmowy kod",
+        desc: "Jeśli w 30. dniu platforma nie przejdzie testu płatności lub nie będzie w 100% gotowa na przyjęcie klientów:",
         bullets: [
-          "Oddaję Ci 100% zaliczki (25 000 zł) co do grosza.",
-          "Cały zbudowany kod i serwery zostają u Ciebie za 0 zł.",
-          "Opłacam 3 miesiące Twojego serwera, byś nie poniósł ani złotówki straty.",
+          "Oddaję Ci całe 25 000 zł zaliczki co do grosza.",
+          "Cały zbudowany kod i konfiguracja serwerów zostają u Ciebie za 0 zł.",
+          "Opłacam 3 miesiące utrzymania Twojego serwera, byś nie poniósł ani złotówki straty.",
         ],
-        note: "Błąd w terminie kosztuje mnie, nie Ciebie.",
+        note: "Spóźnienie kosztuje mnie, a nie Ciebie.",
       },
       {
-        title: "Koniec ze złotą klatką: pełna własność i dokumentacja",
-        desc: "Nie buduję wokół Ciebie „złotej klatki”. Otrzymujesz 100% praw autorskich i pełną dokumentację. Każdy kolejny inżynier przejmie projekt z marszu, bez narzekania, że trzeba pisać od nowa.",
+        title: "Koniec z uzależnieniem od wykonawców: pełna własność i dokumentacja",
+        desc: "Otrzymujesz 100% majątkowych praw autorskich i pełną dokumentację systemu. Każdy kolejny programista przejmie pracę od ręki, bez narzekania, że trzeba pisać wszystko od nowa.",
       },
     ],
   } satisfies GuaranteeContent,
   faq: {
     title: "Najczęściej zadawane pytania",
     subtitle:
-      "Decyzja o szybkim starcie nowej aplikacji rodzi naturalne pytania. Oto odpowiedzi na kwestie, które najczęściej poruszają przedsiębiorcy:",
+      "Decyzja o szybkim starcie nowej platformy rodzi naturalne pytania. Oto odpowiedzi na kwestie, które najczęściej poruszają przedsiębiorcy:",
     items: [
       {
-        question:
-          "Czy fundament technologiczny w 30 dni to pełnoprawna aplikacja?",
+        question: "Czy platforma zbudowana w 30 dni to pełnoprawne rozwiązanie?",
         answer:
-          "Tak. Otrzymujesz w 100% działający, komercyjny system gotowy na rynek, a nie „makietę” czy prototyp. System posiada bezpieczną rejestrację użytkowników, panel klienta, jeden kluczowy silnik biznesowy Twojego pomysłu (główna funkcja, za którą płaci użytkownik) oraz zintegrowane bramki płatności z w pełni skonfigurowanym fakturowaniem (m.in. KSeF), automatycznymi mailami powitalnymi i dostępem do usługi od razu po autoryzacji karty. Twoi klienci wchodzą, płacą i korzystają z usługi, a pieniądze trafiają na Twoje konto firmowe. Różnica między nami a agencją polega na tym, że zamiast budować przez 9 miesięcy 40 podstron, których nikt nie odwiedzi, skupiamy się na jednej, kluczowej ścieżce: od wejścia na stronę do legalnej, bezobsługowej sprzedaży.",
+          "Tak. Otrzymujesz w 100% działający system gotowy do sprzedaży, a nie makietę czy prototyp. Platforma ma bezpieczną rejestrację użytkowników, panel klienta, jedną kluczową funkcję biznesową Twojego pomysłu (główną funkcję, za którą płaci klient) oraz podłączone płatności z automatycznym wystawianiem faktur w Krajowym Systemie e-Faktur, automatycznymi wiadomościami powitalnymi i dostępem do usługi od razu po udanej płatności. Twoi klienci wchodzą, płacą i korzystają z usługi, a pieniądze trafiają na Twoje konto firmowe. Różnica między nami a agencją polega na tym, że zamiast budować przez 9 miesięcy 40 podstron, których nikt nie odwiedzi, skupiamy się na jednej, kluczowej ścieżce: od wejścia na stronę do w pełni zautomatyzowanej sprzedaży.",
       },
       {
-        question: "Co dzieje się z aplikacją po tych 30 dniach?",
+        question: "Co dzieje się z systemem po zakończeniu tych 30 dni?",
         answer:
-          "Aplikacja działa pod Twoją domeną i jest gotowa zarabiać, a Ty nie zostajesz z tym sam. Przez kolejne 60 dni obejmuje Cię Ochrona Startowa — masz mój prywatny kontakt i gwarancję reakcji w przypadku problemów uniemożliwiających zakupy. Po tym czasie nie jesteś od nikogo uzależniony: nie płacisz mi żadnego obowiązkowego abonamentu za „utrzymanie”, nie ma tu ukrytych licencji ani zamkniętego oprogramowania. Kod, baza i serwery należą w 100% do Ciebie. Możesz rozwijać system ze mną, zatrudnić własnego inżyniera albo po prostu pozwolić platformie zarabiać.",
-      },
-      {
-        question: "Czy mój pomysł jest bezpieczny i poufny?",
-        answer:
-          "Zanim zdradzisz mi choćby jedno słowo na temat swojej koncepcji, podpisujemy przejrzystą umowę o zachowaniu poufności (NDA). Jako inżynier z doświadczeniem w globalnych instytucjach finansowych (Citibank, BNP Paribas) na co dzień operuję w rygorach tajemnicy bankowej i najwyższych standardów ochrony własności intelektualnej. Twój pomysł, Twoja baza klientów i cała stworzona własność intelektualna należą prawnie wyłącznie do Ciebie.",
+          "Platforma działa pod Twoim adresem internetowym i jest gotowa zarabiać, a Ty nie zostajesz z tym sam. Przez kolejne 60 dni obejmuje Cię Ochrona Startowa — masz mój prywatny kontakt i gwarancję reakcji w przypadku problemów uniemożliwiających zakupy. Po tym czasie nie jesteś od nikogo uzależniony: nie płacisz żadnego obowiązkowego abonamentu za utrzymanie, nie ma ukrytych licencji ani zamkniętego oprogramowania. Kod, baza danych i serwery należą w 100% do Ciebie. Możesz rozwijać system ze mną, zatrudnić własnego programistę albo po prostu pozwolić platformie zarabiać.",
       },
       {
         question:
-          "Dlaczego warto wybrać Ciebie zamiast dużej agencji programistycznej?",
+          "W jaki sposób dbamy o bezpieczeństwo i poufność Twojego pomysłu?",
         answer:
-          "Duże software house'y sprzedają roboczogodziny — im dłużej budują Twój system, tym więcej zarabiają. Projekt, który u mnie trwa 30 dni, w agencji przechodzi przez handlowców, project managerów i rotujących juniorów, co wydłuża start do 6–12 miesięcy i generuje rachunki rzędu 120 000 – 180 000 zł. U mnie rozmawiasz bezpośrednio z głównym inżynierem. Płacisz jedną, stałą kwotę za dowieziony rezultat biznesowy. Przede wszystkim: agencja nie bierze żadnej odpowiedzialności za terminy — ja daję twardą gwarancję zwrotu 100% zaliczki, jeśli system nie ruszy w 30. dniu.",
+          "Zanim zdradzisz mi choćby jedno słowo na temat swojego pomysłu, podpisujemy przejrzystą umowę o zachowaniu poufności. Jako inżynier z doświadczeniem w globalnych instytucjach finansowych (Citibank, BNP Paribas) na co dzień pracuję w rygorach tajemnicy bankowej i najwyższych standardów ochrony własności intelektualnej. Twój pomysł, Twoja baza klientów i cała stworzona własność intelektualna należą prawnie wyłącznie do Ciebie.",
+      },
+      {
+        question:
+          "Dlaczego lepiej wybrać bezpośrednią współpracę ze mną zamiast dużej agencji programistycznej?",
+        answer:
+          "Duże agencje programistyczne sprzedają godziny pracy — im dłużej budują Twój system, tym więcej zarabiają. Projekt, który u mnie trwa 30 dni, w agencji przechodzi przez handlowców, kierowników projektów i zmieniających się początkujących programistów, co wydłuża start do 6–12 miesięcy i generuje rachunki rzędu 120 000 – 180 000 zł. U mnie rozmawiasz bezpośrednio z inżynierem, który buduje Twój system. Płacisz jedną, stałą kwotę za dowieziony rezultat. Przede wszystkim: agencja nie bierze odpowiedzialności za terminy — ja daję twardą gwarancję zwrotu całej zaliczki, jeśli system nie ruszy w 30. dniu.",
       },
     ],
   } satisfies FaqContent,
   cta: {
-    badge: "Tylko 2 projekty w kwartale",
-    title: "Sprawdź, czy Twój pomysł wdrożymy w 30 dni.",
+    badge: "Tylko 2 wdrożenia w kwartale",
+    title: "Sprawdź, czy Twój pomysł uruchomimy w 30 dni.",
     description:
-      "Pracuję osobiście, bez podwykonawców. Limit 2 projektów na kwartał to jedyny sposób, by zagwarantować 30-dniowy start i pełne bezpieczeństwo Twojej zaliczki.",
+      "Pracuję osobiście, bez podwykonawców. Ograniczenie do 2 projektów na kwartał to jedyny sposób, by zagwarantować terminowy start i pełne bezpieczeństwo Twoich pieniędzy.",
     package_title: "Twój pierwszy krok (30 sekund):",
     offer_items: [
       {
-        title: "Rozmowa 1-na-1 (30 min):",
+        title: "Rozmowa osobista (30 minut):",
         desc: "Prześwietlamy Twój pomysł i wycinamy 80% zbędnych funkcji. Skupiamy się wyłącznie na tym, za co rynek zapłaci od pierwszego dnia.",
       },
       {
-        title: "Analiza ryzyk (Raport PDF):",
-        desc: "Czarno na białym pokazuję, gdzie agencje ukrywają koszty w aneksach i które błędy zablokowałyby Twój rozwój.",
+        title: "Wykaz zagrożeń (zestawienie do pobrania):",
+        desc: "Czarno na białym wskazuję, gdzie agencje ukrywają dodatkowe opłaty i które błędy zablokowałyby Twój rozwój.",
       },
       {
-        title: "Prywatna Mapa Drogowa (Raport PDF):",
-        desc: "Gotowy harmonogram 30-dniowego startu ze stałą, gwarantowaną ceną (50 000 zł netto w 50/50) — bez ryzyka dopłat.",
+        title: "Osobisty plan działania (zestawienie do pobrania):",
+        desc: "Gotowy harmonogram 30-dniowego startu ze stałą ceną (50 000 zł netto płatne pół na pół) — bez ryzyka niespodziewanych dopłat.",
       },
     ],
     button: "Wypełnij 30-sekundową ankietę kwalifikacyjną →",
-    note: "Podczas bezpłatnej 30-minutowej rozmowy strategicznej powiem Ci wprost: czy ten system da się bezpiecznie postawić i zmonetyzować w 30 dni, czy lepiej odpuścić.",
+    format:
+      "100% bezpłatnie • Rozmowa wideo w cztery oczy • Zero nacisku i zero technicznego żargonu",
+    note: "Podczas bezpłatnej 30-minutowej rozmowy powiem Ci wprost: czy ten system da się bezpiecznie postawić i uruchomić w 30 dni, czy lepiej odpuścić.",
+    availability: "Dostępność: Dokładnie 2 projekty w kwartale.",
     footer:
       "Dostępność: Dokładnie 2 projekty w kwartale. Po wyczerpaniu miejsc kolejny nabór rusza dopiero za 3 miesiące.",
   } satisfies CtaContent,
@@ -317,8 +320,7 @@ export const mvp = {
         options: [
           {
             value: "spec",
-            label:
-              "Mam gotową specyfikację / makietę i chcę ruszać natychmiast",
+            label: "Mam gotową specyfikację lub makiety i chcę ruszać natychmiast",
           },
           {
             value: "pomysl",
@@ -331,7 +333,7 @@ export const mvp = {
       {
         key: "budget",
         label:
-          "Fundament technologiczny realizuję w stałej cenie 50 000 zł netto (model 50/50: 25 000 zł na start i 25 000 zł po udanej transakcji testowej). Czy Twoja firma posiada zabezpieczony budżet na to wdrożenie?",
+          "Platformę dla biznesu realizuję w stałej cenie 50 000 zł netto (model pół na pół: 25 000 zł na start i 25 000 zł po udanej transakcji testowej). Czy Twoja firma posiada zabezpieczony budżet na to wdrożenie?",
         options: [
           {
             value: "tak",
