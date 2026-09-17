@@ -24,7 +24,7 @@ export function GuaranteeSection({
       <div className="relative z-10 container mx-auto max-w-5xl px-4">
         {/* Header - Mobile First */}
         <SectionHeader
-          revealClassName="mb-8 text-center sm:mb-16"
+          revealClassName="mb-8 sm:mb-16"
           badgeWrapperClassName="mb-3 sm:mb-4"
           badge={
             <>
@@ -33,13 +33,13 @@ export function GuaranteeSection({
             </>
           }
           title={guarantee.title}
-          titleClassName="mx-auto mb-3 max-w-3xl text-2xl leading-snug font-semibold tracking-tight text-foreground sm:mb-6 sm:text-3xl sm:leading-tight md:text-4xl"
+          titleClassName="mb-3 max-w-3xl text-2xl leading-snug font-semibold tracking-tight text-foreground sm:mb-6 sm:text-3xl sm:leading-tight md:text-4xl lg:mx-auto"
           description={guarantee.subtitle}
-          descriptionClassName="mx-auto max-w-2xl text-xs leading-relaxed font-normal text-muted-foreground sm:text-base md:text-lg"
+          descriptionClassName="max-w-2xl text-xs leading-relaxed font-normal text-muted-foreground sm:text-base md:text-lg lg:mx-auto"
         />
 
         {/* Lista - Mobile: kolumna (icon nad treścią), Desktop: icon obok treści */}
-        <div className="mx-auto max-w-3xl">
+        <div className="max-w-3xl lg:mx-auto">
           {guarantee.items.map((item, i) => {
             const Icon = icons[i % icons.length]
             return (

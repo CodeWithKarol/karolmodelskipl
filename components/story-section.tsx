@@ -36,25 +36,25 @@ export function StorySection({
     >
       <div className="relative z-10 container mx-auto max-w-5xl px-4">
         {/* Header - Mobile First */}
-        <Reveal as="header" className="mb-16 text-center">
+        <Reveal as="header" className="mb-16 text-left lg:text-center">
           <div className="mb-4">
             <SectionBadge variant="neutral">
               <Flame className="h-4 w-4" />
               <span>{BADGE}</span>
             </SectionBadge>
           </div>
-          <h2 className="mx-auto mb-6 max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl">
+          <h2 className="mb-6 max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-balance text-foreground sm:text-3xl md:text-4xl lg:mx-auto">
             {title ?? story.title}
           </h2>
           {(intro ?? story.intro) && (
             <p
-              className="mx-auto mb-4 max-w-2xl text-base leading-relaxed font-normal text-muted-foreground sm:text-lg [&_em]:font-medium [&_em]:text-foreground [&_em]:not-italic [&_strong]:font-medium [&_strong]:text-foreground"
+              className="mb-4 max-w-2xl text-base leading-relaxed font-normal text-muted-foreground sm:text-lg lg:mx-auto [&_em]:font-medium [&_em]:text-foreground [&_em]:not-italic [&_strong]:font-medium [&_strong]:text-foreground"
               dangerouslySetInnerHTML={{ __html: intro ?? story.intro }}
             />
           )}
           {(context ?? story.context) && (
             <p
-              className="mx-auto max-w-2xl text-base leading-relaxed font-normal text-muted-foreground sm:text-lg [&_em]:font-medium [&_em]:text-foreground [&_em]:italic [&_strong]:font-medium [&_strong]:text-foreground"
+              className="max-w-2xl text-base leading-relaxed font-normal text-muted-foreground sm:text-lg lg:mx-auto [&_em]:font-medium [&_em]:text-foreground [&_em]:italic [&_strong]:font-medium [&_strong]:text-foreground"
               dangerouslySetInnerHTML={{ __html: context ?? story.context }}
             />
           )}

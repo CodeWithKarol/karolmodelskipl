@@ -15,7 +15,7 @@ export function AboutSection() {
       <div className="relative z-10 container mx-auto max-w-5xl px-4">
         <div className="flex flex-col items-center gap-12 lg:grid lg:grid-cols-2 lg:gap-16">
           {/* Treść (mobile-first: najpierw treść) */}
-          <Reveal className="order-1 w-full text-center lg:text-left">
+          <Reveal className="order-1 w-full text-left">
             <div className="mx-auto mb-6 lg:mx-0">
               <SectionBadge>
                 <User className="h-4 w-4" />

@@ -29,7 +29,7 @@ export function CtaSection({
 
       <div className="relative z-10 container mx-auto max-w-5xl px-4">
         <SectionHeader
-          revealClassName="mb-8 text-center sm:mb-16"
+          revealClassName="mb-8 sm:mb-16"
           badge={
             <>
               <Sparkles className="h-3.5 w-3.5 shrink-0" />
@@ -37,14 +37,14 @@ export function CtaSection({
             </>
           }
           title={cta.title}
-          titleClassName="mx-auto mb-3 max-w-3xl text-2xl leading-snug font-semibold tracking-tight text-balance text-foreground sm:mb-6 sm:text-3xl sm:leading-tight md:text-4xl"
+          titleClassName="mb-3 max-w-3xl text-2xl leading-snug font-semibold tracking-tight text-balance text-foreground sm:mb-6 sm:text-3xl sm:leading-tight md:text-4xl lg:mx-auto"
           descriptionHtml={cta.description}
-          descriptionClassName="mx-auto max-w-2xl text-sm leading-relaxed font-normal text-pretty text-muted-foreground sm:text-base md:text-lg"
+          descriptionClassName="max-w-2xl text-sm leading-relaxed font-normal text-pretty text-muted-foreground sm:text-base md:text-lg lg:mx-auto"
         />
 
-        <Reveal className="mx-auto max-w-2xl">
+        <Reveal className="max-w-2xl lg:mx-auto">
           <div className="mb-6 sm:mb-8">
-            <p className="mb-4 text-center text-xs font-medium text-foreground sm:mb-5 sm:text-sm">
+            <p className="mb-4 text-left text-xs font-medium text-foreground sm:mb-5 sm:text-sm lg:text-center">
               {cta.package_title}
             </p>
             <div className="divide-y divide-border border-y border-border">
@@ -80,17 +80,17 @@ export function CtaSection({
           </div>
 
           {cta.format ? (
-            <div className="mb-5 text-center text-xs leading-relaxed whitespace-pre-line text-muted-foreground sm:mb-6 sm:text-sm">
+            <div className="mb-5 text-left text-xs leading-relaxed whitespace-pre-line text-muted-foreground sm:mb-6 sm:text-sm lg:text-center">
               {cta.format}
             </div>
           ) : (
-            <div className="mb-5 text-center text-xs leading-relaxed text-muted-foreground sm:mb-6 sm:text-sm">
+            <div className="mb-5 text-left text-xs leading-relaxed text-muted-foreground sm:mb-6 sm:text-sm lg:text-center">
               100% bezpłatnie • Rozmowa wideo 1-na-1 • Zero sprzedaży i zero
               technicznego żargonu
             </div>
           )}
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-start lg:items-center">
             <a
               href={href}
               {...(isExternal
@@ -101,22 +101,22 @@ export function CtaSection({
               <CtaButton className="w-full">{cta.button}</CtaButton>
             </a>
             {cta.note ? (
-              <p className="mt-3 text-center text-xs leading-relaxed font-medium text-pretty text-muted-foreground sm:text-sm">
+              <p className="mt-3 text-left text-xs leading-relaxed font-medium text-pretty text-muted-foreground sm:text-sm lg:text-center">
                 {cta.note}
               </p>
             ) : (
-              <p className="mt-3 text-center text-xs leading-relaxed font-medium text-pretty text-muted-foreground sm:text-sm">
+              <p className="mt-3 text-left text-xs leading-relaxed font-medium text-pretty text-muted-foreground sm:text-sm lg:text-center">
                 🔒 Po pozytywnej weryfikacji danych w ankiecie otrzymasz
                 natychmiastowy dostęp do kalendarza rezerwacji.
               </p>
             )}
             {cta.availability && (
-              <p className="mt-2 text-center text-xs font-medium tracking-wide text-primary uppercase">
+              <p className="mt-2 text-left text-xs font-medium tracking-wide text-primary uppercase lg:text-center">
                 {cta.availability}
               </p>
             )}
             {cta.footer && (
-              <p className="mt-2 text-center text-xs leading-relaxed font-medium text-pretty text-muted-foreground sm:text-sm">
+              <p className="mt-2 text-left text-xs leading-relaxed font-medium text-pretty text-muted-foreground sm:text-sm lg:text-center">
                 {cta.footer}
               </p>
             )}

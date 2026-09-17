@@ -53,10 +53,10 @@ export function ComparisonTableSection({
     >
       <div className="relative z-10 container mx-auto max-w-5xl px-4">
         <SectionHeader
-          badgeWrapperClassName="mb-4 flex justify-center"
+          badgeWrapperClassName="mb-4 flex justify-start lg:justify-center"
           badge={badge}
           title={comparison.title}
-          titleClassName="mx-auto max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl"
+          titleClassName="max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl lg:mx-auto"
         />
 
         {/* Desktop: tabela */}

@@ -11,7 +11,7 @@ export function TrustedBySection() {
       <div className="relative z-10 container mx-auto max-w-5xl px-4">
         {/* Header - Mobile First */}
         <SectionHeader
-          revealClassName="mb-10 text-center sm:mb-14"
+          revealClassName="mb-10 sm:mb-14"
           badge={
             <>
               <ShieldCheck className="h-4 w-4" />
@@ -24,11 +24,11 @@ export function TrustedBySection() {
         {/* Bridge of Trust - First-person quote, Mobile First */}
         <Reveal
           as="blockquote"
-          className="relative mx-auto mb-10 max-w-3xl sm:mb-14"
+          className="relative mb-10 max-w-3xl sm:mb-14 lg:mx-auto"
         >
           <span
             aria-hidden="true"
-            className="absolute -top-6 -left-2 font-serif text-6xl leading-none text-primary/15 select-none sm:-left-6 sm:text-7xl"
+            className="absolute -top-6 -left-2 font-serif text-6xl leading-none text-primary/15 select-none sm:text-7xl lg:-left-6"
           >
             &ldquo;
           </span>

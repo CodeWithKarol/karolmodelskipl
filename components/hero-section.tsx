@@ -17,7 +17,7 @@ export function HeroSection() {
 
       <div className="relative z-10 container mx-auto flex flex-1 flex-col items-center justify-start gap-8 px-4 sm:gap-10 lg:flex-row lg:justify-between lg:gap-8">
         {/* Content Column */}
-        <div className="w-full max-w-2xl flex-1 text-left lg:pr-8">
+        <div className="w-full max-w-2xl flex-1 text-left lg:pr-8 lg:text-center">
           <div className="mb-4 animate-[fade-up_0.7s_ease-out_both] sm:mb-6">
             <SectionBadge variant="neutral" className="text-[10px] sm:text-xs">
               <Gem className="h-3.5 w-3.5 shrink-0" />
@@ -27,12 +27,12 @@ export function HeroSection() {
           <h1 className="mb-4 animate-[rise_0.7s_ease-out_0.1s_both] text-4xl leading-[1.12] font-semibold tracking-tight text-balance text-foreground sm:mb-5 sm:text-5xl sm:leading-[1.1] lg:text-6xl">
             {hero.h1}
           </h1>
-          <p className="mb-6 max-w-xl animate-[fade-up_0.7s_ease-out_0.2s_both] text-base leading-relaxed text-muted-foreground sm:mb-8 sm:text-lg">
+          <p className="mb-6 max-w-xl animate-[fade-up_0.7s_ease-out_0.2s_both] text-base leading-relaxed text-pretty text-muted-foreground sm:mb-8 sm:text-lg lg:mx-auto">
             {hero.subheading}
           </p>
 
           {/* Indicators - Inline value props */}
-          <div className="flex animate-[fade-up_0.7s_ease-out_0.3s_both] flex-wrap items-center gap-x-5 gap-y-2.5 sm:gap-x-6">
+          <div className="flex animate-[fade-up_0.7s_ease-out_0.3s_both] flex-wrap items-center gap-x-5 gap-y-2.5 sm:gap-x-6 lg:justify-center">
             {hero.indicators.map((item, i) => (
               <div
                 key={i}
@@ -51,13 +51,13 @@ export function HeroSection() {
           </div>
 
           {/* Main CTA — below the value props */}
-          <div className="mt-6 flex animate-[fade-up_0.7s_ease-out_0.35s_both] flex-col items-stretch gap-3 sm:mt-8 sm:flex-row sm:items-center sm:gap-4">
+          <div className="mt-6 flex animate-[fade-up_0.7s_ease-out_0.35s_both] flex-col items-stretch gap-3 sm:mt-8 sm:flex-row sm:items-center sm:gap-4 lg:justify-center">
             <a href="#zwrotnica" className="w-full sm:w-auto">
               <CtaButton className="w-full sm:w-auto">
                 Wybierz wyzwanie w Twojej firmie ↓
               </CtaButton>
             </a>
-            <span className="text-center text-xs text-muted-foreground sm:text-left">
+            <span className="text-center text-xs text-muted-foreground sm:text-left lg:text-center">
               lub sprawdź doświadczenie poniżej
             </span>
           </div>
