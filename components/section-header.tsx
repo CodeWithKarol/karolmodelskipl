@@ -17,10 +17,10 @@ interface SectionHeaderProps {
 }
 
 const DEFAULT_TITLE =
-  "mx-auto mb-6 max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-foreground sm:text-3xl md:text-4xl"
+  "mb-6 max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-balance text-foreground sm:text-3xl md:text-4xl lg:mx-auto"
 
 const DEFAULT_DESCRIPTION =
-  "mx-auto max-w-2xl text-base leading-relaxed font-normal text-muted-foreground sm:text-lg"
+  "max-w-2xl text-base leading-relaxed font-normal text-pretty text-muted-foreground sm:text-lg lg:mx-auto"
 
 export function SectionHeader({
   badge,
@@ -35,7 +35,10 @@ export function SectionHeader({
   descriptionClassName = DEFAULT_DESCRIPTION,
 }: SectionHeaderProps) {
   return (
-    <Reveal as="header" className={cn("text-center", revealClassName)}>
+    <Reveal
+      as="header"
+      className={cn("text-left lg:text-center", revealClassName)}
+    >
       {badge && (
         <div className={badgeWrapperClassName}>
           <SectionBadge variant={badgeVariant} className={badgeClassName}>

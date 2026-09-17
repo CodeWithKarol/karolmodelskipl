@@ -60,12 +60,12 @@ export function PackageSpecSection({
     >
       <div className="relative z-10 container mx-auto max-w-4xl px-4">
         <SectionHeader
-          badgeWrapperClassName="mb-4 flex justify-center"
+          badgeWrapperClassName="mb-4 flex justify-start lg:justify-center"
           badge={spec.badge}
           title={spec.title}
-          titleClassName="mx-auto max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-balance text-foreground sm:text-3xl md:text-4xl"
+          titleClassName="max-w-3xl text-2xl leading-tight font-semibold tracking-tight text-balance text-foreground sm:text-3xl md:text-4xl lg:mx-auto"
           description={spec.intro}
-          descriptionClassName="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base md:text-lg"
+          descriptionClassName="mt-4 max-w-2xl text-sm leading-relaxed text-muted-foreground sm:text-base md:text-lg lg:mx-auto"
         />
 
         <div className="space-y-0">
@@ -149,19 +149,19 @@ export function PackageSpecSection({
           {/* Podsumowanie wartości i cena (opcjonalne) */}
           {spec.price_amount && (
             <Reveal>
-              <div className="border-t border-border pt-10 text-center sm:pt-14">
+              <div className="border-t border-border pt-10 text-left sm:pt-14 lg:text-center">
                 {spec.summary_label && spec.summary_value && (
                   <>
                     <p className="text-[11px] font-medium text-muted-foreground sm:text-xs">
                       {spec.summary_label}
                     </p>
-                    <p className="mx-auto mt-2 max-w-2xl text-sm font-medium text-foreground sm:text-base md:text-lg">
+                    <p className="mt-2 max-w-2xl text-sm font-medium text-foreground sm:text-base md:text-lg lg:mx-auto">
                       {spec.summary_value}
                     </p>
                   </>
                 )}
 
-                <div className="mx-auto mt-10 max-w-xl border-t border-border pt-9 sm:mt-12">
+                <div className="mt-10 max-w-xl border-t border-border pt-9 sm:mt-12 lg:mx-auto">
                   <p className="text-[11px] font-medium text-muted-foreground sm:text-xs">
                     {spec.price_label}
                   </p>
@@ -176,13 +176,13 @@ export function PackageSpecSection({
                     {spec.price_amount}
                   </p>
                   {spec.payment && (
-                    <p className="mx-auto mt-3 max-w-lg text-xs leading-relaxed text-muted-foreground sm:text-sm">
+                    <p className="mt-3 max-w-lg text-xs leading-relaxed text-muted-foreground sm:text-sm lg:mx-auto">
                       {spec.payment}
                     </p>
                   )}
 
                   {spec.bullets && spec.bullets.length > 0 && (
-                    <ul className="mx-auto mt-6 max-w-md space-y-2.5 text-left">
+                    <ul className="mt-6 max-w-md space-y-2.5 text-left lg:mx-auto">
                       {spec.bullets.map((bullet) => (
                         <li
                           key={bullet}

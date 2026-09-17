@@ -56,7 +56,7 @@ export function QualificationForm({
       <div className="container mx-auto px-4">
         <div className="mx-auto w-full max-w-3xl">
           {result === null ? (
-            <div className="text-center">
+            <div className="text-left lg:text-center">
               <SectionBadge
                 variant="neutral"
                 className="text-[10px] sm:text-xs"
@@ -66,7 +66,7 @@ export function QualificationForm({
               <h2 className="mt-5 text-3xl font-semibold tracking-tight text-balance text-foreground sm:text-4xl">
                 {qualification.title}
               </h2>
-              <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+              <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg lg:mx-auto">
                 {qualification.intro}
               </p>
 

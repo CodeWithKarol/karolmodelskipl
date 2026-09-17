@@ -34,7 +34,7 @@ export function FaqSection({
       <div className="relative z-10 container mx-auto max-w-3xl px-4">
         {/* Header - Mobile First */}
         <SectionHeader
-          revealClassName="mb-12 text-center"
+          revealClassName="mb-12"
           badgeWrapperClassName="mb-6"
           badge={
             <>

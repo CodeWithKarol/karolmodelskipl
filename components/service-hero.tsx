@@ -17,13 +17,10 @@ export function ServiceHero({
     <section className="relative flex w-full flex-col bg-background pt-20 pb-16 text-foreground sm:pt-24 lg:min-h-screen lg:pb-12">
       <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/10 via-background to-background"></div>
 
-      <div className="relative z-10 container mx-auto flex flex-1 flex-col items-center justify-center px-4 pt-4 text-center sm:pt-8">
+      <div className="relative z-10 container mx-auto flex flex-1 flex-col items-center justify-center px-4 pt-4 text-left sm:pt-8 lg:text-center">
         <div className="mx-auto w-full max-w-3xl pt-4 sm:pt-8">
-          <div className="mb-5 flex animate-[fade-up_0.7s_ease-out_both] justify-center sm:mb-7">
-            <SectionBadge
-              variant="neutral"
-              className="text-center text-[10px] sm:text-xs"
-            >
+          <div className="mb-5 flex animate-[fade-up_0.7s_ease-out_both] justify-start sm:mb-7 lg:justify-center">
+            <SectionBadge variant="neutral" className="text-[10px] sm:text-xs">
               {hero.badge}
             </SectionBadge>
           </div>
@@ -36,7 +33,7 @@ export function ServiceHero({
             )}
           </h1>
 
-          <p className="mx-auto mb-7 max-w-2xl animate-[fade-up_0.7s_ease-out_0.2s_both] text-base leading-relaxed text-muted-foreground sm:mb-9 sm:text-lg">
+          <p className="mb-7 max-w-2xl animate-[fade-up_0.7s_ease-out_0.2s_both] text-base leading-relaxed text-muted-foreground sm:mb-9 sm:text-lg lg:mx-auto">
             {hero.subtitle}
           </p>
 
@@ -44,11 +41,11 @@ export function ServiceHero({
             <CtaButton
               render={<a href={ctaHref} />}
               nativeButton={false}
-              className="mx-auto w-full max-w-md"
+              className="w-full max-w-md lg:mx-auto"
             >
               {hero.qualification.cta_line1}
             </CtaButton>
-            <p className="mt-2.5 text-center text-[11px] leading-relaxed font-medium text-muted-foreground sm:text-xs">
+            <p className="mt-2.5 text-left text-[11px] leading-relaxed font-medium text-muted-foreground sm:text-xs lg:text-center">
               {hero.cta_sub}
             </p>
             <TrustLogos
